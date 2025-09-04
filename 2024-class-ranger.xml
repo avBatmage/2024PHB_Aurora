@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>2024 Ranger</name>
+		<description>The Ranger class from the 2024 Player's Handbook.</description>
+		<update version="0.0.4">
+			<file name="2024-class-ranger.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/2024-class-ranger.xml" />
+		</update>
+	</info>
+
+	<element name="2024 Ranger" type="Class" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_2024_RANGER">
+		<description>
+			<p class="flavor">A warrior who uses martial prowess and nature magic to combat threats on the edges of civilization.</p>			
+			<p>Rough and wild looking, a human stalks alone through the shadows of trees, hunting the orcs he knows are planning a raid on a nearby farm. Clutching a shortsword in each hand, he becomes a whirlwind of steel, cutting down one enemy after another.</p>
+			<p class="indent">After tumbling away from a cone of freezing air, an elf finds her feet and draws back her bow to loose an arrow at the white dragon. Shrugging off the wave of fear that emanates from the dragon like the cold of its breath, she sends one arrow after another to find the gaps between the dragon's thick scales.</p>
+			<p class="indent">Holding his hand high, a half-elf whistles to the hawk that circles high above him, calling the bird back to his side. Whispering instructions in Elvish, he points to the owlbear he's been tracking and sends the hawk to distract the creature while he readies his bow.</p>
+			<p class="indent">Far from the bustle of cities and towns, past the hedges that shelter the most distant farms from the terrors of the wild, amid the dense-packed trees of trackless forests and across wide and empty plains, rangers keep their unending watch.</p>
+			<h4>DEADLY HUNTERS</h4>
+			<p>Warriors of the wilderness, rangers specialize in hunting the monsters that threaten the edges of civilization—humanoid raiders, rampaging beasts and monstrosities, terrible giants, and deadly dragons. They learn to track their quarry as a predator does, moving stealthily through the wilds and hiding themselves in brush and rubble. Rangers focus their combat training on techniques that are particularly useful against their specific favored foes.</p>
+			<p class="indent">Thanks to their familiarity with the wilds, rangers acquire the ability to cast spells that harness nature's power, much as a druid does. Their spells, like their combat abilities, emphasize speed, stealth, and the hunt. A ranger's talents and abilities are honed with deadly focus on the grim task of protecting the borderlands.</p>
+			<h4>INDEPENDENT ADVENTURERS</h4>
+			<p>Though a ranger might make a living as a hunter, a guide, or a tracker, a ranger's true calling is to defend the outskirts of civilization from the ravages of monsters and humanoid hordes that press in from the wild. In some places, rangers gather in secretive orders or join forces with druidic circles. Many rangers, though, are independent almost to a fault, knowing that, when a dragon or a band of orcs attacks, a ranger might be the first—and possibly the last—line of defense.</p>
+			<p class="indent">This fierce independence makes rangers well suited to adventuring, since they are accustomed to life far from the comforts of a dry bed and a hot bath. Faced with city-bred adventurers who grouse and whine about the hardships of the wild, rangers respond with some mixture of amusement, frustration, and compassion. But they quickly learn that other adventurers who can carry their own weight in a fight against civilization's foes are worth any extra burden. Coddled city folk might not know how to feed themselves or find fresh water in the wild, but they make up for it in other ways.</p>
+			<h4>CREATING A RANGER</h4>
+			<p>As you create your ranger character, consider the nature of the training that gave you your particular capabilities. Did you train with a single mentor, wandering the wilds together until you mastered the ranger's ways? Did you leave your apprenticeship, or was your mentor slain— perhaps by the same kind of monster that became your favored enemy? Or perhaps you learned your skills as part of a band of rangers affiliated with a druidic circle, trained in mystic paths as well as wilderness lore. You might be self-taught, a recluse who learned combat skills, tracking, and even a magical connection to nature through the necessity of surviving in the wilds.</p>
+			<p class="indent">What's the source of your particular hatred of a certain kind of enemy? Did a monster kill someone you loved or destroy your home village? Or did you see too much of the destruction these monsters cause and commit yourself to reining in their depredations? Is your adventuring career a continuation of your work in protecting the borderlands, or a significant change? What made you join up with a band of adventurers? Do you find it challenging to teach new allies the ways of the wild, or do you welcome the relief from solitude that they offer?</p>
+			<h5>QUICK BUILD</h5>
+			<p>You can make a ranger quickly by following these suggestions. First, make Dexterity your highest ability score, followed by Wisdom. (Some rangers who focus on two-weapon fighting make Strength higher than Dexterity.) Second, choose the outlander background.</p>
+			<h3>CLASS FEATURES</h3>
+			<p>As a ranger, you gain the following class features.</p>
+            <h5>HIT POINTS</h5>
+            <ul class="unstyled">
+                <li><strong>Hit Dice:</strong> 1d10 per ranger level</li>
+                <li><strong>Hit Points at 1st Level:</strong> 10 + your Constitution modifier</li>
+                <li><strong>Hit Points at Higher Levels:</strong> 1d10 (or 6) + your Constitution modifier per ranger level after 1st</li>
+            </ul>
+            <h5>PROFICIENCIES</h5>
+            <ul class="unstyled mb">
+                <li><strong>Armor:</strong> Light armor, medium armor, shields</li>
+                <li><strong>Weapons:</strong> Simple weapons, martial weapons</li>
+                <li><strong>Tools:</strong> None</li>
+            </ul>
+            <ul class="unstyled">
+                <li><strong>Saving Throws:</strong> Strength, Dexterity</li>
+                <li><strong>Skills:</strong> Choose three skills from Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, and Survival</li>
+            </ul>
+			<h5>EQUIPMENT</h5>
+			<p>You start with 150gp or the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li> <i>(a)</i> scale mail or <i>(b)</i> leather armor </li>
+				<li> <i>(a)</i> two shortswords or <i>(b)</i> two simple melee weapons </li>
+				<li> <i>(a)</i> a dungeoneer's pack or <i>(b)</i> an explorer's pack </li>
+				<li>A longbow and a quiver of 20 arrows</li>	
+			</ul>
+			<h5 class="caption">THE RANGER</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="left">Features</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td></tr>
+				</thead>
+				<tr><td> 1st</td><td class="left">Spellcasting, Favored Enemy, Weapon Mastery</td>			<td>2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 2nd</td><td class="left">Deft Explorer, Fighting Style</td>		<td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 3rd</td><td class="left">Ranger Subclass, Primeval Awareness</td>	<td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td class="left">Ability Score Improvement</td>			<td>5</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td class="left">Extra Attack</td>							<td>6</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td class="left">Roving</td>								<td>6</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td class="left">Ranger Subclass feature</td>				<td>7</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td class="left">Ability Score Improvement</td>			<td>7</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td class="left">Expertise</td>							<td>8</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td class="left">Tireless</td>								<td>8</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td class="left">Ranger Subclass feature</td>				<td>10</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td class="left">Ability Score Improvement</td>			<td>10</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td class="left">Relentless Hunter</td>					<td>11</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+				<tr><td>14th</td><td class="left">Nature's Veil</td>						<td>11</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+				<tr><td>15th</td><td class="left">Ranger Subclass feature</td>				<td>12</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16th</td><td class="left">Ability Score Improvement</td>			<td>12</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>17th</td><td class="left">Precise Hunter</td>						<td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>18th</td><td class="left">Feral Senses</td>							<td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>19th</td><td class="left">Epic Boon</td>			<td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+				<tr><td>20th</td><td class="left">Foe Slayer</td>							<td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+			</table>
+			<div element="ID_2024PHB_CLASS_FEATURE_RANGER_SPELLCASTING" />
+			<div element="ID_2024PHB_CLASS_FEATURE_RANGER_FAVORED_ENEMY" />
+			<div element="ID_2024PHB_CLASS_FEATURE_RANGER_WEAPON_MASTERY" />
+			<div element="ID_2024PHB_CLASS_FEATURE_RANGER_DEFT_EXPLORER" />
+			<div element="ID_2024PHB_CLASS_FEATURE_RANGER_FIGHTING_STYLE" />
+			<div element="ID_2024PHB_CLASS_FEATURE_RANGER_RANGER_ARCHETYPE" />
+			<div element="ID_2024PHB_CLASS_FEATURE_RANGER_PRIMEVAL_AWARENESS" />
+			<div element="ID_2024PHB_CLASS_FEATURE_RANGER_ASI" />
+			<div element="ID_2024PHB_CLASS_FEATURE_RANGER_EXTRA_ATTACK" />
+			<div element="ID_2024PHB_CLASS_FEATURE_RANGER_ROVING" />
+			<div element="ID_2024PHB_CLASS_FEATURE_RANGER_EXPERTISE" />
+			<div element="ID_2024PHB_CLASS_FEATURE_RANGER_TIRELESS" />
+			<div element="ID_2024PHB_CLASS_FEATURE_RANGER_RELENTLESS_HUNTER" />
+			<div element="ID_2024PHB_CLASS_FEATURE_RANGER_NATURES_VEIL" />
+			<div element="ID_2024PHB_CLASS_FEATURE_RANGER_PRECISE_HUNTER" />
+			<div element="ID_2024PHB_CLASS_FEATURE_RANGER_FERAL_SENSES" />
+			<div element="ID_2024PHB_CLASS_FEATURE_RANGER_FOE_SLAYER" />
+		</description>
+		<sheet display="false">
+			<description>A warrior who uses martial prowess and nature magic to combat threats on the edges of civilization.</description>
+		</sheet>
+		<setters>
+			<set name="short">A warrior who uses martial prowess and nature magic to combat threats on the edges of civilization.</set>
+			<set name="hd">d10</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_2024PHB_MULTICLASS_RANGER_2024" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_2024PHB_MULTICLASS_RANGER_2024" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_2024PHB_MULTICLASS_RANGER_2024" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_2024PHB_MULTICLASS_RANGER_2024" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_2024PHB_MULTICLASS_RANGER_2024" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_2024PHB_MULTICLASS_RANGER_2024" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_2024PHB_MULTICLASS_RANGER_2024" />
+			<select type="Proficiency" name="Skill Proficiency" supports="Skill,Ranger" number="3" requirements="!ID_2024PHB_MULTICLASS_RANGER_2024" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_RANGER_SPELLCASTING" level="1"/>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_RANGER_FAVORED_ENEMY" level="1"/>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_RANGER_WEAPON_MASTERY" level="1"/>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_RANGER_DEFT_EXPLORER" level="2"/>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_RANGER_FIGHTING_STYLE" level="2"/>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_RANGER_RANGER_ARCHETYPE" level="3"/>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_RANGER_PRIMEVAL_AWARENESS" level="3"/>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_RANGER_ASI" level="4"/>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_RANGER_EXTRA_ATTACK" level="5"/>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_RANGER_ROVING" level="6"/>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_RANGER_EXPERTISE" level="9"/>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_RANGER_TIRELESS" level="10"/>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_RANGER_RELENTLESS_HUNTER" level="13"/>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_RANGER_NATURES_VEIL" level="14"/>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_RANGER_PRECISE_HUNTER" level="17"/>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_RANGER_FERAL_SENSES" level="18"/>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_RANGER_FOE_SLAYER" level="20"/>
+		</rules>
+		<multiclass id="ID_2024PHB_MULTICLASS_RANGER_2024">
+			<prerequisite>Dexterity 13 and Wisdom 13</prerequisite>
+			<requirements>([dex:13],[wis:13])</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Light armor, medium armor, shields, simple weapons, martial weapons, one skill from the class's skill list</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+				<select type="Proficiency" name="Skill Proficiency" supports="Skill,Ranger" number="1"/>
+			</rules>
+		</multiclass>
+	</element>
+	<element name="Spellcasting" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_SPELLCASTING">
+		<description>
+			<p>You have learned to channel the magical essence of nature to cast spells. See the Batav's Additions 2024 for the rules on spellcasting. The information below details how you use those rules as a Ranger.</p>
+			<h5>SPELL SLOTS</h5>
+			<p>The Ranger table shows how many spell slots you have to cast your ranger spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.</p>
+			<p class="indent">For example, if you know the 1st-level spell animal friendship and have a 1st-level and a 2nd-level spell slot available, you can cast animal friendship using either slot.</p>
+			<h5>PREPARED SPELLS OF 1ST LEVEL AND HIGHER</h5>
+			<p>You prepare the list of spells of 1st level and higher that are available for you to cast with this feature. To start, choose two 1st-level spells from the Primal Ranger spell list. Rather than choosing, you may start with Cure Wounds and Ensnaring Strike.</p>
+			<p>The number of spells on your list increases as you gain Ranger levels, as shown in the Prepared Spells column of the Ranger table. Whenever that number increases, choose additional spells from the Ranger spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a 5th-level Ranger, your list of prepared spells can include six Ranger spells of 1st or 2nd level, in any combination.</p>
+			<p>If another Ranger feature gives spells that you always have prepared, those spells don't count against the number of spells on the list you prepare with this Spellcasting feature, but those spells otherwise follow the rules in this feature.</p>
+			<h5>CHANGING YOUR PREPARED SPELLS</h5>
+			<p>Whenever you finish a Long Rest, you can replace one spell on your list with another Ranger spell for which you have spell slots.</p>
+			<h5>SPELLCASTING ABILITY</h5>
+			<p>Wisdom is your spellcasting ability for your ranger spells, since your magic draws on your attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a ranger spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Wisdom modifier</p>
+			</center>
+			<h5>SPELLCASTING FOCUS</h5>
+
+		</description>
+		<sheet display="false">
+			<description>You have learned to use the magical essence of nature to cast spells, much as a druid does.</description>
+		</sheet>
+		<spellcasting name="Ranger" ability="Wisdom" prepare="true">
+			<list known="true">Ranger</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_HALF" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+			<stat name="ranger:spellcasting:slots:1" value="2" level="2" />
+			<stat name="ranger:spellcasting:slots:1" value="1" level="3" />
+			<stat name="ranger:spellcasting:slots:1" value="1" level="5" />
+			<stat name="ranger:spellcasting:slots:2" value="2" level="5" />
+			<stat name="ranger:spellcasting:slots:2" value="1" level="7" />
+			<stat name="ranger:spellcasting:slots:3" value="2" level="9" />
+			<stat name="ranger:spellcasting:slots:3" value="1" level="11" />
+			<stat name="ranger:spellcasting:slots:4" value="1" level="13" />
+			<stat name="ranger:spellcasting:slots:4" value="1" level="15" />
+			<stat name="ranger:spellcasting:slots:4" value="1" level="17" />
+			<stat name="ranger:spellcasting:slots:5" value="1" level="17" />
+			<stat name="ranger:spellcasting:slots:5" value="1" level="19" />
+			
+			<stat name="ranger:spellcasting:prepare" value="2" level="1" />
+			<stat name="ranger:spellcasting:prepare" value="1" level="2" />
+			<stat name="ranger:spellcasting:prepare" value="1" level="3" />
+			<stat name="ranger:spellcasting:prepare" value="1" level="4" />
+			<stat name="ranger:spellcasting:prepare" value="1" level="5" />
+			<stat name="ranger:spellcasting:prepare" value="1" level="7" />
+			<stat name="ranger:spellcasting:prepare" value="1" level="9" />
+			<stat name="ranger:spellcasting:prepare" value="2" level="11" />
+			<stat name="ranger:spellcasting:prepare" value="1" level="13" />
+			<stat name="ranger:spellcasting:prepare" value="1" level="15" />
+			<stat name="ranger:spellcasting:prepare" value="2" level="17" />
+			<stat name="ranger:spellcasting:prepare" value="1" level="19" />
+		</rules>
+	</element>
+	<element name="Favored Enemy" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_FAVORED_ENEMY">
+		<description>
+			<p>Beginning at 1st level, You always have the Hunter's Mark spell prepared. You can cast it twice without expending a spell slot, and you regain all expended uses of this ability when you finish a Long Rest.</p>
+			<p class="indent">The number of times you can cast the spell without a spell slot increases when you reach certain Ranger levels, as shown in the Favored Enemy column of the Ranger Features table.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{proficiency}}/Long Rest" >
+			<description level="1">You can cast the Hunter's Mark Spell without expending a spell slot. Your hunter's mark deals d{{hunters mark:dice}} force damage and you can concentrate on it alongside other concentration features.</description>
+			<description level="13">You can cast the Hunter's Mark Spell without expending a spell slot. Your hunter's mark deals d{{hunters mark:dice}} force damage and no longer requires concentration.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_HUNTERS_MARK" level="1" spellcasting="Ranger" prepared="true" />
+			<stat name="hunters mark:dice" value="6" bonus="hunters mark" />
+			<stat name="hunters mark:dice" value="8" bonus="hunters mark" level="13" />
+			<stat name="hunters mark:dice" value="10" bonus="hunters mark" level="20" />
+		</rules>
+	</element>
+	<element name="Weapon Mastery" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_WEAPON_MASTERY">
+		<description>
+			<p>Your training with weapons allows you to use the mastery properties of two kinds of weapons of your choice with which you have proficiency, such as Longbows and Shortswords.</p>
+			<p>Whenever you finish a Long Rest, you can change the kinds of weapons you chose. For example, you could switch to using the mastery properties of Scimitars and Longswords.</p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Weapon Mastery" supports="Weapon Mastery" number="2" level="1"/>
+		</rules>
+	</element>
+	<element name="Deft Explorer" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_DEFT_EXPLORER">
+		<description>
+			<p>You are an unsurpassed explorer. At 2nd level, Choose one of your proficiencies in a skill that appears on the Ranger skill list. You gain Expertise in that skill.</p>
+			<p>In addition, choose two languages. </p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Expertise (Ranger 2024)" level="2" number="1" supports="ID_INTERNAL_SUPPORT_EXPERTISE"/>
+			<select type="Language" name="Language (Deft Explorer)"  level="2" number="2" supports="Standard||Exotic"/>
+		</rules>
+	</element>
+	<element name="Fighting Style" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_FIGHTING_STYLE">
+		<description>
+			<p>At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again.</p>
+			<h5 class="caption">ARCHERY</h5>
+			<p>You gain a +2 bonus to attack rolls you make with ranged weapons.</p>
+			<h5 class="caption">DEFENSE</h5>
+			<p>While you are wearing armor, you gain a +1 bonus to AC.</p>
+			<h5 class="caption">DUELING</h5>
+			<p>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
+			<h5 class="caption">DRUIDIC WARRIOR</h5>
+			<p>Instead of taking a fighting style, you can choose to know 2 Druid cantrips.</p>
+			<h5 class="caption">TWO-WEAPON FIGHTING</h5>
+			<p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</p>
+		</description>
+		<rules>
+			<select type="Class Feature" name="Fighting Style" supports="Fighting Style, Ranger" level="2"/>
+		</rules>
+	</element>
+	<element name="Druidic Warrior" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_UA2015_CLASS_FEATURE_FIGHTINGSTYLE_DRUIDIC_WARRIOR">
+		<supports>Fighting Style, Ranger</supports>
+		<description>
+			<p>You learn two Druid cantrips of your choice (see the Druid class's section for a list of Druid spells). Guidance and Starry Wisp are recommended. The chosen cantrips count as Ranger spells for you, and Wisdom is your spellcasting ability for them. Whenever you gain a Ranger level, you can replace one of these cantrips with another Druid cantrip.</p>
+		</description>
+		<sheet>
+			<description>You know 2 Druid cantrips.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Cantrip (Druid)" supports="Druid, 0" level="1" number="2" spellcasting="2024 Ranger" />
+		</rules>
+	</element>
+	<element name="Ranger Archetype" type="Class Feature" source="Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_RANGER_ARCHETYPE">
+		<description>
+			<p>At 3rd level, you choose an archetype that you strive to emulate: Hunter or Beast Master, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Ranger Archetype" supports="Ranger Archetype" />
+		</rules>
+	</element>
+	<element name="Primeval Awareness" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_PRIMEVAL_AWARENESS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_PRIMEVAL_AWARENESS</requirements>
+		<description>
+			<p>Beginning at 3rd level, you can use your action and expend one ranger spell slot to focus your awareness on the region around you. For 1 minute per level of the spell slot you expend, you can sense whether the following types of creatures are present within 1 mile of you: aberrations, celestials, dragons, elementals, fey, fiends, and undead. This feature doesn't reveal the creatures' location or number.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can expend one ranger spell slot to focus your awareness on the region around you.
+			For 1 minute per level of the spell slot you expend, you can sense whether the following types of creatures are present within 1 mile of you: aberrations, celestials, dragons, elementals, fey, fiends, and undead. This feature doesn't reveal the creatures' location or number.</description>
+		</sheet>
+	</element>
+	<element name="Ability Score Improvement" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_ASI">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Ranger 4)" supports="Improvement Option,Ranger,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Ranger 8)" supports="Improvement Option,Ranger,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Ranger 12)" supports="Improvement Option,Ranger,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Ranger 16)" supports="Improvement Option,Ranger,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Ranger 19)" supports="Improvement Option,Ranger,19" level="19" />
+		</rules>
+	</element>
+	<element name="Extra Attack" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_EXTRA_ATTACK">
+		<description>
+			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+		</rules>
+	</element>
+	<element name="Roving" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_ROVING">
+		<description>
+			<p>Starting at 6th level, Your Speed increases by 10 feet while you aren't wearing Heavy Armor.</p>
+			<p>You also have a Climb Speed and a Swim Speed equal to your Speed.</p>
+		</description>
+		<sheet>
+			<description>Your Speed increases by 10 feet while you aren't wearing Heavy Armor.
+			You also have a Climb Speed and a Swim Speed equal to your Speed.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:misc" value="10" equipped="![armor:heavy]" requirements="[innate speed:1]" />
+			<stat name="innate speed:fly:misc" value="10" equipped="![armor:heavy]" requirements="[innate speed:fly:1]" />
+			<stat name="innate speed:burrow:misc" value="10" equipped="![armor:heavy]" requirements="[innate speed:burrow:1]" />
+			<stat name="speed:climb" value="speed" bonus="base" />
+			<stat name="speed:swim" value="speed" bonus="base" />
+		</rules>
+	</element>
+	<element name="Expertise" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_EXPERTISE">
+		<description>
+			<p> At 9th level, Choose two of your skill proficiencies with which you lack Expertise. You gain Expertise in those skills. </p>
+		</description>
+		<sheet display="false">
+			<description>Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Expertise (Ranger 2024)" level="9" number="2" supports="ID_INTERNAL_SUPPORT_EXPERTISE"/>
+		</rules>
+	</element>
+	<element name="Tireless" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_TIRELESS">
+		<description>
+			<p>Reaching 10th level, Primal forces now help fuel you on your journeys, granting you the following benefits:</p>
+			<p class="indent">Temporary Hit Points. As an action, you can give yourself a number of Temporary Hit Points equal to 1d8 plus your Wisdom modifier (minimum of 1). You can use this action a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
+			<p class="indent">Decrease Exhaustion. Whenever you finish a Short Rest, your Exhaustion level, if any, decreases by 1.</p>
+		</description>
+		<sheet>
+			<description>
+				Whenever you finish a Short Rest, your Exhaustion level, if any, decreases by 1.
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_RANGER_TIRELESS_TEMPORARY_HIT_POINTS"/>
+		</rules>
+	</element>
+	<element name="Temporary Hit Points" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_TIRELESS_TEMPORARY_HIT_POINTS">
+		<compendium display="false" />
+		<sheet action="Action" usage="{{wisdom:modifier}}/Long Rest">
+			<description>
+				As an action, you can give yourself a number of Temporary Hit Points equal to 1d8+{{wisdom:modifier}}
+			</description>
+		</sheet>
+	</element>
+	<element name="Relentless Hunter" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_RELENTLESS_HUNTER">
+		<description>
+			<p>At 13th level, Your Hunter's Mark Feature no longer requires any concentration and it's damage die increases to d8.</p>
+		</description>
+		<sheet display="false">
+			<description>Your Hunter's Mark Feature no longer requires any concentration.</description>
+		</sheet>
+	</element>
+	<element name="Nature's Veil" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_NATURES_VEIL">
+		<description>
+			<p>At 14th  level, You invoke spirits of nature to magically hide yourself from view. As a Bonus Action, you can give yourself the Invisible condition until the end of your next turn.</p>
+			<p>You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{wisdom:modifier}}/Long Rest">
+			<description>You invoke spirits of nature to magically hide yourself from view. As a Bonus Action, you can give yourself the Invisible condition until the end of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Precise Hunter" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_PRECISE_HUNTER">
+		<description>
+			<p>At 17th level, You always have Advantage on attack rolls against the target of your Hunter's Mark spell.</p>
+		</description>
+		<sheet display="false">
+			<description>You always have Advantage on attack rolls against the target of your Hunter's Mark spell.</description>
+		</sheet>
+	</element>
+
+	<element name="Feral Senses" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_FERAL_SENSES">
+		<description>
+			<p>At 18th level, you gain preternatural senses that help you fight creatures you can't see. Your connection to the forces of nature grants you Blindsight with a range of 30 feet.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_BLINDSIGHT" />
+			<stat name="blindsight:range" value="30" bonus="base" />
+		</rules>
+	</element>
+	<element name="Foe Slayer" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_FOE_SLAYER">
+		<description>
+			<p>At 20th level, you become an unparalleled hunter of your enemies. Your Dexterity and Wisdom scores increase by 2 and your maximum for those scores is now 22. The damage die of your Hunter's Mark is a 1d10.</p>
+		</description>
+		<sheet display="false">
+			<description>You embody the power of the wilds. Your Dexterity and Wisdom scores increase by 2. Your maximum for those scores is now 22.</description>
+			<description>The damage die of your Hunter's Mark increases to 1d10.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="2" />
+			<stat name="wisdom" value="2" />
+			<stat name="dexterity:max" value="2" />
+			<stat name="wisdom:max" value="2" />
+		</rules>
+	</element>
+
+	<!--Hunter-->
+	<element name="2024 Hunter" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_RANGER_HUNTER">
+		<supports>Ranger Archetype</supports>
+		<description>
+			<p>Emulating the Hunter archetype means accepting your place as a bulwark between civilization and the terrors of the wilderness. As you walk the Hunter's path, you learn specialized techniques for fighting the threats you face, from rampaging ogres and hordes of orcs to towering giants and terrifying dragons.</p>
+			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_HUNTERS_LORE" />
+			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY" />
+			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_DEFENSIVE_TACTICS" />
+			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_PREY" />
+			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_DEFENSE" />
+		</description>
+		<sheet display="false">
+			<description>You stalk prey in the wilds and elsewhere, using your abilities as a Hunter to protect nature and people everywhere from forces that would destroy them.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_HUNTERS_LORE" level="3" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY" level="3" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_DEFENSIVE_TACTICS" level="7" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_PREY" level="11" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_DEFENSE" level="15" />
+		</rules>
+	</element>
+	<element name="Hunter's Lore" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_HUNTERS_LORE">
+		<description>
+			<p>You can call on the forces of nature to reveal certain strengths and weaknesses of your prey. While a creature is marked by your Hunter's Mark, you know whether that creature has any damage or condition immunities, damage resistances, or damage vulnerabilities, and if the creature has any, you know what they are.</p>
+		</description>
+		<sheet>
+			<description>While a creature is marked by your Hunter's Mark, you learn that creature's damage or condition immunities, damage resistances, or damage vulnerabilities.</description>
+		</sheet>
+	</element>
+	<element name="Hunter's Prey" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY">
+		<description>
+			<p>You gain one of the following feature options of your choice. Whenever you finish a Short or Long Rest, you can replace the chosen option with the other one.</p>
+			<p class="indent"><strong><em>Colossus Slayer.</em></strong> Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it's below its hit point maximum. You can deal this extra damage only once per turn.</p>
+			<p class="indent"><strong><em>Horde Breaker.</em></strong> Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Hunter's Prey" supports="Hunters Prey 2024" />
+		</rules>
+	</element>
+	<element name="Defensive Tactics" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_DEFENSIVE_TACTICS">
+		<description>
+			<p>At 7th level, you gain one of the following features of your choice.</p>
+			<p class="indent"><strong><em>Evasion.</em></strong> When you are subjected to an effect that lets you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail. You can't use this feature if you have the Incapacitated condition.</p>
+			<p class="indent"><strong><em>Hunter's Leap.</em></strong> If an enemy you can see enters a space within 5 feet of you, you can use your Reaction to move up to half your Speed without provoking Opportunity Attacks.</p>
+			<p class="indent"><strong><em>Uncanny Dodge.</em></strong> When an attacker that you can see hits you with an attack roll, you can use your Reaction to halve the attack's damage against you (round down).</p>
+			<p> You can change your choice when you finish a Short or Long Rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Defensive Tactics" supports="Defensive Tactics 2024" />
+		</rules>
+	</element>
+	<element name="Superior Hunter's Prey" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_PREY">
+		<description>
+			<p>Once per turn, when you have Hunter's Mark on a creature and you deal damage to them, you can also deal the spell's extra damage to a different creature within 30 feet of the first creature.</p>
+		</description>
+		<sheet Usage="1/Turn">
+			<description>When you have Hunter's Mark on a creature and you deal damage to them, you can also deal the spell's extra damage to a different creature within 30 feet of the first creature.</description>
+		</sheet>
+	</element>
+	<element name="Superior Hunter's Defense" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_DEFENSE">
+		<description>
+			<p>You can take a reaction to give yourself resistance to damage when you take damage until the end of your current turn.</p>	
+		</description>
+		<sheet Action="Reaction">
+			<description>Give yourself resistance to damage when you take damage until the end of your current turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Colossus Slayer" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY_COLOSSUS_SLAYER">
+		<supports>Hunters Prey 2024</supports>
+		<description>
+			<p>Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it's below its hit point maximum. You can deal this extra damage only once per turn.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it's below its hp maximum.</description>
+		</sheet>
+	</element>
+	<element name="Horde Breaker" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY_HORDE_BREAKER">
+		<supports>Hunters Prey 2024</supports>
+		<description>
+			<p>Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon.</p>
+		</description>
+		<sheet>
+			<description>Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon.</description>
+		</sheet>
+	</element>
+	<element name="Evasion" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_SUPERIOR_DEFENSIVE_TACTICS_EVASION">
+		<supports>Defensive Tactics 2024</supports>
+		<description>
+			<p>You can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or a lightning bolt spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
+		</description>
+		<sheet>
+			<description>When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail. You can't use this feature if you have the Incapacitated condition.</description>
+		</sheet>
+	</element>
+	<element name="Hunter's Leap" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_SUPERIOR_DEFENSIVE_TACTICS_HUNTERS_LEAP">
+		<supports>Defensive Tactics 2024</supports>
+		<description>
+			<p>If an enemy you can see enters a space within 5 feet of you, you can use your Reaction to move up to half your Speed without provoking Opportunity Attacks.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>If an enemy you can see enters a space within 5 feet of you, move up to half your Speed without provoking Opportunity Attacks.</description>
+		</sheet>
+	</element>
+	<element name="Uncanny Dodge" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_SUPERIOR_DEFENSIVE_TACTICS_UNCANNY_DODGE">
+		<supports>Defensive Tactics 2024</supports>
+		<description>
+			<p>When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When an attacker that you can see hits you with an attack, you can halve the attack's damage against you.</description>
+		</sheet>
+	</element>
+	<!--Beast Master-->
+	<element name="2024 Beast Master" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_RANGER_BEAST_MASTER">
+		<supports>Ranger Archetype</supports>
+		<description>
+			<p>The Beast Master archetype embodies a friendship between the civilized races and the beasts of the world. United in focus, beast and ranger work as one to fight the monstrous foes that threaten civilization and the wilderness alike. Emulating the Beast Master archetype means committing yourself to this ideal, working in partnership with an animal as its companion and friend.</p>
+			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_PRIMAL_COMPANION" />
+			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_EXCEPTIONAL_TRAINING" />
+			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_BESTIAL_FURY" />
+			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_SHARE_SPELLS" />
+		</description>
+		<sheet display="false">
+			<description>The Beast Master archetype embodies a friendship between the civilized races and the beasts of the world.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_PRIMAL_COMPANION" level="3" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_EXCEPTIONAL_TRAINING" level="7" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_BESTIAL_FURY" level="11" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_SHARE_SPELLS" level="15" />
+		</rules>
+	</element>
+	<element name="Ranger's Companion" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_PRIMAL_COMPANION">
+		<description>
+			<p>At 3rd level, you gain a beast companion that accompanies you on your adventures and is trained to fight alongside you. Choose a beast that is no larger than Medium and that has a challenge rating of 1/4 or lower (appendix D presents statistics for the hawk, mastiff, and panther as examples). Add your proficiency bonus to the beast's AC, attack rolls, and damage rolls, as well as to any saving throws and skills it is proficient in. Its hit point maximum equals the hit point number in its stat block or four times your ranger level, whichever is higher. Like any creature, it can spend Hit Dice during a short rest to regain hit points.</p>
+			<p class="indent">In combat, the beast acts during your turn. It can move and use its Reaction on its own, but the only action it takes is the Dodge action, unless you take a Bonus Action on your turn to command it to take a different action. That action can be one in its stat block or some other action. You can also sacrifice one of your attacks when you take the Attack action to command the beast to take the Attack action. If you have the Incapacitated condition, the beast can take any action of its choice, not just Dodge.</p>
+			<p class="indent">If the beast has died within the last hour, you can you use your action to touch it and expend a spell slot of 1st level or higher. The beast returns to life after 1 minute with all its Hit Points restored.</p>
+			<p class="indent">Whenever you finish a Long Rest, you can summon a different primal beast. The new beast appears in an unoccupied space within 5 feet of you, and you choose its stat block and appearance. If you already have a beast from this feature, it vanishes when the new beast appears.</p>
+			<p class="indent">The beast vanishes if you die.</p>
+		</description>
+		<sheet>
+			<description>The beast obeys your commands as best as it can. It takes its turn on your initiative, though it doesn't take an action unless you command it to. On your turn, you can verbally command the beast where to move. You can use your action to verbally command it to take the Attack, Dash, Disengage, Dodge, or Help action. Once you have the Extra Attack feature, you can make one weapon attack yourself when you command the beast to take the Attack action.
+			If the beast has died within the last hour, you can you use your action to touch it and expend a spell slot of 1st level or higher. The beast returns to life after 1 minute with all its Hit Points restored.
+			If the beast dies, you can obtain another one by spending 8 hours magically bonding with another beast that isn't hostile to you, either the same type of beast as before or a different one.</description>
+		</sheet>
+		<rules>
+			<select type="Companion" name="Ranger's Companion" supports="Beast,(Tiny||Small||Medium),(1/4||1/8||0)" />
+			<stat name="companion:ac" value="proficiency" />
+			<stat name="companion:attack" value="proficiency" />
+			<stat name="companion:damage" value="proficiency" />			
+			<stat name="additional:hp:max" value="level:2024 ranger" />
+			<stat name="additional:hp:max" value="level:2024 ranger" />
+			<stat name="additional:hp:max" value="level:2024 ranger" />
+			<stat name="additional:hp:max" value="level:2024 ranger" />
+			<stat name="companion:hp:max" value="additional:hp:max" bonus="base" />
+		</rules>
+	</element>
+	<element name="Exceptional Training" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_EXCEPTIONAL_TRAINING">
+		<description>
+			<p>When you use your Bonus Action to command your Primal Companion beast to take an action, you can also command it to take the Dash, Disengage, Dodge, or Help action as a Bonus Action.</p>
+			<p class="indent">In addition, whenever the beast hits with an attack and deals damage, it can deal your choice of Force damage or its normal damage type.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>When you use your Bonus Action to command your Primal Companion beast to take an action, you can also command it to take the Dash, Disengage, Dodge, or Help action as a Bonus Action.
+			In addition, whenever the beast hits with an attack and deals damage, it can deal your choice of Force damage or its normal damage type.</description>
+		</sheet>
+	</element>
+	<element name="Bestial Fury" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_BESTIAL_FURY">
+		<description>
+			<p>When you command your Primal Companion beast to take the Attack action, the beast can make two attacks.</p>
+			<p>In addition, the first time each turn it hits a creature under the effect of your Hunter's Mark spell, the beast deals extra Force damage equal to the bonus damage of that spell.</p>
+		</description>
+		<sheet>
+			<description>When you command your Primal Companion beast to take the Attack action, the beast can make two attacks.
+			In addition, the first time each turn it hits a creature under the effect of your Hunter's Mark spell, the beast deals d{{hunters mark:dice}} extra Force damage.</description>
+		</sheet>
+	</element>
+	<element name="Share Spells" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_SHARE_SPELLS">
+		<description>
+			<p>When you cast a spell targeting yourself, you can also affect your Primal Companion beast with the spell if the beast is within 30 feet of you.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell targeting yourself, you can also affect your Primal Companion beast with the spell if the beast is within 30 feet of you.</description>
+		</sheet>
+	</element>
+	
+	<!-- Expertise -->
+	<element name="Skill Expertise (Acrobatics)" type="Class Feature" source="2024 Player's Handbook" id="ID_EXPERTISE_SKILL_ACROBATICS">
+		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_SKILL_ACROBATICS</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Acrobatics check you make.</p>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_ACROBATICS" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="acrobatics:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Skill Expertise (Animal Handling)" type="Class Feature" source="2024 Player's Handbook" id="ID_EXPERTISE_SKILL_ANIMALHANDLING">
+		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_SKILL_ANIMALHANDLING</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Animal Handling check you make.</p>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="animal handling:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Skill Expertise (Arcana)" type="Class Feature" source="2024 Player's Handbook" id="ID_EXPERTISE_SKILL_ARCANA">
+		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_SKILL_ARCANA</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Arcana check you make.</p>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_ARCANA" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="arcana:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Skill Expertise (Athletics)" type="Class Feature" source="2024 Player's Handbook" id="ID_EXPERTISE_SKILL_ATHLETICS">
+		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_SKILL_ATHLETICS</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Athletics check you make.</p>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_ATHLETICS" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="athletics:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Skill Expertise (Deception)" type="Class Feature" source="2024 Player's Handbook" id="ID_EXPERTISE_SKILL_DECEPTION">
+		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_SKILL_DECEPTION</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Deception check you make.</p>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_DECEPTION" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="deception:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Skill Expertise (History)" type="Class Feature" source="2024 Player's Handbook" id="ID_EXPERTISE_SKILL_HISTORY">
+		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_SKILL_HISTORY</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any History check you make.</p>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_HISTORY" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="history:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Skill Expertise (Insight)" type="Class Feature" source="2024 Player's Handbook" id="ID_EXPERTISE_SKILL_INSIGHT">
+		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_SKILL_INSIGHT</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Insight check you make.</p>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_INSIGHT" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="insight:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Skill Expertise (Intimidation)" type="Class Feature" source="2024 Player's Handbook" id="ID_EXPERTISE_SKILL_INTIMIDATION">
+		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_SKILL_INTIMIDATION</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Intimidation check you make.</p>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="intimidation:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Skill Expertise (Investigation)" type="Class Feature" source="2024 Player's Handbook" id="ID_EXPERTISE_SKILL_INVESTIGATION">
+		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_SKILL_INVESTIGATION</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Investigation check you make.</p>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="investigation:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Skill Expertise (Medicine)" type="Class Feature" source="2024 Player's Handbook" id="ID_EXPERTISE_SKILL_MEDICINE">
+		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_SKILL_MEDICINE</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Medicine check you make.</p>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_MEDICINE" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="medicine:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Skill Expertise (Nature)" type="Class Feature" source="2024 Player's Handbook" id="ID_EXPERTISE_SKILL_NATURE">
+		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_SKILL_NATURE</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Nature check you make.</p>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_NATURE" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="nature:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Skill Expertise (Perception)" type="Class Feature" source="2024 Player's Handbook" id="ID_EXPERTISE_SKILL_PERCEPTION">
+		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_SKILL_PERCEPTION</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Perception check you make.</p>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="perception:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Skill Expertise (Performance)" type="Class Feature" source="2024 Player's Handbook" id="ID_EXPERTISE_SKILL_PERFORMANCE">
+		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_SKILL_PERFORMANCE</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Performance check you make.</p>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="performance:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Skill Expertise (Persuasion)" type="Class Feature" source="2024 Player's Handbook" id="ID_EXPERTISE_SKILL_PERSUASION">
+		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_SKILL_PERSUASION</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Persuasion check you make.</p>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_PERSUASION" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="persuasion:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Skill Expertise (Religion)" type="Class Feature" source="2024 Player's Handbook" id="ID_EXPERTISE_SKILL_RELIGION">
+		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_SKILL_RELIGION</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Religion check you make.</p>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_RELIGION" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="religion:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Skill Expertise (Sleight of Hand)" type="Class Feature" source="2024 Player's Handbook" id="ID_EXPERTISE_SKILL_SLEIGHTOFHAND">
+		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_SKILL_SLEIGHTOFHAND</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Sleight of Hand check you make.</p>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="sleight of hand:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Skill Expertise (Stealth)" type="Class Feature" source="2024 Player's Handbook" id="ID_EXPERTISE_SKILL_STEALTH">
+		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_SKILL_STEALTH</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Stealth check you make.</p>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_STEALTH" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="stealth:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Skill Expertise (Survival)" type="Class Feature" source="2024 Player's Handbook" id="ID_EXPERTISE_SKILL_SURVIVAL">
+		<supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
+		<requirements>ID_PROFICIENCY_SKILL_SURVIVAL</requirements>
+		<description>
+			<p>Your proficiency bonus is doubled for any Survival check you make.</p>
+			<div class="reference">
+				<div element="ID_PROFICIENCY_SKILL_SURVIVAL" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="survival:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+</elements>

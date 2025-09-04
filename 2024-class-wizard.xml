@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>2024 Wizard</name>
+		<description>The Wizard class from the Player's Handbook.</description>
+		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
+		<update version="0.0.1">
+			<file name="2024-class-wizard.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/classes/2024-class-wizard.xml" />
+		</update>
+	</info>
+
+	<element name="2024 Wizard" type="Class" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_2024_WIZARD">
+		<description>
+			<p>Clad in the silver robes that denote her station, an elf closes her eyes to shut out the distractions of the battlefield and begins her quiet chant. Fingers weaving in front of her, she completes her spell and launches a tiny bead of fire toward the enemy ranks, where it erupts into a conflagration that engulfs the soldiers.</p>
+			<p class="indent">Checking and rechecking his work, a human scribes an intricate magic circle in chalk on the bare stone floor, then sprinkles powdered iron along every line and graceful curve. When the circle is complete, he drones a long incantation. A hole opens in space inside the circle, bringing a whiff of brimstone from the otherworldly plane beyond.</p>
+			<p class="indent">Crouching on the floor in a dungeon intersection, a gnome tosses a handful of small bones inscribed with mystic symbols, muttering a few words of power over them. Closing his eyes to see the visions more clearly, he nods slowly, then opens his eyes and points down the passage to his left.</p>
+			<p class="indent">Wizards are supreme magic-users, defined and united as a class by the spells they cast. Drawing on the subtle weave of magic that permeates the cosmos, wizards cast spells of explosive fire, arcing lightning, subtle deception, and brute-force mind control. Their magic conjures monsters from other planes of existence, glimpses the future, or turns slain foes into zombies. Their mightiest spells change one substance into another, call meteors down from the sky, or open portals to other worlds.</p>
+			<h4>SCHOLARS OF THE ARCANE</h4>
+			<p>Wild and enigmatic, varied in form and function, the power of magic draws students who seek to master its mysteries. Some aspire to become like the gods, shaping reality itself. Though the casting of a typical spell requires merely the utterance of a few strange words, fleeting gestures, and sometimes a pinch or clump of exotic materials, these surface components barely hint at the expertise attained after years of apprenticeship and countless hours of study.</p>
+			<p class="indent">Wizards live and die by their spells. Everything else is secondary. They learn new spells as they experiment and grow in experience. They can also learn them from other wizards, from ancient tomes or inscriptions, and from ancient creatures (such as the fey) that are steeped in magic.</p>
+			<h4>THE LURE OF KNOWLEDGE</h4>
+			<p>Wizards' lives are seldom mundane. The closest a wizard is likely to come to an ordinary life is working as a sage or lecturer in a library or university, teaching others the secrets of the multiverse. Other wizards sell their services as diviners, serve in military forces, or pursue lives of crime or domination.</p>
+			<p class="indent">But the lure of knowledge and power calls even the most unadventurous wizards out of the safety of their libraries and laboratories and into crumbling ruins and lost cities. Most wizards believe that their counterparts in ancient civilizations knew secrets of magic that have been lost to the ages, and discovering those secrets could unlock the path to a power greater than any magic available in the present age.</p>
+			<h4>CREATING A WIZARD </h4>
+			<p>Creating a wizard character demands a backstory dominated by at least one extraordinary event. How did your character first come into contact with magic? How did you discover you had an aptitude for it? Do you have a natural talent, or did you simply study hard and practice incessantly? Did you encounter a magical creature or an ancient tome that taught you the basics of magic?</p>
+			<p class="indent">What drew you forth from your life of study? Did your first taste of magical knowledge leave you hungry for more? Have you received word of a secret repository of knowledge not yet plundered by any other wizard? Perhaps you're simply eager to put your newfound magical skills to the test in the face of danger.</p>
+			<h5>QUICK BUILD</h5>
+			<p>You can make a wizard quickly by following these suggestions. First, Intelligence should be your highest ability score, followed by Constitution or Dexterity. If you plan to join the School of Enchantment, make Charisma your next-best score. Second, choose the sage background. Third, choose the <i>mage hand</i>, <i>light</i>, and <i>ray of frost</i> cantrips, along with the following 1st-level spells for your spellbook: <i>burning hands,</i> <i>charm person</i>, <i>feather fall</i>, <i>mage armor</i>, <i>magic missile</i>, and <i>sleep</i>.</p>
+			<h3>CLASS FEATURES</h3>
+			<p>As a wizard, you gain the following class features.</p>
+			<h5>HIT POINTS</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d6 per wizard level</li>
+				<li><strong>Hit Points at 1st Level:</strong> 6 + your Constitution modifier</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d6 (or 4) + your Constitution modifier per wizard level after 1st</li>
+			</ul>
+			<h5>PROFICIENCIES</h5>
+			<ul class="unstyled mb">
+				<li><strong>Armor:</strong> None</li>
+				<li><strong>Weapons:</strong> Daggers, darts, slings, quarterstaffs, light crossbows</li>
+				<li><strong>Tools:</strong> None</li>
+			</ul>
+			<ul class="unstyled">
+				<li><strong>Saving Throws:</strong> Intelligence, Wisdom</li>
+				<li><strong>Skills:</strong> Choose two from Arcana, History, Insight, Investigation, Medicine, and Religion</li>
+			</ul>
+			<h5>EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li>(a) a quarterstaff or (b) a dagger</li>
+				<li>(a) a component pouch or (b) an arcane focus</li>
+				<li>(a) a light crossbow and 20 bolts or (b) any simple weapon</li>
+				<li>(a) a scholar's pack or (b) an explorer's pack</li>
+				<li>A spellbook</li>
+			</ul>
+			<h5 class="caption">THE WIZARD</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="left">Features</td><td>Cantrips</td><td>Prepared Spells</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td><td>6th</td><td>7th</td><td>8th</td><td>9th</td></tr>
+				</thead>
+				<tr><td> 1st</td><td class="left">Spellcasting, Ritual Adept, Arcane Recovery</td>	<td>3</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 2nd</td><td class="left">Scholar</td>										<td>3</td><td>5</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 3rd</td><td class="left">Wizard Subclass</td>								<td>3</td><td>6</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td class="left">Ability Score Improvement</td>					<td>4</td><td>7</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td class="left">Memorize Spell</td>								<td>4</td><td>9</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td class="left">Subclass Feature</td>								<td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td class="left">—</td>											<td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td class="left">Ability Score Improvement</td>					<td>4</td><td>12</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td class="left">—</td>											<td>4</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td class="left">Subclass Feature</td>								<td>5</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td class="left">—</td>											<td>5</td><td>16</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td class="left">Ability Score Improvement</td>					<td>5</td><td>16</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td class="left">—</td>											<td>5</td><td>17</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+				<tr><td>14th</td><td class="left">Subclass Feature</td>								<td>5</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+				<tr><td>15th</td><td class="left">—</td>											<td>5</td><td>19</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
+				<tr><td>16th</td><td class="left">Ability Score Improvement</td>					<td>5</td><td>21</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
+				<tr><td>17th</td><td class="left">—</td>											<td>5</td><td>22</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>18th</td><td class="left">Spell Mastery</td>								<td>5</td><td>23</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>19th</td><td class="left">Ability Score Improvement</td>					<td>5</td><td>24</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>20th</td><td class="left">Signature Spells</td>								<td>5</td><td>25</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
+			</table>
+			<div element="ID_2024PHB_CLASS_FEATURE_WIZARD_SPELLCASTING" />
+			<div element="ID_2024PHB_CLASS_FEATURE_WIZARD_RITUAL_ADEPT" />
+			<div element="ID_2024PHB_CLASS_FEATURE_WIZARD_ARCANE_RECOVERY" />
+			<div element="ID_2024PHB_CLASS_FEATURE_WIZARD_SCHOLAR" />
+			<div element="ID_2024PHB_CLASS_FEATURE_WIZARD_WIZARD_SUBCLASS" />
+			<div element="ID_2024PHB_CLASS_FEATURE_WIZARD_ABILITYSCOREIMPROVEMENT_WIZARD" />
+			<div element="ID_2024PHB_CLASS_FEATURE_WIZARD_MEMORIZE_SPELL" />
+			<div element="ID_2024PHB_CLASS_FEATURE_WIZARD_SPELL_MASTERY" />
+			<div element="ID_2024PHB_CLASS_FEATURE_WIZARD_SIGNATURE_SPELLS" />
+		</description>
+		<sheet display="false">
+			<description>A scholarly magic-user capable of manipulating the structures of reality.</description>
+		</sheet>
+		<setters>
+			<set name="short">A scholarly magic-user capable of manipulating the structures of reality.</set>
+			<set name="hd">d6</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER" requirements="!ID_2024PHB_MULTICLASS_WIZARD"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DART" requirements="!ID_2024PHB_MULTICLASS_WIZARD"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SLING" requirements="!ID_2024PHB_MULTICLASS_WIZARD"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF" requirements="!ID_2024PHB_MULTICLASS_WIZARD"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT" requirements="!ID_2024PHB_MULTICLASS_WIZARD"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_2024PHB_MULTICLASS_WIZARD"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_2024PHB_MULTICLASS_WIZARD"/>
+			<select type="Proficiency" name="Skill Proficiency (Wizard)" supports="Skill,Wizard" number="2" requirements="!ID_2024PHB_MULTICLASS_WIZARD"/>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WIZARD_SPELLCASTING" level="1"/>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WIZARD_RITUAL_ADEPT" level="1" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WIZARD_ARCANE_RECOVERY" level="1" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WIZARD_SCHOLAR" level="2" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WIZARD_WIZARD_SUBCLASS" level="3" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WIZARD_ABILITYSCOREIMPROVEMENT_WIZARD" level="4" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WIZARD_MEMORIZE_SPELL" level="5" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WIZARD_SPELL_MASTERY" level="18" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WIZARD_SIGNATURE_SPELLS" level="20" />
+		</rules>
+		<multiclass id="ID_2024PHB_MULTICLASS_WIZARD">
+			<prerequisite>Intelligence 13</prerequisite>
+			<requirements>[int:13]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">—</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+			</rules>
+		</multiclass>
+	</element>
+	<element name="Spellcasting" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WIZARD_SPELLCASTING">
+		<description>
+			<p>As a student of arcane magic, you have learned to cast spells. See the Player's Handbook for rules on spellcasting. The information below details how you use those rules with Wizard spells.</p>
+			<h5>CANTRIPS</h5>
+			<p>At 1st level, You know three Wizards cantrips of your choice. Light, Mage Hand, and Ray of Frost are recommended. Whenever you finish a Long Rest, you can replace one of your cantrips from this feature with another Wizard cantrip of your choice.</p>
+			<p>When you reach Wizard levels 4 and 10, you learn another Wizard cantrip of your choice, as shown in the Cantrips column of the Wizard Features table.</p>
+			<h5>SPELLBOOK</h5>
+			<p>At 1st level, Your wizardly apprenticeship culminated in the creation of a unique book: your spellbook. It is a Tiny object that weighs 3 pounds, contains 100 pages, and can be read only by you or someone casting Identify. You determine the book's appearance and materials, such as a gilt-edged tome or a collection of vellum bound with twine.</p>
+			<p>The book contains the level 1+ spells you know. It starts with six level 1 Wizard spells of your choice. Detect Magic, Feather Fall, Mage Armor, Magic Missile, Sleep, and Thunderwave are recommended.</p>
+			<p>Whenever you gain a Wizard level after 1, add two Wizard spells of your choice to your spellbook. Each of these spells must be of a level for which you have spell slots, as shown on the Wizard Features table. The spells are the culmination of arcane research you do regularly.</p>
+			<h5>PREPARING AND CASTING SPELLS</h5>
+			<p>The Wizard table shows how many spell slots you have to cast your wizard spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.</p>
+			<p class="indent">You prepare the list of level 1+ spells that are available for you to cast with this feature. To do so, choose four spells from your spellbook. The chosen spells must be of a level for which you have spell slots.</p>
+			<p class="indent">The number of spells on your list increases as you gain Wizard levels, as shown in the Prepared Spells column of the Wizard Features table. Whenever that number increases, choose additional Wizard spells until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 3 Wizard, your list of prepared spells can include six spells of levels 1 and 2 in any combination, chosen from your spellbook.</p>
+			<p class="indent">If another Wizard feature gives spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Wizard spells for you.</p>
+			<p>Whenever you finish a Long Rest, you can change your list of prepared spells, replacing any of the spells there with spells from your spellbook.</p>
+			<h5>SPELLCASTING ABILITY</h5>
+			<p>Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>
+			</center>
+			<h5>RITUAL CASTING</h5>
+			<p>You can cast a wizard spell as a ritual if that spell has the ritual tag and you have the spell in your spellbook. You don't need to have the spell prepared.</p>
+			<h5>SPELLCASTING FOCUS</h5>
+			<p>You can use an Arcane Focus or your spellbook as a Spellcasting Focus for your Wizard spells.</p>
+			<h5>EXPANDING AND REPLACING A SPELLBOOK</h5>
+			<p>The spells you add to your spellbook as you gain levels reflect your ongoing magical research, but you might find other spells during your adventures that you can add to the book. You could discover a Wizard spell on a Spell Scroll, for example, and then copy it into your spellbook.</p>
+			<h5>COPYING A SPELL INTO THE BOOK</h5>
+			<p>When you find a level 1+ Wizard spell, you can copy it into your spellbook if it's of a level you can prepare and if you have time to copy it. For each level of the spell, the transcription takes 2 hours and costs 50 GP. Afterward you can prepare the spell like the other spells in your spellbook.</p>
+			<h5>COPYING THE BOOK</h5>
+			<p>You can copy a spell from your spellbook into another book. This is like copying a new spell into your spellbook but faster, since you already know how to cast the spell. You need spend only 1 hour and 10 GP for each level of the copied spell.</p>
+			<p>If you lose your spellbook, you can use the same procedure to transcribe the Wizard spells that you have prepared into a new spellbook. Filling out the remainder of the new book requires you to find new spells to do so. For this reason, many wizards keep a backup spellbook.</p>
+		</description>
+		<sheet display="false">
+			<description>You can prepare {{wizard:spellcasting:prepare}} spells from the your spellbook. You use an arcane focus to cast spells. and can also cast wizard spells as a ritual.</description>
+		</sheet>
+		<spellcasting name="Wizard" ability="Intelligence" prepare="true">
+			<list>Wizard</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_RITUAL_CASTING" />
+			<grant type="Proficiency" id="ID_INTERNAL_PROFICIENCY_SPELLFOCUS_GROUP_ARCANE_FOCUS" />
+
+			<stat name="wizard:spellcasting:slots:1" value="2" level="1" />
+			<stat name="wizard:spellcasting:slots:1" value="1" level="2" />
+			<stat name="wizard:spellcasting:slots:1" value="1" level="3" />
+
+			<stat name="wizard:spellcasting:slots:2" value="2" level="3" />
+			<stat name="wizard:spellcasting:slots:2" value="1" level="4" />
+			<stat name="wizard:spellcasting:slots:3" value="2" level="5" />
+			<stat name="wizard:spellcasting:slots:3" value="1" level="6" />
+			<stat name="wizard:spellcasting:slots:4" value="1" level="7" />
+			<stat name="wizard:spellcasting:slots:4" value="1" level="8" />
+			<stat name="wizard:spellcasting:slots:4" value="1" level="9" />
+			<stat name="wizard:spellcasting:slots:5" value="1" level="9" />
+			<stat name="wizard:spellcasting:slots:5" value="1" level="10" />
+			<stat name="wizard:spellcasting:slots:5" value="1" level="18" />
+			<stat name="wizard:spellcasting:slots:6" value="1" level="11" />
+			<stat name="wizard:spellcasting:slots:6" value="1" level="19" />
+			<stat name="wizard:spellcasting:slots:7" value="1" level="13" />
+			<stat name="wizard:spellcasting:slots:7" value="1" level="20" />
+			<stat name="wizard:spellcasting:slots:8" value="1" level="15" />
+			<stat name="wizard:spellcasting:slots:9" value="1" level="17" />
+			<stat name="wizard:spellcasting:prepare" value="4" level="1" />
+			<stat name="wizard:spellcasting:prepare" value="1" level="2" />
+			<stat name="wizard:spellcasting:prepare" value="1" level="3" />
+			<stat name="wizard:spellcasting:prepare" value="1" level="4" />
+			<stat name="wizard:spellcasting:prepare" value="2" level="5" />
+			<stat name="wizard:spellcasting:prepare" value="1" level="6" />
+			<stat name="wizard:spellcasting:prepare" value="1" level="7" />
+			<stat name="wizard:spellcasting:prepare" value="1" level="8" />
+			<stat name="wizard:spellcasting:prepare" value="2" level="9" />
+			<stat name="wizard:spellcasting:prepare" value="1" level="10" />
+			<stat name="wizard:spellcasting:prepare" value="1" level="11" />
+			<stat name="wizard:spellcasting:prepare" value="0" level="12" />
+			<stat name="wizard:spellcasting:prepare" value="1" level="13" />
+			<stat name="wizard:spellcasting:prepare" value="0" level="14" />
+			<stat name="wizard:spellcasting:prepare" value="1" level="15" />
+			<stat name="wizard:spellcasting:prepare" value="0" level="16" />
+			<stat name="wizard:spellcasting:prepare" value="1" level="17" />
+			<stat name="wizard:spellcasting:prepare" value="1" level="18" />
+			<stat name="wizard:spellcasting:prepare" value="1" level="19" />
+			<stat name="wizard:spellcasting:prepare" value="1" level="20" />
+
+			<select type="Spell" name="Cantrip (Wizard)" supports="$(spellcasting:list), 0" level="1" number="3" spellcasting="Wizard" />
+			<select type="Spell" name="Cantrip (Wizard)" supports="$(spellcasting:list), 0" level="4" number="1" spellcasting="Wizard" />
+			<select type="Spell" name="Cantrip (Wizard)" supports="$(spellcasting:list), 0" level="10" number="1" spellcasting="Wizard" />
+
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), 1" level="1" number="6" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="2" number="2" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="3" number="2" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" number="2" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="5" number="2" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="6" number="2" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" number="2" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="8" number="2" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="9" number="2" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" number="2" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" number="2" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="12" number="2" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" number="2" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="14" number="2" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="15" number="2" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" number="2" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="17" number="2" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="18" number="2" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" number="2" spellcasting="Wizard" />
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="20" number="2" spellcasting="Wizard" />
+		</rules>
+	</element>
+	<element name="Ritual Adept" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WIZARD_RITUAL_ADEPT">
+		<description>
+			<p>You can cast any spell as a Ritual if that spell has the Ritual tag and the spell is in your spellbook. You needn't have the spell prepared, but you must read from the book to cast a spell in this way.</p>
+		</description>
+		<sheet>
+			<description>You can cast any spell as a Ritual if that spell has the Ritual tag and the spell is in your spellbook. You needn't have the spell prepared, but you must read from the book to cast a spell in this way.</description>
+		</sheet>
+	</element>
+	<element name="Arcane Recovery" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WIZARD_ARCANE_RECOVERY">
+		<description>
+			<p>You have learned to regain some of your magical energy by studying your spellbook. Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your wizard level (rounded up), and none of the slots can be 6th level or higher.</p>
+			<p class="indent">For example, if you're a 4th-level wizard, you can recover up to two levels worth of spell slots. You can recover either a 2nd-level spell slot or two 1st-level spell slots.</p>
+		</description>
+		<sheet>
+			<description>Once per day when you finish a short rest, you can choose expended spell slots up to 5th level to recover. The spell slots can have a combined level that is equal to or less than {{level:2024_wizard:half:up}}.</description>
+		</sheet>
+	</element>
+	<element name="Scholar" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WIZARD_SCHOLAR">
+		<description>
+			<p>While studying magic, you also specialized in an academic field of study. Choose one of the following skills in which you have proficiency: Arcana, History, Investigation, Medicine, Nature, or Religion. You have Expertise in the chosen skill.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Class Feature" name="Expertise (2024 Wizard)" level="2" number="1" supports="ID_EXPERTISE_SKILL_ARCANA|ID_EXPERTISE_SKILL_HISTORY|ID_EXPERTISE_SKILL_INVESTIGATION|ID_EXPERTISE_SKILL_MEDICINE|ID_EXPERTISE_SKILL_NATURE|ID_EXPERTISE_SKILL_RELIGION"/>
+		</rules>
+	</element>
+	<element name="Wizard Subclass" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WIZARD_WIZARD_SUBCLASS">
+		<description>
+			<p>The study of wizardry is ancient, stretching back to the earliest mortal discoveries of magic. It is firmly established in fantasy gaming worlds, with various traditions dedicated to its complex study.</p>
+			<p class="indent">The most common arcane traditions in the multiverse revolve around the schools of magic. Wizards through the ages have cataloged thousands of spells, grouping them into eight categories called schools. In some places, these traditions are literally schools. In other institutions, the schools are more like academic departments, with rival faculties competing for students and funding. Even wizards who train apprentices in the solitude of their own towers use the division of magic into schools as a learning device, since the spells of each school require mastery of different techniques.</p>
+			<p class="indent">When you reach 3rd level, you choose an arcane tradition, shaping your practice of magic through one of eight schools, such as Evocation.</p>
+			<p class="indent">Your choice grants you features at 3rd level and again at 6th, 10th, and 14th level.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Archetype" name="Arcane Tradition" supports="Arcane Tradition" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WIZARD_ABILITYSCOREIMPROVEMENT_WIZARD">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Wizard 4)" supports="Improvement Option,Wizard,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Wizard 8)" supports="Improvement Option,Wizard,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Wizard 12)" supports="Improvement Option,Wizard,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Wizard 16)" supports="Improvement Option,Wizard,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Wizard 19)" supports="Improvement Option,Wizard,19" level="19" />
+		</rules>
+	</element>
+	<element name="Memorize Spell" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WIZARD_MEMORIZE_SPELL">
+		<description>
+			<p>Whenever you finish a Short Rest, you can study your spellbook and replace one of the level 1+ Wizard spells you have prepared for your Spellcasting feature with another level 1+ spell from the book.</p>
+		</description>
+		<sheet>
+			<description>Whenever you finish a Short Rest, you can study your spellbook and replace one of the level 1+ Wizard spells you have prepared for your Spellcasting feature with another level 1+ spell from the book..</description>
+		</sheet>
+	</element>
+	<element name="Spell Mastery" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WIZARD_SPELL_MASTERY">
+		<description>
+			<p>At 18th level, You have achieved such mastery over certain spells that you can cast them at will. Choose a level 1 and a level 2 spell in your spellbook that have a casting time of an action. You always have those spells prepared, and you can cast them at their lowest level without expending a spell slot. To cast either spell at a higher level, you must expend a spell slot.</p>
+			<p>Whenever you finish a Long Rest, you can study your spellbook and replace one of those spells with an eligible spell of the same level from that book.</p>
+		</description>
+		<sheet>
+			<description>You have achieved such mastery over certain spells that you can cast them at will. Choose a level 1 and a level 2 spell in your spellbook that have a casting time of an action. You always have those spells prepared, and you can cast them at their lowest level without expending a spell slot. To cast either spell at a higher level, you must expend a spell slot.
+			Whenever you finish a Long Rest, you can study your spellbook and replace one of those spells with an eligible spell of the same level from that book.</description>
+		</sheet>
+	</element>
+	<element name="Signature Spells" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WIZARD_SIGNATURE_SPELLS">
+		<description>
+			<p>Choose two level 3 spells in your spellbook as your signature spells. You always have these spells prepared, and you can cast each of them once at level 3 without expending a spell slot. When you do so, you can't cast them in this way again until you finish a Short or Long Rest. To cast either spell at a higher level, you must expend a spell slot.</p>
+		</description>
+		<sheet usage="1 each/Short Rest">
+			<description>Cast either of your two level 3 signature spells cast of them once at level 3 without expending a spell slot. To cast either spell at a higher level, you must expend a spell slot.</description>
+		</sheet>
+	</element>
+</elements>

@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>2024 Paladin</name>
+		<description>The Paladin class from the Player's Handbook.</description>
+		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
+		<update version="0.0.3">
+			<file name="2024-class-paladin.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/classes/2024-class-paladin.xml" />
+		</update>
+	</info>
+
+	<element name="2024 Paladin" type="Class" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_2024_PALADIN">
+		<description>
+			<p>Clad in plate armor that gleams in the sunlight despite the dust and grime of long travel, a human lays down her sword and shield and places her hands on a mortally wounded man. Divine radiance shines from her hands, the man's wounds knit closed, and his eyes open wide with amazement.</p>
+			<p class="indent">A dwarf crouches behind an outcrop, his black cloak making him nearly invisible in the night, and watches an orc war band celebrating its recent victory. Silently, he stalks into their midst and whispers an oath, and two orcs are dead before they even realize he is there.</p>
+			<p class="indent">Silver hair shining in a shaft of light that seems to illuminate only him, an elf laughs with exultation. His spear flashes like his eyes as he jabs again and again at a twisted giant, until at last his light overcomes its hideous darkness.</p>
+			<p class="indent">Whatever their origin and their mission, paladins are united by their oaths to stand against the forces of evil. Whether sworn before a god's altar and the witness of a priest, in a sacred glade before nature spirits and fey beings, or in a moment of desperation and grief with the dead as the only witness, a paladin's oath is a powerful bond. It is a source of power that turns a devout warrior into a blessed champion.</p>
+			<h4>THE CAUSE OF RIGHTEOUSNESS</h4>
+			<p>A paladin swears to uphold justice and righteousness, to stand with the good things of the world against the encroaching darkness, and to hunt the forces of evil wherever they lurk. Different paladins focus on various aspects of the cause of righteousness, but all are bound by the oaths that grant them power to do their sacred work. Although many paladins are devoted to gods of good, a paladin's power comes as much from a commitment to justice itself as it does from a god. Paladins train for years to learn the skills of combat, mastering a variety of weapons and armor. Even so, their martial skills are secondary to the magical power they wield: power to heal the sick and injured, to smite the wicked and the undead, and to protect the innocent and those who join them in the fight for justice.</p>
+			<h4>BEYOND THE MUNDANE LIFE</h4>
+			<p>Almost by definition, the life of a paladin is an adventuring life. Unless a lasting injury has taken him or her away from adventuring for a time, every paladin lives on the front lines of the cosmic struggle against evil. Fighters are rare enough among the ranks of the militias and armies of the world, but even fewer people can claim the true calling of a paladin. When they do receive the call, these warriors turn from their former occupations and take up arms to fight evil. Sometimes their oaths lead them into the service of the crown as leaders of elite groups of knights, but even then their loyalty is first to the cause of righteousness, not to crown and country.</p>
+			<p class="indent">Adventuring paladins take their work seriously. A delve into an ancient ruin or dusty crypt can be a quest driven by a higher purpose than the acquisition of treasure. Evil lurks in dungeons and primeval forests, and even the smallest victory against it can tilt the cosmic balance away from oblivion.</p>
+			<h4>CREATING A PALADIN</h4>
+			<p>The most important aspect of a paladin character is the nature of his or her holy quest. Although the class features related to your oath don't appear until you reach 3rd level, plan ahead for that choice by reading the oath descriptions at the end of the class. Are you a devoted servant of good, loyal to the gods of justice and honor, a holy knight in shining armor venturing forth to smite evil? A re you a glorious champion of the light, cherishing everything beautiful that stands against the shadow, a knight whose oath descends from traditions older than many of the gods? Or are you an embittered loner sworn to take vengeance on those who have done great evil, sent as an angel of death by the gods or driven by your need for revenge? Appendix B lists many deities worshiped by paladins throughout the multiverse, such as Torm, Tyr, Heironeous, Paladine, Kiri-Jolith, Dol Arrah, the Silver Flame, Bahamut, Athena, Re-Horakhty, and Heimdall.</p>
+			<p class="indent">How did you experience your call to serve as a paladin? Did you hear a whisper from an unseen god or angel while you were at prayer? Did another paladin sense the potential within you and decide to train you as a squire? Or did some terrible event—the destruction of your home, perhaps— drive you to your quests? Perhaps you stumbled into a sacred grove or a hidden elven enclave and found yourself called to protect all such refuges of goodness and beauty. Or you might have known from your earliest memories that the paladin's life was your calling, almost as if you had been sent into the world with that purpose stamped on your soul.</p>
+			<p class="indent">As guardians against the forces of wickedness, paladins are rarely of any evil alignment. Most of them walk the paths of charity and justice. Consider how your alignment colors the way you pursue your holy quest and the manner in which you conduct yourself before gods and mortals. Your oath and alignment might be in harmony, or your oath might represent standards of behavior that you have not yet attained.</p>
+			<h5>QUICK BUILD</h5>
+			<p>You can make a paladin quickly by following these suggestions. First, Strength should be your highest ability score, followed by Charisma. Second, choose the noble background.</p>
+			<h3>CLASS FEATURES</h3>
+			<p>As a paladin, you gain the following class features.</p>
+            <h5>HIT POINTS</h5>
+            <ul class="unstyled">
+                <li><strong>Hit Dice:</strong> 1d10 per paladin level</li>
+                <li><strong>Hit Points at 1st Level:</strong> 10 + your Constitution modifier</li>
+                <li><strong>Hit Points at Higher Levels:</strong> 1d10 (or 6) + your Constitution modifier per paladin level after 1st</li>
+            </ul>
+            <h5>PROFICIENCIES</h5>
+            <ul class="unstyled mb">
+                <li><strong>Armor:</strong> All armor, shields</li>
+                <li><strong>Weapons:</strong> Simple weapons, martial weapons</li>
+                <li><strong>Tools:</strong> None</li>
+            </ul>
+            <ul class="unstyled">
+                <li><strong>Saving Throws:</strong> Wisdom, Charisma</li>
+                <li><strong>Skills:</strong> Choose two skills from Athletics, Insight, Intimidation, Medicine, Persuasion, and Religion</li>
+            </ul>
+			<h5>EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li><i>(a)</i> a martial weapon and a shield or <i>(b)</i> two martial weapons</li>
+				<li><i>(a)</i> five javelins or <i>(b)</i> any simple melee weapon</li>
+				<li><i>(a)</i> a priest's pack or <i>(b)</i> an explorer's pack</li>
+				<li>Chain mail and a holy symbol</li>
+			</ul>
+			<h5 class="caption">THE PALADIN</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="left">Features</td><td>Channel Divinity</td><td>Prepared Spells</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td></tr>
+				</thead>
+				<tr><td> 1st</td><td class="left">Lay on Hands, Spellcasting, Weapon Mastery</td>	<td>-</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 2nd</td><td class="left">Fighting Style, Paladin's Smite</td>				<td>-</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 3rd</td><td class="left">Channel Divinity, Paladin Subclass</td>			<td>2</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td class="left">Ability Score Improvement</td>					<td>2</td><td>5</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td class="left">Extra Attack, Faithfull Steed</td>				<td>2</td><td>6</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td class="left">Aura of Protection</td>							<td>2</td><td>6</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td class="left">Subclass Feature</td>								<td>2</td><td>7</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td class="left">Ability Score Improvement</td>					<td>2</td><td>7</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td class="left">Abjure Foes</td>									<td>2</td><td>8</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td class="left">Aura of Courage</td>								<td>2</td><td>8</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td class="left">Radiant Strikes</td>								<td>3</td><td>10</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td class="left">Ability Score Improvement</td>					<td>3</td><td>10</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td class="left">—</td>											<td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+				<tr><td>14th</td><td class="left">Restoring Touch</td>								<td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+				<tr><td>15th</td><td class="left">Subclass Feature</td>								<td>3</td><td>12</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16th</td><td class="left">Ability Score Improvement</td>					<td>3</td><td>12</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>17th</td><td class="left">—</td>											<td>3</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>18th</td><td class="left">Aura Expansion</td>								<td>3</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>19th</td><td class="left">Ability Score Improvement</td>					<td>3</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+				<tr><td>20th</td><td class="left">Subclass Feature</td>								<td>3</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+			</table>
+			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_LAY_ON_HANDS" />
+			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_SPELLCASTING" />
+			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_WEAPON_MASTERY" />
+			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_FIGHTING_STYLE" />
+			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_PALADINS_SMITE" />
+			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_CHANNEL_DIVINITY" />
+			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_PALADIN_SUBCLASS" />
+			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_ASI" />
+			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_EXTRA_ATTACK" />
+			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_FAITHFULL_STEED" />
+			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_AURA_OF_PROTECTION" />
+			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_ABJURE_FOES" />
+			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_AURA_OF_COURAGE" />
+			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_RADIANT_STRIKES" />
+			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_RESTORING_TOUCH" />
+		</description>
+		<sheet display="false">
+			<description>A holy warrior bound to a sacred oath.</description>
+		</sheet>
+		<setters>
+			<set name="short">A holy warrior bound to a sacred oath.</set>
+			<set name="hd">d10</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_2024PHB_MULTICLASS_2024_PALADIN" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_2024PHB_MULTICLASS_2024_PALADIN" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" requirements="!ID_2024PHB_MULTICLASS_2024_PALADIN" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_2024PHB_MULTICLASS_2024_PALADIN" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_2024PHB_MULTICLASS_2024_PALADIN" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_2024PHB_MULTICLASS_2024_PALADIN" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_2024PHB_MULTICLASS_2024_PALADIN" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_2024PHB_MULTICLASS_2024_PALADIN" />
+			<select type="Proficiency" name="Skill Proficiency (Paladin)" supports="Skill,Paladin" number="2" requirements="!ID_2024PHB_MULTICLASS_2024_PALADIN" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_LAY_ON_HANDS" level="1" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_SPELLCASTING" level="1" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_WEAPON_MASTERY" level="1" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_FIGHTING_STYLE" level="2" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_PALADINS_SMITE" level="2" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_CHANNEL_DIVINITY" level="3" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_PALADIN_SUBCLASS" level="3" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_ASI" level="4" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_EXTRA_ATTACK" level="5" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_FAITHFULL_STEED" level="5" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_AURA_OF_PROTECTION" level="6" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_ABJURE_FOES" level="9" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_AURA_OF_COURAGE" level="10" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_RADIANT_STRIKES" level="11" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_RESTORING_TOUCH" level="14" />
+		</rules>
+		<multiclass id="ID_2024PHB_MULTICLASS_2024_PALADIN">
+			<prerequisite>Strength 13 and Charisma 13</prerequisite>
+			<requirements>([str:13],[cha:13])</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Light armor, medium armor, shields, simple weapons, martial weapons</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			</rules>
+		</multiclass>
+	</element>
+	<element name="Lay on Hands" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_LAY_ON_HANDS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_LAY_ON_HANDS</requirements>
+		<description>
+			<p>Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you take a Long Rest. With that pool, you can restore a total number of Hit Points equal to five times your Paladin level.</p>
+			<p class="indent">As a Bonus Action, you can touch a creature (which could be yourself) and draw power from the pool of healing to restore a number of Hit Points to that creature, up to the maximum amount remaining in the pool.</p>
+			<p class="indent">You can also expend 5 Hit Points from the pool of healing power to remove the Poisoned condition from the creature; those points don't also restore Hit Points to the creature.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{lay on hands:hp pool}}/Long Rest">
+			<description>You can touch a creature and draw power from the pool to restore a number of hp to that creature, up to the maximum amount remaining in your pool. 
+			You can expend 5 hp from your pool of healing to cure the target of one disease or neutralize one poison affecting it.
+			This feature has no effect on undead and constructs.</description>
+		</sheet>
+		<rules>
+			<stat name="lay on hands:hp pool" value="level:2024 paladin" />
+			<stat name="lay on hands:hp pool" value="level:2024 paladin" />
+			<stat name="lay on hands:hp pool" value="level:2024 paladin" />
+			<stat name="lay on hands:hp pool" value="level:2024 paladin" />
+			<stat name="lay on hands:hp pool" value="level:2024 paladin" />
+		</rules>
+	</element>
+	<element name="Spellcasting" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_SPELLCASTING">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_SPELLCASTING</requirements>
+		<description>
+			<p>By 2nd level, You have learned to cast spells through prayer, meditation, and devotion. See the Player's Handbook for the rules on spellcasting. The information below details how you use those rules with Paladin spells.</p>
+			<h5>PREPARING AND CASTING SPELLS</h5>
+			<p>The Paladin Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest.</p>
+			<p class="indent">You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose two level 1 Paladin spells. Heroism and Searing Smite are recommended.</p>
+			<p class="indent">The number of spells on your list increases as you gain Paladin levels, as shown in the Prepared Spells column of the Paladin Features table. Whenever that number increases, choose additional Paladin spells until the number of spells on your list matches the number in the Paladin Features table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 5 Paladin, your list of prepared spells can include six Paladin spells of level 1 or 2 in any combination.</p>
+			<p class="indent">If another Paladin feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Paladin spells for you.</p>
+			<h5>CHANGING YOUR PREPARED SPELLS</h5>
+			<p>Whenever you finish a Long Rest, you can replace one spell on your list with another Paladin spell for which you have spell slots.</p>
+			<h5>SPELLCASTING ABILITY</h5>
+			<p>Charisma is your spellcasting ability for your paladin spells, since their power derives from the strength of your convictions. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a paladin spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Charisma modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Charisma modifier</p>
+			</center>
+			<h5>SPELLCASTING FOCUS</h5>
+			<p>You can use a Holy Symbol as a Spellcasting Focus for your Paladin spells.</p>
+		</description>
+		<sheet display="false">
+			<description>You have learned to cast spells through prayer, meditation, and devotion.</description>
+		</sheet>
+		<spellcasting name="Paladin" ability="Charisma" prepare="true">
+			<list known="true">Paladin</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_HALF" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+			<stat name="paladin:spellcasting:slots:1" value="2" level="1" />
+			<stat name="paladin:spellcasting:slots:1" value="1" level="3" />
+			<stat name="paladin:spellcasting:slots:1" value="1" level="5" />
+			<stat name="paladin:spellcasting:slots:2" value="2" level="5" />
+			<stat name="paladin:spellcasting:slots:2" value="1" level="7" />
+			<stat name="paladin:spellcasting:slots:3" value="2" level="9" />
+			<stat name="paladin:spellcasting:slots:3" value="1" level="11" />
+			<stat name="paladin:spellcasting:slots:4" value="1" level="13" />
+			<stat name="paladin:spellcasting:slots:4" value="1" level="15" />
+			<stat name="paladin:spellcasting:slots:4" value="1" level="17" />
+			<stat name="paladin:spellcasting:slots:5" value="1" level="17" />
+			<stat name="paladin:spellcasting:slots:5" value="1" level="19" />
+			<stat name="paladin:spellcasting:prepare" value="2" level="1" />
+			<stat name="paladin:spellcasting:prepare" value="1" level="2" />
+			<stat name="paladin:spellcasting:prepare" value="1" level="3" />
+			<stat name="paladin:spellcasting:prepare" value="1" level="4" />
+			<stat name="paladin:spellcasting:prepare" value="1" level="5" />
+			<stat name="paladin:spellcasting:prepare" value="1" level="7" />
+			<stat name="paladin:spellcasting:prepare" value="1" level="9" />
+			<stat name="paladin:spellcasting:prepare" value="2" level="11" />
+			<stat name="paladin:spellcasting:prepare" value="1" level="13" />
+			<stat name="paladin:spellcasting:prepare" value="1" level="15" />
+			<stat name="paladin:spellcasting:prepare" value="2" level="17" />
+			<stat name="paladin:spellcasting:prepare" value="1" level="19" />
+		</rules>
+	</element>
+	<element name="Weapon Mastery" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_WEAPON_MASTERY">
+		<description>
+			<p>Your training with weapons allows you to use the mastery properties of two kinds of weapons of your choice with which you have proficiency, such as Longswords and Javelins.</p>
+			<p>Whenever you finish a Long Rest, you can change the kinds of weapons you chose. For example, you could switch to using the mastery properties of Halberds and Flails.</p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Weapon Mastery" supports="Weapon Mastery" number="2" level="1"/>
+		</rules>
+	</element>
+	<element name="Fighting Style" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_FIGHTING_STYLE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_FIGHTING_STYLE</requirements>
+		<description>
+			<p>At 2nd level, you adopt a style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again.</p>
+			<h5 class="caption">DEFENSE</h5>
+			<p>While you are wearing armor, you gain a +1 bonus to AC.</p>
+			<h5 class="caption">DUELING</h5>
+			<p>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
+			<h5 class="caption">GREAT WEAPON FIGHTING</h5>
+			<p>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</p>
+			<h5 class="caption">PROTECTION</h5>
+			<p>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.</p>
+		</description>
+		<rules>
+			<select type="Class Feature" name="Fighting Style" supports="Fighting Style,Paladin" />
+		</rules>
+	</element>
+	<element name="Blessed Warrior" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_FIGHTINGSTYLE_BLESSED_WARRIOR">
+		<supports>Fighting Style, Paladin</supports>
+		<description>
+			<p>You learn two Cleric cantrips of your choice. Guidance and Sacred Flame are recommended. The chosen cantrips count as Paladin spells for you, and Charisma is your spellcasting ability for them. Whenever you gain a Paladin level, you can replace one of these cantrips with another Cleric cantrip.</p>
+		</description>
+		<sheet>
+			<description>You know 2 Cleric cantrips.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Cantrip (Cleric)" supports="Cleric, 0" level="1" number="2" spellcasting="paladin" />
+		</rules>
+	</element>
+	<element name="Paladin's Smite" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_PALADINS_SMITE">
+		<requirements>!ID_KBP_DMBD_CLASS_FEATURE_ANTIPALADIN_UNHOLY_SMITE, !ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_DIVINE_SMITE</requirements>
+		<description>
+			<p>Starting at 2nd level, You always have the Divine Smite spell prepared. In addition, you can cast it without expending a spell slot, but you must finish a Long Rest before you can cast it in this way again.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You always have the Divine Smite spell prepared and you can cast it without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DIVINE_SMITE" level="2" spellcasting="Paladin" prepared="true" />
+		</rules>
+
+	</element>
+	<element name="Channel Divinity" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_CHANNEL_DIVINITY">
+		<description>
+			<p>At level 3, You can channel divine energy directly from the Outer Planes, using it to fuel magical effects. You start with one such effect: Divine Sense, which is described below. Other Paladin features give additional Channel Divinity effect options. Each time you use this class's Channel Divinity, you choose which effect from this class to create.</p>
+			<p class="indent">You can use this class's Channel Divinity twice. You regain one of its expended uses when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest. You gain an additional use when you reach Paladin level 11.</p>
+			<p class="indent">If a Channel Divinity effect requires a saving throw, the DC equals the spell save DC from this class's Spellcasting feature.</p>
+		</description>
+		<sheet usage="{{channel divinity:count}}/Long Rest">
+		</sheet>
+		<rules>
+			<grant Type="Class Feature" ID="ID_2024PHB_CLASS_FEATURE_PALADIN_CHANNEL_DIVINITY_DIVINE_SENSE" />
+			<stat name="channel divinity:count" value="2" level="3" />
+			<stat name="channel divinity:count" value="1" level="11" />
+		</rules>
+	</element>
+	<element name="Divine Sense" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_CHANNEL_DIVINITY">
+		<description>
+			<p>As a Bonus Action, you can open your awareness to detect Celestials, Fiends, and Undead. For the next 10 minutes or until you have the Incapacitated condition, you know the location of any creature of those types within 60 feet of yourself, and you know its creature type. Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the Hallow spell.</p>
+		</description>
+		<sheet usage="Channel Divinity" action="Bonus Action">
+			<description>You can open your awareness to detect Celestials, Fiends, and Undead. For the next 10 minutes or until you have the Incapacitated condition, you know the location of any creature of those types within 60 feet of yourself, and you know its creature type. Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the <i>Hallow</i> spell.</description>
+		</sheet>
+	</element>
+	<element name="Paladin's Subclass" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_PALADIN_SUBCLASS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_SACRED_OATH</requirements>
+		<description>
+			<p>When you reach 3rd level, you swear the oath that binds you as a paladin forever. Up to this time you have been in a preparatory stage, committed to the path but not yet sworn to it. Now you choose the Oath of Devotion, the Oath of the Ancients, or the Oath of Vengeance, all detailed at the end of the class description.</p>
+			<p class="indent">Your choice grants you features at 3rd level and again at 7th, 15th, and 20th level. Those features include oath spells and the Channel Divinity feature.</p>
+			<h5 class="caption">OATH SPELLS</h5>
+			<p>Each oath has a list of associated spells. You gain access to these spells at the levels specified in the oath description. Once you gain access to an oath spell, you always have it prepared. Oath spells don't count against the number of spells you can prepare each day.</p>
+			<p class="indent">If you gain an oath spell that doesn't appear on the paladin spell list, the spell is nonetheless a paladin spell for you.</p>
+			<h5 class="caption">CHANNEL DIVINITY</h5>
+			<p>Your oath allows you to channel divine energy to fuel magical effects. Each Channel Divinity option provided by your oath explains how to use it.</p>
+			<p class="indent">When you use your Channel Divinity, you choose which option to use. You must then finish a short or long rest to use your Channel Divinity again.</p>
+			<p class="indent">Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your paladin spell save DC.</p>
+		</description>
+		<sheet display="false">
+			<description>Your oath allows you to channel divine energy to fuel magical effects.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype" name="Paladin Subclass" supports="Sacred Oath" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_ASI">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_ABILITY_SCORE_IMPROVEMENT</requirements>
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Paladin 4)" supports="Improvement Option,Paladin,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Paladin 8)" supports="Improvement Option,Paladin,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Paladin 12)" supports="Improvement Option,Paladin,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Paladin 16)" supports="Improvement Option,Paladin,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Paladin 19)" supports="Improvement Option,Paladin,19" level="19" />
+		</rules>
+	</element>
+	<element name="Extra Attack" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_EXTRA_ATTACK">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_EXTRA_ATTACK</requirements>
+		<description>
+			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+		</rules>
+	</element>
+	<element name="Faithfull Steed" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_FAITHFULL_STEED">
+		<description>
+			<p>You can call on the aid of an otherworldly steed. You always have the Find Steed spell prepared.</p>
+			<p>You can also cast the spell once without expending a spell slot, and you regain the ability to do so when you finish a Long Rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>As an Action you can cast the Find Steed spell without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FIND_STEED" level="1" spellcasting="Paladin" prepared="true" />
+		</rules>
+	</element>
+	<element name="Aura of Protection" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_AURA_OF_PROTECTION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_AURA_OF_PROTECTION</requirements>
+		<description>
+			<p>Starting at 6th level, You radiate a protective, unseeable aura in a 10-foot Emanation that originates from you. The aura is inactive while you have the Incapacitated condition.</p>
+			<p>You and your allies in the aura gain a bonus to saving throws equal to your Charisma modifier (minimum bonus of +1).</p>
+			<p>If another Paladin is present, a creature can benefit from only one Aura of Protection at a time; the creature chooses which aura while in them.</p>
+			<p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
+		</description>
+		<sheet>
+			<description>Whenever you or a friendly creature within {{aura of protection:range}} feet of you must make a saving throw, the creature gains a +{{aura of protection:save bonus}} bonus to the saving throw. You must be conscious to grant this bonus.</description>
+		</sheet>
+		<rules>
+			<stat name="aura of protection:range" value="10" bonus="base" />
+			<stat name="aura of protection:range" value="30" level="18" bonus="base" />
+			<stat name="aura of protection:save bonus" value="1" bonus="base"/>
+			<stat name="aura of protection:save bonus" value="charisma:modifier" bonus="base"/>
+		</rules>
+	</element>
+	<element name="Abjure Foes" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_ABJURE_FOES">
+		<description>
+			<p>As a Magic action, you can expend one use of this class's Channel Divinity to overwhelm foes with awe. As you present your Holy Symbol or weapon, you can target a number of creatures equal to your Charisma modifier (minimum of one creature) that you can see within 60 feet of yourself.</p>
+			<p>Each target must succeed on a Wisdom saving throw or have the Frightened condition for 1 minute or until it takes any damage. While Frightened in this way, a target can do only one of the following on its turns: move, take an action, or take a Bonus Action.</p>
+		</description>
+		<sheet action="Action" usage="Channel Divinity">
+			<description>As you present your Holy Symbol or weapon, you can target {{charisma:modifier}} creatures that you can see within 60 feet of yourself. Each target must succeed on a Wisdom saving throw or have the Frightened condition for 1 minute or until it takes any damage. While Frightened in this way, a target can do only one of the following on its turns: move, take an action, or take a Bonus Action.</description>
+		</sheet>
+		<rules>
+		</rules>
+	</element>
+	<element name="Aura of Courage" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_AURA_OF_COURAGE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_AURA_OF_COURAGE</requirements>
+		<description>
+			<p>Starting at 10th level, you and friendly creatures within 10 feet of you can't be frightened while you are conscious.</p>
+			<p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
+		</description>
+		<sheet>
+			<description>You and friendly creatures within {{aura of courage:range}} feet of you can't be frightened while you are conscious.</description>
+		</sheet>
+		<rules>
+			<stat name="aura of courage:range" value="10" bonus="base" />
+			<stat name="aura of courage:range" value="30" level="18" bonus="base" />
+		</rules>
+	</element>
+	<element name="Radiant Strikes" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_RADIANT_STRIKES">
+		<requirements>!ID_KBP_DMBD_CLASS_FEATURE_ANTIPALADIN_IMPROVED_UNHOLY_SMITE, !ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_IMPROVED_DIVINE_SMITE</requirements>
+		<description>
+			<p>At 11th level, Your strikes now carry supernatural power. When you hit a target with an attack roll using a Melee weapon or an Unarmed Strike, the target takes an extra 1d8 Radiant damage.</p>
+		</description>
+		<sheet>
+			<description>Whenever you hit a creature with a melee weapon or unarmed attack, the creature takes an extra 1d8 radiant damage.</description>
+		</sheet>
+	</element>
+	<element name="Restoring Touch" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_RESTORING_TOUCH">
+		<description>
+			<p>Beginning at 14th level, When you use Lay On Hands on a creature, you can also remove one or more of the following conditions from the creature: Blinded, Charmed, Deafened, Frightened, Paralyzed, or Stunned. You must expend 5 Hit Points from the healing pool of Lay On Hands for each of these conditions you remove; those points don't also restore Hit Points to the creature.</p>
+		</description>
+		<sheet>
+			<description>When you use Lay On Hands on a creature, you can also remove one or more of the following conditions from the creature: Blinded, Charmed, Deafened, Frightened, Paralyzed, or Stunned. You must expend 5 Hit Points from the healing pool of Lay On Hands for each of these conditions you remove; those points don't also restore Hit Points to the creature.</description>
+		</sheet>
+	</element>
+
+	<!--Spells-->
+	<element name="Divine Smite" type="Spell" source="2024 Player's Handbook" id="ID_PHB_SPELL_DIVINE_SMITE">
+		<supports>Paladin</supports>
+		<description>
+			<p>The target takes an extra 2d8 Radiant damage from the attack. The damage increases by 1d8 if the target is a Fiend or an Undead.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> The damage increases by 1d8 for each spell slot level above 1.</p>
+		</description>
+		<setters>
+			<set name="keywords">radiant</set>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">Bonus Action, which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+
+	<!--Feature Replacement Grants-->
+	<element name="Divine Sense Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_DIVINE_SENSE" />
+	<element name="Lay on Hands Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_LAY_ON_HANDS" />
+	<element name="Fighting Style Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_FIGHTING_STYLE" />
+	<element name="Spellcasting Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_SPELLCASTING" />
+	<element name="Divine Smite Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_DIVINE_SMITE" />
+	<element name="Divine Health Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_DIVINE_HEALTH" />
+	<element name="Sacred Oath Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_SACRED_OATH" />
+	<element name="Ability Score Improvement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_ABILITY_SCORE_IMPROVEMENT" />
+	<element name="Extra Attack Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_EXTRA_ATTACK" />
+	<element name="Aura of Protection Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_AURA_OF_PROTECTION" />
+	<element name="Aura of Courage Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_AURA_OF_COURAGE" />
+	<element name="Improved Divine Smite Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_IMPROVED_DIVINE_SMITE" />
+	<element name="Cleansing Touch Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_CLEANSING_TOUCH" />
+</elements>

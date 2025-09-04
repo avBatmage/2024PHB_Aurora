@@ -1,0 +1,1246 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>2024 Feats</name>
+		<description>Feats from the 2024 Player's Handbook.</description>
+		<author url="https://www.dndbeyond.com/">Wizards of the Coast</author>
+		<update version="0.0.1">
+			<file name="2024-feats.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/2024-feats.xml" />
+		</update>
+	</info>
+
+	<!-- General Feats -->
+	<element name="2024 Ability Score Improvement" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_ABILITY_SCORE_IMPROVEMENT">
+		<prerequisite>level 4</prerequisite>
+		<requirements>[level:4]</requirements>
+		<description>
+			<ul>
+				<li>Increase one ability score of your choice by 2, or increase two ability scores of your choice by 1.</li>
+				<li>This feat can't increase an ability score above 20.</li>
+				<li><strong>Repeatable</strong>. You can take this feat more than once.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Increase one ability score of your choice by 2, or increase two ability scores of your choice by 1. This feat can't increase an ability score above 20. Repeatable.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="General Feat" />
+		</rules>
+	</element>
+	<element name="2024 Actor" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_ACTOR">
+		<prerequisite>level 4, charisma 13</prerequisite>
+		<requirements>[level:4,charisma:13]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Charisma score by 1, to a maximum of 20.</li>
+				<li><strong>Impersonation</strong>. While you're disguised as a real or fictional person, you have Advantage on Charisma (Deception or Performance) checks to convince others that you are that person.</li>
+				<li><strong>Mimicry</strong>. You can mimic the sounds of other creatures, including speech. A creature that hears the mimicry must succeed on a Wisdom (Insight) check to determine the effect is faked (DC 8 plus your Charisma modifier and Proficiency Bonus).</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Impersonation: Advantage on Charisma (Deception or Performance) checks while disguised. Mimicry: Can mimic sounds and speech.</description>
+		</sheet>
+		<rules>
+			<stat name="charisma" value="1" alt="Ability Score Increase" />
+		</rules>
+	</element>
+	<element name="2024 Alert" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_ALERT">
+		<prerequisite>origin</prerequisite>
+		<requirements>[]</requirements>
+		<description>
+			<ul>
+				<li><strong>Initiative Proficiency</strong>. When you roll Initiative, you can add your Proficiency Bonus to the roll.</li>
+				<li><strong>Initiative Swap</strong>. Immediately after you roll Initiative, you can swap your Initiative with the Initiative of one willing ally in the same combat. You can't make this swap if you or the ally has the Incapacitated condition.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Initiative Proficiency: Add Proficiency Bonus to Initiative rolls. Initiative Swap: Can swap Initiative with willing ally after rolling.</description>
+		</sheet>
+        <rules>
+			<stat name="initiative" value="proficiency" />
+		</rules>
+	</element>
+	<element name="2024 Archery" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_ARCHERY">
+		<prerequisite>fighting style feature</prerequisite>
+		<requirements>[fighting style]</requirements>
+		<description>
+			<ul>
+				<li>You gain a +2 bonus to attack rolls you make with Ranged weapons.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>+2 bonus to attack rolls with Ranged weapons.</description>
+		</sheet>
+		<rules>
+			<stat name="ranged:attack" value="2" />
+		</rules>
+	</element>
+	<element name="2024 Athlete" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_ATHLETE">
+		<prerequisite>level 4, strength or dexterity 13</prerequisite>
+		<requirements>[level:4,str:13|dex:13]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Strength or Dexterity score by 1, to a maximum of 20.</li>
+				<li><strong>Climb Speed</strong>. You gain a Climb Speed equal to your Speed.</li>
+				<li><strong>Hop Up</strong>. When you have the Prone condition, you can right yourself with only 5 feet of movement.</li>
+				<li><strong>Jumping</strong>. You can make a running Long or High Jump after moving only 5 feet.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Climb Speed equal to Speed. Hop Up: Right yourself from Prone with 5 feet movement. Jumping: Running jumps after 5 feet movement.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="General Feat" />
+		</rules>
+	</element>
+	<element name="2024 Blind Fighting" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_BLIND_FIGHTING">
+		<prerequisite>fighting style feature</prerequisite>
+		<requirements>[fighting style]</requirements>
+		<description>
+			<ul>
+				<li>You have Blindsight with a range of 10 feet.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Blindsight with a range of 10 feet.</description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_BLINDSIGHT" />
+			<stat name="blindsight:range" value="10" bonus="base" />
+		</rules>
+	</element>
+	<element name="2024 Boon of Combat Prowess" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_BOON_OF_COMBAT_PROWESS">
+		<prerequisite>level 19</prerequisite>
+		<requirements>[level:19]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase one ability score of your choice by 1, to a maximum of 30.</li>
+				<li><strong>Peerless Aim</strong>. When you miss with an attack roll, you can hit instead. Once you use this benefit, you can't use it again until the start of your next turn.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Peerless Aim: When you miss with an attack roll, you can hit instead. Once per turn.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="Epic Boon" />
+		</rules>
+	</element>
+	<element name="2024 Boon of Dimensional Travel" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_BOON_OF_DIMENSIONAL_TRAVEL">
+		<prerequisite>level 19</prerequisite>
+		<requirements>[level:19]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase one ability score of your choice by 1, to a maximum of 30.</li>
+				<li><strong>Blink Steps</strong>. Immediately after you take the Attack action or the Magic action, you can teleport up to 30 feet to an unoccupied space you can see.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Blink Steps: After Attack or Magic action, teleport up to 30 feet to unoccupied space you can see.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="Epic Boon" />
+		</rules>
+	</element>
+	<element name="2024 Boon of Energy Resistance" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_BOON_OF_ENERGY_RESISTANCE">
+		<prerequisite>level 19</prerequisite>
+		<requirements>[level:19]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase one ability score of your choice by 1, to a maximum of 30.</li>
+				<li><strong>Energy Resistance</strong>. You have Resistance to two of the following damage types of your choice: Acid, Cold, Fire, Lightning, Necrotic, Poison, Psychic, Radiant, or Thunder. Whenever you finish a Long Rest, you can change your choices.</li>
+				<li><strong>Energy Redirection</strong>. When you take damage of one of the types chosen for the Energy Resistances benefit, you can take a Reaction to direct damage of the same type toward another creature you can see within 60 feet of yourself that isn't behind Total Cover. If you do so, that creature must succeed on a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus) or take damage equal to 2d12 plus your Constitution modifier.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You have Resistance to two of the following damage types of your choice: Acid, Cold, Fire, Lightning, Necrotic, Poison, Psychic, Radiant, or Thunder. Whenever you finish a Long Rest, you can change your choices. 
+			Energy Redirection: When you take damage of one of the types chosen for the Energy Resistances benefit, you can take a Reaction to direct damage of the same type toward another creature you can see within 60 feet of yourself that isn't behind Total Cover. If you do so, that creature must succeed on a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus) or take damage equal to 2d12 plus your Constitution modifier.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="Epic Boon" />
+		</rules>
+	</element>
+	<element name="2024 Boon of Fate" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_BOON_OF_FATE">
+		<prerequisite>level 19</prerequisite>
+		<requirements>[level:19]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase one ability score of your choice by 1, to a maximum of 30.</li>
+				<li><strong>Improve Fate</strong>. When you or another creature within 60 feet of you succeeds on or fails a D20 Test, you can roll 2d4 and apply the total rolled as a bonus or penalty to the d20 roll. Once you use this benefit, you can't use it again until you roll Initiative or finish a Short or Long Rest.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Improve Fate: Roll 2d4 to modify D20 Tests within 60 feet. Once per encounter or rest.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="Epic Boon" />
+		</rules>
+	</element>
+	<element name="2024 Boon of Fortitude" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_BOON_OF_FORTITUDE">
+		<prerequisite>level 19</prerequisite>
+		<requirements>[level:19]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase one ability score of your choice by 1, to a maximum of 30.</li>
+				<li><strong>Fortified Health</strong>. Your Hit Point maximum increases by 40. In addition, whenever you regain Hit Points, you can regain additional Hit Points equal to your Constitution modifier. Once you've regained these additional Hit Points, you can't do so again until the start of your next turn.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Whenever you regain Hit Points, you can regain additional Hit Points equal to your Constitution modifier. Once you've regained these additional Hit Points, you can't do so again until the start of your next turn.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="Epic Boon" />
+			<stat name="hp" value="40" />
+		</rules>
+	</element>
+	<element name="2024 Boon of Irresistible Offense" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_BOON_OF_IRRESISTIBLE_OFFENSE">
+		<prerequisite>level 19</prerequisite>
+		<requirements>[level:19]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Strength or Dexterity score by 1, to a maximum of 30.</li>
+				<li><strong>Overcome Defenses</strong>. The Bludgeoning, Piercing, and Slashing damage you deal always ignores Resistance.</li>
+				<li><strong>Overwhelming Strike</strong>. When you roll a 20 on the d20 for an attack roll, you can deal extra damage to the target equal to the ability score increased by this feat. The extra damage's type is the same as the attack's type.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Overcome Defenses: B/P/S damage ignores Resistance. Overwhelming Strike: Extra damage on crit equal to increased ability score.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="Epic Boon" />
+		</rules>
+	</element>
+	<element name="2024 Boon of Recovery" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_BOON_OF_RECOVERY">
+		<prerequisite>level 19</prerequisite>
+		<requirements>[level:19]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase one ability score of your choice by 1, to a maximum of 30.</li>
+				<li><strong>Last Stand</strong>. When you would be reduced to 0 Hit Points, You can drop to 1 Hit Point and regain a number of Hit Points equal to half your Hit Point maximum. Once you use this Benifit you can't use it again until you finish a Long Rest.</li>
+				<li><strong>Recover Vitality</strong>. You have a pool of ten d10s. As a Bonus Action you can expend dice from the pool, roll those dice, and regain a number of Hit Points equal to the roll's total. You regain all the expended dice when you finish a Long Rest.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Once per Long Rest, When you would be reduced to 0 Hit Points, You can drop to 1 Hit Point and regain {{hp:half}} Hit Points.
+			You have a pool of ten d10s. As a Bonus Action you can expend dice from the pool and heal yourself equal to the roll's total. You regain all the expended dice when you finish a Long Rest.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="Epic Boon" />
+		</rules>
+	</element>
+	<element name="2024 Boon of Skill" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_BOON_OF_SKILL">
+		<prerequisite>level 19</prerequisite>
+		<requirements>[level:19]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase one ability score of your choice by 1, to a maximum of 30.</li>
+				<li><strong>All-Around Adept.</strong>. You gain proficiency in all skills.</li>
+				<li><strong>Expertise</strong>. Choose one skill in which you lack Expertise. You gain Expertise in that skill.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You have gained proficiency in all skills and an Expertise.</description>
+		</sheet>
+		<rules>
+			<!-- Grant proficiency in all skills -->
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMAL_HANDLING" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<!-- Grant expertise in one skill of choice (in which you lack expertise) -->
+			<select type="Expertise" name="Expertise (Boon of Skill)" supports="ID_INTERNAL_SUPPORT_EXPERTISE" />
+		</rules>
+	</element>
+	<element name="2024 Boon of Speed" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_BOON_OF_SPEED">
+		<prerequisite>level 19</prerequisite>
+		<requirements>[level:19]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase one ability score of your choice by 1, to a maximum of 30.</li>
+				<li><strong>Escape Artist</strong>. As a Bonus Action, you can take the Disengage action, which also ends the Grappled condition on you.</p>
+				<li><strong>Quickness</strong>. Your Speed increases by 30 feet.</p>
+			</ul>
+		</description>
+		<sheet>
+			<description>Escape Artist: Bonus Action Disengage also ends Grappled. Quickness: Speed increases by 30 feet.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:misc" value="30" />
+			<stat name="innate speed:climb:misc" value="30" requirements="[innate speed:climb:1]" />
+			<stat name="innate speed:fly:misc" value="30" requirements="[innate speed:fly:1]" />
+			<stat name="innate speed:swim:misc" value="30" requirements="[innate speed:swim:1]" />
+			<stat name="innate speed:burrow:misc" value="30" requirements="[innate speed:burrow:1]" />
+		</rules>
+	</element>
+	<element name="2024 Boon of Spell Recall" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_BOON_OF_SPELL_RECALL">
+		<prerequisite>level 19, spellcasting feature</prerequisite>
+		<requirements>[level:19,spellcasting]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 30.</li>
+				<li><strong>Free Casting</strong>. Whenever you cast a spell with a level 1–4 spell slot, roll 1d4. If the number you roll is the same as the slot's level, the slot isn't expended.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Free Casting: Roll 1d4 when casting 1st-4th level spells. If roll matches slot level, slot isn't expended.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="Epic Boon" />
+		</rules>
+	</element>
+	<element name="2024 Boon of the Night Spirit" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_BOON_OF_THE_NIGHT_SPIRIT">
+		<prerequisite>level 19</prerequisite>
+		<requirements>[level:19]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase one ability score of your choice by 1, to a maximum of 30.</li>
+				<li><strong>Merge with Shadows</strong>. While within Dim Light or Darkness, you can give yourself the Invisible condition as a Bonus Action. The condition ends on you immediately after you take an action, a Bonus Action, or a Reaction.</li>
+				<li><strong>Shadowy Form</strong>. While within Dim Light or Darkness, you have Resistance to all damage except Psychic and Radiant.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Merge with Shadows: Bonus Action invisibility in dim light/darkness. Shadowy Form: Resistance to all damage except Psychic and Radiant in dim light/darkness.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="Epic Boon" />
+		</rules>
+	</element>
+	<element name="2024 Boon of Truesight" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_BOON_OF_TRUESIGHT">
+		<prerequisite>level 19</prerequisite>
+		<requirements>[level:19]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase one ability score of your choice by 1, to a maximum of 30.</li>
+				<li><strong>Truesight</strong>. You have Truesight with a range of 60 feet.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Truesight with a range of 60 feet.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="Epic Boon" />
+			<stat name="truesight:range" value="60" bonus="base" />
+		</rules>
+	</element>
+	<element name="2024 Charger" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_CHARGER">
+		<prerequisite>level 4, strength or dexterity 13</prerequisite>
+		<requirements>[level:4,str:13|dex:13]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Strength or Dexterity score by 1, to a maximum of 20.</li>
+				<li><strong>Improved Dash</strong>. When you take the Dash Action, your Speed increases by 10 feet for that action.</li>
+				<li><strong>Charge Attack</strong>. If you move at least 10 feet in a straight line toward a target immediately before hitting it with a melee attack roll as part of the Attack action, choose one of the following effects: gain a 1d8 bonus to the attack's damage roll, or push the target up to 10 feet away if it is no more than one size larger than you. You can use this benefit only once on each of your turns.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Improved Dash: +10 feet Speed when taking Dash action. Charge Attack: 1d8 bonus damage or push 10 feet after moving 10 feet toward target.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="General Feat" />
+		</rules>
+	</element>
+	<element name="2024 Chef" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_CHEF">
+		<prerequisite>level 4</prerequisite>
+		<requirements>[level:4]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Constitution or Wisdom score by 1, to a maximum of 20.</li>
+				<li><strong>Cook's Utensils</strong>. You gain proficiency with Cook's Utensils if you don't already have it.</li>
+				<li><strong>Replenishing Meal</strong>. As part of a Short Rest, you can cook special food if you have ingredients and Cook's Utensils on hand. You can prepare enough of this food for a number of creatures equal to 4 plus your Proficiency Bonus. At the end of the Short Rest, any creature who eats the food and spends one or more Hit Dice to regain Hit Points regains an extra 1d8 Hit Points.</li>
+				<li><strong>Bolstering Treats</strong>. With 1 hour of work or when you finish a Long Rest, you can cook a number of treats equal to your Proficiency Bonus if you have ingredients and Cook's Utensils on hand. These special treats last 8 hours after being made. A creature can use a Bonus Action to eat one of those treats to gain a number of Temporary Hit Points equal to your Proficiency Bonus.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Cook's Utensils proficiency. Replenishing Meal: Extra 1d8 HP during short rest. Bolstering Treats: Temp HP equal to Proficiency Bonus.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="General Feat" />
+		</rules>
+	</element>
+	<element name="2024 Crafter" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_CRAFTER">
+		<prerequisite>origin</prerequisite>
+		<requirements>[]</requirements>
+		<description>
+			<ul>
+				<li><strong>Tool Proficiency</strong>. You gain proficiency with three different Artisan's Tools of your choice from the Fast Crafting table.</li>
+				<li><strong>Discount</strong>. Whenever you buy a nonmagical item, you receive a 20 percent discount on it.</li>
+				<li><strong>Fast Crafting</strong>. When you finish a Long Rest, you can craft one piece of gear from the Fast Crafting table, provided you have the Artisan's Tools associated with that item and have proficiency with those tools. The item lasts until you finish another Long Rest, at which point the item falls apart.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Tool Proficiency: Three Artisan's Tools. Discount: 20% off nonmagical items. Fast Crafting: Craft temporary gear during long rest.</description>
+		</sheet>
+	</element>
+	<element name="2024 Crossbow Expert" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_CROSSBOW_EXPERT">
+		<prerequisite>level 4, dexterity 13</prerequisite>
+		<requirements>[level:4,dex:13]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Dexterity score by 1, to a maximum of 20.</li>
+				<li><strong>Ignore Loading</strong>. You ignore the Loading property of the Hand Crossbow, Heavy Crossbow, and Light Crossbow (all called crossbows elsewhere in this feat). If you're holding one of them, you can load a piece of ammunition into it even if you lack a free hand.</li>
+				<li><strong>Firing in Melee</strong>. Being within 5 feet of an enemy doesn't impose Disadvantage on your attack rolls with crossbows.</li>
+				<li><strong>Dual Wielding</strong>. When you make the extra attack of the Light property, you can add your ability modifier to the damage of the extra attack if that attack is with a crossbow that has the Light property and you aren't already adding that modifier to the damage.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Ignore Loading property of crossbows. Firing in Melee: No disadvantage at close range. Dual Wielding: Add ability modifier to Light crossbow off-hand attacks.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" alt="Ability Score Increase" />
+		</rules>
+	</element>
+	<element name="2024 Crusher" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_CRUSHER">
+		<prerequisite>level 4</prerequisite>
+		<requirements>[level:4]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Strength or Constitution score by 1, to a maximum of 20.</li>
+				<li><strong>Push</strong>. Once per turn, when you hit a creature with an attack that deals Bludgeoning damage, you can move it 5 feet to an unoccupied space if the target is no more than one size larger than you.</li>
+				<li><strong>Enhanced Critical</strong>. When you score a Critical Hit that deals Bludgeoning damage to a creature, attack rolls against that creature have Advantage until the start of your next turn.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Push: Move target 5 feet with bludgeoning attacks. Enhanced Critical: Advantage on attacks against target after bludgeoning crit.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="General Feat" />
+		</rules>
+	</element>
+	<element name="2024 Defense" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_DEFENSE">
+		<prerequisite>fighting style feature</prerequisite>
+		<requirements>[fighting style]</requirements>
+		<description>
+			<ul>
+				<li>While you're wearing Light, Medium, or Heavy armor, you gain a +1 bonus to Armor Class.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>+1 bonus to Armor Class while wearing armor.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:misc" value="1" bonus="fighting style" equipped="[armor:any]" alt="Defense (Fighting Style)" />
+		</rules>
+	</element>
+	<element name="2024 Defensive Duelist" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_DEFENSIVE_DUELIST">
+		<prerequisite>level 4, dexterity 13</prerequisite>
+		<requirements>[level:4,dex:13]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Dexterity score by 1, to a maximum of 20.</li>
+				<li><strong>Parry</strong>. If you're holding a Finesse weapon and another creature hits you with a melee attack, you can take a Reaction to add your Proficiency Bonus to your Armor Class, potentially causing the attack to miss you. You gain this bonus to your AC against melee attacks until the start of your next turn.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Parry: Reaction to add Proficiency Bonus to AC against melee attacks when holding Finesse weapon.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" alt="Ability Score Increase" />
+		</rules>
+	</element>
+	<element name="2024 Dual Wielder" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_DUAL_WIELDER">
+		<prerequisite>level 4, strength or dexterity 13</prerequisite>
+		<requirements>[level:4,str:13|dex:13]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Strength or Dexterity score by 1, to a maximum of 20.</li>
+				<li><strong>Enhanced Dual Wielding</strong>. When you take the Attack action on your turn and attack with a weapon that has the Light property, you can make one extra attack as a Bonus Action later on the same turn with a different weapon, which must be a Melee weapon that lacks the Two-Handed property. You don't add your ability modifier to the extra attack's damage unless that modifier is negative.</li>
+				<li><strong>Quick Draw</strong>. You can draw or stow two weapons that lack the Two-Handed property when you would normally be able to draw or stow only one.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Enhanced Dual Wielding: Bonus Action attack with Light melee weapon. Quick Draw: Draw/stow two weapons at once.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="General Feat" />
+		</rules>
+	</element>
+	<element name="2024 Dueling" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_DUELING">
+		<prerequisite>fighting style feature</prerequisite>
+		<requirements>[fighting style]</requirements>
+		<description>
+			<ul>
+				<li>When you're holding a Melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>+2 bonus to damage rolls when holding a melee weapon in one hand and no other weapons.</description>
+		</sheet>
+		<rules>
+		</rules>
+	</element>
+	<element name="2024 Durable" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_DURABLE">
+		<prerequisite>level 4</prerequisite>
+		<requirements>[level:4]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Constitution score by 1, to a maximum of 20.</li>
+				<li><strong>Defy Death</strong>. You have Advantage on Death Saving Throws.</li>
+				<li><strong>Speedy Recovery</strong>. As a Bonus Action, you can expend one of your Hit Point Dice, roll the die, and regain a number of Hit Points equal to the roll.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Defy Death: Advantage on Death Saving Throws. Speedy Recovery: Bonus Action to expend Hit Dice for healing.</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="1" alt="Ability Score Increase" />
+		</rules>
+	</element>
+	<element name="2024 Elemental Adept" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_ELEMENTAL_ADEPT">
+		<prerequisite>level 4, spellcasting or pact magic feature</prerequisite>
+		<requirements>[level:4,spellcasting|pact-magic]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</li>
+				<li><strong>Energy Mastery</strong>. Choose one of the following damage types: Acid, Cold, Fire, Lightning, or Thunder. Spells you cast ignore Resistance to damage of the chosen type. In addition, when you roll damage for a spell you cast that deals damage of that type, you can treat any 1 on a damage die as a 2.</li>
+				<li><strong>Repeatable</strong>. You can take this feat more than once, but you must choose a different damage type each time for Energy Mastery.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Energy Mastery: Choose damage type (Acid, Cold, Fire, Lightning, Thunder). Spells ignore resistance to chosen type and treat 1s as 2s on damage dice.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="General Feat" />
+		</rules>
+	</element>
+	<element name="2024 Fey-Touched" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_FEY_TOUCHED">
+		<prerequisite>level 4</prerequisite>
+		<requirements>[level:4]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</li>
+				<li><strong>Fey Magic</strong>. Choose one level 1 spell from the Divination or Enchantment school of magic. You always have that spell and the Misty Step spell prepared. You can cast each of these spells without expending a spell slot. Once you cast either spell in this way, you can't cast that spell in this way again until you finish a Long Rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Fey Magic: Choose one 1st-level Divination or Enchantment spell. Always have that spell and Misty Step prepared. Can cast each once per long rest without spell slot.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="General Feat" />
+		</rules>
+	</element>
+	<element name="2024 Grappler" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_GRAPPLER">
+		<prerequisite>level 4, strength or dexterity 13</prerequisite>
+		<requirements>[level:4,str:13|dex:13]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Strength or Dexterity score by 1, to a maximum of 20.</li>
+				<li><strong>Punch and Grab</strong>. When you hit a creature with an Unarmed Strike as part of the Attack action on your turn, you can use both the Damage and the Grapple option. You can use this benefit only once per turn.</li>
+				<li><strong>Attack Advantage</strong>. You have Advantage on attack rolls against a creature Grappled by you.</li>
+				<li><strong>Fast Wrestler</strong>. You don't have to spend extra movement to move a creature Grappled by you if the creature is your size or smaller.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Punch and Grab: Unarmed Strike can deal damage and grapple simultaneously. Attack Advantage: Advantage on attacks against grappled creatures. Fast Wrestler: No extra movement to move grappled creatures your size or smaller.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="General Feat" />
+		</rules>
+	</element>
+	<element name="2024 Great Weapon Fighting" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_GREAT_WEAPON_FIGHTING">
+		<prerequisite>fighting style feature</prerequisite>
+		<requirements>[fighting style]</requirements>
+		<description>
+			<ul>
+				<li>When you roll damage for an attack you make with a Melee weapon that you are holding with two hands, you can treat any 1 or 2 on a damage die as a 3. The weapon must have the Two-Handed or Versatile property to gain this benefit.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When rolling damage with two-handed melee weapons, treat 1s and 2s on damage dice as 3s.</description>
+		</sheet>
+	</element>
+	<element name="2024 Great Weapon Master" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_GREAT_WEAPON_MASTER">
+		<prerequisite>level 4, strength 13</prerequisite>
+		<requirements>[level:4,str:13]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Strength score by 1, to a maximum of 20.</li>
+				<li><strong>Heavy Weapon Mastery</strong>. When you hit a creature with a weapon that has the Heavy property as part of the Attack action on your turn, you can cause the weapon to deal extra damage to the target. The extra damage equals your Proficiency Bonus.</li>
+				<li><strong>Hew</strong>. Immediately after you score a Critical Hit with a Melee weapon or reduce a creature to 0 Hit Points with one, you can make one attack with the same weapon as a Bonus Action.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Heavy Weapon Mastery: Extra damage equal to Proficiency Bonus with Heavy weapons. Hew: Bonus Action attack after crit or reducing creature to 0 HP.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" alt="Ability Score Increase" />
+		</rules>
+	</element>
+	<element name="2024 Healer" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_HEALER">
+		<prerequisite>origin</prerequisite>
+		<requirements>[]</requirements>
+		<description>
+			<ul>
+				<li><strong>Battle Medic</strong>. If you have a Healer's Kit, you can expend one use of it and tend to a creature within 5 feet of yourself as a Utilize action. That creature can expend one of its Hit Point Dice, and you then roll that die. The creature regains a number of Hit Points equal to the roll plus your Proficiency Bonus.</li>
+				<li><strong>Healing Rerolls</strong>. Whenever you roll a die to determine the number of Hit Points you restore with a spell or with this feat's Battle Medic benefit, you can reroll the die if it rolls a 1, and you must use the new roll.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Battle Medic: Use Healer's Kit to restore HP equal to Hit Die roll plus Proficiency Bonus. Healing Rerolls: Reroll 1s on healing dice.</description>
+		</sheet>
+	</element>
+	<element name="2024 Heavily Armored" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_HEAVILY_ARMORED">
+		<prerequisite>level 4, medium armor training</prerequisite>
+		<requirements>[level:4,medium-armor]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Constitution or Strength score by 1, to a maximum of 20.</li>
+				<li><strong>Armor Training</strong>. You gain training with Heavy armor.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Armor Training: Gain training with Heavy armor.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="General Feat" />
+		</rules>
+	</element>
+	<element name="2024 Heavy Armor Master" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_HEAVY_ARMOR_MASTER">
+		<prerequisite>level 4, heavy armor training</prerequisite>
+		<requirements>[level:4,heavy-armor]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Constitution or Strength score by 1, to a maximum of 20.</li>
+				<li><strong>Damage Reduction</strong>. When you're hit by an attack while you're wearing Heavy armor, any Bludgeoning, Piercing, and Slashing damage dealt to you by that attack is reduced by an amount equal to your Proficiency Bonus.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Damage Reduction: Reduce B/P/S damage by Proficiency Bonus while wearing Heavy armor.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="General Feat" />
+		</rules>
+	</element>
+	<element name="2024 Inspiring Leader" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_INSPIRING_LEADER">
+		<prerequisite>level 4, wisdom or charisma 13</prerequisite>
+		<requirements>[level:4,wis:13|cha:13]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Wisdom or Charisma score by 1, to a maximum of 20.</li>
+				<li><strong>Bolstering Performance</strong>. When you finish a Short Rest or a Long Rest, you can give an inspiring performance: a speech, song, or dance. When you do so, choose up to six allies (which can include yourself) within 30 feet of yourself who witness the performance. The chosen creatures each gain Temporary Hit Points equal to your character level plus the modifier of the ability you increased with this feat.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Bolstering Performance: Give inspiring performance after rest to grant allies Temporary Hit Points equal to character level plus ability modifier.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="General Feat" />
+		</rules>
+	</element>
+	<element name="2024 Interception" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_INTERCEPTION">
+		<prerequisite>fighting style feature</prerequisite>
+		<requirements>[fighting style]</requirements>
+		<description>
+			<ul>
+				<li>When a creature you can see hits another creature within 5 feet of you with an attack roll, you can take a Reaction to reduce the damage dealt to the target by 1d10 plus your Proficiency Bonus. You must be holding a Shield or a Simple or Martial weapon to use this Reaction.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Reaction to reduce damage dealt to ally within 5 feet by 1d10 plus Proficiency Bonus. Must be holding Shield or weapon.</description>
+		</sheet>
+	</element>
+	<element name="2024 Keen Mind" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_KEEN_MIND">
+		<prerequisite>level 4, intelligence 13</prerequisite>
+		<requirements>[level:4,int:13]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Intelligence score by 1, to a maximum of 20.</li>
+				<li><strong>Lore Knowledge</strong>. Choose one of the following skills: Arcana, History, Investigation, Nature, or Religion. If you lack proficiency in the chosen skill, you gain proficiency in it, and if you already have proficiency in it, you gain Expertise in it.</li>
+				<li><strong>Quick Study</strong>. You can take the Study Action as a Bonus Action.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Lore Knowledge: Gain proficiency or Expertise in one knowledge skill. Quick Study: Study Action as Bonus Action.</description>
+		</sheet>
+		<rules>
+			<stat name="intelligence" value="1" alt="Ability Score Increase" />
+		</rules>
+	</element>
+	<element name="2024 Lightly Armored" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_LIGHTLY_ARMORED">
+		<prerequisite>level 4</prerequisite>
+		<requirements>[level:4]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Strength or Dexterity score by 1, to a maximum of 20.</li>
+				<li><strong>Armor Training</strong>. You gain training with Light armor and Shields.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Armor Training: Gain training with Light armor and Shields.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="General Feat" />
+		</rules>
+	</element>
+	<element name="2024 Lucky" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_LUCKY">
+		<prerequisite>origin</prerequisite>
+		<requirements>[]</requirements>
+		<description>
+			<ul>
+				<li><strong>Luck Points</strong>. You have a number of Luck Points equal to your Proficiency Bonus and can spend the points on the benefits below. You regain your expended Luck Points when you finish a Long Rest.</li>
+				<li><strong>Advantage</strong>. When you roll a d20 for a D20 Test, you can spend 1 Luck Point to give yourself Advantage on the roll.</li>
+				<li><strong>Disadvantage</strong>. When a creature rolls a d20 for an attack roll against you, you can spend 1 Luck Point to impose Disadvantage on that roll.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Luck Points: Number equal to Proficiency Bonus. Spend to gain Advantage on D20 Tests or impose Disadvantage on attacks against you. Regain on Long Rest.</description>
+		</sheet>
+	</element>
+	<element name="2024 Mage Slayer" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MAGE_SLAYER">
+		<prerequisite>level 4</prerequisite>
+		<requirements>[level:4]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Strength or Dexterity score by 1, to a maximum of 20.</li>
+				<li><strong>Concentration Breaker</strong>. When you damage a creature that is concentrating, it has Disadvantage on the saving throw it makes to maintain Concentration.</li>
+				<li><strong>Guarded Mind</strong>. If you fail an Intelligence, a Wisdom, or a Charisma saving throw, you can cause yourself to succeed instead. Once you use this benefit, you can't use it again until you finish a Short or Long Rest.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Concentration Breaker: Creatures you damage have Disadvantage on Concentration saves. Guarded Mind: Once per rest, succeed on failed Int/Wis/Cha save.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="General Feat" />
+		</rules>
+	</element>
+	<element name="2024 Magic Initiate" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MAGIC_INITIATE">
+		<prerequisite>origin</prerequisite>
+		<requirements>[]</requirements>
+		<description>
+			<ul>
+				<li><strong>Two Cantrips</strong>. You learn two cantrips of your choice from the Cleric, Druid, or Wizard spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat).</li>
+				<li><strong>Level 1 Spell</strong>. Choose a level 1 spell from the same list you selected for this feat's cantrips. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have.</li>
+				<li><strong>Spell Change</strong>. Whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list.</li>
+				<li><strong>Repeatable</strong>. You can take this feat more than once, but you must choose a different spell list each time.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Two Cantrips and one 1st-level spell from Cleric, Druid, or Wizard list. Can cast 1st-level spell once per long rest without spell slot. Repeatable with different spell list.</description>
+		</sheet>
+	</element>
+	<element name="2024 Martial Weapon Training" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MARTIAL_WEAPON_TRAINING">
+		<prerequisite>level 4</prerequisite>
+		<requirements>[level:4]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Strength or Dexterity score by 1, to a maximum of 20.</li>
+				<li><strong>Weapon Proficiency</strong>. You gain proficiency with Martial weapons.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Weapon Proficiency: Gain proficiency with Martial weapons.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="General Feat" />
+		</rules>
+	</element>
+	<element name="2024 Medium Armor Master" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MEDIUM_ARMOR_MASTER">
+		<prerequisite>level 4, medium armor training</prerequisite>
+		<requirements>[level:4,medium-armor]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Strength or Dexterity score by 1, to a maximum of 20.</li>
+				<li><strong>Dexterous Wearer</strong>. While you're wearing Medium armor, you can add 3, rather than 2, to your AC if you have a Dexterity score of 16 or higher.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Dexterous Wearer: Add 3 instead of 2 to AC from Dexterity while wearing Medium armor if Dex 16+.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="General Feat" />
+		</rules>
+	</element>
+	<element name="2024 Moderately Armored" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MODERATELY_ARMORED">
+		<prerequisite>level 4, light armor training</prerequisite>
+		<requirements>[level:4,light-armor]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Strength or Dexterity score by 1, to a maximum of 20.</li>
+				<li><strong>Armor Training</strong>. You gain training with Medium armor.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Armor Training: Gain training with Medium armor.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="General Feat" />
+		</rules>
+	</element>
+	<element name="2024 Mounted Combatant" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MOUNTED_COMBATANT">
+		<prerequisite>level 4</prerequisite>
+		<requirements>[level:4]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Strength, Dexterity, or Wisdom score by 1, to a maximum of 20.</li>
+				<li><strong>Mounted Strike</strong>. While mounted, you have Advantage on attack rolls against any unmounted creature within 5 feet of your mount that is at least one size smaller than the mount.</li>
+				<li><strong>Leap Aside</strong>. If your mount is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw and only half damage if it fails. For your mount to gain this benefit, you must be riding it, and neither of you can have the Incapacitated condition.</li>
+				<li><strong>Veer</strong>. While mounted, you can force an attack that hits your mount to hit you instead if you don't have the Incapacitated condition.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Mounted Strike: Advantage on attacks against smaller unmounted creatures. Leap Aside: Mount takes no damage on successful Dex save. Veer: Redirect attacks from mount to yourself.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="General Feat" />
+		</rules>
+	</element>
+	<element name="2024 Musician" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MUSICIAN">
+		<prerequisite>origin</prerequisite>
+		<requirements>[]</requirements>
+		<description>
+			<ul>
+				<li><strong>Instrument Training</strong>. You gain proficiency with three Musical Instruments of your choice.</li>
+				<li><strong>Encouraging Song</strong>. As you finish a Short or Long Rest, you can play a song on a Musical Instrument with which you have proficiency and give Heroic Inspiration to allies who hear the song. The number of allies you can affect in this way equals your Proficiency Bonus.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Instrument Training: Proficiency with three Musical Instruments. Encouraging Song: Give Heroic Inspiration to allies equal to Proficiency Bonus after rest.</description>
+		</sheet>
+	</element>
+	<element name="2024 Observant" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_OBSERVANT">
+		<prerequisite>level 4, intelligence or wisdom 13</prerequisite>
+		<requirements>[level:4,int:13|wis:13]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Intelligence or Wisdom score by 1, to a maximum of 20.</li>
+				<li><strong>Keen Observer</strong>. Choose one of the following skills: Insight, Investigation, or Perception. If you lack proficiency with the chosen skill, you gain proficiency in it, and if you already have proficiency in it, you gain Expertise in it.</li>
+				<li><strong>Quick Search</strong>. You can take the Search Action as a Bonus Action.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Keen Observer: Gain proficiency or Expertise in one observation skill. Quick Search: Search Action as Bonus Action.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="General Feat" />
+		</rules>
+	</element>
+	<element name="2024 Piercer" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_PIERCER">
+		<prerequisite>level 4</prerequisite>
+		<requirements>[level:4]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Strength or Dexterity by 1, to a maximum of 20.</li>
+				<li><strong>Puncture</strong>. Once per turn, when you hit a creature with an attack that deals Piercing damage, you can reroll one of the attack's damage dice, and you must use the new roll.</li>
+				<li><strong>Enhanced Critical</strong>. When you score a Critical Hit that deals Piercing damage to a creature, you can roll one additional damage die when determining the extra Piercing damage the target takes.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Puncture: Reroll one damage die with piercing attacks. Enhanced Critical: Roll additional damage die on piercing crits.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="General Feat" />
+		</rules>
+	</element>
+	<element name="2024 Poisoner" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_POISONER">
+		<prerequisite>level 4</prerequisite>
+		<requirements>[level:4]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Dexterity or Intelligence score by 1, to a maximum of 20.</li>
+				<li><strong>Potent Poison</strong>. When you make a damage roll that deals Poison damage, it ignores Resistance to Poison damage.</li>
+				<li><strong>Brew Poison</strong>. You gain proficiency with the Poisoner's Kit. With 1 hour of work using such a kit and expending 50 GP worth of materials, you can create a number of poison doses equal to your Proficiency Bonus. As a Bonus Action, you can apply a poison dose to a weapon or piece of ammunition. Once applied, the poison retains its potency for 1 minute or until you deal damage with the poisoned item, whichever is shorter. When a creature takes damage from the poisoned item, that creature must succeed on a Constitution saving throw (DC 8 plus the modifier of the ability increased by this feat and your Proficiency Bonus) or take 2d8 Poison damage and have the Poisoned condition until the end of your next turn.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Potent Poison: Poison damage ignores resistance. Brew Poison: Create poison doses, apply to weapons, deal 2d8 poison damage and Poisoned condition.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="General Feat" />
+		</rules>
+	</element>
+	<element name="2024 Polearm Master" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_POLEARM_MASTER">
+		<prerequisite>level 4, strength or dexterity 13</prerequisite>
+		<requirements>[level:4,str:13|dex:13]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Dexterity or Strength score by 1, to a maximum of 20.</li>
+				<li><strong>Pole Strike</strong>. Immediately after you take the Attack action and attack with a Quarterstaff, a Spear, or a weapon that has the Heavy and Reach properties, you can use a Bonus Action to make a melee attack with the opposite end of the weapon. The weapon deals Bludgeoning damage, and the weapon's damage die for this attack is a d4.</li>
+				<li><strong>Reactive Strike</strong>. While you're holding a Quarterstaff, a Spear, or a weapon that has the Heavy and Reach properties, you can take a Reaction to make one melee attack against a creature that enters the reach you have with that weapon.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Pole Strike: Bonus Action attack with opposite end of polearm (d4 bludgeoning). Reactive Strike: Reaction attack when creature enters reach.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="General Feat" />
+		</rules>
+	</element>
+	<element name="2024 Protection" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_PROTECTION">
+		<prerequisite>fighting style feature</prerequisite>
+		<requirements>[fighting style]</requirements>
+		<description>
+			<ul>
+				<li>When a creature you can see attacks a target other than you that is within 5 feet of you, you can take a Reaction to interpose your Shield if you're holding one. You impose Disadvantage on the triggering attack roll and all other attack rolls against the target until the start of your next turn if you remain within 5 feet of the target.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Reaction to impose Disadvantage on attack rolls against ally within 5 feet when holding Shield.</description>
+		</sheet>
+	</element>
+	<element name="2024 Resilient" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_RESILIENT">
+		<prerequisite>level 4</prerequisite>
+		<requirements>[level:4]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Choose one ability in which you lack saving throw proficiency. Increase the chosen ability score by 1, to a maximum of 20.</li>
+				<li><strong>Saving Throw Proficiency</strong>. You gain saving throw proficiency with the chosen ability.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Ability Score Increase: +1 to chosen ability. Saving Throw Proficiency: Gain saving throw proficiency with chosen ability.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="General Feat" />
+		</rules>
+	</element>
+	<element name="2024 Ritual Caster" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_RITUAL_CASTER">
+		<prerequisite>level 4, intelligence, wisdom, or charisma 13</prerequisite>
+		<requirements>[level:4,int:13|wis:13|cha:13]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.</li>
+				<li><strong>Ritual Spells</strong>. Choose a number of level 1 spells equal to your Proficiency Bonus that have the Ritual tag. You always have those spells prepared, and you can cast them with any spell slots you have. The spells' spellcasting ability is the ability increased by this feat. Whenever your Proficiency Bonus increases thereafter, you can add an additional level 1 spell with the Ritual tag to the spells always prepared with this feature.</li>
+				<li><strong>Quick Ritual</strong>. With this benefit, you can cast a Ritual spell that you have prepared using its regular casting time rather than the extended time for a Ritual. Doing so doesn't require a spell slot. Once you cast the spell in this way, you can't use this benefit again until you finish a Long Rest.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Ritual Spells: Always have ritual spells prepared equal to Proficiency Bonus. Quick Ritual: Cast ritual spell at normal speed once per long rest.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="General Feat" />
+		</rules>
+	</element>
+	<element name="2024 Savage Attacker" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_SAVAGE_ATTACKER">
+		<prerequisite>origin</prerequisite>
+		<requirements>[]</requirements>
+		<description>
+			<ul>
+				<li>You've trained to deal particularly damaging strikes. Once per turn when you hit a target with a weapon, you can roll the weapon's damage dice twice and use either roll against the target.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Once per turn, roll weapon damage dice twice and use either roll when hitting with a weapon.</description>
+		</sheet>
+	</element>
+	<element name="2024 Sentinel" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_SENTINEL">
+		<prerequisite>level 4, strength or dexterity 13</prerequisite>
+		<requirements>[level:4,str:13|dex:13]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Strength or Dexterity score by 1, to a maximum of 20.</li>
+				<li><strong>Guardian</strong>. Immediately after a creature within 5 feet of you takes the Disengage Action or hits a target other than you with an attack, you can make an Opportunity Attack against that creature.</li>
+				<li><strong>Halt</strong>. When you hit a creature with an Opportunity Attack, the creature's Speed becomes 0 for the rest of the current turn.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Guardian: Opportunity Attack when creature within 5 feet Disengages or attacks someone else. Halt: Opportunity Attacks reduce target's Speed to 0.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="General Feat" />
+		</rules>
+	</element>
+	<element name="2024 Shadow-Touched" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_SHADOW_TOUCHED">
+		<prerequisite>level 4</prerequisite>
+		<requirements>[level:4]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</li>
+				<li><strong>Shadow Magic</strong>. Choose one level 1 spell from the Illusion or Necromancy school of magic. You always have that spell and the Invisibility spell prepared. You can cast each of these spells without expending a spell slot. Once you cast either spell in this way, you can't cast that spell in this way again until you finish a Long Rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Shadow Magic: Choose one 1st-level Illusion or Necromancy spell. Always have that spell and Invisibility prepared. Can cast each once per long rest without spell slot.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="General Feat" />
+		</rules>
+	</element>
+	<element name="2024 Sharpshooter" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_SHARPSHOOTER">
+		<prerequisite>level 4, dexterity 13</prerequisite>
+		<requirements>[level:4,dex:13]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Dexterity score by 1, to a maximum of 20.</li>
+				<li><strong>Bypass Cover</strong>. Your ranged attacks with weapons ignore Half Cover and Three-Quarters Cover.</li>
+				<li><strong>Firing in Melee</strong>. Being within 5 feet of an enemy doesn't impose Disadvantage on your attack rolls with Ranged weapons.</li>
+				<li><strong>Long Shots</strong>. Attacking at long range doesn't impose Disadvantage on your attack rolls with Ranged weapons.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Bypass Cover: Ranged attacks ignore Half and Three-Quarters Cover. Firing in Melee: No disadvantage at close range. Long Shots: No disadvantage at long range.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" alt="Ability Score Increase" />
+		</rules>
+	</element>
+	<element name="2024 Shield Master" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_SHIELD_MASTER">
+		<prerequisite>level 4, shield training</prerequisite>
+		<requirements>[level:4,shield]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Strength score by 1, to a maximum of 20.</li>
+				<li><strong>Shield Bash</strong>. If you attack a creature within 5 feet of you as part of the Attack action and hit with a Melee weapon, you can immediately bash the target with your Shield if it's equipped, forcing the target to make a Strength saving throw (DC 8 plus your Strength modifier and Proficiency Bonus). On a failed save, you either push the target 5 feet from you or cause it to have the Prone condition (your choice). You can use this benefit only once on each of your turns.</li>
+				<li><strong>Interpose Shield</strong>. If you're subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can take a Reaction to take no damage if you succeed on the saving throw and are wielding a Shield.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Shield Bash: After hitting with melee weapon, bash with Shield to push 5 feet or knock Prone. Interpose Shield: Reaction to take no damage on successful Dex save while wielding Shield.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" alt="Ability Score Increase" />
+		</rules>
+	</element>
+	<element name="2024 Skill Expert" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_SKILL_EXPERT">
+		<prerequisite>level 4</prerequisite>
+		<requirements>[level:4]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase one ability score of your choice by 1, to a maximum of 20.</li>
+				<li><strong>Skill Proficiency</strong>. You gain proficiency in one skill of your choice.</li>
+				<li><strong>Expertise</strong>. Choose one skill in which you have proficiency but lack Expertise. You gain Expertise with that skill.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Skill Proficiency: Gain proficiency in one skill. Expertise: Gain Expertise in one skill you have proficiency in.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="General Feat" />
+		</rules>
+	</element>
+	<element name="2024 Skilled" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_SKILLED">
+		<prerequisite>origin</prerequisite>
+		<requirements>[]</requirements>
+		<description>
+			<ul>
+				<li>You gain proficiency in any combination of three skills or tools of your choice.</li>
+				<li><strong>Repeatable</strong>. You can take this feat more than once.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Gain proficiency in any combination of three skills or tools of your choice. Repeatable.</description>
+		</sheet>
+	</element>
+	<element name="2024 Skulker" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_SKULKER">
+		<prerequisite>level 4, dexterity 13</prerequisite>
+		<requirements>[level:4,dex:13]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Dexterity score by 1, to a maximum of 20.</li>
+				<li><strong>Blindsight</strong>. You have Blindsight with a range of 10 feet.</li>
+				<li><strong>Fog of War</strong>. You exploit the distractions of battle, gaining Advantage on any Dexterity (Stealth) check you make as part of the Hide action during combat.</li>
+				<li><strong>Sniper</strong>. If you make an attack roll while hidden and the roll misses, making the attack roll doesn't reveal your location.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Blindsight with 10 feet range. Fog of War: Advantage on Stealth checks during combat. Sniper: Missing attacks while hidden doesn't reveal location.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" alt="Ability Score Increase" />
+		</rules>
+	</element>
+	<element name="2024 Slasher" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_SLASHER">
+		<prerequisite>level 4</prerequisite>
+		<requirements>[level:4]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Strength or Dexterity score by 1, to a maximum of 20.</li>
+				<li><strong>Hamstring</strong>. Once per turn when you hit a creature with an attack that deals Slashing damage, you can reduce the Speed of that creature by 10 feet until the start of your next turn.</li>
+				<li><strong>Enhanced Critical</strong>. When you score a Critical Hit that deals Slashing damage to a creature, it has Disadvantage on attack rolls until the start of your next turn.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Hamstring: Reduce target's Speed by 10 feet with slashing attacks. Enhanced Critical: Target has Disadvantage on attacks after slashing crit.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="General Feat" />
+		</rules>
+	</element>
+	<element name="2024 Speedy" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_SPEEDY">
+		<prerequisite>level 4, dexterity or constitution 13</prerequisite>
+		<requirements>[level:4,dex:13|con:13]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Dexterity or Constitution score by 1, to a maximum of 20.</li>
+				<li><strong>Speed Increase</strong>. Your Speed increases by 10 feet.</li>
+				<li><strong>Dash Over Difficult Terrain</strong>. When you take the Dash action on your turn, Difficult Terrain doesn't cost you extra movement for the rest of that turn.</li>
+				<li><strong>Agile Movement</strong>. Opportunity Attacks have Disadvantage against you.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Speed Increase: +10 feet Speed. Dash Over Difficult Terrain: No extra movement cost for Difficult Terrain when Dashing. Agile Movement: Opportunity Attacks have Disadvantage against you.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="General Feat" />
+			
+		</rules>
+	</element>
+	<element name="2024 Spell Sniper" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_SPELL_SNIPER">
+		<prerequisite>level 4, spellcasting or pact magic feature</prerequisite>
+		<requirements>[level:4,spellcasting|pact-magic]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</li>
+				<li><strong>Bypass Cover</strong>. Your attack rolls for spells ignore Half Cover and Three-Quarters Cover.</li>
+				<li><strong>Casting in Melee</strong>. Being within 5 feet of an enemy doesn't impose Disadvantage on your attack rolls with spells.</li>
+				<li><strong>Increased Range</strong>. When you cast a spell that has a range of at least 10 feet and requires you to make an attack roll, you can increase the spell's range by 60 feet.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Bypass Cover: Spell attacks ignore Half and Three-Quarters Cover. Casting in Melee: No disadvantage at close range. Increased Range: +60 feet to spell range.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="General Feat" />
+		</rules>
+	</element>
+	<element name="2024 Tavern Brawler" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_TAVERN_BRAWLER">
+		<prerequisite>origin</prerequisite>
+		<requirements>[]</requirements>
+		<description>
+			<ul>
+				<li><strong>Enhanced Unarmed Strike</strong>. When you hit with your Unarmed Strike and deal damage, you can deal Bludgeoning damage equal to 1d4 plus your Strength modifier instead of the normal damage of an Unarmed Strike.</li>
+				<li><strong>Damage Rerolls</strong>. Whenever you roll a damage die for your Unarmed Strike, you can reroll the die if it rolls a 1, and you must use the new roll.</li>
+				<li><strong>Improvised Weaponry</strong>. You have proficiency with improvised weapons.</li>
+				<li><strong>Push</strong>. When you hit a creature with an Unarmed Strike as part of the Attack action on your turn, you can deal damage to the target and also push it 5 feet away from you. You can use this benefit only once per turn.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Enhanced Unarmed Strike: 1d4 + Str modifier damage. Damage Rerolls: Reroll 1s on unarmed damage. Improvised Weaponry: Proficiency with improvised weapons. Push: Push target 5 feet with unarmed strikes.</description>
+		</sheet>
+	</element>
+	<element name="2024 Telekinetic" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_TELEKINETIC">
+		<prerequisite>level 4</prerequisite>
+		<requirements>[level:4]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</li>
+				<li><strong>Minor Telekinesis</strong>. You learn the Mage Hand spell. You can cast it without Verbal or Somatic components, you can make the spectral hand Invisible, and its range and the distance it can be away from you both increase by 30 feet when you cast it. The spell's spellcasting ability is the ability increased by this feat.</li>
+				<li><strong>Telekinetic Shove</strong>. As a Bonus Action, you can telekinetically shove one creature you can see within 30 feet of yourself. When you do so, the target must succeed on a Strength saving throw (DC 8 plus the ability modifier of the score increased by this feat and your Proficiency Bonus) or be moved 5 feet toward or away from you.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Minor Telekinesis: Enhanced Mage Hand spell. Telekinetic Shove: Bonus Action to shove creature 5 feet toward or away from you.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="General Feat" />
+		</rules>
+	</element>
+	<element name="2024 Telepathic" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_TELEPATHIC">
+		<prerequisite>level 4</prerequisite>
+		<requirements>[level:4]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</li>
+				<li><strong>Telepathic Utterance</strong>. You can speak telepathically to any creature you can see within 60 feet of yourself. Your telepathic utterances are in a language you know, and the creature understands you only if it knows that language. Your communication doesn't give the creature the ability to respond to you telepathically.</li>
+				<li><strong>Detect Thoughts</strong>. You always have the Detect Thoughts spell prepared. You can cast it without a spell slot or spell components, and you must finish a Long Rest before you can cast it in this way again. You can also cast it using spell slots you have of the appropriate level. Your spellcasting ability for the spell is the ability increased by this feat.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Telepathic Utterance: Speak telepathically to creatures within 60 feet. Detect Thoughts: Always have Detect Thoughts prepared, can cast once per long rest without spell slot.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="General Feat" />
+		</rules>
+	</element>
+	<element name="2024 Thrown Weapon Fighting" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_THROWN_WEAPON_FIGHTING">
+		<prerequisite>fighting style feature</prerequisite>
+		<requirements>[fighting style]</requirements>
+		<description>
+			<ul>
+				<li>When you hit with a ranged attack roll using a weapon that has the Thrown property, you gain a +2 bonus to the damage roll.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>+2 bonus to damage rolls with thrown weapons.</description>
+		</sheet>
+		<rules>
+		</rules>
+	</element>
+	<element name="2024 Tough" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_TOUGH">
+		<prerequisite>origin</prerequisite>
+		<requirements>[]</requirements>
+		<description>
+			<ul>
+				<li>Your Hit Point maximum increases by an amount equal to twice your character level when you gain this feat. Whenever you gain a character level thereafter, your Hit Point maximum increases by an additional 2 Hit Points.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Hit Point maximum increases by twice your character level when you gain this feat, and by 2 Hit Points for each level thereafter.</description>
+		</sheet>
+		<rules>
+			<stat name="tough:hp" value="level" />
+			<stat name="tough:hp" value="level" />
+			<stat name="hp" value="tough:hp" />
+		</rules>
+	</element>
+	<element name="2024 Two-Weapon Fighting" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_TWO_WEAPON_FIGHTING">
+		<prerequisite>fighting style feature</prerequisite>
+		<requirements>[fighting style]</requirements>
+		<description>
+			<ul>
+				<li>When you make an extra attack as a result of using a weapon that has the Light property, you can add your ability modifier to the damage of that attack if you aren't already adding it to the damage.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Add your ability modifier to the damage of Light weapon off-hand attacks.</description>
+		</sheet>
+	</element>
+	<element name="2024 Unarmed Fighting" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_UNARMED_FIGHTING">
+		<prerequisite>fighting style feature</prerequisite>
+		<requirements>[fighting style]</requirements>
+		<description>
+			<ul>
+				<li>When you hit with your Unarmed Strike and deal damage, you can deal Bludgeoning damage equal to 1d6 plus your Strength modifier instead of the normal damage of an Unarmed Strike. If you aren't holding any weapons or a Shield when you make the attack roll, the d6 becomes a d8.</li>
+				<li>At the start of each of your turns, you can deal 1d4 Bludgeoning damage to one creature Grappled by you.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Unarmed Strike deals 1d6 + Str modifier damage (1d8 if not holding weapons or shield). Deal 1d4 bludgeoning damage to grappled creatures at start of turn.</description>
+		</sheet>
+	</element>
+	<element name="2024 War Caster" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_WAR_CASTER">
+		<prerequisite>level 4, spellcasting or pact magic feature</prerequisite>
+		<requirements>[level:4,spellcasting|pact-magic]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</li>
+				<li><strong>Concentration</strong>. You have Advantage on Constitution saving throws that you make to maintain your Concentration.</li>
+				<li><strong>Reactive Spell</strong>. When a creature provokes an Opportunity Attack from you by leaving your reach, you can take a Reaction to cast a spell at the creature, rather than making an Opportunity Attack. The spell must have a casting time of one action and must target only that creature.</li>
+				<li><strong>Somatic Components</strong>. You can perform the Somatic components of spells even when you have weapons or a Shield in one or both hands.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Concentration: Advantage on Constitution saves to maintain Concentration. Reactive Spell: Cast spell as Opportunity Attack. Somatic Components: Can perform somatic components with weapons or shield in hands.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="General Feat" />
+		</rules>
+	</element>
+	<element name="2024 Weapon Master" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_WEAPON_MASTER">
+		<prerequisite>level 4</prerequisite>
+		<requirements>[level:4]</requirements>
+		<description>
+			<ul>
+				<li><strong>Ability Score Increase</strong>. Increase your Strength or Dexterity score by 1, to a maximum of 20.</li>
+				<li><strong>Mastery Property</strong>. Your training with weapons allows you to use the mastery property of one kind of Simple or Martial weapon of your choice, provided you have proficiency with it. Whenever you finish a Long Rest, you can change the kind of weapon to another eligible kind.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Mastery Property: Use mastery property of one Simple or Martial weapon type. Can change weapon type after Long Rest.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="General Feat" />
+		</rules>
+	</element>
+</elements>

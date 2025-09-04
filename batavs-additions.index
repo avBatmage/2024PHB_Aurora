@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Batav's Additions</name>
+		<description>Homebrew additions for the Gamer Guys</description>
+		<author url="https://github.com/avBatmage/5e_Aurora">Batav</author>
+		<update version="0.0.3">
+			<file name="batavs-additions.index" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/batavs-additions.index" />
+		</update>
+	</info>
+	<files>	
+		<file name="source.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/source.xml" />
+		<!-- races -->
+		
+		<!-- classes -->
+		<file name="class-wizard-wisdom.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/class-wizard-wisdom.xml" />
+		<file name="2024-class-barbarian.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/2024-class-barbarian.xml" />
+		<file name="2024-class-druid.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/2024-class-druid.xml" />
+		<file name="2024-class-paladin.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/2024-class-paladin.xml" />
+		<file name="2024-class-ranger.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/2024-class-ranger.xml" />
+		<file name="2024-class-rogue.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/2024-class-rogue.xml" />
+		<file name="2024-class-wizard.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/2024-class-wizard.xml" />
+
+		<!-- backgrounds -->		
+
+		<!-- items -->
+		<file name="items.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/items.xml" />
+		<file name="weapons.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/Weapons.xml" />
+		
+		<!-- feats -->
+		<file name="2024-epic-boon-feats.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/2024-epic-boon-feats.xml" />
+		<file name="2024-fighting-style-feats.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/2024-fighting-style-feats.xml" />
+
+		<!-- misc -->
+		<file name="2024-weapon-masteries.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/2024-weapon-masteries.xml" />
+	</files>
+</index>

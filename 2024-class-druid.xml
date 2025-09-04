@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>2024 Druid</name>
+		<description>The Druid class from the 2024 Batav's Additions 2024.</description>
+		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
+		<update version="0.0.2">
+			<file name="2024-class-druid.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/2024-class-druid.xml" />
+		</update>
+	</info>
+
+	<element name="2024 Druid" type="Class" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_2024_DRUID">
+		<description>
+			<!-- <p class="flavor">A priest of the Old Faith, wielding the powers of nature— moonlight and plant growth, fire and lightning—and adopting animal forms.</p> -->
+			<p>Holding high a gnarled staff wreathed with holly, an elf summons the fury of the storm and calls down explosive bolts of lightning to smite the torch-carrying orcs who threaten her forest.</p>
+			<p class="indent">Crouching out of sight on a high tree branch in the form of a leopard, a human peers out of the jungle at the strange construction of a temple of Evil Elemental Air, keeping a close eye on the cultists' activities.</p>
+			<p class="indent">Swinging a blade formed of pure fire, a half-elf charges into a mass of skeletal soldiers, sundering the unnatural magic that gives the foul creatures the mocking semblance of life.</p>
+			<p class="indent">Whether calling on the elemental forces of nature or emulating the creatures of the animal world, druids are an embodiment of nature's resilience, cunning, and fury. They claim no mastery over nature. Instead, they see themselves as extensions of nature's indomitable will.</p>
+			<h4>POWER OF NATURE</h4>
+			<p>Druids revere nature above all, gaining their spells and other magical powers either from the force of nature itself or from a nature deity. Many druids pursue a mystic spirituality of transcendent union with nature rather than devotion to a divine entity, while others serve gods of wild nature, animals, or elemental forces. The ancient druidic traditions are sometimes called the Old Faith, in contrast to the worship of gods in temples and shrines.</p>
+			<p class="indent">Druid spells are oriented toward nature and animals— the power of tooth and claw, of sun and moon, of fire and storm. Druids also gain the ability to take on animal forms, and some druids make a particular study of this practice, even to the point where they prefer animal form to their natural form.</p>
+			<h4>PRESERVE THE BALANCE</h4>
+			<p>For druids, nature exists in a precarious balance. The four elements that make up a world—air, earth, fire, and water—must remain in equilibrium. If one element were to gain power over the others, the world could be destroyed, drawn into one of the elemental planes and broken apart into its component elements. Thus, druids oppose cults of Elemental Evil and others who promote one element to the exclusion of others.</p>
+			<p class="indent">Druids are also concerned with the delicate ecological balance that sustains plant and animal life, and the need for civilized folk to live in harmony with nature, not in opposition to it. Druids accept that which is cruel in nature, and they hate that which is unnatural, including aberrations (such as beholders and mind flayers) and undead (such as zombies and vampires). Druids sometimes lead raids against such creatures, especially when the monsters encroach on the druids' territory.</p>
+			<p class="indent">Druids are often found guarding sacred sites or watching over regions of unspoiled nature. But when a significant danger arises, threatening nature's balance or the lands they protect, druids take on a more active role in combating the threat, as adventurers.</p>
+			<h4>CREATING A DRUID</h4>
+			<p>When making a druid, consider why your character has such a close bond with nature. Perhaps your character lives in a society where the Old Faith still thrives, or was raised by a druid after being abandoned in the depths of a forest. Perhaps your character had a dramatic encounter with the spirits of nature, coming face to face with a giant eagle or dire wolf and surviving the experience. Maybe your character was born during an epic storm or a volcanic eruption, which was interpreted as a sign that becoming a druid was part of your character's destiny.</p>
+			<p class="indent">Have you always been an adventurer as part of your druidic calling, or did you first spend time as a caretaker of a sacred grove or spring? Perhaps your homeland was befouled by evil, and you took up an adventuring life in hopes of finding a new home or purpose.</p>
+			<h5>QUICK BUILD</h5>
+			<p>You can make a druid quickly by following these suggestions. First, Wisdom should be your highest ability score, followed by Constitution. Second, choose the hermit background.</p>
+			<h3>CLASS FEATURES</h3>
+			<p>As a druid, you gain the following class features.</p>
+			<h5>HIT POINTS</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d8 per druid level</li>
+				<li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per druid level after 1st</li>
+			</ul>
+			<h5>PROFICIENCIES</h5>
+			<ul class="unstyled mb">
+				<li><strong>Armor:</strong> Light armor, shields</li>
+				<li><strong>Weapons:</strong> Simple Weapons</li>
+				<li><strong>Tools:</strong> Herbalism kit</li>
+			</ul>
+			<ul class="unstyled">
+				<li><strong>Saving Throws:</strong> Intelligence, Wisdom</li>
+				<li><strong>Skills:</strong> Choose two from Arcana, Animal Handling, Insight, Medicine, Nature, Perception, Religion, and Survival</li>
+			</ul>
+			<h5>EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li>(a) a wooden shield or (b) any simple weapon</li>
+				<li>(a) a scimitar or (b) any simple melee weapon</li>
+				<li>Leather armor, an explorer's pack, and a druidic focus</li>
+			</ul>
+			<h5 class="caption">THE DRUID</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="left">Features</td><td class="col-10">Wild Shapes</td><td class="col-10">Cantrips Known</td><td class="col-10">Prepared Spells</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td><td>6th</td><td>7th</td><td>8th</td><td>9th</td></tr>
+				</thead>
+				<tr><td> 1st</td><td class="left">Spellcasting, Druidic, Primal Order</td><td>-</td><td>2</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 2nd</td><td class="left">Wild Shape, Wild Companion</td><td>2</td><td>2</td><td>5</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 3rd</td><td class="left">Druid Subclass</td><td>2</td><td>2</td><td>6</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td class="left">Wild Shape improvement, Ability Score Improvement</td><td>2</td><td>3</td><td>7</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td class="left">Wild Resurgence</td><td>2</td><td>3</td><td>9</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td class="left">Subclass Feature</td><td>3</td><td>3</td><td>10</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td class="left">Elemental Fury</td><td>3</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td class="left">Wild Shape improvement, Ability Score Improvement</td><td>3</td><td>3</td><td>12</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td class="left">—</td><td>3</td><td>3</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td class="left">Subclass Feature</td><td>3</td><td>4</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td class="left">—</td><td>3</td><td>4</td><td>16</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td class="left">Ability Score Improvement</td><td>3</td><td>4</td><td>16</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td class="left">—</td><td>3</td><td>4</td><td>17</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+				<tr><td>14th</td><td class="left">Subclass Feature</td><td>3</td><td>4</td><td>17</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+				<tr><td>15th</td><td class="left">Improved Elemental Fury</td><td>3</td><td>4</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
+				<tr><td>16th</td><td class="left">Ability Score Improvement</td><td>3</td><td>4</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
+				<tr><td>17th</td><td class="left">—</td><td>4</td><td>4</td><td>19</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>18th</td><td class="left">Beast Spells</td><td>4</td><td>4</td><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>19th</td><td class="left">Epic Boon</td><td>4</td><td>4</td><td>21</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>20th</td><td class="left">Archdruid</td><td>4</td><td>4</td><td>22</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
+			</table>
+			<div element="ID_2024PHB_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID" />
+			<div element="ID_2024PHB_CLASS_FEATURE_DRUID_DRUIDIC" />
+			<div element="ID_2024PHB_CLASS_FEATURE_DRUID_PRIMAL_ORDER" />
+			<div element="ID_2024PHB_CLASS_FEATURE_DRUID_WILDSHAPE" />
+			<div element="ID_2024PHB_CLASS_FEATURE_DRUID_WILD_COMPANION"/>
+			<div element="ID_2024PHB_CLASS_FEATURE_DRUID_DRUID_SUBCLASS" />
+			<div element="ID_2024PHB_CLASS_FEATURE_DRUID_ABILITYSCOREIMPROVEMENT_DRUID" />
+			<div element="ID_2024PHB_CLASS_FEATURE_DRUID_WILD_RESURGENCE"/>
+			<div element="ID_2024PHB_CLASS_FEATURE_DRUID_ELEMENTAL_FURY"/>
+			<div element="ID_2024PHB_CLASS_FEATURE_DRUID_IMPROVED_ELEMENTAL_FURY"/>
+			<div element="ID_2024PHB_CLASS_FEATURE_DRUID_BEAST_SPELLS" />  
+			<div element="ID_2024PHB_CLASS_FEATURE_DRUID_ARCHDRUID" />
+		</description>
+		<sheet display="false">
+			<description>A priest of the Old Faith, wielding the powers of nature—moonlight and plant growth, fire and lightning—and adopting animal forms.</description>
+		</sheet>
+		<setters>
+			<set name="short">A priest of the Old Faith, wielding the powers of nature—moonlight and plant growth, fire and lightning—and adopting animal forms.</set>
+			<set name="hd">d8</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_2024PHB_MULTICLASS_DRUID"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_2024PHB_MULTICLASS_DRUID"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_2024PHB_MULTICLASS_DRUID"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" requirements="!ID_2024PHB_MULTICLASS_DRUID"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_2024PHB_MULTICLASS_DRUID"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_2024PHB_MULTICLASS_DRUID"/>
+			<select type="Proficiency" name="Skill Proficiency (Druid)" supports="Skill,Druid" number="2" requirements="!ID_2024PHB_MULTICLASS_DRUID"/>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID" level="1"/>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_DRUID_DRUIDIC" level="1"/>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_DRUID_PRIMAL_ORDER" level="1"/>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_DRUID_WILDSHAPE" level="2"/>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_DRUID_WILD_COMPANION" level="2"/>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_DRUID_DRUID_SUBCLASS" level="2"/>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_DRUID_ABILITYSCOREIMPROVEMENT_DRUID" level="4"/>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_DRUID_WILD_RESURGENCE" level="5"/>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_DRUID_ELEMENTAL_FURY" level="7"/>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_DRUID_IMPROVED_ELEMENTAL_FURY" level="15"/>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_DRUID_BEAST_SPELLS" level="18"/>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_DRUID_ARCHDRUID" level="20"/>
+		</rules>
+		<multiclass id="ID_2024PHB_MULTICLASS_DRUID">
+			<prerequisite>Wisdom 13</prerequisite>
+			<requirements>[wis:13]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Light armor, shields</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+			</rules>
+		</multiclass>
+	</element>
+	<element name="Spellcasting" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID">
+		<description>
+			<p>Drawing on the divine essence of nature itself, you can cast spells to shape that essence to your will.</p>
+			<h5>CANTRIPS</h5>
+			<p>At 1st level, you know two cantrips of your choice from the druid spell list. You learn additional druid cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Druid table.</p>
+			<h5>PREPARING AND CASTING SPELLS</h5>
+			<p>The Druid table shows how many spell slots you have to cast your druid spells of 1st level and higher. To cast one of these druid spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.</p>
+			<p class="indent">You prepare the list of druid spells that are available for you to cast, choosing from the druid spell list. When you do so, choose a number of druid spells equal to your Wisdom modifier + your druid level (minimum of one spell). The spells must be of a level for which you have spell slots.</p>
+			<p class="indent">For example, if you are a 3rd-level druid, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell cure wounds, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.</p>
+			<p class="indent">You can also change your list of prepared spells when you finish a long rest. Preparing a new list of druid spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list.</p>
+			<h5>SPELLCASTING ABILITY</h5>
+			<p>Wisdom is your spellcasting ability for your druid spells, since your magic draws upon your devotion and attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a druid spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Wisdom modifier</p>
+			</center>
+			<h5>RITUAL CASTING</h5>
+			<p>You can cast a druid spell as a ritual if that spell has the ritual tag and you have the spell prepared.</p>
+			<h5>SPELLCASTING FOCUS</h5>
+			<p>You can use a druidic focus as a spellcasting focus for your druid spells.</p>
+		</description>
+		<sheet>
+			<description>You can cast druid spells as rituals. You can prepare {{druid:spellcasting:prepare}} spells from the druid spell list. You can use a druidic focus as your spellcasting focus.</description>
+		</sheet>
+		<spellcasting name="Druid" ability="Wisdom" prepare="true">
+			<list known="true">Druid</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+			<grant type="Grants" id="ID_INTERNAL_RITUAL_CASTING" />
+			<stat name="druid:spellcasting:slots:1" value="2" level="1" />
+			<stat name="druid:spellcasting:slots:1" value="1" level="2" />
+			<stat name="druid:spellcasting:slots:1" value="1" level="3" />
+			<stat name="druid:spellcasting:slots:2" value="2" level="3" />
+			<stat name="druid:spellcasting:slots:2" value="1" level="4" />
+			<stat name="druid:spellcasting:slots:3" value="2" level="5" />
+			<stat name="druid:spellcasting:slots:3" value="1" level="6" />
+			<stat name="druid:spellcasting:slots:4" value="1" level="7" />
+			<stat name="druid:spellcasting:slots:4" value="1" level="8" />
+			<stat name="druid:spellcasting:slots:4" value="1" level="9" />
+			<stat name="druid:spellcasting:slots:5" value="1" level="9" />
+			<stat name="druid:spellcasting:slots:5" value="1" level="10" />
+			<stat name="druid:spellcasting:slots:5" value="1" level="18" />
+			<stat name="druid:spellcasting:slots:6" value="1" level="11" />
+			<stat name="druid:spellcasting:slots:6" value="1" level="19" />
+			<stat name="druid:spellcasting:slots:7" value="1" level="13" />
+			<stat name="druid:spellcasting:slots:7" value="1" level="20" />
+			<stat name="druid:spellcasting:slots:8" value="1" level="15" />
+			<stat name="druid:spellcasting:slots:9" value="1" level="17" />
+			<stat name="druid:spellcasting:prepare" value="4" level="1" />
+			<stat name="druid:spellcasting:prepare" value="1" level="2" />
+			<stat name="druid:spellcasting:prepare" value="1" level="3" />
+			<stat name="druid:spellcasting:prepare" value="1" level="4" />
+			<stat name="druid:spellcasting:prepare" value="2" level="5" />
+			<stat name="druid:spellcasting:prepare" value="1" level="6" />
+			<stat name="druid:spellcasting:prepare" value="1" level="7" />
+			<stat name="druid:spellcasting:prepare" value="1" level="8" />
+			<stat name="druid:spellcasting:prepare" value="2" level="9" />
+			<stat name="druid:spellcasting:prepare" value="1" level="10" />
+			<stat name="druid:spellcasting:prepare" value="1" level="11" />
+			<stat name="druid:spellcasting:prepare" value="0" level="12" />
+			<stat name="druid:spellcasting:prepare" value="1" level="13" />
+			<stat name="druid:spellcasting:prepare" value="0" level="14" />
+			<stat name="druid:spellcasting:prepare" value="1" level="15" />
+			<stat name="druid:spellcasting:prepare" value="0" level="16" />
+			<stat name="druid:spellcasting:prepare" value="1" level="17" />
+			<stat name="druid:spellcasting:prepare" value="1" level="18" />
+			<stat name="druid:spellcasting:prepare" value="1" level="19" />
+			<stat name="druid:spellcasting:prepare" value="1" level="20" />
+			<select type="Spell" name="Cantrip (Druid)" supports="$(spellcasting:list), 0" level="1" number="2" spellcasting="Druid" />
+			<select type="Spell" name="Cantrip (Druid)" supports="$(spellcasting:list), 0" level="4" number="1" spellcasting="Druid" />
+			<select type="Spell" name="Cantrip (Druid)" supports="$(spellcasting:list), 0" level="10" number="1" spellcasting="Druid" />
+		</rules>
+	</element>
+	<element name="Druidic" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_DRUID_DRUIDIC">
+		<description>
+			<p>At 1st level, You know Druidic, the secret language of Druids. While learning this ancient tongue, you also unlocked the magic of communicating with animals; you always have the Speak with Animals spell prepared.</p>
+			<p>You can use Druidic to leave hidden messages. You and others who know Druidic automatically spot such a message. Others spot the message's presence with a successful DC 15 Intelligence (Investigation) check but can't decipher it without magic.</p>
+		</description>
+		<sheet>
+			<description>You can use it to leave hidden messages.  You and others who know Druidic automatically spot such a message. Others spot the message's presence with a successful DC 15 Intelligence (Investigation) check but can't decipher it without magic.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_DRUIDIC" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_SPEAK_WITH_ANIMALS" level="1" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+	<element name="Primal Order" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_DRUID_PRIMAL_ORDER">
+		<description>
+			<p>At 1st level, You have dedicated yourself to one of the following sacred roles of your choice.</p>
+			<p>Magician. You know one extra cantrip from the Druid spell list. In addition, your mystical connection to nature gives you a bonus to your Intelligence (Arcana or Nature) checks. The bonus equals your Wisdom modifier (minimum bonus of +1).</p>
+			<p>Warden. Trained for battle, you gain proficiency with Martial weapons and training with Medium armor.</p>
+		</description>
+		<sheet>
+			<description>You have dedicated yourself to the following sacred role of your choice.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Primal Order" supports="Primal Order, Druid" level="1"/>
+		</rules>
+	</element>
+	<element name="Wildshape" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_DRUID_WILDSHAPE">
+		<description>
+			<p>At 2nd level, The power of nature allows you to assume the form of an animal. As a Bonus Action, you shape-shift into a Beast form that you have learned for this feature (see “Known Forms” below). You stay in that form for a number of hours equal to half your Druid level or until you use Wild Shape again, have the Incapacitated condition, or die. You can also leave the form early as a Bonus Action.</p>
+			<p class="indent">Number of Uses. You can use Wild Shape twice. You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest.</p>
+			<p class="indent">You gain additional uses when you reach certain Druid levels, as shown in the Wild Shape column of the Druid Features table.</p>
+			<p class="indent">Known Forms. You know four Beast forms for this feature, chosen from among Beast stat blocks that have a maximum Challenge Rating of 1/4 and that lack a Fly Speed (see "Creature Stat Blocks" for stat block options). The Rat, Riding Horse, Spider, and Wolf are recommended. Whenever you finish a Long Rest, you can replace one of your known forms with another eligible form.</p>
+			<p class="indent">When you reach certain Druid levels, your number of known forms and the maximum Challenge Rating for those forms increases, as shown in the Beast Shapes table. In addition, starting at level 8, you can adopt a form that has a Fly Speed.</p>
+			<p class="indent">When choosing known forms, you may look in the Monster Manual or elsewhere for eligible Beasts if the Dungeon Master permits you to do so.</p>
+			<table>
+				<thead>
+					<tr><td>Druid Level</td><td>Known Forms</td><td>Max CR</td><td>Fly Speed</td></tr>
+				</thead>
+				<tr><td>2</td><td>4</td><td>1/4</td><td>No</td></tr>
+				<tr><td>4</td><td>6</td><td>1/2</td><td>No</td></tr>
+				<tr><td>8</td><td>8</td><td>1</td><td>Yes</td></tr>
+			</table>
+			<ul>
+				<li>Rules While Shape-Shifted. While in a form, you retain your personality, memories, and ability to speak, and the following rules apply:</li>
+				<li>Temporary Hit Points.When you assume a Wild Shape form, you gain a number of Temporary Hit Points equal to your Druid level.</li>
+				<li>Game Statistics.Your game statistics are replaced by the Beast's stat block, but you retain your creature type; Hit Points; Hit Point Dice; Intelligence, Wisdom, and Charisma scores; class features; languages; and feats. You also retain your skill and saving throw proficiencies and use your Proficiency Bonus for them, in addition to gaining the proficiencies of the creature. If a skill or saving throw modifier in the Beast's stat block is higher than yours, use the one in the stat block.</li>
+				<li>No Spellcasting.You can't cast spells, but shape- shifting doesn't break your Concentration or otherwise interfere with a spell you've already cast.</li>
+				<li>Objects.Your ability to handle objects is determined by the form's limbs rather than your own. In addition, you choose whether your equipment falls in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the DM decides whether it's practical for the new form to wear a piece of equipment based on the creature's size and shape. Your equipment doesn't change size or shape to match the new form, and any equipment that the new form can't wear must either fall to the ground or merge with the form. Equipment that merges with the form has no effect while you're in that form.</li>
+			</ul>
+		</description>
+		<sheet action="Bonus Action" usage="{{druid wildshape:uses}}/Short Rest" >
+			<description level="2">
+				You can shape-shift into one of your {{druid wildshape:forms}} Beast forms. You stay in that form for {{druid wildshape:hours}} hours or until you use Wild Shape again, have the Incapacitated condition, or die. You can also leave the form early as a Bonus Action.
+			</description>
+		</sheet>
+		<rules>
+			<stat name="druid wildshape:uses" value="2" level="2"/>
+			<stat name="druid wildshape:uses" value="1" level="6"/>
+			<stat name="druid wildshape:uses" value="1" level="17"/>
+			<stat name="druid wildshape:hours" value="level:2024 druid:half"/>
+			<stat name="druid wildshape:forms" value="4" level="2"/>
+			<stat name="druid wildshape:forms" value="2" level="4"/>
+			<stat name="druid wildshape:forms" value="2" level="8"/>
+		</rules>
+	</element>
+	<element name="Wild Companion" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_DRUID_WILD_COMPANION">
+		<description>
+			<p>At 2nd level, You can summon a nature spirit that assumes an animal form to aid you. As a Magic action, you can expend a spell slot or a use of Wild Shape to cast the Find Familiar spell without Material components.</p>
+			<p>When you cast the spell in this way, the familiar is Fey and disappears when you finish a Long Rest.</p>
+		</description>
+		<sheet action="Action">
+			<description>Expend a spell slot or use of Wild Shape to cast Find Familiar without material components. They dissapear after a Long Rest</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_FIND_FAMILIAR" level="2" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+	<element name="Druid Subclass" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_DRUID_DRUID_SUBCLASS">
+		<description>
+			<p>At 3rd level, you choose to identify with a circle of druids: the Circle of the Land or the Circle of the Moon, both detailed at the end of the class description. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level.</p>
+		</description>
+		<sheet display="false">
+			<description>You choose to identify with a circle of druids.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype" name="Druid Circle" supports="Druid Circle" level="2"/>
+		</rules>
+	</element>
+	<element name="Ability Score Improvement" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_DRUID_ABILITYSCOREIMPROVEMENT_DRUID">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Druid 4)" supports="Improvement Option,Druid,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Druid 8)" supports="Improvement Option,Druid,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Druid 12)" supports="Improvement Option,Druid,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Druid 16)" supports="Improvement Option,Druid,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Druid 19)" supports="Improvement Option,Druid,19" level="19" />
+		</rules>
+	</element>
+	<element name="Wild Resurgence" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_DRUID_WILD_RESURGENCE">
+		<description>
+			<p>At 5th level, Once on each of your turns, if you have no uses of Wild Shape left, you can give yourself one use by expending a spell slot (no action required).</p>
+			<p>In addition, you can expend one use of Wild Shape (no action required) to give yourself a level 1 spell slot, but you can't do so again until you finish a Long Rest.</p>
+		</description>
+		<sheet>
+			<description>
+				(1/Turn), If you have no uses of Wild Shape left, you can give yourself one use by expending a spell slot. 
+				(1/Long Rest), expend one use of Wild Shape to give yourself a level 1 spell slot.
+			</description>
+		</sheet>
+	</element>
+	<element name="Elemental Fury" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_DRUID_ELEMENTAL_FURY">
+		<description>
+			<p>At 7th level, The might of the elements flows through you. You gain one of the following options of your choice.</p>
+			<p>Potent Spellcasting. Add your Wisdom modifier to the damage you deal with any Druid cantrip.</p>
+			<p>Primal Strike. Once on each of your turns when you hit a creature with an attack roll using a weapon or a Beast form's attack in Wild Shape, you can cause the target to take an extra 1d8 Cold, Fire, Lightning, or Thunder damage (choose when you hit).</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Class Feature" name="Elemental Fury" supports="Elemental Fury, Druid" level="7"/>
+		</rules>
+	</element>
+	<element name="Improved Elemental Fury" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_DRUID_IMPROVED_ELEMENTAL_FURY">
+		<description>
+			<p>At 15th level, The might of the elements flows through you. You gain one of the following options of your choice.</p>
+			<p>Potent Spellcasting. When you cast a Druid cantrip with a range of 10 feet or greater, the spell's range increases by 300 feet.</p>
+			<p>Primal Strike. Once on each of your turns when you hit a creature with an attack roll using a weapon or a Beast form's attack in Wild Shape, you can cause the target to take an extra 1d8 Cold, Fire, Lightning, or Thunder damage (choose when you hit).</p>
+		</description>
+		<sheet display="false"/>
+	</element>
+	<element name="Beast Spells" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_DRUID_BEAST_SPELLS">
+		<description>
+			<p>At 18th level, While using Wild Shape, you can cast spells in Beast form, except for any spell that has a Material component with a cost specified or that consumes its Material component.</p>
+		</description>
+		<sheet>
+			<description>While using Wild Shape, you can cast spells in Beast form, except for any spell that has a Material component with a cost specified or that consumes its Material component.</description>
+		</sheet>
+	</element>
+	<element name="Archdruid" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_DRUID_ARCHDRUID">
+		<description>
+			<p>At 20th level, The vitality of nature constantly blooms within you, granting you the following benefits.</p>
+			<p>Evergreen Wild Shape. Whenever you roll Initiative and have no uses of Wild Shape left, you regain one expended use of it.</p>
+			<p>Nature Magician. You can convert uses of Wild Shape into a spell slot (no action required). Choose a number of your unexpended uses of Wild Shape and convert them into a single spell slot, with each use contributing 2 spell levels. For example, if you convert two uses of Wild Shape, you produce a level 4 spell slot. Once you use this benefit, you can't do so again until you finish a Long Rest.</p>
+			<p>Longevity. The primal magic that you wield causes you to age more slowly. For every ten years that pass, your body ages only one year.</p>
+		</description>
+		<sheet>
+			<description>
+				Whenever you roll Initiative and have no uses of Wild Shape left, you regain one expended use of it.
+					You can convert uses of Wild Shape into a spell slot (no action required). Choose a number of your unexpended uses of Wild Shape and convert them into a single spell slot, with each use contributing 2 spell levels.  Once you use this benefit, you can't do so again until you finish a Long Rest.
+					The primal magic that you wield causes you to age more slowly. For every ten years that pass, your body ages only one year.
+			</description>
+		</sheet>
+	</element>
+
+	<!-- Primal Orders -->
+	<element name="Magician" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PRIMAL_ORDER_MAGICIAN">
+		<supports>Primal Order, Druid</supports>
+		<description>
+			<p>You know one extra cantrip from the Druid spell list. In addition, your mystical connection to nature gives you a bonus to your Intelligence (Arcana or Nature) checks. The bonus equals your Wisdom modifier (minimum bonus of +1).</p>
+		</description>
+		<sheet>
+			<description display="false">You gain a +{{wisdom:modifier}} bonus to Intelligence(Arcana or Nature) checks and a Druid cantrip.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Cantrip (Druid)" supports="$(spellcasting:list), 0" level="1" number="1" spellcasting="Druid" />
+			<stat name="arcana:misc" value="wisdom:modifier" />
+			<stat name="nature:misc" value="wisdom:modifier" />
+		</rules>
+	</element>
+	<element name="Warden" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PRIMAL_ORDER_WARDEN">
+		<supports>Primal Order, Druid</supports>
+		<description>
+			<p>Trained for battle, you gain proficiency with Martial weapons and training with Medium armor.</p>
+		</description>
+		<sheet>
+			<description display="false">Trained for battle, you gain proficiency with Martial weapons and training with Medium armor.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+		</rules>
+	</element>
+
+	<!-- Elemental Fury -->
+	<element name="Potent Spellcasting" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_ELEMENTAL_FURY_POTENT_SPELLCASTING">
+		<supports>Elemental Fury, Druid</supports>
+		<description>
+			<p>Potent Spellcasting. Add your Wisdom modifier to the damage you deal with any Druid cantrip.</p>
+		</description>
+		<sheet>
+			<description>Add +{{wisdom:modifier}} to the damage you deal with any Druid cantrip.</description>
+			<description level="15">When you cast a Druid cantrip with a range of 10 feet or greater, the spell's range increases by 300 feet and you add +{{wisdom:modifier}} to the damage you deal.</description>
+		</sheet>
+	</element>
+	<element name="Primal Strike" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_ELEMENTAL_FURY_PRIMAL_STRIKE">
+		<supports>Elemental Fury, Druid</supports>
+		<description>
+			<p>Primal Strike. Once on each of your turns when you hit a creature with an attack roll using a weapon or a Beast form's attack in Wild Shape, you can cause the target to take an extra 1d8 Cold, Fire, Lightning, or Thunder damage (choose when you hit).</p>
+		</description>
+		<sheet usage="1/Your Turn">
+			<description>When you hit a creature with an attack rolln using a weapon or a Beast form's attack in Wild Shape, you can cause the target to take an extra 1d8 Cold, Fire, Lightning, or Thunder damage.</description>
+			<description level="15">When you hit a creature with an attack roll using a weapon or a Beast form's attack in Wild Shape, you can cause the target to take an extra 2d8 Cold, Fire, Lightning, or Thunder damage.</description>
+		</sheet>
+	</element>
+	
+	<!-- Druid Subclass -->
+	<element name="2024 Circle of the Moon" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_CIRCLEOFTHEMOON">
+		<supports>Druid Circle</supports>
+		<description>
+			<p>Druids of the Circle of the Moon draw on the magic of the moon to transform themselves and to guard the wilds. Their order gathers under the full moon to share news and perform rituals. They wander the deepest parts of the wilderness, where they might go for weeks before crossing paths with another person, let alone another Druid.</p>
+			<p class="indent">Changeable as the moon, a Druid of this circle might prowl as a great cat one night, soar over the treetops as an eagle the next day, and crash through the undergrowth as a bear to drive off a trespassing monster. The wild is in the Druid's blood.</p>
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_CIRCLE_FORMS" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_CIRCLE_OF_THE_MOON_SPELLS" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_IMPROVED_CIRCLE_FORMS" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_MOONLIGHT_STEP" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_LUNAR_FORM" />
+		</description>
+		<sheet display="false">
+			<description>Druids of the Circle of the Moon are fierce guardians of the wilds.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_CIRCLE_FORMS" level="3" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_CIRCLE_OF_THE_MOON_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_IMPROVED_CIRCLE_FORMS" level="6" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_MOONLIGHT_STEP" level="10" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_LUNAR_FORM" level="14" />
+		</rules>
+	</element>
+	<element name="Circle Forms" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_CIRCLE_FORMS">
+		<description>
+			<p>You have learned ancient techniques that allow you to channel lunar magic when you assume a Wild Shape form, granting you the following benefits:</p>
+			<p class="indent">Challenge Rating. The maximum Challenge Rating for the form equals your Druid level divided by 3 (round down).</p>
+			<p class="indent">Armor Class. Your AC equals 13 plus your Wisdom modifier or the Beast AC (whichever one is higher), until you leave the form.</p>
+			<p class="indent">Temporary Hit Points. You gain a number of Temporary Hit Points equal to three times your Druid level.</p>
+		</description>
+		<sheet>
+			<description>
+			<p>You can wildshape into a beast with a CR up to {{circle forms:cr}}, your AC equals {{circle forms:ac}} or the Beast's AC (whichever one is higher) and you gain {{circle forms:thp}} Temporary Hit Points.</p>
+			</description>
+
+		</sheet>
+		<rules>
+			<stat name="circle forms:cr" value="1" bonus="base" />
+			<stat name="circle forms:cr" value="2" level="6" bonus="base" />
+			<stat name="circle forms:cr" value="3" level="9" bonus="base" />
+			<stat name="circle forms:cr" value="4" level="12" bonus="base" />
+			<stat name="circle forms:cr" value="5" level="15" bonus="base" />
+			<stat name="circle forms:cr" value="6" level="18" bonus="base" />
+			<stat name="circle forms:ac" value="13" level="3" />
+			<stat name="circle forms:ac" value="wisdom:modifier" level="3" />
+			<stat name="circle forms:thp" value="level:2024 druid" level="3" />
+			<stat name="circle forms:thp" value="level:2024 druid" level="3" />
+			<stat name="circle forms:thp" value="level:2024 druid" level="3" />
+		</rules>
+	</element>
+	<element name="Circle of the Moon Spells" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_CIRCLE_OF_THE_MOON_SPELLS">
+		<description>
+			<p>When you choose this circle at 2nd level, you gain the ability to use Wild Shape on your turn as a bonus action, rather than as an action.</p>
+			<p class="indent">Additionally, while you are transformed by Wild Shape, you can use a bonus action to expend one spell slot to regain 1d8 hit points per level of the spell slot expended.</p>
+		</description>
+		<sheet>
+			<description level="3">
+				<p> You can cast the following spells while Wild Shaped: </p>
+				<p>Starry Wisp, Cure Wounds, Moonbeam </p>
+			</description>
+			<description level="5">
+				<p> You can cast the following spells while Wild Shaped: </p>
+				<p>Starry Wisp, Cure Wounds, Moonbeam, Conjure Animals </p>
+			</description>
+			<description level="7">
+				<p> You can cast the following spells while Wild Shaped: </p>
+				<p>Starry Wisp, Cure Wounds, Moonbeam, Conjure Animals, Fount of Moonlight </p>
+			</description>
+			<description level="9">
+				<p> You can cast the following spells while Wild Shaped: </p>
+				<p>Starry Wisp, Cure Wounds, Moonbeam, Conjure Animals, Fount of Moonlight, Mass Cure Wounds </p>
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_STARRY_WISP" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_CURE_WOUNDS" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_MOONBEAM" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_CONJURE_ANIMALS" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_FOUNT_OF_MOONLIGHT" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_MASS_CURE_WOUNDS" level="9" spellcasting="Druid" prepared="true" />
+
+		</rules>
+	</element>
+	<element name="Improved Circle Forms" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_IMPROVED_CIRCLE_FORMS">
+		<description>
+			<p>While in a Wild Shape form, you gain the following benefits:</p>
+			<p>Lunar Radiance. Each of your attacks in a Wild Shape form can deal its normal damage type or Radiant damage. You make this choice each time you hit with those attacks.</p>
+			<p>Increased Toughness. You can add your Wisdom modifier to your Constitution saving throws.</p>
+		</description>
+		<sheet display="false">
+			<description >
+				<p>While in a Wild Shape form, you gain the following benefits:</p>
+				<p>Lunar Radiance. Each of your attacks in a Wild Shape form can deal its normal damage type or Radiant damage. You make this choice each time you hit with those attacks.</p>
+				<p>Increased Toughness. You can add your {{wisdom:modifier}} to your Constitution saving throws.</p>
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_IMPROVED_CIRCLE_FORMS_LUNAR_RADIANCE" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_IMPROVED_CIRCLE_FORMS_INCREASED_TOUGHNESS" />
+		</rules>
+	</element>
+	<element name="Moonlight Step" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_MOONLIGHT_STEP">
+		<description>
+			<p>You magically transport yourself, reappearing amid a burst of moonlight. As a Bonus Action, you teleport up to 30 feet to an unoccupied space you can see, and you have Advantage on the next attack roll you make before the end of this turn.</p>
+			<p>You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest. You can also regain uses by expending a spell slot of level 2 or higher for each use you want to restore (no action required).</p>
+		</description>
+		<sheet usage="Bonus Action, {{wisdom:modifier}}/Long Rest" >
+			<description>
+				You teleport up to 30 feet to an unoccupied space you can see, and you have Advantage on the next attack roll this turn. You can also regain uses by expending a spell slot of level 2 or higher for each use you want to restore (no action required).
+			</description>
+			<description level="14" >
+				You teleport up to 30 feet to an unoccupied space you can see, and you have Advantage on the next attack roll this turn. You can also teleport one willing creature within 10 feet, and teleport it to an unoccupied space you can see within 10 feet of your destination space. You can also regain uses by expending a spell slot of level 2 or higher for each use you want to restore (no action required).
+			</description>
+		</sheet>
+	</element>
+	<element name="Lunar Form" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_LUNAR_FORM">
+		<description>
+			<p>The power of the moon suffuses you, granting you the following benefits:</p>
+			<p>Improved Lunar Radiance. Each of your attacks in a Wild Shape form deals an extra 1d10 Radiant damage on a hit.</p>
+			<p>Shared Moonlight. Whenever you use Moonlight Step, you can also teleport one willing creature. That creature must be within 10 feet of you, and you teleport it to an unoccupied space you can see within 10 feet of your destination space.</p>
+		</description>
+		<sheet display="false" >
+			<description >
+				Each of your attacks in a Wild Shape form deals an extra 1d10 Radiant damage on a hit. Whenever you use Moonlight Step, you can also teleport one willing creature. That creature must be within 10 feet of you, and you teleport it to an unoccupied space you can see within 10 feet of your destination space.
+			</description>
+		</sheet>
+	</element>
+
+	<!-- Improved Circle Forms -->
+	<element name="Lunar Radiance" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_IMPROVED_CIRCLE_FORMS_LUNAR_RADIANCE">
+		<description display="false" />
+		<sheet>
+			<description>
+				Whenever your Wild Shape attacks hit you can choose to deal Normal or Radiant damage.
+			</description>
+			<description level="14" >
+				Whenever your Wild Shape attacks hit, you can choose to deal Normal or Radiant damage. Additionally each of your attacks deals an extra 1d10 Radiant damage on a hit. 
+			</description>
+		</sheet>
+	</element>
+	<element name="Increased Toughness" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_IMPROVED_CIRCLE_FORMS_INCREASED_TOUGHNESS">
+		<description display="false" />
+		<sheet>
+			<description>
+				<p>In Wild Shape you can add {{wisdom:modifier}} to your Constitution saving throws.</p>
+			</description>
+		</sheet>
+	</element>
+</elements>

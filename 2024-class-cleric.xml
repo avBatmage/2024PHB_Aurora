@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>2024 Cleric</name>
+		<description>The Cleric class from the 2024 Player's Handbook.</description>
+		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
+		<update version="0.0.1">
+			<file name="2024-class-cleric.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/2024-class-cleric.xml" />
+		</update>
+	</info>
+	
+	<element name="2024 Cleric" type="Class" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_CLERIC">
+		<description>
+			<p>Arms and eyes upraised toward the sun and a prayer on his lips, an elf begins to glow with an inner light that spills out to heal his battle-worn companions.</p>
+			<p class="indent">Chanting a song of glory, a dwarf swings his axe in wide swaths to cut through the ranks of orcs arrayed against him, shouting praise to the gods with every foe's fall.</p>
+			<p class="indent">Calling down a curse upon the forces of undeath, a human lifts her holy symbol as light pours from it to drive back the zombies crowding in on her companions.</p>
+			<p class="indent">Clerics are intermediaries between the mortal world and the distant planes of the gods. As varied as the gods they serve, clerics strive to embody the handiwork of their deities. No ordinary priest, a cleric is imbued with divine magic.</p>
+			<h4>HEALERS AND WARRIORS</h4>
+			<p>Divine magic, as the name suggests, is the power of the gods, flowing from them into the world. Clerics are conduits for that power, manifesting it as miraculous effects. The gods don't grant this power to everyone who seeks it, but only to those chosen to fulfill a high calling.</p>
+			<p class="indent">Harnessing divine magic doesn't rely on study or training. A cleric might learn formulaic prayers and ancient rites, but the ability to cast cleric spells relies on devotion and an intuitive sense of a deity's wishes.</p>
+			<p class="indent">Clerics combine the helpful magic of healing and inspiring their allies with spells that harm and hinder foes. They can provoke awe and dread, lay curses of plague or poison, and even call down flames from heaven to consume their enemies. For those evildoers who will benefit most from a mace to the head, clerics depend on their combat training to let them wade into melee with the power of the gods on their side.</p>
+			<h4>DIVINE AGENTS</h4>
+			<p>Not every acolyte or officiant at a temple or shrine is a cleric. Some priests are called to a simple life of temple service, carrying out their gods' will through prayer and sacrifice, not by magic and strength of arms. In some cities, priesthood amounts to a political office, viewed as a stepping stone to higher positions of authority and involving no communion with a god at all. True clerics are rare in most hierarchies.</p>
+			<p class="indent">When a cleric takes up an adventuring life, it is usually because his or her god demands it. Pursuing the goals of the gods often involves braving dangers beyond the walls of civilization, smiting evil or seeking holy relics in ancient tombs. Many clerics are also expected to protect their deities' worshipers, which can mean fighting rampaging orcs, negotiating peace between warring nations, or sealing a portal that would allow a demon prince to enter the world.</p>
+			<p class="indent">Most adventuring clerics maintain some connection to established temples and orders of their faiths. A temple might ask for a cleric's aid, or a high priest might be in a position to demand it.</p>
+			<h4>CREATING A CLERIC</h4>
+			<p>As you create a cleric, the most important question to consider is which deity to serve and what principles you want your character to embody. The Player's Handbook includes lists of many of the gods of the multiverse. Check with your DM to learn which deities are in your campaign.</p>
+			<p class="indent">Once you've chosen a deity, consider your cleric's relationship to that god. Did you enter this service willingly? Or did the god choose you, impelling you into service with no regard for your wishes? How do the temple priests of your faith regard you: as a champion or a troublemaker? What are your ultimate goals? Does your deity have a special task in mind for you? Or are you striving to prove yourself worthy of a great quest?</p>
+			<h5 class="caption">QUICK BUILD</h5>
+			<p>You can make a cleric quickly by following these suggestions. First, Wisdom should be your highest ability score, followed by Strength or Constitution. Second, choose the acolyte background.</p>
+			<h3>CLASS FEATURES</h3>
+			<p>As a cleric, you gain the following class features.</p>
+			<h5 class="caption">HIT POINTS</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d8 per cleric level</li>
+				<li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per cleric level after 1st </li>
+			</ul>
+			<h5 class="caption">PROFICIENCIES</h5>
+			<ul class="unstyled mb">
+				<li><strong>Armor:</strong> Light armor, medium armor, shields</li>
+				<li><strong>Weapons:</strong> Simple weapons</li>
+				<li><strong>Tools:</strong> None</li>
+			</ul>
+			<ul class="unstyled">
+				<li><strong>Saving Throws:</strong> Wisdom, Charisma</li>
+				<li><strong>Skills:</strong> Choose two from History, Insight, Medicine, Persuasion, and Religion</li>
+			</ul>
+			<h5 class="caption">EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li><i>(a)</i> a Chain Shirt, a Shield, a Mace, a Holy Symbol, a Priest's Pack, and 7 GP or <i>(b)</i> 110 GP</li>
+			</ul>
+			<h5 class="caption">THE CLERIC</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="col-10 left">Features</td><td>Cantrips Known</td><td>Prepared Spells</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td><td>6th</td><td>7th</td><td>8th</td><td>9th</td></tr>
+				</thead>
+				<tr><td> 1st</td><td class="left">Spellcasting, Divine Order</td><td>3</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 2nd</td><td class="left">Channel Divinity</td><td>3</td><td>5</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 3rd</td><td class="left">Cleric Subclass</td><td>3</td><td>6</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td class="left">Ability Score Improvement</td><td>4</td><td>7</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td class="left">Sear Undead</td><td>4</td><td>9</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td class="left">Subclass Feature</td><td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td class="left">Blessed Strikes</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td class="left">Ability Score Improvement</td><td>4</td><td>12</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td class="left">—</td><td>4</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td class="left">Divine Intervention</td><td>5</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td class="left">—</td><td>5</td><td>16</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td class="left">Ability Score Improvement</td><td>5</td><td>16</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td class="left">—</td><td>5</td><td>17</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+				<tr><td>14th</td><td class="left">Improved Blessed Strikes</td><td>5</td><td>17</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+				<tr><td>15th</td><td class="left">—</td><td>5</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
+				<tr><td>16th</td><td class="left">Ability Score Improvement</td><td>5</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
+				<tr><td>17th</td><td class="left">Subclass Feature</td><td>5</td><td>19</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>18th</td><td class="left">—</td><td>5</td><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>19th</td><td class="left">Epic Boon</td><td>5</td><td>21</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>20th</td><td class="left">Greater Divine Intervention</td><td>5</td><td>22</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
+			</table>
+			<div element="ID_2024PHB_CLASS_FEATURE_CLERIC_SPELLCASTING" />
+			<div element="ID_2024PHB_CLASS_FEATURE_CLERIC_DIVINEORDER" />
+			<div element="ID_2024PHB_CLASS_FEATURE_CLERIC_CHANNELDIVINITY" />
+			<div element="ID_2024PHB_CLASS_FEATURE_CLERIC_CLERIC_SUBCLASS" />
+			<div element="ID_2024PHB_CLASS_FEATURE_CLERIC_ABILITYSCOREIMPROVEMENT" />
+			<div element="ID_2024PHB_CLASS_FEATURE_CLERIC_SEARUNDEAD" />
+			<div element="ID_2024PHB_CLASS_FEATURE_CLERIC_BLESSEDSTRIKES" />
+			<div element="ID_2024PHB_CLASS_FEATURE_CLERIC_DIVINEINTERVENTION" />
+			<div element="ID_2024PHB_CLASS_FEATURE_CLERIC_IMPROVEDBLESSEDSTRIKES" />
+			<div element="ID_2024PHB_CLASS_FEATURE_CLERIC_EPICBOON" />
+			<div element="ID_2024PHB_CLASS_FEATURE_CLERIC_GREATERDIVINEINTERVENTION" />
+		</description>
+		<sheet display="false">
+			<description>A priestly champion who wields divine magic in service of a higher power.</description>
+		</sheet>
+		<setters>
+			<set name="short">A priestly champion who wields divine magic in service of a higher power.</set>
+			<set name="hd">d8</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_2024PHB_MULTICLASS_CLERIC"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_2024PHB_MULTICLASS_CLERIC"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD" requirements="!ID_2024PHB_MULTICLASS_CLERIC"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_2024PHB_MULTICLASS_CLERIC"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_2024PHB_MULTICLASS_CLERIC"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_2024PHB_MULTICLASS_CLERIC"/>
+			<select type="Proficiency" name="Skill Proficiency (Cleric)" supports="Skill,Cleric" number="2" requirements="!ID_2024PHB_MULTICLASS_CLERIC"/>
+
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_CLERIC_SPELLCASTING" level="1" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_CLERIC_DIVINEORDER" level="1" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_CLERIC_CHANNELDIVINITY" level="2" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_CLERIC_CLERIC_SUBCLASS" level="3" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_CLERIC_ABILITYSCOREIMPROVEMENT" level="4" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_CLERIC_SEARUNDEAD" level="5" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_CLERIC_BLESSEDSTRIKES" level="7" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_CLERIC_DIVINEINTERVENTION" level="10" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_CLERIC_IMPROVEDBLESSEDSTRIKES" level="14" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_CLERIC_EPICBOON" level="19" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_CLERIC_GREATERDIVINEINTERVENTION" level="20" />
+		</rules>
+		<multiclass id="ID_2024PHB_MULTICLASS_CLERIC">
+			<prerequisite>Wisdom 13</prerequisite>
+			<requirements>[wis:13]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Light armor, medium armor, shields</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD" />
+			</rules>
+		</multiclass>
+	</element>
+	<element name="Spellcasting" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_CLERIC_SPELLCASTING">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_SPELLCASTING</requirements>
+		<description>
+			<p><em>1st-Level Feature</em></p>
+			<p>You have learned to cast spells through prayer and meditation. See the Player's Handbook for the rules on spellcasting. The information below details how you use those rules with Cleric spells.</p>
+			<h5 class="caption">CANTRIPS</h5>
+			<p>You know three cantrips of your choice from the Cleric spell list. Guidance, Sacred Flame, and Thaumaturgy are recommended.</p>
+			<p>Whenever you gain a Cleric level, you can replace one of your cantrips with another cantrip of your choice from the Cleric spell list.</p>
+			<p>When you reach Cleric levels 4 and 10, you learn another cantrip of your choice from the Cleric spell list, as shown in the Cantrips column of the Cleric Features table.</p>
+			<h5 class="caption">PREPARING AND CASTING SPELLS</h5>
+			<p>The Cleric table shows how many spell slots you have to cast your cleric spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.</p>
+			<p class="indent">You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose four level 1 spells from the Cleric spell list. Bless, Cure Wounds, Guiding Bolt, and Shield of Faith are recommended.</p>
+			<p class="indent">The number of spells on your list increases as you gain Cleric levels, as shown in the Prepared Spells column of the Cleric Features table. Whenever that number increases, choose additional spells from the Cleric spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 3 Cleric, your list of prepared spells can include six spells of levels 1 and 2 in any combination.</p>
+			<p class="indent">If another Cleric feature gives spells that you always have prepared, those spells don't count against the number of spells on the list you prepare with this feature, but those spells otherwise count as Cleric spells for you.</p>
+			<p class="indent">Whenever you finish a Long Rest, you can change your list of prepared spells, replacing any of the spells there with other Cleric spells for which you have spell slots.</p>
+			<h5 class="caption">SPELLCASTING ABILITY</h5>
+			<p>Wisdom is your spellcasting ability for your cleric spells. The power of your spells comes from your devotion to your deity. You use your Wisdom whenever a cleric spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a cleric spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Wisdom modifier</p>
+			</center>
+			<h5 class="caption">SPELLCASTING FOCUS</h5>
+			<p>You can use a holy symbol as a spellcasting focus for your cleric spells.</p>
+		</description>
+		<sheet>
+			<description>You can prepare {{cleric:spellcasting:prepare}} spells from the cleric spell list. You can use a holy symbol as your spellcasting focus.</description>
+		</sheet>
+		<spellcasting name="Cleric" ability="Wisdom" prepare="true">
+			<list known="true">Cleric</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
+			<grant type="Grants" id="ID_INTERNAL_RITUAL_CASTING" />
+			<grant type="Proficiency" id="ID_INTERNAL_PROFICIENCY_SPELLFOCUS_GROUP_HOLY_SYMBOL" />
+
+			<stat name="cleric:spellcasting:slots:1" value="2" level="1" />
+			<stat name="cleric:spellcasting:slots:1" value="1" level="2" />
+			<stat name="cleric:spellcasting:slots:1" value="1" level="3" />
+			<stat name="cleric:spellcasting:slots:2" value="2" level="3" />
+			<stat name="cleric:spellcasting:slots:2" value="1" level="4" />
+			<stat name="cleric:spellcasting:slots:3" value="2" level="5" />
+			<stat name="cleric:spellcasting:slots:3" value="1" level="6" />
+			<stat name="cleric:spellcasting:slots:4" value="1" level="7" />
+			<stat name="cleric:spellcasting:slots:4" value="1" level="8" />
+			<stat name="cleric:spellcasting:slots:4" value="1" level="9" />
+			<stat name="cleric:spellcasting:slots:5" value="1" level="9" />
+			<stat name="cleric:spellcasting:slots:5" value="1" level="10" />
+			<stat name="cleric:spellcasting:slots:5" value="1" level="18" />
+			<stat name="cleric:spellcasting:slots:6" value="1" level="11" />
+			<stat name="cleric:spellcasting:slots:6" value="1" level="19" />
+			<stat name="cleric:spellcasting:slots:7" value="1" level="13" />
+			<stat name="cleric:spellcasting:slots:7" value="1" level="20" />
+			<stat name="cleric:spellcasting:slots:8" value="1" level="15" />
+			<stat name="cleric:spellcasting:slots:9" value="1" level="17" />
+			
+			<stat name="cleric:spellcasting:prepare" value="4" level="1" />
+			<stat name="cleric:spellcasting:prepare" value="1" level="2" />
+			<stat name="cleric:spellcasting:prepare" value="1" level="3" />
+			<stat name="cleric:spellcasting:prepare" value="1" level="4" />
+			<stat name="cleric:spellcasting:prepare" value="2" level="5" />
+			<stat name="cleric:spellcasting:prepare" value="1" level="6" />
+			<stat name="cleric:spellcasting:prepare" value="1" level="7" />
+			<stat name="cleric:spellcasting:prepare" value="1" level="8" />
+			<stat name="cleric:spellcasting:prepare" value="2" level="9" />
+			<stat name="cleric:spellcasting:prepare" value="1" level="10" />
+			<stat name="cleric:spellcasting:prepare" value="1" level="11" />
+			<stat name="cleric:spellcasting:prepare" value="0" level="12" />
+			<stat name="cleric:spellcasting:prepare" value="1" level="13" />
+			<stat name="cleric:spellcasting:prepare" value="0" level="14" />
+			<stat name="cleric:spellcasting:prepare" value="1" level="15" />
+			<stat name="cleric:spellcasting:prepare" value="0" level="16" />
+			<stat name="cleric:spellcasting:prepare" value="1" level="17" />
+			<stat name="cleric:spellcasting:prepare" value="1" level="18" />
+			<stat name="cleric:spellcasting:prepare" value="1" level="19" />
+			<stat name="cleric:spellcasting:prepare" value="1" level="20" />
+			
+
+			<select type="Spell" name="Cantrip (Cleric)" supports="$(spellcasting:list), 0" level="1" number="3" spellcasting="Cleric" />
+			<select type="Spell" name="Cantrip (Cleric)" supports="$(spellcasting:list), 0" level="4" number="1" spellcasting="Cleric" />
+			<select type="Spell" name="Cantrip (Cleric)" supports="$(spellcasting:list), 0" level="10" number="1" spellcasting="Cleric" />
+		</rules>
+	</element>
+	<element name="Divine Order" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_CLERIC_DIVINEORDER">
+		<description>
+			<p><em>1st-Level Feature</em></p>
+			<p>You have dedicated yourself to one of the following sacred roles of your choice.</p>
+			<p class="indent"><b>Protector.</b> Trained for battle, you gain proficiency with Martial weapons and training with Heavy armor.</p>
+			<p class="indent"><b>Thaumaturge.</b> You know one extra cantrip from the Cleric spell list. In addition, your mystical connection to the divine gives you a bonus to your Intelligence (Arcana or Religion) checks. The bonus equals your Wisdom modifier (minimum of +1).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Divine Order" supports="Divine Order" level="1" />
+		</rules>
+	</element>
+	<element name="Protector" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_DIVINEORDER_PROTECTOR">
+		<supports>Divine Order</supports>
+		<description>
+			<p>You gain proficiency with heavy armor and martial weapons.</p>
+		</description>
+		<sheet>
+			<description>You have proficiency with heavy armor and martial weapons.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+		</rules>
+	</element>
+	<element name="Thaumaturge" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_DIVINEORDER_THAUMATURGE">
+		<supports>Divine Order</supports>
+		<description>
+			<p>You know one extra cantrip from the Cleric spell list. In addition, your mystical connection to the divine gives you a bonus to your Intelligence (Arcana or Religion) checks. The bonus equals your Wisdom modifier (minimum of +1).</p>
+		</description>
+		<sheet>
+			<description>You know one additional Cleric cantrip. When you make an Arcana or Religion check, you add +{{cleric:wisdom:min:1}} to the roll.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Cantrip (Thaumaturge)" supports="$(spellcasting:list), 0" level="1" number="1" spellcasting="Cleric" />
+			<stat name="cleric:wisdom:min:1" value="1" bonus="base" />
+			<stat name="cleric:wisdom:min:1" value="wisdom:modifier" bonus="base" />
+			<stat name="arcana:misc" value="cleric:wisdom:min:1" />
+			<stat name="religion:misc" value="cleric:wisdom:min:1" />
+		</rules>
+	</element>
+	<element name="Channel Divinity" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_CLERIC_CHANNELDIVINITY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_CHANNEL_DIVINITY</requirements>
+		<description>
+			<p><em>2nd-Level Feature</em></p>
+			<p>You can channel divine energy directly from the Outer Planes to fuel magical effects. You start with two such effects: Divine Spark and Turn Undead, each of which is described below. Each time you use this class's Channel Divinity, choose which Channel Divinity effect from this class to create. You gain additional effect options at higher Cleric levels.</p>
+			<p class="indent">You can use this class's Channel Divinity twice. You regain one of its expended uses when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest. You gain additional uses when you reach certain Cleric levels, as shown in the Channel Divinity column of the Cleric Features table.</p>
+			<p class="indent">If a Channel Divinity effect requires a saving throw, the DC equals the spell save DC from this class's Spellcasting feature.</p>
+			<div element="ID_2024PHB_CLASS_FEATURE_CLERIC_CHANNELDIVINITY_TURN_UNDEAD" />
+			<div element="ID_2024PHB_CLASS_FEATURE_CLERIC_CHANNELDIVINITY_DIVINE_SPARK" />
+		</description>
+		<sheet usage="{{channel divinity:count}}/Long Rest"> 
+			<description>You regain one of its expended uses whenever you finish a Short Rest</description>
+		</sheet>
+		<rules>
+			<stat name="channel divinity:count" value="2" level="2" />
+			<stat name="channel divinity:count" value="1" level="6" />
+			<stat name="channel divinity:count" value="1" level="18" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_CLERIC_CHANNELDIVINITY_TURN_UNDEAD" level="2" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_CLERIC_CHANNELDIVINITY_DIVINE_SPARK" level="2" />
+		</rules>
+	</element>
+	<element name="Divine Spark" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_CLERIC_CHANNELDIVINITY_DIVINE_SPARK">
+		<description>
+			<p>As a Magic action, you point your Holy Symbol at another creature you can see within 30 feet of yourself and focus divine energy at it. Roll 1d8 and add your Wisdom modifier. You either restore Hit Points to the creature equal to that total or force the creature to make a Constitution saving throw. On a failed save, the creature takes Necrotic or Radiant damage (your choice) equal to that total. On a successful save, the creature takes half as much damage (round down).</p>
+			<p class="indent">You roll an additional d8 when you reach Cleric levels 7 (2d8), 13 (3d8), and 18 (4d8).</p>
+		</description>
+		<sheet action="Action" usage="Channel Divinity">
+			<description>You can target another creature within 30 feet. Roll {{cleric:divine spark:damage}}d8+{{wisdom:modifier}} and heal them, or force them to make a Con save, taking radiant/necrotic damage on a fail (half on success).</description>
+		</sheet>
+		<rules>
+			<stat name="cleric:divine spark:damage" value="1" level="2" />
+			<stat name="cleric:divine spark:damage" value="1" level="7" />
+			<stat name="cleric:divine spark:damage" value="1" level="13" />
+			<stat name="cleric:divine spark:damage" value="1" level="18" />
+		</rules>
+	</element>
+	<element name="Turn Undead" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_CLERIC_CHANNELDIVINITY_TURN_UNDEAD">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_CHANNELDIVINITY_TURN_UNDEAD</requirements>
+		<description>
+			<p>As an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.</p>
+			<p class="indent">A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.</p>
+		</description>
+		<sheet action="Action" usage="Channel Divinity">
+			<description>
+				Each undead that can see or hear you within 30 feet must make a Wisdom saving throw. If the creature fails, it is turned for 1 minute or until it takes any damage.
+				A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.
+			</description>
+		</sheet>
+	</element>
+	<element name="Cleric Subclass" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_CLERIC_CLERIC_SUBCLASS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DIVINE_DOMAIN</requirements>
+		<description>
+			<p><em>3rd-Level Feature</em></p>
+			<p>You choose the subclass that represents the nature of your faith: Life, Light, Trickery, or War, each of which is detailed at the end of the class's description. Your choice grants you features at 3rd level and again at 6th and 17th level.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Divine Domain" supports="Divine Domain" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_CLERIC_ABILITYSCOREIMPROVEMENT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_ABILITY_SCORE_IMPROVEMENT</requirements>
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Cleric 4)" supports="Improvement Option,Cleric,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Cleric 8)" supports="Improvement Option,Cleric,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Cleric 12)" supports="Improvement Option,Cleric,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Cleric 16)" supports="Improvement Option,Cleric,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Cleric 19)" supports="Improvement Option,Cleric,19" level="19" />
+		</rules>
+	</element>
+	<element name="Sear Undead" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_CLERIC_SEARUNDEAD">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DESTROY_UNDEAD</requirements>
+		<description>
+			<p><em>5th-Level Feature</em></p>
+			<p>Whenever you use Turn Undead, you can roll a number of d8s equal to your Wisdom modifier (minimum of 1d8) and add the rolls together. Each Undead that fails its saving throw against that use of Turn Undead takes Radiant damage equal to the roll's total. This damage doesn't end the turn effect.</p>
+		</description>
+		<sheet>
+			<description>Whenever you use Turn Undead, you can roll {{cleric:wisdom:min:1}}d8s. Each Undead that fails its saving throw against that use of Turn Undead takes Radiant damage equal to the roll's total. This damage doesn't end the turn effect.</description>
+		</sheet>
+	</element>
+	<element name="Blessed Strikes" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_CLERIC_BLESSEDSTRIKES">
+		<description>
+			<p><em>7th-Level Feature</em></p>
+			<p>Divine power infuses you in battle. You gain one of the following options of your choice (if you get either option from a Cleric subclass in an older book, use only the option you choose for this feature).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Blessed Strikes" supports="Blessed Strikes, Cleric" level="7"/>
+		</rules>
+	</element>
+	<element name="Divine Strike" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_CLERIC_BLESSEDSTRIKES_DIVINESTRIKE">
+		<supports>Blessed Strikes, Cleric</supports>
+		<description>
+			<p>Your deity's blessing manifests when you strike a foe. When you deal damage to a creature, you can increase the damage by 1d8. The damage is Radiant or Necrotic (your choice). You can use this feature only once per turn.</p>
+		</description>
+		<sheet usage="1/turn">
+			<description>When you hit a creature with an attack roll using a weapon, you can increase the damage by 1d8 Radiant or Necrotic damage.</description>
+			<description level="14">When you hit a creature with an attack roll using a weapon, you can increase the damage by 2d8 Radiant or Necrotic damage.</description>
+		</sheet>
+	</element>
+	<element name="Potent Spellcasting" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_CLERIC_BLESSEDSTRIKES_POTENTSPELLCASTING">
+		<supports>Blessed Strikes, Cleric</supports>
+		<description>
+			<p>Add your Wisdom modifier to the damage you deal with any Cleric cantrip.</p>
+		</description>
+		<sheet usage="1/turn">
+			<description>Add +{{wisdom:modifier}} to the damage you deal with any Cleric cantrip.</description>
+			<description level="14">When you cast a Cleric cantrip and deal damage to a creature with it, add +{{wisdom:modifier}} damange and you can give {{cleric:potent spellcasting:vitality}} Temporary Hit Points to yourself or another creature within 60 feet.</description>
+		</sheet>
+		<rules>
+			<stat name="cleric:potent spellcasting:vitality" value="wisdom:modifier" />
+			<stat name="cleric:potent spellcasting:vitality" value="wisdom:modifier" />
+		</rules>
+	</element>
+	<element name="Divine Intervention" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_CLERIC_DIVINEINTERVENTION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DIVINE_INTERVENTION</requirements>
+		<description>
+			<p><em>10th-Level Feature</em></p>
+			<p>You can call on your deity or pantheon to intervene on your behalf. As a Magic action, choose any Cleric spell of level 5 or lower that doesn't require a Reaction to cast. As part of the same action, you cast that spell without expending a spell slot or needing Material components.</p>
+			<p class="indent"> You can't use this feature again until you finish a Long Rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>Choose any Cleric spell of level 5 or lower that doesn't require a Reaction to cast. As part of the same action, you cast that spell without expending a spell slot or needing Material components.</description>
+		</sheet>
+	</element>
+	<element name="Improved Blessed Strikes" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_CLERIC_IMPROVEDBLESSEDSTRIKES">
+		<description>
+			<p><em>14th-Level Feature</em></p>
+			<p>The option you chose for Blessed Strikes grows more powerful.</p>
+			<p><i><b>Divine Strike.</b></i> The extra damage of your Divine Strike increases to 2d8.</p>
+			<p><i><b>Potent Spellcasting.</b></i> When you cast a Cleric cantrip and deal damage to a creature with it, you can give vitality to yourself or another creature within 60 feet of yourself, granting a number of Temporary Hit Points equal to twice your Wisdom modifier.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Epic Boon" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_CLERIC_EPICBOON">
+		<description>
+			<p><em>19th-Level Feature</em></p>
+			<p>You gain an Epic Boon feat or another feat of your choice for which you qualify. Boon of Fate is recommended.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Greater Divine Intervention" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_CLERIC_GREATERDIVINEINTERVENTION">
+		<description>
+			<p><em>20th-Level Feature</em></p>
+			<p>Your call for intervention succeeds automatically, no roll required.</p>
+		</description>
+		<sheet usage="1/2d4 Long Rests">
+			<description>When you use your Divine Intervention, you can choose Wish when you select a spell.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Spellcasting Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_SPELLCASTING" />
+	<element name="Divine Domain Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DIVINE_DOMAIN" />
+	<element name="Channel Divinity Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_CHANNEL_DIVINITY" />
+	<element name="Channel Divinity: Turn Undead Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_CHANNELDIVINITY_TURN_UNDEAD" />
+	<element name="Ability Score Improvement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_ABILITY_SCORE_IMPROVEMENT" />
+	<element name="Destroy Undead Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DESTROY_UNDEAD" />
+	<element name="Divine Intervention Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DIVINE_INTERVENTION" />
+
+	<element name="Divine Strike or Potent Spellcasting Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DIVINE_STRIKE_OR_POTENT_SPELLCASTING" />
+	
+	<!--Subclasses-->
+	<element name="2024 Life Domain" type="Archetype" source="Player’s Handbook 2024" id="ID_2024PHB_ARCHETYPE_CLERIC_LIFE_DOMAIN">
+		<supports>Divine Domain</supports>
+		<description>
+			<p>The Life Domain focuses on the positive energy that helps sustain all life in the multiverse. Clerics who tap into this domain are masters of healing, using that life force to cure many hurts.</p>
+			<p class="indent">Existence itself relies on the positive energy associated with this domain, so a Cleric of almost any religious tradition might choose it. This domain is particularly associated with agricultural deities, gods of healing or endurance, and gods of home and community. Religious orders of healing also seek the magic of this domain.</p>
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_LIFE_DOMAIN_SPELLS" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_LIFE_DOMAIN_DISCIPLE_OF_LIFE" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_LIFE_DOMAIN_CHANNEL_DIVINITY_PRESERVE_LIFE" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_LIFE_DOMAIN_BLESSED_HEALER" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_LIFE_DOMAIN_SUPREME_HEALING" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_LIFE_DOMAIN_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_LIFE_DOMAIN_DISCIPLE_OF_LIFE" level="3" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_LIFE_DOMAIN_CHANNEL_DIVINITY_PRESERVE_LIFE" level="3" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_LIFE_DOMAIN_BLESSED_HEALER" level="6" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_LIFE_DOMAIN_SUPREME_HEALING" level="17" />
+		</rules>
+	</element>
+	<element name="Life Domain Spells" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_2024PHB_ARCHETYPE_FEATURE_LIFE_DOMAIN_SPELLS">
+		<description>
+			<p><em>3rd-Level Feature</em></p>
+			<p>Your connection to this divine domain ensures you always have certain spells ready. When you reach a Cleric level specified in the Life Domain Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5 class="caption">Life Domain Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Prepared Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>Aid, Bless, Cure Wounds, Lesser Restoration</em></td></tr>
+				<tr><td>5th</td><td><em>Mass Healing Word, Revivify</em></td></tr>
+				<tr><td>7th</td><td><em>Aura of Life, Death Ward</em></td></tr>
+				<tr><td>9th</td><td><em>Mass Cure Wounds, Raise Dead</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_AID" level="3" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_BLESS" level="3" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_CURE_WOUNDS" level="3" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_LESSER_RESTORATION" level="3" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_MASS_HEALING_WORD" level="5" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_REVIVIFY" level="5" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_AURA_OF_LIFE" level="7" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_DEATH_WARD" level="7" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_MASS_CURE_WOUNDS" level="9" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_RAISE_DEAD" level="9" prepared="true" />
+		</rules>
+	</element>
+	<element name="Disciple of Life" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_2024PHB_ARCHETYPE_FEATURE_LIFE_DOMAIN_DISCIPLE_OF_LIFE">
+		<description>
+			<p><em>3rd-Level Feature</em></p>
+			<p>When a spell you cast with a spell slot restores Hit Points to a creature, that creature regains additional Hit Points on the turn you cast the spell. The additional Hit Points equal 2 plus the spell slot's level.</p>
+		</description>
+		<sheet>
+			<description>When a spell you cast with a spell slot restores HP, the target regains additional HP equal to 2 + the spell slot's level.</description>
+		</sheet>
+	</element>
+	<element name="Preserve Life" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_2024PHB_ARCHETYPE_FEATURE_LIFE_DOMAIN_CHANNEL_DIVINITY_PRESERVE_LIFE">
+		<description>
+			<p><em>3rd-Level Feature</em></p>
+			<p>As a Magic action, you present your Holy Symbol and expend a use of your Channel Divinity to evoke healing energy that can restore a number of Hit Points equal to five times your Cleric level. Choose Bloodied creatures within 30 feet of yourself (which can include you), and divide those Hit Points among them. This feature can restore a creature to no more than half its Hit Point maximum.</p>
+		</description>
+		<sheet action="Action" usage="Channel Divinity">
+			<description>You restore a total of {{life domain:preserve life}} hit points, divided among any creatures you choose within 30 feet. Creatures cannot be healed above half their maximum HP.</description>
+		</sheet>
+		<rules>
+			<stat name="life domain:preserve life" value="level:2024 cleric"/>
+			<stat name="life domain:preserve life" value="level:2024 cleric"/>
+			<stat name="life domain:preserve life" value="level:2024 cleric"/>
+			<stat name="life domain:preserve life" value="level:2024 cleric"/>
+			<stat name="life domain:preserve life" value="level:2024 cleric"/>
+		</rules>
+	</element>
+	<element name="Blessed Healer" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_2024PHB_ARCHETYPE_FEATURE_LIFE_DOMAIN_BLESSED_HEALER">
+		<description>
+			<p><em>6th-Level Feature</em></p>
+			<p>The healing spells you cast on others heal you as well. Immediately after you cast a spell with a spell slot that restores Hit Points to one or more creatures other than yourself, you regain Hit Points equal to 2 plus the spell slot's level.</p>
+		</description>
+		<sheet>
+			<description>When you cast a healing spell of 1st level or higher on another creature, you regain HP equal to 2 + the spell's level.</description>
+		</sheet>
+	</element>
+	<element name="Supreme Healing" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_2024PHB_ARCHETYPE_FEATURE_LIFE_DOMAIN_SUPREME_HEALING">
+		<description>
+			<p><em>17th-Level Feature</em></p>
+			<p>When you would normally roll one or more dice to restore Hit Points to a creature with a spell or Channel Divinity, don't roll those dice for the healing; instead use the highest number possible for each die. For example, instead of restoring 2d6 Hit Points to a creature with a spell, you restore 12.</p>
+		</description>
+		<sheet>
+			<description>When you roll to restore hit points with a spell or Channel Divinity, you use the maximum possible result for each die.</description>
+		</sheet>
+	</element>
+
+	<element name="2024 Light Domain" type="Archetype" source="Player’s Handbook 2024" id="ID_2024PHB_ARCHETYPE_CLERIC_LIGHT_DOMAIN">
+		<supports>Divine Domain</supports>
+		<description>
+			<p>The Light Domain emphasizes the divine power to bring about blazing fire and revelation. Clerics who wield this power are enlightened souls infused with radiance and the power of their deities’ discerning vision, charged with chasing away lies and burning away darkness.</p>
+			<p class="indent">The Light Domain is associated with gods of truth, vigilance, beauty, insight, and renewal. Some of these gods are identified with the sun or as charioteers who guide the sun across the sky. Others are sentinels who pierce every shadow and deception. Some are deities of beauty and artistry, who teach that art is a vehicle for the soul’s improvement. Religious orders focused on combating the Undead also draw on the power of this domain.</p>
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_LIGHT_DOMAIN_SPELLS" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_LIGHT_DOMAIN_CHANNEL_DIVINITY_RADIANCE_OF_THE_DAWN" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_LIGHT_DOMAIN_WARDING_FLARE" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_LIGHT_DOMAIN_IMPROVED_WARDING_FLARE" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_LIGHT_DOMAIN_CORONA_OF_LIGHT" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_LIGHT_DOMAIN_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_LIGHT_DOMAIN_CHANNEL_DIVINITY_RADIANCE_OF_THE_DAWN" level="3" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_LIGHT_DOMAIN_WARDING_FLARE" level="3" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_LIGHT_DOMAIN_IMPROVED_WARDING_FLARE" level="6" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_LIGHT_DOMAIN_CORONA_OF_LIGHT" level="17" />
+		</rules>
+	</element>
+	<element name="Light Domain Spells" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_2024PHB_ARCHETYPE_FEATURE_LIGHT_DOMAIN_SPELLS">
+		<description>
+			<p><em>3rd-Level Feature</em></p>
+			<p>Your connection to this divine domain ensures you always have certain spells ready. When you reach a Cleric level specified in the Light Domain Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5 class="caption">Light Domain Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Prepared Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>Burning Hands, Faerie Fire, Scorching Ray, See Invisibility</em></td></tr>
+				<tr><td>5th</td><td><em>Daylight, Fireball</em></td></tr>
+				<tr><td>7th</td><td><em>Arcane Eye, Wall of Fire</em></td></tr>
+				<tr><td>9th</td><td><em>Flame Strike, Scrying</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_BURNING_HANDS" level="3" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_FAERIE_FIRE" level="3" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_SCORCHING_RAY" level="3" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_SEE_INVISIBILITY" level="3" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_DAYLIGHT" level="5" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_FIREBALL" level="5" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_ARCANE_EYE" level="7" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_WALL_OF_FIRE" level="7" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_FLAME_STRIKE" level="9" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_SCRYING" level="9" prepared="true" />
+		</rules>
+	</element>
+	<element name="Radiance of the Dawn" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_2024PHB_ARCHETYPE_FEATURE_LIGHT_DOMAIN_CHANNEL_DIVINITY_RADIANCE_OF_THE_DAWN">
+		<description>
+			<p><em>3rd-Level Feature</em></p>
+			<p>As a Magic action, you present your Holy Symbol and expend a use of your Channel Divinity to emit sunlight in a 30-foot-radius sphere centered on yourself. Any magical darkness—such as that created by the Darkness spell—in the sphere is dispelled. Additionally, each creature of your choice in the sphere must make a Constitution saving throw, taking Radiant damage equal to 2d10 + your Cleric level on a failed save, or half as much damage on a successful one.</p>
+		</description>
+		<sheet action="Action" usage="Channel Divinity">
+			<description>You emit sunlight in a 30-foot-radius sphere, dispelling magical darkness. Each creature of your choice in the sphere must make a Constitution saving throw, taking 2d10 + {{level:2024 cleric}} Radiant damage on a failed save, or half as much on a successful one.</description>
+		</sheet>
+	</element>
+	<element name="Warding Flare" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_2024PHB_ARCHETYPE_FEATURE_LIGHT_DOMAIN_WARDING_FLARE">
+		<description>
+			<p><em>3rd-Level Feature</em></p>
+			<p>When a creature that you can see within 30 feet of you makes an attack roll, you can use your Reaction to impose Disadvantage on the attack roll, causing light to flare before the attacker before it hits or misses.</p>
+			<p>You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet action="Reaction" >
+			<description usage="{{cleric:wisdom:min:1}}/Long Rest">When a creature you can see within 30 feet of you makes an attack roll, you can impose Disadvantage on the roll.</description>
+			<description usage="{{cleric:wisdom:min:1}}/Short Rest" level="6" >When a creature you can see within 30 feet of you makes an attack roll, you can impose Disadvantage on the roll.</description>
+		</sheet>
+	</element>
+	<element name="Improved Warding Flare" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_2024PHB_ARCHETYPE_FEATURE_LIGHT_DOMAIN_IMPROVED_WARDING_FLARE">
+		<description>
+			<p><em>6th-Level Feature</em></p>
+			<p>You regain all expended uses of Warding Flare when you finish a Short or a Long Rest.</p>
+			<p>In addition , whenever you use Warding Flare, you can give the target of the triggering attack a number of Temporary Hit Points equal to 2d6 plus your Wisdom modifier.</p>
+		</description>
+		<sheet display="false" >
+			<description>When you use Warding Flare, you can also grant 2d6+{{wisdom:modifier}} temporary Hit Points. You regain all uses on a Short or Long Rest.</description>
+		</sheet>
+	</element>
+	<element name="Corona of Light" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_2024PHB_ARCHETYPE_FEATURE_LIGHT_DOMAIN_CORONA_OF_LIGHT">
+		<description>
+			<p><em>17th-Level Feature</em></p>
+			<p>As a Magic action, you cause yourself to emit an aura of sunlight that lasts for 1 minute or until you dismiss it (no action required). You emit Bright Light in a 60-foot radius and Dim Light for an additional 30 feet. Your enemies in the Bright Light have Disadvantage on saving throws against your Radiance of the Dawn and any spell that deals Fire or Radiant damage.</p>
+			<p>You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet action="Action" usage="{{cleric:wisdom:min:1}}/Long Rest">
+			<description>You emit an aura of sunlight for 1 minute (60-foot bright light, 30-foot dim light). Enemies in the bright light have Disadvantage on saving throws against your Radiance of the Dawn and any spell that deals Fire or Radiant damage.</description>
+		</sheet>
+	</element>
+
+	<element name="2024 Trickery Domain" type="Archetype" source="Player’s Handbook 2024" id="ID_2024PHB_ARCHETYPE_CLERIC_TRICKERY_DOMAIN">
+		<supports>Divine Domain</supports>
+		<description>
+			<p>The Trickery Domain offers magic of deception, illusion, and stealth. Clerics who wield this magic are a disruptive force in the world, puncturing pride, mocking tyrants, stealing from the rich, freeing captives, and flouting hollow traditions. They prefer subterfuge, pranks, and theft rather than direct confrontation.</p>
+			<p class="indent">Gods of trickery are mischief-makers and instigators who stand as a constant challenge to the accepted order among both gods and mortals. They embody the forces of change and social upheaval, and they're patrons of thieves, scoundrels, gamblers, rebels, and liberators. Religious orders that operate in secret, especially those that seek to undermine oppressive governments or hierarchies, also draw on the power of the Trickery Domain.</p>
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_TRICKERY_DOMAIN_SPELLS" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_TRICKERY_DOMAIN_BLESSING_OF_THE_TRICKSTER" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_TRICKERY_DOMAIN_CHANNEL_DIVINITY_INVOKE_DUPLICITY" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_TRICKERY_DOMAIN_TRICKSTERS_TRANSPOSITION" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_TRICKERY_DOMAIN_IMPROVED_DUPLICITY" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_TRICKERY_DOMAIN_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_TRICKERY_DOMAIN_BLESSING_OF_THE_TRICKSTER" level="3" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_TRICKERY_DOMAIN_CHANNEL_DIVINITY_INVOKE_DUPLICITY" level="3" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_TRICKERY_DOMAIN_TRICKSTERS_TRANSPOSITION" level="6" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_TRICKERY_DOMAIN_IMPROVED_DUPLICITY" level="17" />
+		</rules>
+	</element>
+	<element name="Trickery Domain Spells" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_2024PHB_ARCHETYPE_FEATURE_TRICKERY_DOMAIN_SPELLS">
+		<description>
+			<p><em>3rd-Level Feature</em></p>
+			<p>Your connection to this divine domain ensures you always have certain spells ready. When you reach a Cleric level specified in the Trickery Domain Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5 class="caption">Trickery Domain Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Prepared Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>Charm Person, Disguise Self, Invisibility, Pass without Trace</em></td></tr>
+				<tr><td>5th</td><td><em>Hypnotic Pattern, Nondetection</em></td></tr>
+				<tr><td>7th</td><td><em>Confusion, Dimension Door</em></td></tr>
+				<tr><td>9th</td><td><em>Dominate Person, Modify Memory</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_CHARM_PERSON" level="3" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_DISGUISE_SELF" level="3" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_INVISIBILITY" level="3" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_PASS_WITHOUT_TRACE" level="3" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_HYPNOTIC_PATTERN" level="5" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_NONDETECTION" level="5" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_CONFUSION" level="7" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_DIMENSION_DOOR" level="7" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_DOMINATE_PERSON" level="9" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_MODIFY_MEMORY" level="9" prepared="true" />
+		</rules>
+	</element>
+	<element name="Blessing of the Trickster" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_2024PHB_ARCHETYPE_FEATURE_TRICKERY_DOMAIN_BLESSING_OF_THE_TRICKSTER">
+		<description>
+			<p><em>3rd-Level Feature</em></p>
+			<p>As a Magic action, you can choose yourself or a willing creature within 30 feet of yourself to have Advantage on Dexterity (Stealth) checks. This blessing lasts until you finish a Long Rest or you use this feature again.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You can give yourself or a willing creature within 30 feet Advantage on Dexterity (Stealth) checks until you finish a Long Rest or use this feature again.</description>
+		</sheet>
+	</element>
+	<element name="Invoke Duplicity" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_2024PHB_ARCHETYPE_FEATURE_TRICKERY_DOMAIN_CHANNEL_DIVINITY_INVOKE_DUPLICITY">
+		<description>
+			<p><em>3rd-Level Feature</em></p>
+			<p>You can use your Channel Divinity to create an illusory duplicate of yourself.</p>
+			<p>As a Bonus Action, you can expend one use of your Channel Divinity to teleport up to 30 feet to an unoccupied space you can see, and you create a perfect visual illusion of yourself in the space you left. The illusion lasts for 1 minute, but it ends early if you have the Incapacitated condition or dismiss it as a Bonus Action.</p>
+			<p>While the illusion persists, you gain the following benefits:</p>
+			<p><b>Cast Spells.</b> You can cast spells as though you were in the illusion's space, but you must use your own senses.</p>
+			<p><b>Distract.</b> When both you and your illusion are within 5 feet of a creature that can see the illusion, you have Advantage on attack rolls against that creature, given how distracting the illusion is to the target.</p>
+			<p><b>Move.</b> As a Bonus Action, you can move the illusion up to 30 feet to an unoccupied space you can see that is within 120 feet of yourself.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Channel Divinity">
+			<description>Teleport up to 30 feet, leaving a perfect illusion of yourself for 1 minute. You can cast spells from its space, Gain Advantage on attacks against creatures within 5ft of you and the illusion, and as a Bonus Action move it 30ft to an unoccupied space you can see within 120 feet of yourself.</description>
+			<description level="17">Teleport up to 120 feet, leaving a perfect illusion of yourself for 1 minute. You can cast spells from its space, Gain Advantage on attacks against creatures within 5ft of you and the illusion, and as a Bonus Action move it 60ft to an unoccupied space you can see within 120 feet of yourself.</description>
+		</sheet>
+	</element>
+	<element name="Trickster's Transposition" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_2024PHB_ARCHETYPE_FEATURE_TRICKERY_DOMAIN_TRICKSTERS_TRANSPOSITION">
+		<description>
+			<p><em>6th-Level Feature</em></p>
+			<p>Whenever you take the Bonus Action to create or move the illusion of your Invoke Duplicity, you can teleport, swapping places with the illusion.</p>
+		</description>
+		<sheet>
+			<description>When you create or move your Invoke Duplicity illusion, you can swap places with it.</description>
+		</sheet>
+	</element>
+	<element name="Improved Duplicity" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_2024PHB_ARCHETYPE_FEATURE_TRICKERY_DOMAIN_IMPROVED_DUPLICITY">
+		<description>
+			<p><em>17th-Level Feature</em></p>
+			<p>The illusion of your Invoke Duplicity has grown more powerful. When you create it, you can teleport up to 120 feet rather than 30 feet, and when you move it, you can move it up to 60 feet rather than 30 feet. In addition, when you and your allies make attack rolls against a creature within 5 feet of the illusion, the attack rolls have Advantage. Finally, when the illusion ends, you or a creature of your choice within 5 feet of it regains a number of Hit Points equal to your Cleric level.</p>
+		</description>
+		<sheet>
+			<description>Your Invoke Duplicity grants you and your allies Advantage on attacks against creatures within 5 feet of it. When it ends, a creature within 5 feet regains {{level:2024 cleric}} hit points.</description>
+		</sheet>
+	</element>
+
+	<element name="2024 War Domain" type="Archetype" source="Player’s Handbook 2024" id="ID_2024PHB_ARCHETYPE_CLERIC_WAR_DOMAIN">
+		<supports>Divine Domain</supports>
+		<description>
+			<p>War has many manifestations. It can make heroes of ordinary people. It can be desperate and horrific, with acts of cruelty and cowardice eclipsing instances of excellence and courage. Clerics who tap into the magic of the War Domain excel in battle, inspiring others to fight the good fight or offering acts of violence as prayers.</p>
+			<p class="indent">Gods of the War Domain watch over warriors and reward them for their great deeds. They include champions of honor and chivalry as well as gods of destruction and pillage. Other war gods take a more neutral stance, promoting war in all its manifestations and supporting warriors in any circumstance.</p>
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_SPELLS" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_WAR_PRIEST" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_CHANNEL_DIVINITY_GUIDED_STRIKE" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_WAR_GODS_BLESSING" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_AVATAR_OF_BATTLE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_WAR_PRIEST" level="3" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_CHANNEL_DIVINITY_GUIDED_STRIKE" level="3" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_WAR_GODS_BLESSING" level="6" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_AVATAR_OF_BATTLE" level="17" />
+		</rules>
+	</element>
+	<element name="War Domain Spells" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_2024PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_SPELLS">
+		<description>
+			<p><em>3rd-Level Feature</em></p>
+			<p>Your connection to this divine domain ensures you always have certain spells ready. When you reach a Cleric level specified in the War Domain Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5 class="caption">War Domain Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Prepared Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>Guiding Bolt, Magic Weapon, Shield of Faith, Spiritual Weapon</em></td></tr>
+				<tr><td>5th</td><td><em>Crusader's Mantle, Spirit Guardians</em></td></tr>
+				<tr><td>7th</td><td><em>Fire Shield, Freedom of Movement</em></td></tr>
+				<tr><td>9th</td><td><em>Hold Monster, Steel Wind Strike</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_GUIDING_BOLT" level="3" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_MAGIC_WEAPON" level="3" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_SHIELD_OF_FAITH" level="3" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_SPIRITUAL_WEAPON" level="3" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_CRUSADERS_MANTLE" level="5" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_SPIRIT_GUARDIANS" level="5" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_FIRE_SHIELD" level="7" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_FREEDOM_OF_MOVEMENT" level="7" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_HOLD_MONSTER" level="9" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_STEEL_WIND_STRIKE" level="9" prepared="true" />
+		</rules>
+	</element>
+	<element name="War Priest" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_2024PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_WAR_PRIEST">
+		<description>
+			<p><em>3rd-Level Feature</em></p>
+			<p>You can make one weapon attack or unarmed strike as a Bonus Action. You can use this Bonus Action a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a Short Rest or Long Rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{cleric:wisdom:min:1}}/Short Rest">
+			<description>You can make one weapon attack or unarmed strike.</description>
+		</sheet>
+		<rules>
+			<stat name="war priest:uses" value="wisdom:modifier" bonus="base" />
+			<stat name="war priest:uses" value="1" bonus="minimum" />
+		</rules>
+	</element>
+	<element name="Guided Strike" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_2024PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_CHANNEL_DIVINITY_GUIDED_STRIKE">
+		<description>
+			<p><em>3rd-Level Feature</em></p>
+			<p>When you or a creature within 30 feet of you misses with an attack roll, you can use your Reaction to expend one use of your Channel Divinity and give that roll a +10 bonus, potentially causing it to hit.</p>
+		</description>
+		<sheet action="Reaction" usage="Channel Divinity">
+			<description>When you or a creature within 30 feet misses an attack roll, you can add a +10 bonus to the roll.</description>
+		</sheet>
+	</element>
+	<element name="War God's Blessing" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_2024PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_WAR_GODS_BLESSING">
+		<description>
+			<p><em>6th-Level Feature</em></p>
+			<p>You can expend a use of your Channel Divinity to cast <em>Shield of Faith</em> or <em>Spiritual Weapon</em> rather than expending a spell slot. Without requiring Concentration, for up to 1 minute.</p>
+		</description>
+		<sheet usage="Channel Divinity">
+			<description>You can cast Shield of Faith or Spiritual Weapon without a spell slot or concentration for 1 minute.</description>
+		</sheet>
+	</element>
+	<element name="Avatar of Battle" type="Archetype Feature" source="Player’s Handbook 2024" id="ID_2024PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_AVATAR_OF_BATTLE">
+		<description>
+			<p><em>17th-Level Feature</em></p>
+			<p>You gain resistance to Bludgeoning, Piercing, and Slashing damage.</p>
+		</description>
+		<sheet>
+			<description>You have resistance to bludgeoning, piercing, and slashing damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Resistance" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
+			<grant type="Resistance" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
+			<grant type="Resistance" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING" />
+		</rules>
+	</element>
+</elements>
