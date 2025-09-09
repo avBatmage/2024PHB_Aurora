@@ -2,13 +2,13 @@
 <elements>
 	<info>
 		<name>2024 Barbarian</name>
-		<description>The Barbarian class from the 2024 Players' Handbook.</description>
-		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
+		<description>The Barbarian class from the 2024 Player's Handbook.</description>
+		<author url="https://marketplace.dndbeyond.com/core-rules/3709000?pid=DB3709000">Wizards of the Coast</author>
 		<update version="0.0.2">
-			<file name="2024-class-barbarian.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/refs/heads/main/2024-class-barbarian.xml" />
+			<file name="2024-class-barbarian.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/refs/heads/main/2024-class-barbarian.xml" />
 		</update>
 	</info>
-	<element name="2024 Barbarian" type="Class" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_2024_BARBARIAN">
+	<element name="2024 Barbarian" type="Class" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_BARBARIAN">
 		<description>
 			<p>A tall human tribesman strides through a blizzard, draped in fur and hefting his axe. He laughs as he charges toward the frost giant who dared poach his people's elk herd.</p>
 			<p class="indent">A half-orc snarls at the latest challenger to her authority over their savage tribe, ready to break his neck with her bare hands as she did to the last six rivals.</p>
@@ -16,11 +16,9 @@
 			<p class="indent">These barbarians, different as they might be, are defined by their rage: unbridled, unquenchable, and unthinking fury. More than a mere emotion, their anger is the ferocity of a cornered predator, the unrelenting assault of a storm, the churning turmoil of the sea.</p>
 			<p class="indent">For some, their rage springs from a communion with fierce animal spirits. Others draw from a roiling reservoir of anger at a world full of pain. For every barbarian, rage is a power that fuels not just a battle frenzy but also uncanny reflexes, resilience, and feats of strength.</p>
 			<h4>PRIMAL INSTINCT</h4>
-			<p>People of towns and cities take pride in how their civilized ways set them apart from animals, as if denying one's own nature was a mark of superiority. To a barbarian, though, civilization is no virtue, but a sign of weakness. The strong embrace their animal nature keen instincts, primal physicality, and ferocious rage. Barbarians are uncomfortable when hedged in by walls and crowds. They thrive in the wilds of their homelands: the tundra, jungle, or grasslands where their tribes live and hunt.</p>
-			<p class="indent">Barbarians come alive in the chaos of combat. They can enter a berserk state where rage takes over, giving them superhuman strength and resilience. A barbarian can draw on this reservoir of fury only a few times without resting, but those few rages are usually sufficient to defeat whatever threats arise.</p>
-			<h4>A LIFE OF DANGER</h4>
-			<p>Not every member of the tribes deemed “barbarians” by scions of civilized society has the barbarian class. A true barbarian among these people is as uncommon as a skilled fighter in a town, and he or she plays a similar role as a protector of the people and a leader in times of war. Life in the wild places of the world is fraught with peril: rival tribes, deadly weather, and terrifying monsters. Barbarians charge headlong into that danger so that their people don't have to.</p>
-			<p class="indent">Their courage in the face of danger makes barbarians perfectly suited for adventuring. Wandering is often a way of life for their native tribes, and the rootless life of the adventurer is little hardship for a barbarian. Some barbarians miss the close-knit family structures of the tribe, but eventually find them replaced by the bonds formed among the members of their adventuring parties.</p>
+			<p>Barbarians are mighty warriors who are powered by primal forces of the multiverse that manifest as a Rage. More than a mere emotion—and not limited to anger—this Rage is an incarnation of a predator's ferocity, a storm's fury, and a sea's turmoil.</p>
+			<p class="indent">Some Barbarians personify their Rage as a fierce spirit or revered forebear. Others see it as a connection to the pain and anguish of the world, as an impersonal tangle of wild magic, or as an expression of their own deepest self. For every Barbarian, their Rage is a power that fuels not just battle prowess, but also uncanny reflexes and heightened senses.</p>
+			<p class="indent">Barbarians often serve as protectors and leaders in their communities. They charge headlong into danger so those under their protection don't have to. Their courage in the face of danger makes Barbarians perfectly suited for adventure.</p>
 			<h4>CREATING A BARBARIAN</h4>
 			<p>When creating a barbarian character, think about where your character comes from and his or her place in the world. Talk with your DM about an appropriate origin for your barbarian. Did you come from a distant land, making you a stranger in the area of the campaign? Or is the campaign set in a rough-and-tumble frontier where barbarians are common?</p>
 			<p class="indent">What led you to take up the adventuring life? Were you lured to settled lands by the promise of riches? Did you join forces with soldiers of those lands to face a shared threat? Did monsters or an invading horde drive you out of your homeland, making you a rootless refugee? Perhaps you were a prisoner of war, brought in chains to “civilized” lands and only now able to win your freedom. Or you might have been cast out from your people because of a crime you committed, a taboo you violated, or a coup that removed you from a position of authority.</p>
@@ -52,46 +50,48 @@
 			<h5 class="caption">THE BARBARIAN</h5>
 			<table class="class-features">
 				<thead>
-					<tr><td class="col-10">Level</td><td>Rages</td><td>Rage Damage</td><td class="col-60 left">Features</td></tr>
+					<tr><td class="col-10">Level</td><td>Prof. Bonus</td><td class="col-60 left">Features</td><td>Rages</td><td>Rage Damage</td><td>Weapon Mastery</td></tr>
 				</thead>
-				<tr><td>1st</td><td>2</td><td>+2</td><td class="left">Rage, Unarmored Defense, Weapon Mastery</td></tr>
-				<tr><td>2nd</td><td>2</td><td>+2</td><td class="left">Reckless Attack, Danger Sense</td></tr>
-				<tr><td>3rd</td><td>3</td><td>+2</td><td class="left">Primal Path</td></tr>
-				<tr><td>4th</td><td>3</td><td>+2</td><td class="left">Ability Score Improvement</td></tr>
-				<tr><td>5th</td><td>3</td><td>+2</td><td class="left">Extra Attack, Fast Movement</td></tr>
-				<tr><td>6th</td><td>4</td><td>+2</td><td class="left">Path feature</td></tr>
-				<tr><td>7th</td><td>4</td><td>+2</td><td class="left">Feral Instinct</td></tr>
-				<tr><td>8th</td><td>4</td><td>+2</td><td class="left">Ability Score Improvement</td></tr>
-				<tr><td>9th</td><td>4</td><td>+3</td><td class="left">Brutal Critical (1 die)</td></tr>
-				<tr><td>10th</td><td>4</td><td>+3</td><td class="left">Path feature</td></tr>
-				<tr><td>11th</td><td>4</td><td>+3</td><td class="left">Relentless Rage</td></tr>
-				<tr><td>12th</td><td>5</td><td>+3</td><td class="left">Ability Score Improvement</td></tr>
-				<tr><td>13th</td><td>5</td><td>+3</td><td class="left">Brutal Critical (2 dice)</td></tr>
-				<tr><td>14th</td><td>5</td><td>+3</td><td class="left">Path feature</td></tr>
-				<tr><td>15th</td><td>5</td><td>+3</td><td class="left">Persistent Rage</td></tr>
-				<tr><td>16th</td><td>5</td><td>+4</td><td class="left">Ability Score Improvement</td></tr>
-				<tr><td>17th</td><td>6</td><td>+4</td><td class="left">Brutal Critical (3 dice)</td></tr>
-				<tr><td>18th</td><td>6</td><td>+4</td><td class="left">Indomitable Might</td></tr>
-				<tr><td>19th</td><td>6</td><td>+4</td><td class="left">Ability Score Improvement</td></tr>
-				<tr><td>20th</td><td>6</td><td>+4</td><td class="left">Primal Champion</td></tr>
+				<tr><td>1st</td><td>+2</td><td class="left">Rage, Unarmored Defense, Weapon Mastery</td><td>2</td><td>+2</td><td>2</td></tr>
+				<tr><td>2nd</td><td>+2</td><td class="left">Danger Sense, Reckless Attack</td><td>2</td><td>+2</td><td>2</td></tr>
+				<tr><td>3rd</td><td>+2</td><td class="left">Barbarian Subclass, Primal Knowledge</td><td>3</td><td>+2</td><td>2</td></tr>
+				<tr><td>4th</td><td>+2</td><td class="left">Ability Score Improvement</td><td>3</td><td>+2</td><td>3</td></tr>
+				<tr><td>5th</td><td>+3</td><td class="left">Extra Attack, Fast Movement</td><td>3</td><td>+2</td><td>3</td></tr>
+				<tr><td>6th</td><td>+3</td><td class="left">Subclass Feature</td><td>4</td><td>+2</td><td>3</td></tr>
+				<tr><td>7th</td><td>+3</td><td class="left">Feral Instinct, Instinctive Pounce</td><td>4</td><td>+2</td><td>3</td></tr>
+				<tr><td>8th</td><td>+3</td><td class="left">Ability Score Improvement</td><td>4</td><td>+2</td><td>3</td></tr>
+				<tr><td>9th</td><td>+4</td><td class="left">Brutal Critical</td><td>4</td><td>+3</td><td>3</td></tr>
+				<tr><td>10th</td><td>+4</td><td class="left">Subclass Feature</td><td>4</td><td>+3</td><td>4</td></tr>
+				<tr><td>11th</td><td>+4</td><td class="left">Relentless Rage</td><td>4</td><td>+3</td><td>4</td></tr>
+				<tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td><td>5</td><td>+3</td><td>4</td></tr>
+				<tr><td>13th</td><td>+5</td><td class="left">Improved Brutal Strike</td><td>5</td><td>+3</td><td>4</td></tr>
+				<tr><td>14th</td><td>+5</td><td class="left">Subclass Feature</td><td>5</td><td>+3</td><td>4</td></tr>
+				<tr><td>15th</td><td>+5</td><td class="left">Persistent Rage</td><td>5</td><td>+3</td><td>4</td></tr>
+				<tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td><td>5</td><td>+4</td><td>4</td></tr>
+				<tr><td>17th</td><td>+6</td><td class="left">Improved Brutal Strike</td><td>6</td><td>+4</td><td>4</td></tr>
+				<tr><td>18th</td><td>+6</td><td class="left">Indomitable Might</td><td>6</td><td>+4</td><td>4</td></tr>
+				<tr><td>19th</td><td>+6</td><td class="left">Epic Boon</td><td>6</td><td>+4</td><td>4</td></tr>
+				<tr><td>20th</td><td>+6</td><td class="left">Primal Champion</td><td>6</td><td>+4</td><td>4</td></tr>
 			</table>
 			<div element="ID_2024PHB_CLASS_FEATURE_BARBARIAN_RAGE" />
 			<div element="ID_2024PHB_CLASS_FEATURE_BARBARIAN_UNARMORED_DEFENCE" />
 			<div element="ID_2024PHB_CLASS_FEATURE_BARBARIAN_WEAPON_MASTERY" />
-			<div element="ID_2024PHB_CLASS_FEATURE_BARBARIAN_RECKLESS_ATTACK" />
 			<div element="ID_2024PHB_CLASS_FEATURE_BARBARIAN_DANGER_SENSE" />
-			<div element="ID_2024PHB_CLASS_FEATURE_BARBARIAN_PRIMAL_PATH" />
+			<div element="ID_2024PHB_CLASS_FEATURE_BARBARIAN_RECKLESS_ATTACK" />
+			<div element="ID_2024PHB_CLASS_FEATURE_BARBARIAN_BARBARIAN_SUBCLASS" />
 			<div element="ID_2024PHB_CLASS_FEATURE_BARBARIAN_PRIMAL_KNOWLEDGE" />
 			<div element="ID_2024PHB_CLASS_FEATURE_BARBARIAN_ABILITYSCOREIMPROVEMENT" />
 			<div element="ID_2024PHB_CLASS_FEATURE_BARBARIAN_EXTRA_ATTACK" />
 			<div element="ID_2024PHB_CLASS_FEATURE_BARBARIAN_FAST_MOVEMENT" />
 			<div element="ID_2024PHB_CLASS_FEATURE_BARBARIAN_FERAL_INSTINCT" />
+			<div element="ID_2024PHB_CLASS_FEATURE_BARBARIAN_INSTINCTIVE_POUNCE" />
 			<div element="ID_2024PHB_CLASS_FEATURE_BARBARIAN_BRUTAL_STRIKE" />
 			<div element="ID_2024PHB_CLASS_FEATURE_BARBARIAN_RELENTLESS_RAGE" />
 			<div element="ID_2024PHB_CLASS_FEATURE_BARBARIAN_IMPROVED_BRUTAL_STRIKE" />
 			<div element="ID_2024PHB_CLASS_FEATURE_BARBARIAN_PERSISTANT_RAGE"/>
 			<div element="ID_2024PHB_CLASS_FEATURE_BARBARIAN_IMPROVED_BRUTAL_STRIKE_TWO" />
 			<div element="ID_2024PHB_CLASS_FEATURE_BARBARIAN_INDOMITABLE_MIGHT" />
+			<div element="ID_2024PHB_CLASS_FEATURE_BARBARIAN_EPIC_BOON" />
 			<div element="ID_2024PHB_CLASS_FEATURE_BARBARIAN_PRIMAL_CHAMPION" />
 		</description>
 		<sheet display="false">
@@ -113,20 +113,22 @@
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_RAGE" level="1" />
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_UNARMORED_DEFENCE" level="1" />
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_WEAPON_MASTERY" level="1" />
-			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_RECKLESS_ATTACK" level="2" />
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_DANGER_SENSE" level="2" />
-			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_PRIMAL_PATH" level="3" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_RECKLESS_ATTACK" level="2" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_BARBARIAN_SUBCLASS" level="3" />
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_PRIMAL_KNOWLEDGE" level="3" />
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_ABILITYSCOREIMPROVEMENT" level="4" />
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_EXTRA_ATTACK" level="5" />
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_FAST_MOVEMENT" level="5" />
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_FERAL_INSTINCT" level="7" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_INSTINCTIVE_POUNCE" level="7" />
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_BRUTAL_STRIKE" level="9" />
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_RELENTLESS_RAGE" level="11" />
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_IMPROVED_BRUTAL_STRIKE" level="13" />
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_PERSISTANT_RAGE" level="15" />
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_IMPROVED_BRUTAL_STRIKE_TWO" level="17" />
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_INDOMITABLE_MIGHT" level="18" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_EPIC_BOON" level="19" />
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_PRIMAL_CHAMPION" level="20" />
 		</rules>
 		<multiclass id="ID_BATAV_MULTICLASS_BARBARIAN">
@@ -150,7 +152,7 @@
 			<p>You can enter your Rage the number of times shown for your Barbarian level in the Rages column of the Barbarian Features table. You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest.</p>
 			<p>While active, your Rage follows the rules below.</p>
 			<p class="indent">You have Resistance to Bludgeoning, Piercing, and Slashing damage.</p>
-			<p class="indent">When you make an attack using Strength, with either a weapon or an Unarmed Strike, and deal damage to the target, you gain a bonus to the damage that increases as you gain levels as a Barbarian, as shown in the Rage Damage column of the Barbarian Features table.</p>
+			<p class="indent">When you make an attack using Strength—with either a weapon or an Unarmed Strike—and deal damage to the target, you gain a bonus to the damage that increases as you gain levels as a Barbarian, as shown in the Rage Damage column of the Barbarian Features table.</p>
 			<p class="indent">You have Advantage on Strength checks and Strength saving throws. </p>
 			<p class="indent">You can't maintain Concentration, and you can't cast spells. </p>
 			<p class="indent">The Rage lasts until the end of your next turn, and it ends early if you don Heavy Armor or have the Incapacitated condition. If your Rage is still active on your next turn, you can extend the Rage for another round by doing one or more of the following: </p>
@@ -234,7 +236,7 @@
 			<description>You have Advantage on Dexterity saving throws unless you have the Incapacitated condition.</description>
 		</sheet>
 	</element>
-	<element name="Primal Path" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_PRIMAL_PATH">
+	<element name="Primal Path" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_BARBARIAN_SUBCLASS">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_PRIMAL_PATH</requirements>
 		<description>
 			<p>At 3rd level, you choose a path that shapes the nature of your rage. Choose the Path of the Berserker or the Path of the Totem Warrior, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th levels.</p>
@@ -293,25 +295,33 @@
 			<description>Your speed increases by 10 feet while you aren't wearing heavy armor.</description>
 		</sheet>
 		<rules>
-			<stat name="speed:misc" value="10" equipped="![armor:heavy]" />
-			<!--<stat name="innate speed:misc" value="10" equipped="![armor:heavy]" requirements="[innate speed:1]" />
+			<stat name="innate speed:misc" value="10" equipped="![armor:heavy]" requirements="[innate speed:1]" />
 			<stat name="innate speed:climb:misc" value="10" equipped="![armor:heavy]" requirements="[innate speed:climb:1]" />
 			<stat name="innate speed:fly:misc" value="10" equipped="![armor:heavy]" requirements="[innate speed:fly:1]" />
 			<stat name="innate speed:swim:misc" value="10" equipped="![armor:heavy]" requirements="[innate speed:swim:1]" />
-			<stat name="innate speed:burrow:misc" value="10" equipped="![armor:heavy]" requirements="[innate speed:burrow:1]" /> -->
+			<stat name="innate speed:burrow:misc" value="10" equipped="![armor:heavy]" requirements="[innate speed:burrow:1]" />
 		</rules>
 	</element>
 	<element name="Feral Instinct" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_FERAL_INSTINCT">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_FERAL_INSTINCT</requirements>
 		<description>
-			<p>By 7th level, your instincts are so honed that you have advantage on initiative rolls. As part of the Bonus Action you take to enter your Rage, you can move up to half your Speed.</p> 
+			<p>By 7th level, your instincts are so honed that you have advantage on initiative rolls.</p>
 		</description>
 		<sheet>
-			<description>You have advantage on initiative rolls. As part of the Bonus Action you take to enter your Rage, you can move up to half your Speed.</description>
+			<description>You have advantage on initiative rolls.</description>
 		</sheet>
 		<rules>
 			<grant type="Grants" id="ID_INTERNAL_GRANTS_INITIATIVE_ADVANTAGE" />
 		</rules>
+	</element>
+	<element name="Instinctive Pounce" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_INSTINCTIVE_POUNCE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_INSTINCTIVE_POUNCE</requirements>
+		<description>
+			<p>As part of the Bonus Action you take to enter your Rage, you can move up to half your Speed.</p>
+		</description>
+		<sheet>
+			<description>As part of the Bonus Action you take to enter your Rage, you can move up to half your Speed.</description>
+		</sheet>
 	</element>
 	<element name="Brutal Strike" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_BRUTAL_STRIKE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_BRUTAL_CRITICAL</requirements>
@@ -323,20 +333,20 @@
 		<sheet>
 			<description>
 				Forgo Advantage when Reckless attacking to deal an additional 1d10 damage and apply one of the following effects:
-					FORCEFUL BLOW. The target is pushed 15 feet straight away from you. You can then move up to half your Speed straight toward the target without provoking Opportunity Attacks.
-					HAMSTRING BLOW. The target's Speed is reduced by 15 feet until the start of your next turn. A target can be affected by only one Hamstring Blow at a time—the most recent one.
+					Forceful Blow. The target is pushed 15 feet straight away from you. You can then move up to half your Speed straight toward the target without provoking Opportunity Attacks.
+					Hamstring Blow. The target's Speed is reduced by 15 feet until the start of your next turn. A target can be affected by only one Hamstring Blow at a time—the most recent one.
 			</description>
 			<description level="13">Forgo Advantage when Reckless attacking to deal an additional 1d10 damage and apply one of the following effects:
-					FORCEFUL BLOW. The target is pushed 15 feet straight away from you. You can then move up to half your Speed straight toward the target without provoking Opportunity Attacks.
-					HAMSTRING BLOW. The target's Speed is reduced by 15 feet until the start of your next turn. A target can be affected by only one Hamstring Blow at a time—the most recent one.
-					STAGGERING BLOW. The target has Disadvantage on the next saving throw it makes, and it can't make Opportunity Attacks until the start of your next turn.
-					SUNDERING BLOW. Before the start of your next turn, the next attack roll made by another creature against the target gains a +5 bonus to the roll. An attack roll can gain only one Sundering Blow bonus.
+					Forceful Blow. The target is pushed 15 feet straight away from you. You can then move up to half your Speed straight toward the target without provoking Opportunity Attacks.
+					Hamstring Blow. The target's Speed is reduced by 15 feet until the start of your next turn. A target can be affected by only one Hamstring Blow at a time—the most recent one.
+					Staggering Blow. The target has Disadvantage on the next saving throw it makes, and it can't make Opportunity Attacks until the start of your next turn.
+					Sundering Blow. Before the start of your next turn, the next attack roll made by another creature against the target gains a +5 bonus to the roll. An attack roll can gain only one Sundering Blow bonus.
 			</description>
 			<description level="17">Forgo Advantage when Reckless attacking to deal an additional 2d10 damage and apply two of the following effects:
-					FORCEFUL BLOW. The target is pushed 15 feet straight away from you. You can then move up to half your Speed straight toward the target without provoking Opportunity Attacks.
-					HAMSTRING BLOW. The target's Speed is reduced by 15 feet until the start of your next turn. A target can be affected by only one Hamstring Blow at a time—the most recent one.
-					STAGGERING BLOW. The target has Disadvantage on the next saving throw it makes, and it can't make Opportunity Attacks until the start of your next turn.
-					SUNDERING BLOW. Before the start of your next turn, the next attack roll made by another creature against the target gains a +5 bonus to the roll. An attack roll can gain only one Sundering Blow bonus.
+					Forceful Blow. The target is pushed 15 feet straight away from you. You can then move up to half your Speed straight toward the target without provoking Opportunity Attacks.
+					Hamstring Blow. The target's Speed is reduced by 15 feet until the start of your next turn. A target can be affected by only one Hamstring Blow at a time—the most recent one.
+					Staggering Blow. The target has Disadvantage on the next saving throw it makes, and it can't make Opportunity Attacks until the start of your next turn.
+					Sundering Blow. Before the start of your next turn, the next attack roll made by another creature against the target gains a +5 bonus to the roll. An attack roll can gain only one Sundering Blow bonus.
 			</description>
 		</sheet>
 	</element>
@@ -389,6 +399,15 @@
 			<description>If your total for a Strength check or saving throw is less than {{strength:score}}, you can use {{strength:score}} place of the total.</description>
 		</sheet>
 	</element>
+	<element name="Epic Boon" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_EPIC_BOON">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_EPIC_BOON</requirements>
+		<description>
+			<p>At 19th level, you gain an Epic Boon of your choice. The Epic Boons are detailed in the Epic Boons section of the Player's Handbook.</p>
+		</description>
+		<sheet display="False">
+			<description>You gain an Epic Boon of your choice.</description>
+		</sheet>
+	</element>
 	<element name="Primal Champion" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_PRIMAL_CHAMPION">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_PRIMAL_CHAMPION</requirements>
 		<description>
@@ -410,15 +429,17 @@
 	<element name="Unarmored Defense Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_UNARMORED_DEFENCE" />
 	<element name="Reckless Attack Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_RECKLESS_ATTACK" />
 	<element name="Danger Sense Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_DANGER_SENSE" />
-	<element name="Primal Path Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_PRIMAL_PATH" />
+	<element name="Barbarian Subclass Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_BARBARIAN_SUBCLASS" />
 	<element name="Ability Score Improvement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_ABILITY_SCORE_IMPROVEMENT" />
 	<element name="Extra Attack Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_EXTRA_ATTACK" />
 	<element name="Fast Movement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_FAST_MOVEMENT" />
 	<element name="Feral Instinct Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_FERAL_INSTINCT" />
+	<element name="Instinctive Pounce Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_INSTINCTIVE_POUNCE" />
 	<element name="Brutal Critical Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_BRUTAL_CRITICAL" />
 	<element name="Relentless Rage Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_RELENTLESS_RAGE" />
 	<element name="Persistant Rage Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_PERSISTANT_RAG" />
 	<element name="Indomitable Might Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_INDOMITABLE_MIGHT" />
+	<element name="Epic Boon Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_EPIC_BOON" />
 	<element name="Primal Champion Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_PRIMAL_CHAMPION" />
 
 	<!-- Barbarian Subclasses -->
@@ -504,8 +525,8 @@
 			<description>You can cast Beast Sense and Speak with Animals as rituals, using Wisdom as your spellcasting ability.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_BEAST_SENSE" level="3" spellcasting="Barbarian" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_ANIMALS" level="3" spellcasting="Barbarian" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_BEAST_SENSE" level="3" spellcasting="Barbarian" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_SPEAK_WITH_ANIMALS" level="3" spellcasting="Barbarian" prepared="true" />
 		</rules>
 	</element>
 	<element name="Rage of the Wilds" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_WILD_HEART_RAGE_OF_THE_WILDS">
@@ -517,9 +538,9 @@
 		</description>
 		<sheet>
 			<description>Whenever you activate Rage, gain one of the following for the duration: 
-				BEAR:  Gain Resistance to 2 damage types other than Force or Psychic, 
-				EAGLE: Disengage and Dash as bonus action,
-				WOLF:  Allies have advantage on melee attacks against enemies within 10 feet of you.
+				Bear:  Gain Resistance to 2 damage types other than Force or Psychic, 
+				Eagle: Disengage and Dash as bonus action,
+				Wolf:  Allies have advantage on melee attacks against enemies within 10 feet of you.
 			</description>
 		</sheet>
 	</element>
@@ -531,7 +552,7 @@
 			<p class="indent"><strong>Salmon.</strong> You have a Swim Speed equal to your Speed.</p>
 		</description>
 		<sheet>
-			<description>Choose one aspect (changeable on Long Rest): Owl (Darkvision 60ft), Panther (Climb Speed), or Salmon (Swim Speed).</description>
+			<description>Choose one aspect (changeable on Long Rest): Owl (Darkvision +60ft), Panther (Climb Speed), or Salmon (Swim Speed).</description>
 		</sheet>
 		<rules>
 			<select type="Class Feature" name="Aspect of the Wilds" supports="Aspect of the Wilds, Barbarian" level="6" count="1"/>
@@ -582,7 +603,7 @@
 			<description>You can cast Commune with Nature as a ritual, using Wisdom as your spellcasting ability.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_COMMUNE_WITH_NATURE" level="10" spellcasting="Barbarian" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_COMMUNE_WITH_NATURE" level="10" spellcasting="Barbarian" prepared="true" />
 		</rules>
 	</element>
 	<element name="Power of the Wilds" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_WILD_HEART_POWER_OF_THE_WILDS">
@@ -594,9 +615,9 @@
 		</description>
 		<sheet>
 			<description>Whenever you activate Rage, gain one of the following for the duration: 
-				FALCON: While unarmored, you have a Fly Speed equal to your Speed, 
-				LION: Enemies within 5 feet have disadvantage on attack rolls against targets other than you or another Barbarian with this option, 
-				RAM: You can cause a Large or smaller creature to have the Prone condition when you hit it with a melee attack.
+				Falcon: While unarmored, you have a Fly Speed equal to your Speed, 
+				Lion: Enemies within 5 feet have disadvantage on attack rolls against targets other than you or another Barbarian with this option, 
+				Ram: You can cause a Large or smaller creature to have the Prone condition when you hit it with a melee attack.
 			</description>
 		</sheet>
 	</element>
@@ -620,7 +641,6 @@
 			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_WORLD_TREE_TRAVEL_ALONG_THE_TREE" level="14" />
 		</rules>
 	</element>
-
 	<element name="Vitality of the Tree" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_WORLD_TREE_VITALITY_OF_THE_TREE">
 		<description>
 			<p>Your Rage taps into the lifeforce of the World Tree. You gain the following benefits:</p>
@@ -631,7 +651,6 @@
 			<description>When you activate Rage, gain {{level:2024_barbarian}} Temporary HP. At the start of each turn while Raging, grant {{barbarian rage:damage}}d6 Temporary HP to a creature within 10 feet.</description>
 		</sheet>
 	</element>
-
 	<element name="Branches of the Tree" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_WORLD_TREE_BRANCHES_OF_THE_TREE">
 		<description>
 			<p>While your Rage is active, whenever a creature you can see starts its turn within 30 feet of you, you can use your Reaction to summon spectral branches of the World Tree around it. The target must succeed on a Strength saving throw (DC equal to 8 plus your Proficiency Bonus plus your Strength modifier) or be teleported to an unoccupied space you can see within 5 feet of yourself or in the nearest unoccupied space you can see. The space the target teleports to must be on a surface or liquid that can support it; otherwise, the target doesn't teleport.</p>
@@ -641,7 +660,6 @@
 			<description>While Raging, use Reaction to teleport creatures within 30 feet to within 5 feet of you on failed Strength save, and reduce their Speed to 0.</description>
 		</sheet>
 	</element>
-
 	<element name="Battering Boots" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_WORLD_TREE_BATTERING_BOOTS">
 		<description>
 			<p>Tendrils of the World Tree extend from your Melee weapons. During your turn, while you wield a Melee weapon with the Heavy or Versatile property, your reach with that weapon increases by 10 feet. When you hit with this weapon, you can activate the Push or Topple property in addition to any other Mastery property you are using with that weapon.</p>
@@ -650,7 +668,6 @@
 			<description>While wielding Heavy or Versatile melee weapons, your reach increases by 10 feet and you can activate Push or Topple properties in addition to other Mastery properties.</description>
 		</sheet>
 	</element>
-
 	<element name="Travel along the Tree" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_WORLD_TREE_TRAVEL_ALONG_THE_TREE">
 		<description>
 			<p>You can briefly travel along the World Tree. When you activate your Rage and as a Bonus Action while it's active, you can teleport up to 60 feet to an unoccupied space you can see.</p>
@@ -660,6 +677,93 @@
 			<description>
 				When you activate Rage or as a Bonus Action while Raging, teleport up to 60 feet. 
 				Also once per Rage can bring up to 6 willing creatures within 10 feet, increasing range to 500 feet.
+			</description>
+		</sheet>
+	</element>
+
+	<element name="2024 Path of the Zealot" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_PATH_OF_THE_ZEALOT">
+		<supports>Barbarian Primal Path</supports>
+		<description>
+			<p><i>Rage in Ecstatic Union with a God</i></p>
+			<p>Barbarians who walk the Path of the Zealot receive boons from a god or pantheon. These Barbarians experience their Rage as an ecstatic episode of divine union that infuses them with power. They are often allies to the priests and other followers of their god or pantheon.</p>
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_PATH_OF_THE_ZEALOT_DIVINE_FURY" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_PATH_OF_THE_ZEALOT_WARRIOR_OF_THE_GODS" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_PATH_OF_THE_ZEALOT_FANATICAL_FOCUS" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_PATH_OF_THE_ZEALOT_ZEALOUS_PRESENCE" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_PATH_OF_THE_ZEALOT_RAGE_OF_THE_GODS" />
+		</description>
+		</description>
+		<sheet display="false">
+			<description>Barbarians who walk the Path of the Zealot receive boons from a god or pantheon.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_PATH_OF_THE_ZEALOT_DIVINE_FURY" level="3" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_PATH_OF_THE_ZEALOT_WARRIOR_OF_THE_GODS" level="3" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_PATH_OF_THE_ZEALOT_FANATICAL_FOCUS" level="6" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_PATH_OF_THE_ZEALOT_ZEALOUS_PRESENCE" level="10" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_PATH_OF_THE_ZEALOT_RAGE_OF_THE_GODS" level="14" />
+		</rules>
+	</element>
+	<element name="Divine Fury" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_PATH_OF_THE_ZEALOT_DIVINE_FURY">
+		<description>
+			<p><i>3rd-Level Feature</i></p>
+			<p>You can channel divine power into your strikes. On each of your turns while your Rage is active, the first creature you hit with a weapon or an Unarmed Strike takes extra damage equal to ld6 plus half your Barbarian level (round down). The extra damage is Necrotic or Radiant; you choose the type each time you deal the damage.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>On each of your turns while Raging, the first creature you hit with a weapon or an Unarmed Strike takes extra damage equal to 1d6+{{level:2024 barbarian:half}}. The extra damage is Necrotic or Radiant; you choose the type each time you deal the damage.</description>
+		</sheet>
+	</element>
+	<element name="Warrior of the Gods" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_PATH_OF_THE_ZEALOT_WARRIOR_OF_THE_GODS">
+		<description>
+			<p><i>3rd-Level Feature</i></p>
+			<p>A divine entity helps ensure you can continue the fight. You have a pool of four dl2s that you can spend to heal yourself. As a Bonus Action, you can expend dice from the pool, roll them, and regain a number of Hit Points equal to the roll's total.</p>
+			<p class="indent">Your pool regains all expended dice when you finish a Long Rest.</p>
+			<p class="indent">The pool's maximum number of dice increases by one when you reach Barbarian levels 6 (5 dice), 12 (6 dice), and 17 (7 dice).</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{warrior of the gods:dice}}d12/Long Rest">
+			<description>Expend dice from the pool to regain Hit Points equal to the roll's total.</description>
+		</sheet>
+		<rules>
+			<stat name="warrior of the gods:dice" value="4" level="1" />
+			<stat name="warrior of the gods:dice" value="1" level="6" />
+			<stat name="warrior of the gods:dice" value="1" level="12" />
+			<stat name="warrior of the gods:dice" value="1" level="17" />
+		</rules>
+	</element>
+	<element name="Fanatical Focus" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_PATH_OF_THE_ZEALOT_FANATICAL_FOCUS">
+		<description>
+			<p><i>6th-Level Feature</i></p>
+			<p>Once per active Rage, if you fail a saving throw, you can reroll it with a bonus equal to your Rage Damage bonus, and you must use the new roll.</p>
+		</description>
+		<sheet usage="1/Rage">
+			<description>If you fail a saving throw, you can reroll it with a bonus equal to your Rage Damage bonus, and you must use the new roll.</description>
+		</sheet>
+	</element>
+	<element name="Zealous Presence" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_PATH_OF_THE_ZEALOT_ZEALOUS_PRESENCE">
+		<description>
+			<p><i>10th-Level Feature</i></p>
+			<p>As a Bonus Action, you unleash a battle cry infused with divine energy. Up to ten other creatures of your choice within 60 feet of you gain Advantage on attack rolls and saving throws until the start of your next turn.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest unless you expend a use of your Rage (no action required) to restore your use of it.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>Up to ten other creatures of your choice within 60 feet of you gain Advantage on attack rolls and saving throws until the start of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Rage of the Gods" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_PATH_OF_THE_ZEALOT_RAGE_OF_THE_GODS">
+		<description>
+			<p><i>14th-Level Feature</i></p>
+			<p>When you activate your Rage, you can assume the form of a divine warrior. This form lasts for 1 minute or until you drop to O Hit Points. Once you use this feature, you can't do so again until you finish a Long Rest.</p>
+			<p class="indent">While in this form, you gain the benefits below.</p>
+			<p class="indent"><strong>Flight.</strong>You have a Fly Speed equal to your Speed and can hover.</p>
+			<p class="indent"><strong>Resistance.</strong> You have Resistance to Necrotic, Psychic, and Radiant damage.</p>
+			<p class="indent"><strong>Revivification.</strong> When a creature within 30 feet of you would drop to O Hit Points, you can take a Reaction to expend a use of your Rage to instead change the target's Hit Points to a number equal to your Barbarian level.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>
+			When you activate your Rage, you can assume the form of a divine warrior for a minute or until you drop to O Hit Points. While in this form, you gain the benefits below.
+			Flight: You have a Fly Speed equal to your Speed and can hover.
+			Resistance: You have Resistance to Necrotic, Psychic, and Radiant damage.
+			Revivification: When a creature within 30 feet of you would drop to O Hit Points, you can take a Reaction to expend a use of your Rage to instead change the target's Hit Points to a number equal to your Barbarian level.
 			</description>
 		</sheet>
 	</element>

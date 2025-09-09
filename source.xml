@@ -18,4 +18,12 @@
 			<set name="release">20250818</set>
 		</setters>
 	</element>
+	<element name="2024 Character Creation" type="Option" source="2024 Player's Handbook" id="ID_2024PHB_OPTION_2024_CHARACTER_CREATION">
+		<description>
+			<p>Follow the 2024 Character Creation rules.</p>
+		</description>
+		<setters>
+			<set name="short">Follow the 2024 Character Creation rules.</set>
+		</setters>
+	</element>
 </elements>

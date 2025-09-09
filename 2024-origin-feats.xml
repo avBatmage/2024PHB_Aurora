@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>2024 Origin Feats</name>
+		<description>Origin Feats from the 2024 Player's Handbook.</description>
+		<author url="https://www.dndbeyond.com/">Wizards of the Coast</author>
+		<update version="0.0.1">
+			<file name="2024-origin-feats.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-origin-feats.xml" />
+		</update>
+	</info>
+
+	<!-- 10 Origin Feats -->
+	<element name="2024 Alert" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_ALERT">
+		<prerequisite>origin</prerequisite>
+		<supports>Origin Feat</supports>
+		<description>
+			<ul>
+				<li><strong>Initiative Proficiency</strong>. When you roll Initiative, you can add your Proficiency Bonus to the roll.</li>
+				<li><strong>Initiative Swap</strong>. Immediately after you roll Initiative, you can swap your Initiative with the Initiative of one willing ally in the same combat. You can't make this swap if you or the ally has the Incapacitated condition.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Initiative Proficiency: Add Proficiency Bonus to Initiative rolls. Initiative Swap: Can swap Initiative with willing ally after rolling.</description>
+		</sheet>
+        <rules>
+			<stat name="initiative" value="proficiency" />
+		</rules>
+	</element>
+	<element name="2024 Crafter" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_CRAFTER">
+		<prerequisite>origin</prerequisite>
+		<supports>Origin Feat</supports>
+		<description>
+			<ul>
+				<li><strong>Tool Proficiency</strong>. You gain proficiency with three different Artisan's Tools of your choice from the Fast Crafting table.</li>
+				<li><strong>Discount</strong>. Whenever you buy a nonmagical item, you receive a 20 percent discount on it.</li>
+				<li><strong>Fast Crafting</strong>. When you finish a Long Rest, you can craft one piece of gear from the Fast Crafting table, provided you have the Artisan's Tools associated with that item and have proficiency with those tools. The item lasts until you finish another Long Rest, at which point the item falls apart.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Tool Proficiency: Three Artisan's Tools. Discount: 20% off nonmagical items. Fast Crafting: Craft temporary gear during long rest.</description>
+		</sheet>
+	</element>
+	<element name="2024 Healer" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_HEALER">
+		<prerequisite>origin</prerequisite>
+		<supports>Origin Feat</supports>
+		<description>
+			<ul>
+				<li><strong>Battle Medic</strong>. If you have a Healer's Kit, you can expend one use of it and tend to a creature within 5 feet of yourself as a Utilize action. That creature can expend one of its Hit Point Dice, and you then roll that die. The creature regains a number of Hit Points equal to the roll plus your Proficiency Bonus.</li>
+				<li><strong>Healing Rerolls</strong>. Whenever you roll a die to determine the number of Hit Points you restore with a spell or with this feat's Battle Medic benefit, you can reroll the die if it rolls a 1, and you must use the new roll.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Battle Medic: Use Healer's Kit to restore HP equal to Hit Die roll plus Proficiency Bonus. Healing Rerolls: Reroll 1s on healing dice.</description>
+		</sheet>
+	</element>
+	<element name="2024 Lucky" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_LUCKY">
+		<prerequisite>origin</prerequisite>
+		<supports>Origin Feat</supports>
+		<description>
+			<ul>
+				<li><strong>Luck Points</strong>. You have a number of Luck Points equal to your Proficiency Bonus and can spend the points on the benefits below. You regain your expended Luck Points when you finish a Long Rest.</li>
+				<li><strong>Advantage</strong>. When you roll a d20 for a D20 Test, you can spend 1 Luck Point to give yourself Advantage on the roll.</li>
+				<li><strong>Disadvantage</strong>. When a creature rolls a d20 for an attack roll against you, you can spend 1 Luck Point to impose Disadvantage on that roll.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Luck Points: Number equal to Proficiency Bonus. Spend to gain Advantage on D20 Tests or impose Disadvantage on attacks against you. Regain on Long Rest.</description>
+		</sheet>
+	</element>
+	<element name="2024 Magic Initiate" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MAGIC_INITIATE">
+		<prerequisite>origin</prerequisite>
+		<supports>Origin Feat</supports>
+		<description>
+			<ul>
+				<li><strong>Two Cantrips</strong>. You learn two cantrips of your choice from the Cleric, Druid, or Wizard spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat).</li>
+				<li><strong>Level 1 Spell</strong>. Choose a level 1 spell from the same list you selected for this feat's cantrips. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have.</li>
+				<li><strong>Spell Change</strong>. Whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list.</li>
+				<li><strong>Repeatable</strong>. You can take this feat more than once, but you must choose a different spell list each time.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Two Cantrips and one 1st-level spell from Cleric, Druid, or Wizard list. Can cast 1st-level spell once per long rest without spell slot. Repeatable with different spell list.</description>
+		</sheet>
+	</element>
+	<element name="2024 Musician" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MUSICIAN">
+		<prerequisite>origin</prerequisite>
+		<supports>Origin Feat</supports>
+		<description>
+			<ul>
+				<li><strong>Instrument Training</strong>. You gain proficiency with three Musical Instruments of your choice.</li>
+				<li><strong>Encouraging Song</strong>. As you finish a Short or Long Rest, you can play a song on a Musical Instrument with which you have proficiency and give Heroic Inspiration to allies who hear the song. The number of allies you can affect in this way equals your Proficiency Bonus.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Instrument Training: Proficiency with three Musical Instruments. Encouraging Song: Give Heroic Inspiration to allies equal to Proficiency Bonus after rest.</description>
+		</sheet>
+	</element>
+	<element name="2024 Savage Attacker" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_SAVAGE_ATTACKER">
+		<prerequisite>origin</prerequisite>
+		<supports>Origin Feat</supports>
+		<description>
+			<ul>
+				<li>You've trained to deal particularly damaging strikes. Once per turn when you hit a target with a weapon, you can roll the weapon's damage dice twice and use either roll against the target.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Once per turn, roll weapon damage dice twice and use either roll when hitting with a weapon.</description>
+		</sheet>
+	</element>
+	<element name="2024 Skilled" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_SKILLED">
+		<prerequisite>origin</prerequisite>
+		<supports>Origin Feat</supports>
+		<description>
+			<ul>
+				<li>You gain proficiency in any combination of three skills or tools of your choice.</li>
+				<li><strong>Repeatable</strong>. You can take this feat more than once.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Gain proficiency in any combination of three skills or tools of your choice. Repeatable.</description>
+		</sheet>
+	</element>
+	<element name="2024 Tavern Brawler" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_TAVERN_BRAWLER">
+		<prerequisite>origin</prerequisite>
+		<supports>Origin Feat</supports>
+		<description>
+			<ul>
+				<li><strong>Enhanced Unarmed Strike</strong>. When you hit with your Unarmed Strike and deal damage, you can deal Bludgeoning damage equal to 1d4 plus your Strength modifier instead of the normal damage of an Unarmed Strike.</li>
+				<li><strong>Damage Rerolls</strong>. Whenever you roll a damage die for your Unarmed Strike, you can reroll the die if it rolls a 1, and you must use the new roll.</li>
+				<li><strong>Improvised Weaponry</strong>. You have proficiency with improvised weapons.</li>
+				<li><strong>Push</strong>. When you hit a creature with an Unarmed Strike as part of the Attack action on your turn, you can deal damage to the target and also push it 5 feet away from you. You can use this benefit only once per turn.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Enhanced Unarmed Strike: 1d4 + Str modifier damage. Damage Rerolls: Reroll 1s on unarmed damage. Improvised Weaponry: Proficiency with improvised weapons. Push: Push target 5 feet with unarmed strikes.</description>
+		</sheet>
+	</element>
+	<element name="2024 Tough" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_TOUGH">
+		<prerequisite>origin</prerequisite>
+		<supports>Origin Feat</supports>
+		<description>
+			<ul>
+				<li>Your Hit Point maximum increases by an amount equal to twice your character level when you gain this feat. Whenever you gain a character level thereafter, your Hit Point maximum increases by an additional 2 Hit Points.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Hit Point maximum increases by twice your character level when you gain this feat, and by 2 Hit Points for each level thereafter.</description>
+		</sheet>
+		<rules>
+			<stat name="tough:hp" value="level" />
+			<stat name="tough:hp" value="level" />
+			<stat name="hp" value="tough:hp" />
+		</rules>
+	</element>

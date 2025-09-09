@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>2024 Backgrounds</name>
+		<description>Backgrounds from the 2024 Player's Handbook.</description>
+		<author url="https://www.dndbeyond.com/">Wizards of the Coast</author>
+		<update version="0.0.1">
+			<file name="2024-backgrounds.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-backgrounds.xml" />
+		</update>
+	</info>
+</elements>
+
+<element name="Acolyte" type="Background" source="2024 Player's Handbook" id="ID_2024PHB_BACKGROUND_ACOLYTE">
+    <description>
+			<p>You have spent your life in the service of a temple to a specific god or pantheon of gods. You act as an intermediary between the realm of the holy and the mortal world, performing sacred rites and offering sacrifices in order to conduct worshipers into the presence of the divine. You are not necessarily a cleric—performing sacred rites is not the same thing as channeling divine power.</p>
+			<p class="indent">Choose a god, a pantheon of gods, or some other quasi-divine being, and work with your DM to detail the nature of your religious service. Were you a lesser functionary in a temple, raised from childhood to assist the priests in the sacred rites? Or were you a high priest who suddenly experienced a call to serve your god in a different way? Perhaps you were the leader of a small cult outside of any established temple structure, or even an occult group that served a fiendish master that you now deny.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>Insight, Religion</li>
+				<li><strong>Languages:</strong>Two of your choice</li>
+				<li><strong>Equipment:</strong>A holy symbol (a gift to you when you entered the priesthood), a prayer book or prayer wheel, 5 sticks of incense, vestments, a set of common clothes, and a belt pouch containing 15 gp</li>
+			</ul>
+			<div element="ID_BACKGROUND_FEATURE_SHELTER_OF_THE_FAITHFUL" />
+			<h5>SUGGESTED CHARACTERISTICS</h5>
+			<p>Acolytes are shaped by their experience in temples or other religious communities. Their study of the history and tenets of their faith and their relationships to temples, shrines, or hierarchies affect their mannerisms and ideals. Their flaws might be some hidden hypocrisy or heretical idea, or an ideal or bond taken to an extreme.</p>
+		</description>
+		<setters>
+			<set name="short">Insight, Religion, 2 Languages</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
+			<select type="Language" name="Language (Acolyte)" number="2" supports="Standard||Exotic" />
+			<grant type="Background Feature" id="ID_BACKGROUND_FEATURE_SHELTER_OF_THE_FAITHFUL" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+		</rules>
+	</element>
+</element>

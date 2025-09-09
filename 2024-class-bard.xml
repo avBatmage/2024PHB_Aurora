@@ -3,7 +3,7 @@
 	<info>
 		<name>2024 Bard</name>
 		<update version="0.4.8">
-			<file name="2024-class-bard.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/2024-class-bard.xml" />
+			<file name="2024-class-bard.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-class-bard.xml" />
 		</update>
 	</info>
 	
@@ -326,6 +326,129 @@
 	</element>
 
 	<!-- Subclasses -->
+	<element name="2024 College of Dance" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_COLLEGE_OF_DANCE">
+		<supports>Bard College</supports>
+		<description>
+			<p>Bards of the College of Dance know that the Words of Creation can't be contained within speech or even song; they are uttered by the movements of celestial bodies and flow through the motions of even the smallest creatures. To these Bards, dance is art freed from the constraints of a single point in space and time; it is meaning unconfined by narrow definitions of words and structures of grammar. The College of Dance practices a way of being in harmony with the ever-whirling cosmos, emphasizing agility, speed, and grace.</p>
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_BARD_DANCE_DAZZLING_FOOTWORK" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_BARD_DANCE_INSPIRING_MOVEMENT" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_BARD_DANCE_TANDEM_FOOTWORK" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_BARD_DANCE_LEADING_EVASION" />
+		</description>
+		<sheet display="false">
+			<description>Bards of the College of Dance know that the Words of Creation can't be contained within speech or even song; they are uttered by the movements of celestial bodies and flow through the motions of even the smallest creatures.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_DANCE_DAZZLING_FOOTWORK" level="3" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_DANCE_INSPIRING_MOVEMENT" level="6" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_DANCE_TANDEM_FOOTWORK" level="6" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_DANCE_LEADING_EVASION" level="14" />
+		</rules>
+	</element>
+	<element name="Dazzling Footwork" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_DANCE_DAZZLING_FOOTWORK">
+		<description>
+			<p>Your practice of dance gives you the ability to gracefully dodge and make agile strikes. While you aren't wearing armor or wielding a Shield, you gain the following benefits:</p>
+			<p class="indent"><strong>Unarmored Defense.</strong> Your base Armor Class equals 10 + your Dexterity modifier + your Charisma modifier.</p>
+			<p class="indent"><strong>Agile Strikes.</strong> When you expend a use of your Bardic Inspiration as part of an action, a Bonus Action, or a Reaction, you can make one Unarmed Strike as part of that action, Bonus Action, or Reaction.</p>
+			<p class="indent"><strong>Bardic Damage.</strong> You can use Dexterity instead of Strength for the attack rolls of your Unarmed Strikes, and when you deal damage with an Unarmed Strike, you can deal Bludgeoning damage equal to a roll of your Bardic Inspiration die plus your Dexterity modifier. This roll doesn't expend the die.</p>
+		</description>
+		<sheet display="false">
+			<description>While unarmored and not wielding a shield: Unarmored Defense (AC = 10 + Dex + Cha), Agile Strikes (make unarmed strike when expending Bardic Inspiration), Bardic Damage (use Dex for unarmed attacks, add Bardic die to damage).</description>
+		</sheet>
+		<rules>
+			<stat name="ac" value="10" bonus="unarmored defense" requirements="!ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR,!ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR,!ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR,!ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS"/>
+			<stat name="ac" value="dexterity" bonus="unarmored defense" requirements="!ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR,!ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR,!ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR,!ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS"/>
+			<stat name="ac" value="charisma" bonus="unarmored defense" requirements="!ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR,!ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR,!ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR,!ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS"/>
+		</rules>
+	</element>
+	<element name="Inspiring Movement" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_DANCE_INSPIRING_MOVEMENT">
+		<description>
+			<p>When an enemy you can see ends its turn within 5 feet of an ally of yours who is within 60 feet of you, you can use your Reaction and expend one use of your Bardic Inspiration to move up to half your Speed. Then roll your Bardic Inspiration die, and the ally can move up to a number of feet equal to 5 times the number rolled. None of this feature's movement provokes Opportunity Attacks.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When an enemy ends its turn within 5 feet of an ally within 60 feet of you, you can use your Reaction and expend one use of your Bardic Inspiration to move up to half your Speed. Then roll your Bardic Inspiration die, and the ally can move up to a number of feet equal to 5 times the number rolled. None of this movement provokes Opportunity Attacks.</description>
+		</sheet>
+	</element>
+	<element name="Tandem Footwork" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_DANCE_TANDEM_FOOTWORK">
+		<description>
+			<p>When you roll Initiative, you can spend one use of your Bardic Inspiration if you don't have the Incapacitated condition. When you do so, roll your Bardic Inspiration die, and choose a number of creatures within 60 feet of yourself (you can choose yourself), up to a number equal to your Charisma modifier (minimum of one creature). Each of them gains a bonus to their Initiative equal to the number rolled.</p>
+		</description>
+		<sheet>
+			<description>When you roll Initiative, you can spend one use of your Bardic Inspiration if you don't have the Incapacitated condition. When you do so, roll your Bardic Inspiration die, and choose a number of creatures within 60 feet of yourself (you can choose yourself), up to a number equal to your Charisma modifier (minimum of one creature). Each of them gains a bonus to their Initiative equal to the number rolled.</description>
+		</sheet>
+	</element>
+	<element name="Leading Evasion" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_DANCE_LEADING_EVASION">
+		<description>
+			<p>When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and you take only half damage if you fail. If any creatures within 5 feet of you are making the same Dexterity saving throw, you can share this benefit with them for that save.</p>
+			<p class="indent">You can't use this feature if you have the Incapacitated condition.</p>
+		</description>
+		<sheet>
+			<description>When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and you take only half damage if you fail. If any creatures within 5 feet of you are making the same Dexterity saving throw, you can share this benefit with them for that save. You can't use this feature if you have the Incapacitated condition.</description>
+		</sheet>
+	</element>
+
+	<element name="2024 College of Glamour" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_COLLEGE_OF_GLAMOUR">
+		<supports>Bard College</supports>
+		<description>
+			<p>The College of Glamour traces its origins to the beguiling magic of the Feywild. The Bards who study this magic weave threads of beauty and terror into their songs and stories, and the mightiest among them can cloak themselves in otherworldly majesty. Their performances stir up wistful longing for forgotten innocence, evoke unconscious memories of long-held fears, and tug at the emotions of even the most hardhearted listeners.</p>
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_BARD_GLAMOUR_BEGUILING_MAGIC" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_BARD_GLAMOUR_MANTLE_OF_INSPIRATION" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_BARD_GLAMOUR_MANTLE_OF_MAJESTY" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_BARD_GLAMOUR_UNBREAKABLE_MAJESTY" />
+		</description>
+		<sheet display="false">
+			<description>The College of Glamour traces its origins to the beguiling magic of the Feywild. The Bards who study this magic weave threads of beauty and terror into their songs and stories.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_GLAMOUR_BEGUILING_MAGIC" level="3" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_GLAMOUR_MANTLE_OF_INSPIRATION" level="3" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_GLAMOUR_MANTLE_OF_MAJESTY" level="6" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_GLAMOUR_UNBREAKABLE_MAJESTY" level="14" />
+		</rules>
+	</element>
+	<element name="Beguiling Magic" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_GLAMOUR_BEGUILING_MAGIC">
+		<description>
+			<p>You always have the <i>Charm Person</i> and <i>Mirror Image</i> spells prepared.</p>
+			<p class="indent">In addition, immediately after you cast an Enchantment or Illusion spell, you can cause a creature you can see within 60 feet of yourself to make a Wisdom saving throw against your Spell Save DC. On a failed save, the target has the Charmed or Frightened condition (your choice) for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+			<p class="indent">Once you use this benefit, you can't use it again until you finish a Long Rest. You can also restore your use of the feature by expending one use of your Bardic Inspiration (no action required).</p>
+		</description>
+		<sheet display="false">
+			<description>You always have Charm Person and Mirror Image prepared. After casting an Enchantment or Illusion spell, you can cause a creature within 60 feet to make a Wisdom save or be Charmed or Frightened for 1 minute. Once per long rest, or restore by expending Bardic Inspiration.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_CHARM_PERSON" spellcasting="Bard" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_MIRROR_IMAGE" spellcasting="Bard" prepared="true" />
+		</rules>
+	</element>
+	<element name="Mantle of Inspiration" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_GLAMOUR_MANTLE_OF_INSPIRATION">
+		<description>
+			<p>You can weave fey magic into a song or dance to fill others with vigor. As a Bonus Action, you can expend a use of Bardic Inspiration, rolling a Bardic Inspiration die. When you do so, choose a number of other creatures within 60 feet of yourself, up to a number equal to your Charisma modifier (minimum of one creature). Each of them gains a number of Temporary Hit Points equal to 2 times the number rolled on the Bardic Inspiration die, and then each of them can use its Reaction to move up to its Speed without provoking Opportunity Attacks.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can expend a use of Bardic Inspiration, rolling a Bardic Inspiration die. Choose a number of other creatures within 60 feet of yourself, up to a number equal to your Charisma modifier (minimum of one creature). Each of them gains a number of Temporary Hit Points equal to 2 times the number rolled on the Bardic Inspiration die, and then each of them can use its Reaction to move up to its Speed without provoking Opportunity Attacks.</description>
+		</sheet>
+	</element>
+	<element name="Mantle of Majesty" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_GLAMOUR_MANTLE_OF_MAJESTY">
+		<description>
+			<p>You always have the <i>Command</i> spell prepared. As a Bonus Action, you cast <i>Command</i> without expending a spell slot, and you take on an unearthly appearance for 1 minute or until your Concentration ends (as if you were concentrating on a spell). During this time, you can cast <i>Command</i> as a Bonus Action without expending a spell slot. Any creature Charmed by you automatically fails its saving throw against the <i>Command</i> you cast with this feature.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of the feature by expending a spell slot of 3rd level or higher (no action required).</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You always have Command prepared. As a Bonus Action, you cast Command without expending a spell slot, and you take on an unearthly appearance for 1 minute or until your Concentration ends. During this time, you can cast Command as a Bonus Action without expending a spell slot. Any creature Charmed by you automatically fails its saving throw against the Command you cast with this feature. Once per long rest, or restore by expending a 3rd level or higher spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_COMMAND" spellcasting="Bard" prepared="true" />
+		</rules>
+	</element>
+	<element name="Unbreakable Majesty" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_GLAMOUR_UNBREAKABLE_MAJESTY">
+		<description>
+			<p>As a Bonus Action, you can assume a magically majestic presence for 1 minute or until you have the Incapacitated condition. For the duration, whenever any creature hits you with an attack roll for the first time on a turn, the attacker must succeed on a Charisma saving throw against your Spell Save DC, or the attack misses instead, as the creature recoils from your majesty. Once you assume this majestic presence, you can't do so again until you finish a Short Rest or Long Rest.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can assume a magically majestic presence for 1 minute or until you have the Incapacitated condition. For the duration, whenever any creature hits you with an attack roll for the first time on a turn, the attacker must succeed on a Charisma saving throw against your Spell Save DC, or the attack misses instead. Once per short or long rest.</description>
+		</sheet>
+	</element>
+	
 	<element name="2024 College of Lore" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_COLLEGE_OF_LORE">
 		<supports>Bard College</supports>
 		<description>
@@ -444,4 +567,5 @@
 			<description>After you cast a spell that has a casting time of an action, you can make one weapon attack.</description>
 		</sheet>
 	</element>
+
 </elements>

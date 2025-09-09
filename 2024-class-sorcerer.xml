@@ -2,19 +2,19 @@
 <elements>
 	<info>
 		<name>2024 Sorcerer</name>
-		<description>Sorcerer from the 2024 Player’s Handbook.</description>
+		<description>Sorcerer from the 2024 Player's Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
 		<update version="0.0.1">
-			<file name="2024-class-sorcerer.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/2024-class-sorcerer.xml" />
+			<file name="2024-class-sorcerer.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-class-sorcerer.xml" />
 		</update>
 	</info>
 
-	<element name="2024 Sorcerer" type="Class" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_SORCERER">
+	<element name="2024 Sorcerer" type="Class" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_SORCERER">
 		<description>
 			<p>Golden eyes flashing, a human stretches out her hand and unleashes the dragonfire that burns in her veins. As an inferno rages around her foes, leathery wings spread from her back and she takes to the air.</p>
 			<p class="indent">Long hair whipped by a conjured wind, a half-elf spreads his arms wide and throws his head back. Lifting him momentarily off the ground, a wave of magic surges up in him, through him, and out from him in a mighty blast of lightning.</p>
 			<p class="indent">Crouching behind a stalagmite, a halfling points a finger at a charging troglodyte. A blast of fire springs from her finger to strike the creature. She ducks back behind the rock formation with a grin, unaware that her wild magic has turned her skin bright blue.</p>
-			<p class="indent">Sorcerers carry a magical birthright conferred upon them by an exotic bloodline, some otherworldly influence, or exposure to unknown cosmic forces. One can’t study sorcery as one learns a language, any more than one can learn to live a legendary life. No one chooses sorcery; the power chooses the sorcerer.</p>
+			<p class="indent">Sorcerers carry a magical birthright conferred upon them by an exotic bloodline, some otherworldly influence, or exposure to unknown cosmic forces. One can't study sorcery as one learns a language, any more than one can learn to live a legendary life. No one chooses sorcery; the power chooses the sorcerer.</p>
 			<h4>RAW MAGIC</h4>
 			<p>SORCERERS WIELD INNATE MAGIC THAT IS stamped into their being. Some Sorcerers can't name the origin of their power, while others trace it to strange events in their personal or family history. The blessing of a dragon or a dryad at a baby's birth or the strike of lightning from a clear sky might spark a Sorcerer's gift. So too might the gift of a deity, exposure to the strange magic of another plane of existence, or a glimpse into the inner workings of reality. Whatever the origin, the result is an indelible mark on the Sorcerer, a churning magic that can be passed down through generations.</p>
 			<p>Sorcerers don't learn magic; the raw, roiling power of magic is part of them. The essential art of a Sorcerer is learning to harness and channel that innate magic, allowing the Sorcerer to discover new and staggering ways to unleash their power.</p>
@@ -22,7 +22,7 @@
 			<p class="indent">People who have this magical power soon discover that it doesn't like to stay quiet. A Sorcerer's magic wants to be wielded.</p>
 			<h4>CREATING A SORCERER</h4>
 			<p>The most important question to consider when creating your sorcerer is the origin of your power. As a starting character, you'll choose an origin that ties to a draconic bloodline or the influence of wild magic, but the exact source of your power is up to you to decide. Is it a family curse, passed down to you from distant ancestors? Or did some extraordinary event leave you blessed with inherent magic but perhaps scarred as well?</p>
-			<p class="indent">How do you feel about the magical power coursing through you? Do you embrace it, try to master it, or revel in its unpredictable nature? Is it a blessing or a curse? Did you seek it out, or did it find you? Did you have the option to refuse it, and do you wish you had? What do you intend to do with it? Perhaps you feel like you’ve been given this power for some lofty purpose. Or you might decide that the power gives you the right to do what you want, to take what you want from those who lack such power. Perhaps your power links you to a powerful individual in the world—the fey creature that blessed you at birth, the dragon who put a drop of its blood into your veins, the lich who created you as an experiment, or the deity who chose you to carry this power.</p>
+			<p class="indent">How do you feel about the magical power coursing through you? Do you embrace it, try to master it, or revel in its unpredictable nature? Is it a blessing or a curse? Did you seek it out, or did it find you? Did you have the option to refuse it, and do you wish you had? What do you intend to do with it? Perhaps you feel like you've been given this power for some lofty purpose. Or you might decide that the power gives you the right to do what you want, to take what you want from those who lack such power. Perhaps your power links you to a powerful individual in the world—the fey creature that blessed you at birth, the dragon who put a drop of its blood into your veins, the lich who created you as an experiment, or the deity who chose you to carry this power.</p>
 			<h5>QUICK BUILD</h5>
 			<p>You can make a sorcerer quickly by following these suggestions. First, Charisma should be your highest ability score, followed by Constitution. Second, choose the hermit background. Third, choose the light, prestidigitation, ray of frost, and shocking grasp cantrips, along with the 1st-level spells shield and magic missile.</p>
 			<h3>CLASS FEATURES</h3>
@@ -46,7 +46,7 @@
 			<h5>EQUIPMENT</h5>
 			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
 			<ul>
-				<li>Choose A or B: (A) Spear, 2 Daggers, Arcane Focus (crystal), Dungeoneer’s Pack, and 28 GP; or (B) 50 GP</li>
+				<li>Choose A or B: (A) Spear, 2 Daggers, Arcane Focus (crystal), Dungeoneer's Pack, and 28 GP; or (B) 50 GP</li>
 			</ul>
 			<h5 class="caption">THE SORCERER</h5>
 			<table class="class-features">
@@ -120,19 +120,19 @@
 			</rules>
 		</multiclass>
 	</element>
-	<element name="Spellcasting" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER">
+	<element name="Spellcasting" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER">
 		<description>
-			<p>Drawing from your innate magic, you can cast spells. See the Player’s Handbook for rules on spellcasting. The information below details how you use those rules with Sorcerer spells.</p>
+			<p>Drawing from your innate magic, you can cast spells. See the Player's Handbook for rules on spellcasting. The information below details how you use those rules with Sorcerer spells.</p>
 			<h5>CANTRIPS</h5>
 			<p>At 1st level, You know four Sorcerer cantrips of your choice. Light, Prestidigitation, Shocking Grasp, and Sorcerous Burst are recommended. Whenever you gain a Sorcerer level, you can replace one of your cantrips from this feature with another Sorcerer cantrip of your choice.</p>
 			<p>When you reach Sorcerer levels 4 and 10, you learn another Sorcerer cantrip of your choice, as shown in the Cantrips Known column of the Sorcerer Features table.</p>
 			<h5>SPELL SLOTS</h5>
-			<p>The Sorcerer Features table shows how many spell slots you have to cast your Sorcerer spells of 1st level and higher. To cast one of these Sorcerer spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
+			<p>The Sorcerer Features table shows how many spell slots you have to cast your Sorcerer spells of 1st level and higher. To cast one of these Sorcerer spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.</p>
 			<p class="indent">For example, if you know the 1st-level spell burning hands and have a 1st-level and a 2nd-level spell slot available, you can cast burning hands using either slot.</p>
 			<h5>PREPARED SPELLS OF 1ST LEVEL AND HIGHER</h5>
 			<p>You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose two level 1 Sorcerer spells. Burning Hands and Detect Magic are recommended.</p>
-			<p class="indent">The number of spells on your list increases as you gain Sorcerer levels, as shown in the Prepared Spells column of the Sorcerer Features table. Whenever that number increases, choose additional Sorcerer spells until the number of spells on your list matches the number in the Sorcerer Features table. The chosen spells must be of a level for which you have spell slots. For example, if you’re a level 3 Sorcerer, your list of prepared spells can include six Sorcerer spells of level 1 or 2 in any combination.</p>
-			<p class="indent">If another Sorcerer feature gives spells that you always have prepared, those spells don’t count against the number of spells on the list you prepare with this feature, but those spells otherwise count as Sorcerer spells for you.</p>
+			<p class="indent">The number of spells on your list increases as you gain Sorcerer levels, as shown in the Prepared Spells column of the Sorcerer Features table. Whenever that number increases, choose additional Sorcerer spells until the number of spells on your list matches the number in the Sorcerer Features table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 3 Sorcerer, your list of prepared spells can include six Sorcerer spells of level 1 or 2 in any combination.</p>
+			<p class="indent">If another Sorcerer feature gives spells that you always have prepared, those spells don't count against the number of spells on the list you prepare with this feature, but those spells otherwise count as Sorcerer spells for you.</p>
 			<h5>CHANGING YOUR PREPARED SPELLS</h5>
 			<p>Whenever you gain a Sorcerer level, you can replace one spell on your list with another Sorcerer spell for which you have spell slots.</p>
 			<h5>SPELLCASTING ABILITY</h5>
@@ -195,7 +195,7 @@
 			<select type="Spell" name="Spell (Sorcerer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="20" spellcasting="Sorcerer"/>
 		</rules>
 	</element>
-	<element name="Innate Sorcery" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_SORCERER_INNATE_SORCERY">
+	<element name="Innate Sorcery" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_SORCERER_INNATE_SORCERY">
 		<description>
 			<p>At 1st level, An event in your past left an indelible mark on you, infusing you with a simmering magic. As a Bonus Action, you can unleash that magic for 1 minute, during which you gain the following benefits:</p>
 			<ul>
@@ -209,7 +209,7 @@
 			<description level="7">For 1 minute: +1 to Sorcerer spell save DC; Advantage on attack rolls of Sorcerer spells you cast and you can use up to two of your Metamagic options on each spell you cast.</description>
 		</sheet>
 	</element>
-	<element name="Font of Magic" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_SORCERER_FONT_OF_MAGIC">
+	<element name="Font of Magic" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_SORCERER_FONT_OF_MAGIC">
 		<description>
 			<p>At 2nd level, You tap into a deep wellspring of magic within yourself. This wellspring is represented by sorcery points, which allow you to create a variety of magical effects.</p>
 			<h5>SORCERY POINTS</h5>
@@ -228,7 +228,7 @@
 				<tr><td>4th</td><td>6</td><td>7</td></tr>
 				<tr><td>5th</td><td>7</td><td>9</td></tr>
 			</table>
-			<p class="indent"><strong><em>Converting Spell Slots to Sorcery Points.</em></strong> You can expend a spell slot to gain a number of Sorcery Points equal to the slot’s level (no action required).</p>
+			<p class="indent"><strong><em>Converting Spell Slots to Sorcery Points.</em></strong> You can expend a spell slot to gain a number of Sorcery Points equal to the slot's level (no action required).</p>
 		</description>
 		<sheet action="Bonus Action">
 			<description>You have {{sorcery:points}} Sorcery Points. Bonus Action: create a slot (2→1st, 3→2nd, 5→3rd, 6→4th, 7→5th). No action: convert a slot to Sorcery Points equal to its level.</description>
@@ -237,11 +237,11 @@
 			<stat name="sorcery:points" value="level:2024 sorcerer" />
 		</rules>
 	</element>
-	<element name="Metamagic" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_SORCERER_METAMAGIC">
+	<element name="Metamagic" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_SORCERER_METAMAGIC">
 		<description>
 			<p>Because your magic flows from within, you can alter your spells to suit your needs; you gain two Metamagic options of your choice from the “Metamagic Options” later. You use the chosen options to temporarily modify spells you cast. To use an option, you must spend the number of Sorcery Points that it costs.</p>
 			<p class="indent">You can use only one Metamagic option on a spell when you cast it, unless otherwise noted in one of those options.</p>
-			<p class="indent">Whenever you gain a Sorcerer level, you can replace one of your Metamagic options with one you don’t know. You gain two more when at Sorcerer level 10 and two more at Sorcerer level 17.</p>
+			<p class="indent">Whenever you gain a Sorcerer level, you can replace one of your Metamagic options with one you don't know. You gain two more when at Sorcerer level 10 and two more at Sorcerer level 17.</p>
 		</description>
 		<sheet>
 			<description>You can use only one Metamagic option on a spell when you cast it, unless otherwise noted.</description>
@@ -255,9 +255,9 @@
 			<stat name="sorcerer:charisma:min:1" value="charisma:modifier" bonus="base" />
 		</rules>
 	</element>
-	<element name="Sorcerer Subclass" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_SORCERER_SORCERER_SUBCLASS">
+	<element name="Sorcerer Subclass" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_SORCERER_SORCERER_SUBCLASS">
 		<description>
-			<p>You gain a Sorcerer subclass of your choice. The Aberrant Sorcery, Clockwork Sorcery, Draconic Sorcery, and Wild Magic Sorcery subclasses are detailed after this class’s description. A subclass is a specialization that grants you features at certain Sorcerer levels. For the rest of your career, you gain each of your subclass’s features that are of your Sorcerer level or lower.</p>
+			<p>You gain a Sorcerer subclass of your choice. The Aberrant Sorcery, Clockwork Sorcery, Draconic Sorcery, and Wild Magic Sorcery subclasses are detailed after this class's description. A subclass is a specialization that grants you features at certain Sorcerer levels. For the rest of your career, you gain each of your subclass's features that are of your Sorcerer level or lower.</p>
 			<p class="indent">Your choice grants you features when you choose it at 3rd level and again at 6th, 14th, and 18th level.</p>
 		</description>
 		<sheet display="false" />
@@ -265,7 +265,7 @@
 			<select type="Archetype" name="Sorcerous Origin" supports="Sorcerous Origin" />
 		</rules>
 	</element>
-	<element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_SORCERER_ABILITY_SCORE_IMPROVEMENT_SORCERER">
+	<element name="Ability Score Improvement" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_SORCERER_ABILITY_SCORE_IMPROVEMENT_SORCERER">
 		<compendium display="false" />
 		<description>
 			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
@@ -279,15 +279,15 @@
 			<select type="Class Feature" name="Improvement Option (Sorcerer 19)" supports="Improvement Option,Sorcerer,19" level="19" />
 		</rules>
 	</element>
-	<element name="Sorcerous Restoration" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_SORCERER_SORCEROUS_RESTORATION">
+	<element name="Sorcerous Restoration" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_SORCERER_SORCEROUS_RESTORATION">
 		<description>
-			<p>When you finish a Short Rest, you can regain expended Sorcery Points, but no more than a number equal to half your Sorcerer level (round down). Once you use this feature, you can’t do so again until you finish a Long Rest.</p>
+			<p>When you finish a Short Rest, you can regain expended Sorcery Points, but no more than a number equal to half your Sorcerer level (round down). Once you use this feature, you can't do so again until you finish a Long Rest.</p>
 		</description>
 		<sheet usage="1/Long Rest">
 			<description>After a Short Rest, regain up to {{level:2024 sorcerer:half}} Sorcery Points.</description>
 		</sheet>
 	</element>
-	<element name="Sorcery Incarnate" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_SORCERER_SORCERY_INCARNATE">
+	<element name="Sorcery Incarnate" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_SORCERER_SORCERY_INCARNATE">
 		<description>
 			<p>If you have no uses of Innate Sorcery left, you can use it if you spend 2 Sorcery Points when you take the Bonus Action to activate it.</p>
 			<p>In addition, while your Innate Sorcery feature is active, you can use up to two of your Metamagic options on each spell you cast.</p>
@@ -296,12 +296,12 @@
 			<description>You can expend 2 Sorcery Points to activate your Innate Sorcery feature and while it is active you can use up to two of your Metamagic options on each spell you cast.</description>
 		</sheet>
 	</element>
-	<element name="Epic Boon" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_SORCERER_EPIC_BOON">
+	<element name="Epic Boon" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_SORCERER_EPIC_BOON">
 		<description>
 			<p>You gain an Epic Boon feat or another feat of your choice for which you qualify.</p>
 		</description>
 	</element>
-	<element name="Arcane Apotheosis" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_SORCERER_ARCANE_APOTHEOSIS">
+	<element name="Arcane Apotheosis" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_SORCERER_ARCANE_APOTHEOSIS">
 		<description>
 			<p>While your Innate Sorcery feature is active, you can use one Metamagic option on each of your turns without spending Sorcery Points on it.</p>
 		</description>
@@ -311,38 +311,38 @@
 	</element>
 
 	<!--Metamagic-->
-	<element name="2024 Careful Spell" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_SORCERER_METAMAGIC_CAREFUL_SPELL">
+	<element name="2024 Careful Spell" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_SORCERER_METAMAGIC_CAREFUL_SPELL">
 		<supports>Metamagic</supports>
 		<description>
 			<p><em>Cost: 1 Sorcery Point</em></p>
-			<p>When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell’s full force. To do so, spend 1 Sorcery Point and choose a number of those creatures up to your Charisma modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell, and it takes no damage if it would normally take half damage on a successful save.</p>
+			<p>When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell's full force. To do so, spend 1 Sorcery Point and choose a number of those creatures up to your Charisma modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell, and it takes no damage if it would normally take half damage on a successful save.</p>
 		</description>
 		<sheet cost="1 sorcery point">
 			<description>Choose up to {{sorcerer:charisma:min:1}} creatures affected by your spell; they auto-succeed and take no half-damage.</description>
 		</sheet>
 	</element>
-	<element name="2024 Distant Spell" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_SORCERER_METAMAGIC_DISTANT_SPELL">
+	<element name="2024 Distant Spell" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_SORCERER_METAMAGIC_DISTANT_SPELL">
 		<supports>Metamagic</supports>
 		<description>
 			<p><em>Cost: 1 Sorcery Point</em></p>
-			<p>When you cast a spell that has a range of at least 5 feet, you can spend 1 Sorcery Point to double the spell’s range. Or when you cast a spell that has a range of Touch, you can spend 1 Sorcery Point to make the spell’s range 30 feet.</p>
+			<p>When you cast a spell that has a range of at least 5 feet, you can spend 1 Sorcery Point to double the spell's range. Or when you cast a spell that has a range of Touch, you can spend 1 Sorcery Point to make the spell's range 30 feet.</p>
 		</description>
 		<sheet cost="1 sorcery point">
-			<description>When you cast a spell that has a range of at least 5 feet, you can spend 1 Sorcery Point to double the spell’s range. Or when you cast a spell that has a range of Touch, you can spend 1 Sorcery Point to make the spell’s range 30 feet.</description>
+			<description>When you cast a spell that has a range of at least 5 feet, you can spend 1 Sorcery Point to double the spell's range. Or when you cast a spell that has a range of Touch, you can spend 1 Sorcery Point to make the spell's range 30 feet.</description>
 		</sheet>
 	</element>
-	<element name="2024 Empowered Spell" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_SORCERER_METAMAGIC_EMPOWERED_SPELL">
+	<element name="2024 Empowered Spell" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_SORCERER_METAMAGIC_EMPOWERED_SPELL">
 		<supports>Metamagic</supports>
 		<description>
 			<p><em>Cost: 1 Sorcery Point</em></p>
 			<p>When you roll damage for a spell, you can spend 1 Sorcery Point to reroll a number of the damage dice up to your Charisma modifier (minimum of one), and you must use the new rolls.</p>
-			<p>You can use Empowered Spell even if you’ve already used a different Metamagic option during the casting of the spell.</p>
+			<p>You can use Empowered Spell even if you've already used a different Metamagic option during the casting of the spell.</p>
 		</description>
 		<sheet cost="1 sorcery point">
 			<description>When you roll damage for a spell, you can spend 1 sorcery point to reroll {{sorcerer:charisma:min:1}} damage dice. You can use this alsongside other Metamagic options during the casting of the spell.</description>
 		</sheet>
 	</element>
-	<element name="2024 Extended Spell" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_SORCERER_METAMAGIC_EXTENDED_SPELL">
+	<element name="2024 Extended Spell" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_SORCERER_METAMAGIC_EXTENDED_SPELL">
 		<supports>Metamagic</supports>
 		<description>
 			<p><em>Cost: 1 Sorcery Point</em></p>
@@ -353,7 +353,7 @@
 			<description>When you cast a spell that has a duration of 1 minute or longer, you can double its duration, to a maximum duration of 24 hours. You also have advantage on any concentration saving throws made to maintain it.</description>
 		</sheet>
 	</element>
-	<element name="2024 Heightened Spell" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_SORCERER_METAMAGIC_HEIGHTENED_SPELL">
+	<element name="2024 Heightened Spell" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_SORCERER_METAMAGIC_HEIGHTENED_SPELL">
 		<supports>Metamagic</supports>
 		<description>
 			<p><em>Cost: 2 Sorcery Points</em></p>
@@ -363,28 +363,28 @@
 			<description>Give one target Disadvantage on saves against your spell.</description>
 		</sheet>
 	</element>
-	<element name="2024 Quickened Spell" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_SORCERER_METAMAGIC_QUICKEND_SPELL">
+	<element name="2024 Quickened Spell" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_SORCERER_METAMAGIC_QUICKEND_SPELL">
 		<supports>Metamagic</supports>
 		<description>
 			<p><em>Cost: 2 Sorcery Points</em></p>
-			<p>When you cast a spell that has a casting time of an action, you can spend 2 Sorcery Points to change the casting time to a Bonus Action for this casting. You can’t modify a spell in this way if you’ve already cast a level 1+ spell on the current turn, nor can you cast a level 1+ spell on this turn after modifying a spell in this way.</p>
+			<p>When you cast a spell that has a casting time of an action, you can spend 2 Sorcery Points to change the casting time to a Bonus Action for this casting. You can't modify a spell in this way if you've already cast a level 1+ spell on the current turn, nor can you cast a level 1+ spell on this turn after modifying a spell in this way.</p>
 		</description>
 		<sheet cost="2 sorcery points">
-			<description>When you cast a spell that has a casting time of an action, you can change the casting time to a Bonus Action for this casting. You can’t cast another level 1+ spell on the same turn.</description>
+			<description>When you cast a spell that has a casting time of an action, you can change the casting time to a Bonus Action for this casting. You can't cast another level 1+ spell on the same turn.</description>
 		</sheet>
 	</element>
-	<element name="2024 Seeking Spell" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_SORCERER_METAMAGIC_SEEKING_SPELL">
+	<element name="2024 Seeking Spell" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_SORCERER_METAMAGIC_SEEKING_SPELL">
 		<supports>Metamagic</supports>
 		<description>
 			<p><em>Cost: 1 Sorcery Point</em></p>
 			<p>If you make an attack roll for a spell and miss, you can spend 1 Sorcery Point to reroll the d20, and you must use the new roll.</p>
-			<p>You can use Seeking Spell even if you’ve already used a different Metamagic option during the casting of the spell.</p>
+			<p>You can use Seeking Spell even if you've already used a different Metamagic option during the casting of the spell.</p>
 		</description>
 		<sheet cost="1 sorcery point">
 			<description>If you make an attack roll for a spell and miss, you can to reroll the d20. You can use this alsongside other Metamagic options during the casting of the spell.</description>
 		</sheet>
 	</element>
-	<element name="2024 Subtle Spell" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_SORCERER_METAMAGIC_SUBTLE_SPELL">
+	<element name="2024 Subtle Spell" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_SORCERER_METAMAGIC_SUBTLE_SPELL">
 		<supports>Metamagic</supports>
 		<description>
 			<p><em>Cost: 1 Sorcery Point</em></p>
@@ -394,7 +394,7 @@
 			<description>When you cast a spell, you can cast it without any Verbal, Somatic, or Material components that aren't consumed by the spell or have a cost specified in the spell.</description>
 		</sheet>
 	</element>
-	<element name="2024 Transmuted Spell" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_SORCERER_METAMAGIC_TRANSMUTED_SPELL">
+	<element name="2024 Transmuted Spell" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_SORCERER_METAMAGIC_TRANSMUTED_SPELL">
 		<supports>Metamagic</supports>
 		<description>
 			<p><em>Cost: 1 Sorcery Point</em></p>
@@ -404,15 +404,430 @@
 			<description>When you cast a spell that deals a type of damage from the following list, you can change that damage type to one of the other listed types: Acid, Cold, Fire, Lightning, Poison, Thunder.</description>
 		</sheet>
 	</element>
-	<element name="2024 Twinned Spell" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_SORCERER_METAMAGIC_TWINNED_SPELL">
+	<element name="2024 Twinned Spell" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_SORCERER_METAMAGIC_TWINNED_SPELL">
 		<supports>Metamagic</supports>
 		<description>
 			<p><em>Cost: 1 Sorcery Point</em></p>
-			<p>When you cast a spell, such as <em>Charm Person</em>, that can be cast with a higher-level spell slot to target an additional creature, you can spend 1 Sorcery Point to increase the spell’s effective level by 1.</p>
+			<p>When you cast a spell, such as <em>Charm Person</em>, that can be cast with a higher-level spell slot to target an additional creature, you can spend 1 Sorcery Point to increase the spell's effective level by 1.</p>
 		</description>
 		<sheet cost="1 sorcery point">
-			<description>When you cast a spell that can be cast with a higher-level spell slot to target an additional creature, you can increase the spell’s effective level by 1.</description>
+			<description>When you cast a spell that can be cast with a higher-level spell slot to target an additional creature, you can increase the spell's effective level by 1.</description>
 		</sheet>
 	</element>
 
+	<!-- Sorcerer Subclasses -->
+	<element name="2024 Aberrant Sorcery" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_SORCERER_ABERRANT_SORCERY">
+		<supports>Sorcerous Origin</supports>
+		<description>
+			<p><em>Wield Unnatural Psionic Power</em></p>
+			<p>An alien influence has wrapped its tendrils around your mind, giving you psionic power. You can now touch other minds with that power and alter the world around you. Will this power shine from you as a hopeful beacon to others? Or will you be a terror to those who feel the stab of your mind?</p>
+			<p class="indent">Perhaps a psychic wind from the Astral Plane carried psionic energy to you, or you were exposed to the Far Realm's warping influence. Alternatively, you were implanted with a mind flayer tadpole, but your transformation into a mind flayer never occurred; now the tadpole's psionic power is yours. However you acquired this power, your mind is aflame with it.</p>
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_PSIONIC_SPELLS" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_TELEPATHIC_SPEECH" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_PSIONIC_SORCERY" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_PSYCHIC_DEFENSES" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_REVELATION_IN_FLESH" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_WARPING_IMPLOSION" />
+		</description>
+		<sheet display="false">
+			<description>A Sorcerer whose magic stems from psionic power and alien influence.</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_PSIONIC_SPELLS" level="3" />
+			<grant type="Class Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_TELEPATHIC_SPEECH" level="3" />
+			<grant type="Class Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_PSIONIC_SORCERY" level="6" />
+			<grant type="Class Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_PSYCHIC_DEFENSES" level="6" />
+			<grant type="Class Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_REVELATION_IN_FLESH" level="14" />
+			<grant type="Class Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_WARPING_IMPLOSION" level="18" />
+		</rules>
+	</element>
+	<element name="Psionic Spells" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_PSIONIC_SPELLS">
+		<description>
+			<p>When you reach a Sorcerer level specified in the Psionic Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>PSIONIC SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td class="col-20">Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3</td><td><em>Arms of Hadar, Calm Emotions, Detect Thoughts, Dissonant Whispers, Mind Sliver</em></td></tr>
+				<tr><td>5</td><td><em>Hunger of Hadar, Sending</em></td></tr>
+				<tr><td>7</td><td><em>Evard's Black Tentacles, Summon Aberration</em></td></tr>
+				<tr><td>9</td><td><em>Rary's Telepathic Bond, Telekinesis</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>You always have certain spells prepared based on your Sorcerer level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_ARMS_OF_HADAR" level="3" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_CALM_EMOTIONS" level="3" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_DETECT_THOUGHTS" level="3" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_DISSONANT_WHISPERS" level="3" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_MIND_SLIVER" level="3" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_HUNGER_OF_HADAR" level="5" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_SENDING" level="5" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_EVARDS_BLACK_TENTACLES" level="7" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_SUMMON_ABERRATION" level="7" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_RARYS_TELEPATHIC_BOND" level="9" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_TELEKINESIS" level="9" />
+		</rules>
+	</element>
+	<element name="Telepathic Speech" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_TELEPATHIC_SPEECH">
+		<description>
+			<p>You can form a telepathic connection between your mind and the mind of another. As a Bonus Action, choose one creature you can see within 30 feet of yourself. You and the chosen creature can communicate telepathically with each other while the two of you are within a number of miles of each other equal to your Charisma modifier (minimum of 1 mile). To understand each other, you each must mentally use a language the other knows.</p>
+			<p class="indent">The telepathic connection lasts for a number of minutes equal to your Sorcerer level. It ends early if you use this ability to form a connection with a different creature.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Choose one creature you can see within 30 feet. You and the chosen creature can communicate telepathically while within {{charisma:modifier}} miles of each other (minimum 1 mile) for {{level:2024 sorcerer}} minutes.</description>
+		</sheet>
+	</element>
+	<element name="Psionic Sorcery" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_PSIONIC_SORCERY">
+		<description>
+			<p>When you cast any level 1+ spell from your Psionic Spells feature, you can cast it by expending a spell slot as normal or by spending a number of Sorcery Points equal to the spell's level. If you cast the spell using Sorcery Points, it requires no Verbal or Somatic components, and it requires no Material components unless they are consumed by the spell or have a cost specified in it.</p>
+		</description>
+		<sheet>
+			<description>When you cast any level 1+ spell from your Psionic Spells feature, you can cast it by expending a spell slot as normal or by spending Sorcery Points equal to the spell's level. If you cast the spell using Sorcery Points, it requires no Verbal or Somatic components, and it requires no Material components unless they are consumed by the spell or have a cost specified in it.</description>
+		</sheet>
+	</element>
+	<element name="Psychic Defenses" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_PSYCHIC_DEFENSES">
+		<description>
+			<p>You have Resistance to Psychic damage, and you have Advantage on saving throws to avoid or end the Charmed or Frightened condition.</p>
+		</description>
+		<sheet>
+			<description>You have Resistance to Psychic damage, and you have Advantage on saving throws to avoid or end the Charmed or Frightened condition.</description>
+		</sheet>
+		<rules>
+			<stat name="resistance:psychic" value="1" />
+			<stat name="savingthrow:charmed:advantage" value="1" />
+			<stat name="savingthrow:frightened:advantage" value="1" />
+		</rules>
+	</element>
+	<element name="Revelation in Flesh" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_REVELATION_IN_FLESH">
+		<description>
+			<p>You can unleash the aberrant truth hidden within yourself. As a Bonus Action, you can spend 1 Sorcery Point or more to magically alter your body for 10 minutes. For each Sorcery Point you spend, you gain one of the following benefits of your choice, the effects of which last until the alteration ends.</p>
+			<p class="indent"><strong>Aquatic Adaptation.</strong> You gain a Swim Speed equal to twice your Speed, and you can breathe underwater. Gills grow from your neck or flare behind your ears, and your fingers become webbed or you grow wriggling cilia.</p>
+			<p class="indent"><strong>Glistening Flight.</strong> You gain a Fly Speed equal to your Speed, and you can hover. As you fly, your skin glistens with mucus or otherworldly light.</p>
+			<p class="indent"><strong>See the Invisible.</strong> You can see any Invisible creature within 60 feet of yourself that isn't behind Total Cover. Your eyes also turn black or become writhing sensory tendrils.</p>
+			<p class="indent"><strong>Wormlike Movement.</strong> Your body, along with any equipment you are wearing or carrying, becomes slimy and pliable. You can move through any space as narrow as 1 inch, and you can spend 5 feet of movement to escape from nonmagical restraints or the Grappled condition.</p>
+		</description>
+		<sheet action="Bonus Action" cost="1+ sorcery points">
+			<description>As a Bonus Action, you can spend 1 Sorcery Point or more to magically alter your body for 10 minutes. For each Sorcery Point you spend, you gain one of the following benefits: Aquatic Adaptation, Glistening Flight, See the Invisible, or Wormlike Movement.</description>
+		</sheet>
+	</element>
+	<element name="Warping Implosion" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_WARPING_IMPLOSION">
+		<description>
+			<p>You can unleash a space-warping anomaly. As a Magic action, you teleport to an unoccupied space you can see within 120 feet of yourself. Immediately after you disappear, each creature within 30 feet of the space you left must make a Strength saving throw against your spell save DC. On a failed save, a creature takes 3d10 Force damage and is pulled straight toward the space you left, ending in an unoccupied space as close to your former space as possible. On a successful save, the creature takes half as much damage only.</p>
+			<p class="indent">Once you use this feature, you can't do so again until you finish a Long Rest unless you spend 5 Sorcery Points (no action required) to restore your use of it.</p>
+		</description>
+		<sheet usage="1/Long Rest" action="Magic Action" cost="5 sorcery points">
+			<description>As a Magic action, you teleport to an unoccupied space you can see within 120 feet of yourself. Each creature within 30 feet of the space you left must make a Strength saving throw against your spell save DC. On a failed save, a creature takes 3d10 Force damage and is pulled toward the space you left. On a successful save, the creature takes half as much damage only. You can spend 5 Sorcery Points to restore your use of this feature.</description>
+		</sheet>
+	</element>
+
+	<element name="2024 Clockwork Sorcery" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_SORCERER_CLOCKWORK_SORCERY">
+		<supports>Sorcerous Origin</supports>
+		<description>
+			<p><em>Channel Cosmic Forces of Order</em></p>
+			<p>The cosmic force of order has suffused you with magic. That power arises from Mechanus or a realm like it-a plane of existence shaped entirely by clock-work efficiency. You or someone from your lineage might have even become entangled in the machinations of Modrons, the orderly beings who inhabit Mechanus. Perhaps your ancestor even took part in the Great Modron March. Whatever its origin within you, the power of order can seem strange to others, but for you, it's part of a vast and glorious system.</p>
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_CLOCKWORK_SPELLS" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_RESTORE_BALANCE" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_BASTION_OF_LAW" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_TRANCE_OF_ORDER" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_CLOCKWORK_CAVALCADE" />
+		</description>
+		<sheet display="false">
+			<description>A Sorcerer whose magic comes from clockwork and machine magic.</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_CLOCKWORK_SPELLS" level="3" />
+			<grant type="Class Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_RESTORE_BALANCE" level="3" />
+			<grant type="Class Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_BASTION_OF_LAW" level="3" />
+			<grant type="Class Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_TRANCE_OF_ORDER" level="3" />
+			<grant type="Class Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_CLOCKWORK_CAVALCADE" level="3" />
+		</rules>
+	</element>
+	<element name="Clockwork Spells" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_CLOCKWORK_SPELLS">
+		<description>
+			<p>When you reach a Sorcerer level specified in the Clockwork Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>CLOCKWORK SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td class="col-20">Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3</td><td><em>Aid, Alarm, Lesser Restoration, Protection from Evil and Good</em></td></tr>
+				<tr><td>5</td><td><em>Dispel Magic, Protection from Energy</em></td></tr>
+				<tr><td>7</td><td><em>Freedom of Movement, Summon Construct</em></td></tr>
+				<tr><td>9</td><td><em>Greater Restoration, Wall of Force</em></td></tr>
+			</table>
+			<p>In addition, consult the <em>Manifestations of Order</em> table and choose or randomly determine a way your connection to order manifests while you are casting any of your Sorcerer spells.</p>
+			<h5>MANIFESTATIONS OF ORDER</h5>
+			<table>
+				<thead>
+					<tr><td class="col-20">1d6</td><td>Manifestation</td></tr>
+				</thead>
+				<tr><td>1</td><td><em>Spectral cogwheels hover behind you.</em></td></tr>
+				<tr><td>2</td><td><em>The hands of a clock spin in your eyes.</em></td></tr>
+				<tr><td>3</td><td><em>Your skin glows with a brassy sheen.</em></td></tr>
+				<tr><td>4</td><td><em>Floating equations and geometric objects overlay your body.</em></td></tr>
+				<tr><td>5</td><td><em>Your Spellcasting Focus temporarily takes the form of a Tiny clockwork mechanism.</em></td></tr>
+				<tr><td>6</td><td><em>The ticking of gears or ringing of a clock can be heard by you and those affected by your magic.</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>You always have certain spells prepared based on your Sorcerer level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_AID" level="3" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_ALARM" level="3" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_LESSER_RESTORATION" level="3" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" level="3" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_DISPEL_MAGIC" level="5" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_PROTECTION_FROM_ENERGY" level="7" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_FREEDOM_OF_MOVEMENT" level="7" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_SUMMON_CONSTRUCT" level="9" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_GREATER_RESTORATION" level="9" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_WALL_OF_FORCE" level="9" />
+		</rules>
+	</element>
+	<element name="Restore Balance" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_RESTORE_BALANCE">
+		<description>
+			<p>Your connection to the plane of absolute o rderallows you to equalize chaotic moments. When a creature you can see within 60 feet of yourself is about to roll a d20 with Advantage or Disadvantage, you can take a Reaction to prevent the roll from being affected by Advantage or Disadvantage.</p>
+			<p class="indent">You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet action="Reaction" usage="{{restore balance:uses}}/Long Rest">
+			<description>When a creature you can see within 60 feet of yourself is about to roll a d20 with Advantage or Disadvantage, you can prevent the roll from being affected by Advantage or Disadvantage.</description>
+		</sheet>
+		<rules>
+			<stat name="restore balance:uses" value="charisma:modifier" bonus="base" />
+			<stat name="restore balance:uses" value="1" bonus="base" />
+		</rules>
+	</element>
+	<element name="Bastion of Law" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_BASTION_OF_LAW">
+		<description>
+			<p>You can tap into the grand equation of existence to imbue a creature with a shimmering shield of order. As a Magic action, you can expend 1 to 5 Sorcery Points to create a magical ward around yourself or another creature you can see within 30 feet of yourself.</p>
+			<p class="indent">The ward is represented by a number of d8s equal to the number of Sorcery Points spent to create it. When the warded creature takes damage, it can expend a number of those dice, roll them, and reduce the damage taken by the total rolled on those dice.</p>
+		</description>
+		<sheet action="Magic Action">
+			<description>You can expend 1 to 5 Sorcery Points to create a magical ward around yourself or another creature you can see within 30 feet of yourself. The ward is represented by a number of d8s equal to the number of Sorcery Points spent to create it. When the warded creature takes damage, it can expend a number of those dice, roll them, and reduce the damage taken by the total rolled on those dice.</description>	
+		</sheet>
+	</element>
+	<element name="Trance of Order" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_TRANCE_OF_ORDER">
+		<description>
+			<p>You gain the ability to align your consciousness with the endless calculations of Mechanus. As a Bonus Action, you can enter this state for 1 minute. For the duration, attack rolls against you can't benefit from Advantage, and whenever you make a D20 Test, you can treat a roll of 9 or lower on the d20 as a 10.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest unless you spend 5 Sorcery Points (no action required) to restore your use of it.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>You can enter this state for 1 minute. For the duration, attack rolls against you can't benefit from Advantage, and whenever you make a D20 Test, you can treat a roll of 9 or lower on the d20 as a 10. You can expend 5 Sorcery Points to restore your use of it.</description>
+		</sheet>
+	</element>
+	<element name="Clockwork Cavalcade" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_CLOCKWORK_CAVALCADE">
+		<description>
+			<p>You momentarily summon spirits of order to expunge disorder around you. As a Magic action, you summon the spirits in a 30-foot Cube originating from you. The spirits look like modrons or other Constructs of your choice. The spirits are intangible and invulnerable, and they create the effects below within the Cube before vanishing. Once you use this action, you can't use it again until you finish a Long Rest unless you spend 7 Sorcery Points (no action required) to restore your use of it.</p>
+			<p class="indent"><strong>Healing.</strong> The spirits restore up to 100 Hit Points, divided as you choose among any number of creatures of your choice in the Cube.</p>
+			<p class="indent"><strong>Repair.</strong> Any damaged objects entirely in the Cube are repaired instantly.</p>
+			<p class="indent"><strong>Dispel.</strong> Every spell of level 6 and lower ends on creatures and objects of your choice in the Cube.</p>
+		</description>
+		<sheet action="Magic Action" usage="1/Long Rest">
+			<description>You summon the spirits in a 30-foot Cube originating from you. The spirits look like modrons or other Constructs of your choice. The spirits are intangible and invulnerable, and they create the effects below within the Cube before vanishing. You can expend 7 Sorcery Points to restore your use of it.
+			Healing. The spirits restore up to 100 Hit Points, divided as you choose among any number of creatures of your choice in the Cube.
+			Repair. Any damaged objects entirely in the Cube are repaired instantly.
+			Dispel. Every spell of level 6 and lower ends on creatures and objects of your choice in the Cube.
+			</description>
+		</sheet>
+	</element>
+
+	<element name="2024 Draconic Sorcery" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_SORCERER_DRACONIC_SORCERY">
+		<supports>Sorcerous Origin</supports>
+		<description>
+			<p>Your innate magic comes from the gift of a dragon. Perhaps an ancient dragon facing death bequeathed some of its magical power to you or your ancestor. You might have absorbed magic from a site infused with dragons' power. Or perhaps you handled a treasure taken from a dragon's hoard that was steeped in draconic power. Or you might have a dragon for an ancestor.</p>
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_DRACONIC_RESILIENCE" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_DRACONIC_SPELLS" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_ELEMENTAL_AFFINITY" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_DRAGON_WINGS" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_DRAGON_COMPANION" />
+		</description>
+		<sheet display="false">
+			<description>A Sorcerer whose magic comes from draconic heritage.</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_DRACONIC_RESILIENCE" level="3" />
+			<grant type="Class Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_DRACONIC_SPELLS" level="3" />
+			<grant type="Class Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_ELEMENTAL_AFFINITY" level="6" />
+			<grant type="Class Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_DRAGON_WINGS" level="14" />
+			<grant type="Class Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_DRAGON_COMPANION" level="18" />
+		</rules>
+	</element>
+	<element name="Draconic Resilience" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_DRACONIC_RESILIENCE">
+		<description>
+			<p>The magic in your body manifests physical traits of your draconic gift. Your Hit Point maximum increases by 3, and it increases by 1 whenever you gain another Sorcerer level.</p>
+			<p>Parts of you are also covered by dragon-like scales. While you aren't wearing armor, your base Armor Class equals 10 plus your Dexterity and Charisma modifiers.</p>
+		</description>
+		<sheet>
+			<description>Your Hit Point maximum increases by 3, and it increases by 1 whenever you gain another Sorcerer level. While you aren't wearing armor, your base Armor Class equals 10 plus your Dexterity and Charisma modifiers.</description>
+		</sheet>
+		<rules>
+			<stat name="hp:bonus" value="level:2024 sorcerer" level="3" />
+			<stat name="ac:draconic resilience" value="13" />
+			<stat name="ac:draconic resilience" value="dexterity:modifier" />
+			<stat name="ac:calculation" value="ac:draconic resilience" bonus="calculation" equipped="[armor:none]" alt="Draconic Resilience (Sorcerer)" />
+		</rules>
+	</element>
+	<element name="Draconic Spells" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_DRACONIC_SPELLS">
+		<description>
+			<p>When you reach a Sorcerer level specified in the Draconic Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>DRACONIC SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td class="col-20">Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3</td><td><em>Alter Self, Chromatic Orb, Command, Dragon's Breath</em></td></tr>
+				<tr><td>5</td><td><em>Fear, Fly</em></td></tr>
+				<tr><td>7</td><td><em>Arcane Eye, Charm Monster</em></td></tr>
+				<tr><td>9</td><td><em>Legend Lore, Summon Dragon</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>You always have certain spells prepared based on your Sorcerer level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_ALTER_SELF" level="3" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_CHROMATIC_ORB" level="3" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_COMMAND" level="3" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_DRAGONS_BREATH" level="3" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_FEAR" level="5" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_FLY" level="5" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_ARCANE_EYE" level="7" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_CHARM_MONSTER" level="7" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_LEGEND_LORE" level="9" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_SUMMON_DRAGON" level="9" />
+		</rules>
+	</element>
+	<element name="Elemental Affinity" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_ELEMENTAL_AFFINITY">
+		<description>
+			<p>Your draconic magic has an affinity with a damage type associated with dragons. Choose one of those types: Acid, Cold, Fire, Lightning, or Poison.</p>
+			<p>You have Resistance to that damage type, and when you cast a spell that deals damage of that type, you can add your Charisma modifier to one damage roll of that spell.</p>
+		</description>
+		<sheet>
+			<description>Choose a damage type (Acid, Cold, Fire, Lightning, or Poison). You have Resistance to that damage type, and when you cast a spell that deals damage of that type, you can add your Charisma modifier to one damage roll of that spell.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Elemental Affinity Damage Type" supports="Elemental Affinity Damage Type" />
+		</rules>
+	</element>
+	<element name="Dragon Wings" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_DRAGON_WINGS">
+		<description>
+			<p>As a Bonus Action, you can cause draconic wings to appear on your back. The wings last for 1 hour or until you dismiss them (no action required). For the duration, you have a Fly Speed of 60 feet.</p>
+			<p>Once you use this feature, you can't use it again until you finish a Long Rest unless you spend 3 Sorcery Points (no action required) to restore your use of it.</p>
+		</description>
+		<sheet usage="1/Long Rest" action="Bonus Action" cost="3 sorcery points">
+			<description>As a Bonus Action, you can cause draconic wings to appear on your back for 1 hour. For the duration, you have a Fly Speed of 60 feet. You can spend 3 Sorcery Points to restore your use of this feature.</description>
+		</sheet>
+	</element>
+	<element name="Dragon Companion" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_DRAGON_COMPANION">
+		<description>
+			<p>You can cast <em>Summon Dragon</em> without a Material component. You can also cast it once without a spell slot, and you regain the ability to cast it in this way when you finish a Long Rest.</p>
+			<p>Whenever you start casting the spell, you can modify it so that it doesn't require Concentration. If you do so, the spell's duration becomes 1 minute for that casting.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can cast Summon Dragon without a Material component and once without a spell slot. You can modify it so that it doesn't require Concentration, making its duration 1 minute.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_SPELL_SUMMON_DRAGON" />
+		</rules>
+	</element>
+
+		<element name="2024 Wild Magic Sorcery" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_SORCERER_WILD_MAGIC_SORCERY">
+		<supports>Sorcerous Origin</supports>
+		<description>
+			<p>Your innate magic stems from the forces of chaos that underlie the order of creation. You or an ancestor might have endured exposure to raw magic, perhaps through a planar portal leading to Limbo or the Elemental Planes. Perhaps you were blessed by a fey being or marked by a demon. Or your magic could be a fluke with no apparent cause. Whatever its source, this magic churns within you, waiting for any outlet.</p>
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_WILD_MAGIC_SURGE" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_TIDES_OF_CHAOS" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_BEND_LUCK" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_CONTROLLED_CHAOS" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_TAMED_SURGE" />
+			<h5 class="caption">WILD MAGIC SURGE</h5>
+			<table>
+				<thead>
+					<tr><td>d100</td><td>Effect</td></tr>
+				</thead>
+				<tr><td>01-04</td><td>Roll on this table at the start of each of your turns for the next minute, ignoring this result on subsequent rolls.</td></tr>
+				<tr><td>05-08</td><td>A creature that is Friendly toward you appears in a random unoccupied space within 60 feet of you. The creature is under the DM's control and disappears 1 minute later. Roll 1d4 to determine the creature: on a 1, a Modron Duodrone appears; on a 2, a Flumph appears; on a 3, a Modron Monodrone appears; on a 4, a Unicorn appears. See the Monster Manual for the creature's stat block.</td></tr>
+				<tr><td>09-12</td><td>For the next minute, you regain 5 Hit Points at the start of each of your turns.</td></tr>
+				<tr><td>13-16</td><td>Creatures have Disadvantage on saving throws against the next spell you cast in the next minute that involves a saving throw.</td></tr>
+				<tr><td>17-20</td><td>You are subjected to an effect that lasts for 1 minute unless its description says otherwise. Roll 1d8 to determine the effect: on a 1, you're surrounded by faint, ethereal music only you and creatures within 5 feet of you can hear; on a 2, your size increases by one size category; on a 3, you grow a long beard made of feathers that remains until you sneeze, at which point the feathers explode from your face and vanish; on a 4, you must shout when you speak; on a 5, illusory butterflies flutter in the air within 10 feet of you; on a 6, an eye appears on your forehead, granting you Advantage on Wisdom (Perception) checks; on a 7, pink bubbles float out of your mouth whenever you speak; on an 8, your skin turns a vibrant shade of blue for 24 hours or until the effect is ended by a Remove Curse spell.</td></tr>
+				<tr><td>21-24</td><td>For the next minute, all your spells with a casting time of an action have a casting time of a Bonus Action.</td></tr>
+				<tr><td>25-28</td><td>You are transported to the Astral Plane until the end of your next turn. You then return to the space you previously occupied or the nearest unoccupied space if that space is occupied.</td></tr>
+				<tr><td>29-32</td><td>The next time you cast a spell that deals damage within the next minute, don't roll the spell's damage dice for the damage. Instead use the highest number possible for each damage die.</td></tr>
+				<tr><td>33-36</td><td>You have Resistance to all damage for the next minute.</td></tr>
+				<tr><td>37-40</td><td>You turn into a potted plant until the start of your next turn. While you're a plant, you have the Incapacitated condition and have Vulnerability to all damage. If you drop to 0 Hit Points, your pot breaks, and your form reverts.</td></tr>
+				<tr><td>41-44</td><td>For the next minute, you can teleport up to 20 feet as a Bonus Action on each of your turns.</td></tr>
+				<tr><td>45-48</td><td>You and up to three creatures you choose within 30 feet of you have the Invisible condition for 1 minute. This invisibility ends on a creature immediately after it makes an attack roll, deals damage, or casts a spell.</td></tr>
+				<tr><td>49-52</td><td>A spectral shield hovers near you for the next minute, granting you a +2 bonus to AC and immunity to Magic Missile.</td></tr>
+				<tr><td>53-56</td><td>You can take one extra action on this turn.</td></tr>
+				<tr><td>57-60</td><td>You cast a random spell. If the spell normally requires Concentration, it doesn't require Concentration in this case; the spell lasts for its full duration. Roll 1d10 to determine the spell: on a 1, Confusion; on a 2, Fireball; on a 3, Fog Cloud; on a 4, Fly (cast on a random creature within 60 feet of you), on a 5, Grease; on a 6, Levitate (cast on yourself); on a 7, Magic Missile (cast as a level 5 spell); on an 8, Mirror Image; on a 9, Polymorph (cast on yourself), and if you fail the saving throw, you turn into a Goat; on a 10, See Invisibility.</td></tr>
+				<tr><td>61-64</td><td>For the next minute, any flammable, nonmagical object you touch that isn't being worn or carried by another creature bursts into flame, takes 1d4 Fire damage, and is burning.</td></tr>
+				<tr><td>65-68</td><td>If you die within the next hour, you immediately revive as if by the Reincarnate spell.</td></tr>
+				<tr><td>69-72</td><td>You have the Frightened condition until the end of your next turn. The DM determines the source of your fear.</td></tr>
+				<tr><td>73-76</td><td>You teleport up to 60 feet to an unoccupied space you can see.</td></tr>
+				<tr><td>77-80</td><td>A random creature within 60 feet of you has the Poisoned condition for 1d4 hours.</td></tr>
+				<tr><td>81-84</td><td>You radiate Bright Light in a 30-foot radius for the next minute. Any creature that ends its turn within 5 feet of you has the Blinded condition until the end of its next turn.</td></tr>
+				<tr><td>85-88</td><td>Up to three creatures of your choice that you can see within 30 feet of you take 1d10 Necrotic damage. You regain Hit Points equal to the sum of the Necrotic damage dealt.</td></tr>
+				<tr><td>89-92</td><td>Up to three creatures of your choice that you can see within 30 feet of you take 4d10 Lightning damage.</td></tr>
+				<tr><td>93-96</td><td>You and all creatures within 30 feet of you have Vulnerability to Piercing damage for the next minute.</td></tr>
+				<tr><td>97-00</td><td>Roll 1d6: On a 1, you regain 2d10 Hit Points; on a 2, one ally of your choice within 300 feet of you regains 2d10 Hit Points; on a 3, you regain your lowest-level expended spell slot; on a 4, one ally of your choice within 300 feet of you regains their lowest-level expended spell slot; on a 5, you regain all your expended Sorcery Points; on a 6, all the effects of row 17-20 affect you simultaneously.</td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>A Sorcerer whose magic stems from the forces of chaos.</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_WILD_MAGIC_SURGE" level="3" />
+			<grant type="Class Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_TIDES_OF_CHAOS" level="3" />
+			<grant type="Class Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_BEND_LUCK" level="6" />
+			<grant type="Class Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_CONTROLLED_CHAOS" level="14" />
+			<grant type="Class Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_TAMED_SURGE" level="18" />
+		</rules>
+	</element>
+	<element name="Wild Magic Surge" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_WILD_MAGIC_SURGE">
+		<description>
+			<p>Your spellcasting can unleash surges of untamed magic. No more than once per turn, you can roll a d20 immediately after you cast a Sorcerer spell with a spell slot. If you roll a 20, roll on the Wild Magic Surge table to create a magical effect (see the Player's Handbook for that table). If the magical effect is a spell, it is too wild to be affected by your Metamagic, and if it normally requires Concentration, it doesn't require Concentration in this case; the spell lasts for its full duration.</p>
+		</description>
+		<sheet>
+			<description>No more than once per turn, you can roll a d20 immediately after you cast a Sorcerer spell with a spell slot. If you roll a 20, roll on the Wild Magic Surge table to create a magical effect.</description>
+		</sheet>
+	</element>
+	<element name="Tides of Chaos" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_TIDES_OF_CHAOS">
+		<description>
+			<p>You can manipulate chaos itself to give yourself Advantage on one D20 Test before you roll the d20. Once you do so, you must cast a Sorcerer spell with a spell slot or finish a Long Rest before you can use this feature again.</p>
+			<p>If you do cast a Sorcerer spell with a spell slot before you finish a Long Rest, you automatically roll on the Wild Magic Surge table.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can manipulate chaos itself to give yourself Advantage on one D20 Test before you roll the d20. If you cast a Sorcerer spell with a spell slot before finishing a Long Rest, you automatically roll on the Wild Magic Surge table.</description>
+		</sheet>
+	</element>
+	<element name="Bend Luck" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_BEND_LUCK">
+		<description>
+			<p>You have the ability to twist fate using your wild magic. Immediately after another creature you can see rolls the d20 for a d20 Test, you can use your Reaction and spend 1 Sorcery Point to roll 1d4 and apply the number rolled as a bonus or penalty (your choice) to the creature's roll.</p>
+		</description>
+		<sheet action="Reaction" cost="1 sorcery point">
+			<description>Immediately after another creature you can see rolls the d20 for a d20 Test, you can use your Reaction and spend 1 Sorcery Point to roll 1d4 and apply the number rolled as a bonus or penalty (your choice) to the creature's roll.</description>
+		</sheet>
+	</element>
+	<element name="Controlled Chaos" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_CONTROLLED_CHAOS">
+		<description>
+			<p>You gain a modicum of control over the surges of your wild magic. Whenever you roll on the Wild Magic Surge table, you can roll twice and use either number.</p>
+		</description>
+		<sheet>
+			<description>Whenever you roll on the Wild Magic Surge table, you can roll twice and use either number.</description>
+		</sheet>
+	</element>
+	<element name="Tamed Surge" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_TAMED_SURGE">
+		<description>
+			<p>Immediately after you cast a Sorcerer spell with a spell slot, you can create an effect of your choice from the Wild Magic Surge table instead of rolling on that table. You can choose any effect in the table except for the final row, and if the chosen effect involves a roll, you must make it.</p>
+			<p>Once you use this feature, you can't do so again until you finish a Long Rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>Immediately after you cast a Sorcerer spell with a spell slot, you can create an effect of your choice from the Wild Magic Surge table instead of rolling on that table. You can choose any effect in the table except for the final row, and if the chosen effect involves a roll, you must make it.</description>
+		</sheet>
+	</element>
 </elements>

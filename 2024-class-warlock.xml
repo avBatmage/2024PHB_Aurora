@@ -2,30 +2,30 @@
 <elements>
 	<info>
 		<name>2024 Warlock</name>
-		<description>The Warlock class from the Player’s Handbook.</description>
+		<description>The Warlock class from the Player's Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
 		<update version="0.3.9">
-			<file name="2024-class-warlock.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/2024-class-warlock.xml" />
+			<file name="2024-class-warlock.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-class-warlock.xml" />
 		</update>
 	</info>
 
-	<element name="Warlock" type="Class" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_WARLOCK">
+	<element name="2024 Warlock" type="Class" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_WARLOCK">
 		<description>
 			<p>With a pseudodragon curled on his shoulder, a young elf in golden robes smiles warmly, weaving a magical charm into his honeyed words and bending the palace sentinel to his will.</p>
 			<p class="indent">As flames spring to life in her hands, a wizened human whispers the secret name of her demonic patron, infusing her spell with fiendish magic. Shifting his gaze between a battered tome and the odd alignment of the stars overhead, a wild-eyed tiefling chants the mystic ritual that will open a doorway to a distant world.</p>
 			<p class="indent">Warlocks are seekers of the knowledge that lies hidden in the fabric of the multiverse. Through pacts made with mysterious beings of supernatural power, warlocks unlock magical effects both subtle and spectacular. Drawing on the ancient knowledge of beings such as fey nobles, demons, devils, hags, and alien entities of the Far Realm, warlocks piece together arcane secrets to bolster their own power.</p>
 			<h4>SWORN AND BEHOLDEN</h4>
-			<p>A warlock is defined by a pact with an otherworldly being. Sometimes the relationship between warlock and patron is like that of a cleric and a deity, though the beings that serve as patrons for warlocks are not gods. A warlock might lead a cult dedicated to a demon prince, an archdevil, or an utterly alien entity—beings not typically served by clerics. More often, though, the arrangement is similar to that between a master and an apprentice. The warlock learns and grows in power, at the cost of occasional services performed on the patron’s behalf.</p>
+			<p>A warlock is defined by a pact with an otherworldly being. Sometimes the relationship between warlock and patron is like that of a cleric and a deity, though the beings that serve as patrons for warlocks are not gods. A warlock might lead a cult dedicated to a demon prince, an archdevil, or an utterly alien entity—beings not typically served by clerics. More often, though, the arrangement is similar to that between a master and an apprentice. The warlock learns and grows in power, at the cost of occasional services performed on the patron's behalf.</p>
 			<p class="indent">The magic bestowed on a warlock ranges from minor but lasting alterations to the warlock's being (such as the ability to see in darkness or to read any language) to access to powerful spells. Unlike bookish wizards, warlocks supplement their magic with some facility at hand-to-hand combat. They are comfortable in light armor and know how to use simple weapons.</p>
 			<h4>DELVERS INTO SECRETS</h4>
 			<p>Warlocks are driven by an insatiable need for knowledge and power, which compels them into their pacts and shapes their lives. This thirst drives warlocks into their pacts and shapes their later careers as well.</p>
-			<p class="indent">Stories of warlocks binding themselves to fiends are widely known. But many warlocks serve patrons that are not fiendish. Sometimes a traveler in the wilds comes to a strangely beautiful tower, meets its fey lord or lady, and stumbles into a pact without being fully aware of it. And sometimes, while poring over tomes of forbidden lore, a brilliant but crazed student’s mind is opened to realities beyond the material world and to the alien beings that dwell in the outer void.</p>
-			<p class="indent">Once a pact is made, a warlock’s thirst for knowledge and power can’t be slaked with mere study and research. No one makes a pact with such a mighty patron if he or she doesn’t intend to use the power thus gained. Rather, the vast majority of warlocks spend their days in active pursuit of their goals, which typically means some kind of adventuring. Furthermore, the demands of their patrons drive warlocks toward adventure.</p>
+			<p class="indent">Stories of warlocks binding themselves to fiends are widely known. But many warlocks serve patrons that are not fiendish. Sometimes a traveler in the wilds comes to a strangely beautiful tower, meets its fey lord or lady, and stumbles into a pact without being fully aware of it. And sometimes, while poring over tomes of forbidden lore, a brilliant but crazed student's mind is opened to realities beyond the material world and to the alien beings that dwell in the outer void.</p>
+			<p class="indent">Once a pact is made, a warlock's thirst for knowledge and power can't be slaked with mere study and research. No one makes a pact with such a mighty patron if he or she doesn't intend to use the power thus gained. Rather, the vast majority of warlocks spend their days in active pursuit of their goals, which typically means some kind of adventuring. Furthermore, the demands of their patrons drive warlocks toward adventure.</p>
 			<h4>CREATING A WARLOCK</h4>
 			<p>As you make your warlock character, spend some time thinking about your patron and the obligations that your pact imposes upon you. What led you to make the pact, and how did you make contact with your patron? Were you seduced into summoning a devil, or did you seek out the ritual that would allow you to make contact with an alien elder god? Did you search for your patron, or did your patron find and choose you? Do you chafe under the obligations of your pact or serve joyfully in anticipation of the rewards promised to you?</p>
-			<p class="indent">Work with your DM to determine how big a part your pact will play in your character’s adventuring career. Your patron’s demands might drive you into adventures, or they might consist entirely of small favors you can do between adventures.</p>
-			<p class="indent">What kind of relationship do you have with your patron? Is it friendly, antagonistic, uneasy, or romantic? How important does your patron consider you to be? What part do you play in your patron’s plans? Do you know other servants of your patron?</p>
-			<p class="indent">How does your patron communicate with you? If you have a familiar, it might occasionally speak with your patron’s voice. Some warlocks find messages from their patrons etched on trees, mingled among tea leaves, or adrift in the clouds—messages that only the warlock can see. Other warlocks converse with their patrons in dreams or waking visions, or deal only with intermediaries.</p>
+			<p class="indent">Work with your DM to determine how big a part your pact will play in your character's adventuring career. Your patron's demands might drive you into adventures, or they might consist entirely of small favors you can do between adventures.</p>
+			<p class="indent">What kind of relationship do you have with your patron? Is it friendly, antagonistic, uneasy, or romantic? How important does your patron consider you to be? What part do you play in your patron's plans? Do you know other servants of your patron?</p>
+			<p class="indent">How does your patron communicate with you? If you have a familiar, it might occasionally speak with your patron's voice. Some warlocks find messages from their patrons etched on trees, mingled among tea leaves, or adrift in the clouds—messages that only the warlock can see. Other warlocks converse with their patrons in dreams or waking visions, or deal only with intermediaries.</p>
 			<h5>QUICK BUILD</h5>
 			<p>You can make a warlock quickly by following these suggestions. First, Charisma should be your highest ability score, followed by Constitution. Second, choose the charlatan background. Third, choose the eldritch blast and chill touch cantrips, along with the 1st-level spells charm person and witch bolt.</p>
 			<h3>CLASS FEATURES</h3>
@@ -47,45 +47,44 @@
                 <li><strong>Skills:</strong> Choose two skills from Arcana, Deception, History, Intimidation, Investigation, Nature, and Religion</li>
             </ul>
 			<h5>EQUIPMENT</h5>
-			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<p>You start with the following equipment, Choose A or B:</p>
 			<ul>
-				<li>(a) a light crossbow and 20 bolts or (b) any simple weapon</li>
-				<li>(a) a component pouch or (b) an arcane focus</li>
-				<li>(a) a scholar’s pack or (b) a dungeoneer’s pack</li>
-				<li>Leather armor, any simple weapon, and two daggers</li>
+					<li>(A) Leather Armor, Sickle, 2 Daggers, Arcane Focus (orb), Book (occult lore), Scholar's Pack, and 15 GP; or (B) 100 GP</li>
 			</ul>
 			<h5 class="caption">THE WARLOCK</h5>
 			<table class="class-features">
 				<thead>
-					<tr><td class="col-5">Level</td><td class="left">Features</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td class="col-10">Spell Slots</td><td class="col-10">Slot Level</td><td class="col-10">Invocations Known</td></tr>
+					<tr><td class="col-5">Level</td><td class="left">Features</td><td class="col-10">Cantrips Known</td><td class="col-10">Prepared Spells</td><td class="col-10">Spell Slots</td><td class="col-10">Slot Level</td><td class="col-10">Invocations Known</td></tr>
 				</thead>
-				<tr><td> 1st</td><td class="left">Otherworldly Patron, Pact Magic</td><td>2</td><td>2</td><td>1</td><td>1st</td><td>—</td></tr>
-				<tr><td> 2nd</td><td class="left">Eldritch Invocations</td><td>2</td><td>3</td><td>2</td><td>1st</td><td>2</td></tr>
-				<tr><td> 3rd</td><td class="left">Pact Boon</td><td>2</td><td>4</td><td>2</td><td>2nd</td><td>2</td></tr>
-				<tr><td> 4th</td><td class="left">Ability Score Improvement</td><td>3</td><td>5</td><td>2</td><td>2nd</td><td>2</td></tr>
-				<tr><td> 5th</td><td class="left">—</td><td>3</td><td>6</td><td>2</td><td>3rd</td><td>3</td></tr>
-				<tr><td> 6th</td><td class="left">Otherworldly Patron feature</td><td>3</td><td>7</td><td>2</td><td>3rd</td><td>3</td></tr>
-				<tr><td> 7th</td><td class="left">—</td><td>3</td><td>8</td><td>2</td><td>4th</td><td>4</td></tr>
-				<tr><td> 8th</td><td class="left">Ability Score Improvement</td><td>3</td><td>9</td><td>2</td><td>4th</td><td>4</td></tr>
-				<tr><td> 9th</td><td class="left">—</td><td>3</td><td>10</td><td>2</td><td>5th</td><td>5</td></tr>
-				<tr><td>10th</td><td class="left">Otherworldly Patron feature</td><td>4</td><td>10</td><td>2</td><td>5th</td><td>5</td></tr>
-				<tr><td>11th</td><td class="left">Mystic Arcanum (6th level)</td><td>4</td><td>11</td><td>3</td><td>5th</td><td>5</td></tr>
-				<tr><td>12th</td><td class="left">Ability Score Improvement</td><td>4</td><td>11</td><td>3</td><td>5th</td><td>6</td></tr>
-				<tr><td>13th</td><td class="left">Mystic Arcanum (7th level)</td><td>4</td><td>12</td><td>3</td><td>5th</td><td>6</td></tr>
-				<tr><td>14th</td><td class="left">Otherworldly Patron feature</td><td>4</td><td>12</td><td>3</td><td>5th</td><td>6</td></tr>
-				<tr><td>15th</td><td class="left">Mystic Arcanum (8th level)</td><td>4</td><td>13</td><td>3</td><td>5th</td><td>7</td></tr>
-				<tr><td>16th</td><td class="left">Ability Score Improvement</td><td>4</td><td>13</td><td>3</td><td>5th</td><td>7</td></tr>
-				<tr><td>17th</td><td class="left">Mystic Arcanum (9th level)</td><td>4</td><td>14</td><td>4</td><td>5th</td><td>7</td></tr>
-				<tr><td>18th</td><td class="left">—</td><td>4</td><td>14</td><td>4</td><td>5th</td><td>8</td></tr>
-				<tr><td>19th</td><td class="left">Ability Score Improvement</td><td>4</td><td>15</td><td>4</td><td>5th</td><td>8</td></tr>
-				<tr><td>20th</td><td class="left">Eldritch Master</td><td>4</td><td>15</td><td>4</td><td>5th</td><td>8</td></tr>
+				<tr><td> 1st</td><td class="left">Eldritch Invocations, Pact Magic</td><td>2</td><td>2</td><td>1</td><td>1st</td><td>1</td></tr>
+				<tr><td> 2nd</td><td class="left">Magical Cunning</td><td>2</td><td>3</td><td>1</td><td>1st</td><td>3</td></tr>
+				<tr><td> 3rd</td><td class="left">Warlock Subclass</td><td>2</td><td>4</td><td>1</td><td>1st</td><td>3</td></tr>
+				<tr><td> 4th</td><td class="left">Ability Score Improvement</td><td>3</td><td>5</td><td>1</td><td>1st</td><td>3</td></tr>
+				<tr><td> 5th</td><td class="left">—</td><td>3</td><td>6</td><td>2</td><td>3rd</td><td>5</td></tr>
+				<tr><td> 6th</td><td class="left">Subclass feature</td><td>3</td><td>7</td><td>2</td><td>3rd</td><td>5</td></tr>
+				<tr><td> 7th</td><td class="left">—</td><td>3</td><td>8</td><td>2</td><td>3rd</td><td>6</td></tr>
+				<tr><td> 8th</td><td class="left">Ability Score Improvement</td><td>3</td><td>9</td><td>2</td><td>3rd</td><td>6</td></tr>
+				<tr><td> 9th</td><td class="left">Contact Patron</td><td>3</td><td>10</td><td>2</td><td>3rd</td><td>7</td></tr>
+				<tr><td>10th</td><td class="left">Subclass feature</td><td>4</td><td>10</td><td>2</td><td>3rd</td><td>7</td></tr>
+				<tr><td>11th</td><td class="left">Mystic Arcanum (6th level)</td><td>4</td><td>11</td><td>2</td><td>3rd</td><td>7</td></tr>
+				<tr><td>12th</td><td class="left">Ability Score Improvement</td><td>4</td><td>11</td><td>2</td><td>3rd</td><td>8</td></tr>
+				<tr><td>13th</td><td class="left">Mystic Arcanum (7th level)</td><td>4</td><td>12</td><td>2</td><td>3rd</td><td>8</td></tr>
+				<tr><td>14th</td><td class="left">Subclass feature</td><td>4</td><td>12</td><td>2</td><td>3rd</td><td>8</td></tr>
+				<tr><td>15th</td><td class="left">Mystic Arcanum (8th level)</td><td>4</td><td>13</td><td>2</td><td>3rd</td><td>9</td></tr>
+				<tr><td>16th</td><td class="left">Ability Score Improvement</td><td>4</td><td>13</td><td>2</td><td>3rd</td><td>9</td></tr>
+				<tr><td>17th</td><td class="left">Mystic Arcanum (9th level)</td><td>4</td><td>14</td><td>2</td><td>3rd</td><td>9</td></tr>
+				<tr><td>18th</td><td class="left">—</td><td>4</td><td>14</td><td>2</td><td>3rd</td><td>10</td></tr>
+				<tr><td>19th</td><td class="left">Epic Boon</td><td>4</td><td>15</td><td>2</td><td>3rd</td><td>10</td></tr>
+				<tr><td>20th</td><td class="left">Eldritch Master</td><td>4</td><td>15</td><td>2</td><td>3rd</td><td>10</td></tr>
 			</table>
-			<div element="ID_2024PHB_CLASS_FEATURE_WARLOCK_OTHERWORLDLY_PATRON" />
-			<div element="ID_2024PHB_CLASS_FEATURE_WARLOCK_SPELLCASTING_WARLOCK_PACT_MAGIC" />
 			<div element="ID_2024PHB_CLASS_FEATURE_WARLOCK_ELDRITCH_INVOCATIONS" />
-			<div element="ID_2024PHB_CLASS_FEATURE_WARLOCK_PACT_BOON" />
+			<div element="ID_2024PHB_CLASS_FEATURE_WARLOCK_SPELLCASTING_WARLOCK_PACT_MAGIC" />
+			<div element="ID_2024PHB_CLASS_FEATURE_WARLOCK_MAGICAL_CUNNING" />
+			<div element="ID_2024PHB_CLASS_FEATURE_WARLOCK_WARLOCK_SUBCLASS" />
 			<div element="ID_2024PHB_CLASS_FEATURE_WARLOCK_ABILITY_SCORE_IMPROVEMENT_WARLOCK" />
+			<div element="ID_2024PHB_CLASS_FEATURE_WARLOCK_CONTACT_PATRON" />
 			<div element="ID_2024PHB_CLASS_FEATURE_WARLOCK_MYSTIC_ARCANUM" />
+			<div element="ID_2024PHB_CLASS_FEATURE_WARLOCK_EPIC_BOON" />
 			<div element="ID_2024PHB_CLASS_FEATURE_WARLOCK_ELDRITCH_MASTER" />
 		</description>
 		<sheet display="false">
@@ -101,12 +100,14 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_2024PHB_MULTICLASS_WARLOCK"/>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_2024PHB_MULTICLASS_WARLOCK"/>
 			<select type="Proficiency" name="Skill Proficiency (Warlock)" supports="Skill,Warlock" number="2" requirements="!ID_2024PHB_MULTICLASS_WARLOCK"/>
-			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_OTHERWORLDLY_PATRON" level="1"/>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_ELDRITCH_INVOCATIONS" level="1"/>
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_SPELLCASTING_WARLOCK_PACT_MAGIC" level="1" />
-			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_ELDRITCH_INVOCATIONS" level="2" />
-			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_PACT_BOON" level="3" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_MAGICAL_CUNNING" level="2" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_WARLOCK_SUBCLASS" level="3" />
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_ABILITY_SCORE_IMPROVEMENT_WARLOCK" level="4" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_CONTACT_PATRON" level="9" />
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_MYSTIC_ARCANUM" level="11" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_EPIC_BOON" level="19" />
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_ELDRITCH_MASTER" level="20" />
 		</rules>
 		<multiclass id="ID_2024PHB_MULTICLASS_WARLOCK">
@@ -122,17 +123,28 @@
 			</rules>
 		</multiclass>
 	</element>
-	<element name="Otherworldly Patron" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_OTHERWORLDLY_PATRON">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_OTHERWORLDLY_PATRON</requirements>
+	<element name="Eldritch Invocations" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_ELDRITCH_INVOCATIONS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_ELDRITCH_INVOCATIONS</requirements>
 		<description>
-			<p>At 1st level, you have struck a bargain with an otherworldly being of your choice.</p>
+			<p>You have unearthed Eldritch Invocations, pieces of forbidden knowledge that imbue you with an abiding magical ability or other lessons.</p>
+			<p class="indent">At 1st level, you gain one invocation of your choice. Your invocation options are detailed at the end of the class description. When you gain certain warlock levels, you gain additional invocations of your choice, as shown in the Invocations Known column of the Warlock table.</p>
+			<p class="indent">Additionally, when you gain a level in this class, you can choose one of the invocations you know and replace it with another invocation that you could learn at that level.</p>
+			<p class="indent"><strong>Prerequisites.</strong> If an invocation has a prerequisite, you must meet it to learn that invocation. For example, if an invocation requires you to be a level 5+ Warlock, you can select the invocation once you reach Warlock level 5.</p>
+			<p class="indent"><strong>Replacing and Gaining Invocations.</strong> Whenever you gain a Warlock level, you can replace one of your invocations with another one for which you qualify. You can't replace an invocation if it's a prerequisite for another invocation that you have.</p>
+			<p class="indent">You can't pick the same invocation more than once unless its description says otherwise.</p>
 		</description>
-		<sheet display="false" />
 		<rules>
-			<select type="Archetype" name="Otherworldly Patron" supports="Otherworldly Patron" />
+			<select type="Class Feature" name="Eldritch Invocation (Level 1)" supports="Eldritch Invocation" level="1" number="1" />
+			<select type="Class Feature" name="Eldritch Invocation (Level 2)" supports="Eldritch Invocation" level="2" number="2" />
+			<select type="Class Feature" name="Eldritch Invocation (Level 5)" supports="Eldritch Invocation" level="5" number="2" />
+			<select type="Class Feature" name="Eldritch Invocation (Level 7)" supports="Eldritch Invocation" level="7" />
+			<select type="Class Feature" name="Eldritch Invocation (Level 9)" supports="Eldritch Invocation" level="9" />
+			<select type="Class Feature" name="Eldritch Invocation (Level 12)" supports="Eldritch Invocation" level="12" />
+			<select type="Class Feature" name="Eldritch Invocation (Level 15)" supports="Eldritch Invocation" level="15" />
+			<select type="Class Feature" name="Eldritch Invocation (Level 18)" supports="Eldritch Invocation" level="18" />
 		</rules>
 	</element>
-	<element name="Pact Magic" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_SPELLCASTING_WARLOCK_PACT_MAGIC">
+	<element name="Pact Magic" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_SPELLCASTING_WARLOCK_PACT_MAGIC">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_SPELLCASTING_PACT_MAGIC</requirements>
 		<description>
 			<p>Your arcane research and the magic bestowed on you by your patron have given you facility with spells.</p>
@@ -141,10 +153,11 @@
 			<h5>SPELL SLOTS</h5>
 			<p>The Warlock table shows how many spell slots you have to cast your warlock spells of 1st through 5th level. The table also shows what the level of those slots is; all of your spell slots are the same level. To cast one of your warlock spells of 1st level or higher, you must expend a spell slot. You regain all expended spell slots when you finish a short or long rest.</p>
 			<p class="indent">For example, when you are 5th level, you have two 3rd-level spell slots. To cast the 1st-level spell witch bolt, you must spend one of those slots, and you cast it as a 3rd-level spell.</p>
-			<h5>SPELLS KNOWN OF 1ST LEVEL AND HIGHER</h5>
-			<p>At 1st level, you know two 1st-level spells of your choice from the warlock spell list.</p>
-			<p class="indent">The Spells Known column of the Warlock table shows when you learn more warlock spells of your choice of 1st level and higher. A spell you choose must be of a level no higher than what’s shown in the table's Slot Level column for your level. When you reach 6th level, for example, you learn a new warlock spell, which can be 1st, 2nd, or 3rd level.</p>
-			<p class="indent">Additionally, when you gain a level in this class, you can choose one of the warlock spells you know and replace it with another spell from the warlock spell list, which also must be of a level for which you have spell slots.</p>
+			<h5>PREPARED SPELLS OF LEVEL 1+</h5>
+			<p>You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose two level 1 Warlock spells.</p>
+			<p class="indent">The number of spells on your list increases as you gain Warlock levels, as shown in the Prepared Spells column of the Warlock table. Whenever that number increases, choose additional Warlock spells until the number of spells on your list matches the number in the table. The chosen spells must be of a level no higher than what's shown in the table's Slot Level column for your level. When you reach level 6, for example, you learn a new Warlock spell, which can be of levels 1-3.</p>
+			<p class="indent">If another Warlock feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Warlock spells for you.</p>
+			<p class="indent"><strong>Changing Your Prepared Spells.</strong> Whenever you gain a Warlock level, you can replace one spell on your list with another Warlock spell of an eligible level.</p>
 			<h5>SPELLCASTING ABILITY</h5>
 			<p>Charisma is your spellcasting ability for your warlock spells, so you use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a warlock spell you cast and when making an attack roll with one.</p>
 			<p class="indent">
@@ -206,45 +219,47 @@
 			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="19" spellcasting="Warlock"/>
 		</rules>
 	</element>
-	<element name="Eldritch Invocations" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_ELDRITCH_INVOCATIONS">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_ELDRITCH_INVOCATIONS</requirements>
+	<element name="Magical Cunning" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_MAGICAL_CUNNING">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_MAGICAL_CUNNING</requirements>
 		<description>
-			<p>In your study of occult lore, you have unearthed eldritch invocations, fragments of forbidden knowledge that imbue you with an abiding magical ability.</p>
-			<p class="indent">At 2nd level, you gain two eldritch invocations of your choice. Your invocation options are detailed at the end of the class description. When you gain certain warlock levels, you gain additional invocations of your choice, as shown in the Invocations Known column of the Warlock table.</p>
-			<p class="indent">Additionally, when you gain a level in this class, you can choose one of the invocations you know and replace it with another invocation that you could learn at that level.</p>
+			<p>You can perform an esoteric rite for 1 minute. At the end of it, you regain expended Pact Magic spell slots but no more than a number equal to half your maximum (round up). Once you use this feature, you can't do so again until you finish a Long Rest.</p>
 		</description>
-		<rules>
-			<select type="Class Feature" name="Eldritch Invocation (Level 2)" supports="Eldritch Invocation" level="2" number="2" />
-			<select type="Class Feature" name="Eldritch Invocation (Level 5)" supports="Eldritch Invocation" level="5" />
-			<select type="Class Feature" name="Eldritch Invocation (Level 7)" supports="Eldritch Invocation" level="7" />
-			<select type="Class Feature" name="Eldritch Invocation (Level 9)" supports="Eldritch Invocation" level="9" />
-			<select type="Class Feature" name="Eldritch Invocation (Level 12)" supports="Eldritch Invocation" level="12" />
-			<select type="Class Feature" name="Eldritch Invocation (Level 15)" supports="Eldritch Invocation" level="15" />
-			<select type="Class Feature" name="Eldritch Invocation (Level 18)" supports="Eldritch Invocation" level="18" />
-		</rules>
+		<sheet usage="1/Long Rest">
+			<description>You can perform an esoteric rite for 1 minute to regain expended Pact Magic spell slots (up to half your maximum, round up).</description>
+			<description level="20">You can perform an esoteric rite for 1 minute to regain all your expended Pact Magic spell slots.</description>
+		</sheet>
 	</element>
-	<element name="Pact Boon" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_PACT_BOON">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_PACT_BOON</requirements>
+	<element name="Warlock Subclass" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_WARLOCK_SUBCLASS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_WARLOCK_SUBCLASS</requirements>
 		<description>
-			<p>At 3rd level, your otherworldly patron bestows a gift upon you for your loyal service. You gain one of the following features of your choice.</p>
-			<h5 class="caption">PACT OF THE CHAIN</h5>
-			<p>You learn the <em>find familiar</em> spell and can cast it as a ritual. The spell doesn’t count against your number of spells known.</p>
-			<p class="indent">When you cast the spell, you can choose one of the normal forms for your familiar or one of the following special forms: imp, pseudodragon, quasit, or sprite.</p>
-			<p class="indent">Additionally, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack of its own.</p>
-			<h5 class="caption">PACT OF THE TOME</h5>
-			<p>Your patron gives you a grimoire called a Book of Shadows. When you gain this feature, choose three cantrips from any class’s spell list. While the book is on your person, you can cast those cantrips at will. They don’t count against your number of cantrips known.</p>
-			<p class="indent">If you lose your Book of Shadows, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous book. The book turns to ash when you die.</p>
-			<h5 class="caption">PACT OF THE BLADE</h5>			
-			<p>You can use your action to create a pact weapon in your empty hand. You can choose the form that this melee weapon takes each time you create it. You are proficient with it while you wield it. This weapon counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
-			<p class="indent">Your pact weapon disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature again, if you dismiss the weapon (no action required), or if you die.</p>
-			<p class="indent">You can transform one magic weapon into your pact weapon by performing a special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. You can then dismiss the weapon, shunting it into an extradimensional space, and it appears whenever you create your pact weapon thereafter. You can’t affect an artifact or a sentient weapon in this way. The weapon ceases being your pact weapon if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks.</p>
+			<p>You gain a Warlock subclass of your choice. A subclass is a specialization that grants you features at certain Warlock levels. For the rest of your career, you gain each of your subclass's features that are of your Warlock level or lower.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Class Feature" name="Pact Boon" supports="Pact Boon" level="3"/>
+			<select type="Archetype" name="Warlock Subclass" supports="Warlock Subclass" />
 		</rules>
 	</element>
-	<element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_ABILITY_SCORE_IMPROVEMENT_WARLOCK">
+	<element name="Contact Patron" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_CONTACT_PATRON">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_CONTACT_PATRON</requirements>
+		<description>
+			<p>In the past, you usually contacted your patron through intermediaries. Now you can communicate directly; you always have the Contact Other Plane spell prepared. With this feature, you can cast the spell without expending a spell slot to contact your patron, and you automatically succeed on the spell's saving throw.</p>
+			<p class="indent">Once you cast the spell with this feature, you can't do so in this way again until you finish a Long Rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can cast Contact Other Plane without expending a spell slot to contact your patron, and you automatically succeed on the spell's saving throw.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_CONTACT_OTHER_PLANE" spellcasting="Warlock" />
+		</rules>
+	</element>
+	<element name="Epic Boon" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_EPIC_BOON">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_EPIC_BOON</requirements>
+		<description>
+			<p>You gain an Epic Boon feat or another feat of your choice for which you qualify.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Ability Score Improvement" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_ABILITY_SCORE_IMPROVEMENT_WARLOCK">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_ABILITY_SCORE_IMPROVEMENT</requirements>
 		<compendium display="false" />
 		<description>
@@ -259,7 +274,7 @@
 			<select type="Class Feature" name="Improvement Option (Warlock 19)" supports="Improvement Option,Warlock,19" level="19" />
 		</rules>
 	</element>
-	<element name="Mystic Arcanum" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_MYSTIC_ARCANUM">
+	<element name="Mystic Arcanum" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_MYSTIC_ARCANUM">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_MYSTIC_ARCANUM</requirements>
 		<description>
 			<p>At 11th level, your patron bestows upon you a magical secret called an arcanum. Choose one 6th-level spell from the warlock spell list as this arcanum.</p>
@@ -276,69 +291,790 @@
 			<select type="Spell" name="Arcanum Spell (Mystic Arcanum)" supports="Warlock,9" level="17" spellcasting="Warlock" />
 		</rules>
 	</element>
-	<element name="Eldritch Master" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_ELDRITCH_MASTER">
+	<element name="Eldritch Master" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_ELDRITCH_MASTER">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_ELDRITCH_MASTER</requirements>
 		<description>
-			<p>At 20th level, you can draw on your inner reserve of mystical power while entreating your patron to regain expended spell slots. You can spend 1 minute entreating your patron for aid to regain all your expended spell slots from your Pact Magic feature. Once you regain spell slots with this feature, you must finish a long rest before you can do so again.</p>
+			<p>When you use your Magical Cunning feature, you regain all your expended Pact Magic spell slots.</p>
 		</description>
-		<sheet usage="1/Long Rest">
-			<description>You can spend 1 minute entreating your patron for aid to regain all your expended spell slots from your Pact Magic feature.</description>
+		<sheet display="false">
+			<description>When you use your Magical Cunning feature, you regain all your expended Pact Magic spell slots.</description>
 		</sheet>
 	</element>
 
-	<element name="Pact of the Chain" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_CHAIN">
-		<supports>Pact Boon</supports>
+	<element name="Pact of the Chain" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_PACT_OF_THE_CHAIN">
+		<supports>Eldritch Invocation</supports>
 		<description>
-			<p>You learn the <em>find familiar</em> spell and can cast it as a ritual. The spell doesn’t count against your number of spells known.</p>
-			<p class="indent">When you cast the spell, you can choose one of the normal forms for your familiar or one of the following special forms: imp, pseudodragon, quasit, or sprite.</p>
-			<p class="indent">Additionally, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack with its reaction.</p>
+			<p>You learn the Find Familiar spell and can cast it as a Magic action without expending a spell slot.</p>
+			<p class="indent">When you cast the spell, you choose one of the normal forms for your familiar or one of the following special forms: Imp, Pseudodragon, Quasit, Skeleton, Slaad Tadpole, Sphinx of Wonder, Sprite, or Venomous Snake.</p>
+			<p class="indent">Additionally, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack of its own with its Reaction.</p>
 			<div class="reference">
-				<div element="ID_PHB_SPELL_FIND_FAMILIAR" />
+				<div element="ID_2024PHB_SPELL_FIND_FAMILIAR" />
 			</div>
 		</description>
 		<sheet>
-			<description>You learn the find familiar spell and can cast it as a ritual.
-			Additionally, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack with its reaction.</description>
+			<description>You learn the Find Familiar spell and can cast it as a Magic action without expending a spell slot.
+			Additionally, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack of its own with its Reaction.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_FIND_FAMILIAR" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_FIND_FAMILIAR" spellcasting="Warlock" />
 			<select type="Companion" name="Familiar, Pact of the Chain" supports="Familiar||Variant Familiar" />
 		</rules>
 	</element>
-	<element name="Pact of the Tome" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_TOME">
-		<supports>Pact Boon</supports>
+	<element name="Pact of the Tome" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_PACT_OF_THE_TOME">
+		<supports>Eldritch Invocation</supports>
 		<description>
-			<p>Your patron gives you a grimoire called a Book of Shadows. When you gain this feature, choose three cantrips from any class’s spell list (the three needn’t be from the same list). While the book is on your person, you can cast those cantrips at will. They don’t count against your number of cantrips known. If they don’t appear on the warlock spell list, they are nonetheless warlock spells for you.</p>
-			<p class="indent">If you lose your Book of Shadows, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous book. The book turns to ash when you die.</p>
+			<p>Stitching together strands of shadow, you conjure forth a book in your hand at the end of a Short or Long Rest. This Book of Shadows (you determine its appearance) contains eldritch magic that only you can access, granting you the benefits below. The book disappears if you conjure another book with this feature or if you die.</p>
+			<p class="indent"><strong>Cantrips and Rituals.</strong> When the book appears, choose three cantrips, and choose two level 1 spells that have the Ritual tag. The spells can be from any class's spell list, and they must be spells you don't already have prepared. While the book is on your person, you have the chosen spells prepared, and they function as Warlock spells for you.</p>
+			<p class="indent"><strong>Spellcasting Focus.</strong> You can use the book as a Spellcasting Focus.</p>
 		</description>
 		<sheet>
-			<description>Your patron gives you a grimoire called a Book of Shadows. 
-			If you lose it, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous book. The book turns to ash when you die.</description>
+			<description>You conjure a Book of Shadows that grants you cantrips and ritual spells from any class.
+			You can use the book as a Spellcasting Focus.</description>
 		</sheet>
 		<rules>
 			<select type="Spell" name="Cantrip (Pact of the Tome)" supports="0" level="1" number="3" spellcasting="Warlock"/>
+			<select type="Spell" name="Ritual (Pact of the Tome)" supports="1" level="1" number="2" spellcasting="Warlock" ritual="true"/>
 		</rules>
 	</element>
-	<element name="Pact of the Blade" type="Class Feature" source="Player’s Handbook 2024" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_BLADE">
-		<supports>Pact Boon</supports>
+	<element name="Pact of the Blade" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_PACT_OF_THE_BLADE">
+		<supports>Eldritch Invocation</supports>
 		<description>
-			<p>You can use your action to create a pact weapon in your empty hand. You can choose the form that this melee weapon takes each time you create it. You are proficient with it while you wield it. This weapon counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
-			<p class="indent">Your pact weapon disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature again, if you dismiss the weapon (no action required), or if you die.</p>
-			<p class="indent">You can transform one magic weapon into your pact weapon by performing a special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. You can then dismiss the weapon, shunting it into an extradimensional space, and it appears whenever you create your pact weapon thereafter. You can’t affect an artifact or a sentient weapon in this way. The weapon ceases being your pact weapon if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks.</p>
+			<p>As a Bonus Action, you can conjure a pact weapon in your hand—a Simple or Martial Melee weapon of your choice with which you bond—or create a bond with a magic weapon you touch; you can't bond with a magic weapon if someone else is attuned to it or another Warlock is bonded with it. Until the bond ends, you have proficiency with the weapon, and you can use it as a Spellcasting Focus.</p>
+			<p class="indent">Whenever you attack with the bonded weapon, you can use your Charisma modifier for the attack and damage rolls instead of using Strength or Dexterity; and you can cause the weapon to deal Necrotic, Psychic, or Radiant damage or its normal damage type.</p>
+			<p class="indent">Your bond with the weapon ends if you use this feature's Bonus Action again, if the weapon is more than 5 feet away from you for 1 minute or more, or if you die. A conjured weapon disappears when the bond ends.</p>
 		</description>
-		<sheet usage="Action">
-			<description>Create a pact weapon in your empty hand. This weapon counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.
-			Your pact weapon disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature again, if you dismiss the weapon (no action required), or if you die.
-			You can transform one magic weapon into your pact weapon by performing a special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. You can then dismiss the weapon, shunting it into an extradimensional space, and it appears whenever you create your pact weapon thereafter. You can’t affect an artifact or a sentient weapon in this way. The weapon ceases being your pact weapon if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks.</description>
+		<sheet usage="Bonus Action">
+			<description>Conjure a pact weapon or bond with a magic weapon. You have proficiency with the weapon and can use it as a Spellcasting Focus.
+			When attacking with the bonded weapon, you can use your Charisma modifier for attack and damage rolls, and choose the damage type.</description>
 		</sheet>
 	</element>
 
 	<!--Feature Replacement Grants-->
-	<element name="Otherworldly Patron Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_OTHERWORLDLY_PATRON" />
-	<element name="Pact Magic Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_SPELLCASTING_PACT_MAGIC" />
 	<element name="Eldritch Invocations Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_ELDRITCH_INVOCATIONS" />
-	<element name="Pact Boon Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_PACT_BOON" />
+	<element name="Pact Magic Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_SPELLCASTING_PACT_MAGIC" />
+	<element name="Magical Cunning Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_MAGICAL_CUNNING" />
+	<element name="Warlock Subclass Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_WARLOCK_SUBCLASS" />
+	<element name="Contact Patron Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_CONTACT_PATRON" />
 	<element name="Ability Score Improvement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_ABILITY_SCORE_IMPROVEMENT" />
 	<element name="Mystic Arcanum Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_MYSTIC_ARCANUM" />
+	<element name="Epic Boon Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_EPIC_BOON" />
 	<element name="Eldritch Master Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_ELDRITCH_MASTER" />
+
+	<!-- New 2024 Eldritch Invocations -->
+	<element name="Agonizing Blast" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_AGONIZING_BLAST">
+		<supports>Eldritch Invocation</supports>
+		<requirements>Level 2+ Warlock, a Warlock Cantrip That Deals Damage</requirements>
+		<description>
+			<p>Choose one of your known Warlock cantrips that deals damage. You can add your Charisma modifier to that spell's damage rolls.</p>
+			<p class="indent"><strong>Repeatable.</strong> You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip.</p>
+		</description>
+		<sheet>
+			<description>Choose one of your known Warlock cantrips that deals damage. You can add your Charisma modifier to that spell's damage rolls.</description>
+		</sheet>
+	</element>
+
+	<element name="Armor of Shadows" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_ARMOR_OF_SHADOWS">
+		<supports>Eldritch Invocation</supports>
+		<description>
+			<p>You can cast Mage Armor on yourself without expending a spell slot.</p>
+		</description>
+		<sheet>
+			<description>You can cast Mage Armor on yourself without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_MAGE_ARMOR" spellcasting="Warlock" />
+		</rules>
+	</element>
+
+	<element name="Devil's Sight" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_DEVILS_SIGHT">
+		<supports>Eldritch Invocation</supports>
+		<requirements>Level 2+ Warlock</requirements>
+		<description>
+			<p>You can see normally in Dim Light and Darkness—both magical and nonmagical—within 120 feet of yourself.</p>
+		</description>
+		<sheet>
+			<description>You can see normally in Dim Light and Darkness—both magical and nonmagical—within 120 feet of yourself.</description>
+		</sheet>
+	</element>
+
+	<element name="Eldritch Mind" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_ELDRITCH_MIND">
+		<supports>Eldritch Invocation</supports>
+		<description>
+			<p>You have Advantage on Constitution saving throws that you make to maintain Concentration.</p>
+		</description>
+		<sheet>
+			<description>You have Advantage on Constitution saving throws that you make to maintain Concentration.</description>
+		</sheet>
+		<rules>
+			<grant type="Advantage" id="ID_ADVANTAGE_CONCENTRATION" />
+		</rules>
+	</element>
+
+	<element name="Lessons of the First Ones" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_LESSONS_OF_THE_FIRST_ONES">
+		<supports>Eldritch Invocation</supports>
+		<requirements>Level 2+ Warlock</requirements>
+		<description>
+			<p>You have received knowledge from an elder entity of the multiverse, allowing you to gain one Origin feat of your choice.</p>
+			<p class="indent"><strong>Repeatable.</strong> You can gain this invocation more than once. Each time you do so, choose a different Origin feat.</p>
+		</description>
+		<sheet>
+			<description>You have received knowledge from an elder entity of the multiverse, allowing you to gain one Origin feat of your choice.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Origin Feat (Lessons of the First Ones)" supports="Origin Feat" />
+		</rules>
+	</element>
+
+	<element name="Thirsting Blade" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_THIRSTING_BLADE">
+		<supports>Eldritch Invocation</supports>
+		<requirements>Level 5+ Warlock, Pact of the Blade Invocation</requirements>
+		<description>
+			<p>You gain the Extra Attack feature for your pact weapon only. With that feature, you can attack twice with the weapon instead of once when you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description>You gain the Extra Attack feature for your pact weapon only. With that feature, you can attack twice with the weapon instead of once when you take the Attack action on your turn.</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_PHB_CLASS_FEATURE_FIGHTER_EXTRA_ATTACK" />
+		</rules>
+	</element>
+
+	<element name="Ascendant Step" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_ASCENDANT_STEP">
+		<supports>Eldritch Invocation</supports>
+		<requirements>Level 5+ Warlock</requirements>
+		<description>
+			<p>You can cast Levitate on yourself without expending a spell slot.</p>
+		</description>
+		<sheet>
+			<description>You can cast Levitate on yourself without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_LEVITATE" spellcasting="Warlock" />
+		</rules>
+	</element>
+
+	<element name="Devouring Blade" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_DEVOURING_BLADE">
+		<supports>Eldritch Invocation</supports>
+		<requirements>Level 12+ Warlock, Thirsting Blade Invocation</requirements>
+		<description>
+			<p>The Extra Attack of your Thirsting Blade invocation confers two extra attacks rather than one.</p>
+		</description>
+		<sheet>
+			<description>The Extra Attack of your Thirsting Blade invocation confers two extra attacks rather than one.</description>
+		</sheet>
+	</element>
+
+	<element name="Eldritch Smite" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_ELDRITCH_SMITE">
+		<supports>Eldritch Invocation</supports>
+		<requirements>Level 5+ Warlock, Pact of the Blade Invocation</requirements>
+		<description>
+			<p>Once per turn when you hit a creature with your pact weapon, you can expend a Pact Magic spell slot to deal an extra 1d8 Force damage to the target, plus another 1d8 per level of the spell slot, and you can give the target the Prone condition if it is Huge or smaller.</p>
+		</description>
+		<sheet>
+			<description>Once per turn when you hit a creature with your pact weapon, you can expend a Pact Magic spell slot to deal an extra 1d8 Force damage to the target, plus another 1d8 per level of the spell slot, and you can give the target the Prone condition if it is Huge or smaller.</description>
+		</sheet>
+	</element>
+
+	<element name="Eldritch Spear" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_ELDRITCH_SPEAR">
+		<supports>Eldritch Invocation</supports>
+		<requirements>Level 2+ Warlock, a Warlock Cantrip That Deals Damage</requirements>
+		<description>
+			<p>Choose one of your known Warlock cantrips that deals damage and has a range of 10+ feet. When you cast that spell, its range increases by a number of feet equal to 30 times your Warlock level.</p>
+			<p class="indent"><strong>Repeatable.</strong> You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip.</p>
+		</description>
+		<sheet>
+			<description>Choose one of your known Warlock cantrips that deals damage and has a range of 10+ feet. When you cast that spell, its range increases by a number of feet equal to 30 times your Warlock level.</description>
+		</sheet>
+	</element>
+
+	<element name="Fiendish Vigor" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_FIENDISH_VIGOR">
+		<supports>Eldritch Invocation</supports>
+		<requirements>Level 2+ Warlock</requirements>
+		<description>
+			<p>You can cast False Life on yourself without expending a spell slot. When you cast the spell with this feature, you don't roll the die for the Temporary Hit Points; you automatically get the highest number on the die.</p>
+		</description>
+		<sheet>
+			<description>You can cast False Life on yourself without expending a spell slot. When you cast the spell with this feature, you don't roll the die for the Temporary Hit Points; you automatically get the highest number on the die.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_FALSE_LIFE" spellcasting="Warlock" />
+		</rules>
+	</element>
+
+	<element name="Gaze of Two Minds" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_GAZE_OF_TWO_MINDS">
+		<supports>Eldritch Invocation</supports>
+		<requirements>Level 5+ Warlock</requirements>
+		<description>
+			<p>You can use a Bonus Action to touch a willing creature and perceive through its senses until the end of your next turn. As long as the creature is on the same plane of existence as you, you can take a Bonus Action on subsequent turns to maintain this connection, extending the duration until the end of your next turn. The connection ends if you don't maintain it in this way.</p>
+			<p class="indent">While perceiving through the other creature's senses, you benefit from any special senses possessed by that creature, and you can cast spells as if you were in your space or the other creature's space if the two of you are within 60 feet of each other.</p>
+		</description>
+		<sheet usage="Bonus Action">
+			<description>Touch a willing creature to perceive through its senses until the end of your next turn. You can maintain the connection with subsequent Bonus Actions.</description>
+		</sheet>
+	</element>
+
+	<element name="Gift of the Depths" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_GIFT_OF_THE_DEPTHS">
+		<supports>Eldritch Invocation</supports>
+		<requirements>Level 5+ Warlock</requirements>
+		<description>
+			<p>You can breathe underwater, and you gain a Swim Speed equal to your Speed.</p>
+			<p class="indent">You can also cast Water Breathing once without expending a spell slot. You regain the ability to cast it in this way again when you finish a Long Rest.</p>
+		</description>
+		<sheet>
+			<description>You can breathe underwater, and you gain a Swim Speed equal to your Speed. You can also cast Water Breathing once without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_WATER_BREATHING" spellcasting="Warlock" />
+		</rules>
+	</element>
+
+	<element name="Gift of the Protectors" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_GIFT_OF_THE_PROTECTORS">
+		<supports>Eldritch Invocation</supports>
+		<requirements>Level 9+ Warlock, Pact of the Tome Invocation</requirements>
+		<description>
+			<p>A new page appears in your Book of Shadows when you conjure it. With your permission, a creature can take an action to write its name on that page, which can contain a number of names equal to your Charisma modifier (minimum of one name).</p>
+			<p class="indent">When any creature whose name is on the page is reduced to 0 Hit Points but not killed outright, the creature magically drops to 1 Hit Point instead. Once this magic is triggered, no creature can benefit from it until you finish a Long Rest.</p>
+			<p class="indent">As a Magic action, you can erase a name on the page by touching it.</p>
+		</description>
+		<sheet>
+			<description>A new page appears in your Book of Shadows. Creatures can write their names on it, and when they would be reduced to 0 Hit Points, they drop to 1 Hit Point instead.</description>
+		</sheet>
+	</element>
+
+	<element name="Investment of the Chain Master" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_INVESTMENT_OF_THE_CHAIN_MASTER">
+		<supports>Eldritch Invocation</supports>
+		<requirements>Level 5+ Warlock, Pact of the Chain Invocation</requirements>
+		<description>
+			<p>When you cast Find Familiar, you infuse the summoned familiar with a measure of your eldritch power, granting the creature the following benefits.</p>
+			<p class="indent"><strong>Aerial or Aquatic.</strong> The familiar gains either a Fly Speed or a Swim Speed (your choice) of 40 feet.</p>
+			<p class="indent"><strong>Quick Attack.</strong> As a Bonus Action, you can command the familiar to take the Attack action.</p>
+			<p class="indent"><strong>Necrotic or Radiant Damage.</strong> Whenever the familiar deals Bludgeoning, Piercing, or Slashing damage, you can make it deal Necrotic or Radiant damage instead.</p>
+			<p class="indent"><strong>Your Save DC.</strong> If the familiar forces a creature to make a saving throw, it uses your spell save DC.</p>
+			<p class="indent"><strong>Resistance.</strong> When the familiar takes damage, you can take a Reaction to grant it Resistance against that damage.</p>
+		</description>
+		<sheet>
+			<description>When you cast Find Familiar, you infuse the summoned familiar with eldritch power, granting it enhanced abilities and your spell save DC.</description>
+		</sheet>
+	</element>
+
+	<element name="Lifedrinker" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_LIFEDRINKER">
+		<supports>Eldritch Invocation</supports>
+		<requirements>Level 9+ Warlock, Pact of the Blade Invocation</requirements>
+		<description>
+			<p>Once per turn when you hit a creature with your pact weapon, you can deal an extra 1d6 Necrotic, Psychic, or Radiant damage (your choice) to the creature, and you can expend one of your Hit Point Dice to roll it and regain a number of Hit Points equal to the roll plus your Constitution modifier (minimum of 1 Hit Point).</p>
+		</description>
+		<sheet>
+			<description>Once per turn when you hit a creature with your pact weapon, you can deal an extra 1d6 Necrotic, Psychic, or Radiant damage and expend a Hit Point Die to regain Hit Points.</description>
+		</sheet>
+	</element>
+
+	<element name="Mask of Many Faces" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_MASK_OF_MANY_FACES">
+		<supports>Eldritch Invocation</supports>
+		<requirements>Level 2+ Warlock</requirements>
+		<description>
+			<p>You can cast Disguise Self without expending a spell slot.</p>
+		</description>
+		<sheet>
+			<description>You can cast Disguise Self without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_DISGUISE_SELF" spellcasting="Warlock" />
+		</rules>
+	</element>
+
+	<element name="Master of Myriad Forms" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_MASTER_OF_MYRIAD_FORMS">
+		<supports>Eldritch Invocation</supports>
+		<requirements>Level 5+ Warlock</requirements>
+		<description>
+			<p>You can cast Alter Self without expending a spell slot.</p>
+		</description>
+		<sheet>
+			<description>You can cast Alter Self without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_ALTER_SELF" spellcasting="Warlock" />
+		</rules>
+	</element>
+
+	<element name="Misty Visions" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_MISTY_VISIONS">
+		<supports>Eldritch Invocation</supports>
+		<requirements>Level 2+ Warlock</requirements>
+		<description>
+			<p>You can cast Silent Image without expending a spell slot.</p>
+		</description>
+		<sheet>
+			<description>You can cast Silent Image without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_SILENT_IMAGE" spellcasting="Warlock" />
+		</rules>
+	</element>
+
+	<element name="One with Shadows" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_ONE_WITH_SHADOWS">
+		<supports>Eldritch Invocation</supports>
+		<requirements>Level 5+ Warlock</requirements>
+		<description>
+			<p>While you're in an area of Dim Light or Darkness, you can cast Invisibility on yourself without expending a spell slot.</p>
+		</description>
+		<sheet>
+			<description>While you're in an area of Dim Light or Darkness, you can cast Invisibility on yourself without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_INVISIBILITY" spellcasting="Warlock" />
+		</rules>
+	</element>
+
+	<element name="Otherworldly Leap" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_OTHERWORLDLY_LEAP">
+		<supports>Eldritch Invocation</supports>
+		<requirements>Level 2+ Warlock</requirements>
+		<description>
+			<p>You can cast Jump on yourself without expending a spell slot.</p>
+		</description>
+		<sheet>
+			<description>You can cast Jump on yourself without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_JUMP" spellcasting="Warlock" />
+		</rules>
+	</element>
+
+	<element name="Repelling Blast" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_REPELLING_BLAST">
+		<supports>Eldritch Invocation</supports>
+		<requirements>Level 2+ Warlock, a Warlock Cantrip That Deals Damage via an Attack Roll</requirements>
+		<description>
+			<p>Choose one of your known Warlock cantrips that requires an attack roll. When you hit a Large or smaller creature with that cantrip, you can push the creature up to 10 feet straight away from you.</p>
+			<p class="indent"><strong>Repeatable.</strong> You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip.</p>
+		</description>
+		<sheet>
+			<description>Choose one of your known Warlock cantrips that requires an attack roll. When you hit a Large or smaller creature with that cantrip, you can push the creature up to 10 feet straight away from you.</description>
+		</sheet>
+	</element>
+
+	<element name="Visions of Distant Realms" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_VISIONS_OF_DISTANT_REALMS">
+		<supports>Eldritch Invocation</supports>
+		<requirements>Level 9+ Warlock</requirements>
+		<description>
+			<p>You can cast Arcane Eye without expending a spell slot.</p>
+		</description>
+		<sheet>
+			<description>You can cast Arcane Eye without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_ARCANE_EYE" spellcasting="Warlock" />
+		</rules>
+	</element>
+
+	<element name="Whispers of the Grave" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_WHISPERS_OF_THE_GRAVE">
+		<supports>Eldritch Invocation</supports>
+		<requirements>Level 7+ Warlock</requirements>
+		<description>
+			<p>You can cast Speak with Dead without expending a spell slot.</p>
+		</description>
+		<sheet>
+			<description>You can cast Speak with Dead without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_SPEAK_WITH_DEAD" spellcasting="Warlock" />
+		</rules>
+	</element>
+
+	<element name="Witch Sight" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_WITCH_SIGHT">
+		<supports>Eldritch Invocation</supports>
+		<requirements>Level 15+ Warlock</requirements>
+		<description>
+			<p>You have Truesight with a range of 30 feet.</p>
+		</description>
+		<sheet>
+			<description>You have Truesight with a range of 30 feet.</description>
+		</sheet>
+	</element>
+
+	<!-- Warlock Subclasses -->
+	<element name="Archfey Patron" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_WARLOCK_ARCHFEY_PATRON">
+		<supports>Warlock Subclass</supports>
+		<description>
+			<p>Your pact draws on the power of the Feywild, the mysterious realm of the Fey. When you choose this subclass, you might make a deal with a single mighty archfey, such as the Prince of Frost; the Queen of Air and Darkness, ruler of the Gloaming Court; Titania of the Summer Court; Oberon, the Green Lord; Hyrsam, the Prince of Fools; or an ancient hag. Or you might call on a wide spectrum of Fey, forging a complex web of favors and debts. Your patron's motivations are often inscrutable, and sometimes whimsical, and might involve a striving for greater magical power or the settling of age-old grudges.</p>
+			<div element="ID_2024PHB_CLASS_FEATURE_WARLOCK_ARCHFEY_SPELLS" />
+			<div element="ID_2024PHB_CLASS_FEATURE_WARLOCK_STEPS_OF_THE_FEY" />
+			<div element="ID_2024PHB_CLASS_FEATURE_WARLOCK_MISTY_ESCAPE" />
+			<div element="ID_2024PHB_CLASS_FEATURE_WARLOCK_BEGUILING_DEFENSES" />
+			<div element="ID_2024PHB_CLASS_FEATURE_WARLOCK_BEWITCHING_MAGIC" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_ARCHFEY_SPELLS" level="3" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_STEPS_OF_THE_FEY" level="3" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_MISTY_ESCAPE" level="6" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_BEGUILING_DEFENSES" level="10" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_BEWITCHING_MAGIC" level="14" />
+		</rules>
+	</element>
+
+	<element name="Archfey Spells" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_ARCHFEY_SPELLS">
+		<description>
+			<p>The magic of your otherworldly patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Archfey Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Archfey Spells</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Warlock Level</td><td class="left">Spells</td></tr>
+				</thead>
+				<tr><td>3</td><td class="left"><em>Calm Emotions, Faerie Fire, Misty Step, Phantasmal Force, Sleep</em></td></tr>
+				<tr><td>5</td><td class="left"><em>Blink, Plant Growth</em></td></tr>
+				<tr><td>7</td><td class="left"><em>Dominate Beast, Greater Invisibility</em></td></tr>
+				<tr><td>9</td><td class="left"><em>Dominate Person, Seeming</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_CALM_EMOTIONS" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_FAERIE_FIRE" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_MISTY_STEP" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_PHANTASMAL_FORCE" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_SLEEP" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_BLINK" spellcasting="Warlock" level="5" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_PLANT_GROWTH" spellcasting="Warlock" level="5" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_DOMINATE_BEAST" spellcasting="Warlock" level="7" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_GREATER_INVISIBILITY" spellcasting="Warlock" level="7" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_DOMINATE_PERSON" spellcasting="Warlock" level="9" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_SEEMING" spellcasting="Warlock" level="9" />
+		</rules>
+	</element>
+
+	<element name="Steps of the Fey" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_STEPS_OF_THE_FEY">
+		<description>
+			<p>Your patron bestows on you the ability to move between the boundaries of the planes. You can cast <em>Misty Step</em> without expending a spell slot a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest. In addition, whenever you cast that spell, you can choose one of the following additional effects.</p>
+			<p class="indent"><strong>Refreshing Step.</strong> Immediately after you teleport, one creature you can see within 10 feet of you gains 1d10 Temporary Hit Points.</p>
+			<p class="indent"><strong>Taunting Step.</strong> Creatures within 5 feet of the space you left must succeed on a Wisdom saving throw against your spell save DC or have Disadvantage on attack rolls against creatures other than you until the start of your next turn.</p>
+		</description>
+		<sheet usage="Charisma modifier/Long Rest">
+			<description>Cast Misty Step without expending a spell slot. When you cast it, choose an additional effect.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_MISTY_STEP" spellcasting="Warlock" />
+		</rules>
+	</element>
+
+	<element name="Misty Escape" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_MISTY_ESCAPE">
+		<description>
+			<p>You can vanish in a puff of mist in response to harm. You can cast <em>Misty Step</em> as a Reaction in response to taking damage. In addition, the following effects are now among your Steps of the Fey options.</p>
+			<p class="indent"><strong>Disappearing Step.</strong> You have the Invisible condition until the start of your next turn or until immediately after you make an attack roll or cast a spell.</p>
+			<p class="indent"><strong>Dreadful Step.</strong> Creatures within 5 feet of the space you left or the space you appear in (your choice) must succeed on a Wisdom saving throw against your spell save DC or take 2d10 Psychic damage.</p>
+		</description>
+		<sheet usage="Reaction">
+			<description>Cast Misty Step as a Reaction when you take damage. Additional effects available for Steps of the Fey.</description>
+		</sheet>
+	</element>
+
+	<element name="Beguiling Defenses" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_BEGUILING_DEFENSES">
+		<description>
+			<p>Your patron teaches you how to guard your mind and body. You are immune to the Charmed condition.</p>
+			<p class="indent">In addition, immediately after a creature you can see hits you with an attack roll, you can use your Reaction to reduce the damage you take by half (round down), and you can force the attacker to make a Wisdom saving throw against your spell save DC. On a failed save, the attacker takes Psychic damage equal to the damage you take.</p>
+			<p class="indent">Once you use this Reaction, you can't use it again until you finish a Long Rest unless you expend a spell slot when you use it again.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>Immune to Charmed condition. As a Reaction when hit, reduce damage by half and force attacker to make Wisdom save or take Psychic damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Bewitching Magic" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_BEWITCHING_MAGIC">
+		<description>
+			<p>Your patron bestows on you the ability to weave your magic with teleportation. Immediately after you cast an Enchantment or Illusion spell using an action and a spell slot, you can cast <em>Misty Step</em> as part of the same action and without expending a spell slot.</p>
+		</description>
+		<sheet>
+			<description>After casting an Enchantment or Illusion spell with an action and spell slot, you can cast Misty Step as part of the same action without expending a spell slot.</description>
+		</sheet>
+	</element>
+
+	<element name="Celestial Patron" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_WARLOCK_CELESTIAL_PATRON">
+		<supports>Warlock Subclass</supports>
+		<description>
+			<p>Your pact draws on the power of the Upper Planes, the realms of everlasting bliss. You might enter an agreement with an empyrean, a couatl, a sphinx, a unicorn, or some similar entity associated with those realms. Or you might call on numerous such beings as you pursue goals aligned with theirs. Your pact allows you to experience the barest touch of the holy light that illuminates the multiverse.</p>
+			<div element="ID_2024PHB_CLASS_FEATURE_WARLOCK_CELESTIAL_SPELLS" />
+			<div element="ID_2024PHB_CLASS_FEATURE_WARLOCK_HEALING_LIGHT" />
+			<div element="ID_2024PHB_CLASS_FEATURE_WARLOCK_RADIANT_SOUL" />
+			<div element="ID_2024PHB_CLASS_FEATURE_WARLOCK_CELESTIAL_RESILIENCE" />
+			<div element="ID_2024PHB_CLASS_FEATURE_WARLOCK_SEARING_VENGEANCE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_CELESTIAL_SPELLS" level="3" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_HEALING_LIGHT" level="3" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_RADIANT_SOUL" level="6" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_CELESTIAL_RESILIENCE" level="10" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_SEARING_VENGEANCE" level="14" />
+		</rules>
+	</element>
+
+	<element name="Celestial Spells" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_CELESTIAL_SPELLS">
+		<description>
+			<p>The magic of your otherworldly patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Celestial Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Celestial Spells</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Warlock Level</td><td class="left">Spells</td></tr>
+				</thead>
+				<tr><td>3</td><td class="left"><em>Aid, Cure Wounds, Guiding Bolt, Lesser Restoration, Light, Sacred Flame</em></td></tr>
+				<tr><td>5</td><td class="left"><em>Daylight, Revivify</em></td></tr>
+				<tr><td>7</td><td class="left"><em>Guardian of Faith, Wall of Fire</em></td></tr>
+				<tr><td>9</td><td class="left"><em>Greater Restoration, Summon Celestial</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_AID" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_CURE_WOUNDS" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_GUIDING_BOLT" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_LESSER_RESTORATION" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_LIGHT" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_SACRED_FLAME" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_DAYLIGHT" spellcasting="Warlock" level="5" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_REVIVIFY" spellcasting="Warlock" level="5" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_GUARDIAN_OF_FAITH" spellcasting="Warlock" level="7" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_WALL_OF_FIRE" spellcasting="Warlock" level="7" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_GREATER_RESTORATION" spellcasting="Warlock" level="9" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_SUMMON_CELESTIAL" spellcasting="Warlock" level="9" />
+		</rules>
+	</element>
+
+	<element name="Healing Light" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_HEALING_LIGHT">
+		<description>
+			<p>You gain the ability to channel celestial energy to heal wounds. You have a pool of d6s that you spend to fuel this healing. The number of dice in the pool equals 1 plus your Warlock level.</p>
+			<p class="indent">As a Bonus Action, you can heal one creature that you can see within 60 feet of yourself, spending dice from the pool. The maximum number of dice you can spend at once equals your Charisma modifier (minimum of one die). Roll the dice you spend, and restore a number of Hit Points equal to the roll's total.</p>
+			<p class="indent">Your pool regains all expended dice when you finish a Long Rest.</p>
+		</description>
+		<sheet usage="Bonus Action">
+			<description>Heal a creature within 60 feet by spending d6s from your pool (1 + Warlock level dice). Maximum dice spent = Charisma modifier.</description>
+		</sheet>
+	</element>
+
+	<element name="Radiant Soul" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_RADIANT_SOUL">
+		<description>
+			<p>Your link to your patron allows you to serve as a conduit for radiant energy. You have Resistance to Radiant damage, and when you cast a spell that deals Radiant or Fire damage, you can add your Charisma modifier to one Radiant or Fire damage roll of that spell against one of its targets.</p>
+		</description>
+		<sheet>
+			<description>Resistance to Radiant damage. When casting spells that deal Radiant or Fire damage, add your Charisma modifier to one damage roll.</description>
+		</sheet>
+	</element>
+
+	<element name="Celestial Resilience" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_CELESTIAL_RESILIENCE">
+		<description>
+			<p>You gain Temporary Hit Points whenever you use your Magical Cunning feature or finish a Short Rest or Long Rest. These Temporary Hit Points equal your Warlock level plus your Charisma modifier. Additionally, choose up to five creatures you can see at the end of the rest. Those creatures each gain Temporary Hit Points equal to half your Warlock level plus your Charisma modifier.</p>
+		</description>
+		<sheet>
+			<description>Gain Temporary Hit Points (Warlock level + Charisma modifier) when using Magical Cunning or finishing a rest. Up to 5 creatures gain half that amount.</description>
+		</sheet>
+	</element>
+
+	<element name="Searing Vengeance" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_SEARING_VENGEANCE">
+		<description>
+			<p>The radiant energy you channel allows you to resist death. When you have to make a death saving throw at the start of your turn, you can instead spring to your feet with a burst of radiant energy. You regain Hit Points equal to half your Hit Point Maximum and then stand if you so choose. Each creature of your choice that is within 30 feet of you takes Radiant damage equal to 2d8 plus your Charisma modifier, and each has the Blinded condition until the end of the current turn.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When making a death saving throw, instead regain half your max HP and stand. Creatures within 30 feet take 2d8 + Charisma modifier Radiant damage and are Blinded until end of turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Fiend Patron" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_WARLOCK_FIEND_PATRON">
+		<supports>Warlock Subclass</supports>
+		<description>
+			<p>Your pact draws on the Lower Planes, the realms of perdition. You might forge a bargain with a demon lord such as Demogorgon or Orcus; an archdevil such as Asmodeus; or a pit fiend, balor, yugoloth, or night hag that is especially mighty. That patron's aims are evil—the corruption or destruction of all things, ultimately including you—and your path is defined by the extent to which you strive against those aims.</p>
+			<div element="ID_2024PHB_CLASS_FEATURE_WARLOCK_DARK_ONES_BLESSING" />
+			<div element="ID_2024PHB_CLASS_FEATURE_WARLOCK_FIEND_SPELLS" />
+			<div element="ID_2024PHB_CLASS_FEATURE_WARLOCK_DARK_ONES_OWN_LUCK" />
+			<div element="ID_2024PHB_CLASS_FEATURE_WARLOCK_FIENDISH_RESILIENCE" />
+			<div element="ID_2024PHB_CLASS_FEATURE_WARLOCK_HURL_THROUGH_HELL" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_DARK_ONES_BLESSING" level="3" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_FIEND_SPELLS" level="3" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_DARK_ONES_OWN_LUCK" level="6" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_FIENDISH_RESILIENCE" level="10" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_HURL_THROUGH_HELL" level="14" />
+		</rules>
+	</element>
+
+	<element name="Dark One's Blessing" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_DARK_ONES_BLESSING">
+		<description>
+			<p>When you reduce an enemy to 0 Hit Points, you gain Temporary Hit Points equal to your Charisma modifier plus your Warlock level (minimum of 1 Temporary Hit Point). You also gain this benefit if someone else reduces an enemy within 10 feet of you to 0 Hit Points.</p>
+		</description>
+		<sheet>
+			<description>When you or an ally within 10 feet reduces an enemy to 0 HP, gain Temporary Hit Points equal to Charisma modifier + Warlock level.</description>
+		</sheet>
+	</element>
+
+	<element name="Fiend Spells" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_FIEND_SPELLS">
+		<description>
+			<p>The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Fiend Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Fiend Spells</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Warlock Level</td><td class="left">Spells</td></tr>
+				</thead>
+				<tr><td>3</td><td class="left"><em>Burning Hands, Command, Scorching Ray, Suggestion</em></td></tr>
+				<tr><td>5</td><td class="left"><em>Fireball, Stinking Cloud</em></td></tr>
+				<tr><td>7</td><td class="left"><em>Fire Shield, Wall of Fire</em></td></tr>
+				<tr><td>9</td><td class="left"><em>Geas, Insect Plague</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_BURNING_HANDS" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_COMMAND" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_SCORCHING_RAY" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_SUGGESTION" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_FIREBALL" spellcasting="Warlock" level="5" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_STINKING_CLOUD" spellcasting="Warlock" level="5" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_FIRE_SHIELD" spellcasting="Warlock" level="7" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_WALL_OF_FIRE" spellcasting="Warlock" level="7" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_GEAS" spellcasting="Warlock" level="9" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_INSECT_PLAGUE" spellcasting="Warlock" level="9" />
+		</rules>
+	</element>
+
+	<element name="Dark One's Own Luck" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_DARK_ONES_OWN_LUCK">
+		<description>
+			<p>You can call on your fiendish patron to alter fate in your favor. When you make an ability check or a saving throw, you can use this feature to add 1d10 to your roll. You can do so after seeing the roll but before any of the roll's effects occur.</p>
+			<p class="indent">You can use this feature a number of times equal to your Charisma modifier (minimum of once), but you can use it no more than once per roll. You regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet usage="Charisma modifier/Long Rest">
+			<description>Add 1d10 to an ability check or saving throw after seeing the roll but before effects occur.</description>
+		</sheet>
+	</element>
+
+	<element name="Fiendish Resilience" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_FIENDISH_RESILIENCE">
+		<description>
+			<p>Choose one damage type, other than Force, whenever you finish a Short or Long Rest. You have Resistance to that damage type until you choose a different one with this feature.</p>
+		</description>
+		<sheet>
+			<description>Choose one damage type (other than Force) when you finish a rest. You have Resistance to that damage type until you choose a different one.</description>
+		</sheet>
+	</element>
+
+	<element name="Hurl Through Hell" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_HURL_THROUGH_HELL">
+		<description>
+			<p>Once per turn when you hit a creature with an attack roll, you can try to instantly transport the target through the Lower Planes. The target must succeed on a Charisma saving throw against your spell save DC, or the target disappears and hurtles through a nightmare landscape. The target takes 8d10 Psychic damage if it isn't a Fiend, and it has the Incapacitated condition until the end of your next turn, when it returns to the space it previously occupied or the nearest unoccupied space.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest unless you expend a Pact Magic spell slot (no action required) to restore your use of it.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>Once per turn when you hit with an attack, force target to make Charisma save or take 8d10 Psychic damage and be Incapacitated until end of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Great Old One Patron" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_WARLOCK_GREAT_OLD_ONE_PATRON">
+		<supports>Warlock Subclass</supports>
+		<description>
+			<p>Your pact is rooted in magic that is utterly foreign to the fabric of reality. When you choose this subclass, you might bind yourself to an ineffable being from the Far Realm or an elder god known only in legend—a being such as Ghaunadar, called That Which Lurks; Tharizdun, the Chained God; Dendar, the Night Serpent; Zargon, the Returner; Great Cthulhu; or some other unfathomable and uncaring being. Or you might rely on eldritch lore invoking the names of several such entities, without yoking yourself to one in particular. The motives of these beings are incomprehensible to mortals, and their knowledge is so immense and ancient that even the greatest libraries pale in comparison to the vast secrets they hold. The Great Old One might be indifferent to your existence, but the secrets you have learned nevertheless allow you to draw your magic from it.</p>
+			<div element="ID_2024PHB_CLASS_FEATURE_WARLOCK_AWAKENED_MIND" />
+			<div element="ID_2024PHB_CLASS_FEATURE_WARLOCK_GREAT_OLD_ONE_SPELLS" />
+			<div element="ID_2024PHB_CLASS_FEATURE_WARLOCK_PSYCHIC_SPELLS" />
+			<div element="ID_2024PHB_CLASS_FEATURE_WARLOCK_CLAIRVOYANT_COMBATANT" />
+			<div element="ID_2024PHB_CLASS_FEATURE_WARLOCK_ELDRITCH_HEX" />
+			<div element="ID_2024PHB_CLASS_FEATURE_WARLOCK_THOUGHT_SHIELD" />
+			<div element="ID_2024PHB_CLASS_FEATURE_WARLOCK_CREATE_THRALL" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_AWAKENED_MIND" level="3" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_GREAT_OLD_ONE_SPELLS" level="3" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_PSYCHIC_SPELLS" level="3" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_CLAIRVOYANT_COMBATANT" level="6" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_ELDRITCH_HEX" level="10" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_THOUGHT_SHIELD" level="10" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_CREATE_THRALL" level="14" />
+		</rules>
+	</element>
+
+	<element name="Awakened Mind" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_AWAKENED_MIND">
+		<description>
+			<p>You can form a telepathic connection between your mind and the mind of another. As a Bonus Action, choose one creature you can see within 30 feet of yourself and create a telepathic bond. You and the chosen creature can speak telepathically with each other while the two of you are within a number of miles of each other equal to your Charisma modifier (minimum of 1 mile). To understand each other, you each must speak mentally in a language the other knows.</p>
+			<p class="indent">The telepathic connection lasts for a number of minutes equal to your Warlock level. It ends early if you have the Incapacitated condition or die or if you use this feature to form a connection with a different creature.</p>
+		</description>
+		<sheet usage="Bonus Action">
+			<description>Create a telepathic bond with a creature within 30 feet. You can speak telepathically within Charisma modifier miles for Warlock level minutes.</description>
+		</sheet>
+	</element>
+
+	<element name="Great Old One Spells" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_GREAT_OLD_ONE_SPELLS">
+		<description>
+			<p>The magic of your otherworldly patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Great Old One Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Great Old One Spells</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Warlock Level</td><td class="left">Spells</td></tr>
+				</thead>
+				<tr><td>3</td><td class="left"><em>Detect Thoughts, Dissonant Whispers, Phantasmal Force, Tasha's Hideous Laughter</em></td></tr>
+				<tr><td>5</td><td class="left"><em>Clairvoyance, Hunger of Hadar</em></td></tr>
+				<tr><td>7</td><td class="left"><em>Confusion, Summon Aberration</em></td></tr>
+				<tr><td>9</td><td class="left"><em>Modify Memory, Telekinesis</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_DETECT_THOUGHTS" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_DISSONANT_WHISPERS" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_PHANTASMAL_FORCE" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_TASHAS_HIDEOUS_LAUGHTER" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_CLAIRVOYANCE" spellcasting="Warlock" level="5" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_HUNGER_OF_HADAR" spellcasting="Warlock" level="5" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_CONFUSION" spellcasting="Warlock" level="7" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_SUMMON_ABERRATION" spellcasting="Warlock" level="7" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_MODIFY_MEMORY" spellcasting="Warlock" level="9" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_TELEKINESIS" spellcasting="Warlock" level="9" />
+		</rules>
+	</element>
+
+	<element name="Psychic Spells" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_PSYCHIC_SPELLS">
+		<description>
+			<p>When you cast a Warlock spell that deals damage, you can change its damage type to Psychic. In addition, when you cast a Warlock spell that is an Enchantment or Illusion, you can do so without verbal or somatic components.</p>
+		</description>
+		<sheet>
+			<description>Change Warlock spell damage to Psychic. Cast Enchantment or Illusion Warlock spells without verbal or somatic components.</description>
+		</sheet>
+	</element>
+
+	<element name="Clairvoyant Combatant" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_CLAIRVOYANT_COMBATANT">
+		<description>
+			<p>You learn to read the attacks of minds you touch. When you form a telepathic bond with a creature using your Awakened Mind, you can force that creature to make a Wisdom saving throw against your spell save DC. On a failed save, the creature has Disadvantage on attack rolls against you, and you have Advantage on attack rolls against that creature for the duration of the bond.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Short Rest or Long Rest. You can also restore your use of it by expending a spell slot of level 2 or higher (no action required).</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>When using Awakened Mind, force creature to make Wisdom save. On failure, it has Disadvantage attacking you and you have Advantage attacking it.</description>
+		</sheet>
+	</element>
+
+	<element name="Eldritch Hex" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_ELDRITCH_HEX">
+		<description>
+			<p>Your alien patron grants you a powerful curse. You always have the <em>Hex</em> spell prepared. When you cast <em>Hex</em> and choose an ability, the target also has Disadvantage on saving throws of the chosen ability for the duration of the spell.</p>
+		</description>
+		<sheet>
+			<description>Always have Hex prepared. When you cast Hex and choose an ability, the target also has Disadvantage on saving throws of that ability.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_HEX" spellcasting="Warlock" />
+		</rules>
+	</element>
+
+	<element name="Thought Shield" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_THOUGHT_SHIELD">
+		<description>
+			<p>Your thoughts can't be read by telepathy or other means unless you allow it. You also have Resistance to Psychic damage, and whenever a creature deals Psychic damage to you, that creature takes the same amount of damage that you do.</p>
+		</description>
+		<sheet>
+			<description>Your thoughts can't be read unless you allow it. Resistance to Psychic damage. When you take Psychic damage, the source takes the same damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Create Thrall" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_CREATE_THRALL">
+		<description>
+			<p>Your patron grants you the ability to manifest a part of itself. You always have the <em>Summon Aberration</em> spell prepared. When you cast the spell, you can modify it so that it doesn't require Concentration. If you do so, the spell's duration becomes 1 minute for that casting and when summoned, the Aberration has a number of Temporary Hit Points equal to your Warlock level plus your Charisma modifier.</p>
+			<p class="indent">In addition, the first time each turn the Aberration hits a creature under the effect of your <em>Hex</em>, the Aberration deals extra Psychic damage to the target equal to the bonus damage of that spell.</p>
+		</description>
+		<sheet>
+			<description>Always have Summon Aberration prepared. Can cast it without Concentration (1 minute duration) with Temporary Hit Points. Aberration deals extra Psychic damage to Hexed targets.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_SUMMON_ABERRATION" spellcasting="Warlock" />
+		</rules>
+	</element>
 </elements>

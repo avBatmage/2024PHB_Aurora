@@ -3,7 +3,7 @@
 	<info>
 		<name>Spells</name>
 		<update version="0.0.1">
-			<file name="2024-spells.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/main/2024-spells.xml" />
+			<file name="2024-spells.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-spells.xml" />
 		</update>
 	</info>
 

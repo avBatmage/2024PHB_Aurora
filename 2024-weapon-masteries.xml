@@ -4,7 +4,7 @@
 		<description>The Weapon Masteries from the 2024 Players' Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
 		<update version="0.0.2">
-			<file name="2024-weapon-masteries.xml" url="https://raw.githubusercontent.com/avBatmage/5e_Aurora/refs/heads/main/2024-weapon-masteries.xml" />
+			<file name="2024-weapon-masteries.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/refs/heads/main/2024-weapon-masteries.xml" />
 		</update>
 	</info>
 
@@ -300,7 +300,7 @@
 	<element name="Musket (Slow)" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_WPM_MUSKET_SLOW">
 		<compendium display="false" />
 		<supports>Weapon Mastery</supports>
-		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_MUSKET</requirements>
+		<requirements>ID_WOTC_DMG_PROFICIENCY_WEAPON_RENAISSANCE_FIREARMS_MUSKET</requirements>
 		<description>
 			<p>If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.</p>
 		</description>
@@ -442,7 +442,7 @@
 	<element name="Pistol (Vex)" type="Class Feature" source="Batav's Additions 2024" id="ID_BATAV_CLASS_FEATURE_WPM_PISTOL_VEX">
 		<compendium display="false" />
 		<supports>Weapon Mastery</supports>
-		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_PISTOL</requirements>
+		<requirements>ID_WOTC_DMG_PROFICIENCY_WEAPON_RENAISSANCE_FIREARMS_PISTOL</requirements>
 		<description>
 			<p>If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.</p>
 		</description>
