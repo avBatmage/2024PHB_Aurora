@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>2024 Player's Handbook</name>
-		<description>Homebrew additions for the Gamer Guys</description>
+		<description>A basic adaptation of the 2024 Player's Handbook</description>
 		<author url="https://github.com/avBatmage/5e_Aurora">Batav</author>
 		<update version="0.0.3">
 			<file name="2024-players-handbook.index" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/refs/heads/main/batavs-additions.index" />
