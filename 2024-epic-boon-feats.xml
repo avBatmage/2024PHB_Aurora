@@ -23,7 +23,7 @@
 			<description>Peerless Aim: When you miss with an attack roll, you can hit instead. Once per turn.</description>
 		</sheet>
 		<rules>
-			<select type="Ability Score Improvement" name="Ability Score Increase" supports="Epic Boon" />
+			<select type="Ability Score Improvement" name="Ability Score Increase (Epic Boon)" supports="Epic Boon" />
 		</rules>
 	</element>
 	<element name="2024 Boon of Dimensional Travel" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_BOON_OF_DIMENSIONAL_TRAVEL">
@@ -39,7 +39,7 @@
 			<description>Blink Steps: After Attack or Magic action, teleport up to 30 feet to unoccupied space you can see.</description>
 		</sheet>
 		<rules>
-			<select type="Ability Score Improvement" name="Ability Score Increase" supports="Epic Boon" />
+			<select type="Ability Score Improvement" name="Ability Score Increase (Epic Boon)" supports="Epic Boon" />
 		</rules>
 	</element>
 	<element name="2024 Boon of Energy Resistance" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_BOON_OF_ENERGY_RESISTANCE">
@@ -57,7 +57,7 @@
 			Energy Redirection: When you take damage of one of the types chosen for the Energy Resistances benefit, you can take a Reaction to direct damage of the same type toward another creature you can see within 60 feet of yourself that isn't behind Total Cover. If you do so, that creature must succeed on a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus) or take damage equal to 2d12 plus your Constitution modifier.</description>
 		</sheet>
 		<rules>
-			<select type="Ability Score Improvement" name="Ability Score Increase" supports="Epic Boon" />
+			<select type="Ability Score Improvement" name="Ability Score Increase (Epic Boon)" supports="Epic Boon" />
 		</rules>
 	</element>
 	<element name="2024 Boon of Fate" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_BOON_OF_FATE">
@@ -73,7 +73,7 @@
 			<description>Improve Fate: Roll 2d4 to modify D20 Tests within 60 feet. Once per encounter or rest.</description>
 		</sheet>
 		<rules>
-			<select type="Ability Score Improvement" name="Ability Score Increase" supports="Epic Boon" />
+			<select type="Ability Score Improvement" name="Ability Score Increase (Epic Boon)" supports="Epic Boon" />
 		</rules>
 	</element>
 	<element name="2024 Boon of Fortitude" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_BOON_OF_FORTITUDE">
@@ -89,7 +89,7 @@
 			<description>Whenever you regain Hit Points, you can regain additional Hit Points equal to your Constitution modifier. Once you've regained these additional Hit Points, you can't do so again until the start of your next turn.</description>
 		</sheet>
 		<rules>
-			<select type="Ability Score Improvement" name="Ability Score Increase" supports="Epic Boon" />
+			<select type="Ability Score Improvement" name="Ability Score Increase (Epic Boon)" supports="Epic Boon" />
 			<stat name="hp" value="40" />
 		</rules>
 	</element>
@@ -104,10 +104,11 @@
 			</ul>
 		</description>
 		<sheet>
-			<description>Overcome Defenses: B/P/S damage ignores Resistance. Overwhelming Strike: Extra damage on crit equal to increased ability score.</description>
+			<description>Bludgeoning, Piercing, and Slashing damage you deal ignores Resistance. 
+			When you roll a 20 on the d20 for an attack roll, you can deal extra damage to the target equal to the ability score increased by this feat</description>
 		</sheet>
 		<rules>
-			<select type="Ability Score Improvement" name="Ability Score Increase" supports="Epic Boon" />
+			<select type="Ability Score Improvement" name="Ability Score Increase (Epic Boon)" supports="ID_2024PHB_FEAT_ASI_STRENGTH|ID_2024PHB_FEAT_ASI_DEXTERITY" />
 		</rules>
 	</element>
 	<element name="2024 Boon of Recovery" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_BOON_OF_RECOVERY">
@@ -125,7 +126,7 @@
 			You have a pool of ten d10s. As a Bonus Action you can expend dice from the pool and heal yourself equal to the roll's total. You regain all the expended dice when you finish a Long Rest.</description>
 		</sheet>
 		<rules>
-			<select type="Ability Score Improvement" name="Ability Score Increase" supports="Epic Boon" />
+			<select type="Ability Score Improvement" name="Ability Score Increase (Epic Boon)" supports="Epic Boon" />
 		</rules>
 	</element>
 	<element name="2024 Boon of Skill" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_BOON_OF_SKILL">
@@ -142,6 +143,7 @@
 			<description>You have gained proficiency in all skills and an Expertise.</description>
 		</sheet>
 		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Epic Boon)" supports="Epic Boon" />
 			<!-- Grant proficiency in all skills -->
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMAL_HANDLING" />
@@ -179,6 +181,7 @@
 			<description>Escape Artist: Bonus Action Disengage also ends Grappled. Quickness: Speed increases by 30 feet.</description>
 		</sheet>
 		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Epic Boon)" supports="Epic Boon" />
 			<stat name="innate speed:misc" value="30" />
 			<stat name="innate speed:climb:misc" value="30" requirements="[innate speed:climb:1]" />
 			<stat name="innate speed:fly:misc" value="30" requirements="[innate speed:fly:1]" />
@@ -188,7 +191,7 @@
 	</element>
 	<element name="2024 Boon of Spell Recall" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_BOON_OF_SPELL_RECALL">
 		<prerequisite>level 19, spellcasting feature</prerequisite>
-		<requirements>[level:19,spellcasting]</requirements>
+		<requirements>[level:19, type:spell]</requirements>
 		<description>
 			<ul>
 				<li><strong>Ability Score Increase</strong>. Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 30.</li>
@@ -199,7 +202,7 @@
 			<description>Free Casting: Roll 1d4 when casting 1st-4th level spells. If roll matches slot level, slot isn't expended.</description>
 		</sheet>
 		<rules>
-			<select type="Ability Score Improvement" name="Ability Score Increase" supports="Epic Boon" />
+			<select type="Ability Score Improvement" name="Ability Score Increase (Epic Boon)" supports="ID_2024PHB_FEAT_ASI_INTELLIGENCE|ID_2024PHB_FEAT_ASI_WISDOM|ID_2024PHB_FEAT_ASI_CHARISMA" />
 		</rules>
 	</element>
 	<element name="2024 Boon of the Night Spirit" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_BOON_OF_THE_NIGHT_SPIRIT">
@@ -216,7 +219,7 @@
 			<description>Merge with Shadows: Bonus Action invisibility in dim light/darkness. Shadowy Form: Resistance to all damage except Psychic and Radiant in dim light/darkness.</description>
 		</sheet>
 		<rules>
-			<select type="Ability Score Improvement" name="Ability Score Increase" supports="Epic Boon" />
+			<select type="Ability Score Improvement" name="Ability Score Increase (Epic Boon)" supports="Epic Boon" />
 		</rules>
 	</element>
 	<element name="2024 Boon of Truesight" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_BOON_OF_TRUESIGHT">
@@ -232,7 +235,93 @@
 			<description>Truesight with a range of 60 feet.</description>
 		</sheet>
 		<rules>
-			<select type="Ability Score Improvement" name="Ability Score Increase" supports="Epic Boon" />
+			<select type="Ability Score Improvement" name="Ability Score Increase (Epic Boon)" supports="Epic Boon" />
 			<stat name="truesight:range" value="60" bonus="base" />
 		</rules>
 	</element>
+	<!--Feat Ability Score Increase-->
+	<element name="Ability Score Increase (Strength)" type="Ability Score Improvement" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_ASI_STRENGTH">
+		<compendium display="false" />
+		<supports>Epic Boon</supports>
+		<description>
+			<p>Your Strength increases by 1.</p>
+		</description>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<rules>
+			<stat name="strength" value="1" alt="Ability Score Increase" />
+			<stat name="strength:max" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Dexterity)" type="Ability Score Improvement" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_ASI_DEXTERITY">
+		<compendium display="false" />
+		<supports>Epic Boon</supports>
+		<description>
+			<p>Your Dexterity increases by 1.</p>
+		</description>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<rules>
+			<stat name="dexterity" value="1" alt="Ability Score Increase" />
+			<stat name="dexterity:max" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Constitution)" type="Ability Score Improvement" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_ASI_CONSTITUTION">
+		<compendium display="false" />
+		<supports>Epic Boon</supports>
+		<description>
+			<p>Your Constitution increases by 1.</p>
+		</description>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<rules>
+			<stat name="constitution" value="1" alt="Ability Score Increase" />
+			<stat name="constitution:max" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Intelligence)" type="Ability Score Improvement" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_ASI_INTELLIGENCE">
+		<compendium display="false" />
+		<supports>Epic Boon</supports>
+		<description>
+			<p>Your Intelligence increases by 1.</p>
+		</description>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<rules>
+			<stat name="intelligence" value="1" alt="Ability Score Increase" />
+			<stat name="intelligence:max" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Wisdom)" type="Ability Score Improvement" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_ASI_WISDOM">
+		<compendium display="false" />
+		<supports>Epic Boon</supports>
+		<description>
+			<p>Your Wisdom increases by 1.</p>
+		</description>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<rules>
+			<stat name="wisdom" value="1" alt="Ability Score Increase" />
+			<stat name="wisdom:max" value="1" />
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Charisma)" type="Ability Score Improvement" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_ASI_CHARISMA">
+		<compendium display="false" />
+		<supports>Epic Boon</supports>
+		<description>
+			<p>Your Charisma increases by 1.</p>
+		</description>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<rules>
+			<stat name="charisma" value="1" alt="Ability Score Increase" />
+			<stat name="charisma:max" value="1" />
+		</rules>
+	</element>
+</elements>

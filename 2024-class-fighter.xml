@@ -404,7 +404,7 @@
 		</sheet>
 	</element>
 	<element name="2024 Unarmed Fighting" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_FIGHTINGSTYLE_UNARMED_FIGHTING">
-		<supports>Fighting Style, Fighter, Monk</supports>
+		<supports>Fighting Style, Fighter</supports>
 		<description>
 			<p>When you hit with your Unarmed Strike and deal damage, you can deal Bludgeoning damage equal to 1d6 plus your Strength modifier instead of the normal damage of an Unarmed Strike. If you aren't holding any weapons or a Shield when you make the attack roll, the d6 becomes a d8.</p>
 			<p class="indent">At the start of each of your turns, you can deal 1d4 Bludgeoning damage to one creature Grappled by you.</p>

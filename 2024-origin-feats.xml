@@ -11,8 +11,8 @@
 
 	<!-- 10 Origin Feats -->
 	<element name="2024 Alert" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_ALERT">
-		<prerequisite>origin</prerequisite>
-		<supports>Origin Feat</supports>
+		<prerequisite></prerequisite>
+		<supports>Origin Feat, Feat</supports>
 		<description>
 			<ul>
 				<li><strong>Initiative Proficiency</strong>. When you roll Initiative, you can add your Proficiency Bonus to the roll.</li>
@@ -20,29 +20,47 @@
 			</ul>
 		</description>
 		<sheet>
-			<description>Initiative Proficiency: Add Proficiency Bonus to Initiative rolls. Initiative Swap: Can swap Initiative with willing ally after rolling.</description>
+			<description>Can swap Initiative with willing ally after rolling, unless Incapacitated.</description>
 		</sheet>
         <rules>
 			<stat name="initiative" value="proficiency" />
 		</rules>
 	</element>
 	<element name="2024 Crafter" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_CRAFTER">
-		<prerequisite>origin</prerequisite>
-		<supports>Origin Feat</supports>
+		<prerequisite></prerequisite>
+		<supports>Origin Feat, Feat</supports>
 		<description>
 			<ul>
 				<li><strong>Tool Proficiency</strong>. You gain proficiency with three different Artisan's Tools of your choice from the Fast Crafting table.</li>
 				<li><strong>Discount</strong>. Whenever you buy a nonmagical item, you receive a 20 percent discount on it.</li>
 				<li><strong>Fast Crafting</strong>. When you finish a Long Rest, you can craft one piece of gear from the Fast Crafting table, provided you have the Artisan's Tools associated with that item and have proficiency with those tools. The item lasts until you finish another Long Rest, at which point the item falls apart.</li>
+				<h5>Fast Crafting</h5>
+				<table>
+					<thead>
+						<tr><td>Artisan's Tools</td><td>Crafted Gear</td></tr>
+					</thead>
+					<tr><td>Carpenter's Tools</td><td>Ladder, Torch</td></tr>
+					<tr><td>Leatherworker's Tool</td><td>Case, Pouch</td></tr>
+					<tr><td>Mason's Tools</td><td>Block and Tackle</td></tr>
+					<tr><td>Potter's Tools</td><td>Jug, Lamp</td></tr>
+					<tr><td>Smith's Tools</td><td>Ball Bearings, Bucket, Caltrops, Grappling Hook, Iron Pot</td></tr>
+					<tr><td>Tinker's Tools</td><td>Bell, Shovel, Tinder Box</td></tr>
+					<tr><td>Weaver's Tools</td><td>Basket, Rope, Net, Tent</td></tr>
+					<tr><td>Woodcarver's Tools</td><td>Club, Greatclub, Quarterstaff</td></tr>
+				</table>
 			</ul>
 		</description>
 		<sheet>
-			<description>Tool Proficiency: Three Artisan's Tools. Discount: 20% off nonmagical items. Fast Crafting: Craft temporary gear during long rest.</description>
+			<description> Whenever you buy a nonmagical item, you receive a 20 percent discount on it. 
+			When you finish a Long Rest, you can craft one piece of gear from the Fast Crafting table. </description>
 		</sheet>
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency (Crafter)" supports="Artisan tools" number="3"/>
+		</rules>
 	</element>
 	<element name="2024 Healer" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_HEALER">
-		<prerequisite>origin</prerequisite>
-		<supports>Origin Feat</supports>
+		<prerequisite></prerequisite>
+		<supports>Origin Feat, Feat</supports>
 		<description>
 			<ul>
 				<li><strong>Battle Medic</strong>. If you have a Healer's Kit, you can expend one use of it and tend to a creature within 5 feet of yourself as a Utilize action. That creature can expend one of its Hit Point Dice, and you then roll that die. The creature regains a number of Hit Points equal to the roll plus your Proficiency Bonus.</li>
@@ -50,12 +68,13 @@
 			</ul>
 		</description>
 		<sheet>
-			<description>Battle Medic: Use Healer's Kit to restore HP equal to Hit Die roll plus Proficiency Bonus. Healing Rerolls: Reroll 1s on healing dice.</description>
+			<description>As a Utilize action, use a Healer's Kit to restore HP to a creature. They can expend one of their Hit Dice which you then roll and heal them for the result +{{proficiency}}.
+			Reroll 1s on healing dice from Healer's Kit or spells. Must use new roll.</description>
 		</sheet>
 	</element>
 	<element name="2024 Lucky" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_LUCKY">
-		<prerequisite>origin</prerequisite>
-		<supports>Origin Feat</supports>
+		<prerequisite></prerequisite>
+		<supports>Origin Feat, Feat</supports>
 		<description>
 			<ul>
 				<li><strong>Luck Points</strong>. You have a number of Luck Points equal to your Proficiency Bonus and can spend the points on the benefits below. You regain your expended Luck Points when you finish a Long Rest.</li>
@@ -63,13 +82,13 @@
 				<li><strong>Disadvantage</strong>. When a creature rolls a d20 for an attack roll against you, you can spend 1 Luck Point to impose Disadvantage on that roll.</li>
 			</ul>
 		</description>
-		<sheet>
-			<description>Luck Points: Number equal to Proficiency Bonus. Spend to gain Advantage on D20 Tests or impose Disadvantage on attacks against you. Regain on Long Rest.</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>You can spend a point to gain Advantage on a D20 Test or impose Disadvantage on an attack against you.</description>
 		</sheet>
 	</element>
-	<element name="2024 Magic Initiate" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MAGIC_INITIATE">
-		<prerequisite>origin</prerequisite>
-		<supports>Origin Feat</supports>
+	<element name="2024 Magic Initiate" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MAGICINITIATE" >
+		<prerequisite></prerequisite>
+		<supports>Origin Feat, Feat</supports>
 		<description>
 			<ul>
 				<li><strong>Two Cantrips</strong>. You learn two cantrips of your choice from the Cleric, Druid, or Wizard spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat).</li>
@@ -78,13 +97,187 @@
 				<li><strong>Repeatable</strong>. You can take this feat more than once, but you must choose a different spell list each time.</li>
 			</ul>
 		</description>
-		<sheet>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<sheet display="false">
 			<description>Two Cantrips and one 1st-level spell from Cleric, Druid, or Wizard list. Can cast 1st-level spell once per long rest without spell slot. Repeatable with different spell list.</description>
 		</sheet>
+		<rules>
+			<select type="Feat Feature" name="Magic Initiate" supports="2024 Magic Initiate" />
+		</rules>
+	</element>
+	<element name="Cleric" type="Feat Feature" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MAGICINITIATE_CLERIC">
+		<supports>2024 Magic Initiate</supports>
+		<description>
+			<p>You learn two cantrips of your choice from the cleric spell list.</p>
+			<p class="indent">In addition, choose one 1st-level spell from that same list. You learn that spell and can cast it at its lowest level. Once you cast it, you must finish a long rest before you can cast it again.</p>
+			<p class="indent">Your spellcasting ability for these spells is wisdom.</p>
+		</description>
+		<sheet alt="Magic Initiate:Cleric">
+			<description>You learn two cantrips Cleric spell list and one 1st-level Cleric spell. You always have that spell prepared and can cast it without a spell slot without a long rest.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Cantrip (Magic Initiate)" supports="0,Cleric" number="2" />
+			<select type="Spell" name="1st-level Spell (Magic Initiate)" supports="1,Cleric" />
+			<select type="Feat Feature" name="Spellcasting Ability" supports="Magic Initiate Cleric" />
+		</rules>
+	</element>
+	<element name="Druid" type="Feat Feature" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MAGICINITIATE_DRUID">
+		<supports>2024 Magic Initiate</supports>
+		<description>
+			<p>You learn two cantrips of your choice from the druid spell list.</p>
+			<p class="indent">In addition, choose one 1st-level spell from that same list. You learn that spell and can cast it at its lowest level. Once you cast it, you must finish a long rest before you can cast it again.</p>
+			<p class="indent">Your spellcasting ability for these spells is wisdom.</p>
+		</description>
+		<sheet alt="Magic Initiate:Druid">
+			<description>You learn two cantrips Druid spell list and one 1st-level Druid spell. You always have that spell prepared and can cast it without a spell slot without a long rest.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Cantrip (Magic Initiate)" supports="0,Druid" number="2" />
+			<select type="Spell" name="1st-level Spell (Magic Initiate)" supports="1,Druid" />
+			<select type="Feat Feature" name="Spellcasting Ability" supports="Magic Initiate Druid" />
+		</rules>
+	</element>
+	<element name="Wizard" type="Feat Feature" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MAGICINITIATE_WIZARD">
+		<supports>2024 Magic Initiate</supports>
+		<description>
+			<p>You learn two cantrips of your choice from the wizard spell list.</p>
+			<p class="indent">In addition, choose one 1st-level spell from that same list. You learn that spell and can cast it at its lowest level. Once you cast it, you must finish a long rest before you can cast it again.</p>
+			<p class="indent">Your spellcasting ability for these spells is intelligence.</p>
+		</description>
+		<sheet alt="Magic Initiate:Wizard">
+			<description>You learn two cantrips Wizard spell list and one 1st-level Wizard spell. You always have that spell prepared and can cast it without a spell slot without a long rest.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Cantrip (Magic Initiate)" supports="0,Wizard" number="2" />
+			<select type="Spell" name="1st-level Spell (Magic Initiate)" supports="1,Wizard" />
+			<select type="Feat Feature" name="Spellcasting Ability" supports="Magic Initiate Wizard" />
+		</rules>
+	</element>
+	
+	<element name="Intelligence (Cleric)" type="Feat Feature" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MAGICINITIATE_CLERIC_SPELLCASTINGMODIFIER_INTELLIGENCE">
+		<supports>Magic Initiate Cleric</supports>
+		<compendium display="false" />
+		<description>
+			<p>Your Spellcasting Modifier for these spells is Intelligence.</p>
+		</description>
+		<sheet alt="Spellcasting Ability">
+			<description>Your Spellcasting Modifier for these spells is Intelligence.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="magic initiate:cleric:spellcasting stat" value="Intelligence" />
+		</rules>
+	</element>
+	<element name="Wisdom (Cleric)" type="Feat Feature" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MAGICINITIATE_CLERIC_SPELLCASTINGMODIFIER_WISDOM">
+		<supports>Magic Initiate Cleric</supports>
+		<compendium display="false" />
+		<description>
+			<p>Your Spellcasting Modifier for these spells is Wisdom.</p>
+		</description>
+		<sheet alt="Spellcasting Ability">
+			<description>Your Spellcasting Modifier for these spells is Wisdom.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="magic initiate:cleric:spellcasting stat" value="Wisdom" />
+		</rules>
+	</element>
+	<element name="Charisma (Cleric)" type="Feat Feature" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MAGICINITIATE_CLERIC_SPELLCASTINGMODIFIER_CHARISMA">
+		<supports>Magic Initiate Cleric</supports>
+		<compendium display="false" />
+		<description>
+			<p>Your Spellcasting Modifier for these spells is Charisma.</p>
+		</description>
+		<sheet alt="Spellcasting Ability">
+			<description>Your Spellcasting Modifier for these spells is Charisma.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="magic initiate:cleric:spellcasting stat" value="Charisma" />
+		</rules>
+	</element>
+	
+	<element name="Intelligence (Druid)" type="Feat Feature" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MAGICINITIATE_DRUID_SPELLCASTINGMODIFIER_INTELLIGENCE">
+		<supports>Magic Initiate Druid</supports>
+		<compendium display="false" />
+		<description>
+			<p>Your Spellcasting Modifier for these spells is Intelligence.</p>
+		</description>
+		<sheet alt="Spellcasting Ability">
+			<description>Your Spellcasting Modifier for these spells is Intelligence.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="magic initiate:druid:spellcasting stat" value="Intelligence" />
+		</rules>
+	</element>
+	<element name="Wisdom (Druid)" type="Feat Feature" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MAGICINITIATE_DRUID_SPELLCASTINGMODIFIER_WISDOM">
+		<supports>Magic Initiate Druid</supports>
+		<compendium display="false" />
+		<description>
+			<p>Your Spellcasting Modifier for these spells is Wisdom.</p>
+		</description>
+		<sheet alt="Spellcasting Ability">
+			<description>Your Spellcasting Modifier for these spells is Wisdom.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="magic initiate:druid:spellcasting stat" value="Wisdom" />
+		</rules>
+	</element>
+	<element name="Charisma (Druid)" type="Feat Feature" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MAGICINITIATE_DRUID_SPELLCASTINGMODIFIER_CHARISMA">
+		<supports>Magic Initiate Druid</supports>
+		<compendium display="false" />
+		<description>
+			<p>Your Spellcasting Modifier for these spells is Charisma.</p>
+		</description>
+		<sheet alt="Spellcasting Ability">
+			<description>Your Spellcasting Modifier for these spells is Charisma.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="magic initiate:druid:spellcasting stat" value="Charisma" />
+		</rules>
+	</element>
+	
+	<element name="Intelligence (Wizard)" type="Feat Feature" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MAGICINITIATE_WIZARD_SPELLCASTINGMODIFIER_INTELLIGENCE">
+		<supports>Magic Initiate Wizard</supports>
+		<compendium display="false" />
+		<description>
+			<p>Your Spellcasting Modifier for these spells is Intelligence.</p>
+		</description>
+		<sheet alt="Spellcasting Ability">
+			<description>Your Spellcasting Modifier for these spells is Intelligence.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="magic initiate:wizard:spellcasting stat" value="Intelligence" />
+		</rules>
+	</element>
+	<element name="Wisdom (Wizard)" type="Feat Feature" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MAGICINITIATE_WIZARD_SPELLCASTINGMODIFIER_WISDOM">
+		<supports>Magic Initiate Wizard</supports>
+		<compendium display="false" />
+		<description>
+			<p>Your Spellcasting Modifier for these spells is Wisdom.</p>
+		</description>
+		<sheet alt="Spellcasting Ability">
+			<description>Your Spellcasting Modifier for these spells is Wisdom.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="magic initiate:wizard:spellcasting stat" value="Wisdom" />
+		</rules>
+	</element>
+	<element name="Charisma (Wizard)" type="Feat Feature" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MAGICINITIATE_WIZARD_SPELLCASTINGMODIFIER_CHARISMA">
+		<supports>Magic Initiate Wizard</supports>
+		<compendium display="false" />
+		<description>
+			<p>Your Spellcasting Modifier for these spells is Charisma.</p>
+		</description>
+		<sheet alt="Spellcasting Ability">
+			<description>Your Spellcasting Modifier for these spells is Charisma.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="magic initiate:wizard:spellcasting stat" value="Charisma" />
+		</rules>
 	</element>
 	<element name="2024 Musician" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MUSICIAN">
-		<prerequisite>origin</prerequisite>
-		<supports>Origin Feat</supports>
+		<prerequisite></prerequisite>
+		<supports>Origin Feat, Feat</supports>
 		<description>
 			<ul>
 				<li><strong>Instrument Training</strong>. You gain proficiency with three Musical Instruments of your choice.</li>
@@ -92,12 +285,13 @@
 			</ul>
 		</description>
 		<sheet>
-			<description>Instrument Training: Proficiency with three Musical Instruments. Encouraging Song: Give Heroic Inspiration to allies equal to Proficiency Bonus after rest.</description>
+			<description>You have become Proficient in three Musical Instruments. 
+			As you finish a Short or Long Rest, you can play a song on a Musical Instrument and give Heroic Inspiration to {{proficiency}} allies after rest.</description>
 		</sheet>
 	</element>
 	<element name="2024 Savage Attacker" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_SAVAGE_ATTACKER">
-		<prerequisite>origin</prerequisite>
-		<supports>Origin Feat</supports>
+		<prerequisite></prerequisite>
+		<supports>Origin Feat, Feat</supports>
 		<description>
 			<ul>
 				<li>You've trained to deal particularly damaging strikes. Once per turn when you hit a target with a weapon, you can roll the weapon's damage dice twice and use either roll against the target.</li>
@@ -108,21 +302,24 @@
 		</sheet>
 	</element>
 	<element name="2024 Skilled" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_SKILLED">
-		<prerequisite>origin</prerequisite>
-		<supports>Origin Feat</supports>
+		<prerequisite></prerequisite>
+		<supports>Origin Feat, Feat</supports>
 		<description>
 			<ul>
 				<li>You gain proficiency in any combination of three skills or tools of your choice.</li>
 				<li><strong>Repeatable</strong>. You can take this feat more than once.</li>
 			</ul>
 		</description>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
 		<sheet>
-			<description>Gain proficiency in any combination of three skills or tools of your choice. Repeatable.</description>
+			<description>Gain proficiency in any combination of three skills or tools of your choice.</description>
 		</sheet>
 	</element>
 	<element name="2024 Tavern Brawler" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_TAVERN_BRAWLER">
-		<prerequisite>origin</prerequisite>
-		<supports>Origin Feat</supports>
+		<prerequisite></prerequisite>
+		<supports>Origin Feat, Feat</supports>
 		<description>
 			<ul>
 				<li><strong>Enhanced Unarmed Strike</strong>. When you hit with your Unarmed Strike and deal damage, you can deal Bludgeoning damage equal to 1d4 plus your Strength modifier instead of the normal damage of an Unarmed Strike.</li>
@@ -132,19 +329,20 @@
 			</ul>
 		</description>
 		<sheet>
-			<description>Enhanced Unarmed Strike: 1d4 + Str modifier damage. Damage Rerolls: Reroll 1s on unarmed damage. Improvised Weaponry: Proficiency with improvised weapons. Push: Push target 5 feet with unarmed strikes.</description>
+			<description>Your Unarmed strikes deal 1d4+{{strength:modifier}} damage and you can reroll 1s on them. You are proficient with improvised weapons. 
+			Once per turn when hit with an unarmed attack as part of attack action, you can Push a target 5 feet away from you.</description>
 		</sheet>
 	</element>
 	<element name="2024 Tough" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_TOUGH">
-		<prerequisite>origin</prerequisite>
-		<supports>Origin Feat</supports>
+		<prerequisite></prerequisite>
+		<supports>Origin Feat, Feat</supports>
 		<description>
 			<ul>
 				<li>Your Hit Point maximum increases by an amount equal to twice your character level when you gain this feat. Whenever you gain a character level thereafter, your Hit Point maximum increases by an additional 2 Hit Points.</li>
 			</ul>
 		</description>
 		<sheet>
-			<description>Hit Point maximum increases by twice your character level when you gain this feat, and by 2 Hit Points for each level thereafter.</description>
+			<description>Your Hit Point maximum increases by twice your character level when you gain this feat, and by 2 Hit Points for each level thereafter.</description>
 		</sheet>
 		<rules>
 			<stat name="tough:hp" value="level" />
@@ -152,3 +350,4 @@
 			<stat name="hp" value="tough:hp" />
 		</rules>
 	</element>
+</elements>

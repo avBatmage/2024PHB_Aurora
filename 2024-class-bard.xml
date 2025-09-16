@@ -129,40 +129,47 @@
 			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a Long Rest.</p>
 			<p class="indent">Your Bardic Inspiration die changes when you reach certain levels in this class. The die becomes a d8 at 5th level, a d10 at 10th level, and a d12 at 15th level.</p>
 		</description>
-		<sheet action="Bonus Action" usage="{{bardic-inspiration:count}}/Long Rest">
-			<description>Inspire one creature other than yourself within 60 feet of you who can see or hear you. It gains one Bardic Inspiration die, a d{{bardic-inspiration:dice}}.
+		<sheet action="Bonus Action" usage="{{bardic inspiration:count}}/Long Rest">
+			<description>Inspire one creature other than yourself within 60 feet of you who can see or hear you. It gains one Bardic Inspiration die, a d{{bardic inspiration:dice}}.
 		Once within the next hour when the creature fails a D20 Test, the creature can roll the die and add the number rolled to the d20, potentially turning the failure into a success.</description>
 		</sheet>
 		<rules>
-			<stat name="bardic-inspiration:count" value="proficiency" bonus="bardic inspiration"/>
+			<stat name="bardic inspiration:count" value="proficiency" bonus="bardic inspiration"/>
 
-			<stat name="bardic-inspiration:dice" value="6" bonus="bardic inspiration" />
-			<stat name="bardic-inspiration:dice" value="8" bonus="bardic inspiration" level="5" />
-			<stat name="bardic-inspiration:dice" value="10" bonus="bardic inspiration" level="10" />
-			<stat name="bardic-inspiration:dice" value="12" bonus="bardic inspiration" level="15" />
+			<stat name="bardic inspiration:dice" value="6" bonus="bardic inspiration" />
+			<stat name="bardic inspiration:dice" value="8" bonus="bardic inspiration" level="5" />
+			<stat name="bardic inspiration:dice" value="10" bonus="bardic inspiration" level="10" />
+			<stat name="bardic inspiration:dice" value="12" bonus="bardic inspiration" level="15" />
 		</rules>
 	</element>
 	<element name="Spellcasting" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARD_SPELLCASTING_BARD">
 		<description>
-			<p>You have learned to cast spells through your bardic arts. See the rules glossary for the rules of spellcasting. The information below details how you use those rules with Bard spells, which appear in the Bard spell list later in the class's description.</p>
+			<p>You have learned to cast spells through your bardic arts. See the Player's Handbook for the rules of spellcasting. The information below details how you use those rules with Bard spells, which appear in the Bard spell list later in the class's description.</p>
 			<h5>CANTRIPS</h5>
-			<p>You know two cantrips of your choice from the Bard spell list. Dancing Lights and Vicious Mockery are recommended. Whenever you gain a Bard level, you can replace one of your cantrips with another cantrip from the Bard spell list.</p>
+			<p>You know two cantrips of your choice from the Bard spell list. Dancing Lights and Vicious Mockery are recommended.</p>
+			<p class="indent">Whenever you gain a Bard level, you can replace one of your cantrips with another cantrip from the Bard spell list.</p>
 			<p class="indent">When you reach Bard levels 4 and 10, you learn another cantrip from the Bard spell list, as shown in the Cantrips column of the Bard Features table.</p>
 			<h5>SPELL SLOTS</h5>
 			<p>The Bard Features table shows how many spell slots you have to cast your Bard spells of 1st level and higher. You regain all expended spell slots when you finish a Long Rest.</p>
-			<h5>PREPARED SPELLS OF 1ST+ LEVEL</h5>
-			<p>You prepare the spells of 1st level and higher that you can cast, choosing from the Bard spell list. When you do so, choose a number of Bard spells equal to your Charisma modifier + half your Bard level (minimum of one spell). The spells must be of a level for which you have spell slots.</p>
-			<p class="indent">For example, if you're a 3rd-level Bard with a Charisma of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination, chosen from the Bard spell list.</p>
-			<p class="indent">You can change your list of prepared spells whenever you finish a Long Rest by replacing any of the spells there with other Bard spells for which you have spell slots.</p>
+			<h5>PREPARED SPELLS OF LEVEL 1+</h5>
+			<p>You prepare the list of level 1+ spells that are available for you to cast with this feature . To start, choose four level 1 spells from the Bard spell list. Charm Person, Color Spray, Dissonant Whispers, and Healing Word are recommended.</p>
+			<p class="indent">The number of spells on your list increases as you gain Bard levels, as shown in the Prepared Spells column of the Bard Features table. Whenever that number increases, choose additional spells from the Bard spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 3 Bard, your list of prepared spells can include six spells of levels 1 and 2 in any combination.</p>
+			<p class="indent">If another Bard feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Bard spells for you.</p>
+			<h5>CHANGING YOUR PREPARED SPELLS</h5>
+			<p>Whenever you gain a Bard level, you can replace one spell on your list with another Bard spell for which you have spell slots.</p>
 			<h5>SPELLCASTING ABILITY</h5>
-			<p>Charisma is your spellcasting ability for your Bard spells.</p>
+			<p>Charisma is your spellcasting ability for your bard spells. Your magic comes from the heart and soul you pour into the performance of your music or oration. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a bard spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Charisma modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Charisma modifier</p>
+			</center>
 			<h5>SPELLCASTING FOCUS</h5>
 			<p>You can use a musical instrument as a Spellcasting Focus for your Bard spells.</p>
 		</description>
 		<sheet display="false">
 			<description>You have learned to cast spells through your bardic arts.</description>
 		</sheet>
-		<spellcasting name="Bard" ability="Charisma" prepare="true">
+		<spellcasting name="Bard" ability="Charisma"  prepare="false" allowReplace="true">
 			<list>Bard</list>
 		</spellcasting>
 		<rules>
@@ -350,15 +357,20 @@
 			<p>Your practice of dance gives you the ability to gracefully dodge and make agile strikes. While you aren't wearing armor or wielding a Shield, you gain the following benefits:</p>
 			<p class="indent"><strong>Unarmored Defense.</strong> Your base Armor Class equals 10 + your Dexterity modifier + your Charisma modifier.</p>
 			<p class="indent"><strong>Agile Strikes.</strong> When you expend a use of your Bardic Inspiration as part of an action, a Bonus Action, or a Reaction, you can make one Unarmed Strike as part of that action, Bonus Action, or Reaction.</p>
-			<p class="indent"><strong>Bardic Damage.</strong> You can use Dexterity instead of Strength for the attack rolls of your Unarmed Strikes, and when you deal damage with an Unarmed Strike, you can deal Bludgeoning damage equal to a roll of your Bardic Inspiration die plus your Dexterity modifier. This roll doesn't expend the die.</p>
+			<p class="indent"><strong>Bardic Damage.</strong> You can use Dexterity instead of Strength for the attack rolls of your Unarmed Strikes, and when you deal damage with an Unarmed Strike, you can deal Bludgeoning damage equal to a roll of your Bardic Inspiration die plus your Dexterity modifier instead of the strike's normal damage. This roll doesn't expend the die.</p>
 		</description>
-		<sheet display="false">
-			<description>While unarmored and not wielding a shield: Unarmored Defense (AC = 10 + Dex + Cha), Agile Strikes (make unarmed strike when expending Bardic Inspiration), Bardic Damage (use Dex for unarmed attacks, add Bardic die to damage).</description>
+		<sheet>
+			<description>While unarmored and not wielding a shield your AC is {{ac:unarmored defense bard}} and:
+			You can use Dexterity for your unarmed attacks and they deal 1d{{bardic inspiration:dice}}+{{dazzling footwork:unarmed:damage}} bludgeoning damage.
+			When expending Bardic Inspiration on an action, Bonus Action, or reaction also make one unarmed attack.</description>
 		</sheet>
 		<rules>
-			<stat name="ac" value="10" bonus="unarmored defense" requirements="!ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR,!ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR,!ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR,!ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS"/>
-			<stat name="ac" value="dexterity" bonus="unarmored defense" requirements="!ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR,!ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR,!ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR,!ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS"/>
-			<stat name="ac" value="charisma" bonus="unarmored defense" requirements="!ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR,!ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR,!ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR,!ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS"/>
+			<stat name="ac:unarmored defense bard" value="10" />
+			<stat name="ac:unarmored defense bard" value="dexterity:modifier" />
+			<stat name="ac:unarmored defense bard" value="charisma:modifier" />
+			<stat name="ac:calculation" value="ac:unarmored defense bard" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Unarmored Defense" />
+			<stat name="dazzling footwork:unarmed:damage" value="strength:modifier" bonus="base" />
+			<stat name="dazzling footwork:unarmed:damage" value="dexterity:modifier" bonus="base" />
 		</rules>
 	</element>
 	<element name="Inspiring Movement" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_DANCE_INSPIRING_MOVEMENT">
@@ -366,7 +378,7 @@
 			<p>When an enemy you can see ends its turn within 5 feet of an ally of yours who is within 60 feet of you, you can use your Reaction and expend one use of your Bardic Inspiration to move up to half your Speed. Then roll your Bardic Inspiration die, and the ally can move up to a number of feet equal to 5 times the number rolled. None of this feature's movement provokes Opportunity Attacks.</p>
 		</description>
 		<sheet action="Reaction">
-			<description>When an enemy ends its turn within 5 feet of an ally within 60 feet of you, you can use your Reaction and expend one use of your Bardic Inspiration to move up to half your Speed. Then roll your Bardic Inspiration die, and the ally can move up to a number of feet equal to 5 times the number rolled. None of this movement provokes Opportunity Attacks.</description>
+			<description>When an enemy ends its turn within 5 feet of an ally within 60 feet of you, you can expend one use of your Bardic Inspiration to move up to half your Speed. Then roll your Bardic Inspiration die, and the ally can move up to a number of feet equal to 5 times the number rolled. None of this movement provokes Opportunity Attacks.</description>
 		</sheet>
 	</element>
 	<element name="Tandem Footwork" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_DANCE_TANDEM_FOOTWORK">
@@ -374,8 +386,12 @@
 			<p>When you roll Initiative, you can spend one use of your Bardic Inspiration if you don't have the Incapacitated condition. When you do so, roll your Bardic Inspiration die, and choose a number of creatures within 60 feet of yourself (you can choose yourself), up to a number equal to your Charisma modifier (minimum of one creature). Each of them gains a bonus to their Initiative equal to the number rolled.</p>
 		</description>
 		<sheet>
-			<description>When you roll Initiative, you can spend one use of your Bardic Inspiration if you don't have the Incapacitated condition. When you do so, roll your Bardic Inspiration die, and choose a number of creatures within 60 feet of yourself (you can choose yourself), up to a number equal to your Charisma modifier (minimum of one creature). Each of them gains a bonus to their Initiative equal to the number rolled.</description>
+			<description>When you roll Initiative, if you don't have the Incapacitated condition, you can spend one use of your Bardic Inspiration. When you do so choose up to {{tandem footwork:number}} creatures within 60 feet of yourself, Each of them gains a bonus to their Initiative equal to the number rolled.</description>
 		</sheet>
+		<rules>
+			<stat name="tandem footwork:number" value="1" bonus="base"/>
+			<stat name="tandem footwork:number" value="charisma:modifier" bonus="base"/>
+		</rules>
 	</element>
 	<element name="Leading Evasion" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_DANCE_LEADING_EVASION">
 		<description>
@@ -383,7 +399,7 @@
 			<p class="indent">You can't use this feature if you have the Incapacitated condition.</p>
 		</description>
 		<sheet>
-			<description>When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and you take only half damage if you fail. If any creatures within 5 feet of you are making the same Dexterity saving throw, you can share this benefit with them for that save. You can't use this feature if you have the Incapacitated condition.</description>
+			<description>When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail. You can share this benefit with creatures within 5ft. You can't use this feature if you have the Incapacitated condition.</description>
 		</sheet>
 	</element>
 
@@ -412,8 +428,9 @@
 			<p class="indent">In addition, immediately after you cast an Enchantment or Illusion spell, you can cause a creature you can see within 60 feet of yourself to make a Wisdom saving throw against your Spell Save DC. On a failed save, the target has the Charmed or Frightened condition (your choice) for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
 			<p class="indent">Once you use this benefit, you can't use it again until you finish a Long Rest. You can also restore your use of the feature by expending one use of your Bardic Inspiration (no action required).</p>
 		</description>
-		<sheet display="false">
-			<description>You always have Charm Person and Mirror Image prepared. After casting an Enchantment or Illusion spell, you can cause a creature within 60 feet to make a Wisdom save or be Charmed or Frightened for 1 minute. Once per long rest, or restore by expending Bardic Inspiration.</description>
+		<sheet usage="1/Long Rest" >
+			<description>After casting an Enchantment or Illusion spell, you can cause a creature within 60 feet to make a Wisdom save or be Charmed or Frightened for 1 minute. 
+			Once per long rest, or restore by expending Bardic Inspiration.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_2024PHB_SPELL_CHARM_PERSON" spellcasting="Bard" prepared="true" />
@@ -425,16 +442,20 @@
 			<p>You can weave fey magic into a song or dance to fill others with vigor. As a Bonus Action, you can expend a use of Bardic Inspiration, rolling a Bardic Inspiration die. When you do so, choose a number of other creatures within 60 feet of yourself, up to a number equal to your Charisma modifier (minimum of one creature). Each of them gains a number of Temporary Hit Points equal to 2 times the number rolled on the Bardic Inspiration die, and then each of them can use its Reaction to move up to its Speed without provoking Opportunity Attacks.</p>
 		</description>
 		<sheet action="Bonus Action">
-			<description>You can expend a use of Bardic Inspiration, rolling a Bardic Inspiration die. Choose a number of other creatures within 60 feet of yourself, up to a number equal to your Charisma modifier (minimum of one creature). Each of them gains a number of Temporary Hit Points equal to 2 times the number rolled on the Bardic Inspiration die, and then each of them can use its Reaction to move up to its Speed without provoking Opportunity Attacks.</description>
+			<description>You can expend a use of Bardic Inspiration. Choose up to {{mantle of inspiration:uses}} other creatures within 60 feet of yourself. Each of them gains a number of Temporary Hit Points equal to 2 times the number rolled on the Bardic Inspiration die, and then each of them can use its Reaction to move up to its Speed without provoking Opportunity Attacks.</description>
 		</sheet>
+		<rules>
+			<stat name="mantle of inspiration:uses" value="1" bonus="base"/>
+			<stat name="mantle of inspiration:uses" value="charisma:modifier" bonus="base"/>
+		</rules>
 	</element>
 	<element name="Mantle of Majesty" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_GLAMOUR_MANTLE_OF_MAJESTY">
 		<description>
 			<p>You always have the <i>Command</i> spell prepared. As a Bonus Action, you cast <i>Command</i> without expending a spell slot, and you take on an unearthly appearance for 1 minute or until your Concentration ends (as if you were concentrating on a spell). During this time, you can cast <i>Command</i> as a Bonus Action without expending a spell slot. Any creature Charmed by you automatically fails its saving throw against the <i>Command</i> you cast with this feature.</p>
 			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of the feature by expending a spell slot of 3rd level or higher (no action required).</p>
 		</description>
-		<sheet action="Bonus Action">
-			<description>You always have Command prepared. As a Bonus Action, you cast Command without expending a spell slot, and you take on an unearthly appearance for 1 minute or until your Concentration ends. During this time, you can cast Command as a Bonus Action without expending a spell slot. Any creature Charmed by you automatically fails its saving throw against the Command you cast with this feature. Once per long rest, or restore by expending a 3rd level or higher spell slot.</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>You cast Command without expending a spell slot, and you take on an unearthly appearance for 1 minute or until your Concentration ends. During this time, you can cast Command as a Bonus Action without expending a spell slot. Any creature Charmed by you automatically fails its saving throw against the Command you cast with this feature. You can restore a use by expending a level 3+ spell slot.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_2024PHB_SPELL_COMMAND" spellcasting="Bard" prepared="true" />
@@ -481,10 +502,10 @@
 	</element>
 	<element name="Cutting Words" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_LORE_CUTTING_WORDS">
 		<description>
-			<p>Also at 3rd level, you learn how to use your wit to distract, confuse, and otherwise sap the confidence and competence of others. When a creature that you can see within 60 feet of you makes an attack roll, an ability check, or a damage roll, you can use your reaction to expend one of your uses of Bardic Inspiration, rolling a Bardic Inspiration die and subtracting the number rolled from the creature's roll. You can choose to use this feature after the creature makes its roll, but before the GM determines whether the attack roll or ability check succeeds or fails, or before the creature deals its damage. The creature is immune if it can't hear you or if it's immune to being charmed.</p>
+			<p>Also at 3rd level, You learn to use your wit to supernaturally distract, confuse, and otherwise sap the confidence and competence of others. When a creature that you can see within 60 feet of yourself makes a damage roll or succeeds on an ability check or attack roll, you can take a Reaction to expend one use of your Bardic Inspiration; roll your Bardic Inspiration die, and subtract the number rolled from the creature's roll, reducing the damage or potentially turning the success into a failure.</p>
 		</description>
-		<sheet action="Reaction">
-			<description>When a creature that you can see within 60 feet of you makes an attack roll, an ability check, or a damage roll, you can use your reaction to expend one of your uses of Bardic Inspiration, rolling a Bardic Inspiration die and subtracting the number rolled from the creature's roll. You can choose to use this feature after the creature makes its roll, but before the GM determines whether the attack roll or ability check succeeds or fails, or before the creature deals its damage. The creature is immune if it can't hear you or if it's immune to being charmed.</description>
+		<sheet action="Reaction" usage="Bardic Inspiration" >
+			<description>When a creature that you can see within 60 feet of yourself makes a damage roll or succeeds on an ability check or attack roll, you can expend one use of your Bardic Inspiration; and subtract the number rolled from the creature's roll, reducing the damage or potentially turning the success into a failure.</description>
 		</sheet>
 	</element>
 	<element name="Magical Discoveries" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_LORE_MAGICAL_DISCOVERIES">
@@ -544,7 +565,9 @@
 			<p class="indent"><strong>Offense.</strong> Immediately after the creature hits a target with an attack roll, the creature can roll the Bardic Inspiration die and add the number rolled to the attack's damage against the target.</p>
 		</description>
 		<sheet>
-			<description>A creature that has a Bardic Inspiration die from you can use it for Defense (add to AC when hit by an attack as a Reaction) or Offense (add to damage after hitting with an attack).</description>
+			<description>A creature that has a Bardic Inspiration die from you can use it for:
+			Defense, When hit by an attack they can use their reaction to add the bardic inspiration to their AC possibly causing the attack to miss, or 
+			Offense, Add the bardic inspiration to damage when hitting with an attack roll.</description>
 		</sheet>
 	</element>
 	<element name="Extra Attack" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_VALOR_EXTRA_ATTACK">
@@ -553,7 +576,8 @@
 			<p class="indent">In addition, you can cast one of your cantrips that has a casting time of an action in place of one of those attacks.</p>
 		</description>
 		<sheet>
-			<description>You can attack twice instead of once whenever you take the Attack action on your turn. You can cast a cantrip with an action casting time in place of one attack.</description>
+			<description>You can attack twice instead of once whenever you take the Attack action on your turn. 
+			Additionally you can cast a cantrip with an action casting time in place of one attack.</description>
 		</sheet>
 		<rules>
 			<stat name="extra attack:count" value="2" level="6" bonus="extra attack" />

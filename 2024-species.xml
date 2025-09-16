@@ -1,0 +1,1062 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>2024 Species</name>
+		<description>Species from the 2024 Player's Handbook.</description>
+		<author url="https://www.dndbeyond.com/">Wizards of the Coast</author>
+		<update version="0.0.1">
+			<file name="2024-species.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-species.xml" />
+		</update>
+	</info>
+
+	<!-- Aasimar -->
+    <element name="2024 Aasimar" type="Race" source="2024 Player's Handbook" id="ID_2024PHB_RACE_AASIMAR">
+        <description>
+            <p>Aasimar (pronounced AH-sih-mar) are mortals who carry a spark of the Upper Planes within their souls. Whether descended from an angelic being or infused with celestial power, they can fan that spark to bring light, healing, and heavenly fury.</p>
+            <p>Aasimar can arise among any population of mortals. They resemble their parents, but they live for up to 160 years and have features that hint at their celestial heritage, such as metallic freckles, luminous eyes, a halo, or the skin color of an angel (silver, opalescent green, or coppery red). These features start subtle and become obvious when the aasimar learns to reveal their full celestial nature.</p>
+            <h4>AASIMAR TRAITS</h4>
+            <p>As an Aasimar, you have these special traits.</p>
+            <p class="indent"><strong><em>Creature Type.</em></strong> Humanoid</p>
+            <p class="indent"><strong><em>Size.</em></strong> Medium (about 4-7 feet tall) or Small (about 2-4 feet tall), chosen when you select this species</p>
+            <p class="indent"><strong><em>Speed.</em></strong> 30 feet</p>
+            <p class="indent"><strong><em>Celestial Resistance.</em></strong> You have Resistance to Necrotic damage and Radiant damage.</p>
+            <p class="indent"><strong><em>Darkvision.</em></strong> You have Darkvision with a range of 60 feet.</p>
+            <p class="indent"><strong><em>Healing Hands.</em></strong> As a Magic action, you touch a creature and roll a number of d4s equal to your Proficiency Bonus. The creature regains a number of Hit Points equal to the total rolled. Once you use this trait, you can't use it again until you finish a Long Rest.</p>
+            <p class="indent"><strong><em>Light Bearer.</em></strong> You know the Light cantrip. Charisma is your spellcasting ability for it.</p>
+            <p class="indent"><strong><em>Celestial Revelation.</em></strong> When you reach character level 3, you can transform as a Bonus Action using one of the options below (choose the option each time you transform). The transformation lasts for 1 minute or until you end it (no action required). Once you transform, you can't do so again until you finish a Long Rest.</p>
+            <p class="indent"> Once on each of your turns before the transformation ends, you can deal extra damage to one target when you deal damage to it with an attack or a spell, The extra damage equals your Proficiency Bonus, and the extra damage's type is either Necrotic for Necrotic Shroud or Radiant for Heavenly Wings and Inner Radiance.</p>
+            <p class="indent"> Here are the transformation options:</p>
+            <ul class="unstyled">
+				<li style="margin-left:1em;text-indent:-1em;"><strong>Heavenly Wings.</strong> Two spectral wings sprout from your back temporarily. Until the transformation ends, you have a Fly Speed equal to your Speed.</li>
+				<li style="margin-left:1em;text-indent:-1em;"><strong>Inner Radiance.</strong> Searing light temporarily radiates from your eyes and mouth. For the duration, you shed Bright Light in a 10-foot radius and Dim Light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes Radiant damage equal to your Proficiency Bonus.</li>
+				<li style="margin-left:1em;text-indent:-1em;"><strong>Necrotic Shroud.</strong> Your eyes briefly become pools of darkness, and flightless wings sprout from your back temporarily. Creatures other than vour allies within 10 feet of you must succeed on a Charisma saving throw (DC 8 plus your Charisma modifier and Proficiency Bonus) or have the Frightened condition until the end of your next turn.</li>
+			</ul>
+        </description>
+        <sheet display="false" />
+        <rules>
+			<stat name="innate speed" value="30" bonus="base" />
+			<select type="Racial Trait" name="Size (Aasimar)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_AASIMAR_CELESTIAL_RESISTANCE" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_AASIMAR_HEALING_HANDS" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_AASIMAR_LIGHT_BEARER" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_AASIMAR_CELESTIAL_REVELATION" level="3" />
+        </rules>
+    </element>
+	<element name="Celestial Resistance" type="Racial Trait" source="Monsters of the Multiverse" id="ID_RACIAL_TRAIT_2024_AASIMAR_CELESTIAL_RESISTANCE">
+		<description>
+			<p>You have resistance to necrotic damage and radiant damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+		</rules>
+	</element>
+	<element name="Healing Hands" type="Racial Trait" source="Monsters of the Multiverse" id="ID_RACIAL_TRAIT_2024_AASIMAR_HEALING_HANDS">
+		<description>
+			<p>As a Magic action, you touch a creature and roll a number of d4s equal to your Proficiency Bonus. The creature regains a number of Hit Points equal to the total rolled. Once you use this trait, you can't use it again until you finish a Long Rest.</p>
+		</description>
+		<sheet action="Magic Action" usage="1/Long Rest">
+			<description>You can touch a creature and roll {{proficiency}}d4. The creature regains a number of hit points equal to the total rolled.</description>
+		</sheet>
+	</element>
+	<element name="Light Bearer" type="Racial Trait" source="Monsters of the Multiverse" id="ID_RACIAL_TRAIT_2024_AASIMAR_LIGHT_BEARER">
+		<description>
+			<p>You know the <i>light</i> cantrip. Charisma is your spellcasting ability for it.</p>
+		</description>
+		<sheet>
+			<description>You know the Light cantrip. Charisma is your spellcasting ability for it.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_LIGHT" />
+		</rules>
+	</element>
+	<element name="Celestial Revelation" type="Racial Trait" source="Monsters of the Multiverse" id="ID_RACIAL_TRAIT_2024_AASIMAR_CELESTIAL_REVELATION">
+		<description>
+			<p>When you reach 3rd level, When you reach character level 3, you can transform as a Bonus Action using one of the options below (choose the option each time you transform). The transformation lasts for 1 minute or until you end it (no action required). Once you transform, you can't do so again until you finish a Long Rest:</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>You transform for 1 minute or until you end it (no action required), Once per turn when you deal damage with an attack or spell you can deal an extra {{proficiency}} Radiant/Necrotic damage to one target.
+			Heavenly Wings. Two spectral wings sprout from your back temporarily. Until the transformation ends, you have a {{speed}}ft Fly Speed. Until the transformation ends, you have a {{speed}}ft. flying speed. Your extra damage is Radiant.
+			Inner Radiance. Searing light temporarily radiates from your eyes and mouth. For the duration, you shed Bright Light in a 10-foot radius and Dim Light for an additional 10 feet, Your extra damage is Radiant and it is also dealt to each creature within 10ft at the end of each of your turns.
+            Necrotic Shroud. Your eyes briefly become pools of darkness, and flightless wings sprout from your back. Creatures other than vour allies within 10 feet of you must succeed on a DC {{aasimar:dc}} Charisma saving throw or have the Frightened condition until the end of your next turn.
+            </description>
+		</sheet>
+		<rules>
+			<stat name="aasimar:dc" value="8" />
+            <stat name="aasimar:dc" value="proficiency" />
+            <stat name="aasimar:dc" value="charisma:modifier" />
+		</rules>
+	</element>
+	<!-- Dragonborn -->
+    <element name="2024 Dragonborn" type="Race" source="2024 Player's Handbook" id="ID_2024PHB_RACE_DRAGONBORN">
+        <description>
+            <p>The ancestors of dragonborn hatched from the eggs of chromatic and metallic dragons. One story holds that these eggs were blessed by the dragon gods Bahamut and Tiamat, who wanted to populate the multiverse with people created in their image. Another story claims that dragons created the first dragonborn without the gods' blessings. Whatever their origin, dragonborn have made homes for themselves on the Material Plane.</p>
+            <p>Dragonborn look like wingless, bipedal dragons-scaly, bright-eyed, and thick-boned with horns on their heads-and their coloration and other features are reminiscent of their draconic ancestors.</p>
+            <h4>DRAGONBORN TRAITS</h4>
+            <p>As a Dragonborn, you have these special traits.</p>
+            <p class="indent"><strong><em>Creature Type.</em></strong> Humanoid</p>
+            <p class="indent"><strong><em>Size.</em></strong> Medium (about 5-7 feet tall)</p>
+            <p class="indent"><strong><em>Speed.</em></strong> 30 feet</p>
+            <p class="indent"><strong><em>Draconic Ancestry.</em></strong> Your lineage stems from a dragon progenitor. Choose the kind of dragon from the Draconic Ancestors table. Your choice affects your Breath Weapon and Damage Resistance traits as well as your appearance.</p>
+			<h5>DRACONIC ANCESTORS</h5>
+			<table>
+				<thead>
+					<tr><th>Dragon</th><th>Damage Type</th></tr>
+				</thead>
+				<tr><td>Black</td><td>Acid</td></tr>
+				<tr><td>Blue</td><td>Lightning</td></tr>
+				<tr><td>Brass</td><td>Fire</td></tr>
+				<tr><td>Bronze</td><td>Lightning</td></tr>
+				<tr><td>Copper</td><td>Acid</td></tr>
+				<tr><td>Gold</td><td>Fire</td></tr>
+				<tr><td>Green</td><td>Poison</td></tr>
+				<tr><td>Red</td><td>Fire</td></tr>
+				<tr><td>Silver</td><td>Cold</td></tr>
+				<tr><td>White</td><td>Cold</td></tr>
+			</table>
+			<p class="indent"><strong><em>Breath Weapon.</em></strong> When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time).</p>
+			<p class="indent">Each creature in that area must make a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus). On a failed save, a creature takes 1d10 damage of the type determined by your Draconic Ancestry trait. On a successful save, a creature takes half as much damage.</p>
+			<p class="indent">This damage increases by 1d10 when you reach character levels 5 (2d10), 11 (3d10), and 17 (4d10).</p>
+			<p class="indent">You can use this Breath Weapon a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
+			<p class="indent"><strong><em>Damage Resistance.</em></strong> You have Resistance to the damage type determined by your Draconic Ancestry trait.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You have Darkvision with a range of 60 feet.</p>
+            <p class="indent"><strong><em>Draconic Flight.</em></strong> When you reach character level 5, you can channel draconic magic to give yourself temporary flight. As a Bonus Action, you sprout spectral wings on your back that last for 10 minutes or until you retract the wings (no action required) or have the Incapacitated condition.</p>
+            <p class="indent">During that time, you have a Fly Speed equal to your Speed. Your wings appear to be made of the same energy as your Breath Weapon. Once you use this trait, you can't use it again until you finish a Long Rest.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_DRACONIC_ANCESTRY" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_BREATH_WEAPON" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_DAMAGE_RESISTANCE" requirements="!ID_WOTC_EGTW_GRANTS_DRAGONBORN_VARIANT" />
+			<select type="Race Variant" name="Dragonborn Variant" supports="Dragonborn" optional="true" />
+		</rules>
+	</element>
+	<element name="Draconic Ancestry" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_DRACONIC_ANCESTRY">
+		<description>
+			<p> Your lineage stems from a dragon progenitor. Choose the kind of dragon from the Draconic Ancestors table. Your choice affects your Breath Weapon and Damage Resistance traits as well as your appearance.</p>
+			<h5>DRACONIC ANCESTORS</h5>
+			<table>
+				<thead>
+					<tr><th>Dragon</th><th>Damage Type</th></tr>
+				</thead>
+				<tr><td>Black</td><td>Acid</td></tr>
+				<tr><td>Blue</td><td>Lightning</td></tr>
+				<tr><td>Brass</td><td>Fire</td></tr>
+				<tr><td>Bronze</td><td>Lightning</td></tr>
+				<tr><td>Copper</td><td>Acid</td></tr>
+				<tr><td>Gold</td><td>Fire</td></tr>
+				<tr><td>Green</td><td>Poison</td></tr>
+				<tr><td>Red</td><td>Fire</td></tr>
+				<tr><td>Silver</td><td>Cold</td></tr>
+				<tr><td>White</td><td>Cold</td></tr>
+			</table>
+		</description>
+		<rules>
+			<select type="Racial Trait" name="Draconic Ancestry" supports="Draconic Ancestry" />
+		</rules>
+	</element>
+	<element name="Breath Weapon" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_BREATH_WEAPON">
+		<description>
+			<p>When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time).</p>
+			<p>Each creature in that area must make a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus). On a failed save, a creature takes 1d10 damage of the type determined by your Draconic Ancestry trait. On a successful save, a creature takes half as much damage.</p>
+			<p>This damage increases by 1d10 when you reach character levels 5 (2d10), 11 (3d10), and 17 (4d10).</p>
+			<p>You can use this Breath Weapon a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet action="Action" usage="{{proficiency}}/Long Rest">
+			<description>When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide.
+				Creatures in the area must make a DC {{breath-weapon:dc}} Dex Save taking {{breath-weapon:dice count}}d{{breath-weapon:dice size}} {{draconic-ancestry:damage type}} damage on a fail or half ona success.
+			</description>
+		</sheet>
+		<rules>
+			<stat name="breath-weapon:dc" value="8" />
+			<stat name="breath-weapon:dc" value="constitution:modifier" />
+			<stat name="breath-weapon:dc" value="proficiency" />
+			<stat name="breath-weapon:dice size" value="10" bonus="dice" />
+			<stat name="breath-weapon:dice count" value="1" level="1" />
+			<stat name="breath-weapon:dice count" value="1" level="5" />
+			<stat name="breath-weapon:dice count" value="1" level="11" />
+			<stat name="breath-weapon:dice count" value="1" level="17" />
+		</rules>
+	</element>
+	<element name="Damage Resistance" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_DAMAGE_RESISTANCE">
+		<description>
+			<p>You have resistance to the damage type associated with your draconic ancestry.</p>
+		</description>
+		<sheet>
+			<description>You have resistance to {{draconic-ancestry:damage type}}.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" requirements="ID_RACIAL_TRAIT_2024_DRACONIC_ANCESTRY_BLACK||ID_RACIAL_TRAIT_2024_DRACONIC_ANCESTRY_COPPER" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" requirements="ID_RACIAL_TRAIT_2024_DRACONIC_ANCESTRY_BLUE||ID_RACIAL_TRAIT_2024_DRACONIC_ANCESTRY_BRONZE" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" requirements="ID_RACIAL_TRAIT_2024_DRACONIC_ANCESTRY_BRASS||ID_RACIAL_TRAIT_2024_DRACONIC_ANCESTRY_GOLD||ID_RACIAL_TRAIT_2024_DRACONIC_ANCESTRY_RED" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" requirements="ID_RACIAL_TRAIT_2024_DRACONIC_ANCESTRY_GREEN" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" requirements="ID_RACIAL_TRAIT_2024_DRACONIC_ANCESTRY_SILVER||ID_RACIAL_TRAIT_2024_DRACONIC_ANCESTRY_WHITE" />
+		</rules>
+	</element>
+	<element name="2024 Draconic Ancestry (Black)" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_DRACONIC_ANCESTRY_BLACK">
+		<supports>Draconic Ancestry</supports>
+		<description>
+			<div element="ID_RACIAL_TRAIT_2024_DRACONIC_ANCESTRY" />
+		</description>
+		<sheet alt="Black">
+			<description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="draconic-ancestry" value="Black"/>
+			<stat inline="true" name="draconic-ancestry:damage type" value="Acid" />
+		</rules>
+	</element>
+	<element name="2024 Draconic Ancestry (Blue)" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_DRACONIC_ANCESTRY_BLUE">
+		<supports>Draconic Ancestry</supports>
+		<description>
+			<div element="ID_RACIAL_TRAIT_2024_DRACONIC_ANCESTRY" />
+		</description>
+		<sheet alt="Blue">
+			<description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="draconic-ancestry" value="Blue"/>
+			<stat inline="true" name="draconic-ancestry:damage type" value="Lightning" />
+		</rules>
+	</element>
+	<element name="2024 Draconic Ancestry (Brass)" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_DRACONIC_ANCESTRY_BRASS">
+		<supports>Draconic Ancestry</supports>
+		<description>
+			<div element="ID_RACIAL_TRAIT_2024_DRACONIC_ANCESTRY" />
+		</description>
+		<sheet alt="Brass">
+			<description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="draconic-ancestry" value="Brass"/>
+			<stat inline="true" name="draconic-ancestry:damage type" value="Fire" />
+		</rules>
+	</element>
+	<element name="2024 Draconic Ancestry (Bronze)" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_DRACONIC_ANCESTRY_BRONZE">
+		<supports>Draconic Ancestry</supports>
+		<description>
+			<div element="ID_RACIAL_TRAIT_2024_DRACONIC_ANCESTRY" />
+		</description>
+		<sheet alt="Bronze">
+			<description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="draconic-ancestry" value="Bronze"/>
+			<stat inline="true" name="draconic-ancestry:damage type" value="Lightning" />
+		</rules>
+	</element>
+	<element name="2024 Draconic Ancestry (Copper)" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_DRACONIC_ANCESTRY_COPPER">
+		<supports>Draconic Ancestry</supports>
+		<description>
+			<div element="ID_RACIAL_TRAIT_2024_DRACONIC_ANCESTRY" />
+		</description>
+		<sheet alt="Copper">
+			<description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="draconic-ancestry" value="Copper"/>
+			<stat inline="true" name="draconic-ancestry:damage type" value="Acid" />
+		</rules>
+	</element>
+	<element name="2024 Draconic Ancestry (Gold)" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_DRACONIC_ANCESTRY_GOLD">
+		<supports>Draconic Ancestry</supports>
+		<description>
+			<div element="ID_RACIAL_TRAIT_2024_DRACONIC_ANCESTRY" />
+		</description>
+		<sheet alt="Gold">
+			<description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="draconic-ancestry" value="Gold"/>
+			<stat inline="true" name="draconic-ancestry:damage type" value="Fire" />
+		</rules>
+	</element>
+	<element name="2024 Draconic Ancestry (Green)" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_DRACONIC_ANCESTRY_GREEN">
+		<supports>Draconic Ancestry</supports>
+		<description>
+			<div element="ID_RACIAL_TRAIT_2024_DRACONIC_ANCESTRY" />
+		</description>
+		<sheet alt="Green">
+			<description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="draconic-ancestry" value="Green"/>
+			<stat inline="true" name="draconic-ancestry:damage type" value="Poison" />
+		</rules>
+	</element>
+	<element name="2024 Draconic Ancestry (Red)" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_DRACONIC_ANCESTRY_RED">
+		<supports>Draconic Ancestry</supports>
+		<description>
+			<div element="ID_RACIAL_TRAIT_2024_DRACONIC_ANCESTRY" />
+		</description>
+		<sheet alt="Red">
+			<description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="draconic-ancestry" value="Red"/>
+			<stat inline="true" name="draconic-ancestry:damage type" value="Fire" />
+		</rules>
+	</element>
+	<element name="2024 Draconic Ancestry (Silver)" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_DRACONIC_ANCESTRY_SILVER">
+		<supports>Draconic Ancestry</supports>
+		<description>
+			<div element="ID_RACIAL_TRAIT_2024_DRACONIC_ANCESTRY" />
+		</description>
+		<sheet alt="Silver">
+			<description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="draconic-ancestry" value="Silver"/>
+			<stat inline="true" name="draconic-ancestry:damage type" value="Cold" />
+		</rules>
+	</element>
+	<element name="2024 Draconic Ancestry (White)" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_DRACONIC_ANCESTRY_WHITE">
+		<supports>Draconic Ancestry</supports>
+		<description>
+			<div element="ID_RACIAL_TRAIT_2024_DRACONIC_ANCESTRY" />
+		</description>
+		<sheet alt="White">
+			<description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="draconic-ancestry" value="White"/>
+			<stat inline="true" name="draconic-ancestry:damage type" value="Cold" />
+		</rules>
+	</element>
+	<!--Dwarf-->
+    <element name="2024 Dwarf" type="Race" source="2024 Player's Handbook" id="ID_2024PHB_RACE_DWARF">
+        <description>
+            <p>Dwarves were raised from the earth in the elder days by a deity of the forge. Called by various names on different worlds-Moradin, Reorx, and others-that god gave dwarves an affinity for stone and metal and for living underground. The god also made them resilient like the mountains, with a life span of about 350 years.</p>
+            <p>Squat and often bearded, the original dwarves carved cities and strongholds into mountainsides and under the earth. Their oldest legends tell of conflicts with the monsters of mountaintops and the Underdark, whether those monsters were towering giants or subterranean horrors. Inspired by those tales, dwarves of any culture often sing of valorous deeds-especially of the little overcoming the mighty.</p>
+            <p>On some worlds in the multiverse, the first settlements of dwarves were built in hills or mountains, and the families who trace their ancestry to those settlements call themselves hill dwarves or mountain dwarves, respectively. The Greyhawk and Dragonlance settings have such communities.</p>
+			<h4>DWARF TRAITS </h4>
+            <p>As a Dwarf, you have these special traits.</p>
+            <p class="indent"><strong><em>Creature Type.</em></strong> Humanoid</p>
+            <p class="indent"><strong><em>Size.</em></strong> Medium (about 4–5 feet tall)</p>
+            <p class="indent"><strong><em>Speed.</em></strong> 30 feet</p>
+            <p class="indent"><strong><em>Darkvision.</em></strong> You have Darkvision with a range of 120 feet.</p>
+            <p class="indent"><strong><em>Dwarven Resilience.</em></strong> You have Resistance to Poison damage. You also have Advantage on saving throwsyou make to avoid or end the Poisoned condition.</p>
+            <p class="indent"><strong><em>Dwarven Toughness.</em></strong> Your Hit Point maximum increases by 1, and it increases by 1 again whenever you gain a level.</p>
+            <p class="indent"><strong><em>Stonecunning.</em></strong> As a Bonus Action, you gain Tremorsense with a range of 60 feet for 10 minutes. You must be on a stone surface or touching a stone surface to use this Tremorsense. The stone can be natural or worked.</p>
+			<p class="indent"> You can use this Bonus Action a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Vision" id="ID_VISION_SUPERIORDARKVISION" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_DWARVEN_RESILIENCE" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_DWARVEN_TOUGHNESS" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_STONECUNNING" />
+        </rules>
+    </element>
+	<element name="Dwarven Resilience" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_DWARVEN_RESILIENCE">
+		<description>
+			<p>You have advantage on saving throws against poison, and you have resistance against poison damage.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against poison, and you have resistance against poison damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+	<element name="Dwarven Toughness" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_DWARVEN_TOUGHNESS">
+		<description>
+			<p>Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.</p>
+		</description>
+		<sheet display="false">
+			<description>Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.</description>
+		</sheet>
+		<rules>
+			<stat name="hp" value="level" />
+		</rules>
+	</element>
+	<element name="Stonecunning" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_STONECUNNING">
+		<description>
+			<p>As a Bonus Action, you gain Tremorsense with a range of 60 feet for 10 minutes. You must be on a stone surface or touching a stone surface to use this Tremorsense. The stone can be natural or worked.</p>
+			<p class="indent"> You can use this Bonus Action a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
+			<description>you gain Tremorsense with a range of 60 feet for 10 minutes. You must be on a stone surface or touching a stone surface to use this Tremorsense. The stone can be natural or worked.</description>
+		</sheet>
+	</element>
+	<!-- Elf-->
+    <element name="2024 Elf" type="Race" source="2024 Player's Handbook" id="ID_2024PHB_RACE_ELF">
+        <description>
+            <p>Created by the god Corellon, the first elves could change their forms at will. They lost this ability when Corellon cursed them for plotting with the deity Lolth, who tried and failed to usurp Corellon's dominion. When Lolth was cast into the Abyss, most elves renounced her and earned Corellon's forgiveness, but that which Corellon had taken from them was lost forever.</p>
+            <p>No longer able to shape-shift at will, the elves retreated to the Feywild, where their sorrow was deepened by that plane's influence. Over time, curiosity led many of them to explore other planes of existence, including worlds in the Material Plane. </p>
+			<p>Elves have pointed ears and lack facial and body hair, live for around 750 years, and don't sleep but instead enter a trance when they need to rest, remaining aware of their surroundings while immersing themselves in memories and meditations.</p>
+			<p>An environment subtly transforms elves after they inhabit it for a millennium or more, granting them certain kinds of magic; drow, high elves, and wood elves are examples of elves who have been transformed thus.</p>
+			<h4>DROW</h4>
+			<p>Drow typically dwell in the Underdark and have been shaped by it. Some drow individuals and societies avoid the Underdark altogether yet carry its magic. In the Eberron setting, for example, drow dwell in rainforests and cyclopean ruins on the continent of Xen'drik.</p>
+			<h4>HIGH ELVES</h4>
+			<p>High elves have been infused with the magic of crossings between the Feywild and the Material Plane. On some worlds, high elves refer to themselves by other names. For example, they call themselves sun or moon elves in the Forgotten Realms setting, Silvanesti and Qualinesti in the Dragonlance setting, and Aereni in the Eberron setting.</p>
+			<h4>WOOD ELVES</h4>
+			<p>Wood elves carry the magic of primeval forests within themselves. They are known by many other names, including wild elves, green elves, and forest elves. Grugach are reclusive wood elves of the Greyhawk setting, while the Kagonesti and the Tairnadal are wood elves of the Dragonlance and Eberron settings, respectively.</p>
+			<h4>ELF TRAITS</h4>
+            <p>As an Elf, you have these special traits.</p>
+            <p class="indent"><strong><em>Creature Type.</em></strong> Humanoid</p>
+            <p class="indent"><strong><em>Size.</em></strong> Medium (about 5-6 feet tall)</p>
+            <p class="indent"><strong><em>Speed.</em></strong> 30 feet</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You have Darkvision with a range of 60 feet.</p>
+			<p class="indent"><strong><em>Elven Lineage.</em></strong> You are part of a lineage that grants you supernatural abilities. Choose a lineage from the Elven Lineages table. You gain the level 1 benefit of that lineage.</p>
+            <p class="indent">When you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level.</p>
+            <p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage).</p>
+			<p class="indent"><strong><em>Fey Ancestry.</em></strong> You have Advantage on saving throws you make to avoid or end the Charmed condition.</p>
+			<p class="indent"><strong><em>Keen Senses.</em></strong> You have proficiency in the Insight, Perception, or Survival skill.</p>
+			<p class="indent"><strong><em>Trance.</em></strong> You don't need to sleep, and magic can't put you to sleep. You can finish a Long Rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness.</p>
+			<h4>ELVEN LINEAGES</h4>
+			<table>
+				<thead>
+					<tr><th>Lineage</th><th>Level 1</th><th>Level 3</th><th>Level 5</th></tr>
+				</thead>
+				<tr><td>Drow</td><td>The range of your Darkvision increases to 120 feet. You also know the Dancing Lights cantrip.</td><td>Faerie Fire</td><td>Darkness</td></tr>
+				<tr><td>High Elf</td><td>You know the Prestidigitation cantrip. Whenever you finish a Long Rest, you can replace that cantrip with a different cantrip from the Wizard spell list.</td><td>Detect Magic</td><td>Misty Step</td></tr>
+				<tr><td>Wood Elf</td><td>Your Speed increases to 35 feet. You also know the Druidcraft cantrip.</td><td>Longstrider</td><td>Pass without Trace</td></tr>
+			</table>
+		</description>
+        <sheet display="false" />
+        <rules>
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_ELVENLINEAGE" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_FEYANCESTRY" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_KEENSENSES" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_TRANCE" />
+        </rules>
+    </element>
+	<element name="Elven Lineage" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_ELVENLINEAGE">
+		<description>
+			<p>You are part of a lineage that grants you supernatural abilities. Choose a lineage from the Elven Lineages table. You gain the level 1 benefit of that lineage.</p>
+            <p>When you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level.</p>
+            <p>Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage).</p>
+		</description>
+		<rules>
+			<select type="Sub Race" name="Elven Subrace" supports="Elf" />
+			<!--<select type="Racial Trait" name="Elven Lineage" supports="Elven Lineage" />-->
+		</rules>
+	</element>
+	<element name="Fey Ancestry" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_FEYANCESTRY">
+		<description>
+			<p>You have advantage on saving throws you make to avoid or end the Charmed condition.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws you make to avoid or end the Charmed condition.</description>
+		</sheet>
+	</element>
+	<element name="Keen Senses" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_KEENSENSES">
+		<description>
+			<p>You have proficiency in the Insight, Perception, or Survival skill.</p>
+		</description>
+		<sheet display="false">
+			<description>You have proficiency in the Insight, Perception, or Survival skill.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Keen Senses" supports="ID_PROFICIENCY_SKILL_INSIGHT||ID_PROFICIENCY_SKILL_PERCEPTION||ID_PROFICIENCY_SKILL_SURVIVAL" />
+		</rules>
+	</element>
+	<element name="Trance" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_TRANCE">
+		<description>
+			<p>You don't need to sleep, and magic can't put you to sleep. You can finish a Long Rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness.</p>
+		</description>
+		<sheet>
+			<description>You don't need to sleep, and magic can't put you to sleep. You can finish a Long Rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness.</description>
+		</sheet>
+	</element>
+	<element name="2024 Drow" type="Sub Race" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_ELVENLINEAGE_DROW">
+		<supports>Elf</supports>
+		<description>
+			<div element="ID_RACIAL_TRAIT_2024_ELVENLINEAGE" />
+		</description>
+		<sheet alt="Drow">
+			<description>You know the Dancing Lights cantrip. {{species:spellcasting-ability}} is your spellcasting ability for this spell.</description>
+			<description level="3">You know the Dancing Lights cantrip. You can cast the Faerie Fire spell once per long rest without a spell slot. {{species:spellcasting-ability}} is your spellcasting ability for these spells.</description>
+			<description level="3">You know the Dancing Lights cantrip. You can cast the Faerie Fire and Darkness spells once per long rest without a spell slot. {{species:spellcasting-ability}} is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="elven-lineage" value="Drow"/>
+			<select type="Racial Trait" name="Species Spellcasting Ability" supports="Species Spellcasting Ability" />
+			<grant type="Vision" id="ID_VISION_SUPERIORDARKVISION" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_DANCING_LIGHTS" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_FAERIE_FIRE" level="3" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_DARKNESS" level="5" />
+		</rules>
+	</element>
+	<element name="2024 High Elf" type="Sub Race" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_ELVENLINEAGE_HIGHELF">
+		<supports>Elf</supports>
+		<description>
+			<div element="ID_RACIAL_TRAIT_2024_ELVENLINEAGE" />
+		</description>
+		<sheet alt="High Elf">
+			<description>You know a cantrip from the Wizard spell list that you can swap on a long rest. {{species:spellcasting-ability}} is your spellcasting ability for this spell.</description>
+			<description level="3">You know a cantrip from the Wizard spell list that you can swap on a long rest. You can cast the Detect Magic spell once per long rest without a spell slot. {{species:spellcasting-ability}} is your spellcasting ability for these spells.</description>
+			<description level="3">You know a cantrip from the Wizard spell list that you can swap on a long rest. You can cast the Detect Magic and Misty Step spells once per long rest without a spell slot. {{species:spellcasting-ability}} is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="elven-lineage" value="High Elf"/>
+			<select type="Racial Trait" name="Species Spellcasting Ability" supports="Species Spellcasting Ability" />
+			<select type="Spell" name="Wizard Cantrip (High Elf)" supports="Wizard&amp;&amp;0" allowreplaceable="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_DETECT_MAGIC" level="3" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_MISTY_STEP" level="5" />
+		</rules>
+	</element>
+	<element name="2024 Wood Elf" type="Sub Race" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_ELVENLINEAGE_WOODELF">
+		<supports>Elf</supports>
+		<description>
+			<div element="ID_RACIAL_TRAIT_2024_ELVENLINEAGE" />
+		</description>
+		<sheet alt="Wood Elf">
+			<description>You know the Druidcraft cantrip. {{species:spellcasting-ability}} is your spellcasting ability for these spells.</description>
+			<description level="3">You know the Druidcraft cantrip. You can cast the Longstrider spell once per long rest without a spell slot. {{species:spellcasting-ability}} is your spellcasting ability for these spells.</description>
+			<description level="3">You know the Druidcraft cantrip. You can cast the Longstrider and Pass without Trace spells once per long rest without a spell slot. {{species:spellcasting-ability}} is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="elven-lineage" value="Wood Elf"/>
+			<select type="Racial Trait" name="Species Spellcasting Ability" supports="Species Spellcasting Ability" />
+			<stat name="innate speed" value="5" bonus="racial" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_DRUIDCRAFT" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_LONGSTRIDER" level="3" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_PASS_WITHOUT_TRACE" level="5" />
+		</rules>
+	</element>
+	<!--Gnome-->
+	<element name="2024 Gnome" type="Race" source="2024 Player's Handbook" id="ID_2024_RACE_GNOME">
+		<description>
+			<p>Gnomes are magical folk created by gods of invention, illusions, and life underground. The earliest gnomes were seldom seen by other folk due to the gnomes' secretive nature and their propensity for living in forests and burrows. What they lacked in size, they made up for in cleverness. They confounded predators with traps and labyrinthine tunnels. They also learned magic from gods like Garl Glittergold, Baervan Wildwanderer, and Baravar Cloakshadow, who visited them in disguise. That magic eventually created the lineages of forest gnomes and rock gnomes.</p>
+			<p>Gnomes are petite folk with big eyes and pointed ears, who live around 425 years. Many gnomes like the feeling of a roof over their head, even if that "roof" is nothing more than a hat.</p>
+			<h4>GNOME TRAITS</h4>
+			<p>As a Gnome, you have these special traits.</p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> Humanoid</p>
+			<p class="indent"><strong><em>Size.</em></strong> Small (about 3-4 feet tall)</p>
+			<p class="indent"><strong><em>Speed.</em></strong> 30 feet</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You have Darkvision with a range of 60 feet.</p>
+			<p class="indent"><strong><em>Gnomish Cunning.</em></strong> You have Advantage on Intelligence, Wisdom, and Charisma saving throws.</p>
+			<p class="indent"><strong><em>Gnomish Lineage.</em></strong> You are part of a lineage that grants you supernatural abilities. Choose one of the following options; whichever one you choose, Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage):</p>
+			<p class="indent"><strong><em>Forest Gnome.</em></strong> You know the Minor Illusion cantrip. You also always have the Speak with Animals spell prepared. You can cast it without a spell slot a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest. You can also use any spell slots you have to cast the spell.</p>
+			<p class="indent"><strong><em>Rock Gnome.</em></strong> You know the Mending and Prestidigitation cantrips. In addition, you can spend 10 minutes casting Prestidigitation to create a Tiny clockwork device (AC 5,1 HP), such as a toy, fire starter, or music box. When you create the device, you determine its function by choosing one effect from Prestidigitation; the device produces that effect whenever you or another creature takes a Bonus Action to activate it with a touch. If the chosen effect has options within it, you choose one of those options for the device when you create it. For example, if you choose the spell's ignite-extinguish effect, you determine whether the device ignites or extinguishes fire; the device doesn't do both. You can have three such devices in existence at a time, and each falls apart 8 hours after its creation or when you dismantle it with a touch as a Utilize action.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_GNOMISHCUNNING" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_GNOMISHLINEAGE" />
+        </rules>
+    </element>
+	<element name="Gnomish Cunning" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_GNOMISHCUNNING">
+		<description>
+			<p>You have Advantage on Intelligence, Wisdom, and Charisma saving throws.</p>
+		</description>
+		<sheet>
+			<description>You have Advantage on Intelligence, Wisdom, and Charisma saving throws.</description>
+		</sheet>
+	</element>
+	<element name="Gnomish Lineage" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_GNOMISHLINEAGE">
+		<description>
+			<p>You are part of a lineage that grants you supernatural abilities. Choose one of the following options; whichever one you choose, Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage):</p>
+			<p><strong><em>Forest Gnome.</em></strong> You know the Minor Illusion cantrip. You also always have the Speak with Animals spell prepared. You can cast it without a spell slot a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest. You can also use any spell slots you have to cast the spell.</p>
+			<p><strong><em>Rock Gnome.</em></strong> You know the Mending and Prestidigitation cantrips. In addition, you can spend 10 minutes casting Prestidigitation to create a Tiny clockwork device (AC 5,1 HP), such as a toy, fire starter, or music box. When you create the device, you determine its function by choosing one effect from Prestidigitation; the device produces that effect whenever you or another creature takes a Bonus Action to activate it with a touch. If the chosen effect has options within it, you choose one of those options for the device when you create it. For example, if you choose the spell's ignite-extinguish effect, you determine whether the device ignites or extinguishes fire; the device doesn't do both. You can have three such devices in existence at a time, and each falls apart 8 hours after its creation or when you dismantle it with a touch as a Utilize action.</p>
+		</description>
+		<rules>
+			<select type="Racial Trait" name="Gnomish Lineage" supports="Gnome" />
+		</rules>
+	</element>
+	<element name="2024 Forest Gnome" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_GNOMISHLINEAGE_FORESTGNOME">
+		<supports>Gnome</supports>
+		<description>
+			<p>You know the Minor Illusion cantrip. You also always have the Speak with Animals spell prepared. You can cast it without a spell slot a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest. You can also use any spell slots you have to cast the spell.</p>
+		</description>
+		<sheet alt="Forest Gnome">
+			<description>You know the Minor Illusion cantrip. Your spellcasting ability is {{species:spellcasting-ability}}.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="gnomish-lineage" value="Forest Gnome"/>
+			<select type="Racial Trait" name="Species Spellcasting Ability" supports="Species Spellcasting Ability" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_MINOR_ILLUSION" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_SPEAK_WITH_BEASTS" />
+		</rules>
+	</element>
+	<element name="Speak with Beasts" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_SPEAK_WITH_BEASTS">
+		<description>
+			<p>You always have the Speak with Animals spell prepared. You can cast it without a spell slot a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest. You can also use any spell slots you have to cast the spell.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>You always have the Speak with Animals spell prepared and can cast it without a spell slot. You can also use any spell slots you have to cast the spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_SPEAK_WITH_ANIMALS" />
+		</rules>
+	</element>
+	<element name="2024 Rock Gnome" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_GNOMISHLINEAGE_ROCKGNOME">
+		<supports>Gnome</supports>
+		<description>
+			<p>You know the Mending and Prestidigitation cantrips. </p>
+			<p>In addition, you can spend 10 minutes casting Prestidigitation to create a Tiny clockwork device (AC 5,1 HP), such as a toy, fire starter, or music box. When you create the device, you determine its function by choosing one effect from Prestidigitation; the device produces that effect whenever you or another creature takes a Bonus Action to activate it with a touch. If the chosen effect has options within it, you choose one of those options for the device when you create it. For example, if you choose the spell's ignite-extinguish effect, you determine whether the device ignites or extinguishes fire; the device doesn't do both. You can have three such devices in existence at a time, and each falls apart 8 hours after its creation or when you dismantle it with a touch as a Utilize action.</p>
+		</description>
+		<sheet alt="Rock Gnome">
+			<description>You know the Mending and Prestidigitation cantrips. Your spellcasting ability is {{species:spellcasting-ability}}. In addition, you can spend 10 minutes casting Prestidigitation to create a Tiny clockwork device (AC 5,1 HP), such as a toy, fire starter, or music box. When you create the device, you determine its function by choosing one effect from Prestidigitation; the device produces that effect whenever you or another creature takes a Bonus Action to activate it with a touch. If the chosen effect has options within it, you choose one of those options for the device when you create it. You can have three such devices in existence at a time, and each falls apart 8 hours after its creation or when you dismantle it with a touch as a Utilize action.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="gnomish-lineage" value="Rock Gnome"/>
+			<select type="Racial Trait" name="Species Spellcasting Ability" supports="Species Spellcasting Ability" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_MENDING" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_PRESTIDIGITATION"/>
+		</rules>
+	</element>
+	<!--Goliath-->
+	<element name="2024 Goliath" type="Race" source="2024 Player's Handbook" id="ID_2024PHB_RACE_GOLIATH">
+        <description>
+            <p>Towering over most folk, goliaths are distant descendants of giants. Each goliath bears the favors of the first giants- favors that manifest in various supernatural boons, including the ability to quickly grow and temporarily approach the height of goliaths' gigantic kin.</p>
+            <p>Goliaths have physical characteristics that are reminiscent of the giants in their family lines. For example, some goliaths look like stone giants, while others resemble fire giants. Whatever giants they count as kin, goliaths have forged their own path in the multiverse-unencumbered by the internecine conflicts that have ravaged giantkind for ages-and seek heights above those reached by their ancestors.</p>
+            <h4>GOLIATH TRAITS</h4>
+            <p>As a Goliath, you have these special traits.</p>
+            <p class="indent"><strong><em>Creature Type.</em></strong> Humanoid</p>
+            <p class="indent"><strong><em>Size.</em></strong> Medium (about 7-8 feet tall)</p>
+            <p class="indent"><strong><em>Speed.</em></strong> 35 feet</p>
+            <p class="indent"><strong><em>Powerful Build.</em></strong> You have Advantage on any saving throw you make to end the Grappled condition. You also count as one size larger when determining your carrying capacity.</p>
+			<p class="indent"><strong><em>Large Form.</em></strong> Starting at character level 5, you can change your size to Large as a Bonus Action if you're in a big enough space. This transformation lasts for 10 minutes or until you end it (no action required). For that duration, you have Advantage on Strength checks, and your Speed increases by 10 feet. Once you use this trait, you can't use it again until you finish a Long Rest.</p>
+            <p class="indent"><strong><em>Giant Ancestry.</em></strong> You are descended from Giants. Choose one of the following benefits- a supernatural boon from your ancestry; you can use the chosen benefit a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest:</p>
+            <p></p>
+			<p class="indent"><strong><em>Cloud's Jaunt (Cloud Giant)</em></strong> As a Bonus Action, you magically teleport up to 30 feet to an unoccupied space you can see.</p>
+			<p class="indent"><strong><em>Fire's Burn (Fire Giant).</em></strong> When you hit a target with an attack roll and deal damage to it, you can also deal 1d10 Fire damage to that target.</p>
+			<p class="indent"><strong><em>Frost's Chill (Frost Giant).</em></strong> When you hit a target with an attack roll and deal damage to it, you can also deal 1d6 Cold damage to that target and reduce its Speed by 10 feet until the start of your next turn.</p>
+			<p class="indent"><strong><em>Hill's Tumble (Hill Giant).</em></strong> When you hit a Large or smaller creature with an attack roll and deal damage to it, you can give that target the Prone condition.</p>
+			<p class="indent"><strong><em>Stone's Endurance (Stone Giant).</em></strong> When you take damage, you can take a Reaction to roll 1d12. Add your Constitution modifier to the number rolled and reduce the damage by that total.</p>
+			<p class="indent"><strong><em>Storm's Thunder (Storm Giant).</em></strong> When you take damage from a creature within 60 feet of you, you can take a Reaction to deal 1d8 Thunder damage to that creature.</p>
+		</description>
+        <sheet display="false" />
+        <rules>
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_POWERFULBUILD" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_LARGEFORM" level="5" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_GIANTANCESTRY" />
+        </rules>
+    </element>
+	<element name="Powerful Build" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_POWERFULBUILD">
+		<description>
+			<p>You have Advantage on any saving throw you make to end the Grappled condition. You also count as one size larger when determining your carrying capacity.</p>
+		</description>
+		<sheet>
+			<description>You have Advantage on any saving throw you make to end the Grappled condition. You also count as one size larger when determining your carrying capacity.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
+		</rules>
+	</element>
+	<element name="Large Form" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_LARGEFORM">
+		<description>
+			<p>Starting at character level 5, you can change your size to Large as a Bonus Action if you're in a big enough space. This transformation lasts for 10 minutes or until you end it (no action required). For that duration, you have Advantage on Strength checks, and your Speed increases by 10 feet. Once you use this trait, you can't use it again until you finish a Long Rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>You can change your size to Large if you're in a big enough space. This transformation lasts for 10 minutes or until you end it (no action required). For that duration, you have Advantage on Strength checks, and your Speed increases by 10 feet.</description>
+		</sheet>
+	</element>
+	<element name="Goliath Ancestry" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_GIANTANCESTRY">
+		<description>
+			<p>You are descended from Giants. Choose one of the following benefits- a supernatural boon from your ancestry; you can use the chosen benefit a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest:</p>
+			<p><strong><em>Cloud's Jaunt (Cloud Giant)</em></strong> As a Bonus Action, you magically teleport up to 30 feet to an unoccupied space you can see.</p>
+			<p><strong><em>Fire's Burn (Fire Giant).</em></strong> When you hit a target with an attack roll and deal damage to it, you can also deal 1d10 Fire damage to that target.</p>
+			<p><strong><em>Frost's Chill (Frost Giant).</em></strong> When you hit a target with an attack roll and deal damage to it, you can also deal 1d6 Cold damage to that target and reduce its Speed by 10 feet until the start of your next turn.</p>
+			<p><strong><em>Hill's Tumble (Hill Giant).</em></strong> When you hit a Large or smaller creature with an attack roll and deal damage to it, you can give that target the Prone condition.</p>
+			<p><strong><em>Stone's Endurance (Stone Giant).</em></strong> When you take damage, you can take a Reaction to roll 1d12. Add your Constitution modifier to the number rolled and reduce the damage by that total.</p>
+			<p><strong><em>Storm's Thunder (Storm Giant).</em></strong> When you take damage from a creature within 60 feet of you, you can take a Reaction to deal 1d8 Thunder damage to that creature.</p>
+		</description>
+		<rules>
+			<select type="Racial Trait" name="Giant Ancestry" supports="Goliath Ancestry" />
+		</rules>
+	</element>
+	<element name="Cloud's Jaunt" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_GIANTANCESTRY_CLOUDSJAUNT">
+		<supports>Goliath Ancestry</supports>
+		<description>
+			<p>As a Bonus Action, you magically teleport up to 30 feet to an unoccupied space you can see.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
+			<description>You magically teleport up to 30 feet to an unoccupied space you can see.</description>
+		</sheet>
+	</element>
+	<element name="Fire's Burn" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_GIANTANCESTRY_FIRESBURN">
+		<supports>Goliath Ancestry</supports>
+		<description>
+			<p>When you hit a target with an attack roll and deal damage to it, you can also deal 1d10 Fire damage to that target.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>When you hit a target with an attack roll and deal damage to it, you can also deal 1d10 Fire damage to that target.</description>
+		</sheet>
+	</element>
+	<element name="Frost's Chill" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_GIANTANCESTRY_FROSTSCHILL">
+		<supports>Goliath Ancestry</supports>
+		<description>
+			<p>When you hit a target with an attack roll and deal damage to it, you can also deal 1d6 Cold damage to that target and reduce its Speed by 10 feet until the start of your next turn.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>When you hit a target with an attack roll and deal damage to it, you can also deal 1d6 Cold damage to that target and reduce its Speed by 10 feet until the start of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Hill's Tumble" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_GIANTANCESTRY_HILLSTUMBLE">
+		<supports>Goliath Ancestry</supports>
+		<description>
+			<p>When you hit a Large or smaller creature with an attack roll and deal damage to it, you can give that target the Prone condition.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>When you hit a Large or smaller creature with an attack roll and deal damage to it, you can give that target the Prone condition.</description>
+		</sheet>
+	</element>
+	<element name="Stone's Endurance" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_GIANTANCESTRY_STONESENDURANCE">
+		<supports>Goliath Ancestry</supports>
+		<description>
+			<p>When you take damage, you can take a Reaction to roll 1d12. Add your Constitution modifier to the number rolled and reduce the damage by that total.</p>
+		</description>
+		<sheet action="Reaction" usage="{{proficiency}}/Long Rest">
+			<description>When you take damage, you can take a Reaction to roll 1d12+{{constitution:modifier}} and reduce the damage by that total.</description>
+		</sheet>
+	</element>
+	<element name="Storm's Thunder" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_GIANTANCESTRY_STORMSTHUNDER">
+		<supports>Goliath Ancestry</supports>
+		<description>
+			<p>When you take damage from a creature within 60 feet of you, you can take a Reaction to deal 1d8 Thunder damage to that creature.</p>
+		</description>
+		<sheet action="Reaction" usage="{{proficiency}}/Long Rest">
+			<description>When you take damage from a creature within 60 feet of you, you can take a Reaction to deal 1d8 Thunder damage to that creature.</description>
+		</sheet>
+	</element>
+	<!--Halfling-->
+    <element name="2024 Halfling" type="Race" source="2024 Player's Handbook" id="ID_2024PHB_RACE_HALFLING">
+        <description>
+            <p>Cherished and guided by gods who value life, home, and hearth, halflings gravitate toward bucolic havens where family and community help shape their lives. That said, many halflings possess a brave and adventurous spirit that leads them on journeys of discovery, affording them the chance to explore a bigger world and make new friends along the way.Their size-similar to that of a human child-helps them pass through crowds unnoticed and slip through tight spaces.</p>
+            <p>Anyone who has spent time around halflings, particularly halfling adventurers, has likely witnessed the storied "luck of the halflings" in action. When a halfling is in mortal danger, an unseen force seems to intervene on the halfling's behalf. Many halflings believe in the power of luck, and they attribute their unusual gift to one or more of their benevolent gods, including Yondalla, Brandobaris, and Charmalaine. The same gift might contribute to their robust life spans (about 150 years).</p>
+            <p>Halfling communities come in all varieties. For every sequestered shire tucked away in an unspoiled part of the world, there's a crime syndicate like the Boromar Clan in the Eberron setting or a territorial mob of halflings like those in the Dark Sun setting, Halflings who prefer to live underground are sometimes called strongheart halflings or stouts. Nomadic halflings, as well as those who live among humans and other tall folk, are sometimes called lightfoot halflings or tallfellows.</p>
+			<h4>HALFLING TRAITS</h4>
+            <p>As a Halfling. you have these special traits.</p>
+            <p class="indent"><strong><em>Creature Type.</em></strong> Humanoid</p>
+            <p class="indent"><strong><em>Size.</em></strong> Small (about 2-3 feet tall)</p>
+            <p class="indent"><strong><em>Speed.</em></strong> 30 feet</p>
+            <p class="indent"><strong><em>Brave.</em></strong> You have Advantage on saving throws you make to avoid or end the Frightened condition.</p>
+            <p class="indent"><strong><em>Halfling Nimbleness.</em></strong> You can move through the space of any creature that is a size larger than you, but you can't stop in the same space.</p>
+            <p class="indent"><strong><em>Luck.</em></strong> When you roll a 1 on the d20 of a D20 Test, you can reroll the die, and you must use the new roll.</p>
+            <p class="indent"><strong><em>Naturally Stealthy.</em></strong> You can take the Hide action even when you are obscured only by a creature that is at least one size larger than you.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_BRAVE" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_HALFLINGNIMBLENESS" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_LUCK" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_NATURALLYSTEALTHY" />
+        </rules>
+    </element>
+	<element name="Brave" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_BRAVE">
+		<description>
+			<p>You have Advantage on saving throws you make to avoid or end the Frightened condition.</p>
+		</description>
+		<sheet>
+			<description>You have Advantage on saving throws you make to avoid or end the Frightened condition.</description>
+		</sheet>
+	</element>
+	<element name="Halfling Nimbleness" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_HALFLINGNIMBLENESS">
+		<description>
+			<p>You can move through the space of any creature that is a size larger than you, but you can't stop in the same space.</p>
+		</description>
+		<sheet>
+			<description>You can move through the space of any creature that is a size larger than you, but you can't stop in the same space.</description>
+		</sheet>
+	</element>
+	<element name="Luck" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_LUCK">
+		<description>
+			<p>When you roll a 1 on the d20 of a D20 Test, you can reroll the die, and you must use the new roll.</p>
+		</description>
+		<sheet>
+			<description>When you roll a 1 on the d20 of a D20 Test, you can reroll the die, and you must use the new roll.</description>
+		</sheet>
+	</element>
+	<element name="Naturally Stealthy" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_NATURALLYSTEALTHY">
+		<description>
+			<p>You can take the Hide action even when you are obscured only by a creature that is at least one size larger than you.</p>
+		</description>
+		<sheet>
+			<description>You can take the Hide action even when you are obscured only by a creature that is at least one size larger than you.</description>
+		</sheet>
+	</element>
+	<!--Human-->
+    <element name="2024 Human" type="Race" source="2024 Player's Handbook" id="ID_2024PHB_RACE_HUMAN">
+        <description>
+            <p>Found throughout the multiverse, humans are as varied as they are numerous, and they endeavor to achieve as much as they can in the years they are given. Their ambition and resourcefulness are commended, respected, and feared on many worlds.</p>
+            <p>Humans are as diverse in appearance as the people of Earth, and they have many gods. Scholars dispute the origin of humanity, but one of the earliest known human gatherings is said to have occurred in Sigil, the torus-shaped city at the center of the multiverse and the place where the Common language was born. From there, humans could have spread to every part of the multiverse, bringing the City of Doors cosmopolitanism with them.</p>
+            <h4>HUMAN TRAITS</h4>
+            <p>As a Human, you have these special traits.</p>
+            <p class="indent"><strong><em>Creature Type.</em></strong> Humanoid</p>
+            <p class="indent"><strong><em>Size.</em></strong> Medium (about 4-7 feet tall) or Small (about 2-4 feet tall), chosen when you select this species</p>
+            <p class="indent"><strong><em>Speed.</em></strong> 30 feet</p>
+            <p class="indent"><strong><em>Resourceful.</em></strong> You gain Heroic Inspiration whenever you finish a Long Rest.</p>
+            <p class="indent"><strong><em>Skillful.</em></strong> You gain proficiency in one skill of your choice.</p>
+            <p class="indent"><strong><em>Versatile.</em></strong> You gain an Origin feat of your choice. Skilled is recommended.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_RESOURCEFUL" />
+			<select type="Proficiency" name="Skill Proficiency (Human)" supports="Skill" />
+			<select type="Feat" name="Origin Feat (Human)" supports="Origin Feat" />
+        </rules>
+    </element>
+	<element name="Resourceful" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_RESOURCEFUL">
+		<description>
+			<p>You gain Heroic Inspiration whenever you finish a Long Rest.</p>
+		</description>
+		<sheet>
+			<description>You gain Heroic Inspiration whenever you finish a Long Rest.</description>
+		</sheet>
+	</element>
+	<!--Orc-->
+    <element name="2024 Orc" type="Race" source="2024 Player's Handbook" id="ID_2024PHB_RACE_ORC">
+        <description>
+            <p>Orcs trace their creation to Gruumsh, a powerful god who roamed the wide open spaces of the Material Plane. Gruumsh equipped his children with gifts to help them wander great plains, vast caverns, and churning seas and to face the monsters that lurk there. Even when they turn their devotion to other gods, orcs retain Gruumsh's gifts: endurance. determination, and the ability to see in darkness.</p>
+            <p>Orcs are, on average, tall and broad. They have gray skin, ears that are sharply pointed, and prominent lower canines that resemble small tusks. Orc youths on some worlds are told about their ancestors' great travels and travails. Inspired by those tales, many of those orcs wonder when Gruumsh will call on them to match the heroic deeds of old and if they will prove worthy of his favor. Other orcs are happy to leave old tales in the past and find their own way.</p>
+            <h4>ORC TRAITS</h4>
+            <p>As an Orc, you have these special traits.</p>
+            <p class="indent"><strong><em>Creature Type.</em></strong> Humanoid</p>
+            <p class="indent"><strong><em>Size.</em></strong> Medium (about 6-7 feet tall)</p>
+            <p class="indent"><strong><em>Speed.</em></strong> 30 feet</p>
+            <p class="indent"><strong><em>Adrenaline Rush.</em></strong> You can take the Dash action as a Bonus Action. When you do so, you gain a number of Temporary Hit Points equal to your Proficiency Bonus. You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Short or Long Rest.</p>
+            <p class="indent"><strong><em>Darkvision.</em></strong> You have Darkvision with a range of 120 feet.</p>
+            <p class="indent"><strong><em>Relentless Endurance.</em></strong> When you are reduced to 0 Hit Points but not killed outright, you can drop to 1 Hit Point instead. Once you use this trait, you can't do so again until you finish a Long Rest.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Vision" id="ID_VISION_SUPERIORDARKVISION" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_ADRENALINERUSH" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_RELENTLESSENDURANCE" />
+        </rules>
+    </element>
+	<element name="Adrenaline Rush" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_ADRENALINERUSH">
+		<description>
+			<p>You can take the Dash action as a Bonus Action. When you do so, you gain a number of Temporary Hit Points equal to your Proficiency Bonus. You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Short or Long Rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{proficiency}}/Short Rest">
+			<description>You can take the Dash action and gain {{proficiency}} Temporary Hit Points.</description>
+		</sheet>
+	</element>
+	<element name="Relentless Endurance" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_RELENTLESSENDURANCE">
+		<description>
+			<p>When you are reduced to 0 Hit Points but not killed outright, you can drop to 1 Hit Point instead. Once you use this trait, you can't do so again until you finish a Long Rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you are reduced to 0 Hit Points but not killed outright, you can drop to 1 Hit Point instead.</description>
+		</sheet>
+	</element>
+	<!--Tiefling-->
+	<element name="2024 Tiefling" type="Race" source="2024 Player's Handbook" id="ID_2024PHB_RACE_TIEFLING">
+        <description>
+            <p>Tieflings are either born in the Lower Planes or have fiendish ancestors who originated there. A tiefling (pronounced TEE-fling) is linked by blood to a devil, a demon, or some other Fiend. This connection to the Lower Planes is the tiefling's fendish legacy, which comes with the promise of power yet has no effect on the tiefling's moral outlook.</p>
+            <p>A tiefling chooses whether to embrace or lament their fiendish legacy. The three legacies are described below.</p>
+            <h4>ABYSSAL</h4>
+            <p>The entropy of the Abyss, the chaos of Pandemonium, and the despair of Carceri call to tieflings who have the abyssal legacy. Horns, fur, tusks, and peculiar scents are common physical features of such tieflings, most of whom have the blood of demons coursing through their veins.</p>
+			<h4>CHTHONIC</h4>
+            <p>Tieflings who have the chthonic legacy feel not only the tug of Carceri but also the greed of Gehenna and the gloom of Hades. Some of these tieflings look cadaverous. Others possess the unearthly beauty of a succubus, or they have physical features in common with a night hag, a yugoloth, or some other Neutral Evil fiendish ancestor.</p>
+			<h4>INFERNAL</h4>
+            <p>The infernal legacy connects tieflings not only to Gehenna but also the Nine Hells and the raging battlefields of Acheron. Horns, spines, tails, golden eyes, and a faint odor of sulfur or smoke are common physical features of such tieflings, most of whom trace their ancestry to devils.</p>
+			<h4>TIEFLING TRAITS</h4>
+            <p>As a Tiefling, you have the following special traits.</p>
+            <p class="indent"><strong><em>Creature Type.</em></strong> Humanoid</p>
+            <p class="indent"><strong><em>Size.</em></strong> Medium (about 4-7 feet tall) or small (about 3-4 feet tall), chosen when you select this species </p>
+            <p class="indent"><strong><em>Speed.</em></strong> 30 feet</p>
+            <p class="indent"><strong><em>Darkvision.</em></strong> You have Darkvision with a range of 60 feet.</p>
+            <p class="indent"><strong><em>Fiendish Legacy.</em></strong> You are the recipient of a legacy that grants you supernatural abilities. Choose a legacy from the Fiendish Legacies table. You gain the level 1 benefit of the chosen legacy.</p>
+            <p class="indent">When you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell prepared . You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest.You can also cast the spell using any spell slots you have of the appropriate level.</p>
+            <p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the legacy).</p>
+			<p class="indent"><strong><em>Otherworldly Presence.</em></strong> You know the Thaumaturgy cantrip. When you cast it with this trait, the spell uses the same spellcasting ability you use for your Fiendish Legacy trait.</p>
+			<h4>FIENDISH LEGACIES</h4>
+			<table>
+				<thead>
+					<tr><th>Legacy</th><th>Level 1</th><th>Level 3</th><th>Level 5</th></tr>
+				</thead>
+				<tr><td>Abyssal</td><td>You have Resistance to Poison damage. You also know the Poison Spray cantrip.</td><td>Ray of Sickness</td><td>Hold Person</td></tr>
+				<tr><td>Chthonic</td><td>You have Resistance to Necrotic damage. You also know the Chill Touch cantrip.</td><td>False Life</td><td>Ray of Enfeeblement</td></tr>
+				<tr><td>Infernal</td><td>You have Resistance to Fire damage. You also know the Fire Bolt cantrip.</td><td>Hellish Rebuke</td><td>Darkness</td></tr>
+			</table>
+        </description>
+        <sheet display="false" />
+        <rules>
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_FIENDISHLEGACY" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_OTHERWORLDLYPRESENCE" />
+			<select type="Racial Trait" name="Species Spellcasting Ability" supports="Species Spellcasting Ability" />
+        </rules>
+    </element>
+	<element name="Fiendish Legacy" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_FIENDISHLEGACY">
+		<description>
+			<p> You are the recipient of a legacy that grants you supernatural abilities. Choose a legacy from the Fiendish Legacies table. You gain the level 1 benefit of the chosen legacy.</p>
+            <p class="indent">When you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell prepared . You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest.You can also cast the spell using any spell slots you have of the appropriate level.</p>
+            <p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the legacy).</p>
+			<h4>FIENDISH LEGACIES</h4>
+			<table>
+				<thead>
+					<tr><th>Legacy</th><th>Level 1</th><th>Level 3</th><th>Level 5</th></tr>
+				</thead>
+				<tr><td>Abyssal</td><td>You have Resistance to Poison damage. You also know the Poison Spray cantrip.</td><td>Ray of Sickness</td><td>Hold Person</td></tr>
+				<tr><td>Chthonic</td><td>You have Resistance to Necrotic damage. You also know the Chill Touch cantrip.</td><td>False Life</td><td>Ray of Enfeeblement</td></tr>
+				<tr><td>Infernal</td><td>You have Resistance to Fire damage. You also know the Fire Bolt cantrip.</td><td>Hellish Rebuke</td><td>Darkness</td></tr>
+			</table>
+		</description>
+		<rules>
+			<select type="Racial Trait" name="Fiendish Legacy" supports="Fiendish Legacy" />
+		</rules>
+	</element>
+	<element name="2024 Abyssal" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_FIENDISHLEGACY_ABYSSAL">
+		<supports>Fiendish Legacy</supports>
+		<description>
+			<div element="ID_RACIAL_TRAIT_2024_FIENDISHLEGACY" />
+		</description>
+		<sheet alt="Abyssal">
+			<description>You know the Poison Spray cantrip. {{species:spellcasting-ability}} is your spellcasting ability for this spell.</description>
+			<description level="3">You know the Poison Spray cantrip. You can cast the Ray of Sickness spell once per long rest without a spell slot. {{species:spellcasting-ability}} is your spellcasting ability for these spells.</description>
+			<description level="3">You know the Poison Spray cantrip. You can cast the Ray of Sickness and Hold Person spells once per long rest without a spell slot. {{species:spellcasting-ability}} is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_POISON_SPRAY" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_RAY_OF_SICKNESS" level="3" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_HOLD_PERSON" level="5" />
+		</rules>
+	</element>
+	<element name="2024 Chthonic" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_FIENDISHLEGACY_CHTHONIC">
+		<supports>Fiendish Legacy</supports>
+		<description>
+			<div element="ID_RACIAL_TRAIT_2024_FIENDISHLEGACY" />
+		</description>
+		<sheet alt="Chthonic">
+			<description>You know the Chill Touch cantrip. {{species:spellcasting-ability}} is your spellcasting ability for this spell.</description>
+			<description level="3">You know the Chill Touch cantrip. You can cast the False Life spell once per long rest without a spell slot. {{species:spellcasting-ability}} is your spellcasting ability for these spells.</description>
+			<description level="3">You know the Chill Touch cantrip. You can cast the False Life and Ray of Enfeeblement spells once per long rest without a spell slot. {{species:spellcasting-ability}} is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_CHILL_TOUCH" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_FALSE_LIFE" level="3" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_RAY_OF_ENFEEBLEMENT" level="5" />
+		</rules>
+	</element>
+	<element name="2024 Infernal" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_FIENDISHLEGACY_INFERNAL">
+		<supports>Fiendish Legacy</supports>
+		<description>
+			<div element="ID_RACIAL_TRAIT_2024_FIENDISHLEGACY" />
+		</description>
+		<sheet alt="Infernal">
+			<description>You know the Fire Bolt cantrip. {{species:spellcasting-ability}} is your spellcasting ability for this spell.</description>
+			<description level="3">You know the Fire Bolt cantrip. You can cast the Hellish Rebuke spell once per long rest without a spell slot. {{species:spellcasting-ability}} is your spellcasting ability for these spells.</description>
+			<description level="3">You know the Fire Bolt cantrip. You can cast the Hellish Rebuke and Darkness spells once per long rest without a spell slot. {{species:spellcasting-ability}} is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_FIRE_BOLT" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_HELLISH_REBUKE" level="3" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_DARKNESS" level="5" />
+		</rules>
+	</element>
+	<element name="2024 Otherwordly Presence" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_OTHERWORLDLYPRESENCE">
+		<supports>Fiendish Legacy</supports>
+		<description>
+			<p>You know the Thaumaturgy cantrip. When you cast it with this trait, the spell uses the same spellcasting ability you use for your Fiendish Legacy trait.</p>
+		</description>
+		<sheet alt="Otherwordly Presence">
+			<description>You know the Thaumaturgy cantrip. {{species:spellcasting-ability}} is your spellcasting ability for this spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_FIRE_BOLT" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_HELLISH_REBUKE" level="3" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_DARKNESS" level="5" />
+		</rules>
+	</element>
+
+
+    <!--Default
+    <element name="2024 " type="Race" source="2024 Player's Handbook" id="ID_2024PHB_RACE_">
+        <description>
+            <p>.</p>
+            <p>.</p>
+            <h4>TRAITS</h4>
+            <p>.</p>
+            <p class="indent"><strong><em>Creature Type.</em></strong> Humanoid</p>
+            <p class="indent"><strong><em>Size.</em></strong> Medium (about 5-7 feet tall)</p>
+            <p class="indent"><strong><em>Speed.</em></strong> </p>
+            <p class="indent"><strong><em>.</em></strong> .</p>
+            <p class="indent"><strong><em>Darkvision.</em></strong> You have Darkvision with a range of 60 feet.</p>
+            <p class="indent"><strong><em>.</em></strong> .</p>
+            <p class="indent"><strong><em>.</em></strong> .</p>
+            <p class="indent"><strong><em>.</em></strong> </p>
+        </description>
+        <sheet display="false" />
+        <rules>
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_" level="3" />
+        </rules>
+    </element>
+	-->
+	<!--Species Spellcasting Ability-->
+	<element name="Intelligence" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_SPECIES_SPELLCASTING_ABILITY">
+		<supports>Species Spellcasting Ability</supports>
+		<description>
+			<p>Intelligence is your spellcasting ability for the spells you cast with this trait.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>
+			</center>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="species:spellcasting-ability" value="Intelligence" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_SPECIES_SPELLCASTING_ABILITY_WISDOM">
+		<supports>Species Spellcasting Ability</supports>
+		<description>
+			<p>Wisdom is your spellcasting ability for the spells you cast with this trait.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Wisdom modifier</p>
+			</center>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="species:spellcasting-ability" value="Wisdom" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_SPECIES_SPELLCASTING_ABILITY_CHARISMA">
+		<supports>Species Spellcasting Ability</supports>
+		<description>
+			<p>Charisma is your spellcasting ability for the spells you cast with this trait.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Charisma modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Charisma modifier</p>
+			</center>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat inline="true" name="species:spellcasting-ability" value="Charisma" />
+		</rules>
+	</element>
+
+</elements>

@@ -318,6 +318,9 @@
 		<compendium display="false" />
 		<supports>Weapon Mastery</supports>
 		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF</requirements>
+		<description>
+			<p>If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.</p>
+		</description>
 		<sheet>
 			<description>If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 + the ability modifier used to make the attack roll and your PB). On a failed save, the creature has the Prone condition.</description>
 		</sheet>
@@ -326,6 +329,9 @@
 		<compendium display="false" />
 		<supports>Weapon Mastery</supports>
 		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_BATTLEAXE</requirements>
+		<description>
+			<p>If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.</p>
+		</description>
 		<sheet>
 			<description>If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 + the ability modifier used to make the attack roll and your PB). On a failed save, the creature has the Prone condition.</description>
 		</sheet>
@@ -334,6 +340,9 @@
 		<compendium display="false" />
 		<supports>Weapon Mastery</supports>
 		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_LANCE</requirements>
+		<description>
+			<p>If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.</p>
+		</description>
 		<sheet>
 			<description>If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 + the ability modifier used to make the attack roll and your PB). On a failed save, the creature has the Prone condition.</description>
 		</sheet>
@@ -342,6 +351,9 @@
 		<compendium display="false" />
 		<supports>Weapon Mastery</supports>
 		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_MAUL</requirements>
+		<description>
+			<p>If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.</p>
+		</description>
 		<sheet>
 			<description>If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 + the ability modifier used to make the attack roll and your PB). On a failed save, the creature has the Prone condition.</description>
 		</sheet>

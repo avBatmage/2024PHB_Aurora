@@ -223,6 +223,8 @@
 		<sheet display="false" />
 		<rules>
 			<select type="Class Feature" name="Divine Order" supports="Divine Order" level="1" />
+			<stat name="cleric:wisdom:min:1" value="1" bonus="base" />
+			<stat name="cleric:wisdom:min:1" value="wisdom:modifier" bonus="base" />
 		</rules>
 	</element>
 	<element name="Protector" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_DIVINEORDER_PROTECTOR">
@@ -248,8 +250,6 @@
 		</sheet>
 		<rules>
 			<select type="Spell" name="Cantrip (Thaumaturge)" supports="$(spellcasting:list), 0" level="1" number="1" spellcasting="Cleric" />
-			<stat name="cleric:wisdom:min:1" value="1" bonus="base" />
-			<stat name="cleric:wisdom:min:1" value="wisdom:modifier" bonus="base" />
 			<stat name="arcana:misc" value="cleric:wisdom:min:1" />
 			<stat name="religion:misc" value="cleric:wisdom:min:1" />
 		</rules>
@@ -459,16 +459,16 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Spell" id="ID_2024PHB_SPELL_AID" level="3" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_BLESS" level="3" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_CURE_WOUNDS" level="3" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_LESSER_RESTORATION" level="3" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_MASS_HEALING_WORD" level="5" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_REVIVIFY" level="5" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_AURA_OF_LIFE" level="7" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_DEATH_WARD" level="7" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_MASS_CURE_WOUNDS" level="9" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_RAISE_DEAD" level="9" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_AID" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_BLESS" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_CURE_WOUNDS" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_LESSER_RESTORATION" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_MASS_HEALING_WORD" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_REVIVIFY" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_AURA_OF_LIFE" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_DEATH_WARD" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_MASS_CURE_WOUNDS" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_RAISE_DEAD" level="9" spellcasting="Cleric" prepared="true" />
 		</rules>
 	</element>
 	<element name="Disciple of Life" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_LIFE_DOMAIN_DISCIPLE_OF_LIFE">
@@ -552,16 +552,16 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Spell" id="ID_2024PHB_SPELL_BURNING_HANDS" level="3" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_FAERIE_FIRE" level="3" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_SCORCHING_RAY" level="3" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_SEE_INVISIBILITY" level="3" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_DAYLIGHT" level="5" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_FIREBALL" level="5" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_ARCANE_EYE" level="7" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_WALL_OF_FIRE" level="7" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_FLAME_STRIKE" level="9" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_SCRYING" level="9" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_BURNING_HANDS" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_FAERIE_FIRE" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_SCORCHING_RAY" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_SEE_INVISIBILITY" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_DAYLIGHT" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_FIREBALL" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_ARCANE_EYE" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_WALL_OF_FIRE" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_FLAME_STRIKE" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_SCRYING" level="9" spellcasting="Cleric" prepared="true" />
 		</rules>
 	</element>
 	<element name="Radiance of the Dawn" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_LIGHT_DOMAIN_CHANNEL_DIVINITY_RADIANCE_OF_THE_DAWN">
@@ -642,16 +642,16 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Spell" id="ID_2024PHB_SPELL_CHARM_PERSON" level="3" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_DISGUISE_SELF" level="3" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_INVISIBILITY" level="3" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_PASS_WITHOUT_TRACE" level="3" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_HYPNOTIC_PATTERN" level="5" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_NONDETECTION" level="5" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_CONFUSION" level="7" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_DIMENSION_DOOR" level="7" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_DOMINATE_PERSON" level="9" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_MODIFY_MEMORY" level="9" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_CHARM_PERSON" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_DISGUISE_SELF" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_INVISIBILITY" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_PASS_WITHOUT_TRACE" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_HYPNOTIC_PATTERN" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_NONDETECTION" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_CONFUSION" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_DIMENSION_DOOR" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_DOMINATE_PERSON" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_MODIFY_MEMORY" level="9" spellcasting="Cleric" prepared="true" />
 		</rules>
 	</element>
 	<element name="Blessing of the Trickster" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_TRICKERY_DOMAIN_BLESSING_OF_THE_TRICKSTER">
@@ -734,16 +734,16 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Spell" id="ID_2024PHB_SPELL_GUIDING_BOLT" level="3" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_MAGIC_WEAPON" level="3" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_SHIELD_OF_FAITH" level="3" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_SPIRITUAL_WEAPON" level="3" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_CRUSADERS_MANTLE" level="5" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_SPIRIT_GUARDIANS" level="5" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_FIRE_SHIELD" level="7" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_FREEDOM_OF_MOVEMENT" level="7" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_HOLD_MONSTER" level="9" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_STEEL_WIND_STRIKE" level="9" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_GUIDING_BOLT" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_MAGIC_WEAPON" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_SHIELD_OF_FAITH" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_SPIRITUAL_WEAPON" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_CRUSADERS_MANTLE" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_SPIRIT_GUARDIANS" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_FIRE_SHIELD" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_FREEDOM_OF_MOVEMENT" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_HOLD_MONSTER" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_STEEL_WIND_STRIKE" level="9" spellcasting="Cleric" prepared="true" />
 		</rules>
 	</element>
 	<element name="War Priest" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_WAR_PRIEST">

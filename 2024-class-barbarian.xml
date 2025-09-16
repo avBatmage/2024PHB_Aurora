@@ -167,12 +167,13 @@
 			<description usage="{{barbarian rage:count}}/Long Rest">Regain 1 use on a Short rest. Advantage on Strength checks and Strength Saves. 
 			A +{{barbarian rage:damage}} to damage rolls with strength physical attacks. 
 			You have resistance to bludgeoning, piercing, and slashing damage.
-			The Rage lasts until the end of your next turn, can be extended by the following: 
+			The Rage lasts until the end of your next turn, can be extended up to 10 mins by the following: 
 			Make an attack roll against an enemy, Force an enemy to make a saving throw or Take a Bonus Action to extend your Rage.
 			</description>
 			<description usage="{{barbarian rage:count}}/Long Rest" level="15">Regain 1 use on a Short rest. Advantage on Strength checks and Strength Saves. 
 			A +{{barbarian rage:damage}} to damage rolls with strength physical attacks. 
-			You have resistance to bludgeoning, piercing, and slashing damage.</description>
+			You have resistance to bludgeoning, piercing, and slashing damage.
+			The Rage lasts 10 mins or until you fall unconscious.</description>
 		</sheet>
 		<rules>
 			<stat name="barbarian rage:count" value="2" level="1" />
@@ -360,8 +361,8 @@
 			<description>If you drop to 0 hp while you're raging and don't die outright, you can make a DC 10 Constitution saving throw. If you succeed, your Hit Points instead change to {{relentles:hp}}. Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10.</description>
 		</sheet>
 		<rules>
-			<stat name="relentles:hp" value="level:barbarian" />
-			<stat name="relentles:hp" value="level:barbarian" />
+			<stat name="relentles:hp" value="level:2024 barbarian" />
+			<stat name="relentles:hp" value="level:2024 barbarian" />
 		</rules>
 	</element>
 	<element name="Improved Brutal Strike" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_IMPROVED_BRUTAL_STRIKE">
@@ -413,8 +414,8 @@
 		<description>
 			<p>At 20th level, you embody the power of the wilds. Your Strength and Constitution scores increase by 4. Your maximum for those scores is now 25.</p>
 		</description>
-		<sheet display="false">
-			<description>You embody the power of the wilds. Your Strength and Constitution scores increase by 4. Your maximum for those scores is now 25.</description>
+		<sheet>
+			<description>Your Strength and Constitution scores have increased by 4 and your maximum for those scores is now 25.</description>
 		</sheet>
 		<rules>
 			<stat name="strength" value="4" />
@@ -648,7 +649,7 @@
 			<p class="indent"><strong>Life-Giving Force.</strong> At the start of each of your turns while your Rage is active, you can choose another creature within 10 feet of yourself to gain Temporary Hit Points. To determine the number of Temporary Hit Points, roll a number of d6s equal to your Rage Damage bonus, and add them together. If any of these Temporary Hit Points remain when your Rage ends, they vanish.</p>
 		</description>
 		<sheet>
-			<description>When you activate Rage, gain {{level:2024_barbarian}} Temporary HP. At the start of each turn while Raging, grant {{barbarian rage:damage}}d6 Temporary HP to a creature within 10 feet.</description>
+			<description>When you activate Rage, gain {{level:2024 barbarian}} Temporary HP. At the start of each turn while Raging, grant {{barbarian rage:damage}}d6 Temporary HP to a creature within 10 feet.</description>
 		</sheet>
 	</element>
 	<element name="Branches of the Tree" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_WORLD_TREE_BRANCHES_OF_THE_TREE">
@@ -657,15 +658,20 @@
 			<p class="indent">After the target teleports, you can reduce its Speed to 0 until the end of the current turn.</p>
 		</description>
 		<sheet action="Reaction">
-			<description>While Raging, use Reaction to teleport creatures within 30 feet to within 5 feet of you on failed Strength save, and reduce their Speed to 0.</description>
+			<description>While Raging, whenever a creature you can see starts its turn within 30 feet of you, use Reaction to teleport them within 5 feet of you on failed DC {{branches of the tree:dc}} Strength save, and reduce their Speed to 0.</description>
 		</sheet>
+		<rules>
+			<stat name="branches of the tree:dc" value="8" />
+			<stat name="branches of the tree:dc" value="proficiency" />
+			<stat name="branches of the tree:dc" value="strength:modifier" />
+		</rules>
 	</element>
 	<element name="Battering Boots" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_WORLD_TREE_BATTERING_BOOTS">
 		<description>
 			<p>Tendrils of the World Tree extend from your Melee weapons. During your turn, while you wield a Melee weapon with the Heavy or Versatile property, your reach with that weapon increases by 10 feet. When you hit with this weapon, you can activate the Push or Topple property in addition to any other Mastery property you are using with that weapon.</p>
 		</description>
 		<sheet>
-			<description>While wielding Heavy or Versatile melee weapons, your reach increases by 10 feet and you can activate Push or Topple properties in addition to other Mastery properties.</description>
+			<description>While wielding Heavy or Versatile melee weapons on your turn, your reach increases by 10 feet and you can activate Push or Topple properties in addition to other Mastery properties.</description>
 		</sheet>
 	</element>
 	<element name="Travel along the Tree" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_WORLD_TREE_TRAVEL_ALONG_THE_TREE">
@@ -682,7 +688,7 @@
 	</element>
 
 	<element name="2024 Path of the Zealot" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_PATH_OF_THE_ZEALOT">
-		<supports>Barbarian Primal Path</supports>
+		<supports>Primal Path</supports>
 		<description>
 			<p><i>Rage in Ecstatic Union with a God</i></p>
 			<p>Barbarians who walk the Path of the Zealot receive boons from a god or pantheon. These Barbarians experience their Rage as an ecstatic episode of divine union that infuses them with power. They are often allies to the priests and other followers of their god or pantheon.</p>
@@ -691,7 +697,6 @@
 			<div element="ID_2024PHB_ARCHETYPE_FEATURE_PATH_OF_THE_ZEALOT_FANATICAL_FOCUS" />
 			<div element="ID_2024PHB_ARCHETYPE_FEATURE_PATH_OF_THE_ZEALOT_ZEALOUS_PRESENCE" />
 			<div element="ID_2024PHB_ARCHETYPE_FEATURE_PATH_OF_THE_ZEALOT_RAGE_OF_THE_GODS" />
-		</description>
 		</description>
 		<sheet display="false">
 			<description>Barbarians who walk the Path of the Zealot receive boons from a god or pantheon.</description>

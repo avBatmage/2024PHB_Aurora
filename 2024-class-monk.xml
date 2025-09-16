@@ -174,7 +174,7 @@
 			<p>While you aren't wearing armor or wielding a Shield, your base Armor Class equals 10 plus your Dexterity and Wisdom modifiers.</p>
 		</description>
 		<sheet>
-			<description>While not wearing armor, your AC is {{ac:unarmored defense monk}}.</description>
+			<description>While not wearing armor or wielding a shield, your AC is {{ac:unarmored defense monk}}.</description>
 		</sheet>
 		<rules>
 			<stat name="ac:unarmored defense monk:base" value="10" />

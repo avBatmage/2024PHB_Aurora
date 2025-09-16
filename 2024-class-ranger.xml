@@ -117,7 +117,6 @@
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_RANGER_DEFT_EXPLORER" level="2"/>
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_RANGER_FIGHTING_STYLE" level="2"/>
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_RANGER_RANGER_ARCHETYPE" level="3"/>
-			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_RANGER_PRIMEVAL_AWARENESS" level="3"/>
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_RANGER_ASI" level="4"/>
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_RANGER_EXTRA_ATTACK" level="5"/>
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_RANGER_ROVING" level="6"/>

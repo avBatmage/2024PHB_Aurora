@@ -8,30 +8,380 @@
 			<file name="2024-backgrounds.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-backgrounds.xml" />
 		</update>
 	</info>
-</elements>
-
-<element name="Acolyte" type="Background" source="2024 Player's Handbook" id="ID_2024PHB_BACKGROUND_ACOLYTE">
-    <description>
-			<p>You have spent your life in the service of a temple to a specific god or pantheon of gods. You act as an intermediary between the realm of the holy and the mortal world, performing sacred rites and offering sacrifices in order to conduct worshipers into the presence of the divine. You are not necessarily a cleric—performing sacred rites is not the same thing as channeling divine power.</p>
-			<p class="indent">Choose a god, a pantheon of gods, or some other quasi-divine being, and work with your DM to detail the nature of your religious service. Were you a lesser functionary in a temple, raised from childhood to assist the priests in the sacred rites? Or were you a high priest who suddenly experienced a call to serve your god in a different way? Perhaps you were the leader of a small cult outside of any established temple structure, or even an occult group that served a fiendish master that you now deny.</p>
+	<element name="2024 Acolyte" type="Background" source="2024 Player's Hanbook" id="ID_2024PHB_BACKGROUND_ACOLYTE">
+		<description>
+			<p>You devoted yourself to service in a temple, either nestled in a town or secluded in a sacred grove. There you performed rites in honor of a god or pantheon. You served under a priest and studied religion. Thanks to your priest's instruction and your own devotion, you also learned how to channel a modicum of divine power in service to your place of worship andthe people who prayed there.</p>
 			<ul class="unstyled">
-				<li><strong>Skill Proficiencies:</strong>Insight, Religion</li>
-				<li><strong>Languages:</strong>Two of your choice</li>
-				<li><strong>Equipment:</strong>A holy symbol (a gift to you when you entered the priesthood), a prayer book or prayer wheel, 5 sticks of incense, vestments, a set of common clothes, and a belt pouch containing 15 gp</li>
+				<li><strong>Ability Scores:</strong> Intelligence, Wisdom, Charisma</li>
+				<li><strong>Feat:</strong> Magic Initiate (Cleric)</li>
+				<li><strong>Skill Proficiencies:</strong> Insight and Religion</li>
+				<li><strong>Tool Proficiencies:</strong> Calligrapher's Supplies</li>
+				<li><strong>Equipment:</strong> Choose A or B: (A) Calligrapher's Supplies, Book (prayers), Holy Symbol, Parchment (10 sheets), Robe, 8 GP; or (B) 50 GP</li>
 			</ul>
-			<div element="ID_BACKGROUND_FEATURE_SHELTER_OF_THE_FAITHFUL" />
-			<h5>SUGGESTED CHARACTERISTICS</h5>
-			<p>Acolytes are shaped by their experience in temples or other religious communities. Their study of the history and tenets of their faith and their relationships to temples, shrines, or hierarchies affect their mannerisms and ideals. Their flaws might be some hidden hypocrisy or heretical idea, or an ideal or bond taken to an extreme.</p>
 		</description>
 		<setters>
-			<set name="short">Insight, Religion, 2 Languages</set>
+			<set name="short">Intelligence, Wisdom, Charisma, Magic Initiate (Cleric), Insight, Religion, Calligrapher's Supplies</set>
 		</setters>
 		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Acolyte)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Feat" id="ID_2024PHB_FEAT_MAGICINITIATE_CLERIC" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
-			<select type="Language" name="Language (Acolyte)" number="2" supports="Standard||Exotic" />
-			<grant type="Background Feature" id="ID_BACKGROUND_FEATURE_SHELTER_OF_THE_FAITHFUL" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
-			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" />
 		</rules>
 	</element>
-</element>
+	<element name="2024 Artisan" type="Background" source="2024 Player's Hanbook" id="ID_2024PHB_BACKGROUND_ARTISAN">
+		<description>
+			<p>You began mopping floors and scrubbing counters in an artisan's workshop for a few coppers per day as soon as you were strong enough to carry a bucket. When you were old enough to apprentice, you learned to create basic crafts of vour own, as well as how to sweet-talk the occasional demanding customer. Your trade has also given vau a keen eye for detail.</p>
+			<ul class="unstyled">
+				<li><strong>Ability Scores:</strong> Strength, Dexterity, Intelligence</li>
+				<li><strong>Feat:</strong> Crafter</li>
+				<li><strong>Skill Proficiencies:</strong> Investigation and Persuasion</li>
+				<li><strong>Tool Proficiencies:</strong> Choose one kind of Artisan's Tools</li>
+				<li><strong>Equipment:</strong> Choose A or B: (A) Artisan's Tools (same as above), 2 Pouches, Traveler's Clothes, 32 GP; or (B) 50 GP</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="short">Strength, Dexterity, Intelligence, Crafter, Investigation, Persuasion, Artisan's Tools</set>
+		</setters>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Artisan)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Feat" id="ID_2024PHB_FEAT_CRAFTER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<select type="Proficiency" name="Tool Proficiency (Artisan)" supports="Artisan tools" />
+		</rules>
+	</element>
+	<element name="2024 Charlatan" type="Background" source="2024 Player's Hanbook" id="ID_2024PHB_BACKGROUND_CHARLATAN">
+		<description>
+			<p>Once you were old enough to order an ale, you soon had a favorite stool in every tavern within ten miles of where you were born. As you traveled the circuit from public house to watering hole, you learned to prey on unfortunates who were in the market for a comforting lie or two-perhaps a sham potion or forged ancestry records.</p>
+			<ul class="unstyled">
+				<li><strong>Ability Scores:</strong> Dexterity, Constitution, Charisma</li>
+				<li><strong>Feat:</strong> Skilled</li>
+				<li><strong>Skill Proficiencies:</strong> Deception and Sleight of Hand</li>
+				<li><strong>Tool Proficiencies:</strong> Forgery Kit</li>
+				<li><strong>Equipment:</strong> Choose A or B: (A) Forgery Kit, Costume, Fine Clothes, 15 GP; or (B) 50 GP</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="short">Dexterity, Constitution, Charisma, Skilled, Deception, Sleight of Hand, Forgery Kit</set>
+		</setters>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Charlatan)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Feat" id="ID_2024PHB_FEAT_SKILLED" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT" />
+		</rules>
+	</element>
+	<element name="2024 Criminal" type="Background" source="2024 Player's Hanbook" id="ID_2024PHB_BACKGROUND_CRIMINAL">
+		<description>
+			<p>You eked out a living in dark alleyways, cutting purses or burgling shops. Perhaps you were part of a small gang of like-minded wrongdoers who looked out for each other. Or maybe you were a lone wolf, fending for yourself against the local thieves' guild and more fearsome lawbreakers.</p>
+			<ul class="unstyled">
+				<li><strong>Ability Scores:</strong> Dexterity, Constitution, Intelligence</li>
+				<li><strong>Feat:</strong> Alert</li>
+				<li><strong>Skill Proficiencies:</strong> Sleight of Hand and Stealth</li>
+				<li><strong>Tool Proficiencies:</strong> Thieves' Tools</li>
+				<li><strong>Equipment:</strong> Choose A or B: (A) 2 Daggers, Thieves' Tools, Crowbar, 2 Pouches, Traveler's Clothes, 16 GP; or (B) 50 GP</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="short">Dexterity, Constitution, Intelligence, Alert, Sleight of Hand, Stealth, Thieves' Tools</set>
+		</setters>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Criminal)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Feat" id="ID_2024PHB_FEAT_ALERT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
+		</rules>
+	</element>
+	<element name="2024 Entertainer" type="Background" source="2024 Player's Hanbook" id="ID_2024PHB_BACKGROUND_ENTERTAINER">
+		<description>
+			<p>You spent much of your youth following roving fairs and carnivals, performing odd jobs for musicians and acrobats in exchange for lessons. You may have learned how to walk a tightrope, how to play a lute in a distinct style, or how to recite poetry with impeccable diction. To this day. you thrive on applause and long for the stage.</p>
+			<ul class="unstyled">
+				<li><strong>Ability Scores:</strong> Strength, Dexterity, Charisma</li>
+				<li><strong>Feat:</strong> Musician</li>
+				<li><strong>Skill Proficiencies:</strong> Acrobatics and Performance</li>
+				<li><strong>Tool Proficiencies:</strong> Choose one kind of Musical Instrument</li>
+				<li><strong>Equipment:</strong> Choose A or B: (A) Musical Instrument (same as above), 2 Costumes, Mirror, Perfume, Traveler's Clothes, 11 GP; or (B) 50 GP</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="short">Strength, Dexterity, Charisma, Musician, Acrobatics, Performance, Musical Instrument</set>
+		</setters>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Entertainer)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Feat" id="ID_2024PHB_FEAT_MUSICIAN" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+			<select type="Proficiency" name="Musical Intrument (Entertainer)" supports="Musical Instrument" />
+		</rules>
+	</element>
+	<element name="2024 Farmer" type="Background" source="2024 Player's Hanbook" id="ID_2024PHB_BACKGROUND_FARMER">
+		<description>
+			<p>You grew up close to the land. Years tending animals and cultivating the earth rewarded you with patience and good health. You have a keen appreciation for nature's bounty alongside a healthy respect for nature's wrath.</p>
+			<ul class="unstyled">
+				<li><strong>Ability Scores:</strong> Strength, Constitution, Wisdom</li>
+				<li><strong>Feat:</strong> Tough</li>
+				<li><strong>Skill Proficiencies:</strong> Animal Handling and Nature</li>
+				<li><strong>Tool Proficiencies:</strong> Carpenter's Tools</li>
+				<li><strong>Equipment:</strong> Choose A or B: (A) Sickle, Carpenter's Tools, Healer's Kit, Iron Pot, Shovel, Traveler's Clothes, 30 GP; or (B) 50 GP</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="short">Strength, Constitution, Wisdom, Tough, Animal Handling, Nature, Carpenter's Tools</set>
+		</setters>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Farmer)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Feat" id="ID_2024PHB_FEAT_TOUGH" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARPENTERS_TOOLS" />
+		</rules>
+	</element>
+	<element name="2024 Guard" type="Background" source="2024 Player's Hanbook" id="ID_2024PHB_BACKGROUND_GUARD">
+		<description>
+			<p>Your feet ache when you remember the countless hours you spent at your post in the tower. You were trained to keep one eye looking outside the wall, watching for marauders sweeping from the nearby forest, and your other eye looking inside the wall, searching for cutpurses and troublemakers.</p>
+			<ul class="unstyled">
+				<li><strong>Ability Scores:</strong> Strength, Intelligence, Wisdom</li>
+				<li><strong>Feat:</strong> Alert</li>
+				<li><strong>Skill Proficiencies:</strong> Athletics and Perception</li>
+				<li><strong>Tool Proficiencies:</strong> Choose one kind of Gaming Set</li>
+				<li><strong>Equipment:</strong> Choose A or B: (A) Spear, Light Crossbow, 20 Bolts, Gaming Set (same as above), Hooded Lantern, Manacles, Quiver, Traveler's Clothes, 12 GP; or (B) 50 GP</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="short">Strength, Intelligence, Wisdom, Alert, Athletics, Perception, Gaming Set</set>
+		</setters>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Guard)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Feat" id="ID_2024PHB_FEAT_ALERT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<select type="Proficiency" name="Gaming Set (Guard)" supports="Gaming Set" />
+		</rules>
+	</element>
+	<element name="2024 Guide" type="Background" source="2024 Player's Hanbook" id="ID_2024PHB_BACKGROUND_GUIDE">
+		<description>
+			<p>You came of age outdoors, far from settled lands. Your home was anywhere you chose to spread your bedroll. There are wonders in the wilderness-strange monsters, pristine forests and streams, overgrown ruins of great halls once trod by giants-and you learned to fend for yourself as you explored them. From time to time, you guided friendly nature priests who instructed you in the fundamentals of channeling the magic of the wild.</p>
+			<ul class="unstyled">
+				<li><strong>Ability Scores:</strong> Dexterity, Constitution, Wisdom</li>
+				<li><strong>Feat:</strong> Magic Initiate (Druid)</li>
+				<li><strong>Skill Proficiencies:</strong> Stealth and Survival</li>
+				<li><strong>Tool Proficiencies:</strong> Cartographer's Tools</li>
+				<li><strong>Equipment:</strong> Choose A or B: (A) Shortbow, 20 Arrows, Cartographer's Tools, Bedroll, Quiver, Tent, Traveler's Clothes, 3 GP; or (B) 50 GP</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="short">Dexterity, Constitution, Wisdom, Magic Initiate (Druid), Stealth, Survival, Cartographer's Tools</set>
+		</setters>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Guide)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Feat" id="ID_2024PHB_FEAT_MAGICINITIATE_DRUID" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS" />
+		</rules>
+	</element>
+	<element name="2024 Hermit" type="Background" source="2024 Player's Hanbook" id="ID_2024PHB_BACKGROUND_HERMIT">
+		<description>
+			<p>You spent your early years secluded in a hut or monastery located well beyond the outskirts of the nearest settlement. In those days, your only companions were the creatures of the forest and those who would occasionally visit to bring news of the outside world and supplies. The solitude allowed you to spend many hours pondering the mysteries of creation.</p>
+			<ul class="unstyled">
+				<li><strong>Ability Scores:</strong> Constitution, Wisdom, Charisma</li>
+				<li><strong>Feat:</strong> Healer</li>
+				<li><strong>Skill Proficiencies:</strong> Medicine and Religion</li>
+				<li><strong>Tool Proficiencies:</strong> Herbalism Kit</li>
+				<li><strong>Equipment:</strong> Choose A or B: (A) Quarterstaff, Herbalism Kit, Bedroll, Book (philosophy), Lamp, Oil (3 flasks), Traveler's Clothes, 16 GP; or (B) 50 GP</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="short">Constitution, Wisdom, Charisma, Healer, Medicine, Religion, Herbalism Kit</set>
+		</setters>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Hermit)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Feat" id="ID_2024PHB_FEAT_HEALER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+		</rules>
+	</element>
+	<element name="2024 Merchant" type="Background" source="2024 Player's Hanbook" id="ID_2024PHB_BACKGROUND_MERCHANT">
+		<description>
+			<p>You were apprenticed to a trader, caravan master, or shopkeeper, learning the fundamentals of commerce. You traveled broadly, and you earned a living by buying and selling the raw materials artisans need to practice their craft or finished works from such crafters. You might have transported goods from one place to another (by ship, wagon, or caravan) or bought them from traveling traders and sold them in your own shop.</p>
+			<ul class="unstyled">
+				<li><strong>Ability Scores:</strong> Constitution, Intelligence, Charisma</li>
+				<li><strong>Feat:</strong> Lucky</li>
+				<li><strong>Skill Proficiencies:</strong> Animal Handling and Persuasion</li>
+				<li><strong>Tool Proficiencies:</strong> Navigator's Tools</li>
+				<li><strong>Equipment:</strong> Choose A or B: (A) Navigator's Tools, 2 Pouches, Traveler's Clothes, 22 GP; or (B) 50 GP</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="short">Constitution, Intelligence, Charisma, Lucky, Animal Handling, Persuasion, Navigator's Tools</set>
+		</setters>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Merchant)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Feat" id="ID_2024PHB_FEAT_LUCKY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS" />
+		</rules>
+	</element>
+	<element name="2024 Noble" type="Background" source="2024 Player's Hanbook" id="ID_2024PHB_BACKGROUND_NOBLE">
+		<description>
+			<p>You were raised in a castle, surrounded by wealth, power, and privilege. Your family of minor aristocrats ensured that you received a first-class education, some of which you appreciated and some of which you resented. Your time in the castle, specially the many hours you spent observing your family at court, also taught you a great deal about leadership.</p>
+			<ul class="unstyled">
+				<li><strong>Ability Scores:</strong> Strength, Intelligence, Charisma</li>
+				<li><strong>Feat:</strong> Skilled</li>
+				<li><strong>Skill Proficiencies:</strong> History and Persuasion</li>
+				<li><strong>Tool Proficiencies:</strong> Choose one kind of Gaming Set</li>
+				<li><strong>Equipment:</strong> Choose A or B: (A) Gaming Set (same as above), Fine Clothes, Perfurne, 29 GP; or (B) 50 GP</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="short">Strength, Intelligence, Charisma, Skilled, History, Persuasion, Gaming Set</set>
+		</setters>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Noble)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Feat" id="ID_2024PHB_FEAT_SKILLED" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<select type="Proficiency" name="Gaming Set (Noble)" supports="Gaming Set" />
+		</rules>
+	</element>
+	<element name="2024 Sage" type="Background" source="2024 Player's Hanbook" id="ID_2024PHB_BACKGROUND_SAGE">
+		<description>
+			<p>You spent your formative years traveling between manors and monasteries, performing various odd jobs and services in exchange for access to their libraries. You whiled away many a long evening studying books and scrolls, learning the lore of the multiverse-even the rudiments of magic-and your mind yearns for more.</p>
+			<ul class="unstyled">
+				<li><strong>Ability Scores:</strong> Constitution, Intelligence, Wisdom</li>
+				<li><strong>Feat:</strong> Magic Initiate (Wizard)</li>
+				<li><strong>Skill Proficiencies:</strong> Arcana and History</li>
+				<li><strong>Tool Proficiencies:</strong> Calligrapher's Supplies</li>
+				<li><strong>Equipment:</strong> Choose A or B: (A) Quarterstaff, Calligrapher's Supplies, Book (history), Parchment (8 sheets), Robe, 8 GP; or (B) 50 GP</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="short">Constitution, Intelligence, Wisdom, Magic Initiate (Wizard), Arcana and History, Calligrapher's Supplies</set>
+		</setters>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Sage)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Feat" id="ID_2024PHB_FEAT_MAGICINITIATE_WIZARD" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" />
+		</rules>
+	</element>
+	<element name="2024 Sailor" type="Background" source="2024 Player's Hanbook" id="ID_2024PHB_BACKGROUND_SAILOR">
+		<description>
+			<p>You lived as a seafarer, wind at your back and decks swaying beneath your feet. You've perched on barstools in more ports of call than you can remember, faced mighty storms, and swapped stories with folk who live beneath the waves.</p>
+			<ul class="unstyled">
+				<li><strong>Ability Scores:</strong> Strength, Dexterity, Wisdom</li>
+				<li><strong>Feat:</strong> Tavern Brawler</li>
+				<li><strong>Skill Proficiencies:</strong> Acrobatics and Perception</li>
+				<li><strong>Tool Proficiencies:</strong> Navigator's Tools</li>
+				<li><strong>Equipment:</strong> Choose A or B: (A) Dagger, Navigator's Tools, Rope, Traveler's Clothes, 20 GP; or (B) 50 GP</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="short">Strength, Dexterity, Wisdom, Tavern Brawler, Acrobatics, Perception, Navigator's Tools</set>
+		</setters>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Sailor)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Feat" id="ID_2024PHB_FEAT_TAVERN_BRAWLER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS" />
+		</rules>
+	</element>
+	<element name="2024 Scribe" type="Background" source="2024 Player's Hanbook" id="ID_2024PHB_BACKGROUND_SCRIBE">
+		<description>
+			<p>You spent formative years in a scriptorium, a monastery dedicated to the preservation of knowledge, or a government agency, where you learned to write with a clear hand and produce finely written texts. Perhaps you scribed government documents or copied tomes of literature. You might have some skill as a writer of poetry, narrative, or scholarly research. Above all, you have a careful attention to detail helping you avoid introducing mistakes to the documents you copy and create.</p>
+			<ul class="unstyled">
+				<li><strong>Ability Scores:</strong> Dexterity, Intelligence, Wisdom</li>
+				<li><strong>Feat:</strong> Skilled</li>
+				<li><strong>Skill Proficiencies:</strong> Investigation and Perception</li>
+				<li><strong>Tool Proficiencies:</strong> Calligrapher's Supplies</li>
+				<li><strong>Equipment:</strong> Choose A or B: (A) Calligrapher's Supplies, Fine Clothes, Lamp, Oil (3 flasks), Parchment (12 sheets), 23 GP; or (B) 50 GP</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="short">Dexterity, Intelligence, Wisdom, Skilled, Investigation, Perception, Calligrapher's Supplies</set>
+		</setters>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Scribe)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Feat" id="ID_2024PHB_FEAT_SKILLED" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" />
+		</rules>
+	</element>
+	<element name="2024 Soldier" type="Background" source="2024 Player's Hanbook" id="ID_2024PHB_BACKGROUND_SOLDIER">
+		<description>
+			<p>You began training for war as soon as you reached adulthood and carry precious few memories of life before you took up arms. Battle is in your blood. Sometimes you catch yourself reflexively performing the basic fighting exercises you learned first. Eventually, you put that training to use on the battlefield, protecting the realm by waging war.</p>
+			<ul class="unstyled">
+				<li><strong>Ability Scores:</strong> Strength, Dexterity, Constitution</li>
+				<li><strong>Feat:</strong> Savage Attacker</li>
+				<li><strong>Skill Proficiencies:</strong> Athletics and Intimidation</li>
+				<li><strong>Tool Proficiencies:</strong> Choose one kind of Gaming Set</li>
+				<li><strong>Equipment:</strong> Choose A or B: (A) A Spear, Shortbow, 20 Arrows, Gaming Set (same as above), Healer's Kit, Quiver, Traveler's Clothes, 14 GP; or (B) 50 GP</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="short">Strength, Dexterity, Constitution, Savage Attacker, Athletics, Intimidation, Gaming Set</set>
+		</setters>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Soldier)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Feat" id="ID_2024PHB_FEAT_SAVAGE_ATTACKER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+			<select type="Proficiency" name="Gaming Set (Soldier)" supports="Gaming Set" />
+		</rules>
+	</element>
+	<element name="2024 Wayfarer" type="Background" source="2024 Player's Hanbook" id="ID_2024PHB_BACKGROUND_WAYFARER">
+		<description>
+			<p>You grew up on the streets surrounded by similarly ill-fated castoffs, a few of them friends and a few of them rivals. You slept where you could and did odd jobs for food. At times, when the hunger became unbearable, you resorted to theft. Still, you never lost your pride and never abandoned hope. Fate is not yet finished with you.</p>
+			<ul class="unstyled">
+				<li><strong>Ability Scores:</strong> Dexterity, Wisdom, Charisma</li>
+				<li><strong>Feat:</strong> Lucky</li>
+				<li><strong>Skill Proficiencies:</strong> Insight and Stealth</li>
+				<li><strong>Tool Proficiencies:</strong> Thieves' Tools</li>
+				<li><strong>Equipment:</strong> Choose A or B: (A) 2 Daggers, Thieves' Tools, Gaming Set (any), Bedroll, 2 Pouches, Traveler's Clothes, 16 GP; or (B) 50 GP</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="short">Dexterity, Wisdom, Charisma, Lucky, Insight, Stealth, </set>
+		</setters>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Wayfarer)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Feat" id="ID_2024PHB_FEAT_LUCKY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
+		</rules>
+	</element>
+
+		<!--Casting Ability Score
+	<element name="2024 " type="Background" source="2024 Player's Hanbook" id="ID_2024PHB_BACKGROUND_">
+		<description>
+			<p></p>
+			<ul class="unstyled">
+				<li><strong>Ability Scores:</strong> </li>
+				<li><strong>Feat:</strong> </li>
+				<li><strong>Skill Proficiencies:</strong> </li>
+				<li><strong>Tool Proficiencies:</strong> </li>
+				<li><strong>Equipment:</strong> Choose A or B: (A) ; or (B) 50 GP</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="short"></set>
+		</setters>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option ()" supports="Custom Ability Score Improvement Option" />
+			<grant type="Feat" id="ID_2024PHB_FEAT_" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_" />
+		</rules>
+	</element>-->
+</elements>

@@ -1805,7 +1805,6 @@
 		<supports>Sorcerer, Warlock, Wizard</supports>
 		<description>
 			<p>You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect.</p>
-			<p><b><i>Using a Higher-Level Spell Slot</i></b>. When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>
@@ -4511,11 +4510,12 @@
 		</setters>
 	</element>
 	<element name="2024 Jallarzi's Storm of Radiance" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_JALLARZIS_STORM_OF_RADIANCE">
-		<supports>Wizard</supports>
+		<supports>Warlock, Wizard</supports>
 		<description>
-			<p>You create a storm of brilliant radiance that fills a 20-foot-radius sphere centered on a point you choose within range. The area is filled with dazzling light and crackling energy for the duration.</p>
-			<p>When a creature enters the spell's area for the first time on a turn or starts its turn there, the creature must make a Constitution saving throw. On a failed save, the creature takes 4d6 radiant damage and is blinded until the end of its next turn. On a successful save, the creature takes half as much damage and isn't blinded.</p>
-			<p>The storm moves 10 feet in a direction you choose at the start of each of your turns. The storm can move through barriers, but it stops if it would move into a space that is occupied by a creature or an object.</p>
+			<p>You unleash a storm of flashing light and raging thunder in a 10-foot-radius, 40-foot-high Cylinder centered on a point you can see within range.</p>
+			<p>While in this area, creatures have th.e Blinded and Deafened conditions, and they can't cast spells with a Verbal component.</p>
+			<p>When the storm appears, each creature in it makes a Constitution saving throw, taking 2d10 Radiant damage and 2d10 Thunder damage on a failed save or half as much damage on a successful one. A creature also makes this save when it enters the spell's area for the first time on a turn or ends its turn there. A creature makes this save only once per turn.</p>
+			<p><b><i>Using a Higher-Level Spell Slot.</i></b> The Radiant and Thunder damage increase by 1d10 for each spell slot level above 5.</p>
 		</description>
 		<setters>
 			<set name="keywords">radiant</set>
@@ -4542,7 +4542,7 @@
 			<set name="keywords"></set>
 			<set name="level">1</set>
 			<set name="school">Transmutation</set>
-			<set name="time">1 action</set>
+			<set name="time">1 bonus action</set>
 			<set name="duration">1 minute</set>
 			<set name="range">Touch</set>
 			<set name="hasVerbalComponent">true</set>
