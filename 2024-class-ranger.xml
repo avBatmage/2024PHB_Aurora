@@ -559,7 +559,6 @@
 			<description>When you take damage, you can give yourself Resistance to that damage and any other damage of the same type until the end of the current turn.</description>
 		</sheet>
 	</element>
-
 	<element name="Colossus Slayer" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY_COLOSSUS_SLAYER">
 		<supports>Hunters Prey 2024</supports>
 		<description>
@@ -618,29 +617,6 @@
 			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_IRON_MIND" level="7" />
 			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_STALKERS_FLURRY" level="11" />
 			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_SHADOWY_DODGE" level="15" />
-		</rules>
-	</element>
-	<element name="2024 Fey Wanderer" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_RANGER_FEY_WANDERER">
-		<supports>Ranger Archetype</supports>
-		<description>
-			<p>A fey mystique surrounds you, thanks to the boon of an archfey or a location in the Feywild that transformed you. However you gained fey magic, you are now a Fey Wanderer. Your joyful laughter brightens the hearts of the downtrodden, and your martial prowess strikes terror in your foes, for great is the mirth of the fey and dreadful is their fury.</p>
-			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_DREADFUL_STRIKES" />
-			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_FEY_WANDERER_SPELLS" />
-			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_OTHERWORLDLY_GLAMOUR" />
-			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_BEGUILING_TWIST" />
-			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_FEY_REINFORCEMENTS" />
-			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_MISTY_WANDERER" />
-		</description>
-		<sheet display="false">
-			<description>A fey mystique surrounds you, thanks to the boon of an archfey or a location in the Feywild that transformed you.</description>
-		</sheet>
-		<rules>
-			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_DREADFUL_STRIKES" level="3" />
-			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_FEY_WANDERER_SPELLS" level="3" />
-			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_OTHERWORLDLY_GLAMOUR" level="3" />
-			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_BEGUILING_TWIST" level="7" />
-			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_FEY_REINFORCEMENTS" level="11" />
-			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_MISTY_WANDERER" level="15" />
 		</rules>
 	</element>
 	<element name="Dread Ambusher" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_DREAD_AMBUSHER">
@@ -730,7 +706,29 @@
 		</sheet>
 	</element>
 
-	<!-- Fey Wanderer Features -->
+	<element name="2024 Fey Wanderer" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_RANGER_FEY_WANDERER">
+		<supports>Ranger Archetype</supports>
+		<description>
+			<p>A fey mystique surrounds you, thanks to the boon of an archfey or a location in the Feywild that transformed you. However you gained fey magic, you are now a Fey Wanderer. Your joyful laughter brightens the hearts of the downtrodden, and your martial prowess strikes terror in your foes, for great is the mirth of the fey and dreadful is their fury.</p>
+			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_DREADFUL_STRIKES" />
+			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_FEY_WANDERER_SPELLS" />
+			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_OTHERWORLDLY_GLAMOUR" />
+			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_BEGUILING_TWIST" />
+			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_FEY_REINFORCEMENTS" />
+			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_MISTY_WANDERER" />
+		</description>
+		<sheet display="false">
+			<description>A fey mystique surrounds you, thanks to the boon of an archfey or a location in the Feywild that transformed you.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_DREADFUL_STRIKES" level="3" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_FEY_WANDERER_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_OTHERWORLDLY_GLAMOUR" level="3" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_BEGUILING_TWIST" level="7" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_FEY_REINFORCEMENTS" level="11" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_MISTY_WANDERER" level="15" />
+		</rules>
+	</element>
 	<element name="Dreadful Strikes" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_DREADFUL_STRIKES">
 		<description>
 			<p>You can augment your weapon strikes with mind-scarring magic drawn from the murky hollows of the Feywild. When you hit a creature with a weapon, you can deal an extra 1d4 Psychic damage to the target, which can take this extra damage only once per turn. The extra damage increases to 1d6 when you reach Ranger level 11.</p>

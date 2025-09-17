@@ -11,7 +11,6 @@
 
 	<!-- 10 Origin Feats -->
 	<element name="2024 Alert" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_ALERT">
-		<prerequisite></prerequisite>
 		<supports>Origin Feat, Feat</supports>
 		<description>
 			<ul>
@@ -27,7 +26,6 @@
 		</rules>
 	</element>
 	<element name="2024 Crafter" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_CRAFTER">
-		<prerequisite></prerequisite>
 		<supports>Origin Feat, Feat</supports>
 		<description>
 			<ul>
@@ -59,7 +57,6 @@
 		</rules>
 	</element>
 	<element name="2024 Healer" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_HEALER">
-		<prerequisite></prerequisite>
 		<supports>Origin Feat, Feat</supports>
 		<description>
 			<ul>
@@ -73,7 +70,6 @@
 		</sheet>
 	</element>
 	<element name="2024 Lucky" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_LUCKY">
-		<prerequisite></prerequisite>
 		<supports>Origin Feat, Feat</supports>
 		<description>
 			<ul>
@@ -86,8 +82,8 @@
 			<description>You can spend a point to gain Advantage on a D20 Test or impose Disadvantage on an attack against you.</description>
 		</sheet>
 	</element>
+	<!-- Magic Initiate -->
 	<element name="2024 Magic Initiate" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MAGICINITIATE" >
-		<prerequisite></prerequisite>
 		<supports>Origin Feat, Feat</supports>
 		<description>
 			<ul>
@@ -97,12 +93,39 @@
 				<li><strong>Repeatable</strong>. You can take this feat more than once, but you must choose a different spell list each time.</li>
 			</ul>
 		</description>
-		<setters>
-			<set name="allow duplicate">true</set>
-		</setters>
-		<sheet display="false">
-			<description>Two Cantrips and one 1st-level spell from Cleric, Druid, or Wizard list. Can cast 1st-level spell once per long rest without spell slot. Repeatable with different spell list.</description>
-		</sheet>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Magic Initiate" supports="2024 Magic Initiate" />
+		</rules>
+	</element>
+	<element name="2024 Magic Initiate" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MAGICINITIATE_2" >
+		<supports>Origin Feat, Feat</supports>
+		<requirements>ID_2024PHB_FEAT_MAGICINITIATE</requirements>
+		<description>
+			<ul>
+				<li><strong>Two Cantrips</strong>. You learn two cantrips of your choice from the Cleric, Druid, or Wizard spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat).</li>
+				<li><strong>Level 1 Spell</strong>. Choose a level 1 spell from the same list you selected for this feat's cantrips. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have.</li>
+				<li><strong>Spell Change</strong>. Whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list.</li>
+				<li><strong>Repeatable</strong>. You can take this feat more than once, but you must choose a different spell list each time.</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Magic Initiate" supports="2024 Magic Initiate" />
+		</rules>
+	</element>
+	<element name="2024 Magic Initiate" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MAGICINITIATE_3" >
+		<supports>Origin Feat, Feat</supports>
+		<requirements>ID_2024PHB_FEAT_MAGICINITIATE_2</requirements>
+		<description>
+			<ul>
+				<li><strong>Two Cantrips</strong>. You learn two cantrips of your choice from the Cleric, Druid, or Wizard spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat).</li>
+				<li><strong>Level 1 Spell</strong>. Choose a level 1 spell from the same list you selected for this feat's cantrips. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have.</li>
+				<li><strong>Spell Change</strong>. Whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list.</li>
+				<li><strong>Repeatable</strong>. You can take this feat more than once, but you must choose a different spell list each time.</li>
+			</ul>
+		</description>
+		<sheet display="false" />
 		<rules>
 			<select type="Feat Feature" name="Magic Initiate" supports="2024 Magic Initiate" />
 		</rules>
@@ -114,7 +137,7 @@
 			<p class="indent">In addition, choose one 1st-level spell from that same list. You learn that spell and can cast it at its lowest level. Once you cast it, you must finish a long rest before you can cast it again.</p>
 			<p class="indent">Your spellcasting ability for these spells is wisdom.</p>
 		</description>
-		<sheet alt="Magic Initiate:Cleric">
+		<sheet alt="Magic Initiate: Cleric">
 			<description>You learn two cantrips Cleric spell list and one 1st-level Cleric spell. You always have that spell prepared and can cast it without a spell slot without a long rest.</description>
 		</sheet>
 		<rules>
@@ -130,7 +153,7 @@
 			<p class="indent">In addition, choose one 1st-level spell from that same list. You learn that spell and can cast it at its lowest level. Once you cast it, you must finish a long rest before you can cast it again.</p>
 			<p class="indent">Your spellcasting ability for these spells is wisdom.</p>
 		</description>
-		<sheet alt="Magic Initiate:Druid">
+		<sheet alt="Magic Initiate: Druid">
 			<description>You learn two cantrips Druid spell list and one 1st-level Druid spell. You always have that spell prepared and can cast it without a spell slot without a long rest.</description>
 		</sheet>
 		<rules>
@@ -146,7 +169,7 @@
 			<p class="indent">In addition, choose one 1st-level spell from that same list. You learn that spell and can cast it at its lowest level. Once you cast it, you must finish a long rest before you can cast it again.</p>
 			<p class="indent">Your spellcasting ability for these spells is intelligence.</p>
 		</description>
-		<sheet alt="Magic Initiate:Wizard">
+		<sheet alt="Magic Initiate: Wizard">
 			<description>You learn two cantrips Wizard spell list and one 1st-level Wizard spell. You always have that spell prepared and can cast it without a spell slot without a long rest.</description>
 		</sheet>
 		<rules>
@@ -155,7 +178,6 @@
 			<select type="Feat Feature" name="Spellcasting Ability" supports="Magic Initiate Wizard" />
 		</rules>
 	</element>
-	
 	<element name="Intelligence (Cleric)" type="Feat Feature" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MAGICINITIATE_CLERIC_SPELLCASTINGMODIFIER_INTELLIGENCE">
 		<supports>Magic Initiate Cleric</supports>
 		<compendium display="false" />
@@ -195,7 +217,6 @@
 			<stat inline="true" name="magic initiate:cleric:spellcasting stat" value="Charisma" />
 		</rules>
 	</element>
-	
 	<element name="Intelligence (Druid)" type="Feat Feature" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MAGICINITIATE_DRUID_SPELLCASTINGMODIFIER_INTELLIGENCE">
 		<supports>Magic Initiate Druid</supports>
 		<compendium display="false" />
@@ -235,7 +256,6 @@
 			<stat inline="true" name="magic initiate:druid:spellcasting stat" value="Charisma" />
 		</rules>
 	</element>
-	
 	<element name="Intelligence (Wizard)" type="Feat Feature" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MAGICINITIATE_WIZARD_SPELLCASTINGMODIFIER_INTELLIGENCE">
 		<supports>Magic Initiate Wizard</supports>
 		<compendium display="false" />
@@ -275,8 +295,8 @@
 			<stat inline="true" name="magic initiate:wizard:spellcasting stat" value="Charisma" />
 		</rules>
 	</element>
+	<!-- /Magic Initiate -->
 	<element name="2024 Musician" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MUSICIAN">
-		<prerequisite></prerequisite>
 		<supports>Origin Feat, Feat</supports>
 		<description>
 			<ul>
@@ -290,7 +310,6 @@
 		</sheet>
 	</element>
 	<element name="2024 Savage Attacker" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_SAVAGE_ATTACKER">
-		<prerequisite></prerequisite>
 		<supports>Origin Feat, Feat</supports>
 		<description>
 			<ul>
@@ -302,7 +321,6 @@
 		</sheet>
 	</element>
 	<element name="2024 Skilled" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_SKILLED">
-		<prerequisite></prerequisite>
 		<supports>Origin Feat, Feat</supports>
 		<description>
 			<ul>
@@ -310,15 +328,111 @@
 				<li><strong>Repeatable</strong>. You can take this feat more than once.</li>
 			</ul>
 		</description>
-		<setters>
-			<set name="allow duplicate">true</set>
-		</setters>
-		<sheet>
-			<description>Gain proficiency in any combination of three skills or tools of your choice.</description>
-		</sheet>
+		<sheet display="false"/>
+		<rules>
+			<select type="Proficiency" name="Skill or Tool Proficiency (Skilled)" supports="Skill||Tool" number="3"/>
+		</rules>
 	</element>
+	<element name="2024 Skilled" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_SKILLED_2">
+		<supports>Origin Feat, Feat</supports>
+		<requirements>ID_2024PHB_FEAT_SKILLED</requirements>
+		<description>
+			<ul>
+				<li>You gain proficiency in any combination of three skills or tools of your choice.</li>
+				<li><strong>Repeatable</strong>. You can take this feat more than once.</li>
+			</ul>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Proficiency" name="Skill or Tool Proficiency (Skilled)" supports="Skill||Tool" number="3"/>
+		</rules>
+	</element>
+	<element name="2024 Skilled" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_SKILLED_3">
+		<supports>Origin Feat, Feat</supports>
+		<requirements>ID_2024PHB_FEAT_SKILLED_2</requirements>
+		<description>
+			<ul>
+				<li>You gain proficiency in any combination of three skills or tools of your choice.</li>
+				<li><strong>Repeatable</strong>. You can take this feat more than once.</li>
+			</ul>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Proficiency" name="Skill or Tool Proficiency (Skilled)" supports="Skill||Tool" number="3"/>
+		</rules>
+	</element>
+	<element name="2024 Skilled" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_SKILLED_4">
+		<supports>Origin Feat, Feat</supports>
+		<requirements>ID_2024PHB_FEAT_SKILLED_3</requirements>
+		<description>
+			<ul>
+				<li>You gain proficiency in any combination of three skills or tools of your choice.</li>
+				<li><strong>Repeatable</strong>. You can take this feat more than once.</li>
+			</ul>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Proficiency" name="Skill or Tool Proficiency (Skilled)" supports="Skill||Tool" number="3"/>
+		</rules>
+	</element>
+	<element name="2024 Skilled" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_SKILLED_5">
+		<supports>Origin Feat, Feat</supports>
+		<requirements>ID_2024PHB_FEAT_SKILLED_4</requirements>
+		<description>
+			<ul>
+				<li>You gain proficiency in any combination of three skills or tools of your choice.</li>
+				<li><strong>Repeatable</strong>. You can take this feat more than once.</li>
+			</ul>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Proficiency" name="Skill or Tool Proficiency (Skilled)" supports="Skill||Tool" number="3"/>
+		</rules>
+	</element>
+	<element name="2024 Skilled" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_SKILLED_6">
+		<supports>Origin Feat, Feat</supports>
+		<requirements>ID_2024PHB_FEAT_SKILLED_5</requirements>
+		<description>
+			<ul>
+				<li>You gain proficiency in any combination of three skills or tools of your choice.</li>
+				<li><strong>Repeatable</strong>. You can take this feat more than once.</li>
+			</ul>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Proficiency" name="Skill or Tool Proficiency (Skilled)" supports="Skill||Tool" number="3"/>
+		</rules>
+	</element>
+	<element name="2024 Skilled" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_SKILLED_7">
+		<supports>Origin Feat, Feat</supports>
+		<requirements>ID_2024PHB_FEAT_SKILLED_6</requirements>
+		<description>
+			<ul>
+				<li>You gain proficiency in any combination of three skills or tools of your choice.</li>
+				<li><strong>Repeatable</strong>. You can take this feat more than once.</li>
+			</ul>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Proficiency" name="Skill or Tool Proficiency (Skilled)" supports="Skill||Tool" number="3"/>
+		</rules>
+	</element>
+	<element name="2024 Skilled" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_SKILLED_8">
+		<supports>Origin Feat, Feat</supports>
+		<requirements>ID_2024PHB_FEAT_SKILLED_7</requirements>
+		<description>
+			<ul>
+				<li>You gain proficiency in any combination of three skills or tools of your choice.</li>
+				<li><strong>Repeatable</strong>. You can take this feat more than once.</li>
+			</ul>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Proficiency" name="Skill or Tool Proficiency (Skilled)" supports="Skill||Tool" number="3"/>
+		</rules>
+	</element>
+	<!--/Skilled-->
 	<element name="2024 Tavern Brawler" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_TAVERN_BRAWLER">
-		<prerequisite></prerequisite>
 		<supports>Origin Feat, Feat</supports>
 		<description>
 			<ul>
@@ -334,7 +448,6 @@
 		</sheet>
 	</element>
 	<element name="2024 Tough" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_TOUGH">
-		<prerequisite></prerequisite>
 		<supports>Origin Feat, Feat</supports>
 		<description>
 			<ul>

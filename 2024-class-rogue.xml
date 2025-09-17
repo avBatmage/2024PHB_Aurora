@@ -324,14 +324,14 @@
 		</sheet>
 	</element>
 	<element name="Improved Cunning Strike" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_ROGUE_IMPROVEDCUNNINGSTRIKE">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_BLIND_SENSE</requirements>
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_IMPROVEDCUNNINGSTRIKE</requirements>
 		<description>
 			<p>Starting at 11th level, You can use up to two Cunning Strike effects when you deal Sneak Attack damage, paying the die cost for each effect.</p>
 		</description>
 		<sheet display="false" />
 	</element>
 	<element name="Devious Strikes" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_ROGUE_DEVIOUSSTRIKES">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_BLIND_SENSE</requirements>
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_DEVIOUSSTRIKES</requirements>
 		<description>
 			<p>Starting at 14th level, You've practiced new ways to use your Sneak Attack deviously. The following effects are now among your Cunning Strike options.
 
@@ -402,7 +402,7 @@
 	</element>
 
 	<!-- Rogue Subclasses -->
-	<element name="Arcane Trickster" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_ROGUE_ARCANE_TRICKSTER">
+	<element name="2024 Arcane Trickster" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_ROGUE_ARCANE_TRICKSTER">
 		<supports>Roguish Archetype</supports>
 		<description>
 
@@ -523,7 +523,7 @@
 		</sheet>
 	</element>
 
-	<element name="Assassin" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_ROGUE_ASSASSIN">
+	<element name="2024 Assassin" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_ROGUE_ASSASSIN">
 		<supports>Roguish Archetype</supports>
 		<description>
 			<p>An Assassin's training focuses on the grim art of death, using stealth, poison, and disguise to eliminate foes with deadly efficiency. While some Rogues who follow this path are hired killers, spies, or bounty hunters, the capabilities of this subclass are equally useful for adventurers facing a variety of monstrous enemies.</p>
@@ -587,7 +587,7 @@
 		</sheet>
 	</element>
 
-	<element name="Thief" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_ROGUE_THIEF">
+	<element name="2024 Thief" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_ROGUE_THIEF">
 		<supports>Roguish Archetype</supports>
 		<description>
 			<p>A mix of burglar, treasure hunter, and explorer, you are the epitome of an adventurer. In addition to improving your agility and stealth, you gain abilities useful for delving into ruins and getting maximum benefit from the magic items you find there.</p>
@@ -676,7 +676,8 @@
 	<element name="Uncanny Dodge Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_UNCANNY_DODGE" />
 	<element name="Evasion Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_EVASION" />
 	<element name="Reliable Talent Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_RELIABLE_TALENT" />
-	<element name="Blindsense Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_BLIND_SENSE" />
+	<element name="Improved Cunning Strike Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_IMPROVEDCUNNINGSTRIKE" />
+	<element name="Devious Strikes Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_DEVIOUSSTRIKES" />
 	<element name="Slippery Mind Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_SLIPPERY_MIND" />
 	<element name="Elusive Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_ELUSIVE" />
 	<element name="Stroke of Luck Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_STROKE_OF_LUCK" />

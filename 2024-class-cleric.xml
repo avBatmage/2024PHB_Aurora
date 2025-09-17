@@ -403,7 +403,7 @@
 	<element name="Greater Divine Intervention" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_CLERIC_GREATERDIVINEINTERVENTION">
 		<description>
 			<p><em>20th-Level Feature</em></p>
-			<p>Your call for intervention succeeds automatically, no roll required.</p>
+			<p>When you use your Divine Intervention, you can choose Wish when you select a spell.</p>
 		</description>
 		<sheet usage="1/2d4 Long Rests">
 			<description>When you use your Divine Intervention, you can choose Wish when you select a spell.</description>
