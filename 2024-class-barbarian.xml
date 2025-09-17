@@ -133,7 +133,7 @@
 		</rules>
 		<multiclass id="ID_2024PHB_MULTICLASS_BARBARIAN">
 			<prerequisite>Strength 13</prerequisite>
-			<requirements>[str:13]</requirements>
+			<requirements>[str:13],!ID_WOTC_PHB_CLASS_BARBARIAN</requirements>
 			<setters>
 				<set name="multiclass proficiencies">Shields, simple weapons, martial weapons</set>
 			</setters>

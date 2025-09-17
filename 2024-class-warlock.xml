@@ -112,7 +112,7 @@
 		</rules>
 		<multiclass id="ID_2024PHB_MULTICLASS_WARLOCK">
 			<prerequisite>Charisma 13</prerequisite>
-			<requirements>[cha:13]</requirements>
+			<requirements>[cha:13],!ID_WOTC_PHB_CLASS_WARLOCK</requirements>
 			<setters>
 				<set name="multiclass proficiencies">Light armor, simple weapons</set>
 			</setters>

@@ -118,7 +118,7 @@
 		</rules>
 		<multiclass id="ID_2024PHB_MULTICLASS_WIZARD">
 			<prerequisite>Intelligence 13</prerequisite>
-			<requirements>[int:13]</requirements>
+			<requirements>[int:13],!ID_WOTC_PHB_CLASS_WIZARD</requirements>
 			<setters>
 				<set name="multiclass proficiencies">—</set>
 			</setters>

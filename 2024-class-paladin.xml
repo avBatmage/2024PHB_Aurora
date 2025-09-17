@@ -129,7 +129,7 @@
 		</rules>
 		<multiclass id="ID_2024PHB_MULTICLASS_2024_PALADIN">
 			<prerequisite>Strength 13 and Charisma 13</prerequisite>
-			<requirements>([str:13],[cha:13])</requirements>
+			<requirements>([str:13],[cha:13],!ID_WOTC_PHB_CLASS_PALADIN)</requirements>
 			<setters>
 				<set name="multiclass proficiencies">Light armor, medium armor, shields, simple weapons, martial weapons</set>
 			</setters>
@@ -476,60 +476,6 @@
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_HOLY_NIMBUS" level="20" />
 		</rules>
 	</element>
-
-	<element name="Oath of Glory" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_PALADIN_OATH_OF_GLORY">
-		<supports>Sacred Oath</supports>
-		<description>
-			<p>Paladins who take the Oath of Glory believe they and their companions are destined to achieve glory through deeds of heroism. They train diligently and encourage their companions so they're all ready when destiny calls.</p>
-		</description>
-		<sheet>
-			<description>Paladins devoted to achieving glory through heroic deeds.</description>
-		</sheet>
-		<rules>
-			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_OATH_OF_GLORY_SPELLS" level="3" />
-			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_INSPIRING_SMITE" level="3" />
-			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_PEERLESS_ATHLETE" level="3" />
-			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_AURA_OF_ALACRITY" level="7" />
-			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_GLORIOUS_DEFENSE" level="15" />
-			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_LIVING_LEGEND" level="20" />
-		</rules>
-	</element>
-
-	<element name="Oath of the Ancients" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_PALADIN_OATH_OF_THE_ANCIENTS">
-		<supports>Sacred Oath</supports>
-		<description>
-			<p>The Oath of the Ancients is as old as the first elves and the rituals of Druids. Paladins who swear this oath cherish the light; they love the beautiful and life-giving things of the world more than any principles of honor, courage, and justice. They adorn their armor and clothing with images of growing things—leaves, antlers, or flowers—to reflect their commitment to preserving life and light in the world.</p>
-		</description>
-		<sheet>
-			<description>Paladins devoted to preserving life and light in the world.</description>
-		</sheet>
-		<rules>
-			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_OATH_OF_THE_ANCIENTS_SPELLS" level="3" />
-			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_NATURES_WRATH" level="3" />
-			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_AURA_OF_WARDING" level="7" />
-			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_UNDYING_SENTINEL" level="15" />
-			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_ELDER_CHAMPION" level="20" />
-		</rules>
-	</element>
-
-	<element name="Oath of Vengeance" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_PALADIN_OATH_OF_VENGEANCE">
-		<supports>Sacred Oath</supports>
-		<description>
-			<p>The Oath of Vengeance is a solemn commitment to punish those who have committed grievously evil acts. When evil armies slaughter helpless villagers, when a tyrant defies the will of the gods, when a thieves' guild grows too violent and powerful, when a dragon rampages through the countryside—at times like these, paladins arise and swear an Oath of Vengeance to set right what has gone wrong.</p>
-		</description>
-		<sheet>
-			<description>Paladins devoted to punishing those who have committed grievously evil acts.</description>
-		</sheet>
-		<rules>
-			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_OATH_OF_VENGEANCE_SPELLS" level="3" />
-			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_VOW_OF_ENMITY" level="3" />
-			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_RELENTLESS_AVENGER" level="7" />
-			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_SOUL_OF_VENGEANCE" level="15" />
-			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_AVENGING_ANGEL" level="20" />
-		</rules>
-	</element>
-
-	<!-- Oath of Devotion Features -->
 	<element name="Oath of Devotion Spells" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_OATH_OF_DEVOTION_SPELLS">
 		<description>
 			<p>The magic of your oath ensures you always have certain spells ready; when you reach a Paladin level specified in the Oath of Devotion Spells table, you thereafter always have the listed spells prepared.</p>
@@ -558,7 +504,6 @@
 			<grant type="Spell" id="ID_2024PHB_SPELL_FLAME_STRIKE" level="17" spellcasting="Paladin" prepared="true" />
 		</rules>
 	</element>
-
 	<element name="Sacred Weapon" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_SACRED_WEAPON">
 		<description>
 			<p>When you take the Attack action, you can expend one use of your Channel Divinity to imbue one Melee weapon that you are holding with positive energy. For 10 minutes or until you use this feature again, you add your Charisma modifier to attack rolls you make with that weapon (minimum bonus of +1), and each time you hit with it, you cause it to deal its normal damage type or Radiant damage.</p>
@@ -569,7 +514,6 @@
 			<description>Imbue one Melee weapon with positive energy for 10 minutes. Add your Charisma modifier to attack rolls (minimum +1) and deal Radiant damage. Weapon emits Bright Light in 20-foot radius and Dim Light 20 feet beyond.</description>
 		</sheet>
 	</element>
-
 	<element name="Aura of Devotion" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_AURA_OF_DEVOTION">
 		<description>
 			<p>You and your allies have Immunity to the Charmed condition while in your Aura of Protection. If a Charmed ally enters the aura, that condition has no effect on that ally while there.</p>
@@ -578,7 +522,6 @@
 			<description>You and your allies have Immunity to the Charmed condition while in your Aura of Protection.</description>
 		</sheet>
 	</element>
-
 	<element name="Smite of Protection" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_SMITE_OF_PROTECTION">
 		<description>
 			<p>Your magical smite now radiates protective energy. Whenever you cast <em>Divine Smite</em>, you and your allies have Half Cover while in your Aura of Protection. The aura has this benefit until the start of your next turn.</p>
@@ -587,7 +530,6 @@
 			<description>Whenever you cast Divine Smite, you and your allies have Half Cover while in your Aura of Protection until the start of your next turn.</description>
 		</sheet>
 	</element>
-
 	<element name="Holy Nimbus" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_HOLY_NIMBUS">
 		<description>
 			<p>As a Bonus Action, you can imbue your Aura of Protection with holy power, granting the benefits below for 10 minutes or until you end them (no action required). Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a level 5 spell slot (no action required).</p>
@@ -600,7 +542,23 @@
 		</sheet>
 	</element>
 
-	<!-- Oath of Glory Features -->
+	<element name="Oath of Glory" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_PALADIN_OATH_OF_GLORY">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p>Paladins who take the Oath of Glory believe they and their companions are destined to achieve glory through deeds of heroism. They train diligently and encourage their companions so they're all ready when destiny calls.</p>
+		</description>
+		<sheet>
+			<description>Paladins devoted to achieving glory through heroic deeds.</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_OATH_OF_GLORY_SPELLS" level="3" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_INSPIRING_SMITE" level="3" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_PEERLESS_ATHLETE" level="3" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_AURA_OF_ALACRITY" level="7" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_GLORIOUS_DEFENSE" level="15" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_LIVING_LEGEND" level="20" />
+		</rules>
+	</element>
 	<element name="Oath of Glory Spells" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_OATH_OF_GLORY_SPELLS">
 		<description>
 			<p>The magic of your oath ensures you always have certain spells ready; when you reach a Paladin level specified in the Oath of Glory Spells table, you thereafter always have the listed spells prepared.</p>
@@ -629,7 +587,6 @@
 			<grant type="Spell" id="ID_2024PHB_SPELL_YOLANDES_REGAL_PRESENCE" level="17" spellcasting="Paladin" prepared="true" />
 		</rules>
 	</element>
-
 	<element name="Inspiring Smite" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_INSPIRING_SMITE">
 		<description>
 			<p>Immediately after you deal damage to a creature with any of your Paladin's Smite spells, you can expend one use of your Channel Divinity and distribute Temporary Hit Points to creatures of your choice within 30 feet of yourself, which can include you. The total number of Temporary Hit Points equals 2d8 + your Paladin level, divided among the chosen creatures however you like.</p>
@@ -638,7 +595,6 @@
 			<description>After dealing damage with a Paladin's Smite spell, distribute 2d8 + Paladin level Temporary Hit Points among creatures within 30 feet.</description>
 		</sheet>
 	</element>
-
 	<element name="Peerless Athlete" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_PEERLESS_ATHLETE">
 		<description>
 			<p>As a Bonus Action, you can expend one use of your Channel Divinity to augment your athleticism. For 1 hour, you have Advantage on Strength (Athletics) and Dexterity (Acrobatics) checks; you can carry, push, drag, and lift twice as much weight as normal; and the distance of your long and high jumps increases by 10 feet (this extra distance costs movement as normal).</p>
@@ -647,7 +603,6 @@
 			<description>For 1 hour, gain Advantage on Athletics and Acrobatics checks, double carrying capacity, and increase jump distance by 10 feet.</description>
 		</sheet>
 	</element>
-
 	<element name="Aura of Alacrity" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_AURA_OF_ALACRITY">
 		<description>
 			<p>Your Speed increases by 10 feet.</p>
@@ -657,7 +612,6 @@
 			<description>Your Speed increases by 10 feet. Allies entering or starting their turn in your Aura of Protection gain +10 feet Speed until end of their next turn.</description>
 		</sheet>
 	</element>
-
 	<element name="Glorious Defense" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_GLORIOUS_DEFENSE">
 		<description>
 			<p>You can turn defense into a sudden strike. When you or another creature you can see within 10 feet of you is hit by an attack roll, you can use your Reaction to grant a bonus to the target's AC against that attack, potentially causing it to miss. The bonus equals your Charisma modifier (minimum of +1). If the attack misses, you can make one weapon attack against the attacker as part of this Reaction, provided the attacker is within your weapon's range.</p>
@@ -671,7 +625,6 @@
 			<stat name="glorious defense:uses" value="charisma:modifier" bonus="base" />
 		</rules>
 	</element>
-
 	<element name="Living Legend" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_LIVING_LEGEND">
 		<description>
 			<p>You can empower yourself with the legends— whether true or exaggerated—of your great deeds. As a Bonus Action, you gain the following benefits for 1 minute:</p>
@@ -685,7 +638,22 @@
 		</sheet>
 	</element>
 
-	<!-- Oath of the Ancients Features -->
+	<element name="Oath of the Ancients" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_PALADIN_OATH_OF_THE_ANCIENTS">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p>The Oath of the Ancients is as old as the first elves and the rituals of Druids. Paladins who swear this oath cherish the light; they love the beautiful and life-giving things of the world more than any principles of honor, courage, and justice. They adorn their armor and clothing with images of growing things—leaves, antlers, or flowers—to reflect their commitment to preserving life and light in the world.</p>
+		</description>
+		<sheet>
+			<description>Paladins devoted to preserving life and light in the world.</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_OATH_OF_THE_ANCIENTS_SPELLS" level="3" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_NATURES_WRATH" level="3" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_AURA_OF_WARDING" level="7" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_UNDYING_SENTINEL" level="15" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_ELDER_CHAMPION" level="20" />
+		</rules>
+	</element>
 	<element name="Oath of the Ancients Spells" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_OATH_OF_THE_ANCIENTS_SPELLS">
 		<description>
 			<p>The magic of your oath ensures you always have certain spells ready; when you reach a Paladin level specified in the Oath of the Ancients Spells table, you thereafter always have the listed spells prepared.</p>
@@ -714,7 +682,6 @@
 			<grant type="Spell" id="ID_2024PHB_SPELL_TREE_STRIDE" level="17" spellcasting="Paladin" prepared="true" />
 		</rules>
 	</element>
-
 	<element name="Nature's Wrath" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_NATURES_WRATH">
 		<description>
 			<p>As an action, you can expend one use of your Channel Divinity to conjure grasping spectral vines around nearby creatures. Each creature of your choice that you can see within 15 feet of you must succeed on a Strength saving throw or have the Restrained condition for 1 minute. A Restrained creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
@@ -723,7 +690,6 @@
 			<description>Conjure grasping spectral vines around creatures within 15 feet. Creatures must succeed on Strength save or be Restrained for 1 minute. Restrained creatures repeat save at end of each turn.</description>
 		</sheet>
 	</element>
-
 	<element name="Aura of Warding" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_AURA_OF_WARDING">
 		<description>
 			<p>Ancient magic lies so heavily upon you that it forms an eldritch ward, blunting energy from beyond the Material Plane; you and your allies have resistance to Necrotic, Psychic, and Radiant damage while in your Aura of Protection.</p>
@@ -732,7 +698,6 @@
 			<description>You and your allies have resistance to Necrotic, Psychic, and Radiant damage while in your Aura of Protection.</description>
 		</sheet>
 	</element>
-
 	<element name="Undying Sentinel" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_UNDYING_SENTINEL">
 		<description>
 			<p>When you are reduced to 0 Hit Points and not killed outright, you can choose to drop to 1 Hit Point instead, and you regain a number of Hit Points equal to three times your Paladin level. Once you use this feature, you can't do so again until you finish a Long Rest.</p>
@@ -742,7 +707,6 @@
 			<description>When reduced to 0 HP, drop to 1 HP instead and regain 3 × Paladin level HP. Also immune to aging effects.</description>
 		</sheet>
 	</element>
-
 	<element name="Elder Champion" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_ELDER_CHAMPION">
 		<description>
 			<p>As a Bonus Action, you can imbue your Aura of Protection with primal power, granting the following benefits for 1 minute or until you end them as a Bonus Action:</p>
@@ -756,7 +720,22 @@
 		</sheet>
 	</element>
 
-	<!-- Oath of Vengeance Features -->
+	<element name="Oath of Vengeance" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_PALADIN_OATH_OF_VENGEANCE">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p>The Oath of Vengeance is a solemn commitment to punish those who have committed grievously evil acts. When evil armies slaughter helpless villagers, when a tyrant defies the will of the gods, when a thieves' guild grows too violent and powerful, when a dragon rampages through the countryside—at times like these, paladins arise and swear an Oath of Vengeance to set right what has gone wrong.</p>
+		</description>
+		<sheet>
+			<description>Paladins devoted to punishing those who have committed grievously evil acts.</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_OATH_OF_VENGEANCE_SPELLS" level="3" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_VOW_OF_ENMITY" level="3" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_RELENTLESS_AVENGER" level="7" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_SOUL_OF_VENGEANCE" level="15" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_AVENGING_ANGEL" level="20" />
+		</rules>
+	</element>
 	<element name="Oath of Vengeance Spells" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_OATH_OF_VENGEANCE_SPELLS">
 		<description>
 			<p>The magic of your oath ensures you always have certain spells ready; when you reach a Paladin level specified in the Oath of Vengeance Spells table, you thereafter always have the listed spells prepared.</p>
@@ -785,7 +764,6 @@
 			<grant type="Spell" id="ID_2024PHB_SPELL_SCRYING" level="17" spellcasting="Paladin" prepared="true" />
 		</rules>
 	</element>
-
 	<element name="Vow of Enmity" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_VOW_OF_ENMITY">
 		<description>
 			<p>As a Bonus Action, you can expend one use of your Channel Divinity to utter a vow of enmity against a creature you can see within 30 feet of yourself. You gain Advantage on attack rolls against the creature for 1 minute.</p>
@@ -795,7 +773,6 @@
 			<description>Utter a vow of enmity against a creature within 30 feet. Gain Advantage on attack rolls against that creature for 1 minute. If creature drops to 0 HP, can transfer vow to another creature within 30 feet (once per turn).</description>
 		</sheet>
 	</element>
-
 	<element name="Relentless Avenger" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_RELENTLESS_AVENGER">
 		<description>
 			<p>Your supernatural focus helps you close off a foe's retreat. When you hit a creature with an Opportunity Attack, you can reduce the creature's Speed to 0, and you can then move up to half your Speed as part of the same Reaction. This movement doesn't provoke Opportunity Attacks.</p>
@@ -804,7 +781,6 @@
 			<description>When you hit with an Opportunity Attack, reduce creature's Speed to 0 and move up to half your Speed without provoking Opportunity Attacks.</description>
 		</sheet>
 	</element>
-
 	<element name="Soul of Vengeance" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_SOUL_OF_VENGEANCE">
 		<description>
 			<p>Immediately after a creature under the effect of your Vow of Enmity hits or misses with an attack, you can use your Reaction to make a melee attack against that creature if it's within range.</p>
@@ -813,7 +789,6 @@
 			<description>After a creature under Vow of Enmity hits or misses with an attack, make a melee attack against that creature if within range.</description>
 		</sheet>
 	</element>
-
 	<element name="Avenging Angel" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_AVENGING_ANGEL">
 		<description>
 			<p>As a Bonus Action, you can imbue your Aura of Protection with holy power, granting the following benefits for 1 hour or until you end them as a Bonus Action:</p>

@@ -107,7 +107,7 @@
 			<select type="Feat Feature" name="Magic Initiate" supports="2024 Magic Initiate" />
 		</rules>
 	</element>
-	<element name="Cleric" type="Feat Feature" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MAGICINITIATE_CLERIC">
+	<element name="2024 Magic Initiate (Cleric)" type="Feat Feature" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MAGICINITIATE_CLERIC">
 		<supports>2024 Magic Initiate</supports>
 		<description>
 			<p>You learn two cantrips of your choice from the cleric spell list.</p>
@@ -123,7 +123,7 @@
 			<select type="Feat Feature" name="Spellcasting Ability" supports="Magic Initiate Cleric" />
 		</rules>
 	</element>
-	<element name="Druid" type="Feat Feature" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MAGICINITIATE_DRUID">
+	<element name="2024 Magic Initiate (Druid)" type="Feat Feature" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MAGICINITIATE_DRUID">
 		<supports>2024 Magic Initiate</supports>
 		<description>
 			<p>You learn two cantrips of your choice from the druid spell list.</p>
@@ -139,7 +139,7 @@
 			<select type="Feat Feature" name="Spellcasting Ability" supports="Magic Initiate Druid" />
 		</rules>
 	</element>
-	<element name="Wizard" type="Feat Feature" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MAGICINITIATE_WIZARD">
+	<element name="2024 Magic Initiate (Wizard)" type="Feat Feature" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MAGICINITIATE_WIZARD">
 		<supports>2024 Magic Initiate</supports>
 		<description>
 			<p>You learn two cantrips of your choice from the wizard spell list.</p>

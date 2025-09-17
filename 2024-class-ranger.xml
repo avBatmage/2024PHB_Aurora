@@ -131,7 +131,7 @@
 		</rules>
 		<multiclass id="ID_2024PHB_MULTICLASS_RANGER_2024">
 			<prerequisite>Dexterity 13 and Wisdom 13</prerequisite>
-			<requirements>([dex:13],[wis:13])</requirements>
+			<requirements>([dex:13],[wis:13],!ID_WOTC_PHB_CLASS_RANGER)</requirements>
 			<setters>
 				<set name="multiclass proficiencies">Light armor, medium armor, shields, simple weapons, martial weapons, one skill from the class's skill list</set>
 			</setters>

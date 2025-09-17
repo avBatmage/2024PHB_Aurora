@@ -111,7 +111,7 @@
 		</rules>
 		<multiclass id="ID_2024PHB_MULTICLASS_BARD">
 			<prerequisite>Charisma 13</prerequisite>
-			<requirements>[cha:13]</requirements>
+			<requirements>[cha:13],!ID_WOTC_PHB_CLASS_BARD</requirements>
 			<setters>
 				<set name="multiclass proficiencies">Light armor, one skill of your choice, one musical instrument of your choice</set>
 			</setters>

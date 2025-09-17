@@ -134,7 +134,7 @@
 		</rules>
 		<multiclass id="ID_2024PHB_MULTICLASS_ROGUE" requirements="!ID_WOTC_PHB_MULTICLASS_ROGUE">
 			<prerequisite>Dexterity 13</prerequisite>
-			<requirements>[dex:13]</requirements>
+			<requirements>[dex:13],!ID_WOTC_PHB_CLASS_ROGUE</requirements>
 			<setters>
 				<set name="multiclass proficiencies">Light armor, one skill from the class's skill list, thieves' tools</set>
 			</setters>

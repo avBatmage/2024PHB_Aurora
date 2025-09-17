@@ -127,7 +127,7 @@
 		</rules>
 		<multiclass id="ID_2024PHB_MULTICLASS_MONK">
 			<prerequisite>Dexterity 13 and Wisdom 13</prerequisite>
-			<requirements>([dex:13],[wis:13])</requirements>
+			<requirements>([dex:13],[wis:13],!ID_WOTC_PHB_CLASS_MONK)</requirements>
 			<setters>
 				<set name="multiclass proficiencies">Simple weapons, martial weapons with the Light property</set>
 			</setters>

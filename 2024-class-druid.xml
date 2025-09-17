@@ -122,7 +122,7 @@
 		</rules>
 		<multiclass id="ID_2024PHB_MULTICLASS_DRUID">
 			<prerequisite>Wisdom 13</prerequisite>
-			<requirements>[wis:13]</requirements>
+			<requirements>[wis:13],!ID_WOTC_PHB_CLASS_DRUID</requirements>
 			<setters>
 				<set name="multiclass proficiencies">Light armor, shields</set>
 			</setters>

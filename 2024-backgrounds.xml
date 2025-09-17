@@ -4,7 +4,7 @@
 		<name>2024 Backgrounds</name>
 		<description>Backgrounds from the 2024 Player's Handbook.</description>
 		<author url="https://marketplace.dndbeyond.com/category/3709000?pid=DB3709000">Wizards of the Coast</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="2024-backgrounds.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-backgrounds.xml" />
 		</update>
 	</info>
@@ -18,6 +18,9 @@
 				<li><strong>Tool Proficiencies:</strong> Calligrapher's Supplies</li>
 				<li><strong>Equipment:</strong> Choose A or B: (A) Calligrapher's Supplies, Book (prayers), Holy Symbol, Parchment (10 sheets), Robe, 8 GP; or (B) 50 GP</li>
 			</ul>
+			<div class="reference">
+				<div element="ID_2024PHB_FEAT_MAGICINITIATE_CLERIC" />
+			</div>
 		</description>
 		<setters>
 			<set name="short">Intelligence, Wisdom, Charisma, Magic Initiate (Cleric), Insight, Religion, Calligrapher's Supplies</set>
@@ -40,6 +43,9 @@
 				<li><strong>Tool Proficiencies:</strong> Choose one kind of Artisan's Tools</li>
 				<li><strong>Equipment:</strong> Choose A or B: (A) Artisan's Tools (same as above), 2 Pouches, Traveler's Clothes, 32 GP; or (B) 50 GP</li>
 			</ul>
+			<div class="reference">
+				<div element="ID_2024PHB_FEAT_CRAFTER" />
+			</div>
 		</description>
 		<setters>
 			<set name="short">Strength, Dexterity, Intelligence, Crafter, Investigation, Persuasion, Artisan's Tools</set>
@@ -62,6 +68,9 @@
 				<li><strong>Tool Proficiencies:</strong> Forgery Kit</li>
 				<li><strong>Equipment:</strong> Choose A or B: (A) Forgery Kit, Costume, Fine Clothes, 15 GP; or (B) 50 GP</li>
 			</ul>
+			<div class="reference">
+				<div element="ID_2024PHB_FEAT_SKILLED" />
+			</div>
 		</description>
 		<setters>
 			<set name="short">Dexterity, Constitution, Charisma, Skilled, Deception, Sleight of Hand, Forgery Kit</set>
@@ -84,6 +93,9 @@
 				<li><strong>Tool Proficiencies:</strong> Thieves' Tools</li>
 				<li><strong>Equipment:</strong> Choose A or B: (A) 2 Daggers, Thieves' Tools, Crowbar, 2 Pouches, Traveler's Clothes, 16 GP; or (B) 50 GP</li>
 			</ul>
+			<div class="reference">
+				<div element="ID_2024PHB_FEAT_ALERT" />
+			</div>
 		</description>
 		<setters>
 			<set name="short">Dexterity, Constitution, Intelligence, Alert, Sleight of Hand, Stealth, Thieves' Tools</set>
@@ -106,6 +118,9 @@
 				<li><strong>Tool Proficiencies:</strong> Choose one kind of Musical Instrument</li>
 				<li><strong>Equipment:</strong> Choose A or B: (A) Musical Instrument (same as above), 2 Costumes, Mirror, Perfume, Traveler's Clothes, 11 GP; or (B) 50 GP</li>
 			</ul>
+			<div class="reference">
+				<div element="ID_2024PHB_FEAT_MUSICIAN" />
+			</div>
 		</description>
 		<setters>
 			<set name="short">Strength, Dexterity, Charisma, Musician, Acrobatics, Performance, Musical Instrument</set>
@@ -128,6 +143,9 @@
 				<li><strong>Tool Proficiencies:</strong> Carpenter's Tools</li>
 				<li><strong>Equipment:</strong> Choose A or B: (A) Sickle, Carpenter's Tools, Healer's Kit, Iron Pot, Shovel, Traveler's Clothes, 30 GP; or (B) 50 GP</li>
 			</ul>
+			<div class="reference">
+				<div element="ID_2024PHB_FEAT_TOUGH" />
+			</div>
 		</description>
 		<setters>
 			<set name="short">Strength, Constitution, Wisdom, Tough, Animal Handling, Nature, Carpenter's Tools</set>
@@ -150,6 +168,9 @@
 				<li><strong>Tool Proficiencies:</strong> Choose one kind of Gaming Set</li>
 				<li><strong>Equipment:</strong> Choose A or B: (A) Spear, Light Crossbow, 20 Bolts, Gaming Set (same as above), Hooded Lantern, Manacles, Quiver, Traveler's Clothes, 12 GP; or (B) 50 GP</li>
 			</ul>
+			<div class="reference">
+				<div element="ID_2024PHB_FEAT_ALERT" />
+			</div>
 		</description>
 		<setters>
 			<set name="short">Strength, Intelligence, Wisdom, Alert, Athletics, Perception, Gaming Set</set>
@@ -172,6 +193,9 @@
 				<li><strong>Tool Proficiencies:</strong> Cartographer's Tools</li>
 				<li><strong>Equipment:</strong> Choose A or B: (A) Shortbow, 20 Arrows, Cartographer's Tools, Bedroll, Quiver, Tent, Traveler's Clothes, 3 GP; or (B) 50 GP</li>
 			</ul>
+			<div class="reference">
+				<div element="ID_2024PHB_FEAT_MAGICINITIATE_DRUID" />
+			</div>
 		</description>
 		<setters>
 			<set name="short">Dexterity, Constitution, Wisdom, Magic Initiate (Druid), Stealth, Survival, Cartographer's Tools</set>
@@ -194,6 +218,9 @@
 				<li><strong>Tool Proficiencies:</strong> Herbalism Kit</li>
 				<li><strong>Equipment:</strong> Choose A or B: (A) Quarterstaff, Herbalism Kit, Bedroll, Book (philosophy), Lamp, Oil (3 flasks), Traveler's Clothes, 16 GP; or (B) 50 GP</li>
 			</ul>
+			<div class="reference">
+				<div element="ID_2024PHB_FEAT_HEALER" />
+			</div>
 		</description>
 		<setters>
 			<set name="short">Constitution, Wisdom, Charisma, Healer, Medicine, Religion, Herbalism Kit</set>
@@ -216,6 +243,9 @@
 				<li><strong>Tool Proficiencies:</strong> Navigator's Tools</li>
 				<li><strong>Equipment:</strong> Choose A or B: (A) Navigator's Tools, 2 Pouches, Traveler's Clothes, 22 GP; or (B) 50 GP</li>
 			</ul>
+			<div class="reference">
+				<div element="ID_2024PHB_FEAT_LUCKY" />
+			</div>
 		</description>
 		<setters>
 			<set name="short">Constitution, Intelligence, Charisma, Lucky, Animal Handling, Persuasion, Navigator's Tools</set>
@@ -238,6 +268,9 @@
 				<li><strong>Tool Proficiencies:</strong> Choose one kind of Gaming Set</li>
 				<li><strong>Equipment:</strong> Choose A or B: (A) Gaming Set (same as above), Fine Clothes, Perfurne, 29 GP; or (B) 50 GP</li>
 			</ul>
+			<div class="reference">
+				<div element="ID_2024PHB_FEAT_SKILLED" />
+			</div>
 		</description>
 		<setters>
 			<set name="short">Strength, Intelligence, Charisma, Skilled, History, Persuasion, Gaming Set</set>
@@ -260,6 +293,9 @@
 				<li><strong>Tool Proficiencies:</strong> Calligrapher's Supplies</li>
 				<li><strong>Equipment:</strong> Choose A or B: (A) Quarterstaff, Calligrapher's Supplies, Book (history), Parchment (8 sheets), Robe, 8 GP; or (B) 50 GP</li>
 			</ul>
+			<div class="reference">
+				<div element="ID_2024PHB_FEAT_MAGICINITIATE_WIZARD" />
+			</div>
 		</description>
 		<setters>
 			<set name="short">Constitution, Intelligence, Wisdom, Magic Initiate (Wizard), Arcana and History, Calligrapher's Supplies</set>
@@ -282,6 +318,9 @@
 				<li><strong>Tool Proficiencies:</strong> Navigator's Tools</li>
 				<li><strong>Equipment:</strong> Choose A or B: (A) Dagger, Navigator's Tools, Rope, Traveler's Clothes, 20 GP; or (B) 50 GP</li>
 			</ul>
+			<div class="reference">
+				<div element="ID_2024PHB_FEAT_TAVERN_BRAWLER" />
+			</div>
 		</description>
 		<setters>
 			<set name="short">Strength, Dexterity, Wisdom, Tavern Brawler, Acrobatics, Perception, Navigator's Tools</set>
@@ -304,6 +343,9 @@
 				<li><strong>Tool Proficiencies:</strong> Calligrapher's Supplies</li>
 				<li><strong>Equipment:</strong> Choose A or B: (A) Calligrapher's Supplies, Fine Clothes, Lamp, Oil (3 flasks), Parchment (12 sheets), 23 GP; or (B) 50 GP</li>
 			</ul>
+			<div class="reference">
+				<div element="ID_2024PHB_FEAT_SKILLED" />
+			</div>
 		</description>
 		<setters>
 			<set name="short">Dexterity, Intelligence, Wisdom, Skilled, Investigation, Perception, Calligrapher's Supplies</set>
@@ -326,6 +368,9 @@
 				<li><strong>Tool Proficiencies:</strong> Choose one kind of Gaming Set</li>
 				<li><strong>Equipment:</strong> Choose A or B: (A) A Spear, Shortbow, 20 Arrows, Gaming Set (same as above), Healer's Kit, Quiver, Traveler's Clothes, 14 GP; or (B) 50 GP</li>
 			</ul>
+			<div class="reference">
+				<div element="ID_2024PHB_FEAT_SAVAGE_ATTACKER" />
+			</div>
 		</description>
 		<setters>
 			<set name="short">Strength, Dexterity, Constitution, Savage Attacker, Athletics, Intimidation, Gaming Set</set>
@@ -348,9 +393,12 @@
 				<li><strong>Tool Proficiencies:</strong> Thieves' Tools</li>
 				<li><strong>Equipment:</strong> Choose A or B: (A) 2 Daggers, Thieves' Tools, Gaming Set (any), Bedroll, 2 Pouches, Traveler's Clothes, 16 GP; or (B) 50 GP</li>
 			</ul>
+			<div class="reference">
+				<div element="ID_2024PHB_FEAT_LUCKY" />
+			</div>
 		</description>
 		<setters>
-			<set name="short">Dexterity, Wisdom, Charisma, Lucky, Insight, Stealth, </set>
+			<set name="short">Dexterity, Wisdom, Charisma, Lucky, Insight, Stealth, Thieves' Tools</set>
 		</setters>
 		<rules>
 			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Wayfarer)" supports="Custom Ability Score Improvement Option" />
@@ -372,6 +420,9 @@
 				<li><strong>Tool Proficiencies:</strong> </li>
 				<li><strong>Equipment:</strong> Choose A or B: (A) ; or (B) 50 GP</li>
 			</ul>
+			<div class="reference">
+				<div element="ID_2024PHB_FEAT_" />
+			</div>
 		</description>
 		<setters>
 			<set name="short"></set>
