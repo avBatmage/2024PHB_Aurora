@@ -2,8 +2,8 @@
 <elements>
 	<info>
 		<name>2024 Paladin</name>
-		<description>The Paladin class from the Player's Handbook.</description>
-		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
+		<description>The Paladin class from the 2024 Player's Handbook.</description>
+		<author url="https://marketplace.dndbeyond.com/category/3709000?pid=DB3709000">Wizards of the Coast</author>
 		<update version="0.0.3">
 			<file name="2024-class-paladin.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/classes/2024-class-paladin.xml" />
 		</update>

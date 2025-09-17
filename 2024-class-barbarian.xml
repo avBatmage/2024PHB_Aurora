@@ -3,7 +3,7 @@
 	<info>
 		<name>2024 Barbarian</name>
 		<description>The Barbarian class from the 2024 Player's Handbook.</description>
-		<author url="https://marketplace.dndbeyond.com/core-rules/3709000?pid=DB3709000">Wizards of the Coast</author>
+		<author url="https://marketplace.dndbeyond.com/category/3709000?pid=DB3709000">Wizards of the Coast</author>
 		<update version="0.0.2">
 			<file name="2024-class-barbarian.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/refs/heads/main/2024-class-barbarian.xml" />
 		</update>
@@ -102,14 +102,14 @@
 			<set name="hd">d12</set>
 		</setters>
 		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_BATAV_MULTICLASS_BARBARIAN" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_BATAV_MULTICLASS_BARBARIAN" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_BATAV_MULTICLASS_BARBARIAN" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_BATAV_MULTICLASS_BARBARIAN"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_BATAV_MULTICLASS_BARBARIAN" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_BATAV_MULTICLASS_BARBARIAN" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_BATAV_MULTICLASS_BARBARIAN" />
-			<select type="Proficiency" name="Skill Proficiency (Barbarian)" number="2" supports="Skill,Barbarian" requirements="!ID_BATAV_MULTICLASS_BARBARIAN" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_2024PHB_MULTICLASS_BARBARIAN" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_2024PHB_MULTICLASS_BARBARIAN" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_2024PHB_MULTICLASS_BARBARIAN" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_2024PHB_MULTICLASS_BARBARIAN"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_2024PHB_MULTICLASS_BARBARIAN" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_2024PHB_MULTICLASS_BARBARIAN" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_2024PHB_MULTICLASS_BARBARIAN" />
+			<select type="Proficiency" name="Skill Proficiency (Barbarian)" number="2" supports="Skill,Barbarian" requirements="!ID_2024PHB_MULTICLASS_BARBARIAN" />
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_RAGE" level="1" />
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_UNARMORED_DEFENCE" level="1" />
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_WEAPON_MASTERY" level="1" />
@@ -131,7 +131,7 @@
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_EPIC_BOON" level="19" />
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_PRIMAL_CHAMPION" level="20" />
 		</rules>
-		<multiclass id="ID_BATAV_MULTICLASS_BARBARIAN">
+		<multiclass id="ID_2024PHB_MULTICLASS_BARBARIAN">
 			<prerequisite>Strength 13</prerequisite>
 			<requirements>[str:13]</requirements>
 			<setters>

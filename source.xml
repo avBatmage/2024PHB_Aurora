@@ -12,8 +12,9 @@
 		</description>
 		<setters>
 			<set name="abbreviation">2024PHB</set>
-			<set name="url">https://github.com/avBatmage</set>
-			<set name="author" abbreviation="2024PHB" url="https://marketplace.dndbeyond.com/category/3709000?pid=DB3709000">2024 Player's Handbook</set>
+			<set name="url">https://marketplace.dndbeyond.com/category/3709000?pid=DB3709000</set>
+			<set name="image">https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/players-handbook-2024-cover-physical.jpg</set>
+			<set name="author" abbreviation="2024PHB" url="http://dnd.wizards.com">Wizards of the Coast</set>
 			<set name="homebrew">true</set>
 			<set name="release">20250818</set>
 		</setters>

@@ -3,6 +3,7 @@
 	<info>
 		<name>2024 Ranger</name>
 		<description>The Ranger class from the 2024 Player's Handbook.</description>
+		<author url="https://marketplace.dndbeyond.com/category/3709000?pid=DB3709000">Wizards of the Coast</author>
 		<update version="0.0.4">
 			<file name="2024-class-ranger.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-class-ranger.xml" />
 		</update>
@@ -147,7 +148,7 @@
 	</element>
 	<element name="Spellcasting" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_SPELLCASTING">
 		<description>
-			<p>You have learned to channel the magical essence of nature to cast spells. See the Batav's Additions 2024 for the rules on spellcasting. The information below details how you use those rules as a Ranger.</p>
+			<p>You have learned to channel the magical essence of nature to cast spells. See the Player's Handbook for the rules on spellcasting. The information below details how you use those rules as a Ranger.</p>
 			<h5>SPELL SLOTS</h5>
 			<p>The Ranger table shows how many spell slots you have to cast your ranger spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.</p>
 			<p class="indent">For example, if you know the 1st-level spell animal friendship and have a 1st-level and a 2nd-level spell slot available, you can cast animal friendship using either slot.</p>
@@ -274,7 +275,7 @@
 			<select type="Spell" name="Cantrip (Druid)" supports="Druid, 0" level="1" number="2" spellcasting="Ranger" />
 		</rules>
 	</element>
-	<element name="Ranger Archetype" type="Class Feature" source="Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_RANGER_ARCHETYPE">
+	<element name="Ranger Archetype" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_RANGER_ARCHETYPE">
 		<description>
 			<p>At 3rd level, you choose an archetype that you strive to emulate: Beast Master, Fey Wanderer, Hunter, or Gloom Stalker, all detailed at the end of the class description. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level.</p>
 		</description>

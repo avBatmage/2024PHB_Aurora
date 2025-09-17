@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
+		<name>2024 Character Creation</name>
+		<description>Adding character creation stuff from the 2024 Player's Handbook</description>
+		<author url="https://marketplace.dndbeyond.com/category/3709000?pid=DB3709000">Wizards of the Coast</author>
 		<update version="0.0.1">
 			<file name="2024-character-creation.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-character-creation.xml" />
 		</update>

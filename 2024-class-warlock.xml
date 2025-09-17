@@ -2,8 +2,8 @@
 <elements>
 	<info>
 		<name>2024 Warlock</name>
-		<description>The Warlock class from the Player's Handbook.</description>
-		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
+		<description>The Warlock class from the 2024 Player's Handbook.</description>
+		<author url="https://marketplace.dndbeyond.com/category/3709000?pid=DB3709000">Wizards of the Coast</author>
 		<update version="0.3.9">
 			<file name="2024-class-warlock.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-class-warlock.xml" />
 		</update>

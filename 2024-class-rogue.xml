@@ -2,6 +2,8 @@
 <elements>
 	<info>
 		<name>2024 Rogue</name>
+		<description>The Rogue class from the 2024 Player's Handbook.</description>
+		<author url="https://marketplace.dndbeyond.com/category/3709000?pid=DB3709000">Wizards of the Coast</author>
 		<update version="0.0.2">
 			<file name="2024-class-rogue.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-class-rogue.xml" />
 		</update>
@@ -230,7 +232,7 @@
 	<element name="Roguish Archetype" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_ROGUE_ROGUISHARCHETYPE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_ROGUISH_ARCHETYPE</requirements>
 		<description>
-			<p>At 3rd level, you choose an archetype that you emulate in the exercise of your rogue abilities. The Thief archetype is detailed here; see the Batav's Additions 2024 for other archetypes. Your choice grants you features at 3rd level and then again at 9th, 13th, and 17th level.</p>
+			<p>At 3rd level, you choose an archetype that you emulate in the exercise of your rogue abilities. The Thief archetype is detailed here; see the Player's Handbook for other archetypes. Your choice grants you features at 3rd level and then again at 9th, 13th, and 17th level.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
