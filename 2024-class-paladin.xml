@@ -453,7 +453,7 @@
 	<element name="Cleansing Touch Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_CLEANSING_TOUCH" />
 
 	<!-- Paladin Subclasses -->
-	<element name="Oath of Devotion" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_PALADIN_OATH_OF_DEVOTION">
+	<element name="2024 Oath of Devotion" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_PALADIN_OATH_OF_DEVOTION">
 		<supports>Sacred Oath</supports>
 		<description>
 			<p>The Oath of Devotion binds Paladins to the ideals of justice and order. These Paladins meet the archetype of the knight in shining armor. They hold themselves to the highest standards of conduct, and some—for better or worse—hold the rest of the world to the same standards.</p>
@@ -464,6 +464,11 @@
 				<li>Protect the weak and never fear to act.</li>
 				<li>Let your honorable deeds be an example.</li>
 			</ul>
+			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_OATH_OF_DEVOTION_SPELLS" />
+			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_SACRED_WEAPON" />
+			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_AURA_OF_DEVOTION" />
+			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_SMITE_OF_PROTECTION" />
+			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_HOLY_NIMBUS" />
 		</description>
 		<sheet>
 			<description>Paladins devoted to justice and order.</description>
@@ -542,10 +547,22 @@
 		</sheet>
 	</element>
 
-	<element name="Oath of Glory" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_PALADIN_OATH_OF_GLORY">
+	<element name="2024 Oath of Glory" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_PALADIN_OATH_OF_GLORY">
 		<supports>Sacred Oath</supports>
 		<description>
 			<p>Paladins who take the Oath of Glory believe they and their companions are destined to achieve glory through deeds of heroism. They train diligently and encourage their companions so they're all ready when destiny calls.</p>
+			<p class="indent">These paladins share the following tenets:</p>
+			<ul>
+				<li>Endeavor to be known by your deeds</li>
+				<li>Face hardships with courage.</li>
+				<li>Inspire others to strive for glory</li>
+			</ul>
+			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_OATH_OF_GLORY_SPELLS" />
+			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_INSPIRING_SMITE" />
+			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_PEERLESS_ATHLETE" />
+			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_AURA_OF_ALACRITY" />
+			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_GLORIOUS_DEFENSE" />
+			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_LIVING_LEGEND" />
 		</description>
 		<sheet>
 			<description>Paladins devoted to achieving glory through heroic deeds.</description>
@@ -638,10 +655,21 @@
 		</sheet>
 	</element>
 
-	<element name="Oath of the Ancients" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_PALADIN_OATH_OF_THE_ANCIENTS">
+	<element name="2024 Oath of the Ancients" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_PALADIN_OATH_OF_THE_ANCIENTS">
 		<supports>Sacred Oath</supports>
 		<description>
 			<p>The Oath of the Ancients is as old as the first elves and the rituals of Druids. Paladins who swear this oath cherish the light; they love the beautiful and life-giving things of the world more than any principles of honor, courage, and justice. They adorn their armor and clothing with images of growing things—leaves, antlers, or flowers—to reflect their commitment to preserving life and light in the world.</p>
+			<p class="indent">These paladins share the following tenets:</p>
+			<ul>
+				<li>Kindle the light of hope.</li>
+				<li>Shelter life.</li>
+				<li>Delight in art and laughter.</li>
+			</ul>
+			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_OATH_OF_THE_ANCIENTS_SPELLS" />
+			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_NATURES_WRATH" />
+			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_AURA_OF_WARDING" />
+			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_UNDYING_SENTINEL" />
+			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_ELDER_CHAMPION" />
 		</description>
 		<sheet>
 			<description>Paladins devoted to preserving life and light in the world.</description>
@@ -720,10 +748,21 @@
 		</sheet>
 	</element>
 
-	<element name="Oath of Vengeance" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_PALADIN_OATH_OF_VENGEANCE">
+	<element name="2024 Oath of Vengeance" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_PALADIN_OATH_OF_VENGEANCE">
 		<supports>Sacred Oath</supports>
 		<description>
 			<p>The Oath of Vengeance is a solemn commitment to punish those who have committed grievously evil acts. When evil armies slaughter helpless villagers, when a tyrant defies the will of the gods, when a thieves' guild grows too violent and powerful, when a dragon rampages through the countryside—at times like these, paladins arise and swear an Oath of Vengeance to set right what has gone wrong.</p>
+			<p class="indent">These paladins share the following tenets:</p>
+			<ul>
+				<li>Show the wicked no mercy.</li>
+				<li>Fight injustice and its cause.</li>
+				<li>Aid those harmed by injustice.</li>
+			</ul>
+			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_OATH_OF_VENGEANCE_SPELLS" />
+			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_VOW_OF_ENMITY" />
+			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_RELENTLESS_AVENGER" />
+			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_SOUL_OF_VENGEANCE" />
+			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_AVENGING_ANGEL" />
 		</description>
 		<sheet>
 			<description>Paladins devoted to punishing those who have committed grievously evil acts.</description>
