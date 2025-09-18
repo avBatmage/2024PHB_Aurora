@@ -375,6 +375,30 @@
 			<description>Choose one of your known Warlock cantrips that deals damage. You can add your Charisma modifier to that spell's damage rolls.</description>
 		</sheet>
 	</element>
+	<element name="2024 Agonizing Blast" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_AGONIZING_BLAST_2">
+		<supports>Eldritch Invocation</supports>
+		<prerequisites>Level 2+ Warlock, a Warlock Cantrip That Deals Damage</prerequisites>
+		<requirements>[level:2],[type:spell],ID_2024PHB_CLASS_FEATURE_WARLOCK_AGONIZING_BLAST</requirements>
+		<description>
+			<p>Choose one of your known Warlock cantrips that deals damage. You can add your Charisma modifier to that spell's damage rolls.</p>
+			<p class="indent"><strong>Repeatable.</strong> You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip.</p>
+		</description>
+		<sheet>
+			<description>Choose one of your known Warlock cantrips that deals damage. You can add your Charisma modifier to that spell's damage rolls.</description>
+		</sheet>
+	</element>
+	<element name="2024 Agonizing Blast" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_AGONIZING_BLAST_3">
+		<supports>Eldritch Invocation</supports>
+		<prerequisites>Level 2+ Warlock, a Warlock Cantrip That Deals Damage</prerequisites>
+		<requirements>[level:2],[type:spell],ID_2024PHB_CLASS_FEATURE_WARLOCK_AGONIZING_BLAST_2</requirements>
+		<description>
+			<p>Choose one of your known Warlock cantrips that deals damage. You can add your Charisma modifier to that spell's damage rolls.</p>
+			<p class="indent"><strong>Repeatable.</strong> You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip.</p>
+		</description>
+		<sheet>
+			<description>Choose one of your known Warlock cantrips that deals damage. You can add your Charisma modifier to that spell's damage rolls.</description>
+		</sheet>
+	</element>
 
 	<element name="2024 Armor of Shadows" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_ARMOR_OF_SHADOWS">
 		<supports>Eldritch Invocation</supports>
@@ -874,8 +898,8 @@
 		<rules>
 			<stat name="healing light:count" value="1" />
 			<stat name="healing light:count" value="level:2024 Warlock" />
-			<stat name="healing light:max" value="1" />
-			<stat name="healing light:max" value="charisma:modifier" />
+			<stat name="healing light:max" value="1" bonus="base" />
+			<stat name="healing light:max" value="charisma:modifier" bonus="base" />
 
 		</rules>
 	</element>
