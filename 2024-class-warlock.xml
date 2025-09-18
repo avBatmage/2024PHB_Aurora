@@ -497,7 +497,7 @@
 		</sheet>
 	</element>
 
-	<element name="Fiendish Vigor" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_FIENDISH_VIGOR">
+	<element name="2024 Fiendish Vigor" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_FIENDISH_VIGOR">
 		<supports>Eldritch Invocation</supports>
 		<prerequisites>Level 2+ Warlock</prerequisites>
 		<requirements>[level:2]</requirements>
@@ -512,7 +512,7 @@
 		</rules>
 	</element>
 
-	<element name="Gaze of Two Minds" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_GAZE_OF_TWO_MINDS">
+	<element name="2024 Gaze of Two Minds" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_GAZE_OF_TWO_MINDS">
 		<supports>Eldritch Invocation</supports>
 		<prerequisites>Level 5+ Warlock</prerequisites>
 		<requirements>[level:5]</requirements>
@@ -526,7 +526,7 @@
 		</sheet>
 	</element>
 
-	<element name="Gift of the Depths" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_GIFT_OF_THE_DEPTHS">
+	<element name="2024 Gift of the Depths" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_GIFT_OF_THE_DEPTHS">
 		<supports>Eldritch Invocation</supports>
 		<prerequisites>Level 5+ Warlock</prerequisites>
 		<requirements>[level:5]</requirements>
@@ -543,7 +543,7 @@
 		</rules>
 	</element>
 
-	<element name="Gift of the Protectors" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_GIFT_OF_THE_PROTECTORS">
+	<element name="2024 Gift of the Protectors" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_GIFT_OF_THE_PROTECTORS">
 		<supports>Eldritch Invocation</supports>
 		<prerequisites>Level 9+ Warlock, Pact of the Tome</prerequisites>
 		<requirements>[level:9],ID_2024PHB_CLASS_FEATURE_WARLOCK_PACT_OF_THE_TOME</requirements>
@@ -557,7 +557,7 @@
 		</sheet>
 	</element>
 
-	<element name="Investment of the Chain Master" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_INVESTMENT_OF_THE_CHAIN_MASTER">
+	<element name="2024 Investment of the Chain Master" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_INVESTMENT_OF_THE_CHAIN_MASTER">
 		<supports>Eldritch Invocation</supports>
 		<prerequisites>Level 5+ Warlock, Pact of the Chain</prerequisites>
 		<requirements>[level:5],ID_2024PHB_CLASS_FEATURE_WARLOCK_PACT_OF_THE_CHAIN</requirements>
@@ -574,7 +574,7 @@
 		</sheet>
 	</element>
 
-	<element name="Lifedrinker" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_LIFEDRINKER">
+	<element name="2024 Lifedrinker" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_LIFEDRINKER">
 		<supports>Eldritch Invocation</supports>
 		<prerequisites>Level 9+ Warlock, Pact of the Blade</prerequisites>
 		<requirements>[level:9],ID_2024PHB_CLASS_FEATURE_WARLOCK_PACT_OF_THE_BLADE</requirements>
@@ -586,7 +586,7 @@
 		</sheet>
 	</element>
 
-	<element name="Mask of Many Faces" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_MASK_OF_MANY_FACES">
+	<element name="2024 Mask of Many Faces" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_MASK_OF_MANY_FACES">
 		<supports>Eldritch Invocation</supports>
 		<prerequisites>Level 2+ Warlock</prerequisites>
 		<requirements>[level:2]</requirements>
@@ -601,7 +601,7 @@
 		</rules>
 	</element>
 
-	<element name="Master of Myriad Forms" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_MASTER_OF_MYRIAD_FORMS">
+	<element name="2024 Master of Myriad Forms" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_MASTER_OF_MYRIAD_FORMS">
 		<supports>Eldritch Invocation</supports>
 		<prerequisites>Level 5+ Warlock</prerequisites>
 		<requirements>[level:5]</requirements>
@@ -616,7 +616,7 @@
 		</rules>
 	</element>
 
-	<element name="Misty Visions" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_MISTY_VISIONS">
+	<element name="2024 Misty Visions" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_MISTY_VISIONS">
 		<supports>Eldritch Invocation</supports>
 		<prerequisites>Level 2+ Warlock</prerequisites>
 		<requirements>[level:2]</requirements>
@@ -631,7 +631,7 @@
 		</rules>
 	</element>
 
-	<element name="One with Shadows" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_ONE_WITH_SHADOWS">
+	<element name="2024 One with Shadows" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_ONE_WITH_SHADOWS">
 		<supports>Eldritch Invocation</supports>
 		<prerequisites>Level 5+ Warlock</prerequisites>
 		<requirements>[level:5]</requirements>
@@ -646,7 +646,7 @@
 		</rules>
 	</element>
 
-	<element name="Otherworldly Leap" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_OTHERWORLDLY_LEAP">
+	<element name="2024 Otherworldly Leap" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_OTHERWORLDLY_LEAP">
 		<supports>Eldritch Invocation</supports>
 		<prerequisites>Level 2+ Warlock</prerequisites>
 		<requirements>[level:2]</requirements>
@@ -661,7 +661,7 @@
 		</rules>
 	</element>
 
-	<element name="Repelling Blast" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_REPELLING_BLAST">
+	<element name="2024 Repelling Blast" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_REPELLING_BLAST">
 		<supports>Eldritch Invocation</supports>
 		<prerequisites>Level 2+ Warlock, a Warlock Cantrip That deals damage via an Attack Roll</prerequisites>
 		<requirements>[level:2],[type:spell]</requirements>
@@ -674,7 +674,7 @@
 		</sheet>
 	</element>
 
-	<element name="Visions of Distant Realms" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_VISIONS_OF_DISTANT_REALMS">
+	<element name="2024 Visions of Distant Realms" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_VISIONS_OF_DISTANT_REALMS">
 		<supports>Eldritch Invocation</supports>
 		<prerequisites>Level 9+ Warlock</prerequisites>
 		<requirements>[level:9]</requirements>
@@ -689,7 +689,7 @@
 		</rules>
 	</element>
 
-	<element name="Whispers of the Grave" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_WHISPERS_OF_THE_GRAVE">
+	<element name="2024 Whispers of the Grave" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_WHISPERS_OF_THE_GRAVE">
 		<supports>Eldritch Invocation</supports>
 		<prerequisites>Level 7+ Warlock</prerequisites>
 		<requirements>[level:7]</requirements>
@@ -704,7 +704,7 @@
 		</rules>
 	</element>
 
-	<element name="Witch Sight" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_WITCH_SIGHT">
+	<element name="2024 Witch Sight" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_WITCH_SIGHT">
 		<supports>Eldritch Invocation</supports>
 		<prerequisites>Level 15+ Warlock</prerequisites>
 		<requirements>[level:15]</requirements>
