@@ -712,7 +712,7 @@
 	<element name="Divine Fury" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_PATH_OF_THE_ZEALOT_DIVINE_FURY">
 		<description>
 			<p><i>3rd-Level Feature</i></p>
-			<p>You can channel divine power into your strikes. On each of your turns while your Rage is active, the first creature you hit with a weapon or an Unarmed Strike takes extra damage equal to ld6 plus half your Barbarian level (round down). The extra damage is Necrotic or Radiant; you choose the type each time you deal the damage.</p>
+			<p>You can channel divine power into your strikes. On each of your turns while your Rage is active, the first creature you hit with a weapon or an Unarmed Strike takes extra damage equal to 1d6 plus half your Barbarian level (round down). The extra damage is Necrotic or Radiant; you choose the type each time you deal the damage.</p>
 		</description>
 		<sheet usage="1/Turn">
 			<description>On each of your turns while Raging, the first creature you hit with a weapon or an Unarmed Strike takes extra damage equal to 1d6+{{level:2024 barbarian:half}}. The extra damage is Necrotic or Radiant; you choose the type each time you deal the damage.</description>

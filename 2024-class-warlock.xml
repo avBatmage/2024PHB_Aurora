@@ -129,7 +129,7 @@
 			<p>You have unearthed Eldritch Invocations, pieces of forbidden knowledge that imbue you with an abiding magical ability or other lessons.</p>
 			<p class="indent">At 1st level, you gain one invocation of your choice. Your invocation options are detailed at the end of the class description. When you gain certain warlock levels, you gain additional invocations of your choice, as shown in the Invocations Known column of the Warlock table.</p>
 			<p class="indent">Additionally, when you gain a level in this class, you can choose one of the invocations you know and replace it with another invocation that you could learn at that level.</p>
-			<p class="indent"><strong>Prerequisites.</strong> If an invocation has a prerequisite, you must meet it to learn that invocation. For example, if an invocation requires you to be a [level:2024 warlock:5], you can select the invocation once you reach Warlock level 5.</p>
+			<p class="indent"><strong>Prerequisites.</strong> If an invocation has a prerequisite, you must meet it to learn that invocation. For example, if an invocation requires you to be a level 5+ Warlock, you can select the invocation once you reach Warlock level 5.</p>
 			<p class="indent"><strong>Replacing and Gaining Invocations.</strong> Whenever you gain a Warlock level, you can replace one of your invocations with another one for which you qualify. You can't replace an invocation if it's a prerequisite for another invocation that you have.</p>
 			<p class="indent">You can't pick the same invocation more than once unless its description says otherwise.</p>
 		</description>
@@ -341,12 +341,12 @@
 			<p class="indent"><strong>Spellcasting Focus.</strong> You can use the book as a Spellcasting Focus.</p>
 		</description>
 		<sheet>
-			<description>You conjure a Book of Shadows that grants you cantrips and ritual spells from any class.
+			<description>You conjure a Book of Shadows at the end of a rest that grants you cantrips and ritual spells from any class.
 			You can use the book as a Spellcasting Focus.</description>
 		</sheet>
 		<rules>
 			<select type="Spell" name="Cantrip (Pact of the Tome)" supports="0" level="1" number="3" spellcasting="Warlock"/>
-			<select type="Spell" name="Ritual (Pact of the Tome)" supports="1" level="1" number="2" spellcasting="Warlock" ritual="true"/>
+			<select type="Spell" name="Ritual (Pact of the Tome)" supports="1,ritual" level="1" number="2" spellcasting="Warlock"/>
 		</rules>
 	</element>
 	<element name="2024 Pact of the Blade" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_PACT_OF_THE_BLADE">
@@ -357,15 +357,16 @@
 			<p class="indent">Your bond with the weapon ends if you use this feature's Bonus Action again, if the weapon is more than 5 feet away from you for 1 minute or more, or if you die. A conjured weapon disappears when the bond ends.</p>
 		</description>
 		<sheet usage="Bonus Action">
-			<description>Conjure a pact weapon or bond with a magic weapon. You have proficiency with the weapon and can use it as a Spellcasting Focus.
-			When attacking with the bonded weapon, you can use your Charisma modifier for attack and damage rolls, and choose the damage type.</description>
+			<description>Conjure a melee pact weapon or bond with a magic weapon. You have proficiency with the weapon and can use it as a Spellcasting Focus.
+			When attacking with the bonded weapon, you can use your Charisma modifier for attack and damage rolls instead of using Strength or Dexterity; and you can cause the weapon to deal Necrotic, Psychic, or Radiant damage or its normal damage type.
+			Your bond with the weapon ends if you use this feature's Bonus Action again, if the weapon is more than 5 feet away from you for 1 minute or more, or if you die. A conjured weapon disappears when the bond ends.</description>
 		</sheet>
 	</element>
 	
 	<element name="2024 Agonizing Blast" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_AGONIZING_BLAST">
 		<supports>Eldritch Invocation</supports>
 		<prerequisites>Level 2+ Warlock, a Warlock Cantrip That Deals Damage</prerequisites>
-		<requirements>[level:2024 warlock:2],[type:spell]</requirements>
+		<requirements>[level:2],[type:spell]</requirements>
 		<description>
 			<p>Choose one of your known Warlock cantrips that deals damage. You can add your Charisma modifier to that spell's damage rolls.</p>
 			<p class="indent"><strong>Repeatable.</strong> You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip.</p>
@@ -390,7 +391,8 @@
 
 	<element name="2024 Devil's Sight" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_DEVILS_SIGHT">
 		<supports>Eldritch Invocation</supports>
-		<requirements>[level:2024 warlock:2]</requirements>
+		<prerequisites>Level 2+ Warlock</prerequisites>
+		<requirements>[level:2]</requirements>
 		<description>
 			<p>You can see normally in Dim Light and Darkness—both magical and nonmagical—within 120 feet of yourself.</p>
 		</description>
@@ -411,7 +413,8 @@
 
 	<element name="2024 Lessons of the First Ones" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_LESSONS_OF_THE_FIRST_ONES">
 		<supports>Eldritch Invocation</supports>
-		<requirements>[level:2024 warlock:2]</requirements>
+		<prerequisites>Level 2+ Warlock</prerequisites>
+		<requirements>[level:2]</requirements>
 		<description>
 			<p>You have received knowledge from an elder entity of the multiverse, allowing you to gain one Origin feat of your choice.</p>
 			<p class="indent"><strong>Repeatable.</strong> You can gain this invocation more than once. Each time you do so, choose a different Origin feat.</p>
@@ -426,7 +429,8 @@
 
 	<element name="2024 Thirsting Blade" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_THIRSTING_BLADE">
 		<supports>Eldritch Invocation</supports>
-		<requirements>[level:2024 warlock:5],ID_2024PHB_CLASS_FEATURE_WARLOCK_PACT_OF_THE_BLADE</requirements>
+		<prerequisites>Level 5+ Warlock, Pact of the Blade</prerequisites>
+		<requirements>[level:5],ID_2024PHB_CLASS_FEATURE_WARLOCK_PACT_OF_THE_BLADE</requirements>
 		<description>
 			<p>You gain the Extra Attack feature for your pact weapon only. With that feature, you can attack twice with the weapon instead of once when you take the Attack action on your turn.</p>
 		</description>
@@ -440,7 +444,8 @@
 
 	<element name="2024 Ascendant Step" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_ASCENDANT_STEP">
 		<supports>Eldritch Invocation</supports>
-		<requirements>[level:2024 warlock:5]</requirements>
+		<prerequisites>Level 5+ Warlock</prerequisites>
+		<requirements>[level:5]</requirements>
 		<description>
 			<p>You can cast Levitate on yourself without expending a spell slot.</p>
 		</description>
@@ -454,7 +459,8 @@
 
 	<element name="2024 Devouring Blade" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_DEVOURING_BLADE">
 		<supports>Eldritch Invocation</supports>
-		<requirements>[level:2024 warlock:12],ID_2024PHB_CLASS_FEATURE_WARLOCK_THIRSTING_BLADE</requirements>
+		<prerequisites>Level 12+ Warlock, Thirsting blade</prerequisites>
+		<requirements>[level:12],ID_2024PHB_CLASS_FEATURE_WARLOCK_THIRSTING_BLADE</requirements>
 		<description>
 			<p>The Extra Attack of your Thirsting Blade invocation confers two extra attacks rather than one.</p>
 		</description>
@@ -468,7 +474,8 @@
 
 	<element name="2024 Eldritch Smite" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_ELDRITCH_SMITE">
 		<supports>Eldritch Invocation</supports>
-		<requirements>[level:2024 warlock:5],ID_2024PHB_CLASS_FEATURE_WARLOCK_PACT_OF_THE_BLADE</requirements>
+		<prerequisites>Level 5+ Warlock, Pact of the Blade</prerequisites>
+		<requirements>[level:5],ID_2024PHB_CLASS_FEATURE_WARLOCK_PACT_OF_THE_BLADE</requirements>
 		<description>
 			<p>Once per turn when you hit a creature with your pact weapon, you can expend a Pact Magic spell slot to deal an extra 1d8 Force damage to the target, plus another 1d8 per level of the spell slot, and you can give the target the Prone condition if it is Huge or smaller.</p>
 		</description>
@@ -479,7 +486,8 @@
 
 	<element name="2024 Eldritch Spear" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_ELDRITCH_SPEAR">
 		<supports>Eldritch Invocation</supports>
-		<requirements>[level:2024 warlock:2],[type:spell]</requirements>
+		<prerequisites>Level 2+ Warlock, a Warlock Cantrip that deals damage</prerequisites>
+		<requirements>[level:2],[type:spell]</requirements>
 		<description>
 			<p>Choose one of your known Warlock cantrips that deals damage and has a range of 10+ feet. When you cast that spell, its range increases by a number of feet equal to 30 times your Warlock level.</p>
 			<p class="indent"><strong>Repeatable.</strong> You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip.</p>
@@ -491,7 +499,8 @@
 
 	<element name="Fiendish Vigor" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_FIENDISH_VIGOR">
 		<supports>Eldritch Invocation</supports>
-		<requirements>[level:2024 warlock:2]</requirements>
+		<prerequisites>Level 2+ Warlock</prerequisites>
+		<requirements>[level:2]</requirements>
 		<description>
 			<p>You can cast False Life on yourself without expending a spell slot. When you cast the spell with this feature, you don't roll the die for the Temporary Hit Points; you automatically get the highest number on the die.</p>
 		</description>
@@ -505,7 +514,8 @@
 
 	<element name="Gaze of Two Minds" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_GAZE_OF_TWO_MINDS">
 		<supports>Eldritch Invocation</supports>
-		<requirements>[level:2024 warlock:5]</requirements>
+		<prerequisites>Level 5+ Warlock</prerequisites>
+		<requirements>[level:5]</requirements>
 		<description>
 			<p>You can use a Bonus Action to touch a willing creature and perceive through its senses until the end of your next turn. As long as the creature is on the same plane of existence as you, you can take a Bonus Action on subsequent turns to maintain this connection, extending the duration until the end of your next turn. The connection ends if you don't maintain it in this way.</p>
 			<p class="indent">While perceiving through the other creature's senses, you benefit from any special senses possessed by that creature, and you can cast spells as if you were in your space or the other creature's space if the two of you are within 60 feet of each other.</p>
@@ -518,7 +528,8 @@
 
 	<element name="Gift of the Depths" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_GIFT_OF_THE_DEPTHS">
 		<supports>Eldritch Invocation</supports>
-		<requirements>[level:2024 warlock:5]</requirements>
+		<prerequisites>Level 5+ Warlock</prerequisites>
+		<requirements>[level:5]</requirements>
 		<description>
 			<p>You can breathe underwater, and you gain a Swim Speed equal to your Speed.</p>
 			<p class="indent">You can also cast Water Breathing once without expending a spell slot. You regain the ability to cast it in this way again when you finish a Long Rest.</p>
@@ -534,7 +545,8 @@
 
 	<element name="Gift of the Protectors" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_GIFT_OF_THE_PROTECTORS">
 		<supports>Eldritch Invocation</supports>
-		<requirements>[level:2024 warlock:9],ID_2024PHB_CLASS_FEATURE_WARLOCK_PACT_OF_THE_TOME</requirements>
+		<prerequisites>Level 9+ Warlock, Pact of the Tome</prerequisites>
+		<requirements>[level:9],ID_2024PHB_CLASS_FEATURE_WARLOCK_PACT_OF_THE_TOME</requirements>
 		<description>
 			<p>A new page appears in your Book of Shadows when you conjure it. With your permission, a creature can take an action to write its name on that page, which can contain a number of names equal to your Charisma modifier (minimum of one name).</p>
 			<p class="indent">When any creature whose name is on the page is reduced to 0 Hit Points but not killed outright, the creature magically drops to 1 Hit Point instead. Once this magic is triggered, no creature can benefit from it until you finish a Long Rest.</p>
@@ -547,7 +559,8 @@
 
 	<element name="Investment of the Chain Master" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_INVESTMENT_OF_THE_CHAIN_MASTER">
 		<supports>Eldritch Invocation</supports>
-		<requirements>[level:2024 warlock:5],ID_2024PHB_CLASS_FEATURE_WARLOCK_PACT_OF_THE_CHAIN</requirements>
+		<prerequisites>Level 5+ Warlock, Pact of the Chain</prerequisites>
+		<requirements>[level:5],ID_2024PHB_CLASS_FEATURE_WARLOCK_PACT_OF_THE_CHAIN</requirements>
 		<description>
 			<p>When you cast Find Familiar, you infuse the summoned familiar with a measure of your eldritch power, granting the creature the following benefits.</p>
 			<p class="indent"><strong>Aerial or Aquatic.</strong> The familiar gains either a Fly Speed or a Swim Speed (your choice) of 40 feet.</p>
@@ -563,7 +576,8 @@
 
 	<element name="Lifedrinker" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_LIFEDRINKER">
 		<supports>Eldritch Invocation</supports>
-		<requirements>[level:2024 warlock:9],ID_2024PHB_CLASS_FEATURE_WARLOCK_PACT_OF_THE_BLADE</requirements>
+		<prerequisites>Level 9+ Warlock, Pact of the Blade</prerequisites>
+		<requirements>[level:9],ID_2024PHB_CLASS_FEATURE_WARLOCK_PACT_OF_THE_BLADE</requirements>
 		<description>
 			<p>Once per turn when you hit a creature with your pact weapon, you can deal an extra 1d6 Necrotic, Psychic, or Radiant damage (your choice) to the creature, and you can expend one of your Hit Point Dice to roll it and regain a number of Hit Points equal to the roll plus your Constitution modifier (minimum of 1 Hit Point).</p>
 		</description>
@@ -574,7 +588,8 @@
 
 	<element name="Mask of Many Faces" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_MASK_OF_MANY_FACES">
 		<supports>Eldritch Invocation</supports>
-		<requirements>[level:2024 warlock:2]</requirements>
+		<prerequisites>Level 2+ Warlock</prerequisites>
+		<requirements>[level:2]</requirements>
 		<description>
 			<p>You can cast Disguise Self without expending a spell slot.</p>
 		</description>
@@ -588,7 +603,8 @@
 
 	<element name="Master of Myriad Forms" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_MASTER_OF_MYRIAD_FORMS">
 		<supports>Eldritch Invocation</supports>
-		<requirements>[level:2024 warlock:5]</requirements>
+		<prerequisites>Level 5+ Warlock</prerequisites>
+		<requirements>[level:5]</requirements>
 		<description>
 			<p>You can cast Alter Self without expending a spell slot.</p>
 		</description>
@@ -602,7 +618,8 @@
 
 	<element name="Misty Visions" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_MISTY_VISIONS">
 		<supports>Eldritch Invocation</supports>
-		<requirements>[level:2024 warlock:2]</requirements>
+		<prerequisites>Level 2+ Warlock</prerequisites>
+		<requirements>[level:2]</requirements>
 		<description>
 			<p>You can cast Silent Image without expending a spell slot.</p>
 		</description>
@@ -616,7 +633,8 @@
 
 	<element name="One with Shadows" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_ONE_WITH_SHADOWS">
 		<supports>Eldritch Invocation</supports>
-		<requirements>[level:2024 warlock:5]</requirements>
+		<prerequisites>Level 5+ Warlock</prerequisites>
+		<requirements>[level:5]</requirements>
 		<description>
 			<p>While you're in an area of Dim Light or Darkness, you can cast Invisibility on yourself without expending a spell slot.</p>
 		</description>
@@ -630,7 +648,8 @@
 
 	<element name="Otherworldly Leap" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_OTHERWORLDLY_LEAP">
 		<supports>Eldritch Invocation</supports>
-		<requirements>[level:2024 warlock:2]</requirements>
+		<prerequisites>Level 2+ Warlock</prerequisites>
+		<requirements>[level:2]</requirements>
 		<description>
 			<p>You can cast Jump on yourself without expending a spell slot.</p>
 		</description>
@@ -644,7 +663,8 @@
 
 	<element name="Repelling Blast" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_REPELLING_BLAST">
 		<supports>Eldritch Invocation</supports>
-		<requirements>[level:2024 warlock:2],[type:spell]</requirements>
+		<prerequisites>Level 2+ Warlock, a Warlock Cantrip That deals damage via an Attack Roll</prerequisites>
+		<requirements>[level:2],[type:spell]</requirements>
 		<description>
 			<p>Choose one of your known Warlock cantrips that requires an attack roll. When you hit a Large or smaller creature with that cantrip, you can push the creature up to 10 feet straight away from you.</p>
 			<p class="indent"><strong>Repeatable.</strong> You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip.</p>
@@ -656,7 +676,8 @@
 
 	<element name="Visions of Distant Realms" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_VISIONS_OF_DISTANT_REALMS">
 		<supports>Eldritch Invocation</supports>
-		<requirements>[level:2024 warlock:9]</requirements>
+		<prerequisites>Level 9+ Warlock</prerequisites>
+		<requirements>[level:9]</requirements>
 		<description>
 			<p>You can cast Arcane Eye without expending a spell slot.</p>
 		</description>
@@ -670,7 +691,8 @@
 
 	<element name="Whispers of the Grave" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_WHISPERS_OF_THE_GRAVE">
 		<supports>Eldritch Invocation</supports>
-		<requirements>[level:2024 warlock:7]</requirements>
+		<prerequisites>Level 7+ Warlock</prerequisites>
+		<requirements>[level:7]</requirements>
 		<description>
 			<p>You can cast Speak with Dead without expending a spell slot.</p>
 		</description>
@@ -684,7 +706,8 @@
 
 	<element name="Witch Sight" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_WITCH_SIGHT">
 		<supports>Eldritch Invocation</supports>
-		<requirements>[level:2024 warlock:15]</requirements>
+		<prerequisites>Level 15+ Warlock</prerequisites>
+		<requirements>[level:15]</requirements>
 		<description>
 			<p>You have Truesight with a range of 30 feet.</p>
 		</description>
@@ -748,7 +771,7 @@
 			<p class="indent"><strong>Refreshing Step.</strong> Immediately after you teleport, one creature you can see within 10 feet of you gains 1d10 Temporary Hit Points.</p>
 			<p class="indent"><strong>Taunting Step.</strong> Creatures within 5 feet of the space you left must succeed on a Wisdom saving throw against your spell save DC or have Disadvantage on attack rolls against creatures other than you until the start of your next turn.</p>
 		</description>
-		<sheet usage="Charisma modifier/Long Rest">
+		<sheet usage="{{charisma:modifier}}/Long Rest">
 			<description>Cast Misty Step without expending a spell slot. When you cast it, choose an additional effect.</description>
 		</sheet>
 		<rules>
@@ -839,33 +862,47 @@
 			<p class="indent">As a Bonus Action, you can heal one creature that you can see within 60 feet of yourself, spending dice from the pool. The maximum number of dice you can spend at once equals your Charisma modifier (minimum of one die). Roll the dice you spend, and restore a number of Hit Points equal to the roll's total.</p>
 			<p class="indent">Your pool regains all expended dice when you finish a Long Rest.</p>
 		</description>
-		<sheet usage="Bonus Action">
-			<description>Heal a creature within 60 feet by spending d6s from your pool (1 + Warlock level dice). Maximum dice spent = Charisma modifier.</description>
+		<sheet action="Bonus Action" usage="{{healing light:count}}/Long Rest">
+			<description>Heal yourself or a creature you can see within 60 feet by spending up to {{charisma}}d6 from your pool.</description>
 		</sheet>
+		<rules>
+			<stat name="healing light:count" value="1" />
+			<stat name="healing light:count" value="level:2024 Warlock" />
+		</rules>
 	</element>
 	<element name="Radiant Soul" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_RADIANT_SOUL">
 		<description>
-			<p>Your link to your patron allows you to serve as a conduit for radiant energy. You have Resistance to Radiant damage, and when you cast a spell that deals Radiant or Fire damage, you can add your Charisma modifier to one Radiant or Fire damage roll of that spell against one of its targets.</p>
+			<p>Your link to your patron allows you to serve as a conduit for radiant energy. You have Resistance to Radiant damage. Once per turn, when a spell you cast deals Radiant or Fire damage, you can add your Charisma modifier to that spell's damage against one of its targets.</p>
 		</description>
 		<sheet>
-			<description>Resistance to Radiant damage. When casting spells that deal Radiant or Fire damage, add your Charisma modifier to one damage roll.</description>
+			<description>Once per turn, when a spell you cast deals Radiant or Fire damage, you can add your Charisma modifier to that spell's damage against one of its targets.</description>
 		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+		</rules>
 	</element>
 	<element name="Celestial Resilience" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_CELESTIAL_RESILIENCE">
 		<description>
 			<p>You gain Temporary Hit Points whenever you use your Magical Cunning feature or finish a Short Rest or Long Rest. These Temporary Hit Points equal your Warlock level plus your Charisma modifier. Additionally, choose up to five creatures you can see at the end of the rest. Those creatures each gain Temporary Hit Points equal to half your Warlock level plus your Charisma modifier.</p>
 		</description>
 		<sheet>
-			<description>Gain Temporary Hit Points (Warlock level + Charisma modifier) when using Magical Cunning or finishing a rest. Up to 5 creatures gain half that amount.</description>
+			<description>Gain {{Celestial Resilience:count}} Temporary Hit Points when using Magical Cunning or finishing a rest. Choose up to 5 creatures to gain {{Celestial Resilience:ally:count}} Temporary Hit Points.</description>
 		</sheet>
+		<rules>
+			<stat name="Celestial Resilience:count" value="level:2024 Warlock" />
+			<stat name="Celestial Resilience:count" value="charisma:modifier" />
+			<stat name="Celestial Resilience:ally:count" value="5" />
+			<stat name="Celestial Resilience:ally:count" value="level:2024 Warlock:half" />
+			<stat name="Celestial Resilience:ally:count" value="charisma:modifier" />
+		</rules>
 	</element>
 	<element name="Searing Vengeance" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_SEARING_VENGEANCE">
 		<description>
-			<p>The radiant energy you channel allows you to resist death. When you have to make a death saving throw at the start of your turn, you can instead spring to your feet with a burst of radiant energy. You regain Hit Points equal to half your Hit Point Maximum and then stand if you so choose. Each creature of your choice that is within 30 feet of you takes Radiant damage equal to 2d8 plus your Charisma modifier, and each has the Blinded condition until the end of the current turn.</p>
+			<p>When you or an ally within 60 feet of you is about to make a Death Saving Throw, you can unleash radiant energy to save the creature. The creature regains Hit Points equal to half its Hit Point maximum and can end the Prone condition on itself. Each creature of your choice that is within 30 feet of the creature takes Radiant damage equal to 2d8 plus your Charisma modifier, and each has the Blinded condition until the end of the current turn.</p>
 			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest.</p>
 		</description>
 		<sheet usage="1/Long Rest">
-			<description>When making a death saving throw, instead regain half your max HP and stand. Creatures within 30 feet take 2d8 + Charisma modifier Radiant damage and are Blinded until end of turn.</description>
+			<description>When you or an ally within 60 feet is making a death saving throw, They instead regain half their max HP and stand up. Creatures of your choice within 30 feet take 2d8+{{charisma:modifier}} Radiant damage and are Blinded until end of turn.</description>
 		</sheet>
 	</element>
 
@@ -893,8 +930,13 @@
 			<p>When you reduce an enemy to 0 Hit Points, you gain Temporary Hit Points equal to your Charisma modifier plus your Warlock level (minimum of 1 Temporary Hit Point). You also gain this benefit if someone else reduces an enemy within 10 feet of you to 0 Hit Points.</p>
 		</description>
 		<sheet>
-			<description>When you or an ally within 10 feet reduces an enemy to 0 HP, gain Temporary Hit Points equal to Charisma modifier + Warlock level.</description>
+			<description>When you reduce an enemy to 0 Hit Points, you gain {{dark blessing}} Temporary Hit Points. You also gain this benefit if someone else reduces an enemy within 10 feet of you to 0 Hit Points.</description>
 		</sheet>
+		<rules>
+			<stat name="dark blessing" value="1" bonus="base" />
+			<stat name="dark blessing" value="charisma:modifier" />
+			<stat name="dark blessing" value="level:2024 Warlock" />
+		</rules>
 	</element>
 	<element name="Fiend Spells" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_FIEND_SPELLS">
 		<description>
@@ -929,7 +971,7 @@
 			<p>You can call on your fiendish patron to alter fate in your favor. When you make an ability check or a saving throw, you can use this feature to add 1d10 to your roll. You can do so after seeing the roll but before any of the roll's effects occur.</p>
 			<p class="indent">You can use this feature a number of times equal to your Charisma modifier (minimum of once), but you can use it no more than once per roll. You regain all expended uses when you finish a Long Rest.</p>
 		</description>
-		<sheet usage="Charisma modifier/Long Rest">
+		<sheet usage="{{charisma:modifier}}/Long Rest">
 			<description>Add 1d10 to an ability check or saving throw after seeing the roll but before effects occur.</description>
 		</sheet>
 	</element>
@@ -946,8 +988,9 @@
 			<p>Once per turn when you hit a creature with an attack roll, you can try to instantly transport the target through the Lower Planes. The target must succeed on a Charisma saving throw against your spell save DC, or the target disappears and hurtles through a nightmare landscape. The target takes 8d10 Psychic damage if it isn't a Fiend, and it has the Incapacitated condition until the end of your next turn, when it returns to the space it previously occupied or the nearest unoccupied space.</p>
 			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest unless you expend a Pact Magic spell slot (no action required) to restore your use of it.</p>
 		</description>
-		<sheet usage="1/Long Rest">
-			<description>Once per turn when you hit with an attack, force target to make Charisma save or take 8d10 Psychic damage and be Incapacitated until end of your next turn.</description>
+		<sheet>
+			<description>Once per turn when you hit with an attack, force target to make Charisma save or take 8d10 Psychic damage, transport to the Lower Planes and be Incapacitated until end of your next turn. Fiends are unaffected.
+			Cannot us again until Long Rest or if expending a Pact Magic spell slot.</description>
 		</sheet>
 	</element>
 
@@ -974,17 +1017,15 @@
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_CREATE_THRALL" level="14" />
 		</rules>
 	</element>
-
 	<element name="Awakened Mind" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_AWAKENED_MIND">
 		<description>
 			<p>You can form a telepathic connection between your mind and the mind of another. As a Bonus Action, choose one creature you can see within 30 feet of yourself and create a telepathic bond. You and the chosen creature can speak telepathically with each other while the two of you are within a number of miles of each other equal to your Charisma modifier (minimum of 1 mile). To understand each other, you each must speak mentally in a language the other knows.</p>
 			<p class="indent">The telepathic connection lasts for a number of minutes equal to your Warlock level. It ends early if you have the Incapacitated condition or die or if you use this feature to form a connection with a different creature.</p>
 		</description>
 		<sheet usage="Bonus Action">
-			<description>Create a telepathic bond with a creature within 30 feet. You can speak telepathically within Charisma modifier miles for Warlock level minutes.</description>
+			<description>Create a telepathic bond with a creature within 30 feet. You can speak telepathically within {{charisma:modifier}} miles for {{level:2024 warlock}} minutes. It ends early if you have the Incapacitated condition, die or use this feature again.</description>
 		</sheet>
 	</element>
-
 	<element name="Great Old One Spells" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_GREAT_OLD_ONE_SPELLS">
 		<description>
 			<p>The magic of your otherworldly patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Great Old One Spells table, you thereafter always have the listed spells prepared.</p>
@@ -1013,26 +1054,23 @@
 			<grant type="Spell" id="ID_2024PHB_SPELL_TELEKINESIS" spellcasting="Warlock" level="9" />
 		</rules>
 	</element>
-
 	<element name="Psychic Spells" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_PSYCHIC_SPELLS">
 		<description>
 			<p>When you cast a Warlock spell that deals damage, you can change its damage type to Psychic. In addition, when you cast a Warlock spell that is an Enchantment or Illusion, you can do so without verbal or somatic components.</p>
 		</description>
 		<sheet>
-			<description>Change Warlock spell damage to Psychic. Cast Enchantment or Illusion Warlock spells without verbal or somatic components.</description>
+			<description>You can change Warlock spell's damage to Psychic and cast Enchantment or Illusion Warlock spells without verbal or somatic components.</description>
 		</sheet>
 	</element>
-
 	<element name="Clairvoyant Combatant" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_CLAIRVOYANT_COMBATANT">
 		<description>
-			<p>You learn to read the attacks of minds you touch. When you form a telepathic bond with a creature using your Awakened Mind, you can force that creature to make a Wisdom saving throw against your spell save DC. On a failed save, the creature has Disadvantage on attack rolls against you, and you have Advantage on attack rolls against that creature for the duration of the bond.</p>
-			<p class="indent">Once you use this feature, you can't use it again until you finish a Short Rest or Long Rest. You can also restore your use of it by expending a spell slot of level 2 or higher (no action required).</p>
+			<p>When you form a telepathic bond with a creature using your Awakened Mind, you can force that creature to make a Wisdom saving throw against your spell save DC. On a failed save, the creature has Disadvantage on attack rolls against you, and you have Advantage on attack rolls against that creature for the duration of the bond.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Short or Long Rest unless you expend a Pact Magic spell slot (no action required) to restore your use of it.</p>
 		</description>
 		<sheet usage="1/Short Rest">
-			<description>When using Awakened Mind, force creature to make Wisdom save. On failure, it has Disadvantage attacking you and you have Advantage attacking it.</description>
+			<description>When using Awakened Mind, force the creature to make Wisdom save. On failure, it has Disadvantage attacking you and you have Advantage attacking it. Can restore use by expending a Pact magic slot.</description>
 		</sheet>
 	</element>
-
 	<element name="Eldritch Hex" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_ELDRITCH_HEX">
 		<description>
 			<p>Your alien patron grants you a powerful curse. You always have the <em>Hex</em> spell prepared. When you cast <em>Hex</em> and choose an ability, the target also has Disadvantage on saving throws of the chosen ability for the duration of the spell.</p>
@@ -1044,25 +1082,28 @@
 			<grant type="Spell" id="ID_2024PHB_SPELL_HEX" spellcasting="Warlock" />
 		</rules>
 	</element>
-
 	<element name="Thought Shield" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_THOUGHT_SHIELD">
 		<description>
 			<p>Your thoughts can't be read by telepathy or other means unless you allow it. You also have Resistance to Psychic damage, and whenever a creature deals Psychic damage to you, that creature takes the same amount of damage that you do.</p>
 		</description>
 		<sheet>
-			<description>Your thoughts can't be read unless you allow it. Resistance to Psychic damage. When you take Psychic damage, the source takes the same damage.</description>
-		</sheet>
-	</element>
-
-	<element name="Create Thrall" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_CREATE_THRALL">
-		<description>
-			<p>Your patron grants you the ability to manifest a part of itself. You always have the <em>Summon Aberration</em> spell prepared. When you cast the spell, you can modify it so that it doesn't require Concentration. If you do so, the spell's duration becomes 1 minute for that casting and when summoned, the Aberration has a number of Temporary Hit Points equal to your Warlock level plus your Charisma modifier.</p>
-			<p class="indent">In addition, the first time each turn the Aberration hits a creature under the effect of your <em>Hex</em>, the Aberration deals extra Psychic damage to the target equal to the bonus damage of that spell.</p>
-		</description>
-		<sheet>
-			<description>Always have Summon Aberration prepared. Can cast it without Concentration (1 minute duration) with Temporary Hit Points. Aberration deals extra Psychic damage to Hexed targets.</description>
+			<description>Your thoughts can't be read unless you allow it. When you take Psychic damage, the creature that dealt it takes the same damage.</description>
 		</sheet>
 		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+		</rules>
+	</element>
+	<element name="Create Thrall" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_CREATE_THRALL">
+		<description>
+			<p>When you cast Summon Aberration, you can modify it so that it doesn’t require Concentration. If you do so, the spell's duration becomes 1 minute for that casting, and when summoned, the Aberration has a number of Temporary Hit Points equal to your Warlock level plus your Charisma modifier.</p>
+			<p class="indent">In addition, the first time each turn the Aberration hits a creature under the effect of your Hex, the Aberration deals extra Psychic damage to the target equal to the bonus damage of that spell.</p>
+		</description>
+		<sheet>
+			<description>Can cast Summon Aberration without Concentration (1 minute duration) with {{create thrall:temp hp}} Temporary Hit Points. Once a turn the Aberration deals extra Psychic damage to Hexed targets equal to the Hex damage.</description>
+		</sheet>
+		<rules>
+			<stat name="create thrall:temp hp" value="level:2024 Warlock" />
+			<stat name="create thrall:temp hp" value="charisma:modifier" />
 			<grant type="Spell" id="ID_2024PHB_SPELL_SUMMON_ABERRATION" spellcasting="Warlock" />
 		</rules>
 	</element>
