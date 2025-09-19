@@ -4,7 +4,7 @@
 		<name>2024 Cleric</name>
 		<description>The Cleric class from the 2024 Player's Handbook.</description>
 		<author url="https://marketplace.dndbeyond.com/category/3709000?pid=DB3709000">Wizards of the Coast</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="2024-class-cleric.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-class-cleric.xml" />
 		</update>
 	</info>
@@ -336,7 +336,7 @@
 			<p>Whenever you use Turn Undead, you can roll a number of d8s equal to your Wisdom modifier (minimum of 1d8) and add the rolls together. Each Undead that fails its saving throw against that use of Turn Undead takes Radiant damage equal to the roll's total. This damage doesn't end the turn effect.</p>
 		</description>
 		<sheet>
-			<description>Whenever you use Turn Undead, you can roll {{cleric:wisdom:min:1}}d8s. Each Undead that fails its saving throw against that use of Turn Undead takes Radiant damage equal to the roll's total. This damage doesn't end the turn effect.</description>
+			<description>Whenever you use Turn Undead, you can roll {{cleric:wisdom:min:1}}d8. Each Undead that fails its saving throw against that use of Turn Undead takes Radiant damage equal to the roll's total. This damage doesn't end the turn effect.</description>
 		</sheet>
 	</element>
 	<element name="Blessed Strikes" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_CLERIC_BLESSEDSTRIKES">
@@ -756,7 +756,7 @@
 		</sheet>
 		<rules>
 			<stat name="war priest:uses" value="wisdom:modifier" bonus="base" />
-			<stat name="war priest:uses" value="1" bonus="minimum" />
+			<stat name="war priest:uses" value="1" bonus="base" />
 		</rules>
 	</element>
 	<element name="Guided Strike" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_CHANNEL_DIVINITY_GUIDED_STRIKE">

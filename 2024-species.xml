@@ -460,7 +460,7 @@
 			<description>You have proficiency in the Insight, Perception, or Survival skill.</description>
 		</sheet>
 		<rules>
-			<select type="Proficiency" name="Keen Senses" supports="ID_PROFICIENCY_SKILL_INSIGHT||ID_PROFICIENCY_SKILL_PERCEPTION||ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<select type="Proficiency" name="Keen Senses" supports="ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SURVIVAL" />
 		</rules>
 	</element>
 	<element name="Trance" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_TRANCE">
