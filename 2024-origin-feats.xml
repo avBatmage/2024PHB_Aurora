@@ -4,7 +4,7 @@
 		<name>2024 Origin Feats</name>
 		<description>Origin Feats from the 2024 Player's Handbook.</description>
 		<author url="https://marketplace.dndbeyond.com/category/3709000?pid=DB3709000">Wizards of the Coast</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="2024-origin-feats.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-origin-feats.xml" />
 		</update>
 	</info>
