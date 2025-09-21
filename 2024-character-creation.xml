@@ -4,7 +4,7 @@
 		<name>2024 Character Creation</name>
 		<description>Adding character creation stuff from the 2024 Player's Handbook</description>
 		<author url="https://marketplace.dndbeyond.com/category/3709000?pid=DB3709000">Wizards of the Coast</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="2024-character-creation.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-character-creation.xml" />
 		</update>
 	</info>
@@ -12,6 +12,8 @@
 	<element name="2024 Character Creation" type="Option" source="2024 Player's Handbook" id="ID_2024PHB_OPTION_2024_CHARACTER_CREATION">
 		<description>
 			<p>Follow the 2024 Character Creation rules.</p>
+			<p class="indent">You learn Common and 2 other Languages</p>
+			<p class="indent">If a 2024 background isn't selected then you gain a custom ability score increase (+2 +1 or +1 +1 +1) and an origin Feat. This should be instead of any ability score increase from older race selections. </p>
 		</description>
 		<setters>
 			<set name="short">Follow the 2024 Character Creation rules.</set>
@@ -19,7 +21,8 @@
 		<rules>
 			<grant type="Language" id="ID_LANGUAGE_COMMON" />
 			<select type="Language" name="Language (Character Creation)" number="2" supports="Standard||Exotic" />
+			<!--<select type="Ability Score Improvement" name="Ability Score Improvement Option (Character Creation)" supports="Custom Ability Score Improvement Option" requirements="!ID_2024PHB_BACKGROUND_ACOLYTE||!ID_2024PHB_BACKGROUND_ARTISAN||!ID_2024PHB_BACKGROUND_CHARLATAN||!ID_2024PHB_BACKGROUND_CRIMINAL||!ID_2024PHB_BACKGROUND_ENTERTAINER||!ID_2024PHB_BACKGROUND_FARMER||!ID_2024PHB_BACKGROUND_GUARD||!ID_2024PHB_BACKGROUND_GUIDE||!ID_2024PHB_BACKGROUND_HERMIT||!ID_2024PHB_BACKGROUND_MERCHANT||!ID_2024PHB_BACKGROUND_NOBLE||!ID_2024PHB_BACKGROUND_SAGE||!ID_2024PHB_BACKGROUND_SAILOR||!ID_2024PHB_BACKGROUND_SCRIBE||!ID_2024PHB_BACKGROUND_SOLDIER||!ID_2024PHB_BACKGROUND_WAYFARER" />-->
+			<select type="Feat" name="Origin Feat (Character Creation)" supports="Origin Feat" requirements="!ID_2024PHB_BACKGROUND_ACOLYTE||!ID_2024PHB_BACKGROUND_ARTISAN||!ID_2024PHB_BACKGROUND_CHARLATAN||!ID_2024PHB_BACKGROUND_CRIMINAL||!ID_2024PHB_BACKGROUND_ENTERTAINER||!ID_2024PHB_BACKGROUND_FARMER||!ID_2024PHB_BACKGROUND_GUARD||!ID_2024PHB_BACKGROUND_GUIDE||!ID_2024PHB_BACKGROUND_HERMIT||!ID_2024PHB_BACKGROUND_MERCHANT||!ID_2024PHB_BACKGROUND_NOBLE||!ID_2024PHB_BACKGROUND_SAGE||!ID_2024PHB_BACKGROUND_SAILOR||!ID_2024PHB_BACKGROUND_SCRIBE||!ID_2024PHB_BACKGROUND_SOLDIER||!ID_2024PHB_BACKGROUND_WAYFARER" />
 		</rules>
-		
 	</element>
 </elements>

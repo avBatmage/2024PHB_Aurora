@@ -4,7 +4,7 @@
 		<name>2024 Barbarian</name>
 		<description>The Barbarian class from the 2024 Player's Handbook.</description>
 		<author url="https://marketplace.dndbeyond.com/category/3709000?pid=DB3709000">Wizards of the Coast</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="2024-class-barbarian.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/refs/heads/main/2024-class-barbarian.xml" />
 		</update>
 	</info>
@@ -211,9 +211,7 @@
 			<p>Your training with weapons allows you to use the mastery properties of two kinds of weapons of your choice with which you have proficiency, such as Longbows and Shortswords.</p>
 			<p>Whenever you finish a Long Rest, you can change the kinds of weapons you chose. For example, you could switch to using the mastery properties of Scimitars and Longswords.</p>
 		</description>
-		<sheet>
-			<description></description>
-		</sheet>
+		<sheet />
 		<rules>
 			<select type="Class Feature" name="Weapon Mastery" supports="Weapon Mastery" number="2" level="1"/>
 		</rules>
