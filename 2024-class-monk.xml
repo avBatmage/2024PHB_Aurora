@@ -4,7 +4,7 @@
 		<name>2024 Monk</name>
 		<description>The Monk class from the 2024 Player's Handbook.</description>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000?pid=DB3709000">Wizards of the Coast</author>
-		<update version="0.0.1">
+		<update version="0.0.3">
 			<file name="2024-class-monk.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-class-monk.xml" />
 		</update>
 	</info>
@@ -214,7 +214,7 @@
 		<description>
 			<p>You can expend 1 Focus Point to make two Unarmed Strikes as a Bonus Action.</p>
 		</description>
-		<sheet action="Bonus Action" cost="1 Focus Point">
+		<sheet action="Bonus Action" usage="1 Focus Point">
 			<description>You can make two Unarmed Strikes</description>
 		</sheet>
 	</element>
@@ -333,8 +333,8 @@
 			<p><em>5th-Level Feature</em></p>
 			<p>Once per turn when you hit a creature with a Monk weapon or an Unarmed Strike, you can expend 1 Focus Point to attempt a stunning strike. The target must make a Constitution saving throw. On a failed save, the target has the Stunned condition until the start of your next turn. On a successful save, the target's Speed is halved until the start of your next turn, and the next attack roll made against the target before then has Advantage.</p>
 		</description>
-		<sheet cost="1 Focus Point" usage="1/Turn">
-			<description>When you hit with a melee attack, you can force a CON save or the target is Stunned until the end of your next turn.</description>
+		<sheet usage="1 Focus Point">
+			<description>Once per turn when you hit with a melee attack, you can force a CON save or the target is Stunned until the end of your next turn.</description>
 		</sheet>
 	</element>
 	<element name="Empowered Strikes" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_MONK_EMPOWERED_STRIKES">
@@ -400,7 +400,7 @@
 			<p><em>14th-Level Feature</em></p>
 			<p>You gain proficiency in all saving throws. Additionally, whenever you make a saving throw and fail, you can spend 1 Focus Point to reroll it and take the second result.</p>
 		</description>
-		<sheet cost="1 Focus Point">
+		<sheet usage="1 Focus Point">
 			<description>Whenever you make a saving throw and fail, you can reroll it and take the second result.</description>
 		</sheet>
 		<rules>
@@ -426,8 +426,8 @@
 			<p><em>18th-Level Feature</em></p>
 			<p>At the start of your turn, you can expend 3 Focus Points to bolster yourself against harm for 1 minute or until you have the Incapacitated condition. During that time, you have Resistance to all damage except Force damage.</p>
 		</description>
-		<sheet cost="3 Focus Points">
-			<description>At the start of your turn, you can gain Resistance to all damage except Force for 1 minute.</description>
+		<sheet usage="3 Focus Points">
+			<description>At the start of your turn, you can gain Resistance to all damage except Force for 1 minute or until you have the Incapacitated condition.</description>
 		</sheet>
 	</element>
 	<element name="Epic Boon" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_MONK_EPIC_BOON">
@@ -480,8 +480,8 @@
 			<p><em>3rd-Level Feature</em></p>
 			<p>Once per turn when you hit a creature with an Unarmed Strike and deal damage, you can expend 1 Focus Point to deal extra Necrotic damage equal to one roll of your Martial Arts die plus your Wisdom modifier.</p>
 		</description>
-		<sheet cost="1 Focus Point" usage="1/Turn">
-			<description>When you hit with an unarmed strike and deal damage, you can deal extra Necrotic damage equal to 1d{{martial arts:dice}}+{{wisdom:modifier}}.</description>
+		<sheet usage="1 Focus Point">
+			<description>Once per turn when you hit with an unarmed strike and deal damage, you can deal extra Necrotic damage equal to 1d{{martial arts:dice}}+{{wisdom:modifier}}.</description>
 		</sheet>
 	</element>
 	<element name="Hand of Healing" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_HAND_OF_HEALING">
@@ -490,7 +490,7 @@
 			<p>As a Magic action, you can expend 1 Focus Point to touch a creature and restore a number of Hit Points equal to a roll of your Martial Arts die plus your Wisdom modifier.</p>
 			<p>When you use your Flurry of Blows, you can replace one of the Unarmed Strikes with a use of this feature without expending a Focus Point for the healing.</p>
 		</description>
-		<sheet action="Magic Action" cost="1 Focus Point">
+		<sheet action="Magic Action" usage="1 Focus Point">
 			<description>Touch a creature to restore 1d{{martial arts:dice}}+{{wisdom:modifier}} Hit Points. Can replace one Flurry of Blows attack with this healing.</description>
 		</sheet>
 	</element>
@@ -536,8 +536,8 @@
 			<p>Your mastery of life energy opens the door to the ultimate mercy. As a Magic action, you can touch the corpse of a creature that died within the past 24 hours and expend 5 Focus Points. The creature then returns to life with a number of Hit Points equal to 4d10 plus your Wisdom modifier. If the creature died with any of the following conditions, the creature revives with the conditions removed: Blinded, Deafened, Paralyzed, Poisoned, and Stunned.</p>
 			<p>Once you use this feature, you can't use it again until you finish a Long Rest.</p>
 		</description>
-		<sheet action="Magic Action" cost="5 Focus Points" usage="Long Rest">
-			<description>Touch a corpse that died within 24 hours to return it to life with 4d10+{{wisdom:modifier}} Hit Points, removing certain conditions.</description>
+		<sheet action="Magic Action" usage="1/Long Rest">
+			<description>You can expend 5 focus points and touch a corpse that died within 24 hours to return it to life with 4d10+{{wisdom:modifier}} Hit Points, removing certain conditions.</description>
 		</sheet>
 	</element>
 
@@ -566,7 +566,7 @@
 			<p><strong>Darkvision.</strong> You gain Darkvision with a range of 60 feet. If you already have Darkvision, its range increases by 60 feet.</p>
 			<p><strong>Shadowy Figments.</strong> You know the Minor Illusion spell. Wisdom is your spellcasting ability for it.</p>
 		</description>
-		<sheet cost="1 Focus Point">
+		<sheet usage="1 Focus Point">
 			<description>You can cast the Darkness spell without spell components and see within it. Additionally, you can move its area of darkness to a space within 60 feet of you at the start of each of your turns.</description>
 		</sheet>
 		<rules>
@@ -602,7 +602,7 @@
 			<p><strong>Partially Incorporeal.</strong> You can move through occupied spaces as if they were Difficult Terrain. If you end your turn in such a space, you are shunted to the last unoccupied space you were in.</p>
 			<p><strong>Shadow Flurry.</strong> You can use your Flurry of Blows without expending any Focus Points.</p>
 		</description>
-		<sheet action="Magic Action" cost="3 Focus Points">
+		<sheet action="Magic Action" usage="3 Focus Points">
 			<description>While in dim light/darkness, become invisible and partially incorporeal for 1 minute allowing you to move through occupied spaces as if they were difficult terrain on your turn. You can also use Flurry of Blows without expending any Focus Points.</description>
 		</sheet>
 	</element>

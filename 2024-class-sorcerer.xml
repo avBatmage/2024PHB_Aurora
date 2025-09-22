@@ -4,7 +4,7 @@
 		<name>2024 Sorcerer</name>
 		<description>The Sorcerer class from the 2024 Player's Handbook.</description>
 		<author url="https://marketplace.dndbeyond.com/category/3709000?pid=DB3709000">Wizards of the Coast</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="2024-class-sorcerer.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-class-sorcerer.xml" />
 		</update>
 	</info>
@@ -292,7 +292,7 @@
 			<p>If you have no uses of Innate Sorcery left, you can use it if you spend 2 Sorcery Points when you take the Bonus Action to activate it.</p>
 			<p>In addition, while your Innate Sorcery feature is active, you can use up to two of your Metamagic options on each spell you cast.</p>
 		</description>
-		<sheet cost="2 sorcery points">
+		<sheet usage="2 sorcery points">
 			<description>You can expend 2 Sorcery Points to activate your Innate Sorcery feature and while it is active you can use up to two of your Metamagic options on each spell you cast.</description>
 		</sheet>
 	</element>
@@ -317,7 +317,7 @@
 			<p><em>Cost: 1 Sorcery Point</em></p>
 			<p>When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell's full force. To do so, spend 1 Sorcery Point and choose a number of those creatures up to your Charisma modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell, and it takes no damage if it would normally take half damage on a successful save.</p>
 		</description>
-		<sheet cost="1 sorcery point">
+		<sheet usage="1 sorcery point">
 			<description>Choose up to {{sorcerer:charisma:min:1}} creatures affected by your spell; they auto-succeed and take no half-damage.</description>
 		</sheet>
 	</element>
@@ -327,7 +327,7 @@
 			<p><em>Cost: 1 Sorcery Point</em></p>
 			<p>When you cast a spell that has a range of at least 5 feet, you can spend 1 Sorcery Point to double the spell's range. Or when you cast a spell that has a range of Touch, you can spend 1 Sorcery Point to make the spell's range 30 feet.</p>
 		</description>
-		<sheet cost="1 sorcery point">
+		<sheet usage="1 sorcery point">
 			<description>When you cast a spell that has a range of at least 5 feet, you can spend 1 Sorcery Point to double the spell's range. Or when you cast a spell that has a range of Touch, you can spend 1 Sorcery Point to make the spell's range 30 feet.</description>
 		</sheet>
 	</element>
@@ -338,7 +338,7 @@
 			<p>When you roll damage for a spell, you can spend 1 Sorcery Point to reroll a number of the damage dice up to your Charisma modifier (minimum of one), and you must use the new rolls.</p>
 			<p>You can use Empowered Spell even if you've already used a different Metamagic option during the casting of the spell.</p>
 		</description>
-		<sheet cost="1 sorcery point">
+		<sheet usage="1 sorcery point">
 			<description>When you roll damage for a spell, you can spend 1 sorcery point to reroll {{sorcerer:charisma:min:1}} damage dice. You can use this alsongside other Metamagic options during the casting of the spell.</description>
 		</sheet>
 	</element>
@@ -349,7 +349,7 @@
 			<p>When you cast a spell that has a duration of 1 minute or longer, you can spend 1 Sorcery Point to double its duration to a maximum duration of 24 hours.</p>
 			<p>If the affected spell requires Concentration, you have Advantage on any saving throw you make to maintain that Concentration.</p>
 		</description>
-		<sheet cost="1 sorcery point">
+		<sheet usage="1 sorcery point">
 			<description>When you cast a spell that has a duration of 1 minute or longer, you can double its duration, to a maximum duration of 24 hours. You also have advantage on any concentration saving throws made to maintain it.</description>
 		</sheet>
 	</element>
@@ -359,7 +359,7 @@
 			<p><em>Cost: 2 Sorcery Points</em></p>
 			<p>When you cast a spell that forces a creature to make a saving throw, you can spend 2 Sorcery Points to give one target of the spell Disadvantage on saves against the spell.</p>
 		</description>
-		<sheet cost="2 sorcery points">
+		<sheet usage="2 sorcery points">
 			<description>Give one target Disadvantage on saves against your spell.</description>
 		</sheet>
 	</element>
@@ -369,7 +369,7 @@
 			<p><em>Cost: 2 Sorcery Points</em></p>
 			<p>When you cast a spell that has a casting time of an action, you can spend 2 Sorcery Points to change the casting time to a Bonus Action for this casting. You can't modify a spell in this way if you've already cast a level 1+ spell on the current turn, nor can you cast a level 1+ spell on this turn after modifying a spell in this way.</p>
 		</description>
-		<sheet cost="2 sorcery points">
+		<sheet usage="2 sorcery points">
 			<description>When you cast a spell that has a casting time of an action, you can change the casting time to a Bonus Action for this casting. You can't cast another level 1+ spell on the same turn.</description>
 		</sheet>
 	</element>
@@ -380,7 +380,7 @@
 			<p>If you make an attack roll for a spell and miss, you can spend 1 Sorcery Point to reroll the d20, and you must use the new roll.</p>
 			<p>You can use Seeking Spell even if you've already used a different Metamagic option during the casting of the spell.</p>
 		</description>
-		<sheet cost="1 sorcery point">
+		<sheet usage="1 sorcery point">
 			<description>If you make an attack roll for a spell and miss, you can to reroll the d20. You can use this alsongside other Metamagic options during the casting of the spell.</description>
 		</sheet>
 	</element>
@@ -390,7 +390,7 @@
 			<p><em>Cost: 1 Sorcery Point</em></p>
 			<p>When you cast a spell, you can spend 1 Sorcery Point to cast it without any Verbal, Somatic, or Material components, except Material components that are consumed by the spell or that have a cost specified in the spell.</p>
 		</description>
-		<sheet cost="1 sorcery point">
+		<sheet usage="1 sorcery point">
 			<description>When you cast a spell, you can cast it without any Verbal, Somatic, or Material components that aren't consumed by the spell or have a cost specified in the spell.</description>
 		</sheet>
 	</element>
@@ -400,7 +400,7 @@
 			<p><em>Cost: 1 Sorcery Point</em></p>
 			<p>When you cast a spell that deals a type of damage from the following list, you can spend 1 Sorcery Point to change that damage type to one of the other listed types: Acid, Cold, Fire, Lightning, Poison, Thunder.</p>
 		</description>
-		<sheet cost="1 sorcery point">
+		<sheet usage="1 sorcery point">
 			<description>When you cast a spell that deals a type of damage from the following list, you can change that damage type to one of the other listed types: Acid, Cold, Fire, Lightning, Poison, Thunder.</description>
 		</sheet>
 	</element>
@@ -410,7 +410,7 @@
 			<p><em>Cost: 1 Sorcery Point</em></p>
 			<p>When you cast a spell, such as <em>Charm Person</em>, that can be cast with a higher-level spell slot to target an additional creature, you can spend 1 Sorcery Point to increase the spell's effective level by 1.</p>
 		</description>
-		<sheet cost="1 sorcery point">
+		<sheet usage="1 sorcery point">
 			<description>When you cast a spell that can be cast with a higher-level spell slot to target an additional creature, you can increase the spell's effective level by 1.</description>
 		</sheet>
 	</element>
@@ -510,8 +510,12 @@
 			<p class="indent"><strong>See the Invisible.</strong> You can see any Invisible creature within 60 feet of yourself that isn't behind Total Cover. Your eyes also turn black or become writhing sensory tendrils.</p>
 			<p class="indent"><strong>Wormlike Movement.</strong> Your body, along with any equipment you are wearing or carrying, becomes slimy and pliable. You can move through any space as narrow as 1 inch, and you can spend 5 feet of movement to escape from nonmagical restraints or the Grappled condition.</p>
 		</description>
-		<sheet action="Bonus Action" cost="1+ sorcery points">
-			<description>As a Bonus Action, you can spend 1 Sorcery Point or more to magically alter your body for 10 minutes. For each Sorcery Point you spend, you gain one of the following benefits: Aquatic Adaptation, Glistening Flight, See the Invisible, or Wormlike Movement.</description>
+		<sheet action="Bonus Action" usage="1-4 sorcery points">
+			<description>As a Bonus Action, you can spend 1 Sorcery Point or more to magically alter your body for 10 minutes. For each Sorcery Point you spend, you gain one of the following benefits:
+			Aquatic Adaptation. You gain a Swim Speed equal to twice your Speed, and you can breathe underwater.
+			Glistening Flight. You gain a Fly Speed equal to your Speed, and you can hover.
+			See the Invisible. You can see any Invisible creature within 60 feet of yourself that isn't behind Total Cover.
+			Wormlike Movement. Your body, along with any equipment you are wearing or carrying, becomes slimy and pliable. You can move through any space as narrow as 1 inch, and you can spend 5 feet of movement to escape from nonmagical restraints or the Grappled condition.</description>
 		</sheet>
 	</element>
 	<element name="Warping Implosion" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_SORCERER_WARPING_IMPLOSION">
@@ -519,7 +523,7 @@
 			<p>You can unleash a space-warping anomaly. As a Magic action, you teleport to an unoccupied space you can see within 120 feet of yourself. Immediately after you disappear, each creature within 30 feet of the space you left must make a Strength saving throw against your spell save DC. On a failed save, a creature takes 3d10 Force damage and is pulled straight toward the space you left, ending in an unoccupied space as close to your former space as possible. On a successful save, the creature takes half as much damage only.</p>
 			<p class="indent">Once you use this feature, you can't do so again until you finish a Long Rest unless you spend 5 Sorcery Points (no action required) to restore your use of it.</p>
 		</description>
-		<sheet usage="1/Long Rest" action="Magic Action" cost="5 sorcery points">
+		<sheet action="Magic Action" usage="1/Long Rest">
 			<description>As a Magic action, you teleport to an unoccupied space you can see within 120 feet of yourself. Each creature within 30 feet of the space you left must make a Strength saving throw against your spell save DC. On a failed save, a creature takes 3d10 Force damage and is pulled toward the space you left. On a successful save, the creature takes half as much damage only. You can spend 5 Sorcery Points to restore your use of this feature.</description>
 		</sheet>
 	</element>
@@ -719,7 +723,7 @@
 			<p>As a Bonus Action, you can cause draconic wings to appear on your back. The wings last for 1 hour or until you dismiss them (no action required). For the duration, you have a Fly Speed of 60 feet.</p>
 			<p>Once you use this feature, you can't use it again until you finish a Long Rest unless you spend 3 Sorcery Points (no action required) to restore your use of it.</p>
 		</description>
-		<sheet usage="1/Long Rest" action="Bonus Action" cost="3 sorcery points">
+		<sheet action="Bonus Action" usage="1/Long Rest">
 			<description>As a Bonus Action, you can cause draconic wings to appear on your back for 1 hour. For the duration, you have a Fly Speed of 60 feet. You can spend 3 Sorcery Points to restore your use of this feature.</description>
 		</sheet>
 	</element>
@@ -809,7 +813,7 @@
 		<description>
 			<p>You have the ability to twist fate using your wild magic. Immediately after another creature you can see rolls the d20 for a d20 Test, you can use your Reaction and spend 1 Sorcery Point to roll 1d4 and apply the number rolled as a bonus or penalty (your choice) to the creature's roll.</p>
 		</description>
-		<sheet action="Reaction" cost="1 sorcery point">
+		<sheet action="Reaction" usage="1 sorcery point">
 			<description>Immediately after another creature you can see rolls the d20 for a d20 Test, you can use your Reaction and spend 1 Sorcery Point to roll 1d4 and apply the number rolled as a bonus or penalty (your choice) to the creature's roll.</description>
 		</sheet>
 	</element>
