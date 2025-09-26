@@ -4,7 +4,7 @@
 		<name>2024 Origin Feats</name>
 		<description>Origin Feats from the 2024 Player's Handbook.</description>
 		<author url="https://marketplace.dndbeyond.com/category/3709000?pid=DB3709000">Wizards of the Coast</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="2024-origin-feats.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-origin-feats.xml" />
 		</update>
 	</info>
@@ -308,6 +308,9 @@
 			<description>You have become Proficient in three Musical Instruments. 
 			As you finish a Short or Long Rest, you can play a song on a Musical Instrument and give Heroic Inspiration to {{proficiency}} allies after rest.</description>
 		</sheet>
+		<rules>
+			<select type="Proficiency" name="Musical Instrument Proficiency (Musician)" supports="Musical Instrument" number="3"/>
+		</rules>
 	</element>
 	<element name="2024 Savage Attacker" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_SAVAGE_ATTACKER">
 		<supports>Origin Feat, Feat</supports>

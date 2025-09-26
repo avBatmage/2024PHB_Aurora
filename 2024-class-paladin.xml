@@ -4,7 +4,7 @@
 		<name>2024 Paladin</name>
 		<description>The Paladin class from the 2024 Player's Handbook.</description>
 		<author url="https://marketplace.dndbeyond.com/category/3709000?pid=DB3709000">Wizards of the Coast</author>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="2024-class-paladin.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/classes/2024-class-paladin.xml" />
 		</update>
 	</info>
@@ -278,6 +278,7 @@
 			<p class="indent">If a Channel Divinity effect requires a saving throw, the DC equals the spell save DC from this class's Spellcasting feature.</p>
 		</description>
 		<sheet usage="{{channel divinity:count}}/Long Rest">
+			<description>You can channel divine energy to fuel magical effects. You regain one of its expended uses when you finish a Short Rest.</description>
 		</sheet>
 		<rules>
 			<grant Type="Class Feature" ID="ID_2024PHB_CLASS_FEATURE_PALADIN_CHANNEL_DIVINITY_DIVINE_SENSE" />
@@ -285,9 +286,9 @@
 			<stat name="channel divinity:count" value="1" level="11" />
 		</rules>
 	</element>
-	<element name="Divine Sense" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_CHANNEL_DIVINITY">
+	<element name="Divine Sense" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_CHANNEL_DIVINITY_DIVINE_SENSE">
 		<description>
-			<p>As a Bonus Action, you can open your awareness to detect Celestials, Fiends, and Undead. For the next 10 minutes or until you have the Incapacitated condition, you know the location of any creature of those types within 60 feet of yourself, and you know its creature type. Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the Hallow spell.</p>
+			<p>As a Bonus Action, you can open your awareness to detect Celestials, Fiends, and Undead. For the next 10 minutes or until you have the Incapacitated condition, you know the location of any creature of those types within 60 feet of yourself, and you know its creature type. Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the <i>Hallow</i> spell.</p>
 		</description>
 		<sheet usage="Channel Divinity" action="Bonus Action">
 			<description>You can open your awareness to detect Celestials, Fiends, and Undead. For the next 10 minutes or until you have the Incapacitated condition, you know the location of any creature of those types within 60 feet of yourself, and you know its creature type. Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the <i>Hallow</i> spell.</description>
@@ -511,7 +512,7 @@
 	</element>
 	<element name="Sacred Weapon" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_SACRED_WEAPON">
 		<description>
-			<p>When you take the Attack action, you can expend one use of your Channel Divinity to imbue one Melee weapon that you are holding with positive energy. For 10 minutes or until you use this feature again, you add your Charisma modifier to attack rolls you make with that weapon (minimum bonus of +1), and each time you hit with it, you cause it to deal its normal damage type or Radiant damage.</p>
+			<p>At level 3, When you take the Attack action, you can expend one use of your Channel Divinity to imbue one Melee weapon that you are holding with positive energy. For 10 minutes or until you use this feature again, you add your Charisma modifier to attack rolls you make with that weapon (minimum bonus of +1), and each time you hit with it, you cause it to deal its normal damage type or Radiant damage.</p>
 			<p class="indent">The weapon also emits Bright Light in a 20-foot radius and Dim Light 20 feet beyond that.</p>
 			<p class="indent">You can end this effect early (no action required). This effect also ends if you aren't carrying the weapon.</p>
 		</description>
@@ -521,7 +522,7 @@
 	</element>
 	<element name="Aura of Devotion" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_AURA_OF_DEVOTION">
 		<description>
-			<p>You and your allies have Immunity to the Charmed condition while in your Aura of Protection. If a Charmed ally enters the aura, that condition has no effect on that ally while there.</p>
+			<p>At level 7, You and your allies have Immunity to the Charmed condition while in your Aura of Protection. If a Charmed ally enters the aura, that condition has no effect on that ally while there.</p>
 		</description>
 		<sheet>
 			<description>You and your allies have Immunity to the Charmed condition while in your Aura of Protection.</description>
@@ -529,7 +530,7 @@
 	</element>
 	<element name="Smite of Protection" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_SMITE_OF_PROTECTION">
 		<description>
-			<p>Your magical smite now radiates protective energy. Whenever you cast <em>Divine Smite</em>, you and your allies have Half Cover while in your Aura of Protection. The aura has this benefit until the start of your next turn.</p>
+			<p>At level 15, Your magical smite now radiates protective energy. Whenever you cast <em>Divine Smite</em>, you and your allies have Half Cover while in your Aura of Protection. The aura has this benefit until the start of your next turn.</p>
 		</description>
 		<sheet>
 			<description>Whenever you cast Divine Smite, you and your allies have Half Cover while in your Aura of Protection until the start of your next turn.</description>
@@ -537,7 +538,7 @@
 	</element>
 	<element name="Holy Nimbus" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_HOLY_NIMBUS">
 		<description>
-			<p>As a Bonus Action, you can imbue your Aura of Protection with holy power, granting the benefits below for 10 minutes or until you end them (no action required). Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a level 5 spell slot (no action required).</p>
+			<p>At level 20, As a Bonus Action, you can imbue your Aura of Protection with holy power, granting the benefits below for 10 minutes or until you end them (no action required). Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a level 5 spell slot (no action required).</p>
 			<p class="indent"><strong>Holy Ward</strong>. You have Advantage on any saving throw you are forced to make by a Fiend or an Undead.</p>
 			<p class="indent"><strong>Radiant Damage</strong>. Whenever an enemy starts its turn in the aura, that creature takes Radiant damage equal to your Charisma modifier plus your Proficiency Bonus.</p>
 			<p class="indent"><strong>Sunlight.</strong> The aura is filled with Bright Light that is sunlight.</p>
@@ -606,7 +607,7 @@
 	</element>
 	<element name="Inspiring Smite" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_INSPIRING_SMITE">
 		<description>
-			<p>Immediately after you deal damage to a creature with any of your Paladin's Smite spells, you can expend one use of your Channel Divinity and distribute Temporary Hit Points to creatures of your choice within 30 feet of yourself, which can include you. The total number of Temporary Hit Points equals 2d8 + your Paladin level, divided among the chosen creatures however you like.</p>
+			<p>At level 3, Immediately after you deal damage to a creature with any of your Paladin's Smite spells, you can expend one use of your Channel Divinity and distribute Temporary Hit Points to creatures of your choice within 30 feet of yourself, which can include you. The total number of Temporary Hit Points equals 2d8 + your Paladin level, divided among the chosen creatures however you like.</p>
 		</description>
 		<sheet usage="Channel Divinity">
 			<description>After dealing damage with a Paladin's Smite spell, distribute 2d8 + Paladin level Temporary Hit Points among creatures within 30 feet.</description>
@@ -614,7 +615,7 @@
 	</element>
 	<element name="Peerless Athlete" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_PEERLESS_ATHLETE">
 		<description>
-			<p>As a Bonus Action, you can expend one use of your Channel Divinity to augment your athleticism. For 1 hour, you have Advantage on Strength (Athletics) and Dexterity (Acrobatics) checks; you can carry, push, drag, and lift twice as much weight as normal; and the distance of your long and high jumps increases by 10 feet (this extra distance costs movement as normal).</p>
+			<p>At level 3, As a Bonus Action, you can expend one use of your Channel Divinity to augment your athleticism. For 1 hour, you have Advantage on Strength (Athletics) and Dexterity (Acrobatics) checks; you can carry, push, drag, and lift twice as much weight as normal; and the distance of your long and high jumps increases by 10 feet (this extra distance costs movement as normal).</p>
 		</description>
 		<sheet action="Bonus Action" usage="Channel Divinity">
 			<description>For 1 hour, gain Advantage on Athletics and Acrobatics checks, double carrying capacity, and increase jump distance by 10 feet.</description>
@@ -622,7 +623,7 @@
 	</element>
 	<element name="Aura of Alacrity" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_AURA_OF_ALACRITY">
 		<description>
-			<p>Your Speed increases by 10 feet.</p>
+			<p>At level 7, Your Speed increases by 10 feet.</p>
 			<p class="indent">In addition, whenever an ally enters your Aura of Protection for the first time on a turn or starts their turn here, the ally's Speed increases by 10 feet until the end of their next turn.</p>
 		</description>
 		<sheet>
@@ -631,7 +632,7 @@
 	</element>
 	<element name="Glorious Defense" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_GLORIOUS_DEFENSE">
 		<description>
-			<p>You can turn defense into a sudden strike. When you or another creature you can see within 10 feet of you is hit by an attack roll, you can use your Reaction to grant a bonus to the target's AC against that attack, potentially causing it to miss. The bonus equals your Charisma modifier (minimum of +1). If the attack misses, you can make one weapon attack against the attacker as part of this Reaction, provided the attacker is within your weapon's range.</p>
+			<p>At level 15, You can turn defense into a sudden strike. When you or another creature you can see within 10 feet of you is hit by an attack roll, you can use your Reaction to grant a bonus to the target's AC against that attack, potentially causing it to miss. The bonus equals your Charisma modifier (minimum of +1). If the attack misses, you can make one weapon attack against the attacker as part of this Reaction, provided the attacker is within your weapon's range.</p>
 			<p class="indent">You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
 		</description>
 		<sheet action="Reaction" usage="{{charisma:modifier}}/Long Rest">
@@ -644,7 +645,7 @@
 	</element>
 	<element name="Living Legend" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_LIVING_LEGEND">
 		<description>
-			<p>You can empower yourself with the legends— whether true or exaggerated—of your great deeds. As a Bonus Action, you gain the following benefits for 1 minute:</p>
+			<p>At level 20, You can empower yourself with the legends— whether true or exaggerated—of your great deeds. As a Bonus Action, you gain the following benefits for 1 minute:</p>
 			<p class="indent"><strong>Charismatic</strong>. You are blessed with an otherworldly presence, gaining Advantage on all Charisma checks.</p>
 			<p class="indent"><strong>Saving Throw Reroll</strong>. If you fail a saving throw, you can use your Reaction to reroll it. You must use this new roll.</p>
 			<p class="indent"><strong>Unerring Strike</strong>. Once on each of your turns when you make an attack roll with a weapon and miss, you can cause that attack to hit instead.</p>
@@ -712,7 +713,7 @@
 	</element>
 	<element name="Nature's Wrath" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_NATURES_WRATH">
 		<description>
-			<p>As an action, you can expend one use of your Channel Divinity to conjure grasping spectral vines around nearby creatures. Each creature of your choice that you can see within 15 feet of you must succeed on a Strength saving throw or have the Restrained condition for 1 minute. A Restrained creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+			<p>At level 3, As an action, you can expend one use of your Channel Divinity to conjure grasping spectral vines around nearby creatures. Each creature of your choice that you can see within 15 feet of you must succeed on a Strength saving throw or have the Restrained condition for 1 minute. A Restrained creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
 		</description>
 		<sheet action="Action" usage="Channel Divinity">
 			<description>Conjure grasping spectral vines around creatures within 15 feet. Creatures must succeed on Strength save or be Restrained for 1 minute. Restrained creatures repeat save at end of each turn.</description>
@@ -720,7 +721,7 @@
 	</element>
 	<element name="Aura of Warding" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_AURA_OF_WARDING">
 		<description>
-			<p>Ancient magic lies so heavily upon you that it forms an eldritch ward, blunting energy from beyond the Material Plane; you and your allies have resistance to Necrotic, Psychic, and Radiant damage while in your Aura of Protection.</p>
+			<p>At level 7, Ancient magic lies so heavily upon you that it forms an eldritch ward, blunting energy from beyond the Material Plane; you and your allies have resistance to Necrotic, Psychic, and Radiant damage while in your Aura of Protection.</p>
 		</description>
 		<sheet>
 			<description>You and your allies have resistance to Necrotic, Psychic, and Radiant damage while in your Aura of Protection.</description>
@@ -728,7 +729,7 @@
 	</element>
 	<element name="Undying Sentinel" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_UNDYING_SENTINEL">
 		<description>
-			<p>When you are reduced to 0 Hit Points and not killed outright, you can choose to drop to 1 Hit Point instead, and you regain a number of Hit Points equal to three times your Paladin level. Once you use this feature, you can't do so again until you finish a Long Rest.</p>
+			<p>At level 15, When you are reduced to 0 Hit Points and not killed outright, you can choose to drop to 1 Hit Point instead, and you regain a number of Hit Points equal to three times your Paladin level. Once you use this feature, you can't do so again until you finish a Long Rest.</p>
 			<p class="indent">Additionally, you suffer none of the drawbacks of old age, and you can't be aged magically.</p>
 		</description>
 		<sheet usage="1/Long Rest">
@@ -737,7 +738,7 @@
 	</element>
 	<element name="Elder Champion" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_ELDER_CHAMPION">
 		<description>
-			<p>As a Bonus Action, you can imbue your Aura of Protection with primal power, granting the following benefits for 1 minute or until you end them as a Bonus Action:</p>
+			<p>At level 20, As a Bonus Action, you can imbue your Aura of Protection with primal power, granting the following benefits for 1 minute or until you end them as a Bonus Action:</p>
 			<p class="indent"><strong>Diminish Defiance</strong>. Enemies in the aura have Disadvantage on saving throws against your spells and Channel Divinity options.</p>
 			<p class="indent"><strong>Regeneration</strong>. At the start of each of your turns, you regain 10 Hit Points.</p>
 			<p class="indent"><strong>Swift Spells</strong>. Whenever you cast a spell that has a casting time of 1 action, you can cast it using a Bonus Action instead.</p>
@@ -805,7 +806,7 @@
 	</element>
 	<element name="Vow of Enmity" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_VOW_OF_ENMITY">
 		<description>
-			<p>As a Bonus Action, you can expend one use of your Channel Divinity to utter a vow of enmity against a creature you can see within 30 feet of yourself. You gain Advantage on attack rolls against the creature for 1 minute.</p>
+			<p>At level 3, As a Bonus Action, you can expend one use of your Channel Divinity to utter a vow of enmity against a creature you can see within 30 feet of yourself. You gain Advantage on attack rolls against the creature for 1 minute.</p>
 			<p class="indent">If the creature drops to 0 Hit Points before the vow ends, you can transfer the vow to a different creature within 30 feet of yourself (no action required). You can make this transfer no more than once per turn.</p>
 		</description>
 		<sheet action="Bonus Action" usage="Channel Divinity">
@@ -814,7 +815,7 @@
 	</element>
 	<element name="Relentless Avenger" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_RELENTLESS_AVENGER">
 		<description>
-			<p>Your supernatural focus helps you close off a foe's retreat. When you hit a creature with an Opportunity Attack, you can reduce the creature's Speed to 0, and you can then move up to half your Speed as part of the same Reaction. This movement doesn't provoke Opportunity Attacks.</p>
+			<p>At level 7, Your supernatural focus helps you close off a foe's retreat. When you hit a creature with an Opportunity Attack, you can reduce the creature's Speed to 0, and you can then move up to half your Speed as part of the same Reaction. This movement doesn't provoke Opportunity Attacks.</p>
 		</description>
 		<sheet action="Reaction">
 			<description>When you hit with an Opportunity Attack, reduce creature's Speed to 0 and move up to half your Speed without provoking Opportunity Attacks.</description>
@@ -822,7 +823,7 @@
 	</element>
 	<element name="Soul of Vengeance" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_SOUL_OF_VENGEANCE">
 		<description>
-			<p>Immediately after a creature under the effect of your Vow of Enmity hits or misses with an attack, you can use your Reaction to make a melee attack against that creature if it's within range.</p>
+			<p>At level 15, Immediately after a creature under the effect of your Vow of Enmity hits or misses with an attack, you can use your Reaction to make a melee attack against that creature if it's within range.</p>
 		</description>
 		<sheet action="Reaction">
 			<description>After a creature under Vow of Enmity hits or misses with an attack, make a melee attack against that creature if within range.</description>
@@ -830,7 +831,7 @@
 	</element>
 	<element name="Avenging Angel" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_AVENGING_ANGEL">
 		<description>
-			<p>As a Bonus Action, you can imbue your Aura of Protection with holy power, granting the following benefits for 1 hour or until you end them as a Bonus Action:</p>
+			<p>At level 20, As a Bonus Action, you can imbue your Aura of Protection with holy power, granting the following benefits for 1 hour or until you end them as a Bonus Action:</p>
 			<p class="indent"><strong>Flight</strong>. You sprout spectral wings on your back. You have a Fly Speed equal to your Speed and can Hover.</p>
 			<p class="indent"><strong>Frightful Aura</strong>. Whenever an enemy starts its turn in the aura, that creature must succeed on a Wisdom saving throw or have the Frightened condition for 1 minute or until it takes any damage. Attack rolls against the Frightened creature have Advantage.</p>
 			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a 5th-level spell slot (no action required).</p>

@@ -4,7 +4,7 @@
 		<name>2024 General Feats</name>
 		<description>General Feats from the 2024 Player's Handbook.</description>
 		<author url="https://www.dndbeyond.com/">Wizards of the Coast</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="2024-general-feats.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-general-feats.xml" />
 		</update>
 	</info>
@@ -281,7 +281,7 @@
 		</description>
 		<sheet>
 			<description>Once per turn when you hit a creature with an Unarmed Strike as part of the Attack action on your turn, you can use both the Damage and the Grapple option. 
-			You have Advantage on attack rolls against a creature Grappled by you and no extra movement to move grappled creatures your size or smaller.</description>
+			You have Advantage on attack rolls against a creature Grappled by you and don't have to spend extra movement to move grappled creatures your size or smaller.</description>
 		</sheet>
 		<rules>
 			<select type="Ability Score Improvement" name="Ability Score Increase" supports="ID_2024PHB_GENERAL_FEAT_ASI_STRENGTH|ID_2024PHB_GENERAL_FEAT_ASI_DEXTERITY" />
