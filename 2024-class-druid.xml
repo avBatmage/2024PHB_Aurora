@@ -4,7 +4,7 @@
 		<name>2024 Druid</name>
 		<description>The Druid class from the 2024 Player's Handbook.</description>
 		<author url="https://marketplace.dndbeyond.com/category/3709000?pid=DB3709000">Wizards of the Coast</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="2024-class-druid.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-class-druid.xml" />
 		</update>
 	</info>
@@ -112,7 +112,7 @@
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_DRUID_PRIMAL_ORDER" level="1"/>
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_DRUID_WILDSHAPE" level="2"/>
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_DRUID_WILD_COMPANION" level="2"/>
-			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_DRUID_DRUID_SUBCLASS" level="2"/>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_DRUID_DRUID_SUBCLASS" level="3"/>
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_DRUID_ABILITYSCOREIMPROVEMENT_DRUID" level="4"/>
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_DRUID_WILD_RESURGENCE" level="5"/>
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_DRUID_ELEMENTAL_FURY" level="7"/>
