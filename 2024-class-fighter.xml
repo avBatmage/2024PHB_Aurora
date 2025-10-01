@@ -139,7 +139,7 @@
 	
 	<element name="Fighting Style" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_FIGHTER_FIGHTINGSTYLE">
 		<description>
-			<p><em>1st-Level Feature</em></p>
+			<p><em>1st-level feature</em></p>
 			<p>You have honed your martial prowess and gain a Fighting Style feat of your choice. Defense is recommended.</p>
 			<p class="indent">Whenever you gain a Fighter level, you can replace the feat you chose with a different Fighting Style feat.</p>
 		</description>
@@ -150,7 +150,7 @@
 	</element>
 	<element name="Second Wind" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_FIGHTER_SECONDWIND">
 		<description>
-			<p><em>1st-Level Feature</em></p>
+			<p><em>1st-level feature</em></p>
 			<p>You have a limited well of physical and mental stamina that you can draw on. As a Bonus Action, you can use it to regain Hit Points equal to 1d10 plus your Fighter level.</p>
 			<p class="indent">You can use this feature twice. You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest.</p>
 			<p class="indent">When you reach certain Fighter levels, you gain more uses of this feature, as shown in the Second Wind column of the Fighter Features table.</p>
@@ -166,7 +166,7 @@
 	</element>
 	<element name="Weapon Mastery" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_FIGHTER_WEAPONMASTERY">
 		<description>
-			<p><em>1st-Level Feature</em></p>
+			<p><em>1st-level feature</em></p>
 			<p>Your training with weapons allows you to use the mastery property of three kinds of Simple or Martial weapons of your choice. Whenever you finish a Long Rest, you can practice weapon drills and change one of those weapon choices.</p>
 			<p class="indent">When you reach certain Fighter levels, you gain the ability to use the mastery properties of more kinds of weapons, as shown in the Weapon Mastery column of the Fighter Features table.</p>
 		</description>
@@ -186,7 +186,7 @@
 	</element>
 	<element name="Action Surge" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_FIGHTER_ACTIONSURGE">
 		<description>
-			<p><em>2nd-Level Feature</em></p>
+			<p><em>2nd-level feature</em></p>
 			<p>You can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action, except the Magic action.</p>
 			<p class="indent">Once you use this feature, you can't do so again until you finish a Short or Long Rest. Starting at level 17, you can use it twice before a rest but only once on a turn.</p>
 		</description>
@@ -197,7 +197,7 @@
 	</element>
 	<element name="Tactical Mind" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_FIGHTER_TACTICALMIND">
 		<description>
-			<p><em>2nd-Level Feature</em></p>
+			<p><em>2nd-level feature</em></p>
 			<p>You have a mind for tactics and getting the upper hand on and off the battlefield. When you fail an ability check, you can expend a use of your Second Wind to push yourself toward success. Rather than regaining Hit Points, you roll 1d10 and add the number rolled to the ability check, potentially turning it into a success. If the check still fails, this use of Second Wind isn't expended.</p>
 		</description>
 		<sheet usage="Second Wind">
@@ -206,7 +206,7 @@
 	</element>
 	<element name="Fighter Subclass" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_FIGHTER_FIGHTERSUBCLASS">
 		<description>
-			<p><em>3rd-Level Feature</em></p>
+			<p><em>3rd-level feature</em></p>
 			<p>You gain a Fighter subclass of your choice. The Battle Master, Champion, Eldritch Knight, and Psi Warrior subclasses are detailed after this class's description. A subclass is a specialization that grants you features at certain Fighter levels. For the rest of your career, you gain each of your subclass's features that are of your Fighter level or lower.</p>
 		</description>
 		<sheet display="false" />
@@ -232,7 +232,7 @@
 	</element>
 	<element name="Extra Attack" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_FIGHTER_EXTRAATTACK">
 		<description>
-			<p><em>5th-Level Feature</em></p>
+			<p><em>5th-level feature</em></p>
 			<p>You can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
 			<p class="indent">The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class.</p>
 		</description>
@@ -249,7 +249,7 @@
 	</element>
 	<element name="Tactical Shift" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_FIGHTER_TACTICALSHIFT">
 		<description>
-			<p><em>5th-Level Feature</em></p>
+			<p><em>5th-level feature</em></p>
 			<p>Whenever you activate your Second Wind with a Bonus Action, you can move up to half your Speed without provoking Opportunity Attacks.</p>
 		</description>
 		<sheet>
@@ -258,7 +258,7 @@
 	</element>
 	<element name="Indomitable" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_FIGHTER_INDOMITABLE">
 		<description>
-			<p><em>9th-Level Feature</em></p>
+			<p><em>9th-level feature</em></p>
 			<p>If you fail a saving throw, you can reroll it with a bonus equal to your Fighter level. You must use the new roll, and you can't use this feature again until you finish a Long Rest.</p>
 			<p class="indent">You can use this feature twice between Long Rests starting at level 13 and three times between Long Rests starting at level 17.</p>
 		</description>
@@ -273,7 +273,7 @@
 	</element>
 	<element name="Tactical Master" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_FIGHTER_TACTICALMASTER">
 		<description>
-			<p><em>9th-Level Feature</em></p>
+			<p><em>9th-level feature</em></p>
 			<p>When you attack with a weapon whose mastery property you can use, you can replace that property with the Push, Sap, or Slow property for that attack.</p>
 		</description>
 		<sheet>
@@ -282,14 +282,14 @@
 	</element>
 	<element name="Two Extra Attacks" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_FIGHTER_TWOEXTRAATTACKS">
 		<description>
-			<p><em>11th-Level Feature</em></p>
+			<p><em>11th-level feature</em></p>
 			<p>You can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
 		</description>
 		<sheet display="false"/>
 	</element>
 	<element name="Studied Attacks" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_FIGHTER_STUDIEDATTACKS">
 		<description>
-			<p><em>13th-Level Feature</em></p>
+			<p><em>13th-level feature</em></p>
 			<p>You study your opponents and learn from each attack you make. If you make an attack roll against a creature and miss, you have Advantage on your next attack roll against that creature before the end of your next turn.</p>
 		</description>
 		<sheet>
@@ -298,14 +298,14 @@
 	</element>
 	<element name="Epic Boon" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_FIGHTER_EPICBOON">
 		<description>
-			<p><em>19th-Level Feature</em></p>
+			<p><em>19th-level feature</em></p>
 			<p>You gain an Epic Boon feat of your choice.</p>
 		</description>
 		<sheet display="false"/>
 	</element>
 	<element name="Three Extra Attacks" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_FIGHTER_THREEEXTRAATTACKS">
 		<description>
-			<p><em>20th-Level Feature</em></p>
+			<p><em>20th-level feature</em></p>
 			<p>You can attack three times, instead of once, whenever you take the Attack action on your turn.</p>
 		</description>
 		<sheet display="false"/>
@@ -414,7 +414,7 @@
 		</sheet>
 	</element>
 
-	<!--Subclasses-->
+    <!--Subclasses-->
 	<element name="2024 Battle Master" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FIGHTER_BATTLE_MASTER">
 		<supports>Martial Archetype</supports>
 			<description>
@@ -437,15 +437,15 @@
 	</element>
 	<element name="Combat Superiority" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_COMBAT_SUPERIORITY">
 		<description>
-			<p><em>3rd-Level Feature</em></p>
+			<p><em>3rd-level Battle Master feature</em></p>
 			<p>You learn maneuvers that are fueled by special dice called superiority dice.</p>
 			<p class="indent"><b>Maneuvers.</b> You learn three maneuvers of your choice from the list of maneuvers available to the Battle Master. You can use only one maneuver per attack.</p>
 			<p class="indent">You learn two additional maneuvers of your choice at 7th, 10th, and 15th level.</p>
 			<p class="indent"><b>Superiority Dice.</b> You have four superiority dice, which are d8s. A superiority die is expended when you use it. You regain all of your expended superiority dice when you finish a short or long rest.</p>
-			<p class="indent"><b>Saving Throws.</b> Some of your maneuvers require your target to make a saving throw to resist the maneuver's effects. The saving throw DC is calculated as follows: <b>Maneuver save DC</b> = 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).</p>
+			<p class="indent"><b>Saving Throws.</b> Some of your maneuvers require your target to make a saving throw to resist the maneuver's effects. The saving throw DC is calculated as follows: Maneuver save DC = 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).</p>
 		</description>
-		<sheet>
-			<description>You learn three maneuvers and have {{superiority dice:amount}} d{{superiority dice:size}} superiority dice to fuel them. You regain expended dice on a short or long rest.</description>
+		<sheet usage="{{superiority dice:amount}}/Short Rest">
+			<description>You have d{{superiority dice:size}} superiority dice to fuel your maneuvers. Your DC for these Maneuvers is {{superiority dice:dc}} You regain expended dice on a short or long rest.</description>
 		</sheet>
 		<rules>
 			<stat name="superiority dice:amount" value="4" />
@@ -465,20 +465,20 @@
 	</element>
 	<element name="Student of War" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_STUDENT_OF_WAR">
 		<description>
-			<p><em>3rd-Level Feature</em></p>
+			<p><em>3rd-level Battle Master feature</em></p>
 			<p>You gain proficiency with one type of Artisan's Tools of your choice, and you gain proficiency in one skill of your choice from the skills available to Fighters at level 1.</p>
 		</description>
 		<sheet>
 			<description>You gain proficiency with one type of artisan's tools of your choice.</description>
 		</sheet>
 		<rules>
-			<select type="Proficiency" name="Artisan's Tools" supports="Artisan's Tools" />
+			<select type="Proficiency" name="Artisan's Tools" supports="Artisan Tools" />
 			<select type="Proficiency" name="Skill Proficiency (Fighter)" supports="Skill,Fighter"/>
 		</rules>
 	</element>
 	<element name="Know Your Enemy" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_KNOW_YOUR_ENEMY">
 		<description>
-			<p><em>7th-Level Feature</em></p>
+			<p><em>7th-level Battle Master feature</em></p>
 			<p>As a Bonus Action, you can discern certain strengths and weaknesses of a creature you can see within 30 feet of yourself; you know whether that creature has any damage immunities, resistances, or vulnerabilities, and if the creature has any, you know what they are.</p>
 			<p class="indent">Once you use this feature, you can't do so again until you finish a Long Rest. You can also restore a use of the feature by expending one Superiority Die (no action required).</p>
 		</description>
@@ -488,14 +488,14 @@
 	</element>
 	<element name="Improved Combat Superiority" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_IMPROVED_COMBAT_SUPERIORITY">
 		<description>
-			<p><em>10th-Level Feature</em></p>
+			<p><em>10th-level Battle Master feature</em></p>
 			<p>Your Superiority Die becomes a d10.</p>
 		</description>
 		<sheet display="false"/>
 	</element>
 	<element name="Relentless" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_RELENTLESS">
 		<description>
-			<p><em>15th-Level Feature</em></p>
+			<p><em>15th-level Battle Master feature</em></p>
 			<p>Once per turn, when you use a Maneuver, you can roll a d8 and use the number rolled instead of expending a Superiority Die.</p>
 		</description>
 		<sheet>
@@ -504,14 +504,13 @@
 	</element>
 	<element name="Ultimate Combat Superiority" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_ULTIMATE_COMBAT_SUPERIORITY">
 		<description>
-			<p><em>18th-Level Feature</em></p>
+			<p><em>18th-level Battle Master feature</em></p>
 			<p>Your Superiority Die becomes a d12.</p>
 		</description>
 		<sheet display="false"/>
 	</element>
-
 	<!-- Battle Master Maneuvers -->
-	<element name="Ambush" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_AMBUSH">
+	<element name="2024 Ambush" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_AMBUSH">
 		<supports>Maneuver, Battle Master</supports>
 		<description>
 			<p>When you make a Dexterity (Stealth) check or an initiative roll, you can expend one Superiority Die and add the die to the roll, provided you don't have the Incapacitated condition.</p>
@@ -520,7 +519,7 @@
 			<description>When you make a Dexterity (Stealth) check or initiative roll, you can expend one Superiority Die and add the die to the roll (if not incapacitated).</description>
 		</sheet>
 	</element>
-	<element name="Bait and Switch" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_BAIT_AND_SWITCH">
+	<element name="2024 Bait and Switch" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_BAIT_AND_SWITCH">
 		<supports>Maneuver, Battle Master</supports>
 		<description>
 			<p>When you're within 5 feet of a creature on your turn, you can expend one Superiority Die and switch places with that creature, provided you spend at least 5 feet of movement and the creature is willing and doesn't have the Incapacitated condition. This movement doesn't provoke Opportunity Attacks. Roll the Superiority Die. Until the start of your next turn, you or the other creature (your choice) gains a bonus to AC equal to the number rolled.</p>
@@ -529,7 +528,7 @@
 			<description>When within 5 feet of a willing creature (not incapacitated), you can expend one Superiority Die and at least 5ft movement to switch places with it. One of you gains AC bonus equal to the die roll until your next turn.</description>
 		</sheet>
 	</element>
-	<element name="Commander's Strike" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_COMMANDERS_STRIKE">
+	<element name="2024 Commander's Strike" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_COMMANDERS_STRIKE">
 		<supports>Maneuver, Battle Master</supports>
 		<description>
 			<p>When you take the Attack action on your turn, you can replace one of your attacks to direct one of your companions to strike. When you do so, choose a willing creature who can see or hear you and expend one Superiority Die. That creature can immediately use its Reaction to make one attack with a weapon or an Unarmed Strike, adding the Superiority Die to the attack's damage roll on a hit.</p>
@@ -538,7 +537,7 @@
 			<description>When you take the Attack action, you can replace one attack to direct a companion to make a Weapon or Unarmed attack with their Reaction, adding the Superiority Die to damage.</description>
 		</sheet>
 	</element>
-	<element name="Commanding Presence" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_COMMANDING_PRESENCE">
+	<element name="2024 Commanding Presence" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_COMMANDING_PRESENCE">
 		<supports>Maneuver, Battle Master</supports>
 		<description>
 			<p>When you make a Charisma (Intimidation, Performance, or Persuasion) check, you can expend one Superiority Die and add that die to the ability check.</p>
@@ -547,7 +546,7 @@
 			<description>When you make a Charisma (Intimidation, Performance, or Persuasion) check, you can expend one Superiority Die and add it to the check.</description>
 		</sheet>
 	</element>
-	<element name="Disarming Attack" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_DISARMING_ATTACK">
+	<element name="2024 Disarming Attack" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_DISARMING_ATTACK">
 		<supports>Maneuver, Battle Master</supports>
 		<description>
 			<p>When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to disarm the target. Add the Superiority Die roll to the attack's damage roll. The target must succeed on a Strength saving throw, or it drops one object of your choice that it's holding, with the object landing in its space.</p>
@@ -556,7 +555,7 @@
 			<description>When you hit a creature with an attack, you can expend one Superiority Die to attempt to disarm it. Add the die to damage, and the target must make a Strength save or drop an object.</description>
 		</sheet>
 	</element>
-	<element name="Distracting Strike" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_DISTRACTING_STRIKE">
+	<element name="2024 Distracting Strike" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_DISTRACTING_STRIKE">
 		<supports>Maneuver, Battle Master</supports>
 		<description>
 			<p>When you hit a creature with an attack roll, you can expend one Superiority Die to distract the target. Add the Superiority Die roll to the attack's damage roll. The next attack roll against the target by an attacker other than you has Advantage if the attack is made before the start of your next turn.</p>
@@ -565,7 +564,7 @@
 			<description>When you hit a creature with an attack, you can expend one Superiority Die to distract it. Add the die to damage, and the next attack against the target by another attacker has Advantage.</description>
 		</sheet>
 	</element>
-	<element name="Evasive Footwork" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_EVASIVE_FOOTWORK">
+	<element name="2024 Evasive Footwork" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_EVASIVE_FOOTWORK">
 		<supports>Maneuver, Battle Master</supports>
 		<description>
 			<p>As a Bonus Action, you can expend one Superiority Die and take the Disengage action. You also roll the die and add the number rolled to your AC until the start of your next turn.</p>
@@ -574,7 +573,7 @@
 			<description>You can expend one Superiority Die to take the Disengage Action and add the number rolled to your AC until the start of your next turn.</description>
 		</sheet>
 	</element>
-	<element name="Feinting Attack" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_FEINTING_ATTACK">
+	<element name="2024 Feinting Attack" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_FEINTING_ATTACK">
 		<supports>Maneuver, Battle Master</supports>
 		<description>
 			<p>As a Bonus Action, you can expend one Superiority Die to feint, choosing one creature within 5 feet of yourself as your target. You have Advantage on your next attack roll against that target this turn. If that attack hits, add the Superiority Die to the attack's damage roll.</p>
@@ -583,7 +582,7 @@
 			<description>Expend one Superiority Die to feint against a creature within 5 feet. You have Advantage on your next attack against that target this turn, and add the die to damage if it hits.</description>
 		</sheet>
 	</element>
-	<element name="Goading Attack" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_GOADING_ATTACK">
+	<element name="2024 Goading Attack" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_GOADING_ATTACK">
 		<supports>Maneuver, Battle Master</supports>
 		<description>
 			<p>When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to goad the target into attacking you. Add the Superiority Die to the attack's damage roll. The target must succeed on a Wisdom saving throw or the target has Disadvantage on attack rolls against targets other than you until the end of your next turn.</p>
@@ -592,7 +591,7 @@
 			<description>When you hit a creature, you can expend one Superiority Die to goad it. Add the die to damage, and the target must make a Wisdom save or have Disadvantage on attacks against others until your next turn.</description>
 		</sheet>
 	</element>
-	<element name="Lunging Attack" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_LUNGING_ATTACK">
+	<element name="2024 Lunging Attack" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_LUNGING_ATTACK">
 		<supports>Maneuver, Battle Master</supports>
 		<description>
 			<p>As a Bonus Action, you can expend one Superiority Die and take the Dash action. If you move at least 5 feet in a straight line immediately before hitting with a melee attack as part of the Attack action on this turn, you can add the Superiority Die to the attack's damage roll.</p>
@@ -601,7 +600,7 @@
 			<description>Expend one Superiority Die to take the Dash action. If you move at least 5 feet in a straight line before hitting with a melee attack as part of the Attack action on this turn, add the die to damage.</description>
 		</sheet>
 	</element>
-	<element name="Maneuvering Attack" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_MANEUVERING_ATTACK">
+	<element name="2024 Maneuvering Attack" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_MANEUVERING_ATTACK">
 		<supports>Maneuver, Battle Master</supports>
 		<description>
 			<p>When you hit a creature with an attack roll, you can expend one Superiority Die to maneuver one of your comrades into another position. Add the Superiority Die roll to the attack's damage roll, and choose a willing creature who can see or hear you. That creature can use its Reaction to move up to half its Speed without provoking an Opportunity Attack from the target of your attack.</p>
@@ -610,7 +609,7 @@
 			<description>When you hit a creature with an attack, you can expend one Superiority Die to maneuver an ally. Add the die to damage, and the ally can use their Reaction to move up to half their Speed without provoking opportunity attacks from your target.</description>
 		</sheet>
 	</element>
-	<element name="Menacing Attack" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_MENACING_ATTACK">
+	<element name="2024 Menacing Attack" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_MENACING_ATTACK">
 		<supports>Maneuver, Battle Master</supports>
 		<description>
 			<p>When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to frighten the target. Add the Superiority Die to the attack's damage roll. The target must succeed on a Wisdom saving throw or have the Frightened condition until the end of your next turn.</p>
@@ -619,7 +618,7 @@
 			<description>When you hit a creature with an attack, you can expend one Superiority Die to frighten it. Add the die to damage, and the target must make a Wisdom save or be Frightened until the end of your next turn.</description>
 		</sheet>
 	</element>
-	<element name="Parry" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_PARRY">
+	<element name="2024 Parry" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_PARRY">
 		<supports>Maneuver, Battle Master</supports>
 		<description>
 			<p>When another creature damages you with a melee attack, you can use your Reaction and expend one Superiority Die to reduce the damage by the number you roll on your Superiority Die plus your Strength or Dexterity modifier (your choice).</p>
@@ -628,7 +627,7 @@
 			<description>When damaged by a melee attack, you can expend one Superiority Die to reduce the damage by the die roll plus your Strength or Dexterity modifier.</description>
 		</sheet>
 	</element>
-	<element name="Precision Attack" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_PRECISION_ATTACK">
+	<element name="2024 Precision Attack" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_PRECISION_ATTACK">
 		<supports>Maneuver, Battle Master</supports>
 		<description>
 			<p>When you miss with an attack roll, you can expend one Superiority Die, roll that die, and add it to the attack roll, potentially causing it to hit.</p>
@@ -637,7 +636,7 @@
 			<description>When you miss with an attack roll, you can expend one Superiority Die and add it to the attack roll, potentially causing it to hit.</description>
 		</sheet>
 	</element>
-	<element name="Pushing Attack" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_PUSHING_ATTACK">
+	<element name="2024 Pushing Attack" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_PUSHING_ATTACK">
 		<supports>Maneuver, Battle Master</supports>
 		<description>
 			<p>When you hit a creature with an attack using a weapon or an Unarmed Strike, you can expend one Superiority Die to attempt to drive the target back. Add the Superiority Die to the attack's damage roll. If the target is Large or smaller, it must succeed on a Strength saving throw or be pushed up to 15 feet directly away from you.</p>
@@ -646,7 +645,7 @@
 			<description>When you hit a creature with a weapon or unarmed strike, you can expend one Superiority Die to push it back. Add the die to damage, and Large or smaller targets must make a Strength save or be pushed up to 15 feet away.</description>
 		</sheet>
 	</element>
-	<element name="Rally" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_RALLY">
+	<element name="2024 Rally" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_RALLY">
 		<supports>Maneuver, Battle Master</supports>
 		<description>
 			<p>As a Bonus Action, you can expend one Superiority Die to bolster the resolve of a companion. Choose an ally of yours within 30 feet of yourself who can see or hear you. That creature gains Temporary Hit Points equal to the Superiority Die roll plus half your Fighter level (round down).</p>
@@ -655,7 +654,7 @@
 			<description>Expend one Superiority Die to grant an ally within 30ft Temporary Hit Points equal to the die roll plus half your Fighter level (round down).</description>
 		</sheet>
 	</element>
-	<element name="Riposte" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_RIPOSTE">
+	<element name="2024 Riposte" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_RIPOSTE">
 		<supports>Maneuver, Battle Master</supports>
 		<description>
 			<p>When a creature misses you with a melee attack, you can use your Reaction and expend one Superiority Die to make a melee attack with a weapon or an Unarmed Strike against the creature. If you hit, add the Superiority Die to the attack's damage.</p>
@@ -664,7 +663,7 @@
 			<description>When a creature misses you with a melee attack, you can expend one Superiority Die to make a melee weapon or unarmed attack against it, adding the die to damage if you hit.</description>
 		</sheet>
 	</element>
-	<element name="Sweeping Attack" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_SWEEPING_ATTACK">
+	<element name="2024 Sweeping Attack" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_SWEEPING_ATTACK">
 		<supports>Maneuver, Battle Master</supports>
 		<description>
 			<p>When you hit a creature with a melee attack using a weapon or an Unarmed Strike, you can expend one Superiority Die to attempt to damage another creature. Choose another creature within 5 feet of the original target and within your reach. If the original attack roll would hit the second creature, it takes damage equal to the number you roll on your Superiority Die. The damage is of the same type dealt by the original attack.</p>
@@ -673,7 +672,7 @@
 			<description>When you hit a creature with a melee attack, you can expend one Superiority Die to damage another creature within 5 feet of the original target. The second creature takes damage equal to the die roll if the original attack would hit it.</description>
 		</sheet>
 	</element>
-	<element name="Tactical Assessment" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_TACTICAL_ASSESSMENT">
+	<element name="2024 Tactical Assessment" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_TACTICAL_ASSESSMENT">
 		<supports>Maneuver, Battle Master</supports>
 		<description>
 			<p>When you make an Intelligence (History or Investigation) check or a Wisdom (Insight) check, you can expend one Superiority Die and add that die to the ability check.</p>
@@ -682,7 +681,7 @@
 			<description>When you make an Intelligence (History or Investigation) check or a Wisdom (Insight) check, you can expend one Superiority Die and add it to the check.</description>
 		</sheet>
 	</element>
-	<element name="Trip Attack" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_TRIP_ATTACK">
+	<element name="2024 Trip Attack" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_MANEUVER_TRIP_ATTACK">
 		<supports>Maneuver, Battle Master</supports>
 		<description>
 			<p>When you hit a creature with an attack using a weapon or an Unarmed Strike, you can expend one Superiority Die and add the die to the attack's damage roll. If the target is Large or smaller, it must succeed on a Strength saving throw or have the Prone condition.</p>
@@ -715,7 +714,7 @@
 	</element>
 	<element name="Improved Critical" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CHAMPION_IMPROVED_CRITICAL">
 		<description>
-			<p><em>3rd-Level Feature</em></p>
+			<p><em>3rd-level Champion feature</em></p>
 			<p>Your attack rolls with weapons and Unarmed Strikes can score a Critical Hit on a roll of 19 or 20 on the d20.</p>
 		</description>
 		<sheet>
@@ -725,7 +724,7 @@
 	</element>
 	<element name="Remarkable Athlete" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CHAMPION_REMARKABLE_ATHLETE">
 		<description>
-			<p><em>3rd-Level Feature</em></p>
+			<p><em>3rd-level Champion feature</em></p>
 			<p>Thanks to your athleticism, you have Advantage on Initiative rolls and Strength (Athletics) checks.</p>
 			<p class="indent">In addition, immediately after you score a Critical Hit, you can move up to half your Speed without provoking Opportunity Attacks.</p>
 		</description>
@@ -735,7 +734,7 @@
 	</element>
 	<element name="Additional Fighting Style" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CHAMPION_ADDITIONAL_FIGHTING_STYLE">
 		<description>
-			<p><em>7th-Level Feature</em></p>
+			<p><em>7th-level Champion feature</em></p>
 			<p>You gain another Fighting Style feat of your choice.</p>
 		</description>
 		<rules>
@@ -745,7 +744,7 @@
 	</element>
 	<element name="Heroic Warrior" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CHAMPION_HEROIC_WARRIOR">
 		<description>
-			<p><em>10th-Level Feature</em></p>
+			<p><em>10th-level Champion feature</em></p>
 			<p>The thrill of battle drives you toward victory. During combat, you can give yourself Heroic Inspiration whenever you start your turn without it.</p>
 		</description>
 		<sheet>
@@ -754,7 +753,7 @@
 	</element>
 	<element name="Superior Critical" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CHAMPION_SUPERIOR_CRITICAL">
 		<description>
-			<p><em>15th-Level Feature</em></p>
+			<p><em>15th-level Champion feature</em></p>
 			<p>Your attack rolls with weapons and Unarmed Strikes can now score a Critical Hit on a roll of 18–20 on the d20.</p>
 		</description>
 		<sheet display="false">
@@ -763,7 +762,7 @@
 	</element>
 	<element name="Survivor" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CHAMPION_SURVIVOR">
 		<description>
-			<p><em>18th-Level Feature</em></p>
+			<p><em>18th-level Champion feature</em></p>
 			<p>You attain the pinnacle of resilience in battle, giving you these benefits.</p>
 			<p class="indent">
 				<b>Defy Death.</b> You have Advantage on Death Saving Throws. Moreover, when you roll 18–20 on a Death Saving, you gain the benefit of rolling a 20 on it.</p>
@@ -774,7 +773,7 @@
 			<description>You have Advantage on Death Saves and rolls of 18-20 on a die roll count as a 20. At the start of your turn, regain 5 + CON modifier HP if bloodied with at least 1 HP.</description>
 		</sheet>
 	</element>
-	
+
 	<element name="2024 Eldritch Knight" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FIGHTER_ELDRITCH_KNIGHT">
 		<supports>Martial Archetype</supports>
 		<description>
@@ -798,7 +797,7 @@
 	</element>
 	<element name="Spellcasting" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING">
 		<description>
-			<p><em>3rd-Level Feature</em></p>
+			<p><em>3rd-level Eldritch Knight feature</em></p>
 			<p>You have learned to cast spells. See the Player's Handbook for rules on spellcasting. The information below details how you use those rules as an Eldritch Knight.</p>
 			<p class="indent"><b>Cantrips.</b></p>
 			<p class="indent">You know two cantrips of your choice from the Wizard spell list. Whenever you gain a Fighter level, you can replace one of this feature's cantrips with another cantrip of your choice from the Wizard spell list.</p>
@@ -874,7 +873,7 @@
 	</element>
 	<element name="War Bond" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_WAR_BOND">
 		<description>
-			<p><em>3rd-Level Feature</em></p>
+			<p><em>3rd-level Eldritch Knight feature</em></p>
 			<p>You learn a ritual that creates a magical bond between yourself and one weapon. You perform the ritual over the course of 1 hour, which can be done during a Short Rest. The weapon must be within your reach throughout the ritual, at the conclusion of which you touch the weapon and forge the bond.</p>
 			<p class="indent">Once you have bonded a weapon to yourself, you can't be disarmed of that weapon unless you have the Incapacitated condition. If it is on the same plane of existence, you can summon that weapon as a Bonus Action, causing it to teleport instantly to your hand.</p>
 			<p class="indent">You can have up to two bonded weapons, but can summon only one at a time with your Bonus Action. If you attempt to bond with a third weapon, you must break the bond with one of the other two.</p>
@@ -887,7 +886,7 @@
 	</element>
 	<element name="War Magic" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_WAR_MAGIC">
 		<description>
-			<p><em>7th-Level Feature</em></p>
+			<p><em>7th-level Eldritch Knight feature</em></p>
 			<p>When you take the Attack action on your turn, you can replace one of the attacks with a casting of one of your Wizard cantrips that has a casting time of an action.</p>
 		</description>
 		<sheet>
@@ -896,7 +895,7 @@
 	</element>
 	<element name="Eldritch Strike" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_ELDRITCH_STRIKE">
 		<description>
-			<p><em>10th-Level Feature</em></p>
+			<p><em>10th-level Eldritch Knight feature</em></p>
 			<p>You learn how to make your weapon strikes undercut a creature's ability to withstand your spells. When you hit a creature with an attack using a weapon, that creature has Disadvantage on the next saving throw it makes against a spell you cast before the end of your next turn.</p>
 		</description>
 		<sheet>
@@ -905,7 +904,7 @@
 	</element>
 	<element name="Arcane Charge" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_ARCANE_CHARGE">
 		<description>
-			<p><em>15th-Level Feature</em></p>
+			<p><em>15th-level Eldritch Knight feature</em></p>
 			<p>When you use your Action Surge, you can teleport up to 30 feet to an unoccupied space you can see. You can teleport before or after the additional action.</p>
 		</description>
 		<sheet>
@@ -914,7 +913,7 @@
 	</element>
 	<element name="Improved War Magic" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_IMPROVED_WAR_MAGIC">
 		<description>
-			<p><em>18th-Level Feature</em></p>
+			<p><em>18th-level Eldritch Knight feature</em></p>
 			<p>When you take the Attack action on your turn, you can replace two of the attacks with a casting of one of your level 1 or level 2 Wizard spells that has a casting time of an action.</p>
 		</description>
 		<sheet>
@@ -922,7 +921,7 @@
 		</sheet>
 	</element>
 
-	<element name="2024 Psi Warrior" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FIGHTER_PSI_WARRIOR">
+    <element name="2024 Psi Warrior" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FIGHTER_PSI_WARRIOR">
 		<supports>Martial Archetype</supports>
 		<description>
 			<p>Psi Warriors awaken the power of their minds to augment their physical might. They harness this psionic power to infuse their weapon strikes, lash out with telekinetic energy, and create barriers of mental force.</p>
@@ -943,7 +942,7 @@
 	</element>
 	<element name="Psionic Power" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_PSI_WARRIOR_PSIONIC_POWER">
 		<description>
-			<p><em>3rd-Level Feature</em></p>
+			<p><em>3rd-level Psi Warrior feature</em></p>
 			<p>You harbor a wellspring of psionic energy within yourself. It is represented by your Psionic Energy Dice, which fuel powers you have from this subclass. The Psi Warrior Energy Dice table shows the die size and number of these dice you have when you reach certain Fighter levels.</p>
 			<h5 class="caption">PSI WARRIOR ENERGY DICE</h5>
 			<table class="class-features">
@@ -1017,7 +1016,7 @@
 	</element>
 	<element name="Telekinetic Adept" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_PSI_WARRIOR_TELEKINETIC_ADEPT">
 		<description>
-			<p><em>7th-Level Feature</em></p>
+			<p><em>7th-level Psi Warrior feature</em></p>
 			<p>You have mastered new ways to use your telekinetic abilities, detailed below.</p>
 			<p class="indent"><b>Psi-Powered Leap.</b> As a Bonus Action, you gain a Fly Speed equal to twice your Speed until the end of the current turn. Once you take this Bonus Action, you can't do so again until you finish a Short or Long Rest unless you expend a Psionic Energy Die (no action required) to restore your use of it.</p>
 			<p class="indent"><b>Telekinetic Thrust.</b> When you deal damage to a target with your Psionic Strike, you can force the target to make a Strength saving throw (DC 8 plus your Intelligence modifier and Proficiency Bonus). On a failed save, you can give the target the Prone condition or transport it up to 10 feet horizontally.</p>
@@ -1054,7 +1053,7 @@
 	</element>
 	<element name="Guarded Mind" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_PSI_WARRIOR_GUARDED_MIND">
 		<description>
-			<p><em>10th-Level Feature</em></p>
+			<p><em>10th-level Psi Warrior feature</em></p>
 			<p>You have Resistance to Psychic damage. Moreover, if you start your turn with the Charmed or Frightened condition, you can expend a Psionic Energy Die (no action required) and end every effect on yourself giving you those conditions.</p>
 		</description>
 		<sheet>
@@ -1066,7 +1065,7 @@
 	</element>
 	<element name="Bulwark of Force" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_PSI_WARRIOR_BULWARK_OF_FORCE">
 		<description>
-			<p><em>15th-Level Feature</em></p>
+			<p><em>15th-level Psi Warrior feature</em></p>
 			<p>You can shield yourself and others with telekinetic force. As a Bonus Action, you can choose creatures, including yourself, within 30 feet of yourself, up to a number of creatures equal to your Intelligence modifier (minimum of one creature). Each of the chosen creatures has Half Cover for 1 minute or until you have the Incapacitated condition.</p>
 			<p class="indent">Once you use this feature, you can't do so again until you finish a Long Rest unless you expend a Psionic Energy Die (no action required) to restore your use of it.</p>
 		</description>
@@ -1080,13 +1079,13 @@
 	</element>
 	<element name="Telekinetic Master" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_PSI_WARRIOR_TELEKINETIC_MASTER">
 		<description>
-			<p><em>18th-Level Feature</em></p>
+			<p><em>18th-level Psi Warrior feature</em></p>
 			<p>You always have the Telekinesis spell prepared. With this feature, you can cast it without a spell slot or components, and your spellcasting ability for it is Intelligence. On each of your turns while you maintain Concentration on it, including the turn when you cast it, you can make one attack with a weapon as a Bonus Action.</p>
 			<p class="indent">Once you cast the spell with this feature, you can't do so in this way again until you finish a Long Rest unless you expend a Psionic Energy Die (no action required) to restore your use of it.</p>
 		</description>
 		<sheet usage="1/Long Rest">
 			<description>You always have the Telekinesis spell prepared. You can cast it without a spell slot or components, and your spellcasting ability for it is Intelligence. On each of your turns while you maintain Concentration on it, including the turn when you cast it, you can make one attack with a weapon as a Bonus Action. You can expend a Psionic Energy Die to restore your use of it.</description>
 		</sheet>
-	</element>	
+	</element>
 </elements>
 
