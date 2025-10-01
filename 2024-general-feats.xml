@@ -314,9 +314,7 @@
 				<li><strong>Armor Training</strong>. You gain training with Heavy armor.</li>
 			</ul>
 		</description>
-		<sheet>
-			<description>Armor Training: Gain training with Heavy armor.</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
 			<select type="Ability Score Improvement" name="Ability Score Increase" supports="ID_2024PHB_GENERAL_FEAT_ASI_STRENGTH|ID_2024PHB_GENERAL_FEAT_ASI_CONSTITUTION" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
@@ -407,9 +405,7 @@
 				<li><strong>Armor Training</strong>. You gain training with Light armor and Shields.</li>
 			</ul>
 		</description>
-		<sheet>
-			<description>Armor Training: Gain training with Light armor and Shields.</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
 			<select type="Ability Score Improvement" name="Ability Score Increase" supports="ID_2024PHB_GENERAL_FEAT_ASI_STRENGTH|ID_2024PHB_GENERAL_FEAT_ASI_DEXTERITY" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
@@ -435,18 +431,17 @@
 	</element>
 	<element name="2024 Martial Weapon Training" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MARTIAL_WEAPON_TRAINING">
 		<prerequisite>level 4</prerequisite>
-		<requirements>[level:4]</requirements>
+		<requirements>[level:4],!ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS</requirements>
 		<description>
 			<ul>
 				<li><strong>Ability Score Increase</strong>. Increase your Strength or Dexterity score by 1, to a maximum of 20.</li>
 				<li><strong>Weapon Proficiency</strong>. You gain proficiency with Martial weapons.</li>
 			</ul>
 		</description>
-		<sheet>
-			<description>Gain proficiency with Martial weapons.</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
 			<select type="Ability Score Improvement" name="Ability Score Increase" supports="ID_2024PHB_GENERAL_FEAT_ASI_STRENGTH|ID_2024PHB_GENERAL_FEAT_ASI_DEXTERITY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
 		</rules>
 	</element>
 	<element name="2024 Medium Armor Master" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MEDIUM_ARMOR_MASTER">
@@ -475,9 +470,7 @@
 				<li><strong>Armor Training</strong>. You gain training with Medium armor.</li>
 			</ul>
 		</description>
-		<sheet>
-			<description>Gain training with Medium armor.</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
 			<select type="Ability Score Improvement" name="Ability Score Increase" supports="ID_2024PHB_GENERAL_FEAT_ASI_STRENGTH|ID_2024PHB_GENERAL_FEAT_ASI_DEXTERITY" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />

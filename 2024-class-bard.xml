@@ -222,8 +222,9 @@
 	</element>
 	<element name="Expertise" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARD_EXPERTISE">
 		<description>
-			<p>At 2nd level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</p>
-			<p class="indent">At 9th level, you can choose another two skill proficiencies to gain this benefit.</p>
+			<p><em>2nd-level Bard feature</em></p>
+			<p>Choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</p>
+			<p>At Bard level 9, You can choose another two skill proficiencies to gain this benefit.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -233,7 +234,8 @@
 	</element>
 	<element name="Jack of All Trades" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARD_JACK_OF_ALL_TRADES">
 		<description>
-			<p>Starting at 2nd level, you can add half your proficiency bonus, rounded down, to any ability check you make that doesn't already include your proficiency bonus.</p>
+			<p><em>2nd-level Bard feature</em></p>
+			<p>You can add half your proficiency bonus, rounded down, to any ability check you make that doesn't already include your proficiency bonus.</p>
 		</description>
 		<sheet display="false">
 			<description>You can add half your proficiency bonus ({{proficiency:half}}), rounded down, to any ability check you make that doesn't already include your proficiency bonus.</description>
@@ -263,7 +265,8 @@
 
 	<element name="Bard College" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARD_BARD_COLLEGE">
 		<description>
-			<p>At 3rd level, you delve into the advanced techniques of a bard college of your choice, such as the College of Lore. Your choice grants you features at 3rd level and again at 6th and 14th level.</p>
+			<p><em>3rd-level Bard feature</em></p>
+			<p>You delve into the advanced techniques of a bard college of your choice, such as the College of Lore. Your choice grants you features at 3rd level and again at 6th and 14th level.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -273,7 +276,8 @@
 	<element name="Ability Score Improvement" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARD_ABILITYSCOREIMPROVEMENT_BARD">
 		<compendium display="false" />
 		<description>
-			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+			<p><em>4th, 8th, 12th, 16th, and 19th-level Barbarian feature</em></p>
+			<p>You gain the Ability Score Improvement feat or another feat of your choice for which you qualify.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -286,13 +290,15 @@
 	</element>
 	<element name="Font of Inspiration" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARD_FONT_OF_INSPIRATION">
 		<description>
-			<p>Beginning when you reach 5th level, you regain all of your expended uses of Bardic Inspiration when you finish a short or long rest.</p>
+			<p><em>5th-level Bard feature</em></p>
+			<p>You regain all of your expended uses of Bardic Inspiration when you finish a short or long rest.</p>
 		</description>
 		<sheet display="false" />
 	</element>
 	<element name="Countercharm" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARD_COUNTERCHARM">
 		<description>
-			<p>At 6th level, you gain the ability to use musical notes or words of power to disrupt mind-influencing effects. As an action, you can start a performance that lasts until the end of your next turn. During that time, you and any friendly creatures within 30 feet of you have advantage on saving throws against being frightened or charmed. A creature must be able to hear you to gain this benefit. The performance ends early if you are incapacitated or silenced or if you voluntarily end it (no action required).</p>
+			<p><em>6th-level Bard feature</em></p>
+			<p>You gain the ability to use musical notes or words of power to disrupt mind-influencing effects. As an action, you can start a performance that lasts until the end of your next turn. During that time, you and any friendly creatures within 30 feet of you have advantage on saving throws against being frightened or charmed. A creature must be able to hear you to gain this benefit. The performance ends early if you are incapacitated or silenced or if you voluntarily end it (no action required).</p>
 		</description>
 		<sheet action="Action">
 			<description>You can start a performance that lasts until the end of your next turn. During that time, you and any friendly creatures within 30 feet of you have advantage on saving throws against being frightened or charmed.</description>
@@ -300,7 +306,8 @@
 	</element>
 	<element name="Magical Secrets" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARD_MAGICAL_SECRETS">
 		<description>
-			<p>By 10th level, you have plundered magical knowledge from a wide spectrum of disciplines. Choose two spells from any classes, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip.</p>
+			<p><em>10th, 14th, and 18th-level Bard feature</em></p>
+			<p>You have plundered magical knowledge from a wide spectrum of disciplines. Choose two spells from any classes, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip.</p>
 			<p class="indent">The chosen spells count as bard spells for you and are included in the number in the Spells Known column of the Bard table.</p>
 			<p class="indent">You learn two additional spells from any classes at 14th level and again at 18th level.</p>
 		</description>
@@ -315,7 +322,8 @@
 	</element>
 	<element name="Superior Inspiration" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARD_SUPERIOR_INSPIRATION">
 		<description>
-			<p>At 18th level, when you roll initiative and have no uses of Bardic Inspiration left, you regain one use.</p>
+			<p><em>18th-level Bard feature</em></p>
+			<p>When you roll initiative and have no uses of Bardic Inspiration left, you regain one use.</p>
 		</description>
 		<sheet>
 			<description>When you roll initiative and have no uses of Bardic Inspiration left, you regain one use.</description>
@@ -323,7 +331,8 @@
 	</element>
 	<element name="Words of Creation" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARD_WORDS_OF_CREATION">
 		<description>
-			<p>At 20th level, you have mastered two of the Words of Creation: the word of life and the word of death. You therefore always have the Power Word Heal and Power Word Kill spells prepared. When you cast either spell, you can target a second creature with the spell if that creature is within 10 feet of your first target.</p>
+			<p><em>20th-level Bard feature</em></p>
+			<p>You have mastered two of the Words of Creation: the word of life and the word of death. You therefore always have the Power Word Heal and Power Word Kill spells prepared. When you cast either spell, you can target a second creature with the spell if that creature is within 10 feet of your first target.</p>
 		</description>
 		<sheet>
 			<description>You always have Power Word Heal and Power Word Kill prepared. When you cast either spell, you can target a second creature within 10 feet of your first target.</description>
@@ -356,6 +365,7 @@
 	</element>
 	<element name="Dazzling Footwork" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_DANCE_DAZZLING_FOOTWORK">
 		<description>
+			<p><em>3rd-level College of Dance feature</em></p>
 			<p>Your practice of dance gives you the ability to gracefully dodge and make agile strikes. While you aren't wearing armor or wielding a Shield, you gain the following benefits:</p>
 			<p class="indent"><strong>Unarmored Defense.</strong> Your base Armor Class equals 10 + your Dexterity modifier + your Charisma modifier.</p>
 			<p class="indent"><strong>Agile Strikes.</strong> When you expend a use of your Bardic Inspiration as part of an action, a Bonus Action, or a Reaction, you can make one Unarmed Strike as part of that action, Bonus Action, or Reaction.</p>
@@ -377,6 +387,7 @@
 	</element>
 	<element name="Inspiring Movement" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_DANCE_INSPIRING_MOVEMENT">
 		<description>
+			<p><em>6th-level College of Dance feature</em></p>
 			<p>When an enemy you can see ends its turn within 5 feet of an ally of yours who is within 60 feet of you, you can use your Reaction and expend one use of your Bardic Inspiration to move up to half your Speed. Then roll your Bardic Inspiration die, and the ally can move up to a number of feet equal to 5 times the number rolled. None of this feature's movement provokes Opportunity Attacks.</p>
 		</description>
 		<sheet action="Reaction">
@@ -385,6 +396,7 @@
 	</element>
 	<element name="Tandem Footwork" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_DANCE_TANDEM_FOOTWORK">
 		<description>
+			<p><em>6th-level College of Dance feature</em></p>
 			<p>When you roll Initiative, you can spend one use of your Bardic Inspiration if you don't have the Incapacitated condition. When you do so, roll your Bardic Inspiration die, and choose a number of creatures within 60 feet of yourself (you can choose yourself), up to a number equal to your Charisma modifier (minimum of one creature). Each of them gains a bonus to their Initiative equal to the number rolled.</p>
 		</description>
 		<sheet>
@@ -397,6 +409,7 @@
 	</element>
 	<element name="Leading Evasion" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_DANCE_LEADING_EVASION">
 		<description>
+			<p><em>14th-level College of Dance feature</em></p>
 			<p>When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and you take only half damage if you fail. If any creatures within 5 feet of you are making the same Dexterity saving throw, you can share this benefit with them for that save.</p>
 			<p class="indent">You can't use this feature if you have the Incapacitated condition.</p>
 		</description>
@@ -426,6 +439,7 @@
 	</element>
 	<element name="Beguiling Magic" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_GLAMOUR_BEGUILING_MAGIC">
 		<description>
+			<p><em>3rd-level College of Glamour feature</em></p>
 			<p>You always have the <i>Charm Person</i> and <i>Mirror Image</i> spells prepared.</p>
 			<p class="indent">In addition, immediately after you cast an Enchantment or Illusion spell, you can cause a creature you can see within 60 feet of yourself to make a Wisdom saving throw against your Spell Save DC. On a failed save, the target has the Charmed or Frightened condition (your choice) for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
 			<p class="indent">Once you use this benefit, you can't use it again until you finish a Long Rest. You can also restore your use of the feature by expending one use of your Bardic Inspiration (no action required).</p>
@@ -441,6 +455,7 @@
 	</element>
 	<element name="Mantle of Inspiration" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_GLAMOUR_MANTLE_OF_INSPIRATION">
 		<description>
+			<p><em>6th-level College of Glamour feature</em></p>
 			<p>You can weave fey magic into a song or dance to fill others with vigor. As a Bonus Action, you can expend a use of Bardic Inspiration, rolling a Bardic Inspiration die. When you do so, choose a number of other creatures within 60 feet of yourself, up to a number equal to your Charisma modifier (minimum of one creature). Each of them gains a number of Temporary Hit Points equal to 2 times the number rolled on the Bardic Inspiration die, and then each of them can use its Reaction to move up to its Speed without provoking Opportunity Attacks.</p>
 		</description>
 		<sheet action="Bonus Action">
@@ -453,6 +468,7 @@
 	</element>
 	<element name="Mantle of Majesty" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_GLAMOUR_MANTLE_OF_MAJESTY">
 		<description>
+			<p><em>6th-level College of Glamour feature</em></p>
 			<p>You always have the <i>Command</i> spell prepared. As a Bonus Action, you cast <i>Command</i> without expending a spell slot, and you take on an unearthly appearance for 1 minute or until your Concentration ends (as if you were concentrating on a spell). During this time, you can cast <i>Command</i> as a Bonus Action without expending a spell slot. Any creature Charmed by you automatically fails its saving throw against the <i>Command</i> you cast with this feature.</p>
 			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of the feature by expending a spell slot of 3rd level or higher (no action required).</p>
 		</description>
@@ -465,6 +481,7 @@
 	</element>
 	<element name="Unbreakable Majesty" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_GLAMOUR_UNBREAKABLE_MAJESTY">
 		<description>
+			<p><em>14th-level College of Glamour feature</em></p>
 			<p>As a Bonus Action, you can assume a magically majestic presence for 1 minute or until you have the Incapacitated condition. For the duration, whenever any creature hits you with an attack roll for the first time on a turn, the attacker must succeed on a Charisma saving throw against your Spell Save DC, or the attack misses instead, as the creature recoils from your majesty. Once you assume this majestic presence, you can't do so again until you finish a Short Rest or Long Rest.</p>
 		</description>
 		<sheet action="Bonus Action">
@@ -495,7 +512,8 @@
 	</element>
 	<element name="Bonus Proficiencies" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_LORE_BONUS_PROFICIENCIES">
 		<description>
-			<p>When you join the College of Lore at 3rd level, you gain proficiency with three skills of your choice.</p>
+			<p><em>3rd-level College of Lore feature</em></p>
+			<p>You gain proficiency with three skills of your choice.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -504,7 +522,8 @@
 	</element>
 	<element name="Cutting Words" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_LORE_CUTTING_WORDS">
 		<description>
-			<p>Also at 3rd level, You learn to use your wit to supernaturally distract, confuse, and otherwise sap the confidence and competence of others. When a creature that you can see within 60 feet of yourself makes a damage roll or succeeds on an ability check or attack roll, you can take a Reaction to expend one use of your Bardic Inspiration; roll your Bardic Inspiration die, and subtract the number rolled from the creature's roll, reducing the damage or potentially turning the success into a failure.</p>
+			<p><em>3rd-level College of Lore feature</em></p>
+			<p>You learn to use your wit to supernaturally distract, confuse, and otherwise sap the confidence and competence of others. When a creature that you can see within 60 feet of yourself makes a damage roll or succeeds on an ability check or attack roll, you can take a Reaction to expend one use of your Bardic Inspiration; roll your Bardic Inspiration die, and subtract the number rolled from the creature's roll, reducing the damage or potentially turning the success into a failure.</p>
 		</description>
 		<sheet action="Reaction" usage="Bardic Inspiration" >
 			<description>When a creature that you can see within 60 feet of yourself makes a damage roll or succeeds on an ability check or attack roll, you can expend one use of your Bardic Inspiration; and subtract the number rolled from the creature's roll, reducing the damage or potentially turning the success into a failure.</description>
@@ -512,7 +531,8 @@
 	</element>
 	<element name="Magical Discoveries" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_LORE_MAGICAL_DISCOVERIES">
 		<description>
-			<p>At 6th level, you learn two spells of your choice. These spells can come from the Cleric, Druid, or Wizard spell list or any combination thereof. A spell you choose must be a cantrip or a spell for which you have spell slots, as shown in the Bard Features table.</p>
+			<p><em>6th-level College of Lore feature</em></p>
+			<p>You learn two spells of your choice. These spells can come from the Cleric, Druid, or Wizard spell list or any combination thereof. A spell you choose must be a cantrip or a spell for which you have spell slots, as shown in the Bard Features table.</p>
 			<p class="indent">You always have the chosen spells prepared, and whenever you gain a Bard level, you can replace one of the spells with another spell that meets these requirements.</p>
 		</description>
 		<sheet display="false" />
@@ -522,7 +542,8 @@
 	</element>
 	<element name="Peerless Skill" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_LORE_PEERLESS_SKILL">
 		<description>
-			<p>At 14th level, when you make an ability check or attack roll and fail, you can expend one use of Bardic Inspiration; roll the Bardic Inspiration die, and add the number rolled to the d20, potentially turning a failure into a success. On a failure, the Bardic Inspiration isn't expended.</p>
+			<p><em>14th-level College of Lore feature</em></p>
+			<p>When you make an ability check or attack roll and fail, you can expend one use of Bardic Inspiration; roll the Bardic Inspiration die, and add the number rolled to the d20, potentially turning a failure into a success. On a failure, the Bardic Inspiration isn't expended.</p>
 		</description>
 		<sheet>
 			<description>When you make an ability check or attack roll and fail, you can expend one use of Bardic Inspiration; roll the Bardic Inspiration die, and add the number rolled to the d20, potentially turning a failure into a success. On a failure, the Bardic Inspiration isn't expended.</description>
@@ -550,7 +571,8 @@
 	</element>
 	<element name="Martial Training" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_VALOR_MARTIAL_TRAINING">
 		<description>
-			<p>At 3rd level, you gain proficiency with Martial Weapons and armor training with Medium Armor and Shields.</p>
+			<p><em>3rd-level College of Valor feature</em></p>
+			<p>You gain proficiency with Martial Weapons and armor training with Medium Armor and Shields.</p>
 			<p class="indent">In addition, you can use a Simple or Martial weapon as a spellcasting focus to cast spells from your Bard spell list.</p>
 		</description>
 		<sheet display="false" />
@@ -562,7 +584,8 @@
 	</element>
 	<element name="Combat Inspiration" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_VALOR_COMBAT_INSPIRATION">
 		<description>
-			<p>At 3rd level, you can use your wit to turn the tide of battle. A creature that has a Bardic Inspiration die from you can use it for one of the following effects:</p>
+			<p><em>3rd-level College of Valor feature</em></p>
+			<p>You can use your wit to turn the tide of battle. A creature that has a Bardic Inspiration die from you can use it for one of the following effects:</p>
 			<p class="indent"><strong>Defense.</strong> When the creature is hit by an attack roll, that creature can use its Reaction to roll the Bardic Inspiration die and add the number rolled to its AC against that attack, potentially causing the attack to miss.</p>
 			<p class="indent"><strong>Offense.</strong> Immediately after the creature hits a target with an attack roll, the creature can roll the Bardic Inspiration die and add the number rolled to the attack's damage against the target.</p>
 		</description>
@@ -574,12 +597,13 @@
 	</element>
 	<element name="Extra Attack" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_VALOR_EXTRA_ATTACK">
 		<description>
-			<p>At 6th level, you can attack twice instead of once whenever you take the Attack action on your turn.</p>
+			<p><em>6th-level College of Valor feature</em></p>
+			<p>You can attack twice instead of once whenever you take the Attack action on your turn.</p>
 			<p class="indent">In addition, you can cast one of your cantrips that has a casting time of an action in place of one of those attacks.</p>
 		</description>
 		<sheet>
 			<description>You can attack twice instead of once whenever you take the Attack action on your turn. 
-			Additionally you can cast a cantrip with an action casting time in place of one attack.</description>
+			Additionally you can cast a cantrip with an action casting time in place of one of those attacks.</description>
 		</sheet>
 		<rules>
 			<stat name="extra attack:count" value="2" level="6" bonus="extra attack" />
@@ -587,7 +611,8 @@
 	</element>
 	<element name="Battle Magic" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BARD_VALOR_BATTLE_MAGIC">
 		<description>
-			<p>At 14th level, after you cast a spell that has a casting time of an action, you can make one attack with a weapon as a Bonus Action.</p>
+			<p><em>14th-level College of Valor feature</em></p>
+			<p>After you cast a spell that has a casting time of an action, you can make one attack with a weapon as a Bonus Action.</p>
 		</description>
 		<sheet action="Bonus Action">
 			<description>After you cast a spell that has a casting time of an action, you can make one weapon attack.</description>

@@ -181,7 +181,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="2024 Antilife Shell" type="Spell" source="2024 Player's Handbook" id="Antilife Shell">
+	<element name="2024 Antilife Shell" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_ANTILIFE_SHELL">
 		<supports>Druid</supports>
 		<description>
 			<p>An aura extends from you in a 10-foot Emanation for the duration. The aura prevents creatures other than Constructs and Undead from passing or reaching through it. An affected creature can cast spells or make attacks with Ranged or Reach weapons through the barrier.</p>
@@ -1221,7 +1221,7 @@
 			<set name="isRitual">true</set>
 		</setters>
 	</element>
-	<element name="2024 Commune with Nature" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_COMMUNE_WITH_NATURE">
+	<element name="2024 Commune with Nature" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_COMMUNE_WITH_NATURE">
 		<supports>Druid, Ranger</supports>
 		<description>
 			<p>You commune with nature spirits and gain knowledge of the surrounding area. In the outdoors, the spell gives you knowledge of the area within 3 miles of you. In caves and other natural underground settings, the radius is limited to 300 feet. The spell doesn't function where nature has been replaced by construction, such as in castles and settlements.</p>

@@ -11,18 +11,11 @@
 
 	<element name="2024 Druid" type="Class" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_2024_DRUID">
 		<description>
-			<!-- <p class="flavor">A priest of the Old Faith, wielding the powers of nature— moonlight and plant growth, fire and lightning—and adopting animal forms.</p> -->
-			<p>Holding high a gnarled staff wreathed with holly, an elf summons the fury of the storm and calls down explosive bolts of lightning to smite the torch-carrying orcs who threaten her forest.</p>
-			<p class="indent">Crouching out of sight on a high tree branch in the form of a leopard, a human peers out of the jungle at the strange construction of a temple of Evil Elemental Air, keeping a close eye on the cultists' activities.</p>
-			<p class="indent">Swinging a blade formed of pure fire, a half-elf charges into a mass of skeletal soldiers, sundering the unnatural magic that gives the foul creatures the mocking semblance of life.</p>
-			<p class="indent">Whether calling on the elemental forces of nature or emulating the creatures of the animal world, druids are an embodiment of nature's resilience, cunning, and fury. They claim no mastery over nature. Instead, they see themselves as extensions of nature's indomitable will.</p>
-			<h4>POWER OF NATURE</h4>
-			<p>Druids revere nature above all, gaining their spells and other magical powers either from the force of nature itself or from a nature deity. Many druids pursue a mystic spirituality of transcendent union with nature rather than devotion to a divine entity, while others serve gods of wild nature, animals, or elemental forces. The ancient druidic traditions are sometimes called the Old Faith, in contrast to the worship of gods in temples and shrines.</p>
-			<p class="indent">Druid spells are oriented toward nature and animals— the power of tooth and claw, of sun and moon, of fire and storm. Druids also gain the ability to take on animal forms, and some druids make a particular study of this practice, even to the point where they prefer animal form to their natural form.</p>
-			<h4>PRESERVE THE BALANCE</h4>
-			<p>For druids, nature exists in a precarious balance. The four elements that make up a world—air, earth, fire, and water—must remain in equilibrium. If one element were to gain power over the others, the world could be destroyed, drawn into one of the elemental planes and broken apart into its component elements. Thus, druids oppose cults of Elemental Evil and others who promote one element to the exclusion of others.</p>
-			<p class="indent">Druids are also concerned with the delicate ecological balance that sustains plant and animal life, and the need for civilized folk to live in harmony with nature, not in opposition to it. Druids accept that which is cruel in nature, and they hate that which is unnatural, including aberrations (such as beholders and mind flayers) and undead (such as zombies and vampires). Druids sometimes lead raids against such creatures, especially when the monsters encroach on the druids' territory.</p>
-			<p class="indent">Druids are often found guarding sacred sites or watching over regions of unspoiled nature. But when a significant danger arises, threatening nature's balance or the lands they protect, druids take on a more active role in combating the threat, as adventurers.</p>
+			<p class="flavor">A Nature Priest of Primal power.</p>
+			<p>Druids belong to Ancient orders that cll on the forces of nature. Harnessing the magic of animals, plants, and the four elements, Druids heal, transform into animals, and wield elemental destruction.</p>
+			<p>Revering nature above all, individual Druids gain their magic from nature, a nature deity, or both, and they typically unite with other Druids to perform rites that mark the passage of the seasons and other natural cycles.</p>
+			<p>Druids are concerned with the delicate ecological balance that sustains plant and animal life and with the need for people to live in harmony with nature.</p>
+			<p>Druids often guard sacred sites or watch over regions of unspoiled nature, but when a significant danger arises, threatening nature's balance or the lands they protect, Druids take on a more active role in combating the threat, as adventurers.</p>
 			<h4>CREATING A DRUID</h4>
 			<p>When making a druid, consider why your character has such a close bond with nature. Perhaps your character lives in a society where the Old Faith still thrives, or was raised by a druid after being abandoned in the depths of a forest. Perhaps your character had a dramatic encounter with the spirits of nature, coming face to face with a giant eagle or dire wolf and surviving the experience. Maybe your character was born during an epic storm or a volcanic eruption, which was interpreted as a sign that becoming a druid was part of your character's destiny.</p>
 			<p class="indent">Have you always been an adventurer as part of your druidic calling, or did you first spend time as a caretaker of a sacred grove or spring? Perhaps your homeland was befouled by evil, and you took up an adventuring life in hopes of finding a new home or purpose.</p>
@@ -135,6 +128,7 @@
 	</element>
 	<element name="Spellcasting" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID">
 		<description>
+			<p><em>1st-level Druid feature</em></p>
 			<p>Drawing on the divine essence of nature itself, you can cast spells to shape that essence to your will.</p>
 			<h5>CANTRIPS</h5>
 			<p>At 1st level, you know two cantrips of your choice from the druid spell list. You learn additional druid cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Druid table.</p>
@@ -209,7 +203,8 @@
 	</element>
 	<element name="Druidic" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_DRUID_DRUIDIC">
 		<description>
-			<p>At 1st level, You know Druidic, the secret language of Druids. While learning this ancient tongue, you also unlocked the magic of communicating with animals; you always have the Speak with Animals spell prepared.</p>
+			<p><em>1st-level Druid feature</em></p>
+			<p>You know Druidic, the secret language of Druids. While learning this ancient tongue, you also unlocked the magic of communicating with animals; you always have the Speak with Animals spell prepared.</p>
 			<p>You can use Druidic to leave hidden messages. You and others who know Druidic automatically spot such a message. Others spot the message's presence with a successful DC 15 Intelligence (Investigation) check but can't decipher it without magic.</p>
 		</description>
 		<sheet>
@@ -222,7 +217,8 @@
 	</element>
 	<element name="Primal Order" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_DRUID_PRIMAL_ORDER">
 		<description>
-			<p>At 1st level, You have dedicated yourself to one of the following sacred roles of your choice.</p>
+			<p><em>1st-level Druid feature</em></p>
+			<p>You have dedicated yourself to one of the following sacred roles of your choice.</p>
 			<p>Magician. You know one extra cantrip from the Druid spell list. In addition, your mystical connection to nature gives you a bonus to your Intelligence (Arcana or Nature) checks. The bonus equals your Wisdom modifier (minimum bonus of +1).</p>
 			<p>Warden. Trained for battle, you gain proficiency with Martial weapons and training with Medium armor.</p>
 		</description>
@@ -235,7 +231,8 @@
 	</element>
 	<element name="Wildshape" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_DRUID_WILDSHAPE">
 		<description>
-			<p>At 2nd level, The power of nature allows you to assume the form of an animal. As a Bonus Action, you shape-shift into a Beast form that you have learned for this feature (see “Known Forms” below). You stay in that form for a number of hours equal to half your Druid level or until you use Wild Shape again, have the Incapacitated condition, or die. You can also leave the form early as a Bonus Action.</p>
+			<p><em>2nd-level Druid feature</em></p>
+			<p>The power of nature allows you to assume the form of an animal. As a Bonus Action, you shape-shift into a Beast form that you have learned for this feature (see “Known Forms” below). You stay in that form for a number of hours equal to half your Druid level or until you use Wild Shape again, have the Incapacitated condition, or die. You can also leave the form early as a Bonus Action.</p>
 			<p class="indent">Number of Uses. You can use Wild Shape twice. You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest.</p>
 			<p class="indent">You gain additional uses when you reach certain Druid levels, as shown in the Wild Shape column of the Druid Features table.</p>
 			<p class="indent">Known Forms. You know four Beast forms for this feature, chosen from among Beast stat blocks that have a maximum Challenge Rating of 1/4 and that lack a Fly Speed (see "Creature Stat Blocks" for stat block options). The Rat, Riding Horse, Spider, and Wolf are recommended. Whenever you finish a Long Rest, you can replace one of your known forms with another eligible form.</p>
@@ -257,10 +254,9 @@
 				<li>Objects.Your ability to handle objects is determined by the form's limbs rather than your own. In addition, you choose whether your equipment falls in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the DM decides whether it's practical for the new form to wear a piece of equipment based on the creature's size and shape. Your equipment doesn't change size or shape to match the new form, and any equipment that the new form can't wear must either fall to the ground or merge with the form. Equipment that merges with the form has no effect while you're in that form.</li>
 			</ul>
 		</description>
-		<sheet action="Bonus Action" usage="{{druid wildshape:uses}}/Short Rest" >
-			<description level="2">
-				You can shape-shift into one of your {{druid wildshape:forms}} Beast forms. You stay in that form for {{druid wildshape:hours}} hours or until you use Wild Shape again, have the Incapacitated condition, or die. You can also leave the form early as a Bonus Action.
-			</description>
+		<sheet action="Bonus Action" usage="{{druid wildshape:uses}}/Long Rest" >
+			<description>You can shape-shift into one of your {{druid wildshape:forms}} Beast forms. You stay in that form for {{druid wildshape:hours}} hours or until you use Wild Shape again, have the Incapacitated condition, or die. You can also leave the form early as a Bonus Action.
+			You regain one use in a Short Rest.</description>
 		</sheet>
 		<rules>
 			<stat name="druid wildshape:uses" value="2" level="2"/>
@@ -274,7 +270,8 @@
 	</element>
 	<element name="Wild Companion" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_DRUID_WILD_COMPANION">
 		<description>
-			<p>At 2nd level, You can summon a nature spirit that assumes an animal form to aid you. As a Magic action, you can expend a spell slot or a use of Wild Shape to cast the Find Familiar spell without Material components.</p>
+			<p><em>2nd-level Druid feature</em></p>
+			<p>You can summon a nature spirit that assumes an animal form to aid you. As a Magic action, you can expend a spell slot or a use of Wild Shape to cast the Find Familiar spell without Material components.</p>
 			<p>When you cast the spell in this way, the familiar is Fey and disappears when you finish a Long Rest.</p>
 		</description>
 		<sheet action="Action">
@@ -286,7 +283,8 @@
 	</element>
 	<element name="Druid Subclass" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_DRUID_DRUID_SUBCLASS">
 		<description>
-			<p>At 3rd level, you choose to identify with a circle of druids: the Circle of the Land, the Circle of the Moon, or the Circle of the Sea, all detailed at the end of the class description. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level.</p>
+			<p><em>3rd-level Druid feature</em></p>
+			<p>You choose to identify with a circle of druids: the Circle of the Land, the Circle of the Moon, or the Circle of the Sea, all detailed at the end of the class description. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level.</p>
 		</description>
 		<sheet display="false">
 			<description>You choose to identify with a circle of druids.</description>
@@ -311,7 +309,8 @@
 	</element>
 	<element name="Wild Resurgence" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_DRUID_WILD_RESURGENCE">
 		<description>
-			<p>At 5th level, Once on each of your turns, if you have no uses of Wild Shape left, you can give yourself one use by expending a spell slot (no action required).</p>
+			<p><em>5th-level Druid feature</em></p>
+			<p>Once on each of your turns, if you have no uses of Wild Shape left, you can give yourself one use by expending a spell slot (no action required).</p>
 			<p>In addition, you can expend one use of Wild Shape (no action required) to give yourself a level 1 spell slot, but you can't do so again until you finish a Long Rest.</p>
 		</description>
 		<sheet>
@@ -323,7 +322,8 @@
 	</element>
 	<element name="Elemental Fury" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_DRUID_ELEMENTAL_FURY">
 		<description>
-			<p>At 7th level, The might of the elements flows through you. You gain one of the following options of your choice.</p>
+			<p><em>7th-level Druid feature</em></p>
+			<p>The might of the elements flows through you. You gain one of the following options of your choice.</p>
 			<p>Potent Spellcasting. Add your Wisdom modifier to the damage you deal with any Druid cantrip.</p>
 			<p>Primal Strike. Once on each of your turns when you hit a creature with an attack roll using a weapon or a Beast form's attack in Wild Shape, you can cause the target to take an extra 1d8 Cold, Fire, Lightning, or Thunder damage (choose when you hit).</p>
 		</description>
@@ -334,7 +334,8 @@
 	</element>
 	<element name="Improved Elemental Fury" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_DRUID_IMPROVED_ELEMENTAL_FURY">
 		<description>
-			<p>At 15th level, The might of the elements flows through you. You gain one of the following options of your choice.</p>
+			<p><em>15th-level Druid feature</em></p>
+			<p>The might of the elements flows through you. You gain one of the following options of your choice.</p>
 			<p>Potent Spellcasting. When you cast a Druid cantrip with a range of 10 feet or greater, the spell's range increases by 300 feet.</p>
 			<p>Primal Strike. Once on each of your turns when you hit a creature with an attack roll using a weapon or a Beast form's attack in Wild Shape, you can cause the target to take an extra 1d8 Cold, Fire, Lightning, or Thunder damage (choose when you hit).</p>
 		</description>
@@ -342,7 +343,8 @@
 	</element>
 	<element name="Beast Spells" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_DRUID_BEAST_SPELLS">
 		<description>
-			<p>At 18th level, While using Wild Shape, you can cast spells in Beast form, except for any spell that has a Material component with a cost specified or that consumes its Material component.</p>
+			<p><em>18th-level Druid feature</em></p>
+			<p>While using Wild Shape, you can cast spells in Beast form, except for any spell that has a Material component with a cost specified or that consumes its Material component.</p>
 		</description>
 		<sheet>
 			<description>While using Wild Shape, you can cast spells in Beast form, except for any spell that has a Material component with a cost specified or that consumes its Material component.</description>
@@ -350,16 +352,16 @@
 	</element>
 	<element name="Archdruid" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_DRUID_ARCHDRUID">
 		<description>
-			<p>At 20th level, The vitality of nature constantly blooms within you, granting you the following benefits.</p>
+			<p><em>20th-level Druid feature</em></p>
+			<p>The vitality of nature constantly blooms within you, granting you the following benefits.</p>
 			<p>Evergreen Wild Shape. Whenever you roll Initiative and have no uses of Wild Shape left, you regain one expended use of it.</p>
 			<p>Nature Magician. You can convert uses of Wild Shape into a spell slot (no action required). Choose a number of your unexpended uses of Wild Shape and convert them into a single spell slot, with each use contributing 2 spell levels. For example, if you convert two uses of Wild Shape, you produce a level 4 spell slot. Once you use this benefit, you can't do so again until you finish a Long Rest.</p>
 			<p>Longevity. The primal magic that you wield causes you to age more slowly. For every ten years that pass, your body ages only one year.</p>
 		</description>
 		<sheet>
-			<description>
-				Whenever you roll Initiative and have no uses of Wild Shape left, you regain one expended use of it.
-					You can convert uses of Wild Shape into a spell slot (no action required). Choose a number of your unexpended uses of Wild Shape and convert them into a single spell slot, with each use contributing 2 spell levels.  Once you use this benefit, you can't do so again until you finish a Long Rest.
-					The primal magic that you wield causes you to age more slowly. For every ten years that pass, your body ages only one year.
+			<description>Whenever you roll Initiative and have no uses of Wild Shape left, you regain one expended use of it.
+				You can convert uses of Wild Shape into a spell slot (no action required). Choose a number of your unexpended uses of Wild Shape and convert them into a single spell slot, with each use contributing 2 spell levels.  Once you use this benefit, you can't do so again until you finish a Long Rest.
+				The primal magic that you wield causes you to age more slowly. For every ten years that pass, your body ages only one year.
 			</description>
 		</sheet>
 	</element>
@@ -439,6 +441,7 @@
 	</element>
 	<element name="Circle of the Land Spells" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_LAND_CIRCLE_OF_THE_LAND_SPELLS">
 		<description>
+			<p><em>3rd-level Circle of the Land feature</em></p>
 			<p>Whenever you finish a Long Rest, choose one type of land: arid, polar, temperate, or tropical. Consult the table below that corresponds to the chosen type; you have the spells listed for your Druid level and lower prepared.</p>
 			<h5>Arid Land</h5>
 			<table>
@@ -490,6 +493,7 @@
 	</element>
 	<element name="Land's Aid" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_LAND_LANDS_AID">
 		<description>
+			<p><em>3rd-level Circle of the Land feature</em></p>
 			<p>As a Magic action, you can expend a use of your Wild Shape and choose a point within 60 feet of yourself. Vitality-giving flowers and life-draining thorns appear for a moment in a 10-foot-radius Sphere centered on that point. Each creature of your choice in the Sphere must make a Constitution saving throw against your spell save DC, taking 2d6 Necrotic damage on a failed save or half as much damage on a successful one. One creature of your choice in that area regains 2d6 Hit Points.</p>
 			<p>The damage and healing increase by 1d6 when you reach Druid levels 10 (3d6) and 14 (4d6).</p>
 		</description>
@@ -499,6 +503,7 @@
 	</element>
 	<element name="Natural Recovery" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_LAND_NATURAL_RECOVERY">
 		<description>
+			<p><em>6th-level Circle of the Land feature</em></p>
 			<p>You can cast one of the level 1+ spells that you have prepared from your Circle Spells feature without expending a spell slot, and you must finish a Long Rest before you do so again.</p>
 			<p>In addition, when you finish a Short Rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your Druid level (round up), and none of them can be level 6+. For example, if you're a level 6 Druid, you can recover up to three levels' worth of spell slots. You can recover a level 3 spell slot, a level 2 and a level 1 spell slot, or three level 1 spell slots. Once you recover spell slots with this feature, you can't do so again until you finish a Long Rest.</p>
 		</description>
@@ -508,6 +513,7 @@
 	</element>
 	<element name="Nature's Ward" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_LAND_NATURES_WARD">
 		<description>
+			<p><em>10th-level Circle of the Land feature</em></p>
 			<p>You are immune to the Poisoned condition, and you have Resistance to a damage type associated with your current land choice in the Circle Spells feature, as shown in the Nature's Ward table.</p>
 			<h5>Nature's Ward</h5>
 			<table>
@@ -526,6 +532,7 @@
 	</element>
 	<element name="Nature's Sanctuary" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_LAND_NATURES_SANCTUARY">
 		<description>
+			<p><em>14th-level Circle of the Land feature</em></p>
 			<p>As a Magic action, you can expend a use of your Wild Shape and cause spectral trees and vines to appear in a 15-foot Cube on the ground within 120 feet of yourself. They last there for 1 minute or until you have the Incapacitated condition or die. You and your allies have Half Cover while in that area, and your allies gain the current Resistance of your Nature's Ward while there.</p>
 			<p>As a Bonus Action, you can move the Cube up to 60 feet to ground within 120 feet of yourself.</p>
 		</description>
@@ -533,6 +540,7 @@
 			<description>Expend a use of Wild Shape to create a 15-foot cube of spectral trees and vines within 120 feet. You and allies have Half Cover and gain your Nature's Ward resistance while in the area. You can move the cube as a Bonus Action.</description>
 		</sheet>
 	</element>
+
 	<element name="2024 Circle of the Moon" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_CIRCLEOFTHEMOON">
 		<supports>Druid Circle</supports>
 		<description>
@@ -557,6 +565,7 @@
 	</element>
 	<element name="Circle Forms" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_CIRCLE_FORMS">
 		<description>
+			<p><em>3rd-level Circle of the Moon feature</em></p>
 			<p>You have learned ancient techniques that allow you to channel lunar magic when you assume a Wild Shape form, granting you the following benefits:</p>
 			<p class="indent">Challenge Rating. The maximum Challenge Rating for the form equals your Druid level divided by 3 (round down).</p>
 			<p class="indent">Armor Class. Your AC equals 13 plus your Wisdom modifier or the Beast AC (whichever one is higher), until you leave the form.</p>
@@ -584,7 +593,8 @@
 	</element>
 	<element name="Circle of the Moon Spells" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_CIRCLE_OF_THE_MOON_SPELLS">
 		<description>
-			<p>When you choose this circle at 2nd level, you gain the ability to use Wild Shape on your turn as a bonus action, rather than as an action.</p>
+			<p><em>3rd-level Circle of the Moon feature</em></p>
+			<p>You gain the ability to use Wild Shape on your turn as a bonus action, rather than as an action.</p>
 			<p class="indent">Additionally, while you are transformed by Wild Shape, you can use a bonus action to expend one spell slot to regain 1d8 hit points per level of the spell slot expended.</p>
 		</description>
 		<sheet>
@@ -617,6 +627,7 @@
 	</element>
 	<element name="Improved Circle Forms" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_IMPROVED_CIRCLE_FORMS">
 		<description>
+			<p><em>6th-level Circle of the Moon feature</em></p>
 			<p>While in a Wild Shape form, you gain the following benefits:</p>
 			<p>Lunar Radiance. Each of your attacks in a Wild Shape form can deal its normal damage type or Radiant damage. You make this choice each time you hit with those attacks.</p>
 			<p>Increased Toughness. You can add your Wisdom modifier to your Constitution saving throws.</p>
@@ -654,6 +665,7 @@
 	</element>
 	<element name="Moonlight Step" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_MOONLIGHT_STEP">
 		<description>
+			<p><em>10th-level Circle of the Moon feature</em></p>
 			<p>You magically transport yourself, reappearing amid a burst of moonlight. As a Bonus Action, you teleport up to 30 feet to an unoccupied space you can see, and you have Advantage on the next attack roll you make before the end of this turn.</p>
 			<p>You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest. You can also regain uses by expending a spell slot of level 2 or higher for each use you want to restore (no action required).</p>
 		</description>
@@ -668,6 +680,7 @@
 	</element>
 	<element name="Lunar Form" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_LUNAR_FORM">
 		<description>
+			<p><em>14th-level Circle of the Moon feature</em></p>
 			<p>The power of the moon suffuses you, granting you the following benefits:</p>
 			<p>Improved Lunar Radiance. Each of your attacks in a Wild Shape form deals an extra 1d10 Radiant damage on a hit.</p>
 			<p>Shared Moonlight. Whenever you use Moonlight Step, you can also teleport one willing creature. That creature must be within 10 feet of you, and you teleport it to an unoccupied space you can see within 10 feet of your destination space.</p>
@@ -678,6 +691,7 @@
 			</description>
 		</sheet>
 	</element>
+
 	<element name="2024 Circle of the Sea" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_CIRCLEOFTHE_SEA">
 		<supports>Druid Circle</supports>
 		<description>
@@ -701,6 +715,7 @@
 	</element>
 	<element name="Circle of the Sea Spells" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_SEA_CIRCLE_OF_THE_SEA_SPELLS">
 		<description>
+			<p><em>3rd-level Circle of the Sea feature</em></p>
 			<p>Your connection to this circle ensures that you always have certain spells ready. When you reach a Druid level specified in the Circle of the Sea Spells table, you thereafter always have the listed spells prepared.</p>
 			<h5>Circle of the Sea Spells</h5>
 			<table>
@@ -732,6 +747,7 @@
 	</element>
 	<element name="Wrath of the Sea" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_SEA_WRATH_OF_THE_SEA">
 		<description>
+			<p><em>3rd-level Circle of the Sea feature</em></p>
 			<p>As a Bonus Action, you can expend a use of your Wild Shape to manifest an aura that takes the form of ocean spray that surrounds you. The aura lasts for 10 minutes. It ends early if you have the Incapacitated condition, dismiss it (no action required), or manifest the aura again.</p>
 			<p>At the end of each of your turns, you can choose another creature you can see within 10 feet of yourself. The target must succeed on a Constitution saving throw against your Spell Save DC or take Thunder damage and, if the creature is Large or smaller, be pushed up to 15 feet away from you. To determine this damage, roll a number of d6s equal to your Wisdom modifier (minimum of one die).</p>
 		</description>
@@ -741,6 +757,7 @@
 	</element>
 	<element name="Aquatic Affinity" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_SEA_AQUATIC_AFFINITY">
 		<description>
+			<p><em>6th-level Circle of the Sea feature</em></p>
 			<p>Your Wrath of the Sea emanation increased to 10 feet.</p>
 			<p>In addition, you gain a Swim Speed equal to your Speed.</p>
 		</description>
@@ -750,6 +767,7 @@
 	</element>
 	<element name="Stormborn" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_SEA_STORMBORN">
 		<description>
+			<p><em>10th-level Circle of the Sea feature</em></p>
 			<p>Your Wrath of the Sea confers two more benefits while active:</p>
 			<p><strong>Flight</strong>. You gain a Fly Speed equal to your Speed.</p>
 			<p><strong>Resistance</strong>. You have resistance to Cold, Lightning, and Thunder damage.</p>
@@ -760,6 +778,7 @@
 	</element>
 	<element name="Oceanic Gift" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_SEA_OCEANIC_GIFT">
 		<description>
+			<p><em>14th-level Circle of the Sea feature</em></p>
 			<p>Whenever you use Wrath of the Sea, you can manifest the aura around one willing creature within 60 feet of you rather than manifesting it around yourself. The creature gains all the benefits of the aura and uses your Spell Save DC and Wisdom modifier for it.</p>
 			<p>In addition, you can manifest the aura around both the other creature and yourself if you expend two uses of your Wild Shape, instead of one, when manifesting the aura.</p>
 		</description>

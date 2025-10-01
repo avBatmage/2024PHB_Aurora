@@ -129,6 +129,7 @@
 	</element>
 	<element name="Spellcasting" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WIZARD_SPELLCASTING">
 		<description>
+			<p><em>1st-level Wizard feature</em></p>
 			<p>As a student of arcane magic, you have learned to cast spells. See the Player's Handbook for rules on spellcasting. The information below details how you use those rules with Wizard spells.</p>
 			<h5>CANTRIPS</h5>
 			<p>At 1st level, You know three Wizards cantrips of your choice. Light, Mage Hand, and Ray of Frost are recommended. Whenever you finish a Long Rest, you can replace one of your cantrips from this feature with another Wizard cantrip of your choice.</p>
@@ -240,6 +241,7 @@
 	</element>
 	<element name="Ritual Adept" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WIZARD_RITUAL_ADEPT">
 		<description>
+			<p><em>1st-level Wizard feature</em></p>
 			<p>You can cast any spell as a Ritual if that spell has the Ritual tag and the spell is in your spellbook. You needn't have the spell prepared, but you must read from the book to cast a spell in this way.</p>
 		</description>
 		<sheet>
@@ -248,6 +250,7 @@
 	</element>
 	<element name="Arcane Recovery" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WIZARD_ARCANE_RECOVERY">
 		<description>
+			<p><em>1st-level Wizard feature</em></p>
 			<p>You have learned to regain some of your magical energy by studying your spellbook. Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your wizard level (rounded up), and none of the slots can be 6th level or higher.</p>
 			<p class="indent">For example, if you're a 4th-level wizard, you can recover up to two levels worth of spell slots. You can recover either a 2nd-level spell slot or two 1st-level spell slots.</p>
 		</description>
@@ -257,6 +260,7 @@
 	</element>
 	<element name="Scholar" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WIZARD_SCHOLAR">
 		<description>
+			<p><em>2nd-level Wizard feature</em></p>
 			<p>While studying magic, you also specialized in an academic field of study. Choose one of the following skills in which you have proficiency: Arcana, History, Investigation, Medicine, Nature, or Religion. You have Expertise in the chosen skill.</p>
 		</description>
 		<sheet display="false"/>
@@ -266,6 +270,7 @@
 	</element>
 	<element name="Wizard Subclass" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WIZARD_WIZARD_SUBCLASS">
 		<description>
+			<p><em>3rd-level Wizard feature</em></p>
 			<p>The study of wizardry is ancient, stretching back to the earliest mortal discoveries of magic. It is firmly established in fantasy gaming worlds, with various traditions dedicated to its complex study.</p>
 			<p class="indent">The most common arcane traditions in the multiverse revolve around the schools of magic. Wizards through the ages have cataloged thousands of spells, grouping them into eight categories called schools. In some places, these traditions are literally schools. In other institutions, the schools are more like academic departments, with rival faculties competing for students and funding. Even wizards who train apprentices in the solitude of their own towers use the division of magic into schools as a learning device, since the spells of each school require mastery of different techniques.</p>
 			<p class="indent">When you reach 3rd level, you choose an arcane tradition, shaping your practice of magic through one of eight schools, such as Evocation.</p>
@@ -279,6 +284,7 @@
 	<element name="Ability Score Improvement" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WIZARD_ABILITYSCOREIMPROVEMENT_WIZARD">
 		<compendium display="false" />
 		<description>
+			<p><em>4th-level Wizard feature</em></p>
 			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
 		</description>
 		<sheet display="false" />
@@ -292,6 +298,7 @@
 	</element>
 	<element name="Memorize Spell" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WIZARD_MEMORIZE_SPELL">
 		<description>
+			<p><em>5th-level Wizard feature</em></p>
 			<p>Whenever you finish a Short Rest, you can study your spellbook and replace one of the level 1+ Wizard spells you have prepared for your Spellcasting feature with another level 1+ spell from the book.</p>
 		</description>
 		<sheet>
@@ -300,7 +307,8 @@
 	</element>
 	<element name="Spell Mastery" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WIZARD_SPELL_MASTERY">
 		<description>
-			<p>At 18th level, You have achieved such mastery over certain spells that you can cast them at will. Choose a level 1 and a level 2 spell in your spellbook that have a casting time of an action. You always have those spells prepared, and you can cast them at their lowest level without expending a spell slot. To cast either spell at a higher level, you must expend a spell slot.</p>
+			<p><em>18th-level Wizard feature</em></p>
+			<p>You have achieved such mastery over certain spells that you can cast them at will. Choose a level 1 and a level 2 spell in your spellbook that have a casting time of an action. You always have those spells prepared, and you can cast them at their lowest level without expending a spell slot. To cast either spell at a higher level, you must expend a spell slot.</p>
 			<p>Whenever you finish a Long Rest, you can study your spellbook and replace one of those spells with an eligible spell of the same level from that book.</p>
 		</description>
 		<sheet>
@@ -310,6 +318,7 @@
 	</element>
 	<element name="Signature Spells" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WIZARD_SIGNATURE_SPELLS">
 		<description>
+			<p><em>20th-level Wizard feature</em></p>
 			<p>Choose two level 3 spells in your spellbook as your signature spells. You always have these spells prepared, and you can cast each of them once at level 3 without expending a spell slot. When you do so, you can't cast them in this way again until you finish a Short or Long Rest. To cast either spell at a higher level, you must expend a spell slot.</p>
 		</description>
 		<sheet usage="1 each/Short Rest">

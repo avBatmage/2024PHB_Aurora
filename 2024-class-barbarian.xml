@@ -148,6 +148,7 @@
 	<element name="Rage" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_RAGE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_RAGE</requirements>
 		<description>
+			<p><em>1st-level Barbarian feature</em></p>
 			<p>You can imbue yourself with a primal power called Rage, a force that grants you extraordinary might and resilience. You can enter it as a Bonus Action if you aren't wearing Heavy armor.</p>
 			<p>You can enter your Rage the number of times shown for your Barbarian level in the Rages column of the Barbarian Features table. You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest.</p>
 			<p>While active, your Rage follows the rules below.</p>
@@ -167,8 +168,7 @@
 			<description usage="{{barbarian rage:count}}/Long Rest">Regain 1 use on a Short rest. Advantage on Strength checks and Strength Saves. 
 			A +{{barbarian rage:damage}} to damage rolls with strength physical attacks. 
 			You have resistance to bludgeoning, piercing, and slashing damage.
-			The Rage lasts until the end of your next turn, can be extended up to 10 mins by the following: 
-			Make an attack roll against an enemy, Force an enemy to make a saving throw or Take a Bonus Action to extend your Rage.
+			The Rage lasts until the end of your next turn, can be extended up to 10 mins by the following: Make an attack roll against an enemy, Force an enemy to make a saving throw or Take a Bonus Action to extend your Rage.
 			</description>
 			<description usage="{{barbarian rage:count}}/Long Rest" level="15">Regain 1 use on a Short rest. Advantage on Strength checks and Strength Saves. 
 			A +{{barbarian rage:damage}} to damage rolls with strength physical attacks. 
@@ -189,6 +189,7 @@
 	<element name="Unarmored Defense" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_UNARMORED_DEFENCE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_UNARMORED_DEFENCE</requirements>
 		<description>
+			<p><em>1st-level Barbarian feature</em></p>
 			<p>While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit.</p>
 		</description>
 		<sheet>
@@ -208,6 +209,7 @@
 	</element>
 	<element name="Weapon Mastery" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_WEAPON_MASTERY">
 		<description>
+			<p><em>1st-level Barbarian feature</em></p>
 			<p>Your training with weapons allows you to use the mastery properties of two kinds of weapons of your choice with which you have proficiency, such as Longbows and Shortswords.</p>
 			<p>Whenever you finish a Long Rest, you can change the kinds of weapons you chose. For example, you could switch to using the mastery properties of Scimitars and Longswords.</p>
 		</description>
@@ -219,7 +221,8 @@
 	<element name="Reckless Attack" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_RECKLESS_ATTACK">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_RECKLESS_ATTACK</requirements>
 		<description>
-			<p>At 2nd level, You can throw aside all concern for defense to attack with increased ferocity. When you make your first attack roll on your turn, you can decide to attack recklessly. Doing so gives you Advantage on attack rolls using Strength until the start of your next turn, but attack rolls against you have Advantage during that time.</p>
+			<p><em>2nd-level Barbarian feature</em></p>
+			<p>You can throw aside all concern for defense to attack with increased ferocity. When you make your first attack roll on your turn, you can decide to attack recklessly. Doing so gives you Advantage on attack rolls using Strength until the start of your next turn, but attack rolls against you have Advantage during that time.</p>
 		</description>
 		<sheet>
 			<description>When you make your first attack roll on your turn, you can decide to attack recklessly. Doing so gives you Advantage on attack rolls using Strength until the start of your next turn, but attack rolls against you have Advantage during that time.</description>
@@ -228,7 +231,8 @@
 	<element name="Danger Sense" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_DANGER_SENSE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_DANGER_SENSE</requirements>
 		<description>
-			<p>At 2nd level, You gain an uncanny sense of when things aren't as they should be, giving you an edge when you dodge perils.</p>
+			<p><em>2nd-level Barbarian feature</em></p>
+			<p>You gain an uncanny sense of when things aren't as they should be, giving you an edge when you dodge perils.</p>
 			<p class="indent">You have Advantage on Dexterity saving throws unless you have the Incapacitated condition.</p>
 		</description>
 		<sheet>
@@ -238,7 +242,8 @@
 	<element name="Primal Path" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_BARBARIAN_SUBCLASS">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_PRIMAL_PATH</requirements>
 		<description>
-			<p>At 3rd level, you choose a path that shapes the nature of your rage. Choose the Path of the Berserker or the Path of the Totem Warrior, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th levels.</p>
+			<p><em>3rd-level Barbarian feature</em></p>
+			<p>You choose a path that shapes the nature of your rage. Choose the Path of the Berserker or the Path of the Totem Warrior, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th levels.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -248,6 +253,7 @@
 	<element name="Primal Knowledge" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_PRIMAL_KNOWLEDGE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_PRIMAL_PATH</requirements>
 		<description>
+			<p><em>3rd-level Barbarian feature</em></p>
 			<p>You gain proficiency in another skill of your choice from the skill list available to Barbarians at level 1.</p>
 			<p>In addition, while your Rage is active, you can channel primal power when you attempt certain tasks; whenever you make an ability check using one of the following skills, you can make it as a Strength check even if it normally uses a different ability: Acrobatics, Intimidation, Perception, Stealth, or Survival. When you use this ability, your Strength represents primal power coursing through you, honing your agility, bearing, and senses.</p>
 		</description>
@@ -262,7 +268,8 @@
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_ABILITY_SCORE_IMPROVEMENT</requirements>
 		<compendium display="false" />
 		<description>
-			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+			<p><em>4th, 8th, 12th, 16th, and 19th-level Barbarian feature</em></p>
+			<p>You gain the Ability Score Improvement feat or another feat of your choice for which you qualify.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -276,6 +283,7 @@
 	<element name="Extra Attack" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_EXTRA_ATTACK">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_EXTRA_ATTACK</requirements>
 		<description>
+			<p><em>5th-level Barbarian feature</em></p>
 			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
 		</description>
 		<sheet>
@@ -288,6 +296,7 @@
 	<element name="Fast Movement" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_FAST_MOVEMENT">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_FAST_MOVEMENT</requirements>
 		<description>
+			<p><em>5th-level Barbarian feature</em></p>
 			<p>Starting at 5th level, your speed increases by 10 feet while you aren't wearing heavy armor.</p>
 		</description>
 		<sheet>
@@ -304,6 +313,7 @@
 	<element name="Feral Instinct" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_FERAL_INSTINCT">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_FERAL_INSTINCT</requirements>
 		<description>
+			<p><em>7th-level Barbarian feature</em></p>
 			<p>By 7th level, your instincts are so honed that you have advantage on initiative rolls.</p>
 		</description>
 		<sheet>
@@ -316,6 +326,7 @@
 	<element name="Instinctive Pounce" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_INSTINCTIVE_POUNCE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_INSTINCTIVE_POUNCE</requirements>
 		<description>
+			<p><em>7th-level Barbarian feature</em></p>
 			<p>As part of the Bonus Action you take to enter your Rage, you can move up to half your Speed.</p>
 		</description>
 		<sheet>
@@ -325,6 +336,7 @@
 	<element name="Brutal Strike" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_BRUTAL_STRIKE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_BRUTAL_CRITICAL</requirements>
 		<description>
+			<p><em>9th-level Barbarian feature</em></p>
 			<p>At 9th level, If you use Reckless Attack, you can forgo any Advantage on one Strength-based attack roll of your choice on your turn. The chosen attack roll mustn't have Disadvantage. If the chosen attack roll hits, the target takes an extra 1d10 damage of the same type dealt by the weapon or Unarmed Strike, and you can cause one Brutal Strike effect of your choice. You have the following effect options.</p>
 			<p class="indent">Forceful Blow. The target is pushed 15 feet straight away from you. You can then move up to half your Speed straight toward the target without provoking Opportunity Attacks.</p>
 			<p class="indent">Hamstring Blow. The target's Speed is reduced by 15 feet until the start of your next turn. A target can be affected by only one Hamstring Blow at a time—the most recent one.</p>
@@ -352,6 +364,7 @@
 	<element name="Relentless Rage" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_RELENTLESS_RAGE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_RELENTLESS_RAGE</requirements>
 		<description>
+			<p><em>11th-level Barbarian feature</em></p>
 			<p>Starting at 11th level, your rage can keep you fighting despite grievous wounds. If you drop to 0 hit points while you're raging and don't die outright, you can make a DC 10 Constitution saving throw.If you succeed, your Hit Points instead change to a number equal to twice your Barbarian level.</p>
 			<p class="indent">Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10.</p>
 		</description>
@@ -366,6 +379,7 @@
 	<element name="Improved Brutal Strike" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_IMPROVED_BRUTAL_STRIKE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_BRUTAL_CRITICAL</requirements>
 		<description>
+			<p><em>13th-level Barbarian feature</em></p>
 			<p>You have honed new ways to attack furiously. The following effects are now among your Brutal Strike options.</p>
 			<p class="indent">Staggering Blow. The target has Disadvantage on the next saving throw it makes, and it can't make Opportunity Attacks until the start of your next turn.</p>
 			<p class="indent">Sundering Blow. Before the start of your next turn, the next attack roll made by another creature against the target gains a +5 bonus to the roll. An attack roll can gain only one Sundering Blow bonus.</p>
@@ -375,6 +389,7 @@
 	<element name="Persistant Rage" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_PERSISTANT_RAGE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_PERSISTANT_RAG</requirements>
 		<description>
+			<p><em>15th-level Barbarian feature</em></p>
 			<p>When you roll Initiative, you can regain all expended uses of Rage. After you regain uses of Rage in this way, you can't do so again until you finish a Long Rest.</p>
 			<p>In addition, your Rage is so fierce that it now lasts for 10 minutes without you needing to do anything to extend it from round to round. Your Rage ends early if you have the Unconscious condition (not just the Incapacitated condition) or don Heavy armor.</p>
 		</description>
@@ -385,6 +400,7 @@
 	<element name="Improved Brutal Strike Two" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_IMPROVED_BRUTAL_STRIKE_TWO">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_BRUTAL_CRITICAL</requirements>
 		<description>
+			<p><em>17th-level Barbarian feature</em></p>
 			<p>The extra damage your Brutal Strike deals increases to 2d10. In addition, you can use two different Brutal Strike effects when you use your Brutal Strike feature.</p>
 		</description>
 		<sheet display="False"/>
@@ -392,6 +408,7 @@
 	<element name="Indomitable Might" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_INDOMITABLE_MIGHT">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_INDOMITABLE_MIGHT</requirements>
 		<description>
+			<p><em>18th-level Barbarian feature</em></p>
 			<p>If your total for a Strength check or Strength saving throw is less than your Strength score, you can use that score in place of the total.</p>
 		</description>
 		<sheet>
@@ -401,6 +418,7 @@
 	<element name="Epic Boon" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_EPIC_BOON">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_EPIC_BOON</requirements>
 		<description>
+			<p><em>19th-level Barbarian feature</em></p>
 			<p>At 19th level, you gain an Epic Boon of your choice. The Epic Boons are detailed in the Epic Boons section of the Player's Handbook.</p>
 		</description>
 		<sheet display="False">
@@ -410,6 +428,7 @@
 	<element name="Primal Champion" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_PRIMAL_CHAMPION">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_PRIMAL_CHAMPION</requirements>
 		<description>
+			<p><em>20th-level Barbarian feature</em></p>
 			<p>At 20th level, you embody the power of the wilds. Your Strength and Constitution scores increase by 4. Your maximum for those scores is now 25.</p>
 		</description>
 		<sheet>
@@ -463,6 +482,7 @@
 	</element>
 	<element name="Frenzy" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BERSERKER_FRENZY">
 		<description>
+			<p><em>3rd-level Berserker feature</em></p>
 			<p>If you use Reckless Attack while your Rage is active, you deal extra damage to the first target you hit on your turn with a Strength-based attack. To determine the extra damage, roll a number of d6s equal to your Rage Damage bonus, and add them together. The damage has the same type as the weapon or Unarmed Strike used for the attack.</p>
 		</description>
 		<sheet>
@@ -471,6 +491,7 @@
 	</element>
 	<element name="Mindless Rage" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BERSERKER_MINDLESS_RAGE">
 		<description>
+			<p><em>6th-level Berserker feature</em></p>
 			<p>You have immunity to the Charmed and Frightened conditions while your Rage is active. If you're Charmed or Frightened when you enter your Rage, that condition ends on you.</p>
 		</description>
 		<sheet>
@@ -479,6 +500,7 @@
 	</element>
 	<element name="Retaliation" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BERSERKER_RETALIATION">
 		<description>
+			<p><em>10th-level Berserker feature</em></p>
 			<p>When you take damage from a creature that is within 5 feet of you, you can take a Reaction to make one melee attack against that creature, using a weapon or an Unarmed Strike.</p>
 		</description>
 		<sheet action="Reaction">
@@ -487,6 +509,7 @@
 	</element>
 	<element name="Intimidating Presence" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_BERSERKER_INTIMIDATING_PRESENCE">
 		<description>
+			<p><em>14th-level Berserker feature</em></p>
 			<p>As a Bonus Action, you can strike terror into others with your menacing presence and primal power. When you do so, each creature of your choice in a 30-foot Emanation originating from you must make a Wisdom saving throw (DC 8 plus your Strength modifier and Proficiency Bonus). On a failed save, a creature has the Frightened condition for 1 minute. At the end of each of the Frightened creature's turns, the creature repeats the save, ending the effect on itself on a success.</p>
 			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest unless you expend a use of your Rage (no action required) to restore your use of it.</p>
 		</description>
@@ -518,6 +541,7 @@
 	</element>
 	<element name="Animal Speaker" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_WILD_HEART_ANIMAL_SPEAKER">
 		<description>
+			<p><em>3rd-level Wild Heart feature</em></p>
 			<p>You can cast the Beast Sense and Speak with Animals spells, but only as Rituals. Wisdom is your spellcasting ability for them.</p>
 		</description>
 		<sheet>
@@ -530,6 +554,7 @@
 	</element>
 	<element name="Rage of the Wilds" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_WILD_HEART_RAGE_OF_THE_WILDS">
 		<description>
+			<p><em>3rd-level Wild Heart feature</em></p>
 			<p>Your Rage taps into the primal power of animals. Whenever you activate your Rage, you gain one of the following options of your choice.</p>
 			<p class="indent"><strong>Bear.</strong> When you activate your Rage, choose two damage types, other than Force or Psychic. You have Resistance to the chosen types until the Rage ends.</p>
 			<p class="indent"><strong>Eagle.</strong> When you activate your Rage and as a Bonus Action while it's active, you can take both the Disengage and the Dash action.</p>
@@ -545,6 +570,7 @@
 	</element>
 	<element name="Aspect of the Wilds" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_WILD_HEART_ASPECT_OF_THE_WILDS">
 		<description>
+			<p><em>6th-level Wild Heart feature</em></p>
 			<p>You gain one of the following options of your choice. Whenever you finish a Long Rest, you can change your choice.</p>
 			<p class="indent"><strong>Owl.</strong> You have Darkvision with a range of 60 feet. If you already have Darkvision, its range increases by 60 feet.</p>
 			<p class="indent"><strong>Panther.</strong> You have a Climb Speed equal to your Speed.</p>
@@ -596,6 +622,7 @@
 	</element>
 	<element name="Nature Speaker" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_WILD_HEART_NATURE_SPEAKER">
 		<description>
+			<p><em>10th-level Wild Heart feature</em></p>
 			<p>You can cast the Commune with Nature spell, but only as a Ritual. Wisdom is your spellcasting ability for it.</p>
 		</description>
 		<sheet>
@@ -607,6 +634,7 @@
 	</element>
 	<element name="Power of the Wilds" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_WILD_HEART_POWER_OF_THE_WILDS">
 		<description>
+			<p><em>14th-level Wild Heart feature</em></p>
 			<p>Whenever you activate your Rage, you gain one of the following options of your choice.</p>
 			<p class="indent"><strong>Falcon.</strong> While your Rage is active, you have a Fly Speed equal to your Speed if you aren't wearing any armor.</p>
 			<p class="indent"><strong>Lion.</strong> While your Rage is active, any of your enemies within 5 feet of you have Disadvantage on attack rolls against targets other than you or another Barbarian who has this option active.</p>
@@ -642,6 +670,7 @@
 	</element>
 	<element name="Vitality of the Tree" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_WORLD_TREE_VITALITY_OF_THE_TREE">
 		<description>
+			<p><em>3rd-level World Tree feature</em></p>
 			<p>Your Rage taps into the lifeforce of the World Tree. You gain the following benefits:</p>
 			<p class="indent"><strong>Vitality Surge.</strong> When you activate your Rage, you gain a number of Temporary Hit Points equal to your Barbarian level.</p>
 			<p class="indent"><strong>Life-Giving Force.</strong> At the start of each of your turns while your Rage is active, you can choose another creature within 10 feet of yourself to gain Temporary Hit Points. To determine the number of Temporary Hit Points, roll a number of d6s equal to your Rage Damage bonus, and add them together. If any of these Temporary Hit Points remain when your Rage ends, they vanish.</p>
@@ -652,6 +681,7 @@
 	</element>
 	<element name="Branches of the Tree" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_WORLD_TREE_BRANCHES_OF_THE_TREE">
 		<description>
+			<p><em>6th-level World Tree feature</em></p>
 			<p>While your Rage is active, whenever a creature you can see starts its turn within 30 feet of you, you can use your Reaction to summon spectral branches of the World Tree around it. The target must succeed on a Strength saving throw (DC equal to 8 plus your Proficiency Bonus plus your Strength modifier) or be teleported to an unoccupied space you can see within 5 feet of yourself or in the nearest unoccupied space you can see. The space the target teleports to must be on a surface or liquid that can support it; otherwise, the target doesn't teleport.</p>
 			<p class="indent">After the target teleports, you can reduce its Speed to 0 until the end of the current turn.</p>
 		</description>
@@ -666,6 +696,7 @@
 	</element>
 	<element name="Battering Boots" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_WORLD_TREE_BATTERING_BOOTS">
 		<description>
+			<p><em>10th-level World Tree feature</em></p>
 			<p>Tendrils of the World Tree extend from your Melee weapons. During your turn, while you wield a Melee weapon with the Heavy or Versatile property, your reach with that weapon increases by 10 feet. When you hit with this weapon, you can activate the Push or Topple property in addition to any other Mastery property you are using with that weapon.</p>
 		</description>
 		<sheet>
@@ -674,6 +705,7 @@
 	</element>
 	<element name="Travel along the Tree" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_WORLD_TREE_TRAVEL_ALONG_THE_TREE">
 		<description>
+			<p><em>14th-level World Tree feature</em></p>
 			<p>You can briefly travel along the World Tree. When you activate your Rage and as a Bonus Action while it's active, you can teleport up to 60 feet to an unoccupied space you can see.</p>
 			<p class="indent">In addition, when you teleport using this feature, you can bring up to six willing creatures who are within 10 feet of yourself, and the range you can teleport increases to 500 feet. Each creature teleports to an unoccupied space of your choice within 10 feet of your destination space. You can teleport other creatures with you only once per Rage.</p>
 		</description>
@@ -709,7 +741,7 @@
 	</element>
 	<element name="Divine Fury" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_PATH_OF_THE_ZEALOT_DIVINE_FURY">
 		<description>
-			<p><i>3rd-Level Feature</i></p>
+			<p><em>3rd-level Zealot feature</em></p>
 			<p>You can channel divine power into your strikes. On each of your turns while your Rage is active, the first creature you hit with a weapon or an Unarmed Strike takes extra damage equal to 1d6 plus half your Barbarian level (round down). The extra damage is Necrotic or Radiant; you choose the type each time you deal the damage.</p>
 		</description>
 		<sheet usage="1/Turn">
@@ -718,7 +750,7 @@
 	</element>
 	<element name="Warrior of the Gods" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_PATH_OF_THE_ZEALOT_WARRIOR_OF_THE_GODS">
 		<description>
-			<p><i>3rd-Level Feature</i></p>
+			<p><em>3rd-level Zealot feature</em></p>
 			<p>A divine entity helps ensure you can continue the fight. You have a pool of four dl2s that you can spend to heal yourself. As a Bonus Action, you can expend dice from the pool, roll them, and regain a number of Hit Points equal to the roll's total.</p>
 			<p class="indent">Your pool regains all expended dice when you finish a Long Rest.</p>
 			<p class="indent">The pool's maximum number of dice increases by one when you reach Barbarian levels 6 (5 dice), 12 (6 dice), and 17 (7 dice).</p>
@@ -735,7 +767,7 @@
 	</element>
 	<element name="Fanatical Focus" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_PATH_OF_THE_ZEALOT_FANATICAL_FOCUS">
 		<description>
-			<p><i>6th-Level Feature</i></p>
+			<p><em>6th-level Zealot feature</em></p>
 			<p>Once per active Rage, if you fail a saving throw, you can reroll it with a bonus equal to your Rage Damage bonus, and you must use the new roll.</p>
 		</description>
 		<sheet usage="1/Rage">
@@ -744,7 +776,7 @@
 	</element>
 	<element name="Zealous Presence" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_PATH_OF_THE_ZEALOT_ZEALOUS_PRESENCE">
 		<description>
-			<p><i>10th-Level Feature</i></p>
+			<p><em>10th-level Zealot feature</em></p>
 			<p>As a Bonus Action, you unleash a battle cry infused with divine energy. Up to ten other creatures of your choice within 60 feet of you gain Advantage on attack rolls and saving throws until the start of your next turn.</p>
 			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest unless you expend a use of your Rage (no action required) to restore your use of it.</p>
 		</description>
@@ -754,19 +786,19 @@
 	</element>
 	<element name="Rage of the Gods" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_PATH_OF_THE_ZEALOT_RAGE_OF_THE_GODS">
 		<description>
-			<p><i>14th-Level Feature</i></p>
-			<p>When you activate your Rage, you can assume the form of a divine warrior. This form lasts for 1 minute or until you drop to O Hit Points. Once you use this feature, you can't do so again until you finish a Long Rest.</p>
+			<p><em>14th-level Zealot feature</em></p>
+			<p>When you activate your Rage, you can assume the form of a divine warrior. This form lasts for 1 minute or until you drop to 0 Hit Points. Once you use this feature, you can't do so again until you finish a Long Rest.</p>
 			<p class="indent">While in this form, you gain the benefits below.</p>
 			<p class="indent"><strong>Flight.</strong>You have a Fly Speed equal to your Speed and can hover.</p>
 			<p class="indent"><strong>Resistance.</strong> You have Resistance to Necrotic, Psychic, and Radiant damage.</p>
-			<p class="indent"><strong>Revivification.</strong> When a creature within 30 feet of you would drop to O Hit Points, you can take a Reaction to expend a use of your Rage to instead change the target's Hit Points to a number equal to your Barbarian level.</p>
+			<p class="indent"><strong>Revivification.</strong> When a creature within 30 feet of you would drop to 0 Hit Points, you can take a Reaction to expend a use of your Rage to instead change the target's Hit Points to a number equal to your Barbarian level.</p>
 		</description>
 		<sheet usage="1/Long Rest">
 			<description>
-			When you activate your Rage, you can assume the form of a divine warrior for a minute or until you drop to O Hit Points. While in this form, you gain the benefits below.
+			When you activate your Rage, you can assume the form of a divine warrior for a minute or until you drop to 0 Hit Points. While in this form, you gain the benefits below.
 			Flight: You have a Fly Speed equal to your Speed and can hover.
 			Resistance: You have Resistance to Necrotic, Psychic, and Radiant damage.
-			Revivification: When a creature within 30 feet of you would drop to O Hit Points, you can take a Reaction to expend a use of your Rage to instead change the target's Hit Points to a number equal to your Barbarian level.
+			Revivification: When a creature within 30 feet of you would drop to 0 Hit Points, you can take a Reaction to expend a use of your Rage to instead change the target's Hit Points to a number equal to your Barbarian level.
 			</description>
 		</sheet>
 	</element>

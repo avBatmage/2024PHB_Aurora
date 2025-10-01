@@ -149,8 +149,9 @@
 	<element name="Expertise" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_ROGUE_EXPERTISE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_EXPERTISE</requirements>
 		<description>
-			<p> At 1st level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</p>
-			<p> At 6th level, you can choose two more of your skill proficiencies to gain this benefit. </p>
+			<p><b>1st-level Rogue Feature</b></p>
+			<p>Choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</p>
+			<p>At 6th level, you can choose two more of your skill proficiencies to gain this benefit.</p>
 		</description>
 		<sheet display="false">
 			<description>Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</description>
@@ -163,9 +164,10 @@
 	<element name="Sneak Attack" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_ROGUE_SNEAKATTACK">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_SNEAK_ATTACK</requirements>
 		<description>
-			<p>Beginning at 1st level, you know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.</p>
+			<p><b>1st-level Rogue Feature</b></p>
+			<p>You know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal extra damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.</p>
 			<p class="indent">You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll.</p>
-			<p class="indent">The amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table.</p>
+			<p class="indent">The amount of extra damage increases as you gain Rogue levels, as shown in the Sneak Attack column of the Rogue table.</p>
 		</description>
 		<sheet>
 			<description>Once per turn, you can deal an extra {{sneak-attack:count}}d{{sneak-attack:die}} damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.
@@ -188,6 +190,7 @@
 	<element name="Thieves' Cant" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_ROGUE_THIEVES_CANT">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_THIEVES_CANT</requirements>
 		<description>
+			<p><b>1st-level Rogue Feature</b></p>
 			<p>During your rogue training you learned thieves' cant, a secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation. Only another creature that knows thieves' cant understands such messages. It takes four times longer to convey such a message than it does to speak the same idea plainly.</p>
 			<p>In addition, you understand a set of secret signs and symbols used to convey short, simple messages, such as whether an area is dangerous or the territory of a thieves' guild, whether loot is nearby, or whether the people in an area are easy marks or will provide a safe house for thieves on the run.</p>
 		</description>
@@ -201,6 +204,7 @@
 	</element>
 	<element name="Weapon Mastery" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_ROGUE_WEAPON_MASTERY">
 		<description>
+			<p><b>1st-level Rogue Feature</b></p>
 			<p>Your training with weapons allows you to use the mastery properties of two kinds of weapons of your choice with which you have proficiency, such as Longbows and Shortswords.</p>
 			<p>Whenever you finish a Long Rest, you can change the kinds of weapons you chose. For example, you could switch to using the mastery properties of Scimitars and Longswords.</p>
 		</description>
@@ -214,7 +218,8 @@
 	<element name="Cunning Action" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_ROGUE_CUNNINGACTION">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_CUNNING_ACTION</requirements>
 		<description>
-			<p>Starting at 2nd level, your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action.</p>
+			<p><b>2nd-level Rogue Feature</b></p>
+			<p>Your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action.</p>
 		</description>
 		<sheet>
 			<description>You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action.</description>
@@ -223,6 +228,7 @@
 	<element name="Steady Aim" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_ROGUE_STEADY_AIM">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_STEADY_AIM</requirements>
 		<description>
+			<p><b>3rd-level Rogue Feature</b></p>
 			<p>As a Bonus Action, you give yourself advantage on your next attack roll on the current turn. You can use this feature only if you haven't moved during this turn, and after you use it, your Speed is 0 until the end of the current turn.</p>
 		</description>
 		<sheet>
@@ -232,7 +238,8 @@
 	<element name="Roguish Archetype" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_ROGUE_ROGUISHARCHETYPE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_ROGUISH_ARCHETYPE</requirements>
 		<description>
-			<p>At 3rd level, you choose an archetype that you emulate in the exercise of your rogue abilities. The Thief archetype is detailed here; see the Player's Handbook for other archetypes. Your choice grants you features at 3rd level and then again at 9th, 13th, and 17th level.</p>
+			<p><b>3rd-level Rogue Feature</b></p>
+			<p>You gain a Rogue subclass of your choice. The Arcane Trickster, Assassin, Soulknife, and Thief subclasses are detailed after this class's description. A subclass is a specialization that grants you features at certain Rogue levels. For the rest of your career, you gain each of your subclass's features that are of your Rogue level or lower.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -258,7 +265,8 @@
 	<element name="Uncanny Dodge" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_ROGUE_UNCANNY_DODGE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_UNCANNY_DODGE</requirements>
 		<description>
-			<p>Starting at 5th level, when an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.</p>
+			<p><b>5th-level Rogue Feature</b></p>
+			<p>When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.</p>
 		</description>
 		<sheet action="Reaction">
 			<description>When an attacker that you can see hits you with an attack, you can halve the attack's damage against you.</description>
@@ -308,7 +316,8 @@
 	<element name="Evasion" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_ROGUE_EVASION">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_EVASION</requirements>
 		<description>
-			<p>Beginning at 7th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or an ice storm spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
+			<p><b>7th-level Rogue Feature</b></p>
+			<p>You can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or an ice storm spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
 		</description>
 		<sheet>
 			<description>When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</description>
@@ -317,7 +326,8 @@
 	<element name="Reliable Talent" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_ROGUE_RELIABLETALENT">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_RELIABLE_TALENT</requirements>
 		<description>
-			<p>By 7th level, you have refined your chosen skills until they approach perfection. Whenever you make an ability check that uses one of your skill or tool proficiencies, you can treat a d20 roll of 9 or lower as a 10</p>
+			<p><b>7th-level Rogue Feature</b></p>
+			<p>Whenever you make an ability check that uses one of your skill or tool proficiencies, you can treat a d20 roll of 9 or lower as a 10.</p>
 		</description>
 		<sheet>
 			<description>Whenever you make an ability check that uses one of your skill or tool proficiencies, you can treat a d20 roll of 9 or lower as a 10</description>
@@ -326,20 +336,21 @@
 	<element name="Improved Cunning Strike" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_ROGUE_IMPROVEDCUNNINGSTRIKE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_IMPROVEDCUNNINGSTRIKE</requirements>
 		<description>
-			<p>Starting at 11th level, You can use up to two Cunning Strike effects when you deal Sneak Attack damage, paying the die cost for each effect.</p>
+			<p><b>11th-level Rogue Feature</b></p>
+			<p>You can use up to two Cunning Strike effects when you deal Sneak Attack damage, paying the die cost for each effect.</p>
 		</description>
 		<sheet display="false" />
 	</element>
 	<element name="Devious Strikes" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_ROGUE_DEVIOUSSTRIKES">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_DEVIOUSSTRIKES</requirements>
 		<description>
-			<p>Starting at 14th level, You've practiced new ways to use your Sneak Attack deviously. The following effects are now among your Cunning Strike options.
-
-				Daze (Cost: 2d6). The target must succeed on a Constitution saving throw, or on its next turn, it can do only one of the following: move or take an action or a Bonus Action.
-
-				Knock Out (Cost: 6d6). The target must succeed on a Constitution saving throw, or it has the Unconscious condition for 1 minute or until it takes any damage. The Unconscious target repeats the save at the end of each of its turns, ending the effect on itself on a success.
-
-				Obscure (Cost: 3d6). The target must succeed on a Dexterity saving throw, or it has the Blinded condition until the end of its next turn.</p>
+			<p><b>14th-level Rogue Feature</b></p>
+			<p>You've practiced new ways to use your Sneak Attack deviously. The following effects are now among your Cunning Strike options:</p>
+			<ul>
+				<li><b>Daze (Cost: 2d6)</b>: The target must succeed on a Constitution saving throw, or on its next turn, it can do only one of the following: move or take an action or a Bonus Action.</li>
+				<li><b>Knock Out (Cost: 6d6)</b>: The target must succeed on a Constitution saving throw, or it has the Unconscious condition for 1 minute or until it takes any damage. The Unconscious target repeats the save at the end of each of its turns, ending the effect on itself on a success.</li>
+				<li><b>Obscure (Cost: 3d6)</b>: The target must succeed on a Dexterity saving throw, or it has the Blinded condition until the end of its next turn.</li>
+			</ul>
 		</description>
 		<sheet>
 			<description>The following effects are now among your Cunning Strike options.</description>
@@ -371,7 +382,8 @@
 	<element name="Slippery Mind" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_ROGUE_SLIPPERYMIND">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_SLIPPERY_MIND</requirements>
 		<description>
-			<p>By 15th level, your cunning mind is exceptionally difficult to control. You gain proficiency in Wisdom and Charisma saving throws.</p>
+			<p><b>15th-level Rogue Feature</b></p>
+			<p>Your cunning mind is exceptionally difficult to control. You gain proficiency in Wisdom and Charisma saving throws.</p>
 		</description>
 		<sheet display="false">
 			<description>You have acquired greater mental strength. You gain proficiency in Wisdom and Charisma saving throws.</description>
@@ -384,7 +396,8 @@
 	<element name="Elusive" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_ROGUE_ELUSIVE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_ELUSIVE</requirements>
 		<description>
-			<p>Beginning at 18th level, you are so evasive that attackers rarely gain the upper hand against you. No attack roll has advantage against you while you aren't incapacitated.</p>
+			<p><b>18th-level Rogue Feature</b></p>
+			<p>You are so evasive that attackers rarely gain the upper hand against you. No attack roll has advantage against you while you aren't incapacitated.</p>
 		</description>
 		<sheet>
 			<description>No attack roll has advantage against you while you aren't incapacitated.</description>
@@ -393,6 +406,7 @@
 	<element name="Stroke of Luck" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_ROGUE_STROKEOFLUCK">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_STROKE_OF_LUCK</requirements>
 		<description>
+			<p><b>20th-level Rogue Feature</b></p>
 			<p>You have an uncanny knack for succeeding when you need to. If you fail a d20 Test, you can turn the roll into a 20.</p>
 			<p>Once you use this feature, you can't use it again until you finish a Short Rest or a Long Rest.</p>
 		</description>
@@ -419,6 +433,7 @@
 	</element>
 	<element name="Spellcasting" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_ROGUE_ARCANE_TRICKSTER_SPELLCASTING">
 		<description>
+			<p><b>3rd-level Arcane Trickster Feature</b></p>
 			<p>You have learned to cast spells. See the Player's Handbook for the rules on spellcasting. The information below details how you use those rules as an Arcane Trickster.</p>
 			<p><strong>Cantrips</strong>. You know three cantrips: Mage Hand and two other cantrips of your choice from the Wizard spell list.</p>
 			<p>Whenever you gain a Rogue level, you can replace one of your cantrips, except Mage Hand, with another cantrip of your choice from the Wizard spell list.</p>
@@ -490,6 +505,7 @@
 	</element>
 	<element name="Mage Hand Legerdemain" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_ROGUE_ARCANE_TRICKSTER_MAGE_HAND_LEGERDEMAIN">
 		<description>
+			<p><b>3rd-level Arcane Trickster Feature</b></p>
 			<p>When you cast Mage Hand, you can cast it as a Bonus Action, and you can make the spectral hand invisible. You can control the hand as a Bonus Action, and through it, you can make Dexterity (Sleight of Hand) checks.</p>
 		</description>
 		<sheet action="Bonus Action">
@@ -498,6 +514,7 @@
 	</element>
 	<element name="Magical Ambush" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_ROGUE_ARCANE_TRICKSTER_MAGICAL_AMBUSH">
 		<description>
+			<p><b>9th-level Arcane Trickster Feature</b></p>
 			<p>If you have the Invisible condition when you cast a spell on a creature, it has Disadvantage on any saving throw it makes against the spell on the same turn.</p>
 		</description>
 		<sheet>
@@ -506,6 +523,7 @@
 	</element>
 	<element name="Versatile Trickster" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_ROGUE_ARCANE_TRICKSTER_VERSATILE_TRICKSTER">
 		<description>
+			<p><b>13th-level Arcane Trickster Feature</b></p>
 			<p>You gain the ability to distract targets with your Mage Hand. When you use the Trip option of your Cunning Strike on a creature, you can also use that option on another creature within 5 feet of the spectral hand.</p>
 		</description>
 		<sheet>
@@ -514,6 +532,7 @@
 	</element>
 	<element name="Spell Thief" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_ROGUE_ARCANE_TRICKSTER_SPELL_THIEF">
 		<description>
+			<p><b>17th-level Arcane Trickster Feature</b></p>
 			<p>You gain the ability to magically steal the knowledge of how to cast a spell from another spellcaster.</p>
 			<p>Immediately after a creature casts a spell that targets you or includes you in its area of effect, you can take a Reaction to force the creature to make a saving throw with its spellcasting ability modifier. The DC equals your Spell Save DC. On a failed save, you negate the spell's effect against you, and you steal the knowledge of the spell if it is at least 1st level and of a level you can cast (it doesn't need to be an Wizard spell). For the next 8 hours, you know the spell and can cast it using your spell slots. The creature can't cast that spell until the 8 hours have passed.</p>
 			<p>Once you use this feature, you can't use it again until you finish a Long Rest.</p>
@@ -539,6 +558,7 @@
 	</element>
 	<element name="Assassinate" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_ROGUE_ASSASSIN_ASSASSINATE">
 		<description>
+			<p><b>3rd-level Assassin Feature</b></p>
 			<p>You are adept at getting the drop on a target, granting you the following benefits:</p>
 			<p><strong>Initiative</strong>. You have Advantage on Initiative rolls.</p>
 			<p><strong>Surprising Strikes</strong>. During the first round of each combat, you have Advantage on attack rolls against any creature that hasn't taken a turn. If your Sneak Attack hits any target during that round, the target takes extra damage of the weapon's type equal to your Rogue level.</p>
@@ -552,6 +572,7 @@
 	</element>
 	<element name="Assassin's Tools" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_ROGUE_ASSASSIN_ASSASSIN_TOOLS">
 		<description>
+			<p><b>3rd-level Assassin Feature</b></p>
 			<p>You gain proficiency with the Disguise Kit and Poisoner's Kit, along with the two physical kits.</p>
 		</description>
 		<sheet>
@@ -564,6 +585,7 @@
 	</element>
 	<element name="Infiltration Expertise" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_ROGUE_ASSASSIN_INFILTRATION_EXPERTISE">
 		<description>
+			<p><b>9th-level Assassin Feature</b></p>
 			<p>You are expert at posing as someone else to aid your infiltrations. While in a disguise created using your Disguise Kit, you have Advantage on any Charisma (Deception) check you make while pretending to be someone else. You can also unerringly mimic another person's speech, handwriting, or both if you have spent at least one hour studying each one.</p>
 		</description>
 		<sheet>
@@ -572,6 +594,7 @@
 	</element>
 	<element name="Envenom Weapons" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_ROGUE_ASSASSIN_ENVENOM_WEAPONS">
 		<description>
+			<p><b>13th-level Assassin Feature</b></p>
 			<p>When you use the Poison option of your Cunning Strike, the target also takes 2d6 Poison damage whenever it fails the saving throw. This damage ignores resistance to Poison damage.</p>
 		</description>
 		<sheet>
@@ -580,6 +603,7 @@
 	</element>
 	<element name="Death Strike" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_ROGUE_ASSASSIN_DEATH_STRIKE">
 		<description>
+			<p><b>17th-level Assassin Feature</b></p>
 			<p>When you hit with your Sneak Attack on the first round of a combat, the target must succeed on a Constitution saving throw (DC 8 + your Dexterity modifier + your Proficiency Bonus), or the attack's damage is doubled against the target.</p>
 		</description>
 		<sheet>
@@ -603,6 +627,7 @@
 	</element>
 	<element name="Fast Hands" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_ROGUE_THIEF_FAST_HANDS">
 		<description>
+			<p><b>3rd-level Thief Feature</b></p>
 			<p>As a Bonus Action, you can do one of the following.</p>
 			<p><strong>Sleight of Hand</strong>. Make a Dexterity (Sleight of Hand) check to pick a lock or disarm a trap with Thieves' Tools or to pick a pocket.</p>
 			<p><strong>Use an Object</strong>. Take the Utilize action, or take the Magic action to use a magic item that requires that action.</p>
@@ -613,6 +638,7 @@
 	</element>
 	<element name="Second-Story Work" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_ROGUE_THIEF_SECOND_STORY_WORK">
 		<description>
+			<p><b>3rd-level Thief Feature</b></p>
 			<p>You have trained to reach especially hard-to-reach places, granting you these benefits.</p>
 			<p><strong>Climber</strong>. You gain a Climb Speed equal to your Speed.</p>
 			<p><strong>Jumper</strong>. You can determine your jump distance using your Dexterity rather than your Strength.</p>
@@ -626,6 +652,7 @@
 	</element>
 	<element name="Supreme Sneak" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_ROGUE_THIEF_SUPREME_SNEAK">
 		<description>
+			<p><b>9th-level Thief Feature</b></p>
 			<p>You gain the following Cunning Strike option.</p>
 			<p><strong>Stealth Attack (Cost: 1d6)</strong>. If you have the Hide action's Invisible condition, this attack doesn't end that condition on you if you end the turn behind Three-Quarters Cover or Total Cover.</p>
 		</description>
@@ -644,6 +671,7 @@
 	</element>
 	<element name="Use Magic Device" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_ROGUE_THIEF_USE_MAGIC_DEVICE">
 		<description>
+			<p><b>13th-level Thief Feature</b></p>
 			<p>You have learned how to maximize use of magic items, granting you the following benefits.</p>
 			<p><strong>Attunement</strong>. You can attune to up to four magic items at once.</p>
 			<p><strong>Charges</strong>. Whenever you use a magic item property that expends charges, roll 1d6. On a roll of 6, you use the property without expending the charges.</p>
@@ -658,6 +686,7 @@
 	</element>
 	<element name="Thief's Reflexes" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_ROGUE_THIEF_THIEF_REFLEXES">
 		<description>
+			<p><b>17th-level Thief Feature</b></p>
 			<p>You are adept at laying ambushes and quickly escaping danger. You can take two turns during the first round of any combat. You take your first turn at your normal Initiative and your second turn at your Initiative minus 10.</p>
 		</description>
 		<sheet>

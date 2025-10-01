@@ -142,7 +142,7 @@
 	</element>
 	<element name="Martial Arts" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_MONK_MARTIAL_ARTS">
 		<description>
-			<p><em>1st-Level Feature</em></p>
+			<p><em>1st-level Monk feature</em></p>
 			<p>Your practice of martial arts gives you mastery of combat styles that use your Unarmed Strike and Monk Weapons, which are the following:</p>
 			<ul>
 				<li>Simple Melee weapons</li>
@@ -170,7 +170,7 @@
 	</element>
 	<element name="Unarmored Defense" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_MONK_UNARMORED_DEFENSE">
 		<description>
-			<p><em>1st-Level Feature</em></p>
+			<p><em>1st-level Monk feature</em></p>
 			<p>While you aren't wearing armor or wielding a Shield, your base Armor Class equals 10 plus your Dexterity and Wisdom modifiers.</p>
 		</description>
 		<sheet>
@@ -188,7 +188,7 @@
 	</element>
 	<element name="Monk's Focus" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_MONK_MONKS_FOCUS">
 		<description>
-			<p><em>2nd-Level Feature</em></p>
+			<p><em>2nd-level Monk feature</em></p>
 			<p>Your focus and martial training allow you to harness a well of extraordinary energy within yourself. This energy is represented by Focus Points. Your Monk level determines the number of points you have, as shown in the Focus Points column of the Monk Features table.</p>
 			<p>You can expend these points to enhance or fuel certain Monk features. You start knowing three such features: Flurry of Blows, Patient Defense, and Step of the Wind, each of which is detailed below.</p>
 			<p>When you expend a Focus Point, it is unavailable until you finish a Short or Long Rest, at the end of which you regain all your expended points.</p>
@@ -236,7 +236,7 @@
 	</element>
 	<element name="Unarmored Movement" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_MONK_UNARMORED_MOVEMENT">
 		<description>
-			<p><em>2nd-Level Feature</em></p>
+			<p><em>2nd-level Monk feature</em></p>
 			<p>Your Speed increases by 10 feet while you aren't wearing armor or wielding a Shield. This bonus increases when you reach certain Monk levels, as shown in the Unarmored Movement column of the Monk Features table.</p>
 		</description>
 		<sheet>
@@ -253,7 +253,7 @@
 	</element>
 	<element name="Uncanny Metabolism" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_MONK_UNCANNY_METABOLISM">
 		<description>
-			<p><em>2nd-Level Feature</em></p>
+			<p><em>2nd-level Monk feature</em></p>
 			<p>When you roll Initiative, you can regain all expended Focus Points. When you do so, roll your Martial Arts die, and regain a number of Hit Points equal to your Monk level plus the number rolled.</p>
 			<p>Once you use this feature, you can't use it again until you finish a Long Rest.</p>
 		</description>
@@ -263,7 +263,7 @@
 	</element>
 	<element name="Deflect Attacks" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_MONK_DEFLECT_ATTACKS">
 		<description>
-			<p><em>3rd-Level Feature</em></p>
+			<p><em>3rd-level Monk feature</em></p>
 			<p>You can use your Reaction to deflect melee and ranged attacks against you that deal Bludgeoning, Piercing, or Slashing damage. When you do so, the total damage you take from the attack is reduced by 1d10 plus your Dexterity modifier plus your Monk level.</p>
 			<p>If you reduce the damage to 0, you can spend 1 Focus Point to redirect some of the attack's force. If you do so, choose a creature within 5 feet of you if the attack was a melee attack or 60 feet of yourself that isn't behind Total Cover if the attack was a ranged attack. That creature must succeed on a Dexterity saving throw or take damage equal to two rolls of your Martial Arts die plus your Dexterity modifier. The damage is the same type dealt by the attack.</p>
 		</description>
@@ -278,7 +278,7 @@
 	</element>
 	<element name="Monk Subclass" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_MONK_MONK_SUBCLASS">
 		<description>
-			<p><em>3rd-Level Feature</em></p>
+			<p><em>3rd-level Monk feature</em></p>
 			<p>You choose a Monk subclass, which represents the path your Monk follows. You gain a subclass feature at 3rd level and again at 6th, 11th, and 17th level.</p>
 		</description>
 		<sheet display="false" />
@@ -288,7 +288,7 @@
 	</element>
 	<element name="Ability Score Improvement" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_MONK_ABILITY_SCORE_IMPROVEMENT">
 		<description>
-			<p><em>4th-Level Feature</em></p>
+			<p><em>4th-level Monk feature</em></p>
 			<p>When you reach 4th level, and again at 8th, 12th, and 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
 		</description>
 		<sheet display="false" />
@@ -302,7 +302,7 @@
 	</element>
 	<element name="Slow Fall" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_MONK_SLOW_FALL">
 		<description>
-			<p><em>4th-Level Feature</em></p>
+			<p><em>4th-level Monk feature</em></p>
 			<p>You can use your Reaction when you fall to reduce any falling damage you take by an amount equal to five times your Monk level.</p>
 		</description>
 		<sheet usage="Reaction">
@@ -318,7 +318,7 @@
 	</element>
 	<element name="Extra Attack" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_MONK_EXTRA_ATTACK">
 		<description>
-			<p><em>5th-Level Feature</em></p>
+			<p><em>5th-level Monk feature</em></p>
 			<p>You can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
 		</description>
 		<sheet>
@@ -330,7 +330,7 @@
 	</element>
 	<element name="Stunning Strike" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_MONK_STUNNING_STRIKE">
 		<description>
-			<p><em>5th-Level Feature</em></p>
+			<p><em>5th-level Monk feature</em></p>
 			<p>Once per turn when you hit a creature with a Monk weapon or an Unarmed Strike, you can expend 1 Focus Point to attempt a stunning strike. The target must make a Constitution saving throw. On a failed save, the target has the Stunned condition until the start of your next turn. On a successful save, the target's Speed is halved until the start of your next turn, and the next attack roll made against the target before then has Advantage.</p>
 		</description>
 		<sheet usage="1 Focus Point">
@@ -339,7 +339,7 @@
 	</element>
 	<element name="Empowered Strikes" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_MONK_EMPOWERED_STRIKES">
 		<description>
-			<p><em>6th-Level Feature</em></p>
+			<p><em>6th-level Monk feature</em></p>
 			<p>Whenever you deal damage with your Unarmed Strike, it can deal your choice of Force damage or its normal damage type.</p>
 		</description>
 		<sheet>
@@ -348,7 +348,7 @@
 	</element>
 	<element name="Evasion" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_MONK_EVASION">
 		<description>
-			<p><em>7th-Level Feature</em></p>
+			<p><em>7th-level Monk feature</em></p>
 			<p>When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
 		</description>
 		<sheet>
@@ -357,7 +357,7 @@
 	</element>
 	<element name="Acrobatic Movement" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_MONK_ACROBATIC_MOVEMENT">
 		<description>
-			<p><em>9th-Level Feature</em></p>
+			<p><em>9th-level Monk feature</em></p>
 			<p>While you aren't wearing armour or wielding a Shield, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the movement.</p>
 		</description>
 		<sheet>
@@ -366,7 +366,7 @@
 	</element>
 	<element name="Heightened Focus" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_MONK_HEIGHTENED_FOCUS">
 		<description>
-			<p><em>10th-Level Feature</em></p>
+			<p><em>10th-level Monk feature</em></p>
 			<p>Your training has pushed your body and mind to new levels. Your Flurry of Blows, Patient Defence, and Step of the Wind gain the following benefits:</p>
 			<p><strong>Flurry of Blows.</strong> You can spend 1 Focus Point to use Flurry of Blows and make three Unarmed Strikes with it instead of two.</p>
 			<p><strong>Patient Defence.</strong> When you spend a Focus Point to use Patient Defence, you gain a number of Temporary Hit Points equal to two rolls of your Martial Arts die.</p>
@@ -378,7 +378,7 @@
 	</element>
 	<element name="Self-Restoration" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_MONK_SELF_RESTORATION">
 		<description>
-			<p><em>10th-Level Feature</em></p>
+			<p><em>10th-level Monk feature</em></p>
 			<p>Through sheer force of will, you can remove one of the following conditions from yourself at the end of each of your turns: Charmed, Frightened, or Poisoned.</p>
 			<p>In addition, forgoing food and drink doesn't give you levels of Exhaustion.</p>
 		</description>
@@ -388,7 +388,7 @@
 	</element>
 	<element name="Deflect Energy" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_MONK_DEFLECT_ENERGY">
 		<description>
-			<p><em>13th-Level Feature</em></p>
+			<p><em>13th-level Monk feature</em></p>
 			<p>You can now use your Deflect Attacks feature against attacks that deal any damage type, not just Bludgeoning, Piercing, or Slashing.</p>
 		</description>
 		<sheet>
@@ -397,7 +397,7 @@
 	</element>
 	<element name="Disciplined Survivor" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_MONK_DISCIPLINED_SURVIVOR">
 		<description>
-			<p><em>14th-Level Feature</em></p>
+			<p><em>14th-level Monk feature</em></p>
 			<p>You gain proficiency in all saving throws. Additionally, whenever you make a saving throw and fail, you can spend 1 Focus Point to reroll it and take the second result.</p>
 		</description>
 		<sheet usage="1 Focus Point">
@@ -414,7 +414,7 @@
 	</element>
 	<element name="Perfect Focus" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_MONK_PERFECT_FOCUS">
 		<description>
-			<p><em>15th-Level Feature</em></p>
+			<p><em>15th-level Monk feature</em></p>
 			<p>When you roll Initiative and have 3 Focus Points or fewer, you regain expended Focus Points until you have 4.</p>
 		</description>
 		<sheet>
@@ -423,7 +423,7 @@
 	</element>
 	<element name="Superior Defense" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_MONK_SUPERIOR_DEFENSE">
 		<description>
-			<p><em>18th-Level Feature</em></p>
+			<p><em>18th-level Monk feature</em></p>
 			<p>At the start of your turn, you can expend 3 Focus Points to bolster yourself against harm for 1 minute or until you have the Incapacitated condition. During that time, you have Resistance to all damage except Force damage.</p>
 		</description>
 		<sheet usage="3 Focus Points">
@@ -432,14 +432,14 @@
 	</element>
 	<element name="Epic Boon" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_MONK_EPIC_BOON">
 		<description>
-			<p><em>19th-Level Feature</em></p>
+			<p><em>19th-level Monk feature</em></p>
 			<p>You gain an Epic Boon feat or another feat of your choice for which you qualify. Boon of Irresistible Offense is recommended.</p>
 		</description>
 		<sheet display="false"></sheet>
 	</element>
 	<element name="Body and Mind" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_MONK_BODY_AND_MIND">
 		<description>
-			<p><em>20th-Level Feature</em></p>
+			<p><em>20th-level Monk feature</em></p>
 			<p>You have developed your body and mind to new heights. Your Dexterity and Wisdom scores increase by 4, to a maximum of 25.</p>
 		</description>
 		<sheet>
@@ -453,7 +453,7 @@
 		</rules>
 	</element>
 	
-	<!-- Subclasses -->
+<!-- Subclasses -->
 	<element name="2024 Warrior of Mercy" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_MONK_WARRIOR_OF_MERCY">
 		<supports>Monastic Tradition</supports>
 		<description>
@@ -477,7 +477,7 @@
 	</element>
 	<element name="Hand of Harm" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_HAND_OF_HARM">
 		<description>
-			<p><em>3rd-Level Feature</em></p>
+			<p><em>3rd-level Warrior of Mercy feature</em></p>
 			<p>Once per turn when you hit a creature with an Unarmed Strike and deal damage, you can expend 1 Focus Point to deal extra Necrotic damage equal to one roll of your Martial Arts die plus your Wisdom modifier.</p>
 		</description>
 		<sheet usage="1 Focus Point">
@@ -486,7 +486,7 @@
 	</element>
 	<element name="Hand of Healing" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_HAND_OF_HEALING">
 		<description>
-			<p><em>3rd-Level Feature</em></p>
+			<p><em>3rd-level Warrior of Mercy feature</em></p>
 			<p>As a Magic action, you can expend 1 Focus Point to touch a creature and restore a number of Hit Points equal to a roll of your Martial Arts die plus your Wisdom modifier.</p>
 			<p>When you use your Flurry of Blows, you can replace one of the Unarmed Strikes with a use of this feature without expending a Focus Point for the healing.</p>
 		</description>
@@ -496,7 +496,7 @@
 	</element>
 	<element name="Implements of Mercy" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_IMPLEMENTS_OF_MERCY">
 		<description>
-			<p><em>3rd-Level Feature</em></p>
+			<p><em>3rd-level Warrior of Mercy feature</em></p>
 			<p>You gain proficiency in the Insight and Medicine skills and proficiency with the Herbalism Kit.</p>
 		</description>
 		<sheet>
@@ -510,7 +510,7 @@
 	</element>
 	<element name="Physician's Touch" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_PHYSICIANS_TOUCH">
 		<description>
-			<p><em>6th-Level Feature</em></p>
+			<p><em>6th-level Warrior of Mercy feature</em></p>
 			<p>Your Hand of Harm and Hand of Healing improve, as detailed below.</p>
 			<p><strong>Hand of Harm.</strong> When you use Hand of Harm on a creature, you can also give that creature the Poisoned condition until the end of your next turn.</p>
 			<p><strong>Hand of Healing.</strong> When you use Hand of Healing, you can also end one of the following conditions on the creature you heal: Blinded, Deafened, Paralyzed, Poisoned, or Stunned.</p>
@@ -521,7 +521,7 @@
 	</element>
 	<element name="Flurry of Healing and Harm" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_FLURRY_OF_HEALING_AND_HARM">
 		<description>
-			<p><em>11th-Level Feature</em></p>
+			<p><em>11th-level Warrior of Mercy feature</em></p>
 			<p>When you use Flurry of Blows, you can replace each of the Unarmed Strikes with a use of Hand of Healing without expending Focus Points for the healing.</p>
 			<p>In addition, when you make an Unarmed Strike with Flurry of Blows and deal damage, you can use Hand of Harm with that strike without expending a Focus Point for Hand of Harm. You can still use Hand of Harm only once per turn.</p>
 			<p>You can use these benefits a total number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a Long Rest.</p>
@@ -532,7 +532,7 @@
 	</element>
 	<element name="Hand of Ultimate Mercy" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_HAND_OF_ULTIMATE_MERCY">
 		<description>
-			<p><em>17th-Level Feature</em></p>
+			<p><em>17th-level Warrior of Mercy feature</em></p>
 			<p>Your mastery of life energy opens the door to the ultimate mercy. As a Magic action, you can touch the corpse of a creature that died within the past 24 hours and expend 5 Focus Points. The creature then returns to life with a number of Hit Points equal to 4d10 plus your Wisdom modifier. If the creature died with any of the following conditions, the creature revives with the conditions removed: Blinded, Deafened, Paralyzed, Poisoned, and Stunned.</p>
 			<p>Once you use this feature, you can't use it again until you finish a Long Rest.</p>
 		</description>
@@ -540,7 +540,7 @@
 			<description>You can expend 5 focus points and touch a corpse that died within 24 hours to return it to life with 4d10+{{wisdom:modifier}} Hit Points, removing certain conditions.</description>
 		</sheet>
 	</element>
-
+	
 	<element name="2024 Warrior of Shadow" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_MONK_WARRIOR_OF_SHADOW">
 		<supports>Monastic Tradition</supports>
 		<description>
@@ -560,7 +560,7 @@
 	</element>
 	<element name="Shadow Arts" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_SHADOW_ARTS">
 		<description>
-			<p><em>3rd-Level Feature</em></p>
+			<p><em>3rd-level Warrior of Shadow feature</em></p>
 			<p>You have learned to draw on the power of the Shadowfell, gaining the following benefits:</p>
 			<p><strong>Darkness.</strong> You can expend 1 Focus Point to cast the Darkness spell without spell components. You can see within the spell's area when you cast it with this feature. While the spell persists, you can move its area of darkness to a space within 60 feet of you at the start of each of your turns.</p>
 			<p><strong>Darkvision.</strong> You gain Darkvision with a range of 60 feet. If you already have Darkvision, its range increases by 60 feet.</p>
@@ -578,7 +578,7 @@
 	</element>
 	<element name="Shadow Step" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_SHADOW_STEP">
 		<description>
-			<p><em>6th-Level Feature</em></p>
+			<p><em>6th-level Warrior of Shadow feature</em></p>
 			<p>While entirely within Dim Light or Darkness, you can use a Bonus Action to teleport up to 60 feet to an unoccupied space you can see that is also in Dim Light or Darkness. You then have Advantage on the next melee attack you make before the end of the turn.</p>
 		</description>
 		<sheet action="Bonus Action">
@@ -587,7 +587,7 @@
 	</element>
 	<element name="Improved Shadow Step" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_IMPROVED_SHADOW_STEP">
 		<description>
-			<p><em>11th-Level Feature</em></p>
+			<p><em>11th-level Warrior of Shadow feature</em></p>
 			<p>You can draw on your connection to shadow to empower your teleportation. When you use your Shadow Step, you can spend 1 Focus Point to remove the requirement that you must start and end in Dim Light or Darkness for that use of the feature. As part of this Bonus Action, you can make an Unarmed Strike immediately after the teleportation.</p>
 		</description>
 		<sheet>
@@ -596,7 +596,7 @@
 	</element>
 	<element name="Cloak of Shadows" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CLOAK_OF_SHADOWS">
 		<description>
-			<p><em>17th-Level Feature</em></p>
+			<p><em>17th-level Warrior of Shadow feature</em></p>
 			<p>As a Magic action while entirely within Dim Light or Darkness, you can spend 3 Focus Points to shroud yourself with shadows for 1 minute, until you have the Incapacitated condition, or until you end your turn in Bright Light. While shrouded by these shadows, you gain the following benefits:</p>
 			<p><strong>Invisibility.</strong> You have the Invisible condition.</p>
 			<p><strong>Partially Incorporeal.</strong> You can move through occupied spaces as if they were Difficult Terrain. If you end your turn in such a space, you are shunted to the last unoccupied space you were in.</p>
@@ -628,7 +628,7 @@
 	</element>
 	<element name="Elemental Attunement" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_ELEMENTAL_ATTUNEMENT">
 		<description>
-			<p><em>3rd-Level Feature</em></p>
+			<p><em>3rd-level Warrior of the Elements feature</em></p>
 			<p>At the start of your turn, you can spend 1 Focus Point to imbue yourself with elemental energy. The energy lasts for 10 minutes or until you have the Incapacitated condition. You gain the following benefits for the duration:</p>
 			<p><strong>Elemental Strikes.</strong> Whenever you hit with your Unarmed Strike, you can cause it to deal your choice of Acid, Cold, Fire, or Lightning damage rather than its normal damage type. When you deal one of these types with your Unarmed Strike, you can also force the target to make a Strength saving throw. On a failed save, you can move the target up to 10 feet toward or away from you, as elemental energy swirls around it.</p>
 			<p><strong>Reach.</strong> When you make an Unarmed Strike, your reach is 10 feet greater than normal, as elemental energy extends from you.</p>
@@ -639,7 +639,7 @@
 	</element>
 	<element name="Manipulate Elements" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_MANIPULATE_ELEMENTS">
 		<description>
-			<p><em>3rd-Level Feature</em></p>
+			<p><em>3rd-level Warrior of the Elements feature</em></p>
 			<p>You have attuned yourself with the elemental forces of the multiverse. You know the Elementalism cantrip.</p>
 		</description>
 		<sheet>
@@ -648,7 +648,7 @@
 	</element>
 	<element name="Elemental Burst" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_ELEMENTAL_BURST">
 		<description>
-			<p><em>6th-Level Feature</em></p>
+			<p><em>6th-level Warrior of the Elements feature</em></p>
 			<p>As a Magic action, you can spend 2 Focus Points to cause environmental energy to burst in a 20-foot-radius sphere centered on a point within 120 feet of yourself. Choose a damage type: Acid, Cold, Fire, or Lightning.</p>
 			<p>Each creature in the sphere must make a Dexterity saving throw. On a failed save, a creature takes damage of the chosen type equal to three rolls of your Martial Arts die. On a successful save, a creature takes half as much damage.</p>
 			<p>Before or after you take this action, you can make one Unarmed Strike as a Bonus Action.</p>
@@ -659,7 +659,7 @@
 	</element>
 	<element name="Stride of the Elements" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_STRIDE_OF_THE_ELEMENTS">
 		<description>
-			<p><em>11th-Level Feature</em></p>
+			<p><em>11th-level Warrior of the Elements feature</em></p>
 			<p>When you use your Elemental Attunement feature, you gain a Fly Speed and Swim Speed equal to your Speed for 10 minutes.</p>
 		</description>
 		<sheet>
@@ -668,7 +668,7 @@
 	</element>
 	<element name="Elemental Epitome" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_ELEMENTAL_EPITOME">
 		<description>
-			<p><em>17th-Level Feature</em></p>
+			<p><em>17th-level Warrior of the Elements feature</em></p>
 			<p>When you use the Elemental Attunement feature, you also gain the following benefits for the duration:</p>
 			<p><strong>Damage Resistance.</strong> You gain resistance to one of the following damage types of your choice: Acid, Cold, Fire, or Lightning. At the start of each of your turns, you can change this choice.</p>
 			<p><strong>Destructive Stride.</strong> When you use your Step of the Wind, your Speed increases by 20 feet until the end of the turn. For that duration, any creature of your choice takes damage equal to one roll of your Martial Arts die when you enter a space within 5 feet of it. The damage is the same type you chose for this feature's damage resistance. A creature can take this damage only once per turn.</p>
@@ -698,7 +698,7 @@
 	</element>
 	<element name="Open Hand Technique" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_OPEN_HAND_TECHNIQUE">
 		<description>
-			<p><em>3rd-Level Feature</em></p>
+			<p><em>3rd-level Warrior of the Open Hand feature</em></p>
 			<p>Whenever you hit a creature with an attack granted by your Flurry of Blows, you can impose one of the following effects on that target.</p>
 			<p><strong>Addle.</strong> The target can't make Opportunity Attacks until the start of its next turn.</p>
 			<p><strong>Push.</strong> The target must succeed on a Strength saving throw or be pushed up to 15 feet away from you.</p>
@@ -710,7 +710,7 @@
 	</element>
 	<element name="Wholeness of Body" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_WHOLENESS_OF_BODY">
 		<description>
-			<p><em>6th-Level Feature</em></p>
+			<p><em>6th-level Warrior of the Open Hand feature</em></p>
 			<p>You gain the ability to heal yourself. As a Bonus Action, you can roll your Martial Arts die. You regain a number of Hit Points equal to the number rolled plus your Wisdom modifier (minimum of 1 Hit Point regained).</p>
 			<p>You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
 		</description>
@@ -720,7 +720,7 @@
 	</element>
 	<element name="Fleet Step" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_FLEET_STEP">
 		<description>
-			<p><em>11th-Level Feature</em></p>
+			<p><em>11th-level Warrior of the Open Hand feature</em></p>
 			<p>When you take a Bonus Action other than Step of the Wind, you can also use Step of the Wind immediately after that Bonus Action.</p>
 		</description>
 		<sheet>
@@ -729,7 +729,7 @@
 	</element>
 	<element name="Quivering Palm" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_QUIVERING_PALM">
 		<description>
-			<p><em>17th-Level Feature</em></p>
+			<p><em>17th-level Warrior of the Open Hand feature</em></p>
 			<p>You gain the ability to set up lethal vibrations in someone's body. When you hit a creature with an Unarmed Strike, you can expend 4 Focus Points to start these imperceptible vibrations, which last for a number of days equal to your Monk level. The vibrations are harmless unless you take an action to end them. Alternatively, when you take the Attack action on your turn, you can forgo one of the attacks to end the vibrations. To end them, you and the target must be on the same plane of existence. When you end them, the target must make a Constitution saving throw, taking 10d12 Force damage on a failed save or half as much damage on a successful one.</p>
 			<p>You can have only one creature under the effect of this feature at a time. You can end the vibrations harmlessly (no action required).</p>
 		</description>

@@ -146,6 +146,7 @@
 	<element name="Lay on Hands" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_LAY_ON_HANDS">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_LAY_ON_HANDS</requirements>
 		<description>
+			<p><em>1st-level Paladin feature</em></p>
 			<p>Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you take a Long Rest. With that pool, you can restore a total number of Hit Points equal to five times your Paladin level.</p>
 			<p class="indent">As a Bonus Action, you can touch a creature (which could be yourself) and draw power from the pool of healing to restore a number of Hit Points to that creature, up to the maximum amount remaining in the pool.</p>
 			<p class="indent">You can also expend 5 Hit Points from the pool of healing power to remove the Poisoned condition from the creature; those points don't also restore Hit Points to the creature.</p>
@@ -166,7 +167,8 @@
 	<element name="Spellcasting" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_SPELLCASTING">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_SPELLCASTING</requirements>
 		<description>
-			<p>By 2nd level, You have learned to cast spells through prayer, meditation, and devotion. See the Player's Handbook for the rules on spellcasting. The information below details how you use those rules with Paladin spells.</p>
+			<p><em>1st-level Paladin feature</em></p>
+			<p>You have learned to cast spells through prayer, meditation, and devotion. See the Player's Handbook for the rules on spellcasting. The information below details how you use those rules with Paladin spells.</p>
 			<h5>PREPARING AND CASTING SPELLS</h5>
 			<p>The Paladin Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest.</p>
 			<p class="indent">You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose two level 1 Paladin spells. Heroism and Searing Smite are recommended.</p>
@@ -219,6 +221,7 @@
 	</element>
 	<element name="Weapon Mastery" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_WEAPON_MASTERY">
 		<description>
+			<p><em>1st-level Paladin feature</em></p>
 			<p>Your training with weapons allows you to use the mastery properties of two kinds of weapons of your choice with which you have proficiency, such as Longswords and Javelins.</p>
 			<p>Whenever you finish a Long Rest, you can change the kinds of weapons you chose. For example, you could switch to using the mastery properties of Halberds and Flails.</p>
 		</description>
@@ -232,7 +235,8 @@
 	<element name="Fighting Style" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_FIGHTING_STYLE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_FIGHTING_STYLE</requirements>
 		<description>
-			<p>At 2nd level, you adopt a style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again.</p>
+			<p><em>2nd-level Paladin feature</em></p>
+			<p>You adopt a style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again.</p>
 			<h5 class="caption">DEFENSE</h5>
 			<p>While you are wearing armor, you gain a +1 bonus to AC.</p>
 			<h5 class="caption">DUELING</h5>
@@ -261,7 +265,8 @@
 	<element name="Paladin's Smite" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_PALADINS_SMITE">
 		<requirements>!ID_KBP_DMBD_CLASS_FEATURE_ANTIPALADIN_UNHOLY_SMITE, !ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_DIVINE_SMITE</requirements>
 		<description>
-			<p>Starting at 2nd level, You always have the Divine Smite spell prepared. In addition, you can cast it without expending a spell slot, but you must finish a Long Rest before you can cast it in this way again.</p>
+			<p><em>2nd-level Paladin feature</em></p>
+			<p>You always have the Divine Smite spell prepared. In addition, you can cast it without expending a spell slot, but you must finish a Long Rest before you can cast it in this way again.</p>
 		</description>
 		<sheet usage="1/Long Rest">
 			<description>You always have the Divine Smite spell prepared and you can cast it without expending a spell slot.</description>
@@ -273,7 +278,8 @@
 	</element>
 	<element name="Channel Divinity" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_CHANNEL_DIVINITY">
 		<description>
-			<p>At level 3, You can channel divine energy directly from the Outer Planes, using it to fuel magical effects. You start with one such effect: Divine Sense, which is described below. Other Paladin features give additional Channel Divinity effect options. Each time you use this class's Channel Divinity, you choose which effect from this class to create.</p>
+			<p><em>3rd-level Paladin feature</em></p>
+			<p>You can channel divine energy directly from the Outer Planes, using it to fuel magical effects. You start with one such effect: Divine Sense, which is described below. Other Paladin features give additional Channel Divinity effect options. Each time you use this class's Channel Divinity, you choose which effect from this class to create.</p>
 			<p class="indent">You can use this class's Channel Divinity twice. You regain one of its expended uses when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest. You gain an additional use when you reach Paladin level 11.</p>
 			<p class="indent">If a Channel Divinity effect requires a saving throw, the DC equals the spell save DC from this class's Spellcasting feature.</p>
 		</description>
@@ -297,7 +303,8 @@
 	<element name="Paladin's Subclass" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_PALADIN_SUBCLASS">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_SACRED_OATH</requirements>
 		<description>
-			<p>When you reach 3rd level, you swear the oath that binds you as a paladin forever. Up to this time you have been in a preparatory stage, committed to the path but not yet sworn to it. Now you choose the Oath of Devotion, the Oath of the Ancients, or the Oath of Vengeance, all detailed at the end of the class description.</p>
+			<p><em>3rd-level Paladin feature</em></p>
+			<p>You swear the oath that binds you as a paladin forever. Up to this time you have been in a preparatory stage, committed to the path but not yet sworn to it. Now you choose the Oath of Devotion, the Oath of the Ancients, or the Oath of Vengeance, all detailed at the end of the class description.</p>
 			<p class="indent">Your choice grants you features at 3rd level and again at 7th, 15th, and 20th level. Those features include oath spells and the Channel Divinity feature.</p>
 			<h5 class="caption">OATH SPELLS</h5>
 			<p>Each oath has a list of associated spells. You gain access to these spells at the levels specified in the oath description. Once you gain access to an oath spell, you always have it prepared. Oath spells don't count against the number of spells you can prepare each day.</p>
@@ -332,7 +339,8 @@
 	<element name="Extra Attack" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_EXTRA_ATTACK">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_EXTRA_ATTACK</requirements>
 		<description>
-			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+			<p><em>5th-level Paladin feature</em></p>
+			<p>You can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
 		</description>
 		<sheet>
 			<description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
@@ -343,6 +351,7 @@
 	</element>
 	<element name="Faithfull Steed" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_FAITHFULL_STEED">
 		<description>
+			<p><em>5th-level Paladin feature</em></p>
 			<p>You can call on the aid of an otherworldly steed. You always have the Find Steed spell prepared.</p>
 			<p>You can also cast the spell once without expending a spell slot, and you regain the ability to do so when you finish a Long Rest.</p>
 		</description>
@@ -356,7 +365,8 @@
 	<element name="Aura of Protection" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_AURA_OF_PROTECTION">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_AURA_OF_PROTECTION</requirements>
 		<description>
-			<p>Starting at 6th level, You radiate a protective, unseeable aura in a 10-foot Emanation that originates from you. The aura is inactive while you have the Incapacitated condition.</p>
+			<p><em>6th-level Paladin feature</em></p>
+			<p>You radiate a protective, unseeable aura in a 10-foot Emanation that originates from you. The aura is inactive while you have the Incapacitated condition.</p>
 			<p>You and your allies in the aura gain a bonus to saving throws equal to your Charisma modifier (minimum bonus of +1).</p>
 			<p>If another Paladin is present, a creature can benefit from only one Aura of Protection at a time; the creature chooses which aura while in them.</p>
 			<p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
@@ -373,6 +383,7 @@
 	</element>
 	<element name="Abjure Foes" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_ABJURE_FOES">
 		<description>
+			<p><em>9th-level Paladin feature</em></p>
 			<p>As a Magic action, you can expend one use of this class's Channel Divinity to overwhelm foes with awe. As you present your Holy Symbol or weapon, you can target a number of creatures equal to your Charisma modifier (minimum of one creature) that you can see within 60 feet of yourself.</p>
 			<p>Each target must succeed on a Wisdom saving throw or have the Frightened condition for 1 minute or until it takes any damage. While Frightened in this way, a target can do only one of the following on its turns: move, take an action, or take a Bonus Action.</p>
 		</description>
@@ -385,7 +396,8 @@
 	<element name="Aura of Courage" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_AURA_OF_COURAGE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_AURA_OF_COURAGE</requirements>
 		<description>
-			<p>Starting at 10th level, you and friendly creatures within 10 feet of you can't be frightened while you are conscious.</p>
+			<p><em>10th-level Paladin feature</em></p>
+			<p>You and friendly creatures within 10 feet of you can't be frightened while you are conscious.</p>
 			<p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
 		</description>
 		<sheet>
@@ -399,7 +411,8 @@
 	<element name="Radiant Strikes" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_RADIANT_STRIKES">
 		<requirements>!ID_KBP_DMBD_CLASS_FEATURE_ANTIPALADIN_IMPROVED_UNHOLY_SMITE, !ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_IMPROVED_DIVINE_SMITE</requirements>
 		<description>
-			<p>At 11th level, Your strikes now carry supernatural power. When you hit a target with an attack roll using a Melee weapon or an Unarmed Strike, the target takes an extra 1d8 Radiant damage.</p>
+			<p><em>11th-level Paladin feature</em></p>
+			<p>Your strikes now carry supernatural power. When you hit a target with an attack roll using a Melee weapon or an Unarmed Strike, the target takes an extra 1d8 Radiant damage.</p>
 		</description>
 		<sheet>
 			<description>Whenever you hit a creature with a melee weapon or unarmed attack, the creature takes an extra 1d8 radiant damage.</description>
@@ -407,14 +420,15 @@
 	</element>
 	<element name="Restoring Touch" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_RESTORING_TOUCH">
 		<description>
-			<p>Beginning at 14th level, When you use Lay On Hands on a creature, you can also remove one or more of the following conditions from the creature: Blinded, Charmed, Deafened, Frightened, Paralyzed, or Stunned. You must expend 5 Hit Points from the healing pool of Lay On Hands for each of these conditions you remove; those points don't also restore Hit Points to the creature.</p>
+			<p><em>14th-level Paladin feature</em></p>
+			<p>When you use Lay On Hands on a creature, you can also remove one or more of the following conditions from the creature: Blinded, Charmed, Deafened, Frightened, Paralyzed, or Stunned. You must expend 5 Hit Points from the healing pool of Lay On Hands for each of these conditions you remove; those points don't also restore Hit Points to the creature.</p>
 		</description>
 		<sheet>
 			<description>When you use Lay On Hands on a creature, you can also remove one or more of the following conditions from the creature: Blinded, Charmed, Deafened, Frightened, Paralyzed, or Stunned. You must expend 5 Hit Points from the healing pool of Lay On Hands for each of these conditions you remove; those points don't also restore Hit Points to the creature.</description>
 		</sheet>
 	</element>
 
-	<!--Spells-->
+	<!--Spells
 	<element name="Divine Smite" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_DIVINE_SMITE">
 		<supports>Paladin</supports>
 		<description>
@@ -435,7 +449,7 @@
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
-	</element>
+	</element>-->
 
 
 	<!--Feature Replacement Grants-->
@@ -484,6 +498,7 @@
 	</element>
 	<element name="Oath of Devotion Spells" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_OATH_OF_DEVOTION_SPELLS">
 		<description>
+			<p><em>3rd-level Oath of Devotion feature</em></p>
 			<p>The magic of your oath ensures you always have certain spells ready; when you reach a Paladin level specified in the Oath of Devotion Spells table, you thereafter always have the listed spells prepared.</p>
 			<h5>Oath of Devotion Spells</h5>
 			<table>
@@ -512,7 +527,8 @@
 	</element>
 	<element name="Sacred Weapon" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_SACRED_WEAPON">
 		<description>
-			<p>At level 3, When you take the Attack action, you can expend one use of your Channel Divinity to imbue one Melee weapon that you are holding with positive energy. For 10 minutes or until you use this feature again, you add your Charisma modifier to attack rolls you make with that weapon (minimum bonus of +1), and each time you hit with it, you cause it to deal its normal damage type or Radiant damage.</p>
+			<p><em>3rd-level Oath of Devotion feature</em></p>
+			<p>When you take the Attack action, you can expend one use of your Channel Divinity to imbue one Melee weapon that you are holding with positive energy. For 10 minutes or until you use this feature again, you add your Charisma modifier to attack rolls you make with that weapon (minimum bonus of +1), and each time you hit with it, you cause it to deal its normal damage type or Radiant damage.</p>
 			<p class="indent">The weapon also emits Bright Light in a 20-foot radius and Dim Light 20 feet beyond that.</p>
 			<p class="indent">You can end this effect early (no action required). This effect also ends if you aren't carrying the weapon.</p>
 		</description>
@@ -522,7 +538,8 @@
 	</element>
 	<element name="Aura of Devotion" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_AURA_OF_DEVOTION">
 		<description>
-			<p>At level 7, You and your allies have Immunity to the Charmed condition while in your Aura of Protection. If a Charmed ally enters the aura, that condition has no effect on that ally while there.</p>
+			<p><em>7th-level Oath of Devotion feature</em></p>
+			<p>You and your allies have Immunity to the Charmed condition while in your Aura of Protection. If a Charmed ally enters the aura, that condition has no effect on that ally while there.</p>
 		</description>
 		<sheet>
 			<description>You and your allies have Immunity to the Charmed condition while in your Aura of Protection.</description>
@@ -530,7 +547,8 @@
 	</element>
 	<element name="Smite of Protection" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_SMITE_OF_PROTECTION">
 		<description>
-			<p>At level 15, Your magical smite now radiates protective energy. Whenever you cast <em>Divine Smite</em>, you and your allies have Half Cover while in your Aura of Protection. The aura has this benefit until the start of your next turn.</p>
+			<p><em>15th-level Oath of Devotion feature</em></p>
+			<p>Your magical smite now radiates protective energy. Whenever you cast <em>Divine Smite</em>, you and your allies have Half Cover while in your Aura of Protection. The aura has this benefit until the start of your next turn.</p>
 		</description>
 		<sheet>
 			<description>Whenever you cast Divine Smite, you and your allies have Half Cover while in your Aura of Protection until the start of your next turn.</description>
@@ -538,7 +556,8 @@
 	</element>
 	<element name="Holy Nimbus" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_HOLY_NIMBUS">
 		<description>
-			<p>At level 20, As a Bonus Action, you can imbue your Aura of Protection with holy power, granting the benefits below for 10 minutes or until you end them (no action required). Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a level 5 spell slot (no action required).</p>
+			<p><em>20th-level Oath of Devotion feature</em></p>
+			<p>As a Bonus Action, you can imbue your Aura of Protection with holy power, granting the benefits below for 10 minutes or until you end them (no action required). Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a level 5 spell slot (no action required).</p>
 			<p class="indent"><strong>Holy Ward</strong>. You have Advantage on any saving throw you are forced to make by a Fiend or an Undead.</p>
 			<p class="indent"><strong>Radiant Damage</strong>. Whenever an enemy starts its turn in the aura, that creature takes Radiant damage equal to your Charisma modifier plus your Proficiency Bonus.</p>
 			<p class="indent"><strong>Sunlight.</strong> The aura is filled with Bright Light that is sunlight.</p>
@@ -579,6 +598,7 @@
 	</element>
 	<element name="Oath of Glory Spells" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_OATH_OF_GLORY_SPELLS">
 		<description>
+			<p><em>3rd-level Oath of Glory feature</em></p>
 			<p>The magic of your oath ensures you always have certain spells ready; when you reach a Paladin level specified in the Oath of Glory Spells table, you thereafter always have the listed spells prepared.</p>
 			<h5>Oath of Glory Spells</h5>
 			<table>
@@ -607,7 +627,8 @@
 	</element>
 	<element name="Inspiring Smite" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_INSPIRING_SMITE">
 		<description>
-			<p>At level 3, Immediately after you deal damage to a creature with any of your Paladin's Smite spells, you can expend one use of your Channel Divinity and distribute Temporary Hit Points to creatures of your choice within 30 feet of yourself, which can include you. The total number of Temporary Hit Points equals 2d8 + your Paladin level, divided among the chosen creatures however you like.</p>
+			<p><em>3rd-level Oath of Glory feature</em></p>
+			<p>Immediately after you deal damage to a creature with any of your Paladin's Smite spells, you can expend one use of your Channel Divinity and distribute Temporary Hit Points to creatures of your choice within 30 feet of yourself, which can include you. The total number of Temporary Hit Points equals 2d8 + your Paladin level, divided among the chosen creatures however you like.</p>
 		</description>
 		<sheet usage="Channel Divinity">
 			<description>After dealing damage with a Paladin's Smite spell, distribute 2d8 + Paladin level Temporary Hit Points among creatures within 30 feet.</description>
@@ -615,7 +636,8 @@
 	</element>
 	<element name="Peerless Athlete" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_PEERLESS_ATHLETE">
 		<description>
-			<p>At level 3, As a Bonus Action, you can expend one use of your Channel Divinity to augment your athleticism. For 1 hour, you have Advantage on Strength (Athletics) and Dexterity (Acrobatics) checks; you can carry, push, drag, and lift twice as much weight as normal; and the distance of your long and high jumps increases by 10 feet (this extra distance costs movement as normal).</p>
+			<p><em>3rd-level Oath of Glory feature</em></p>
+			<p>As a Bonus Action, you can expend one use of your Channel Divinity to augment your athleticism. For 1 hour, you have Advantage on Strength (Athletics) and Dexterity (Acrobatics) checks; you can carry, push, drag, and lift twice as much weight as normal; and the distance of your long and high jumps increases by 10 feet (this extra distance costs movement as normal).</p>
 		</description>
 		<sheet action="Bonus Action" usage="Channel Divinity">
 			<description>For 1 hour, gain Advantage on Athletics and Acrobatics checks, double carrying capacity, and increase jump distance by 10 feet.</description>
@@ -623,7 +645,8 @@
 	</element>
 	<element name="Aura of Alacrity" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_AURA_OF_ALACRITY">
 		<description>
-			<p>At level 7, Your Speed increases by 10 feet.</p>
+			<p><em>7th-level Oath of Glory feature</em></p>
+			<p>Your Speed increases by 10 feet.</p>
 			<p class="indent">In addition, whenever an ally enters your Aura of Protection for the first time on a turn or starts their turn here, the ally's Speed increases by 10 feet until the end of their next turn.</p>
 		</description>
 		<sheet>
@@ -632,7 +655,8 @@
 	</element>
 	<element name="Glorious Defense" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_GLORIOUS_DEFENSE">
 		<description>
-			<p>At level 15, You can turn defense into a sudden strike. When you or another creature you can see within 10 feet of you is hit by an attack roll, you can use your Reaction to grant a bonus to the target's AC against that attack, potentially causing it to miss. The bonus equals your Charisma modifier (minimum of +1). If the attack misses, you can make one weapon attack against the attacker as part of this Reaction, provided the attacker is within your weapon's range.</p>
+			<p><em>15th-level Oath of Glory feature</em></p>
+			<p>You can turn defense into a sudden strike. When you or another creature you can see within 10 feet of you is hit by an attack roll, you can use your Reaction to grant a bonus to the target's AC against that attack, potentially causing it to miss. The bonus equals your Charisma modifier (minimum of +1). If the attack misses, you can make one weapon attack against the attacker as part of this Reaction, provided the attacker is within your weapon's range.</p>
 			<p class="indent">You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
 		</description>
 		<sheet action="Reaction" usage="{{charisma:modifier}}/Long Rest">
@@ -645,7 +669,8 @@
 	</element>
 	<element name="Living Legend" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_LIVING_LEGEND">
 		<description>
-			<p>At level 20, You can empower yourself with the legends— whether true or exaggerated—of your great deeds. As a Bonus Action, you gain the following benefits for 1 minute:</p>
+			<p><em>20th-level Oath of Glory feature</em></p>
+			<p>You can empower yourself with the legends— whether true or exaggerated—of your great deeds. As a Bonus Action, you gain the following benefits for 1 minute:</p>
 			<p class="indent"><strong>Charismatic</strong>. You are blessed with an otherworldly presence, gaining Advantage on all Charisma checks.</p>
 			<p class="indent"><strong>Saving Throw Reroll</strong>. If you fail a saving throw, you can use your Reaction to reroll it. You must use this new roll.</p>
 			<p class="indent"><strong>Unerring Strike</strong>. Once on each of your turns when you make an attack roll with a weapon and miss, you can cause that attack to hit instead.</p>
@@ -685,6 +710,7 @@
 	</element>
 	<element name="Oath of the Ancients Spells" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_OATH_OF_THE_ANCIENTS_SPELLS">
 		<description>
+			<p><em>3rd-level Oath of the Ancients feature</em></p>
 			<p>The magic of your oath ensures you always have certain spells ready; when you reach a Paladin level specified in the Oath of the Ancients Spells table, you thereafter always have the listed spells prepared.</p>
 			<h5>Oath of the Ancients Spells</h5>
 			<table>
@@ -713,7 +739,8 @@
 	</element>
 	<element name="Nature's Wrath" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_NATURES_WRATH">
 		<description>
-			<p>At level 3, As an action, you can expend one use of your Channel Divinity to conjure grasping spectral vines around nearby creatures. Each creature of your choice that you can see within 15 feet of you must succeed on a Strength saving throw or have the Restrained condition for 1 minute. A Restrained creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+			<p><em>3rd-level Oath of the Ancients feature</em></p>
+			<p>As an action, you can expend one use of your Channel Divinity to conjure grasping spectral vines around nearby creatures. Each creature of your choice that you can see within 15 feet of you must succeed on a Strength saving throw or have the Restrained condition for 1 minute. A Restrained creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
 		</description>
 		<sheet action="Action" usage="Channel Divinity">
 			<description>Conjure grasping spectral vines around creatures within 15 feet. Creatures must succeed on Strength save or be Restrained for 1 minute. Restrained creatures repeat save at end of each turn.</description>
@@ -721,7 +748,8 @@
 	</element>
 	<element name="Aura of Warding" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_AURA_OF_WARDING">
 		<description>
-			<p>At level 7, Ancient magic lies so heavily upon you that it forms an eldritch ward, blunting energy from beyond the Material Plane; you and your allies have resistance to Necrotic, Psychic, and Radiant damage while in your Aura of Protection.</p>
+			<p><em>7th-level Oath of the Ancients feature</em></p>
+			<p>Ancient magic lies so heavily upon you that it forms an eldritch ward, blunting energy from beyond the Material Plane; you and your allies have resistance to Necrotic, Psychic, and Radiant damage while in your Aura of Protection.</p>
 		</description>
 		<sheet>
 			<description>You and your allies have resistance to Necrotic, Psychic, and Radiant damage while in your Aura of Protection.</description>
@@ -729,7 +757,8 @@
 	</element>
 	<element name="Undying Sentinel" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_UNDYING_SENTINEL">
 		<description>
-			<p>At level 15, When you are reduced to 0 Hit Points and not killed outright, you can choose to drop to 1 Hit Point instead, and you regain a number of Hit Points equal to three times your Paladin level. Once you use this feature, you can't do so again until you finish a Long Rest.</p>
+			<p><em>15th-level Oath of the Ancients feature</em></p>
+			<p>When you are reduced to 0 Hit Points and not killed outright, you can choose to drop to 1 Hit Point instead, and you regain a number of Hit Points equal to three times your Paladin level. Once you use this feature, you can't do so again until you finish a Long Rest.</p>
 			<p class="indent">Additionally, you suffer none of the drawbacks of old age, and you can't be aged magically.</p>
 		</description>
 		<sheet usage="1/Long Rest">
@@ -738,7 +767,8 @@
 	</element>
 	<element name="Elder Champion" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_ELDER_CHAMPION">
 		<description>
-			<p>At level 20, As a Bonus Action, you can imbue your Aura of Protection with primal power, granting the following benefits for 1 minute or until you end them as a Bonus Action:</p>
+			<p><em>20th-level Oath of the Ancients feature</em></p>
+			<p>As a Bonus Action, you can imbue your Aura of Protection with primal power, granting the following benefits for 1 minute or until you end them as a Bonus Action:</p>
 			<p class="indent"><strong>Diminish Defiance</strong>. Enemies in the aura have Disadvantage on saving throws against your spells and Channel Divinity options.</p>
 			<p class="indent"><strong>Regeneration</strong>. At the start of each of your turns, you regain 10 Hit Points.</p>
 			<p class="indent"><strong>Swift Spells</strong>. Whenever you cast a spell that has a casting time of 1 action, you can cast it using a Bonus Action instead.</p>
@@ -778,6 +808,7 @@
 	</element>
 	<element name="Oath of Vengeance Spells" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_OATH_OF_VENGEANCE_SPELLS">
 		<description>
+			<p><em>3rd-level Oath of Vengeance feature</em></p>
 			<p>The magic of your oath ensures you always have certain spells ready; when you reach a Paladin level specified in the Oath of Vengeance Spells table, you thereafter always have the listed spells prepared.</p>
 			<h5>Oath of Vengeance Spells</h5>
 			<table>
@@ -806,7 +837,8 @@
 	</element>
 	<element name="Vow of Enmity" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_VOW_OF_ENMITY">
 		<description>
-			<p>At level 3, As a Bonus Action, you can expend one use of your Channel Divinity to utter a vow of enmity against a creature you can see within 30 feet of yourself. You gain Advantage on attack rolls against the creature for 1 minute.</p>
+			<p><em>3rd-level Oath of Vengeance feature</em></p>
+			<p>As a Bonus Action, you can expend one use of your Channel Divinity to utter a vow of enmity against a creature you can see within 30 feet of yourself. You gain Advantage on attack rolls against the creature for 1 minute.</p>
 			<p class="indent">If the creature drops to 0 Hit Points before the vow ends, you can transfer the vow to a different creature within 30 feet of yourself (no action required). You can make this transfer no more than once per turn.</p>
 		</description>
 		<sheet action="Bonus Action" usage="Channel Divinity">
@@ -815,7 +847,8 @@
 	</element>
 	<element name="Relentless Avenger" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_RELENTLESS_AVENGER">
 		<description>
-			<p>At level 7, Your supernatural focus helps you close off a foe's retreat. When you hit a creature with an Opportunity Attack, you can reduce the creature's Speed to 0, and you can then move up to half your Speed as part of the same Reaction. This movement doesn't provoke Opportunity Attacks.</p>
+			<p><em>7th-level Oath of Vengeance feature</em></p>
+			<p>Your supernatural focus helps you close off a foe's retreat. When you hit a creature with an Opportunity Attack, you can reduce the creature's Speed to 0, and you can then move up to half your Speed as part of the same Reaction. This movement doesn't provoke Opportunity Attacks.</p>
 		</description>
 		<sheet action="Reaction">
 			<description>When you hit with an Opportunity Attack, reduce creature's Speed to 0 and move up to half your Speed without provoking Opportunity Attacks.</description>
@@ -823,7 +856,8 @@
 	</element>
 	<element name="Soul of Vengeance" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_SOUL_OF_VENGEANCE">
 		<description>
-			<p>At level 15, Immediately after a creature under the effect of your Vow of Enmity hits or misses with an attack, you can use your Reaction to make a melee attack against that creature if it's within range.</p>
+			<p><em>15th-level Oath of Vengeance feature</em></p>
+			<p>Immediately after a creature under the effect of your Vow of Enmity hits or misses with an attack, you can use your Reaction to make a melee attack against that creature if it's within range.</p>
 		</description>
 		<sheet action="Reaction">
 			<description>After a creature under Vow of Enmity hits or misses with an attack, make a melee attack against that creature if within range.</description>
@@ -831,7 +865,8 @@
 	</element>
 	<element name="Avenging Angel" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_AVENGING_ANGEL">
 		<description>
-			<p>At level 20, As a Bonus Action, you can imbue your Aura of Protection with holy power, granting the following benefits for 1 hour or until you end them as a Bonus Action:</p>
+			<p><em>20th-level Oath of Vengeance feature</em></p>
+			<p>As a Bonus Action, you can imbue your Aura of Protection with holy power, granting the following benefits for 1 hour or until you end them as a Bonus Action:</p>
 			<p class="indent"><strong>Flight</strong>. You sprout spectral wings on your back. You have a Fly Speed equal to your Speed and can Hover.</p>
 			<p class="indent"><strong>Frightful Aura</strong>. Whenever an enemy starts its turn in the aura, that creature must succeed on a Wisdom saving throw or have the Frightened condition for 1 minute or until it takes any damage. Attack rolls against the Frightened creature have Advantage.</p>
 			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a 5th-level spell slot (no action required).</p>

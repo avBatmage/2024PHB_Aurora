@@ -11,17 +11,9 @@
 
 	<element name="2024 Ranger" type="Class" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_2024_RANGER">
 		<description>
-			<p class="flavor">A warrior who uses martial prowess and nature magic to combat threats on the edges of civilization.</p>			
-			<p>Rough and wild looking, a human stalks alone through the shadows of trees, hunting the orcs he knows are planning a raid on a nearby farm. Clutching a shortsword in each hand, he becomes a whirlwind of steel, cutting down one enemy after another.</p>
-			<p class="indent">After tumbling away from a cone of freezing air, an elf finds her feet and draws back her bow to loose an arrow at the white dragon. Shrugging off the wave of fear that emanates from the dragon like the cold of its breath, she sends one arrow after another to find the gaps between the dragon's thick scales.</p>
-			<p class="indent">Holding his hand high, a half-elf whistles to the hawk that circles high above him, calling the bird back to his side. Whispering instructions in Elvish, he points to the owlbear he's been tracking and sends the hawk to distract the creature while he readies his bow.</p>
-			<p class="indent">Far from the bustle of cities and towns, past the hedges that shelter the most distant farms from the terrors of the wild, amid the dense-packed trees of trackless forests and across wide and empty plains, rangers keep their unending watch.</p>
-			<h4>DEADLY HUNTERS</h4>
-			<p>Warriors of the wilderness, rangers specialize in hunting the monsters that threaten the edges of civilization—humanoid raiders, rampaging beasts and monstrosities, terrible giants, and deadly dragons. They learn to track their quarry as a predator does, moving stealthily through the wilds and hiding themselves in brush and rubble. Rangers focus their combat training on techniques that are particularly useful against their specific favored foes.</p>
-			<p class="indent">Thanks to their familiarity with the wilds, rangers acquire the ability to cast spells that harness nature's power, much as a druid does. Their spells, like their combat abilities, emphasize speed, stealth, and the hunt. A ranger's talents and abilities are honed with deadly focus on the grim task of protecting the borderlands.</p>
-			<h4>INDEPENDENT ADVENTURERS</h4>
-			<p>Though a ranger might make a living as a hunter, a guide, or a tracker, a ranger's true calling is to defend the outskirts of civilization from the ravages of monsters and humanoid hordes that press in from the wild. In some places, rangers gather in secretive orders or join forces with druidic circles. Many rangers, though, are independent almost to a fault, knowing that, when a dragon or a band of orcs attacks, a ranger might be the first—and possibly the last—line of defense.</p>
-			<p class="indent">This fierce independence makes rangers well suited to adventuring, since they are accustomed to life far from the comforts of a dry bed and a hot bath. Faced with city-bred adventurers who grouse and whine about the hardships of the wild, rangers respond with some mixture of amusement, frustration, and compassion. But they quickly learn that other adventurers who can carry their own weight in a fight against civilization's foes are worth any extra burden. Coddled city folk might not know how to feed themselves or find fresh water in the wild, but they make up for it in other ways.</p>
+			<p class="flavor">A Wandering Warrior Imbued with Primal Magic</p>			
+			<p>Far from bustling cities, amid the trees of trackless forests and across ide plains, Rangers learn to track their quarry as a predator does, moving stealthily through the wilds and hiding themselves in brush and rubble.</p>
+			<p>Thanks to their connection with nature, Rangers can also cast spells that harness primal powers of the wilderness. A Ranger's talents and magic are honed with deadly focus to protect the world from the ravages of monsters and tyrants.</p>
 			<h4>CREATING A RANGER</h4>
 			<p>As you create your ranger character, consider the nature of the training that gave you your particular capabilities. Did you train with a single mentor, wandering the wilds together until you mastered the ranger's ways? Did you leave your apprenticeship, or was your mentor slain— perhaps by the same kind of monster that became your favored enemy? Or perhaps you learned your skills as part of a band of rangers affiliated with a druidic circle, trained in mystic paths as well as wilderness lore. You might be self-taught, a recluse who learned combat skills, tracking, and even a magical connection to nature through the necessity of surviving in the wilds.</p>
 			<p class="indent">What's the source of your particular hatred of a certain kind of enemy? Did a monster kill someone you loved or destroy your home village? Or did you see too much of the destruction these monsters cause and commit yourself to reining in their depredations? Is your adventuring career a continuation of your work in protecting the borderlands, or a significant change? What made you join up with a band of adventurers? Do you find it challenging to teach new allies the ways of the wild, or do you welcome the relief from solitude that they offer?</p>
@@ -148,6 +140,7 @@
 	</element>
 	<element name="Spellcasting" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_SPELLCASTING">
 		<description>
+			<p><em>1st-level Ranger feature</em></p>
 			<p>You have learned to channel the magical essence of nature to cast spells. See the Player's Handbook for the rules on spellcasting. The information below details how you use those rules as a Ranger.</p>
 			<h5>SPELL SLOTS</h5>
 			<p>The Ranger table shows how many spell slots you have to cast your ranger spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.</p>
@@ -204,7 +197,8 @@
 	</element>
 	<element name="Favored Enemy" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_FAVORED_ENEMY">
 		<description>
-			<p>Beginning at 1st level, You always have the Hunter's Mark spell prepared. You can cast it twice without expending a spell slot, and you regain all expended uses of this ability when you finish a Long Rest.</p>
+			<p><em>1st-level Ranger feature</em></p>
+			<p>You always have the Hunter's Mark spell prepared. You can cast it twice without expending a spell slot, and you regain all expended uses of this ability when you finish a Long Rest.</p>
 			<p class="indent">The number of times you can cast the spell without a spell slot increases when you reach certain Ranger levels, as shown in the Favored Enemy column of the Ranger Features table.</p>
 		</description>
 		<sheet action="Bonus Action" usage="{{hunters mark:casts}}/Long Rest" >
@@ -224,6 +218,7 @@
 	</element>
 	<element name="Weapon Mastery" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_WEAPON_MASTERY">
 		<description>
+			<p><em>1st-level Ranger feature</em></p>
 			<p>Your training with weapons allows you to use the mastery properties of two kinds of weapons of your choice with which you have proficiency, such as Longbows and Shortswords.</p>
 			<p>Whenever you finish a Long Rest, you can change the kinds of weapons you chose. For example, you could switch to using the mastery properties of Scimitars and Longswords.</p>
 		</description>
@@ -236,8 +231,10 @@
 	</element>
 	<element name="Deft Explorer" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_DEFT_EXPLORER">
 		<description>
-			<p>You are an unsurpassed explorer. At 2nd level, Choose one of your proficiencies in a skill that appears on the Ranger skill list. You gain Expertise in that skill.</p>
-			<p>In addition, choose two languages. </p>
+			<p><em>2nd-level Ranger feature</em></p>
+			<p>Thanks to your travels, you have gained the following benefits.</p>
+			<p><strong>Expertise.</strong>Choose one of your proficiencies with whic you lack Expertise. You gain Expertise in that skill.</p>
+			<p><strong>Languages.</strong>You know two languages of your choice.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -247,7 +244,8 @@
 	</element>
 	<element name="Fighting Style" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_FIGHTING_STYLE">
 		<description>
-			<p>At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again.</p>
+			<p><em>2nd-level Ranger feature</em></p>
+			<p>You adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again.</p>
 			<h5 class="caption">ARCHERY</h5>
 			<p>You gain a +2 bonus to attack rolls you make with ranged weapons.</p>
 			<h5 class="caption">DEFENSE</h5>
@@ -277,6 +275,7 @@
 	</element>
 	<element name="Ranger Archetype" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_RANGER_ARCHETYPE">
 		<description>
+			<p><em>3rd-level Ranger feature</em></p>
 			<p>At 3rd level, you choose an archetype that you strive to emulate: Beast Master, Fey Wanderer, Hunter, or Gloom Stalker, all detailed at the end of the class description. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level.</p>
 		</description>
 		<sheet display="false" />
@@ -300,7 +299,8 @@
 	</element>
 	<element name="Extra Attack" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_EXTRA_ATTACK">
 		<description>
-			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+			<p><em>5th-level Ranger feature</em></p>
+			<p>You can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
 		</description>
 		<sheet>
 			<description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
@@ -311,7 +311,8 @@
 	</element>
 	<element name="Roving" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_ROVING">
 		<description>
-			<p>Starting at 6th level, Your Speed increases by 10 feet while you aren't wearing Heavy Armor.</p>
+			<p><em>6th-level Ranger feature</em></p>
+			<p>Your Speed increases by 10 feet while you aren't wearing Heavy Armor.</p>
 			<p>You also have a Climb Speed and a Swim Speed equal to your Speed.</p>
 		</description>
 		<sheet>
@@ -328,7 +329,8 @@
 	</element>
 	<element name="Expertise" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_EXPERTISE">
 		<description>
-			<p> At 9th level, Choose two of your skill proficiencies with which you lack Expertise. You gain Expertise in those skills. </p>
+			<p><em>9th-level Ranger feature</em></p>
+			<p>Choose two of your skill proficiencies with which you lack Expertise. You gain Expertise in those skills. </p>
 		</description>
 		<sheet display="false">
 			<description>Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</description>
@@ -339,7 +341,8 @@
 	</element>
 	<element name="Tireless" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_TIRELESS">
 		<description>
-			<p>Reaching 10th level, Primal forces now help fuel you on your journeys, granting you the following benefits:</p>
+			<p><em>10th-level Ranger feature</em></p>
+			<p>Primal forces now help fuel you on your journeys, granting you the following benefits:</p>
 			<p class="indent">Temporary Hit Points. As an action, you can give yourself a number of Temporary Hit Points equal to 1d8 plus your Wisdom modifier (minimum of 1). You can use this action a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
 			<p class="indent">Decrease Exhaustion. Whenever you finish a Short Rest, your Exhaustion level, if any, decreases by 1.</p>
 		</description>
@@ -355,9 +358,7 @@
 	<element name="Temporary Hit Points" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_TIRELESS_TEMPORARY_HIT_POINTS">
 		<compendium display="false" />
 		<sheet action="Action" usage="{{wisdom:modifier:min}}/Long Rest">
-			<description>
-				As an action, you can give yourself a number of Temporary Hit Points equal to 1d8+{{wisdom:modifier:min}}
-			</description>
+			<description>You can give yourself a number of Temporary Hit Points equal to 1d8+{{wisdom:modifier:min}}.</description>
 		</sheet>
 		<rules>
 			<stat name="wisdom:modifier:min" value="1" bonus="wisdom:modifier:min"/>
@@ -366,7 +367,8 @@
 	</element>
 	<element name="Relentless Hunter" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_RELENTLESS_HUNTER">
 		<description>
-			<p>At 13th level, Taking damage can't break your Concentration on Hunter's Mark.</p>
+			<p><em>13th-level Ranger feature</em></p>
+			<p>Taking damage can't break your Concentration on Hunter's Mark.</p>
 		</description>
 		<sheet>
 			<description>Taking damage can't break your Concentration on Hunter's Mark.</description>
@@ -374,7 +376,8 @@
 	</element>
 	<element name="Nature's Veil" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_NATURES_VEIL">
 		<description>
-			<p>At 14th  level, You invoke spirits of nature to magically hide yourself from view. As a Bonus Action, you can give yourself the Invisible condition until the end of your next turn.</p>
+			<p><em>14th-level Ranger feature</em></p>
+			<p>You invoke spirits of nature to magically hide yourself from view. As a Bonus Action, you can give yourself the Invisible condition until the end of your next turn.</p>
 			<p>You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
 		</description>
 		<sheet action="Bonus Action" usage="{{wisdom:modifier:min}}/Long Rest">
@@ -383,7 +386,8 @@
 	</element>
 	<element name="Precise Hunter" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_PRECISE_HUNTER">
 		<description>
-			<p>At 17th level, You always have Advantage on attack rolls against the target of your Hunter's Mark spell.</p>
+			<p><em>17th-level Ranger feature</em></p>
+			<p>You always have Advantage on attack rolls against the target of your Hunter's Mark spell.</p>
 		</description>
 		<sheet display="false">
 			<description>You always have Advantage on attack rolls against the target of your Hunter's Mark spell.</description>
@@ -392,7 +396,8 @@
 
 	<element name="Feral Senses" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_FERAL_SENSES">
 		<description>
-			<p>At 18th level, you gain preternatural senses that help you fight creatures you can't see. Your connection to the forces of nature grants you Blindsight with a range of 30 feet.</p>
+			<p><em>18th-level Ranger feature</em></p>
+			<p>You gain preternatural senses that help you fight creatures you can't see. Your connection to the forces of nature grants you Blindsight with a range of 30 feet.</p>
 		</description>
 		<sheet display="false">
 			<description></description>
@@ -404,7 +409,8 @@
 	</element>
 	<element name="Foe Slayer" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_RANGER_FOE_SLAYER">
 		<description>
-			<p>At 20th level, you become an unparalleled hunter of your enemies. Your Dexterity and Wisdom scores increase by 2 and your maximum for those scores is now 22. The damage die of your Hunter's Mark is a 1d10.</p>
+			<p><em>20th-level Ranger feature</em></p>
+			<p>You become an unparalleled hunter of your enemies. Your Dexterity and Wisdom scores increase by 2 and your maximum for those scores is now 22. The damage die of your Hunter's Mark is a 1d10.</p>
 		</description>
 		<sheet display="false">
 			<description>You embody the power of the wilds. Your Dexterity and Wisdom scores increase by 2. Your maximum for those scores is now 22.</description>
@@ -422,14 +428,14 @@
 	<element name="2024 Beast Master" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_RANGER_BEAST_MASTER">
 		<supports>Ranger Archetype</supports>
 		<description>
-			<p>The Beast Master archetype embodies a friendship between the civilized races and the beasts of the world. United in focus, beast and ranger work as one to fight the monstrous foes that threaten civilization and the wilderness alike. Emulating the Beast Master archetype means committing yourself to this ideal, working in partnership with an animal as its companion and friend.</p>
+			<p>A Beast Master forms a mystical bond with a special animal, drawing on primal magic and a deep connection to the natural world.</p>
 			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_PRIMAL_COMPANION" />
 			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_EXCEPTIONAL_TRAINING" />
 			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_BESTIAL_FURY" />
 			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_SHARE_SPELLS" />
 		</description>
 		<sheet display="false">
-			<description>The Beast Master archetype embodies a friendship between the civilized races and the beasts of the world.</description>
+			<description>A Beast Master forms a mystical bond with a special animal, drawing on primal magic and a deep connection to the natural world.</description>
 		</sheet>
 		<rules>
 			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_PRIMAL_COMPANION" level="3" />
@@ -440,31 +446,32 @@
 	</element>
 	<element name="Ranger's Companion" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_PRIMAL_COMPANION">
 		<description>
-			<p>At 3rd level, you gain a beast companion that accompanies you on your adventures and is trained to fight alongside you. Choose a beast that is no larger than Medium and that has a challenge rating of 1/4 or lower (appendix D presents statistics for the hawk, mastiff, and panther as examples). Add your proficiency bonus to the beast's AC, attack rolls, and damage rolls, as well as to any saving throws and skills it is proficient in. Its hit point maximum equals the hit point number in its stat block or four times your ranger level, whichever is higher. Like any creature, it can spend Hit Dice during a short rest to regain hit points.</p>
-			<p class="indent">In combat, the beast acts during your turn. It can move and use its Reaction on its own, but the only action it takes is the Dodge action, unless you take a Bonus Action on your turn to command it to take a different action. That action can be one in its stat block or some other action. You can also sacrifice one of your attacks when you take the Attack action to command the beast to take the Attack action. If you have the Incapacitated condition, the beast can take any action of its choice, not just Dodge.</p>
-			<p class="indent">If the beast has died within the last hour, you can you use your action to touch it and expend a spell slot of 1st level or higher. The beast returns to life after 1 minute with all its Hit Points restored.</p>
-			<p class="indent">Whenever you finish a Long Rest, you can summon a different primal beast. The new beast appears in an unoccupied space within 5 feet of you, and you choose its stat block and appearance. If you already have a beast from this feature, it vanishes when the new beast appears.</p>
-			<p class="indent">The beast vanishes if you die.</p>
+			<p><em>3rd-level Ranger feature</em></p>
+			<p>You magically summon a primal beast, which draws strength from your bond with nature. Choose its stat block. Beast of the Land, Beast of the Sea, or Beast of the Sky. You also determine the kind of animal it is, choosing a kind appropriate for the stat block. Whatever beast you choose, it bears primal markings indicating its supernatural origin. The beast is Friendly to you and your allies and obeys your commands. It vanishes if you die.</p>
+			<p class="indent"><strong>The Beast in Combat.</strong> In combat, the beast acts during your turn. It can move and use its Reaction on its own, but the only action it takes is the Dodge action unless you take a Bonus Action to command it to take an action in its stat block or some other action. You can also sacrifice one of your attacks when you take the Attack action to command the beast to take the Beast's Strike action. If you have the Incapacitated condition, the beast acts on its own and is limited to the Dodge action.</p>
+			<p class="indent"><strong>Restoring or Replacing the Beast.</strong> If the beast has died within the last hour, you can take a Magic action to touch it and expend a spell slot. The beast returns to life after 1 minute with all its Hit Points restored. Whenever you finish a Long Rest, you can summon a different primal beast, which appears in an unoccupied space within 5 feet of you. You choose its stat block and appearance. If you already have a beast from this feature, the old one vanishes when the new one appears.</p>
 		</description>
 		<sheet>
-			<description>The beast obeys your commands as best as it can. It takes its turn on your initiative, though it doesn't take an action unless you command it to. On your turn, you can verbally command the beast where to move. You can use your action to verbally command it to take the Attack, Dash, Disengage, Dodge, or Help action. Once you have the Extra Attack feature, you can make one weapon attack yourself when you command the beast to take the Attack action.
-			If the beast has died within the last hour, you can you use your action to touch it and expend a spell slot of 1st level or higher. The beast returns to life after 1 minute with all its Hit Points restored.
-			If the beast dies, you can obtain another one by spending 8 hours magically bonding with another beast that isn't hostile to you, either the same type of beast as before or a different one.</description>
+			<description>Your Primal companion is Friendly to you and your allies and obeys your commands. It vanishes if you die.
+			In combat, the beast acts during your turn. It can move and use its Reaction on its own, but the only action it takes is the Dodge action unless you take a Bonus Action to command it to take an action in its stat block or some other action. You can also sacrifice one of your attacks when you take the Attack action to command the beast to take the Beast's Strike action. If you have the Incapacitated condition, the beast acts on its own and is limited to the Dodge action.
+			If the beast has died within the last hour, you can take a Magic action to touch it and expend a spell slot. The beast returns to life after 1 minute with all its Hit Points restored. Whenever you finish a Long Rest, you can summon a different primal beast, which appears in an unoccupied space within 5 feet of you. You choose its stat block and appearance. If you already have a beast from this feature, the old one vanishes when the new one appears.</description>
 		</sheet>
 		<rules>
-			<select type="Companion" name="Ranger's Companion" supports="Beast,(Tiny||Small||Medium),(1/4||1/8||0)" />
-			<stat name="companion:ac" value="proficiency" />
+			<select type="Companion" name="Primal Companion" supports="Primal Companion" />
+			<stat name="companion:ac" value="wisdom:modifier" />
+			<stat name="additional:hp:max" value="level:2024 ranger" />
+			<stat name="additional:hp:max" value="level:2024 ranger" />
+			<stat name="additional:hp:max" value="level:2024 ranger" />
+			<stat name="additional:hp:max" value="level:2024 ranger" />
+			<stat name="companion:attack" value="wisdom:modifier" />
 			<stat name="companion:attack" value="proficiency" />
-			<stat name="companion:damage" value="proficiency" />			
-			<stat name="additional:hp:max" value="level:2024 ranger" />
-			<stat name="additional:hp:max" value="level:2024 ranger" />
-			<stat name="additional:hp:max" value="level:2024 ranger" />
-			<stat name="additional:hp:max" value="level:2024 ranger" />
+			<stat name="companion:damage" value="wisdom:modifier" />
 			<stat name="companion:hp:max" value="additional:hp:max" bonus="base" />
 		</rules>
 	</element>
 	<element name="Exceptional Training" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_EXCEPTIONAL_TRAINING">
 		<description>
+			<p><em>7th-level Ranger feature</em></p>
 			<p>When you use your Bonus Action to command your Primal Companion beast to take an action, you can also command it to take the Dash, Disengage, Dodge, or Help action as a Bonus Action.</p>
 			<p class="indent">In addition, whenever the beast hits with an attack and deals damage, it can deal your choice of Force damage or its normal damage type.</p>
 		</description>
@@ -475,23 +482,443 @@
 	</element>
 	<element name="Bestial Fury" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_BESTIAL_FURY">
 		<description>
-			<p>When you command your Primal Companion beast to take the Attack action, the beast can make two attacks.</p>
+			<p><em>11th-level Ranger feature</em></p>
+			<p>When you command your Primal Companion beast to take the Beast's Strike action, the Beast can use it twice.</p>
 			<p>In addition, the first time each turn it hits a creature under the effect of your Hunter's Mark spell, the beast deals extra Force damage equal to the bonus damage of that spell.</p>
 		</description>
 		<sheet>
-			<description>When you command your Primal Companion beast to take the Attack action, the beast can make two attacks.
-			In addition, the first time each turn it hits a creature under the effect of your Hunter's Mark spell, the beast deals d{{hunters mark:dice}} extra Force damage.</description>
+			<description>When you command your Primal Companion beast to take the Beast's Strike action, the beast can make two attacks.
+			In addition, the first time each turn it hits a creature under the effect of your Hunter's Mark spell, the beast deals 1d{{hunters mark:dice}} extra Force damage.</description>
 		</sheet>
 	</element>
 	<element name="Share Spells" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_SHARE_SPELLS">
 		<description>
+			<p><em>15th-level Ranger feature</em></p>
 			<p>When you cast a spell targeting yourself, you can also affect your Primal Companion beast with the spell if the beast is within 30 feet of you.</p>
 		</description>
 		<sheet>
 			<description>When you cast a spell targeting yourself, you can also affect your Primal Companion beast with the spell if the beast is within 30 feet of you.</description>
 		</sheet>
 	</element>
+	<!-- Primal Companions -->
+	<element name="Beast of the Land" type="Companion" source="2024 Player's Handbook" id="ID_2024PHB_COMPANION_PRIMAL_COMPANION_BEAST_OF_THE_LAND">
+		<supports>Primal Companion</supports>
+		<description>
+			<p></p>
+        </description>
+		<setters>
+			<set name="size">Medium</set>
+			<set name="type">Beast</set>
+			<set name="alignment">Neutral</set>
+			<set name="ac">13 plus your Wisdom modifier</set>
+			<set name="hp">5 plus five times your Ranger level (the beast has a number of Hit Dice [d8s] equal to your Ranger level)</set>
+			<set name="speed">40 ft., Climb 40 ft.</set>
+			<set name="strength">14</set>
+			<set name="dexterity">14</set>
+			<set name="constitution">15</set>
+			<set name="intelligence">8</set>
+			<set name="wisdom">14</set>
+			<set name="charisma">11</set>
+			<set name="senses">darkvision 60 ft., passive Perception 12</set>
+			<set name="languages">Understands the languages you know</set>
+			<set name="challenge">None (XP O; PB equals your Proficiency Bonus)</set>
+			<set name="traits">ID_2024PHB_COMPANION_PRIMAL_COMPANION_TRAIT_BEAST_OF_THE_LAND_PRIMAL_BOND</set>
+			<set name="actions">ID_2024PHB_COMPANION_PRIMAL_COMPANION_ACTION_BEAST_OF_THE_LAND_BEASTS_STRIKE</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="13" />
+			<stat name="additional:hp:max" value="level:2024 ranger" />
+			<stat name="additional:hp:max" value="5" />
+			<stat name="companion:speed" value="40" bonus="base" />
+			<stat name="companion:speed:climb" value="40" bonus="base" />
+		</rules>
+	</element>
+	<element name="Primal Bond" type="Companion Trait" source="2024 Player's Handbook" id="ID_2024PHB_COMPANION_PRIMAL_COMPANION_TRAIT_BEAST_OF_THE_LAND_PRIMAL_BOND">
+		<description>
+			<p>Add your Proficiency Bonus to any ability check or saving throw the beast makes.</p>
+		</description>
+		<sheet>
+			<description>Add your Proficiency Bonus to any ability check or saving throw the beast makes.</description>
+			<!--<description>Add {{proficiency}} to any ability check or saving throw the beast makes.</description>-->
+		</sheet>
+	</element>
+	<element name="Beast's Strike" type="Companion Action" source="2024 Player's Handbook" id="ID_2024PHB_COMPANION_PRIMAL_COMPANION_ACTION_BEAST_OF_THE_LAND_BEASTS_STRIKE">
+		<description>
+			<p>Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: ld8 + 2 plus your Wisdom modifier Bludgeoning, Piercing, or Slashing damage (your choice when you summon the beast).</p>
+			<p>If the beast moved at least 20 feet straight toward the target before the hit, the target takes an extra ld6 damage of the same type, and the target has the Prone condition if it is a Large or smaller creature.</p>
+		</description>
+		<sheet>
+			<description>Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: ld8 + 2 plus your Wisdom modifier Bludgeoning, Piercing, or Slashing damage (your choice when you summon the beast).
+			If the beast moved at least 20 feet straight toward the target before the hit, the target takes an extra ld6 damage of the same type, and the target has the Prone condition if it is a Large or smaller creature.</description>
+			<!--<description>Melee Attack Roll: +{{companion:attack}} to hit, reach 5 ft. Hit: ld8 + {{companion:damage}} Bludgeoning, Piercing, or Slashing damage (your choice when you summon the beast).
+			If the beast moved at least 20 feet straight toward the target before the hit, the target takes an extra ld6 damage of the same type, and the target has the Prone condition if it is a Large or smaller creature.</description>-->
+		</sheet>
+		<rules>
+			<stat name="companion:damage" value="2" />
+		</rules>
+	</element>
+	<element name="Beast of the Sky" type="Companion" source="2024 Player's Handbook" id="ID_2024PHB_COMPANION_PRIMAL_COMPANION_BEAST_OF_THE_SKY">
+		<supports>Primal Companion</supports>
+		<description>
+			<p></p>
+        </description>
+		<setters>
+			<set name="size">Small</set>
+			<set name="type">Beast</set>
+			<set name="alignment">Neutral</set>
+			<set name="ac">13 plus your Wisdom modifier</set>
+			<set name="hp">4 plus four times your Ranger level (the beast has a number of Hit Dice [d6s] equal to your Ranger level)</set>
+			<set name="speed">10 ft., Fly 60 ft.</set>
+			<set name="strength">6</set>
+			<set name="dexterity">16</set>
+			<set name="constitution">13</set>
+			<set name="intelligence">8</set>
+			<set name="wisdom">14</set>
+			<set name="charisma">11</set>
+			<set name="senses">darkvision 60 ft., passive Perception 12</set>
+			<set name="languages">Understands the languages you know</set>
+			<set name="challenge">None (XP O; PB equals your Proficiency Bonus)</set>
+			<set name="traits">ID_2024PHB_COMPANION_PRIMAL_COMPANION_TRAIT_BEAST_OF_THE_SKY_FLYBY,ID_2024PHB_COMPANION_PRIMAL_COMPANION_TRAIT_BEAST_OF_THE_SKY_PRIMAL_BOND</set>
+			<set name="actions">ID_2024PHB_COMPANION_PRIMAL_COMPANION_ACTION_BEAST_OF_THE_SKY_BEASTS_STRIKE</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="13" />
+			<stat name="companion:hp:max" value="4" bonus="base" />
+			<stat name="companion:speed" value="10" bonus="base" />
+			<stat name="companion:speed:fly" value="60" bonus="base" />
+		</rules>
+	</element>
+	<element name="Flyby" type="Companion Trait" source="2024 Player's Handbook" id="ID_2024PHB_COMPANION_PRIMAL_COMPANION_TRAIT_BEAST_OF_THE_SKY_FLYBY">
+		<description>
+			<p>The beast doesn't provoke Opportunity Attacks when it flies out of an enemy's reach.</p>
+		</description>
+		<sheet>
+			<description>The beast doesn't provoke Opportunity Attacks when it flies out of an enemy's reach.</description>
+		</sheet>
+	</element>
+	<element name="Primal Bond" type="Companion Trait" source="2024 Player's Handbook" id="ID_2024PHB_COMPANION_PRIMAL_COMPANION_TRAIT_BEAST_OF_THE_SKY_PRIMAL_BOND">
+		<description>
+			<p>Add your Proficiency Bonus to any ability check or saving throw the beast makes.</p>
+		</description>
+		<sheet>
+			<description>Add your Proficiency Bonus to any ability check or saving throw the beast makes.</description>
+		</sheet>
+	</element>
+	<element name="Beast's Strike" type="Companion Action" source="2024 Player's Handbook" id="ID_2024PHB_COMPANION_PRIMAL_COMPANION_ACTION_BEAST_OF_THE_SKY_BEASTS_STRIKE">
+		<description>
+			<p>Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: ld4 + 3 plus your Wisdom modifier Slashing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: ld4 + 3 plus your Wisdom modifier Slashing damage.</description>
+			<!--<description>Melee Attack Roll: +{{companion:attack}} to hit, reach 5 ft. Hit: ld4 + {{companion:damage}} Slashing damage.</description>-->
+		</sheet>
+		<rules>
+			<stat name="companion:damage" value="3" />
+		</rules>
+	</element>
+	<element name="Beast of the Sea" type="Companion" source="2024 Player's Handbook" id="ID_2024PHB_COMPANION_PRIMAL_COMPANION_BEAST_OF_THE_SEA">
+		<supports>Primal Companion</supports>
+		<description>
+			<p></p>
+        </description>
+		<setters>
+			<set name="size">Medium</set>
+			<set name="type">Beast</set>
+			<set name="alignment">Neutral</set>
+			<set name="ac">13 plus your Wisdom modifier</set>
+			<set name="hp">5 plus five times your Ranger level (the beast has a number of Hit Dice [d8s] equal to your Ranger level)</set>
+			<set name="speed">5 ft., Swim 60 ft.</set>
+			<set name="strength">14</set>
+			<set name="dexterity">14</set>
+			<set name="constitution">15</set>
+			<set name="intelligence">8</set>
+			<set name="wisdom">14</set>
+			<set name="charisma">11</set>
+			<set name="senses">darkvision 90 ft., passive Perception 12</set>
+			<set name="languages">Understands the languages you know</set>
+			<set name="challenge">None (XP O; PB equals your Proficiency Bonus)</set>
+			<set name="traits">ID_2024PHB_COMPANION_PRIMAL_COMPANION_TRAIT_BEAST_OF_THE_LAND_AMPHIBIOUS,ID_2024PHB_COMPANION_PRIMAL_COMPANION_TRAIT_BEAST_OF_THE_LAND_PRIMAL_BOND</set>
+			<set name="actions">ID_2024PHB_COMPANION_PRIMAL_COMPANION_ACTION_BEAST_OF_THE_LAND_BEASTS_STRIKE</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="13" />
+			<stat name="companion:hp:max" value="5" />
+			<stat name="companion:hp:max" value="level:2024 ranger"/>
+			<stat name="companion:speed" value="5" bonus="base" />
+			<stat name="companion:speed:swim" value="60" bonus="base" />
+		</rules>
+	</element>
+	<element name="Amphibious" type="Companion Trait" source="2024 Player's Handbook" id="ID_2024PHB_COMPANION_PRIMAL_COMPANION_TRAIT_BEAST_OF_THE_SEA_AMPHIBIOUS">
+		<description>
+			<p>The beast can breathe air and water.</p>
+		</description>
+		<sheet>
+			<description>The beast can breathe air and water.</description>
+		</sheet>
+	</element>
+	<element name="Primal Bond" type="Companion Trait" source="2024 Player's Handbook" id="ID_2024PHB_COMPANION_PRIMAL_COMPANION_TRAIT_BEAST_OF_THE_SEA_PRIMAL_BOND">
+		<description>
+			<p>Add your Proficiency Bonus to any ability check or saving throw the beast makes.</p>
+		</description>
+		<sheet>
+			<description>Add your Proficiency Bonus to any ability check or saving throw the beast makes.</description>
+		</sheet>
+	</element>
+	<element name="Beast's Strike" type="Companion Action" source="2024 Player's Handbook" id="ID_2024PHB_COMPANION_PRIMAL_COMPANION_ACTION_BEAST_OF_THE_SEA_BEASTS_STRIKE">
+		<description>
+			<p>Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: ld6 + 2 plus your Wisdom modifier Bludgeoning or Piercing damage (your choice when you summon the beast), and the target has the Grappled condition (escape DC equals your spell save DC).</p>
+		</description>
+		<sheet>
+			<description>Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: ld6 + 2 plus your Wisdom modifier Bludgeoning or Piercing damage (your choice when you summon the beast), and the target has the Grappled condition (escape DC equals your spell save DC).</description>
+			<!--<description>Melee Attack Roll: +{{companion:attack}} to hit, reach 5 ft. Hit: ld6 + {{companion:damage}} Bludgeoning or Piercing damage (your choice when you summon the beast), and the target has the Grappled condition (escape DC equals your spell save DC).</description>-->
+		</sheet>
+		<rules>
+			<stat name="companion:damage" value="2" />
+		</rules>
+	</element>
 	
+	<element name="2024 Fey Wanderer" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_RANGER_FEY_WANDERER">
+		<supports>Ranger Archetype</supports>
+		<description>
+			<p>A fey mystique surrounds you, thanks to the boon of an archfey or a location in the Feywild that transformed you. However you gained fey magic, you are now a Fey Wanderer. Your joyful laughter brightens the hearts of the downtrodden, and your martial prowess strikes terror in your foes, for great is the mirth of the fey and dreadful is their fury.</p>
+			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_DREADFUL_STRIKES" />
+			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_FEY_WANDERER_SPELLS" />
+			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_OTHERWORLDLY_GLAMOUR" />
+			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_BEGUILING_TWIST" />
+			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_FEY_REINFORCEMENTS" />
+			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_MISTY_WANDERER" />
+		</description>
+		<sheet display="false">
+			<description>A fey mystique surrounds you, thanks to the boon of an archfey or a location in the Feywild that transformed you.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_DREADFUL_STRIKES" level="3" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_FEY_WANDERER_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_OTHERWORLDLY_GLAMOUR" level="3" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_BEGUILING_TWIST" level="7" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_FEY_REINFORCEMENTS" level="11" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_MISTY_WANDERER" level="15" />
+		</rules>
+	</element>
+	<element name="Dreadful Strikes" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_DREADFUL_STRIKES">
+		<description>
+			<p><em>3rd-level Ranger feature</em></p>
+			<p>You can augment your weapon strikes with mind-scarring magic drawn from the murky hollows of the Feywild. When you hit a creature with a weapon, you can deal an extra 1d4 Psychic damage to the target, which can take this extra damage only once per turn. The extra damage increases to 1d6 when you reach Ranger level 11.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When you hit a creature with a weapon, you can deal an extra 1d{{dreadful strikes:damage}} Psychic damage to the target, which can take this extra damage only once per turn.</description>
+		</sheet>
+		<rules>
+			<stat name="dreadful strikes:damage" value="4" level="3" />
+			<stat name="dreadful strikes:damage" value="6" level="11" />
+		</rules>
+	</element>
+	<element name="Fey Wanderer Spells" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_FEY_WANDERER_SPELLS">
+		<description>
+			<p><em>3rd-level Ranger feature</em></p>
+			<p>When you reach a Ranger level specified in the Fey Wanderer Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Fey Wanderer Spells</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Ranger Level</td><td class="left">Spell</td></tr>
+				</thead>
+				<tr><td>3rd</td><td class="left">Charm Person</td></tr>
+				<tr><td>5th</td><td class="left">Misty Step</td></tr>
+				<tr><td>9th</td><td class="left">Summon Fey</td></tr>
+				<tr><td>13th</td><td class="left">Dimension Door</td></tr>
+				<tr><td>17th</td><td class="left">Mislead</td></tr>
+			</table>
+			<p>You also possess a fey blessing. Choose it from the Feywild Gifts table or determine it randomly.</p>
+			<h5>Feywild Gifts</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">1d6</td><td class="left">Gift</td></tr>
+				</thead>
+				<tr><td>1</td><td class="left">Illusory butterflies flutter around you while you take a Short or Long Rest.</td></tr>
+				<tr><td>2</td><td class="left">Flowers bloom from your hair each dawn.</td></tr>
+				<tr><td>3</td><td class="left">You faintly smell of cinnamon, lavender, nutmeg, or another comforting herb or spice.</td></tr>
+				<tr><td>4</td><td class="left">Your shadow dances while no one is looking directly at it.</td></tr>
+				<tr><td>5</td><td class="left">Horns or antlers sprout from your head.</td></tr>
+				<tr><td>6</td><td class="left">Your skin and hair change color each dawn.</td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_CHARM_PERSON" level="3" spellcasting="Ranger" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_MISTY_STEP" level="5" spellcasting="Ranger" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_SUMMON_FEY" level="9" spellcasting="Ranger" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_DIMENSION_DOOR" level="13" spellcasting="Ranger" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_MISLEAD" level="17" spellcasting="Ranger" prepared="true" />
+		</rules>
+	</element>
+	<element name="Otherworldly Glamour" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_OTHERWORLDLY_GLAMOUR">
+		<description>
+			<p><em>3rd-level Ranger feature</em></p>
+			<p>Whenever you make a Charisma check, you gain a bonus to the check equal to your Wisdom modifier (minimum of +1).</p>
+			<p class="indent">You also gain proficiency in one of these skills of your choice: Deception, Performance, or Persuasion.</p>
+		</description>
+		<sheet display="false">
+			<description>Whenever you make a Charisma check, you gain a bonus to the check equal to your Wisdom modifier (minimum of +1).</description>
+		</sheet>
+		<rules>
+			<stat name="charisma:check" value="wisdom:modifier:min" bonus="glamour" />
+			<stat name="charisma:check" value="wisdom:modifier" bonus="glamour" />
+			<select type="Proficiency" name="Skill Proficiency" supports="Skill" level="3" />
+		</rules>
+	</element>
+	<element name="Beguiling Twist" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_BEGUILING_TWIST">
+		<description>
+			<p><em>7th-level Ranger feature</em></p>
+			<p>The magic of the Feywild guards your mind. You have Advantage on saving throws to avoid or end the Charmed or Frightened condition.</p>
+			<p class="indent">In addition, whenever you or a creature you can see within 120 feet of you succeeds on a saving throw to avoid or end the Charmed or Frightened condition, you can take a Reaction to force a different creature you can see within 120 feet of yourself to make a Wisdom save against your spell save DC. On a failed save, the target is Charmed or Frightened (your choice) for 1 minute. The target repeats the save at the end of each of its turns, ending the effect on itself on a success.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>You have Advantage on saving throws to avoid or end the Charmed or Frightened condition. Additionally whenever you or a creature you can see within 120 feet of you succeeds on a saving throw to avoid or end the Charmed or Frightened condition, you can use your reaction to force a different creature you can see within 120 feet of yourself to make a Wisdom save against your spell save DC. On a failed save, the target is Charmed or Frightened (your choice) for 1 minute.</description>
+		</sheet>
+	</element>
+	<element name="Fey Reinforcements" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_FEY_REINFORCEMENTS">
+		<description>
+			<p><em>11th-level Ranger feature</em></p>
+			<p>You can cast Summon Fey without a Material component. You can also cast it once without a spell slot, and you regain the ability to cast it in this way when you finish a Long Rest.</p>
+			<p class="indent">Whenever you start casting the spell, you can modify it so that it doesn't require Concentration. If you do so, the spell's duration becomes 1 minute for that casting.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can cast Summon Fey once without a spell slot, and you regain the ability to cast it in this way when you finish a Long Rest.</description>
+		</sheet>
+	</element>
+	<element name="Misty Wanderer" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_MISTY_WANDERER">
+		<description>
+			<p><em>15th-level Ranger feature</em></p>
+			<p>You can cast Misty Step without expending a spell slot. You can do so a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
+			<p class="indent">In addition, whenever you cast Misty Step, you can bring along one willing creature you can see within 5 feet of yourself. That creature teleports to an unoccupied space of your choice within 5 feet of your destination space.</p>
+		</description>
+		<sheet usage="{{misty wanderer:casts}}/Long Rest">
+			<description>You can cast Misty Step without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<stat name="misty wanderer:casts" value="1" bonus="misty wanderer:casts"/>
+			<stat name="misty wanderer:casts" value="wisdom:modifier" bonus="misty wanderer:casts"/>
+		</rules>
+	</element>
+	
+	<element name="2024 Gloom Stalker" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_RANGER_GLOOM_STALKER">
+		<supports>Ranger Archetype</supports>
+		<description>
+			<p>Gloom Stalkers are at home in the darkest places, wielding magic drawn from the Shadowfell to combat enemies that lurk in darkness.</p>
+			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_DREAD_AMBUSHER" />
+			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_GLOOM_STALKER_SPELLS" />
+			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_UMBRAL_SIGHT" />
+			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_IRON_MIND" />
+			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_STALKERS_FLURRY" />
+			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_SHADOWY_DODGE" />
+		</description>
+		<sheet display="false">
+			<description>Gloom Stalkers are at home in the darkest places, wielding magic drawn from the Shadowfell to combat enemies that lurk in darkness.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_DREAD_AMBUSHER" level="3" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_GLOOM_STALKER_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_UMBRAL_SIGHT" level="3" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_IRON_MIND" level="7" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_STALKERS_FLURRY" level="11" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_SHADOWY_DODGE" level="15" />
+		</rules>
+	</element>
+	<element name="Dread Ambusher" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_DREAD_AMBUSHER">
+		<description>
+			<p><em>3rd-level Ranger feature</em></p>
+			<p>You have mastered the art of creating frightening ambushes, granting you the following benefits:</p>
+			<p class="indent"><strong>Ambusher's Leap.</strong> At the start of the first turn of each combat, your Speed increases by 10 feet until the end of that turn.</p>
+			<p class="indent"><strong>Frighten.</strong> Once per turn when you attack a creature and hit it with a weapon, you can deal an extra 1d8 Psychic damage to the target and force it to make a Wisdom saving throw against your Spell Save DC. On a failed save, it has the Frightened condition until the start of your next turn. You can use this benefit a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
+			<p class="indent"><strong>Initiative Bonus.</strong> When you roll Initiative, you can add your Wisdom modifier to the roll.</p>
+		</description>
+		<sheet>
+			<description>At the start of the first turn of each combat, your Speed increases by 10 feet until the end of that turn.
+			Once per turn when you attack a creature and hit it with a weapon, you can deal an extra 1d8 Psychic damage to the target and force it to make a Wisdom saving throw against your Spell Save DC. On a failed save, it has the Frightened condition until the start of your next turn.
+			When you roll Initiative, you can add your Wisdom modifier to the roll.</description>
+		</sheet>
+		<rules>
+			<stat name="speed:misc" value="10" bonus="ambusher" requirements="[combat:first turn]" />
+			<stat name="initiative" value="wisdom:modifier" bonus="ambusher" />
+		</rules>
+	</element>
+	<element name="Gloom Stalker Spells" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_GLOOM_STALKER_SPELLS">
+		<description>
+			<p><em>3rd-level Ranger feature</em></p>
+			<p>The magic of the Shadowfell ensures you always have certain spells ready; when you reach a Ranger level specified in the Gloom Stalker Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Gloom Stalker Spells</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Ranger Level</td><td class="left">Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td class="left">Disguise Self</td></tr>
+				<tr><td>5th</td><td class="left">Rope Trick</td></tr>
+				<tr><td>9th</td><td class="left">Fear</td></tr>
+				<tr><td>13th</td><td class="left">Greater Invisibility</td></tr>
+				<tr><td>17th</td><td class="left">Seeming</td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_DISGUISE_SELF" level="3" spellcasting="Ranger" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_ROPE_TRICK" level="5" spellcasting="Ranger" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_FEAR" level="9" spellcasting="Ranger" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_GREATER_INVISIBILITY" level="13" spellcasting="Ranger" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_SEEMING" level="17" spellcasting="Ranger" prepared="true" />
+		</rules>
+	</element>
+	<element name="Umbral Sight" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_UMBRAL_SIGHT">
+		<description>
+			<p><em>3rd-level Ranger feature</em></p>
+			<p>You gain Darkvision out to a range of 60 feet. If you already have Darkvision when you gain this feature, its range increases by 60 feet.</p>
+			<p class="indent">You are also adept at evading creatures that rely on Darkvision. While entirely in Darkness, you have the Invisible condition to any creature that relies on Darkvision to see you in that darkness.</p>
+		</description>
+		<sheet display="false">
+			<description>You gain Darkvision out to a range of 60 feet. If you already have Darkvision when you gain this feature, its range increases by 60 feet.
+			While entirely in Darkness, you have the Invisible condition to any creature that relies on Darkvision to see you in that darkness.</description>
+		</sheet>
+		<rules>
+			<!--<grant type="Vision" id="ID_VISION_LESSER_DARKVISION" />
+			<stat name="darkvision:range" value="60" />-->
+			<stat name="darkvision:range" value="60" bonus="umbral" />
+			<stat name="darkvision:range" value="60" bonus="umbral" requirements="[darkvision:1]" />
+		</rules>
+	</element>
+	<element name="Iron Mind" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_IRON_MIND">
+		<description>
+			<p><em>7th-level Ranger feature</em></p>
+			<p>You have honed your ability to resist the mind-altering powers of your prey. You gain proficiency in Wisdom saving throws. If you already have this proficiency, you instead gain proficiency in Intelligence or Charisma saving throws (your choice).</p>
+		</description>
+		<sheet display="false">
+			<description>You gain proficiency in Wisdom saving throws. If you already have this proficiency, you instead gain proficiency in Intelligence or Charisma saving throws (your choice).</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Saving Throw Proficiency" supports="Saving Throw" level="7" />
+		</rules>
+	</element>
+	<element name="Stalker's Flurry" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_STALKERS_FLURRY">
+		<description>
+			<p><em>11th-level Ranger feature</em></p>
+			<p>When you use the Frighten effect of your Dread Ambusher feature, you can cause one of the following additional effects:</p>
+			<p class="indent"><strong>Sudden Strike.</strong> You can make another attack with the same weapon against a different creature that is within 5 feet of the original target and that is within the weapon's range.</p>
+			<p class="indent"><strong>Mass Fear.</strong> Each creature within 10 feet of the target must make a Wisdom saving throw against your Spell Save DC. On a failed save, a creature has the Frightened condition until the start of your next turn.</p>
+		</description>
+		<sheet>
+			<description>When you use the Frighten effect of your Dread Ambusher feature, you can cause one of the following additional effects:
+			Sudden Strike: You can make another attack with the same weapon against a different creature that is within 5 feet of the original target and that is within the weapon's range.
+			Mass Fear: Each creature within 10 feet of the target must make a Wisdom saving throw against your Spell Save DC. On a failed save, a creature has the Frightened condition until the start of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Shadowy Dodge" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_SHADOWY_DODGE">
+		<description>
+			<p><em>15th-level Ranger feature</em></p>
+			<p>You can dodge with wisps of supernatural shadow around you. When a creature makes an attack roll against you, you can use your Reaction to impose Disadvantage on that roll. If the attack then misses, you can teleport up to 30 feet to an unoccupied space you can see.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a creature makes an attack roll against you, you can impose Disadvantage on that roll. If the attack then misses, you can teleport up to 30 feet to an unoccupied space you can see.</description>
+		</sheet>
+	</element>
+
 	<element name="2024 Hunter" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_RANGER_HUNTER">
 		<supports>Ranger Archetype</supports>
 		<description>
@@ -515,6 +942,7 @@
 	</element>
 	<element name="Hunter's Lore" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_HUNTERS_LORE">
 		<description>
+			<p><em>3rd-level Ranger feature</em></p>
 			<p>You can call on the forces of nature to reveal certain strengths and weaknesses of your prey. While a creature is marked by your Hunter's Mark, you know whether that creature has any damage or condition immunities, damage resistances, or damage vulnerabilities, and if the creature has any, you know what they are.</p>
 		</description>
 		<sheet>
@@ -523,6 +951,7 @@
 	</element>
 	<element name="Hunter's Prey" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY">
 		<description>
+			<p><em>3rd-level Ranger feature</em></p>
 			<p>You gain one of the following feature options of your choice. Whenever you finish a Short or Long Rest, you can replace the chosen option with the other one.</p>
 			<p class="indent"><strong><em>Colossus Slayer.</em></strong> Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it's below its hit point maximum. You can deal this extra damage only once per turn.</p>
 			<p class="indent"><strong><em>Horde Breaker.</em></strong> Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon.</p>
@@ -545,6 +974,7 @@
 	</element>
 	<element name="Superior Hunter's Prey" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_PREY">
 		<description>
+			<p><em>11th-level Ranger feature</em></p>
 			<p>Once per turn, when you have Hunter's Mark on a creature and you deal damage to them, you can also deal the spell's extra damage to a different creature within 30 feet of the first creature.</p>
 		</description>
 		<sheet Usage="1/Turn">
@@ -553,6 +983,7 @@
 	</element>
 	<element name="Superior Hunter's Defense" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_DEFENSE">
 		<description>
+			<p><em>15th-level Ranger feature</em></p>
 			<p>When you take damage, you can take a Reaction to give yourself Resistance to that damage and any other damage of the same type until the end of the current turn.</p>	
 		</description>
 		<sheet action="Reaction">
@@ -594,234 +1025,6 @@
 		<sheet>
 			<description>When a creature hits you with an attack roll, that creature has Disadvantage on all other attack rolls against you this turn.</description>
 		</sheet>
-	</element>
-	
-	<element name="2024 Gloom Stalker" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_RANGER_GLOOM_STALKER">
-		<supports>Ranger Archetype</supports>
-		<description>
-			<p>Gloom Stalkers are at home in the darkest places, wielding magic drawn from the Shadowfell to combat enemies that lurk in darkness.</p>
-			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_DREAD_AMBUSHER" />
-			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_GLOOM_STALKER_SPELLS" />
-			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_UMBRAL_SIGHT" />
-			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_IRON_MIND" />
-			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_STALKERS_FLURRY" />
-			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_SHADOWY_DODGE" />
-		</description>
-		<sheet display="false">
-			<description>Gloom Stalkers are at home in the darkest places, wielding magic drawn from the Shadowfell to combat enemies that lurk in darkness.</description>
-		</sheet>
-		<rules>
-			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_DREAD_AMBUSHER" level="3" />
-			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_GLOOM_STALKER_SPELLS" level="3" />
-			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_UMBRAL_SIGHT" level="3" />
-			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_IRON_MIND" level="7" />
-			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_STALKERS_FLURRY" level="11" />
-			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_SHADOWY_DODGE" level="15" />
-		</rules>
-	</element>
-	<element name="Dread Ambusher" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_DREAD_AMBUSHER">
-		<description>
-			<p>You have mastered the art of creating frightening ambushes, granting you the following benefits:</p>
-			<p class="indent"><strong>Ambusher's Leap.</strong> At the start of the first turn of each combat, your Speed increases by 10 feet until the end of that turn.</p>
-			<p class="indent"><strong>Frighten.</strong> Once per turn when you attack a creature and hit it with a weapon, you can deal an extra 1d8 Psychic damage to the target and force it to make a Wisdom saving throw against your Spell Save DC. On a failed save, it has the Frightened condition until the start of your next turn. You can use this benefit a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
-			<p class="indent"><strong>Initiative Bonus.</strong> When you roll Initiative, you can add your Wisdom modifier to the roll.</p>
-		</description>
-		<sheet>
-			<description>At the start of the first turn of each combat, your Speed increases by 10 feet until the end of that turn.
-			Once per turn when you attack a creature and hit it with a weapon, you can deal an extra 1d8 Psychic damage to the target and force it to make a Wisdom saving throw against your Spell Save DC. On a failed save, it has the Frightened condition until the start of your next turn.
-			When you roll Initiative, you can add your Wisdom modifier to the roll.</description>
-		</sheet>
-		<rules>
-			<stat name="speed:misc" value="10" bonus="ambusher" requirements="[combat:first turn]" />
-			<stat name="initiative" value="wisdom:modifier" bonus="ambusher" />
-		</rules>
-	</element>
-	<element name="Gloom Stalker Spells" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_GLOOM_STALKER_SPELLS">
-		<description>
-			<p>The magic of the Shadowfell ensures you always have certain spells ready; when you reach a Ranger level specified in the Gloom Stalker Spells table, you thereafter always have the listed spells prepared.</p>
-			<h5>Gloom Stalker Spells</h5>
-			<table class="class-features">
-				<thead>
-					<tr><td class="col-5">Ranger Level</td><td class="left">Spells</td></tr>
-				</thead>
-				<tr><td>3rd</td><td class="left">Disguise Self</td></tr>
-				<tr><td>5th</td><td class="left">Rope Trick</td></tr>
-				<tr><td>9th</td><td class="left">Fear</td></tr>
-				<tr><td>13th</td><td class="left">Greater Invisibility</td></tr>
-				<tr><td>17th</td><td class="left">Seeming</td></tr>
-			</table>
-		</description>
-		<sheet display="false" />
-		<rules>
-			<grant type="Spell" id="ID_2024PHB_SPELL_DISGUISE_SELF" level="3" spellcasting="Ranger" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_ROPE_TRICK" level="5" spellcasting="Ranger" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_FEAR" level="9" spellcasting="Ranger" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_GREATER_INVISIBILITY" level="13" spellcasting="Ranger" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_SEEMING" level="17" spellcasting="Ranger" prepared="true" />
-		</rules>
-	</element>
-	<element name="Umbral Sight" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_UMBRAL_SIGHT">
-		<description>
-			<p>You gain Darkvision out to a range of 60 feet. If you already have Darkvision when you gain this feature, its range increases by 60 feet.</p>
-			<p class="indent">You are also adept at evading creatures that rely on Darkvision. While entirely in Darkness, you have the Invisible condition to any creature that relies on Darkvision to see you in that darkness.</p>
-		</description>
-		<sheet display="false">
-			<description>You gain Darkvision out to a range of 60 feet. If you already have Darkvision when you gain this feature, its range increases by 60 feet.
-			While entirely in Darkness, you have the Invisible condition to any creature that relies on Darkvision to see you in that darkness.</description>
-		</sheet>
-		<rules>
-			<stat name="darkvision:range" value="60" bonus="umbral" />
-			<stat name="darkvision:range" value="60" bonus="umbral" requirements="[darkvision:1]" />
-		</rules>
-	</element>
-	<element name="Iron Mind" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_IRON_MIND">
-		<description>
-			<p>You have honed your ability to resist the mind-altering powers of your prey. You gain proficiency in Wisdom saving throws. If you already have this proficiency, you instead gain proficiency in Intelligence or Charisma saving throws (your choice).</p>
-		</description>
-		<sheet display="false">
-			<description>You gain proficiency in Wisdom saving throws. If you already have this proficiency, you instead gain proficiency in Intelligence or Charisma saving throws (your choice).</description>
-		</sheet>
-		<rules>
-			<select type="Proficiency" name="Saving Throw Proficiency" supports="Saving Throw" level="7" />
-		</rules>
-	</element>
-	<element name="Stalker's Flurry" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_STALKERS_FLURRY">
-		<description>
-			<p>When you use the Frighten effect of your Dread Ambusher feature, you can cause one of the following additional effects:</p>
-			<p class="indent"><strong>Sudden Strike.</strong> You can make another attack with the same weapon against a different creature that is within 5 feet of the original target and that is within the weapon's range.</p>
-			<p class="indent"><strong>Mass Fear.</strong> Each creature within 10 feet of the target must make a Wisdom saving throw against your Spell Save DC. On a failed save, a creature has the Frightened condition until the start of your next turn.</p>
-		</description>
-		<sheet>
-			<description>When you use the Frighten effect of your Dread Ambusher feature, you can cause one of the following additional effects:
-			Sudden Strike: You can make another attack with the same weapon against a different creature that is within 5 feet of the original target and that is within the weapon's range.
-			Mass Fear: Each creature within 10 feet of the target must make a Wisdom saving throw against your Spell Save DC. On a failed save, a creature has the Frightened condition until the start of your next turn.</description>
-		</sheet>
-	</element>
-	<element name="Shadowy Dodge" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_SHADOWY_DODGE">
-		<description>
-			<p>You can dodge with wisps of supernatural shadow around you. When a creature makes an attack roll against you, you can use your Reaction to impose Disadvantage on that roll. If the attack then misses, you can teleport up to 30 feet to an unoccupied space you can see.</p>
-		</description>
-		<sheet action="Reaction">
-			<description>When a creature makes an attack roll against you, you can impose Disadvantage on that roll. If the attack then misses, you can teleport up to 30 feet to an unoccupied space you can see.</description>
-		</sheet>
-	</element>
-
-	<element name="2024 Fey Wanderer" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_RANGER_FEY_WANDERER">
-		<supports>Ranger Archetype</supports>
-		<description>
-			<p>A fey mystique surrounds you, thanks to the boon of an archfey or a location in the Feywild that transformed you. However you gained fey magic, you are now a Fey Wanderer. Your joyful laughter brightens the hearts of the downtrodden, and your martial prowess strikes terror in your foes, for great is the mirth of the fey and dreadful is their fury.</p>
-			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_DREADFUL_STRIKES" />
-			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_FEY_WANDERER_SPELLS" />
-			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_OTHERWORLDLY_GLAMOUR" />
-			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_BEGUILING_TWIST" />
-			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_FEY_REINFORCEMENTS" />
-			<div element="ID_2024PHB_ARCHETYPEFEATURE_RANGER_MISTY_WANDERER" />
-		</description>
-		<sheet display="false">
-			<description>A fey mystique surrounds you, thanks to the boon of an archfey or a location in the Feywild that transformed you.</description>
-		</sheet>
-		<rules>
-			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_DREADFUL_STRIKES" level="3" />
-			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_FEY_WANDERER_SPELLS" level="3" />
-			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_OTHERWORLDLY_GLAMOUR" level="3" />
-			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_BEGUILING_TWIST" level="7" />
-			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_FEY_REINFORCEMENTS" level="11" />
-			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_MISTY_WANDERER" level="15" />
-		</rules>
-	</element>
-	<element name="Dreadful Strikes" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_DREADFUL_STRIKES">
-		<description>
-			<p>You can augment your weapon strikes with mind-scarring magic drawn from the murky hollows of the Feywild. When you hit a creature with a weapon, you can deal an extra 1d4 Psychic damage to the target, which can take this extra damage only once per turn. The extra damage increases to 1d6 when you reach Ranger level 11.</p>
-		</description>
-		<sheet usage="1/Turn">
-			<description>When you hit a creature with a weapon, you can deal an extra 1d4 Psychic damage to the target, which can take this extra damage only once per turn.</description>
-		</sheet>
-		<rules>
-			<stat name="dreadful strikes:damage" value="4" level="3" />
-			<stat name="dreadful strikes:damage" value="6" level="11" />
-		</rules>
-	</element>
-	<element name="Fey Wanderer Spells" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_FEY_WANDERER_SPELLS">
-		<description>
-			<p>When you reach a Ranger level specified in the Fey Wanderer Spells table, you thereafter always have the listed spells prepared.</p>
-			<h5>Fey Wanderer Spells</h5>
-			<table class="class-features">
-				<thead>
-					<tr><td class="col-5">Ranger Level</td><td class="left">Spell</td></tr>
-				</thead>
-				<tr><td>3rd</td><td class="left">Charm Person</td></tr>
-				<tr><td>5th</td><td class="left">Misty Step</td></tr>
-				<tr><td>9th</td><td class="left">Summon Fey</td></tr>
-				<tr><td>13th</td><td class="left">Dimension Door</td></tr>
-				<tr><td>17th</td><td class="left">Mislead</td></tr>
-			</table>
-			<p>You also possess a fey blessing. Choose it from the Feywild Gifts table or determine it randomly.</p>
-			<h5>Feywild Gifts</h5>
-			<table class="class-features">
-				<thead>
-					<tr><td class="col-5">1d6</td><td class="left">Gift</td></tr>
-				</thead>
-				<tr><td>1</td><td class="left">Illusory butterflies flutter around you while you take a Short or Long Rest.</td></tr>
-				<tr><td>2</td><td class="left">Flowers bloom from your hair each dawn.</td></tr>
-				<tr><td>3</td><td class="left">You faintly smell of cinnamon, lavender, nutmeg, or another comforting herb or spice.</td></tr>
-				<tr><td>4</td><td class="left">Your shadow dances while no one is looking directly at it.</td></tr>
-				<tr><td>5</td><td class="left">Horns or antlers sprout from your head.</td></tr>
-				<tr><td>6</td><td class="left">Your skin and hair change color each dawn.</td></tr>
-			</table>
-		</description>
-		<sheet display="false" />
-		<rules>
-			<grant type="Spell" id="ID_2024PHB_SPELL_CHARM_PERSON" level="3" spellcasting="Ranger" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_MISTY_STEP" level="5" spellcasting="Ranger" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_SUMMON_FEY" level="9" spellcasting="Ranger" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_DIMENSION_DOOR" level="13" spellcasting="Ranger" prepared="true" />
-			<grant type="Spell" id="ID_2024PHB_SPELL_MISLEAD" level="17" spellcasting="Ranger" prepared="true" />
-		</rules>
-	</element>
-	<element name="Otherworldly Glamour" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_OTHERWORLDLY_GLAMOUR">
-		<description>
-			<p>Whenever you make a Charisma check, you gain a bonus to the check equal to your Wisdom modifier (minimum of +1).</p>
-			<p class="indent">You also gain proficiency in one of these skills of your choice: Deception, Performance, or Persuasion.</p>
-		</description>
-		<sheet display="false">
-			<description>Whenever you make a Charisma check, you gain a bonus to the check equal to your Wisdom modifier (minimum of +1).</description>
-		</sheet>
-		<rules>
-			<stat name="charisma:check" value="wisdom:modifier:min" bonus="glamour" />
-			<stat name="charisma:check" value="wisdom:modifier" bonus="glamour" />
-			<select type="Proficiency" name="Skill Proficiency" supports="Skill" level="3" />
-		</rules>
-	</element>
-	<element name="Beguiling Twist" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_BEGUILING_TWIST">
-		<description>
-			<p>The magic of the Feywild guards your mind. You have Advantage on saving throws to avoid or end the Charmed or Frightened condition.</p>
-			<p class="indent">In addition, whenever you or a creature you can see within 120 feet of you succeeds on a saving throw to avoid or end the Charmed or Frightened condition, you can take a Reaction to force a different creature you can see within 120 feet of yourself to make a Wisdom save against your spell save DC. On a failed save, the target is Charmed or Frightened (your choice) for 1 minute. The target repeats the save at the end of each of its turns, ending the effect on itself on a success.</p>
-		</description>
-		<sheet action="Reaction">
-			<description>You have Advantage on saving throws to avoid or end the Charmed or Frightened condition. Additionally whenever you or a creature you can see within 120 feet of you succeeds on a saving throw to avoid or end the Charmed or Frightened condition, you can use your reaction to force a different creature you can see within 120 feet of yourself to make a Wisdom save against your spell save DC. On a failed save, the target is Charmed or Frightened (your choice) for 1 minute.</description>
-		</sheet>
-	</element>
-	<element name="Fey Reinforcements" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_FEY_REINFORCEMENTS">
-		<description>
-			<p>You can cast Summon Fey without a Material component. You can also cast it once without a spell slot, and you regain the ability to cast it in this way when you finish a Long Rest.</p>
-			<p class="indent">Whenever you start casting the spell, you can modify it so that it doesn't require Concentration. If you do so, the spell's duration becomes 1 minute for that casting.</p>
-		</description>
-		<sheet usage="1/Long Rest">
-			<description>You can cast Summon Fey once without a spell slot, and you regain the ability to cast it in this way when you finish a Long Rest.</description>
-		</sheet>
-	</element>
-	<element name="Misty Wanderer" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPEFEATURE_RANGER_MISTY_WANDERER">
-		<description>
-			<p>You can cast Misty Step without expending a spell slot. You can do so a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
-			<p class="indent">In addition, whenever you cast Misty Step, you can bring along one willing creature you can see within 5 feet of yourself. That creature teleports to an unoccupied space of your choice within 5 feet of your destination space.</p>
-		</description>
-		<sheet usage="{{misty wanderer:casts}}/Long Rest">
-			<description>You can cast Misty Step without expending a spell slot.</description>
-		</sheet>
-		<rules>
-			<stat name="misty wanderer:casts" value="1" bonus="misty wanderer:casts"/>
-			<stat name="misty wanderer:casts" value="wisdom:modifier" bonus="misty wanderer:casts"/>
-		</rules>
 	</element>
 
 	<!-- Expertise -->
