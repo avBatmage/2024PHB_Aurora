@@ -122,7 +122,7 @@
 			</ul>
 		</description>
 		<sheet>
-			<description>Once per Long Rest, When you would be reduced to 0 Hit Points, You can drop to 1 Hit Point and regain {{hp:half}} Hit Points.
+			<description>Once per Long Rest, When you would be reduced to 0 Hit Points, You can drop to 1 Hit Point and regain a number of Hit Points equal to half your Hit Point maximum.
 			You have a pool of ten d10s. As a Bonus Action you can expend dice from the pool and heal yourself equal to the roll's total. You regain all the expended dice when you finish a Long Rest.</description>
 		</sheet>
 		<rules>

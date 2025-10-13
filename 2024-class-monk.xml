@@ -214,8 +214,9 @@
 		<description>
 			<p>You can expend 1 Focus Point to make two Unarmed Strikes as a Bonus Action.</p>
 		</description>
-		<sheet action="Bonus Action" usage="1 Focus Point">
+		<sheet action="Bonus Action" usage="1 Focus">
 			<description>You can make two Unarmed Strikes</description>
+			<description level="10">You can make three Unarmed Strikes</description>
 		</sheet>
 	</element>
 	<element name="Patient Defense" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_MONK_PATIENT_DEFENSE">
@@ -224,7 +225,12 @@
 		</description>
 		<sheet action="Bonus Action">
 			<description>Take the Disengage action, or spend 1 Focus Point to take both Disengage and Dodge actions.</description>
+			<description level="10">Take the Disengage action, or spend 1 Focus Point to take both Disengage and Dodge actions and gain 2d{{martial arts:dice}} temporary hp.</description>
 		</sheet>
+		<rules>
+			<stat name="deflect attacks:damage" value="dexterity:modifier" />
+			<stat name="deflect attacks:damage" value="level:2024 monk" />
+		</rules>
 	</element>
 	<element name="Step of the Wind" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_MONK_STEP_OF_THE_WIND">
 		<description>
@@ -232,6 +238,7 @@
 		</description>
 		<sheet action="Bonus Action">
 			<description>Take the Dash action, or spend 1 Focus Point to take both Disengage and Dash actions with doubled jump distance.</description>
+			<description level="10">Take the Dash action, or spend 1 Focus Point to take both Disengage and Dash actions with doubled jump distance and you can choose a willing creature within 5 feet of you that is Large or smaller. You move the creature with you until the end of your turn. The creature's movement doesn't provoke Opportunity Attacks..</description>
 		</sheet>
 	</element>
 	<element name="Unarmored Movement" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_MONK_UNARMORED_MOVEMENT">
@@ -241,6 +248,7 @@
 		</description>
 		<sheet>
 			<description>Your speed increases by {{unarmored movement}} feet while not wearing armor or a shield.</description>
+			<description level="9">Your speed increases by {{unarmored movement}} feet while not wearing armor or a shield and you can move along vertical surfaces and across liquids on your turn without falling.</description>
 		</sheet>
 		<rules>
 			<stat name="unarmored movement" value="10" bonus="unarmored movement" level="2" />
@@ -257,7 +265,7 @@
 			<p>When you roll Initiative, you can regain all expended Focus Points. When you do so, roll your Martial Arts die, and regain a number of Hit Points equal to your Monk level plus the number rolled.</p>
 			<p>Once you use this feature, you can't use it again until you finish a Long Rest.</p>
 		</description>
-		<sheet usage="Long Rest">
+		<sheet usage="1/Long Rest">
 			<description>When you roll Initiative, you can regain all expended Focus Points and heal for 1d{{martial arts:dice}}+{{level:2024 monk}}.</description>
 		</sheet>
 	</element>
@@ -268,7 +276,9 @@
 			<p>If you reduce the damage to 0, you can spend 1 Focus Point to redirect some of the attack's force. If you do so, choose a creature within 5 feet of you if the attack was a melee attack or 60 feet of yourself that isn't behind Total Cover if the attack was a ranged attack. That creature must succeed on a Dexterity saving throw or take damage equal to two rolls of your Martial Arts die plus your Dexterity modifier. The damage is the same type dealt by the attack.</p>
 		</description>
 		<sheet action="Reaction">
-			<description>When hit by a melee/ranged attack dealing Bludgeoning, Piercing, or Slashing damage, reduce damage by 1d10+{{deflect attacks:damage}}. If damage is reduced to 0, you can spend 1 Focus Point to redirect the attack. 
+			<description>When hit by an attack dealing Bludgeoning, Piercing, or Slashing damage, reduce damage by 1d10+{{deflect attacks:damage}}. If damage is reduced to 0, you can spend 1 Focus Point to redirect the attack, choose a target you can see within 5ft(Melee)/60ft(Ranged) depending on the incoming attack. 
+			If you do so, the target must succeed on a DEX save or take damage equal to 2d{{martial arts:dice}}+{{dexterity:modifier}}.</description>
+			<description level="13">When hit by an attack, reduce damage by 1d10+{{deflect attacks:damage}}. If damage is reduced to 0, you can spend 1 Focus Point to redirect the attack, choose a target you can see within 5ft(Melee)/60ft(Ranged) depending on the incoming attack. 
 			If you do so, the target must succeed on a DEX save or take damage equal to 2d{{martial arts:dice}}+{{dexterity:modifier}}.</description>
 		</sheet>
 		<rules>
@@ -333,7 +343,7 @@
 			<p><em>5th-level Monk feature</em></p>
 			<p>Once per turn when you hit a creature with a Monk weapon or an Unarmed Strike, you can expend 1 Focus Point to attempt a stunning strike. The target must make a Constitution saving throw. On a failed save, the target has the Stunned condition until the start of your next turn. On a successful save, the target's Speed is halved until the start of your next turn, and the next attack roll made against the target before then has Advantage.</p>
 		</description>
-		<sheet usage="1 Focus Point">
+		<sheet usage="1 Focus">
 			<description>Once per turn when you hit with a melee attack, you can force a CON save or the target is Stunned until the end of your next turn.</description>
 		</sheet>
 	</element>
@@ -360,7 +370,7 @@
 			<p><em>9th-level Monk feature</em></p>
 			<p>While you aren't wearing armour or wielding a Shield, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the movement.</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description>While not wearing armour or wielding a shield, you can move along vertical surfaces and across liquids on your turn without falling.</description>
 		</sheet>
 	</element>
@@ -372,7 +382,7 @@
 			<p><strong>Patient Defence.</strong> When you spend a Focus Point to use Patient Defence, you gain a number of Temporary Hit Points equal to two rolls of your Martial Arts die.</p>
 			<p><strong>Step of the Wind.</strong> When you spend a Focus Point to use Step of the Wind, you can choose a willing creature within 5 feet of you that is Large or smaller. You move the creature with you until the end of your turn. The creature's movement doesn't provoke Opportunity Attacks.</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description>Enhanced Flurry of Blows (3 attacks), Patient Defence (gains temp HP), and Step of the Wind (can move allies).</description>
 		</sheet>
 	</element>
@@ -391,7 +401,7 @@
 			<p><em>13th-level Monk feature</em></p>
 			<p>You can now use your Deflect Attacks feature against attacks that deal any damage type, not just Bludgeoning, Piercing, or Slashing.</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description>You can now use Deflect Attacks against attacks that deal any damage type.</description>
 		</sheet>
 	</element>
@@ -400,7 +410,7 @@
 			<p><em>14th-level Monk feature</em></p>
 			<p>You gain proficiency in all saving throws. Additionally, whenever you make a saving throw and fail, you can spend 1 Focus Point to reroll it and take the second result.</p>
 		</description>
-		<sheet usage="1 Focus Point">
+		<sheet usage="1 Focus">
 			<description>Whenever you make a saving throw and fail, you can reroll it and take the second result.</description>
 		</sheet>
 		<rules>
@@ -426,11 +436,12 @@
 			<p><em>18th-level Monk feature</em></p>
 			<p>At the start of your turn, you can expend 3 Focus Points to bolster yourself against harm for 1 minute or until you have the Incapacitated condition. During that time, you have Resistance to all damage except Force damage.</p>
 		</description>
-		<sheet usage="3 Focus Points">
+		<sheet usage="3 Focus">
 			<description>At the start of your turn, you can gain Resistance to all damage except Force for 1 minute or until you have the Incapacitated condition.</description>
 		</sheet>
 	</element>
 	<element name="Epic Boon" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_MONK_EPIC_BOON">
+		<compendium display="false" />
 		<description>
 			<p><em>19th-level Monk feature</em></p>
 			<p>You gain an Epic Boon feat or another feat of your choice for which you qualify. Boon of Irresistible Offense is recommended.</p>
@@ -442,7 +453,7 @@
 			<p><em>20th-level Monk feature</em></p>
 			<p>You have developed your body and mind to new heights. Your Dexterity and Wisdom scores increase by 4, to a maximum of 25.</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description>Your Dexterity and Wisdom scores increase by 4 (maximum 25).</description>
 		</sheet>
 		<rules>
@@ -480,8 +491,9 @@
 			<p><em>3rd-level Warrior of Mercy feature</em></p>
 			<p>Once per turn when you hit a creature with an Unarmed Strike and deal damage, you can expend 1 Focus Point to deal extra Necrotic damage equal to one roll of your Martial Arts die plus your Wisdom modifier.</p>
 		</description>
-		<sheet usage="1 Focus Point">
-			<description>Once per turn when you hit with an unarmed strike and deal damage, you can deal extra Necrotic damage equal to 1d{{martial arts:dice}}+{{wisdom:modifier}}.</description>
+		<sheet action="1 Focus" usage="1/Turn">
+			<description>Once per turn when you hit with an unarmed strike and deal damage, you can deal 1d{{martial arts:dice}}+{{wisdom:modifier}} extra Necrotic damage.</description>
+			<description level="6">Once per turn when you hit with an unarmed strike and deal damage, you can deal 1d{{martial arts:dice}}+{{wisdom:modifier}} extra Necrotic damage, you can also give that creature the Poisoned condition until the end of your next turn.</description>
 		</sheet>
 	</element>
 	<element name="Hand of Healing" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_HAND_OF_HEALING">
@@ -490,8 +502,9 @@
 			<p>As a Magic action, you can expend 1 Focus Point to touch a creature and restore a number of Hit Points equal to a roll of your Martial Arts die plus your Wisdom modifier.</p>
 			<p>When you use your Flurry of Blows, you can replace one of the Unarmed Strikes with a use of this feature without expending a Focus Point for the healing.</p>
 		</description>
-		<sheet action="Magic Action" usage="1 Focus Point">
+		<sheet action="Magic Action" usage="1 Focus">
 			<description>Touch a creature to restore 1d{{martial arts:dice}}+{{wisdom:modifier}} Hit Points. Can replace one Flurry of Blows attack with this healing.</description>
+			<description level="6">Touch a creature to restore 1d{{martial arts:dice}}+{{wisdom:modifier}} Hit Points, you can also end one of the following conditions on the creature you heal: Blinded, Deafened, Paralyzed, Poisoned, or Stunned. Can replace one Flurry of Blows attack with this healing.</description>
 		</sheet>
 	</element>
 	<element name="Implements of Mercy" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_IMPLEMENTS_OF_MERCY">
@@ -499,7 +512,7 @@
 			<p><em>3rd-level Warrior of Mercy feature</em></p>
 			<p>You gain proficiency in the Insight and Medicine skills and proficiency with the Herbalism Kit.</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description>You gain proficiency in Insight and Medicine skills and with the Herbalism Kit.</description>
 		</sheet>
 		<rules>
@@ -515,7 +528,7 @@
 			<p><strong>Hand of Harm.</strong> When you use Hand of Harm on a creature, you can also give that creature the Poisoned condition until the end of your next turn.</p>
 			<p><strong>Hand of Healing.</strong> When you use Hand of Healing, you can also end one of the following conditions on the creature you heal: Blinded, Deafened, Paralyzed, Poisoned, or Stunned.</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description>Hand of Harm can also Poison the target. Hand of Healing can also end Blinded, Deafened, Paralyzed, Poisoned, or Stunned conditions.</description>
 		</sheet>
 	</element>
@@ -527,7 +540,7 @@
 			<p>You can use these benefits a total number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a Long Rest.</p>
 		</description>
 		<sheet usage="{{wisdom:modifier}}/Long Rest">
-			<description>When using Flurry of Blows, you can replace attacks with Hand of Healing (no Focus Point cost) or add Hand of Harm to attacks (no Focus Point cost, still once per turn).</description>
+			<description>When using Flurry of Blows, you can replace each attack with Hand of Healing (no Focus Point cost) or add Hand of Harm to attacks (no Focus Point cost, still once per turn).</description>
 		</sheet>
 	</element>
 	<element name="Hand of Ultimate Mercy" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_HAND_OF_ULTIMATE_MERCY">
@@ -566,7 +579,7 @@
 			<p><strong>Darkvision.</strong> You gain Darkvision with a range of 60 feet. If you already have Darkvision, its range increases by 60 feet.</p>
 			<p><strong>Shadowy Figments.</strong> You know the Minor Illusion spell. Wisdom is your spellcasting ability for it.</p>
 		</description>
-		<sheet usage="1 Focus Point">
+		<sheet usage="1 Focus">
 			<description>You can cast the Darkness spell without spell components and see within it. Additionally, you can move its area of darkness to a space within 60 feet of you at the start of each of your turns.</description>
 		</sheet>
 		<rules>
@@ -591,7 +604,7 @@
 			<p>You can draw on your connection to shadow to empower your teleportation. When you use your Shadow Step, you can spend 1 Focus Point to remove the requirement that you must start and end in Dim Light or Darkness for that use of the feature. As part of this Bonus Action, you can make an Unarmed Strike immediately after the teleportation.</p>
 		</description>
 		<sheet>
-			<description>When you Shadow Step, you can spend 1 Focus Point to ignore the dim light/darkness requirement. You can make an unarmed strike after teleporting.</description>
+			<description>When you Shadow Step, you can spend 1 Focus Point to ignore the dim light/darkness requirement and can make an unarmed strike after teleporting.</description>
 		</sheet>
 	</element>
 	<element name="Cloak of Shadows" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CLOAK_OF_SHADOWS">
@@ -602,8 +615,8 @@
 			<p><strong>Partially Incorporeal.</strong> You can move through occupied spaces as if they were Difficult Terrain. If you end your turn in such a space, you are shunted to the last unoccupied space you were in.</p>
 			<p><strong>Shadow Flurry.</strong> You can use your Flurry of Blows without expending any Focus Points.</p>
 		</description>
-		<sheet action="Magic Action" usage="3 Focus Points">
-			<description>While in dim light/darkness, become invisible and partially incorporeal for 1 minute allowing you to move through occupied spaces as if they were difficult terrain on your turn. You can also use Flurry of Blows without expending any Focus Points.</description>
+		<sheet action="Magic Action" usage="3 Focus">
+			<description>While in dim light/darkness, become invisible and partially incorporeal for 1 minute allowing you to move through occupied spaces as if they were difficult terrain on your turn. You can also use Flurry of Blows without expending any Focus Points. This ends early if you're Incapacitated or end your turn in Bright light.</description>
 		</sheet>
 	</element>
 
@@ -633,8 +646,9 @@
 			<p><strong>Elemental Strikes.</strong> Whenever you hit with your Unarmed Strike, you can cause it to deal your choice of Acid, Cold, Fire, or Lightning damage rather than its normal damage type. When you deal one of these types with your Unarmed Strike, you can also force the target to make a Strength saving throw. On a failed save, you can move the target up to 10 feet toward or away from you, as elemental energy swirls around it.</p>
 			<p><strong>Reach.</strong> When you make an Unarmed Strike, your reach is 10 feet greater than normal, as elemental energy extends from you.</p>
 		</description>
-		<sheet usage="1 Focus Point">
-			<description>At start of turn, imbue yourself with elemental energy for 10 min. Unarmed strikes deal elemental damage and can move targets. Reach increases by 10ft.</description>
+		<sheet usage="1 Focus">
+			<description>At start of turn, imbue yourself with elemental energy for 10 min. Unarmed reach increases by 10ft, Unarmed strikes can deal Acid, Cold, Fire, or Lightning damage rather than its normal damage type and can force a STR save or you can move the target 10ft toward or away from you.
+			You also gain a fly and swim speed equal to your speed for 10 minutes.</description>
 		</sheet>
 	</element>
 	<element name="Manipulate Elements" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_MANIPULATE_ELEMENTS">
@@ -642,9 +656,12 @@
 			<p><em>3rd-level Warrior of the Elements feature</em></p>
 			<p>You have attuned yourself with the elemental forces of the multiverse. You know the Elementalism cantrip.</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description>You know the Elementalism cantrip.</description>
 		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_ELEMENTALISM" />
+		</rules>
 	</element>
 	<element name="Elemental Burst" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_ELEMENTAL_BURST">
 		<description>
@@ -653,8 +670,8 @@
 			<p>Each creature in the sphere must make a Dexterity saving throw. On a failed save, a creature takes damage of the chosen type equal to three rolls of your Martial Arts die. On a successful save, a creature takes half as much damage.</p>
 			<p>Before or after you take this action, you can make one Unarmed Strike as a Bonus Action.</p>
 		</description>
-		<sheet action="Action" usage="2 Focus Points">
-			<description>Create a 20-ft-radius burst of elemental damage (3x Martial Arts die) within 120ft. DEX save for half. Make an unarmed strike as a bonus action.</description>
+		<sheet action="Magic Action" usage="2 Focus">
+			<description>Create a 20-ft-radius burst of elemental damage within 120ft. Choose a damage type: Acid, Cold, Fire, or Lightning. It deals 3d{{martial arts:dice}}, DEX save for half. Make an unarmed strike as a bonus action.</description>
 		</sheet>
 	</element>
 	<element name="Stride of the Elements" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_STRIDE_OF_THE_ELEMENTS">
@@ -662,7 +679,7 @@
 			<p><em>11th-level Warrior of the Elements feature</em></p>
 			<p>When you use your Elemental Attunement feature, you gain a Fly Speed and Swim Speed equal to your Speed for 10 minutes.</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description>When you use Elemental Attunement, you gain a fly and swim speed equal to your speed for 10 minutes.</description>
 		</sheet>
 	</element>
@@ -675,7 +692,9 @@
 			<p><strong>Empowered Strikes.</strong> Once on each of your turns, you can deal extra damage to a target equal to one roll of your Martial Arts die when you hit it with an Unarmed Strike. The damage is the same type you chose for this feature's damage resistance.</p>
 		</description>
 		<sheet>
-			<description>When you use Elemental Attunement, gain resistance to an element (can change), deal damage when moving with Step of the Wind, and deal extra damage on one unarmed strike per turn.</description>
+			<description>When you use Elemental Attunement choose an element which is used by the following traits can be changed at the start of each turn: Gain resistance that element.
+			When you use your Step of the Wind, your Speed increases by 20 feet until the end of the turn. For that duration, any creature of your choice takes 1d{{martial arts:dice}} elemental damage when you enter a space within 5 feet of it. A creature can take this damage only once per turn.
+			Once on each of your turns, you can deal extra 1d{{martial arts:dice}} elemental damage to a target when you hit it with an Unarmed Strike.</description>
 		</sheet>
 	</element>
 
@@ -705,7 +724,10 @@
 			<p><strong>Topple.</strong> The target must succeed on a Dexterity saving throw or have the Prone condition.</p>
 		</description>
 		<sheet>
-			<description>When you hit with Flurry of Blows, you can addle, push (STR save), or topple (DEX save) the target.</description>
+			<description>When you hit with Flurry of Blows, you can use one of the following:
+			Addle. The target can't make Opportunity Attacks until the start of its next turn.
+			Push. The target must succeed on a Strength save or be pushed up to 15 feet away from you.
+			Topple.  The target must succeed on a Dexterity save or have the Prone condition.</description>
 		</sheet>
 	</element>
 	<element name="Wholeness of Body" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_WHOLENESS_OF_BODY">
@@ -715,7 +737,7 @@
 			<p>You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
 		</description>
 		<sheet action="Bonus Action" usage="{{wisdom:modifier}}/Long Rest">
-			<description>Heal yourself for one Martial Arts die + Wisdom modifier.</description>
+			<description>Heal yourself for {{martial arts:dice}} + {{wisdom:modifier}}.</description>
 		</sheet>
 	</element>
 	<element name="Fleet Step" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_FLEET_STEP">
@@ -724,7 +746,7 @@
 			<p>When you take a Bonus Action other than Step of the Wind, you can also use Step of the Wind immediately after that Bonus Action.</p>
 		</description>
 		<sheet>
-			<description>When you take a Bonus Action other than Step of the Wind, you can also use Step of the Wind.</description>
+			<description>When you take a Bonus Action other than Step of the Wind, you can also use Step of the Wind immediately afterwards.</description>
 		</sheet>
 	</element>
 	<element name="Quivering Palm" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_QUIVERING_PALM">
@@ -733,8 +755,8 @@
 			<p>You gain the ability to set up lethal vibrations in someone's body. When you hit a creature with an Unarmed Strike, you can expend 4 Focus Points to start these imperceptible vibrations, which last for a number of days equal to your Monk level. The vibrations are harmless unless you take an action to end them. Alternatively, when you take the Attack action on your turn, you can forgo one of the attacks to end the vibrations. To end them, you and the target must be on the same plane of existence. When you end them, the target must make a Constitution saving throw, taking 10d12 Force damage on a failed save or half as much damage on a successful one.</p>
 			<p>You can have only one creature under the effect of this feature at a time. You can end the vibrations harmlessly (no action required).</p>
 		</description>
-		<sheet usage="4 Focus Points">
-			<description>When you hit with an unarmed strike, you can apply lethal vibrations. As an action, you can end the vibrations, forcing a CON save for 10d12 Force damage (half on success).</description>
+		<sheet usage="4 Focus">
+			<description>When you hit with an unarmed strike, you can apply lethal vibrations. They last for {{level:2024 monk}} days. As an action or with one attack during the Attack action, you can end the vibrations if they are on the same plane of existence, forcing a Constitution save for 10d12 Force damage (half on success).</description>
 		</sheet>
 	</element>
 

@@ -30,10 +30,13 @@
 			<description>If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative.</description>
 		</sheet>
 	</element>
-	<element name="Cleave" type="Weapon Property" source="2024 Player's Handbook" id="ID_2024PHB_WEAPON_PROPERTY_CLEAVE">
+	<element name="Cleave" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_WEAPON_PROPERTY_CLEAVE">
 		<description>
 			<p>If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.</p>
 		</description>
+		<sheet>
+			<description>If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.</description>
+		</sheet>
 	</element>
 	<element name="Glaive (Graze)" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WPM_GLAIVE_GRAZE">
 		<compendium display="false" />
@@ -57,10 +60,13 @@
 			<description>If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier.</description>
 		</sheet>
 	</element>
-	<element name="Graze" type="Weapon Property" source="2024 Player's Handbook" id="ID_2024PHB_WEAPON_PROPERTY_GRAZE">
+	<element name="Graze" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_WEAPON_PROPERTY_GRAZE">
 		<description>
 			<p>If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier.</p>
 		</description>
+		<sheet>
+			<description>If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier.</description>
+		</sheet>
 	</element>
 	<element name="Dagger (Nick)" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WPM_DAGGER_NICK">
 		<compendium display="false" />
@@ -106,10 +112,13 @@
 			<description>When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action.</description>
 		</sheet>
 	</element>
-	<element name="Nick" type="Weapon Property" source="2024 Player's Handbook" id="ID_2024PHB_WEAPON_PROPERTY_NICK">
+	<element name="Nick" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_WEAPON_PROPERTY_NICK">
 		<description>
 			<p>When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn.</p>
 		</description>
+		<sheet>
+			<description>When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn.</description>
+		</sheet>
 	</element>
 	<element name="Greatclub (Push)" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WPM_PUSH">
 		<compendium display="false" />
@@ -155,10 +164,13 @@
 			<description>If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.</description>
 		</sheet>
 	</element>
-	<element name="Push" type="Weapon Property" source="2024 Player's Handbook" id="ID_2024PHB_WEAPON_PROPERTY_PUSH">
+	<element name="Push" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_WEAPON_PROPERTY_PUSH">
 		<description>
 			<p>If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.</p>
 		</description>
+		<sheet>
+			<description>If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.</description>
+		</sheet>
 	</element>
 	<element name="Mace (Sap)" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WPM_MACE_SAP">
 		<compendium display="false" />
@@ -226,10 +238,13 @@
 			<description>If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.</description>
 		</sheet>
 	</element>
-	<element name="Sap" type="Weapon Property" source="2024 Player's Handbook" id="ID_2024PHB_WEAPON_PROPERTY_SAP">
+	<element name="Sap" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_WEAPON_PROPERTY_SAP">
 		<description>
 			<p>If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.</p>
 		</description>
+		<sheet>
+			<description>If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.</description>
+		</sheet>
 	</element>
 	<element name="Club (Slow)" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WPM_CLUB_SLOW">
 		<compendium display="false" />
@@ -308,10 +323,13 @@
 			<description>If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.</description>
 		</sheet>
 	</element>
-	<element name="Slow" type="Weapon Property" source="2024 Player's Handbook" id="ID_2024PHB_WEAPON_PROPERTY_SLOW">
+	<element name="Slow" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_WEAPON_PROPERTY_SLOW">
 		<description>
 			<p>If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.</p>
 		</description>
+		<sheet>
+			<description>If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.</description>
+		</sheet>
 	</element>
 
 	<element name="Quarterstaff (Topple)" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WPM_QUARTERSTAFF_TOPPLE">
@@ -369,10 +387,13 @@
 			<description>If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 + the ability modifier used to make the attack roll and your PB). On a failed save, the creature has the Prone condition.</description>
 		</sheet>
 	</element>
-	<element name="Topple" type="Weapon Property" source="2024 Player's Handbook" id="ID_2024PHB_WEAPON_PROPERTY_TOPPLE">
+	<element name="Topple" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_WEAPON_PROPERTY_TOPPLE">
 		<description>
 			<p>If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.</p>
 		</description>
+		<sheet>
+			<description>If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.</description>
+		</sheet>
 	</element>
 	<element name="Handaxe (Vex)" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WPM_HANDAXE_VEX">
 		<compendium display="false" />
@@ -462,9 +483,12 @@
 			<description>If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.</description>
 		</sheet>
 	</element>
-	<element name="Vex" type="Weapon Property" source="2024 Player's Handbook" id="ID_2024PHB_WEAPON_PROPERTY_VEX">
+	<element name="Vex" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_WEAPON_PROPERTY_VEX">
 		<description>
 			<p>If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.</p>
 		</description>
+		<sheet>
+			<description>If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.</description>
+		</sheet>
 	</element>
 </elements>

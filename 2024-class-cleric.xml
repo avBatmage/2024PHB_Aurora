@@ -318,6 +318,7 @@
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_ABILITY_SCORE_IMPROVEMENT</requirements>
 		<compendium display="false" />
 		<description>
+			<p><em>4th, 8th, 12th, 16th, and 19th-level Cleric feature</em></p>
 			<p>You gain the Ability Score Improvement feat or another feat of your choice for which you qualify.</p>
 		</description>
 		<sheet display="false" />
@@ -343,6 +344,8 @@
 		<description>
 			<p><em>7th-level Cleric feature</em></p>
 			<p>Divine power infuses you in battle. You gain one of the following options of your choice (if you get either option from a Cleric subclass in an older book, use only the option you choose for this feature).</p>
+			<div element="ID_2024PHB_CLASS_FEATURE_CLERIC_BLESSEDSTRIKES_DIVINESTRIKE" />
+			<div element="ID_2024PHB_CLASS_FEATURE_CLERIC_BLESSEDSTRIKES_POTENTSPELLCASTING" />
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -352,7 +355,7 @@
 	<element name="Divine Strike" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_CLERIC_BLESSEDSTRIKES_DIVINESTRIKE">
 		<supports>Blessed Strikes, Cleric</supports>
 		<description>
-			<p>Your deity's blessing manifests when you strike a foe. When you deal damage to a creature, you can increase the damage by 1d8. The damage is Radiant or Necrotic (your choice). You can use this feature only once per turn.</p>
+			<p>Once on each of your turns when you hit a creature with an attack roll using a weapon, you can cause the target to take an extra ld8 Necrotic or Radiant damage (your choice).</p>
 		</description>
 		<sheet usage="1/turn">
 			<description>When you hit a creature with an attack roll using a weapon, you can increase the damage by 1d8 Radiant or Necrotic damage.</description>
@@ -394,6 +397,7 @@
 		<sheet display="false" />
 	</element>
 	<element name="Epic Boon" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_CLERIC_EPICBOON">
+		<compendium display="false" />
 		<description>
 			<p><em>19th-level Cleric feature</em></p>
 			<p>You gain an Epic Boon feat or another feat of your choice for which you qualify. Boon of Fate is recommended.</p>
@@ -418,8 +422,6 @@
 	<element name="Ability Score Improvement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_ABILITY_SCORE_IMPROVEMENT" />
 	<element name="Destroy Undead Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DESTROY_UNDEAD" />
 	<element name="Divine Intervention Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DIVINE_INTERVENTION" />
-
-	<element name="Divine Strike or Potent Spellcasting Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DIVINE_STRIKE_OR_POTENT_SPELLCASTING" />
 	
 	<!--Subclasses-->
 	<element name="2024 Life Domain" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_CLERIC_LIFE_DOMAIN">
@@ -669,9 +671,9 @@
 			<p>You can use your Channel Divinity to create an illusory duplicate of yourself.</p>
 			<p>As a Bonus Action, you can expend one use of your Channel Divinity to teleport up to 30 feet to an unoccupied space you can see, and you create a perfect visual illusion of yourself in the space you left. The illusion lasts for 1 minute, but it ends early if you have the Incapacitated condition or dismiss it as a Bonus Action.</p>
 			<p>While the illusion persists, you gain the following benefits:</p>
-			<p><b>Cast Spells.</b> You can cast spells as though you were in the illusion's space, but you must use your own senses.</p>
-			<p><b>Distract.</b> When both you and your illusion are within 5 feet of a creature that can see the illusion, you have Advantage on attack rolls against that creature, given how distracting the illusion is to the target.</p>
-			<p><b>Move.</b> As a Bonus Action, you can move the illusion up to 30 feet to an unoccupied space you can see that is within 120 feet of yourself.</p>
+			<p class="indent"><strong><em>Cast Spells.</em></strong> You can cast spells as though you were in the illusion's space, but you must use your own senses.</p>
+			<p class="indent"><strong><em>Distract.</em></strong> When both you and your illusion are within 5 feet of a creature that can see the illusion, you have Advantage on attack rolls against that creature, given how distracting the illusion is to the target.</p>
+			<p class="indent"><strong><em>Move.</em></strong> As a Bonus Action, you can move the illusion up to 30 feet to an unoccupied space you can see that is within 120 feet of yourself.</p>
 		</description>
 		<sheet action="Bonus Action" usage="Channel Divinity">
 			<description>Teleport up to 30 feet, leaving a perfect illusion of yourself for 1 minute. You can cast spells from its space, Gain Advantage on attacks against creatures within 5ft of you and the illusion, and as a Bonus Action move it 30ft to an unoccupied space you can see within 120 feet of yourself.</description>

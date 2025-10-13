@@ -4,7 +4,7 @@
 		<name>2024 Bard</name>
 		<description>The Bard class from the 2024 Player's Handbook.</description>
 		<author url="https://marketplace.dndbeyond.com/category/3709000?pid=DB3709000">Wizards of the Coast</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="2024-class-bard.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-class-bard.xml" />
 		</update>
 	</info>
@@ -83,6 +83,7 @@
 			<div element="ID_2024PHB_CLASS_FEATURE_BARD_COUNTERCHARM" />
 			<div element="ID_2024PHB_CLASS_FEATURE_BARD_MAGICAL_SECRETS" />
 			<div element="ID_2024PHB_CLASS_FEATURE_BARD_SUPERIOR_INSPIRATION" />
+			<div element="ID_2024PHB_CLASS_FEATURE_BARD_EPIC_BOON" />
 			<div element="ID_2024PHB_CLASS_FEATURE_BARD_WORDS_OF_CREATION" />
 		</description>
 		<sheet display="false" />
@@ -107,6 +108,7 @@
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_BARD_COUNTERCHARM" level="7"/>
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_BARD_MAGICAL_SECRETS" level="10"/>
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_BARD_SUPERIOR_INSPIRATION" level="18"/>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_BARD_EPIC_BOON" level="19"/>
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_BARD_WORDS_OF_CREATION" level="20"/>
 		</rules>
 		<multiclass id="ID_2024PHB_MULTICLASS_BARD">
@@ -125,19 +127,22 @@
 	</element>
 	<element name="Bardic Inspiration" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARD_BARDIC_INSPIRATION">
 		<description>
+			<p><em>1st-level Bard feature</em></p>
 			<p>You can supernaturally inspire others through words, music, or dance. This inspiration is represented by your Bardic Inspiration die, which is a d6.</p>
 			<p class="indent"><strong>Using Bardic Inspiration.</strong> As a Bonus Action, you can inspire another creature within 60 feet of yourself who can see or hear you. That creature gains one of your Bardic Inspiration dice. A creature can have only one Bardic Inspiration die at a time.</p>
 			<p class="indent">Once within the next hour when the creature fails a D20 Test (an ability check, attack roll, or saving throw), the creature can roll the Bardic Inspiration die and add the number rolled to the d20, potentially turning the failure into a success. Once the Bardic Inspiration die is rolled, it is lost.</p>
-			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a Long Rest.</p>
+			<p class="indent">You can confer a Bardic Inspiration die a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
 			<p class="indent">Your Bardic Inspiration die changes when you reach certain levels in this class. The die becomes a d8 at 5th level, a d10 at 10th level, and a d12 at 15th level.</p>
 		</description>
-		<sheet action="Bonus Action" usage="{{bardic inspiration:count}}/Long Rest">
-			<description>Inspire one creature other than yourself within 60 feet of you who can see or hear you. It gains one Bardic Inspiration die, a d{{bardic inspiration:dice}}.
-		Once within the next hour when the creature fails a D20 Test, the creature can roll the die and add the number rolled to the d20, potentially turning the failure into a success.</description>
+		<sheet action="Bonus Action" >
+			<description usage="{{bardic inspiration:count}}/Long Rest">Inspire one creature other than yourself within 60 feet of you who can see or hear you. It gains a d{{bardic inspiration:dice}} Bardic Inspiration die.
+			Once within the next hour when the creature fails a D20 Test, the creature can roll the die and add the number rolled to the d20, potentially turning the failure into a success.</description>
+			<description level="5" usage="{{bardic inspiration:count}}/Short Rest">Inspire one creature other than yourself within 60 feet of you who can see or hear you. It gains a d{{bardic inspiration:dice}} Bardic Inspiration die.
+			Once within the next hour when the creature fails a D20 Test, the creature can roll the die and add the number rolled to the d20, potentially turning the failure into a success.</description>
 		</sheet>
 		<rules>
-			<stat name="bardic inspiration:count" value="proficiency" bonus="bardic inspiration"/>
-
+			<stat name="bardic inspiration:count" value="1" bonus="base"/>
+			<stat name="bardic inspiration:count" value="charisma:modifier" bonus="base"/>
 			<stat name="bardic inspiration:dice" value="6" bonus="bardic inspiration" />
 			<stat name="bardic inspiration:dice" value="8" bonus="bardic inspiration" level="5" />
 			<stat name="bardic inspiration:dice" value="10" bonus="bardic inspiration" level="10" />
@@ -146,6 +151,7 @@
 	</element>
 	<element name="Spellcasting" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARD_SPELLCASTING_BARD">
 		<description>
+			<p><em>1st-level Bard feature</em></p>
 			<p>You have learned to cast spells through your bardic arts. See the Player's Handbook for the rules of spellcasting. The information below details how you use those rules with Bard spells, which appear in the Bard spell list later in the class's description.</p>
 			<h5>CANTRIPS</h5>
 			<p>You know two cantrips of your choice from the Bard spell list. Dancing Lights and Vicious Mockery are recommended.</p>
@@ -276,7 +282,7 @@
 	<element name="Ability Score Improvement" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARD_ABILITYSCOREIMPROVEMENT_BARD">
 		<compendium display="false" />
 		<description>
-			<p><em>4th, 8th, 12th, 16th, and 19th-level Barbarian feature</em></p>
+			<p><em>4th, 8th, 12th, 16th, and 19th-level Bard feature</em></p>
 			<p>You gain the Ability Score Improvement feat or another feat of your choice for which you qualify.</p>
 		</description>
 		<sheet display="false" />
@@ -328,6 +334,14 @@
 		<sheet>
 			<description>When you roll initiative and have no uses of Bardic Inspiration left, you regain one use.</description>
 		</sheet>
+	</element>
+	<element name="Epic Boon" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARD_EPIC_BOON">
+		<compendium display="false" />
+		<description>
+			<p><em>19th-level Bard Feature</em></p>
+			<p>You gain an Epic Boon feat or another feat of your choice for which you qualify.</p>
+		</description>
+		<sheet display="false" />
 	</element>
 	<element name="Words of Creation" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARD_WORDS_OF_CREATION">
 		<description>
@@ -458,8 +472,8 @@
 			<p><em>6th-level College of Glamour feature</em></p>
 			<p>You can weave fey magic into a song or dance to fill others with vigor. As a Bonus Action, you can expend a use of Bardic Inspiration, rolling a Bardic Inspiration die. When you do so, choose a number of other creatures within 60 feet of yourself, up to a number equal to your Charisma modifier (minimum of one creature). Each of them gains a number of Temporary Hit Points equal to 2 times the number rolled on the Bardic Inspiration die, and then each of them can use its Reaction to move up to its Speed without provoking Opportunity Attacks.</p>
 		</description>
-		<sheet action="Bonus Action">
-			<description>You can expend a use of Bardic Inspiration. Choose up to {{mantle of inspiration:uses}} other creatures within 60 feet of yourself. Each of them gains a number of Temporary Hit Points equal to 2 times the number rolled on the Bardic Inspiration die, and then each of them can use its Reaction to move up to its Speed without provoking Opportunity Attacks.</description>
+		<sheet action="Bonus Action" usage="Bardic Inspiration">
+			<description>Choose up to {{mantle of inspiration:uses}} other creatures within 60 feet of yourself. Each of them gains a number of Temporary Hit Points equal to 2 times the number rolled on the Bardic Inspiration die you expended, and then each of them can use its Reaction to move up to its Speed without provoking Opportunity Attacks.</description>
 		</sheet>
 		<rules>
 			<stat name="mantle of inspiration:uses" value="1" bonus="base"/>
@@ -484,8 +498,8 @@
 			<p><em>14th-level College of Glamour feature</em></p>
 			<p>As a Bonus Action, you can assume a magically majestic presence for 1 minute or until you have the Incapacitated condition. For the duration, whenever any creature hits you with an attack roll for the first time on a turn, the attacker must succeed on a Charisma saving throw against your Spell Save DC, or the attack misses instead, as the creature recoils from your majesty. Once you assume this majestic presence, you can't do so again until you finish a Short Rest or Long Rest.</p>
 		</description>
-		<sheet action="Bonus Action">
-			<description>You can assume a magically majestic presence for 1 minute or until you have the Incapacitated condition. For the duration, whenever any creature hits you with an attack roll for the first time on a turn, the attacker must succeed on a Charisma saving throw against your Spell Save DC, or the attack misses instead. Once per short or long rest.</description>
+		<sheet action="Bonus Action" usage="1/Short Rest">
+			<description>You can assume a magically majestic presence for 1 minute or until you have the Incapacitated condition. For the duration, whenever any creature hits you with an attack roll for the first time on a turn, the attacker must succeed on a Charisma saving throw against your Spell Save DC, or the attack misses instead.</description>
 		</sheet>
 	</element>
 	

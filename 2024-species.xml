@@ -29,7 +29,7 @@
             <ul class="unstyled">
 				<li style="margin-left:1em;text-indent:-1em;"><strong>Heavenly Wings.</strong> Two spectral wings sprout from your back temporarily. Until the transformation ends, you have a Fly Speed equal to your Speed.</li>
 				<li style="margin-left:1em;text-indent:-1em;"><strong>Inner Radiance.</strong> Searing light temporarily radiates from your eyes and mouth. For the duration, you shed Bright Light in a 10-foot radius and Dim Light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes Radiant damage equal to your Proficiency Bonus.</li>
-				<li style="margin-left:1em;text-indent:-1em;"><strong>Necrotic Shroud.</strong> Your eyes briefly become pools of darkness, and flightless wings sprout from your back temporarily. Creatures other than vour allies within 10 feet of you must succeed on a Charisma saving throw (DC 8 plus your Charisma modifier and Proficiency Bonus) or have the Frightened condition until the end of your next turn.</li>
+				<li style="margin-left:1em;text-indent:-1em;"><strong>Necrotic Shroud.</strong> Your eyes briefly become pools of darkness, and flightless wings sprout from your back temporarily. Creatures other than your allies within 10 feet of you must succeed on a Charisma saving throw (DC 8 plus your Charisma modifier and Proficiency Bonus) or have the Frightened condition until the end of your next turn.</li>
 			</ul>
         </description>
         <sheet display="false" />
@@ -81,7 +81,7 @@
 			<description>You transform for 1 minute or until you end it (no action required), Once per turn when you deal damage with an attack or spell you can deal an extra {{proficiency}} Radiant/Necrotic damage to one target.
 			Heavenly Wings. Two spectral wings sprout from your back temporarily. Until the transformation ends, you have a {{speed}}ft Fly Speed. Until the transformation ends, you have a {{speed}}ft. flying speed. Your extra damage is Radiant.
 			Inner Radiance. Searing light temporarily radiates from your eyes and mouth. For the duration, you shed Bright Light in a 10-foot radius and Dim Light for an additional 10 feet, Your extra damage is Radiant and it is also dealt to each creature within 10ft at the end of each of your turns.
-            Necrotic Shroud. Your eyes briefly become pools of darkness, and flightless wings sprout from your back. Creatures other than vour allies within 10 feet of you must succeed on a DC {{aasimar:dc}} Charisma saving throw or have the Frightened condition until the end of your next turn.
+            Necrotic Shroud. Your eyes briefly become pools of darkness, and flightless wings sprout from your back. Creatures other than your allies within 10 feet of you must succeed on a DC {{aasimar:dc}} Charisma saving throw or have the Frightened condition until the end of your next turn.
             </description>
 		</sheet>
 		<rules>
@@ -131,6 +131,7 @@
 			<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_DRAGONBORN" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_DRACONIC_ANCESTRY" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_BREATH_WEAPON" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_DAMAGE_RESISTANCE" requirements="!ID_WOTC_EGTW_GRANTS_DRAGONBORN_VARIANT" />
@@ -338,7 +339,7 @@
 			<h4>DWARF TRAITS </h4>
             <p>As a Dwarf, you have these special traits.</p>
             <p class="indent"><strong><em>Creature Type.</em></strong> Humanoid</p>
-            <p class="indent"><strong><em>Size.</em></strong> Medium (about 4–5 feet tall)</p>
+            <p class="indent"><strong><em>Size.</em></strong> Medium (about 4-5 feet tall)</p>
             <p class="indent"><strong><em>Speed.</em></strong> 30 feet</p>
             <p class="indent"><strong><em>Darkvision.</em></strong> You have Darkvision with a range of 120 feet.</p>
             <p class="indent"><strong><em>Dwarven Resilience.</em></strong> You have Resistance to Poison damage. You also have Advantage on saving throwsyou make to avoid or end the Poisoned condition.</p>
@@ -351,6 +352,7 @@
 			<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 			<grant type="Vision" id="ID_VISION_SUPERIORDARKVISION" />
+			<grant type="Grants" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_HUMANOID_DWARF" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_DWARVEN_RESILIENCE" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_DWARVEN_TOUGHNESS" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_STONECUNNING" />
@@ -427,6 +429,7 @@
 			<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Grants" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_HUMANOID_ELF" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_ELVENLINEAGE" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_FEYANCESTRY" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_KEENSENSES" />
@@ -485,6 +488,7 @@
 			<stat inline="true" name="elven-lineage" value="Drow"/>
 			<select type="Racial Trait" name="Species Spellcasting Ability" supports="Species Spellcasting Ability" />
 			<grant type="Vision" id="ID_VISION_SUPERIORDARKVISION" />
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_DARK_ELF" />
 			<grant type="Spell" id="ID_2024PHB_SPELL_DANCING_LIGHTS" />
 			<grant type="Spell" id="ID_2024PHB_SPELL_FAERIE_FIRE" level="3" />
 			<grant type="Spell" id="ID_2024PHB_SPELL_DARKNESS" level="5" />
@@ -503,6 +507,7 @@
 		<rules>
 			<stat inline="true" name="elven-lineage" value="High Elf"/>
 			<select type="Racial Trait" name="Species Spellcasting Ability" supports="Species Spellcasting Ability" />
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_HIGH_ELF" />
 			<select type="Spell" name="Wizard Cantrip (High Elf)" supports="Wizard&amp;&amp;0" allowreplaceable="true" />
 			<grant type="Spell" id="ID_2024PHB_SPELL_DETECT_MAGIC" level="3" />
 			<grant type="Spell" id="ID_2024PHB_SPELL_MISTY_STEP" level="5" />
@@ -522,6 +527,7 @@
 			<stat inline="true" name="elven-lineage" value="Wood Elf"/>
 			<select type="Racial Trait" name="Species Spellcasting Ability" supports="Species Spellcasting Ability" />
 			<stat name="innate speed" value="5" bonus="racial" />
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_WOOD_ELF" />
 			<grant type="Spell" id="ID_2024PHB_SPELL_DRUIDCRAFT" />
 			<grant type="Spell" id="ID_2024PHB_SPELL_LONGSTRIDER" level="3" />
 			<grant type="Spell" id="ID_2024PHB_SPELL_PASS_WITHOUT_TRACE" level="5" />
@@ -548,6 +554,7 @@
 			<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Size" id="ID_SIZE_SMALL" />
 			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Grants" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_HUMANOID_GNOME" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_GNOMISHCUNNING" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_GNOMISHLINEAGE" />
         </rules>
@@ -807,6 +814,7 @@
         <rules>
 			<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_HUMAN" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_RESOURCEFUL" />
 			<select type="Proficiency" name="Skill Proficiency (Human)" supports="Skill" />
 			<select type="Feat" name="Origin Feat (Human)" supports="Origin Feat" />
@@ -986,8 +994,7 @@
 		</rules>
 	</element>
 
-
-    <!--Default
+    <!--Template
     <element name="2024 " type="Race" source="2024 Player's Handbook" id="ID_2024PHB_RACE_">
         <description>
             <p>.</p>
@@ -1015,6 +1022,7 @@
         </rules>
     </element>
 	-->
+
 	<!--Species Spellcasting Ability-->
 	<element name="Intelligence" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_SPECIES_SPELLCASTING_ABILITY">
 		<supports>Species Spellcasting Ability</supports>

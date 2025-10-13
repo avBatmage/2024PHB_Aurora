@@ -4,7 +4,7 @@
 		<name>2024 Fighter</name>
 		<description>The Fighter class from the 2024 Player's Handbook.</description>
 		<author url="https://marketplace.dndbeyond.com/category/3709000?pid=DB3709000">Wizards of the Coast</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="2024-class-fighter.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-class-fighter.xml" />
 		</update>
 	</info>
@@ -139,7 +139,7 @@
 	
 	<element name="Fighting Style" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_FIGHTER_FIGHTINGSTYLE">
 		<description>
-			<p><em>1st-level feature</em></p>
+			<p><em>1st-level Fighter feature</em></p>
 			<p>You have honed your martial prowess and gain a Fighting Style feat of your choice. Defense is recommended.</p>
 			<p class="indent">Whenever you gain a Fighter level, you can replace the feat you chose with a different Fighting Style feat.</p>
 		</description>
@@ -150,7 +150,7 @@
 	</element>
 	<element name="Second Wind" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_FIGHTER_SECONDWIND">
 		<description>
-			<p><em>1st-level feature</em></p>
+			<p><em>1st-level Fighter feature</em></p>
 			<p>You have a limited well of physical and mental stamina that you can draw on. As a Bonus Action, you can use it to regain Hit Points equal to 1d10 plus your Fighter level.</p>
 			<p class="indent">You can use this feature twice. You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest.</p>
 			<p class="indent">When you reach certain Fighter levels, you gain more uses of this feature, as shown in the Second Wind column of the Fighter Features table.</p>
@@ -166,7 +166,7 @@
 	</element>
 	<element name="Weapon Mastery" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_FIGHTER_WEAPONMASTERY">
 		<description>
-			<p><em>1st-level feature</em></p>
+			<p><em>1st-level Fighter feature</em></p>
 			<p>Your training with weapons allows you to use the mastery property of three kinds of Simple or Martial weapons of your choice. Whenever you finish a Long Rest, you can practice weapon drills and change one of those weapon choices.</p>
 			<p class="indent">When you reach certain Fighter levels, you gain the ability to use the mastery properties of more kinds of weapons, as shown in the Weapon Mastery column of the Fighter Features table.</p>
 		</description>
@@ -186,7 +186,7 @@
 	</element>
 	<element name="Action Surge" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_FIGHTER_ACTIONSURGE">
 		<description>
-			<p><em>2nd-level feature</em></p>
+			<p><em>2nd-level Fighter feature</em></p>
 			<p>You can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action, except the Magic action.</p>
 			<p class="indent">Once you use this feature, you can't do so again until you finish a Short or Long Rest. Starting at level 17, you can use it twice before a rest but only once on a turn.</p>
 		</description>
@@ -197,7 +197,7 @@
 	</element>
 	<element name="Tactical Mind" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_FIGHTER_TACTICALMIND">
 		<description>
-			<p><em>2nd-level feature</em></p>
+			<p><em>2nd-level Fighter feature</em></p>
 			<p>You have a mind for tactics and getting the upper hand on and off the battlefield. When you fail an ability check, you can expend a use of your Second Wind to push yourself toward success. Rather than regaining Hit Points, you roll 1d10 and add the number rolled to the ability check, potentially turning it into a success. If the check still fails, this use of Second Wind isn't expended.</p>
 		</description>
 		<sheet usage="Second Wind">
@@ -206,7 +206,7 @@
 	</element>
 	<element name="Fighter Subclass" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_FIGHTER_FIGHTERSUBCLASS">
 		<description>
-			<p><em>3rd-level feature</em></p>
+			<p><em>3rd-level Fighter feature</em></p>
 			<p>You gain a Fighter subclass of your choice. The Battle Master, Champion, Eldritch Knight, and Psi Warrior subclasses are detailed after this class's description. A subclass is a specialization that grants you features at certain Fighter levels. For the rest of your career, you gain each of your subclass's features that are of your Fighter level or lower.</p>
 		</description>
 		<sheet display="false" />
@@ -232,7 +232,7 @@
 	</element>
 	<element name="Extra Attack" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_FIGHTER_EXTRAATTACK">
 		<description>
-			<p><em>5th-level feature</em></p>
+			<p><em>5th-level Fighter feature</em></p>
 			<p>You can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
 			<p class="indent">The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class.</p>
 		</description>
@@ -249,7 +249,7 @@
 	</element>
 	<element name="Tactical Shift" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_FIGHTER_TACTICALSHIFT">
 		<description>
-			<p><em>5th-level feature</em></p>
+			<p><em>5th-level Fighter feature</em></p>
 			<p>Whenever you activate your Second Wind with a Bonus Action, you can move up to half your Speed without provoking Opportunity Attacks.</p>
 		</description>
 		<sheet>
@@ -258,7 +258,7 @@
 	</element>
 	<element name="Indomitable" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_FIGHTER_INDOMITABLE">
 		<description>
-			<p><em>9th-level feature</em></p>
+			<p><em>9th-level Fighter feature</em></p>
 			<p>If you fail a saving throw, you can reroll it with a bonus equal to your Fighter level. You must use the new roll, and you can't use this feature again until you finish a Long Rest.</p>
 			<p class="indent">You can use this feature twice between Long Rests starting at level 13 and three times between Long Rests starting at level 17.</p>
 		</description>
@@ -273,7 +273,7 @@
 	</element>
 	<element name="Tactical Master" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_FIGHTER_TACTICALMASTER">
 		<description>
-			<p><em>9th-level feature</em></p>
+			<p><em>9th-level Fighter feature</em></p>
 			<p>When you attack with a weapon whose mastery property you can use, you can replace that property with the Push, Sap, or Slow property for that attack.</p>
 		</description>
 		<sheet>
@@ -282,14 +282,14 @@
 	</element>
 	<element name="Two Extra Attacks" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_FIGHTER_TWOEXTRAATTACKS">
 		<description>
-			<p><em>11th-level feature</em></p>
+			<p><em>11th-level Fighter feature</em></p>
 			<p>You can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
 		</description>
 		<sheet display="false"/>
 	</element>
 	<element name="Studied Attacks" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_FIGHTER_STUDIEDATTACKS">
 		<description>
-			<p><em>13th-level feature</em></p>
+			<p><em>13th-level Fighter feature</em></p>
 			<p>You study your opponents and learn from each attack you make. If you make an attack roll against a creature and miss, you have Advantage on your next attack roll against that creature before the end of your next turn.</p>
 		</description>
 		<sheet>
@@ -297,15 +297,16 @@
 		</sheet>
 	</element>
 	<element name="Epic Boon" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_FIGHTER_EPICBOON">
+		<compendium display="false" />
 		<description>
-			<p><em>19th-level feature</em></p>
+			<p><em>19th-level Fighter feature</em></p>
 			<p>You gain an Epic Boon feat of your choice.</p>
 		</description>
 		<sheet display="false"/>
 	</element>
 	<element name="Three Extra Attacks" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_FIGHTER_THREEEXTRAATTACKS">
 		<description>
-			<p><em>20th-level feature</em></p>
+			<p><em>20th-level Fighter feature</em></p>
 			<p>You can attack three times, instead of once, whenever you take the Attack action on your turn.</p>
 		</description>
 		<sheet display="false"/>
@@ -442,6 +443,7 @@
 			<p class="indent"><b>Maneuvers.</b> You learn three maneuvers of your choice from the list of maneuvers available to the Battle Master. You can use only one maneuver per attack.</p>
 			<p class="indent">You learn two additional maneuvers of your choice at 7th, 10th, and 15th level.</p>
 			<p class="indent"><b>Superiority Dice.</b> You have four superiority dice, which are d8s. A superiority die is expended when you use it. You regain all of your expended superiority dice when you finish a short or long rest.</p>
+			<p class="indent">You gain an additional Superiority Die when you reach Fighter levels 7 (five dice total) and 15 (sixdice total).</p>
 			<p class="indent"><b>Saving Throws.</b> Some of your maneuvers require your target to make a saving throw to resist the maneuver's effects. The saving throw DC is calculated as follows: Maneuver save DC = 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).</p>
 		</description>
 		<sheet usage="{{superiority dice:amount}}/Short Rest">
@@ -451,7 +453,9 @@
 			<stat name="superiority dice:amount" value="4" />
 			<stat name="superiority dice:amount" value="1" level="7" />
 			<stat name="superiority dice:amount" value="1" level="15" />
-			<stat name="superiority dice:size" value="8" bonus="base"/>
+			<stat name="superiority dice:size" value="8" bonus="base" />
+			<stat name="superiority dice:size" value="10" bonus="base" level="10" />
+			<stat name="superiority dice:size" value="12" bonus="base" level="18" />
 			<stat name="superiority dice:dc" value="8" />
 			<stat name="superiority dice:dc" value="proficiency" />
 			<stat name="superiority dice:dc:ability" value="strength:modifier" bonus="ability"/>
@@ -754,7 +758,7 @@
 	<element name="Superior Critical" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CHAMPION_SUPERIOR_CRITICAL">
 		<description>
 			<p><em>15th-level Champion feature</em></p>
-			<p>Your attack rolls with weapons and Unarmed Strikes can now score a Critical Hit on a roll of 18–20 on the d20.</p>
+			<p>Your attack rolls with weapons and Unarmed Strikes can now score a Critical Hit on a roll of 18-20 on the d20.</p>
 		</description>
 		<sheet display="false">
 			<description>Your weapon and unarmed strike attacks score a critical hit on a roll of 18-20.</description>
@@ -764,14 +768,17 @@
 		<description>
 			<p><em>18th-level Champion feature</em></p>
 			<p>You attain the pinnacle of resilience in battle, giving you these benefits.</p>
-			<p class="indent">
-				<b>Defy Death.</b> You have Advantage on Death Saving Throws. Moreover, when you roll 18–20 on a Death Saving, you gain the benefit of rolling a 20 on it.</p>
-			<p class="indent">
-				<b>Heroic Rally.</b> At the start of each of your turns, you regain Hit Points equal to 5 plus your Constitution modifier if you are Bloodied and have at least 1 Hit Point.</p>
+			<p class="indent"><b>Defy Death.</b> You have Advantage on Death Saving Throws. Moreover, when you roll 18-20 on a Death Saving, you gain the benefit of rolling a 20 on it.</p>
+			<p class="indent"><b>Heroic Rally.</b> At the start of each of your turns, you regain Hit Points equal to 5 plus your Constitution modifier if you are Bloodied and have at least 1 Hit Point.</p>
 		</description>
 		<sheet>
-			<description>You have Advantage on Death Saves and rolls of 18-20 on a die roll count as a 20. At the start of your turn, regain 5 + CON modifier HP if bloodied with at least 1 HP.</description>
+			<description>You have Advantage on Death Saves and rolls of 18-20 on a die roll count as a 20. 
+			At the start of your turn, regain {{survivor:hp}} hp if bloodied with at least 1 hp.</description>
 		</sheet>
+		<rules>
+			<stat name="survivor:hp" value="5" />
+			<stat name="survivor:hp" value="constitution:modifier" />
+		</rules>
 	</element>
 
 	<element name="2024 Eldritch Knight" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FIGHTER_ELDRITCH_KNIGHT">
@@ -799,21 +806,24 @@
 		<description>
 			<p><em>3rd-level Eldritch Knight feature</em></p>
 			<p>You have learned to cast spells. See the Player's Handbook for rules on spellcasting. The information below details how you use those rules as an Eldritch Knight.</p>
-			<p class="indent"><b>Cantrips.</b></p>
+			<h5>CANTRIPS</h5>
 			<p class="indent">You know two cantrips of your choice from the Wizard spell list. Whenever you gain a Fighter level, you can replace one of this feature's cantrips with another cantrip of your choice from the Wizard spell list.</p>
 			<p class="indent">When you reach level 10 in this class, you learn another Wizard cantrip of your choice.</p>
-			<p class="indent"><b>Spell Slots.</b></p>
+			<h5>SPELL SLOTS</h5>
 			<p class="indent">The Eldritch Knight Spellcasting table shows how many spell slots you have to cast your spells of level 1 and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a Long Rest.</p>
-			<p class="indent"><b>Prepared Spells of Level 1+.</b></p>
+			<h5>PREPARED SPELLS OF LEVEL 1+</h5>
 			<p class="indent">You prepare a list of spells of level 1 and higher that are available for you to cast with this feature. To start, choose three level 1 spells from the Wizard spell list, two of which must be from the Abjuration and Evocation schools of magic.</p>
 			<p class="indent">The number of spells on your list increases as you gain Fighter levels, as shown in the Prepared Spells column of the Eldritch Knight Spellcasting table. Whenever that number increases, choose additional spells from the Wizard spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 7 Fighter, your list of prepared spells can include six Wizard spells of levels 1 and 2, in any combination.</p>
-			<p class="indent"><b>Changing your Prepared Spells.</b> Whenever you gain a level in this class, you can replace one of the spells you know with another spell of your choice from the Wizard spell list. The new spell must be of a level for which you have spell slots.</p>
-			<p class="indent"><b>Spellcasting Ability.</b> Intelligence is your spellcasting ability for your Eldritch Knight spells.</p>			
+			<h5>CHANGING YOUR PREPARED SPELLS</h5>
+			<p class="indent">Whenever you gain a level in this class, you can replace one of the spells you know with another spell of your choice from the Wizard spell list. The new spell must be of a level for which you have spell slots.</p>
+			<h5>SPELLCASTING ABILITY</h5>
+			<p class="indent">Intelligence is your spellcasting ability for your Eldritch Knight spells.</p>			
 			<center>
 				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>
 				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>
 			</center>
-			<p class="indent"><b>Spellcasting Focus.</b> You can use an Arcane Focus as a Spellcasting Focus for the spells you prepare for this subclass.</p>
+			<h5>SPELLCASTING FOCUS</h5>
+			<p class="indent">You can use an Arcane Focus as a Spellcasting Focus for the spells you prepare for this subclass.</p>
 			<h5 class="caption">ELDRITCH KNIGHT SPELLCASTING</h5>
 			<table class="class-features">
 				<thead>

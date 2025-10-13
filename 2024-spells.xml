@@ -4,7 +4,7 @@
 		<name>2024 Spells</name>
 		<description>The Spells from the 2024 Player's Handbook.</description>
 		<author url="https://marketplace.dndbeyond.com/category/3709000?pid=DB3709000">Wizards of the Coast</author>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="2024-spells.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-spells.xml" />
 		</update>
 	</info>
@@ -140,8 +140,8 @@
 		<supports>Cleric, Wizard</supports>
 		<description>
 			<p>Choose a pile of bones or a corpse of a Medium or Small Humanoid within range. The target becomes an Undead creature: a Skeleton if you chose bones or a Zombie if you chose a corpse (see appendix B for the stat blocks).</p>
-			<p class="indent"><b><i>On each of your turns, you can take a Bonus Action to mentally command any creature you made with this spell if the creature is within 60 feet of you (if you control multiple creatures, you can command any of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move on its next turn, or you can issue a general command, such as to guard a chamber or corridor. If you issue no commands, the creature takes the Dodge action and moves only to avoid harm. Once given an order, the creature continues to follow it until its task is complete.</i></b></p>
-			<p class="indent"><b><i>The creature is under your control for 24 hours, after which it stops obeying any command you've given it. To maintain control of the creature for another 24 hours, you must cast this spell on the crea ture again before the current 24-hour period ends. This use of the spell reasserts your control over up to four creatures you have animated with this spell rather than animating a new creature.</i></b></p>
+			<p class="indent">On each of your turns, you can take a Bonus Action to mentally command any creature you made with this spell if the creature is within 60 feet of you (if you control multiple creatures, you can command any of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move on its next turn, or you can issue a general command, such as to guard a chamber or corridor. If you issue no commands, the creature takes the Dodge action and moves only to avoid harm. Once given an order, the creature continues to follow it until its task is complete.</p>
+			<p class="indent">The creature is under your control for 24 hours, after which it stops obeying any command you've given it. To maintain control of the creature for another 24 hours, you must cast this spell on the crea ture again before the current 24-hour period ends. This use of the spell reasserts your control over up to four creatures you have animated with this spell rather than animating a new creature.</p>
 			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> You animate or reassert control over two additional Undead creatures for each spell slot level above 3. Each of the creatures must come from a different corpse or pile of bones.</p>
 		</description>
 		<setters>
@@ -165,7 +165,7 @@
 			<p>Objects animate at your command. Choose a number of nonmagical objects within range that aren't being worn or carried, aren't fixed to a surface, and aren't Gargantuan. The maximum number of objects is equal to your spellcasting ability modifier; for this number, a Medium or smaller target counts as one object, a Large target counts as two, and a Huge target counts as three.</p>
 			<p class="indent">Each target animates, sprouts legs, and becomes a Construct that uses the Animated Object stat block; this creature is under your control until the spell ends or until it is reduced to 0 Hit Points. Each creature you make with this spell is an ally to you and your allies. In combat, it shares your Initiative count and takes its turn immediately after yours.</p>
 			<p class="indent">Until the spell ends, you can take a Bonus Action to mentally command any creature you made with this spell if the creature is within 500 feet of you (if you control multiple creatures, you can command any of them at the same time, issuing the same command to each one). If you issue no commands, the creature takes the Dodge action and moves only to avoid harm. When the creature drops to 0 Hit Points, it reverts to its object form, and any remaining damage carries over to that form.</p>
-			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The creature's Slam damage increases by ld4 (Medium or smaller), ld6 (Large), or ldl2 (Huge) for each spell slot level above 5.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The creature's Slam damage increases by ld4 (Medium or smaller), ld6 (Large), or ld12 (Huge) for each spell slot level above 5.</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>
@@ -526,7 +526,7 @@
 	<element name="2024 Banishing Smite" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_BANISHING_SMITE">
 		<supports>Paladin, Spell Saving Throw</supports>
 		<description>
-			<p>The target hit by the attack roll takes an extra 5dl0 Force damage from the attack. If the attack reduces the target to 50 Hit Points or fewer, the target must succeed on a Charisma saving throw or be transported to a harmless demiplane for the duration. While there, the target has the Incapacitated condition. When the spell ends, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.</p>
+			<p>The target hit by the attack roll takes an extra 5d10 Force damage from the attack. If the attack reduces the target to 50 Hit Points or fewer, the target must succeed on a Charisma saving throw or be transported to a harmless demiplane for the duration. While there, the target has the Incapacitated condition. When the spell ends, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>
@@ -626,7 +626,7 @@
 		<supports>Bard, Druid, Warlock, Wizard, Spell Saving Throw</supports>
 		<description>
 			<p>You blast the mind of a creature that you can see within range. The target makes an Intelligence saving throw.</p>
-			<p class="indent">On a failed save, the target takes 10dl2 Psychic damage and can't cast spells or take the Magic action. At the end of every 30 days, the target repeats the save, ending the effect on a success. The effect can also be ended by the <i>Greater Restoration, Heal</i>, or <i>Wish</i> spell.</p>
+			<p class="indent">On a failed save, the target takes 10d12 Psychic damage and can't cast spells or take the Magic action. At the end of every 30 days, the target repeats the save, ending the effect on a success. The effect can also be ended by the <i>Greater Restoration, Heal</i>, or <i>Wish</i> spell.</p>
 			<p class="indent">On a successful save, the target takes half as much damage only.</p>
 		</description>
 		<setters>
@@ -701,7 +701,7 @@
 		<supports>Cleric, Spell Saving Throw</supports>
 		<description>
 			<p>You create a wall ofwhirling blades made of magical energy. The wall appears within range and lasts for the duration. You make a straight wall up to 100 feet long, 20 feet high, and 5 feet thick, or a ringed wall up to 60 feet in diameter, 20 feet high, and 5 feet thick. The wall provides Three-Quarters Cover, and its space is Difficult Terrain.</p>
-			<p class="indent">Any creature in the wall's space makes a Dexterity saving throw, taking 6dl0 Force damage on a failed save or half much damage on a successful one. A creature also makes that save if it enters the wall's space or end it turn there. A creature makes that save only once per turn.</p>
+			<p class="indent">Any creature in the wall's space makes a Dexterity saving throw, taking 6d10 Force damage on a failed save or half much damage on a successful one. A creature also makes that save if it enters the wall's space or end it turn there. A creature makes that save only once per turn.</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>
@@ -1313,7 +1313,7 @@
 		<supports>Druid, Sorcerer, Wizard, Spell Saving Throw, Damaging Spell</supports>
 		<description>
 			<p>You unleash a blast of cold air. Each creature in a 60-foot Cone originating from you makes a Constitution saving throw, taking 8d8 Cold damage on a failed save or half as much damage on a successful one. A creature killed by this spell becomes a frozen statue until it thaws.</p>
-			<p class="indent"><b><u>Using a Higher-Level Spell Slot.</u></b> The damage increases by 1d8 for each spell slot level above 5.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The damage increases by 1d8 for each spell slot level above 5.</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>
@@ -1345,7 +1345,7 @@
 				<tr><td>4</td><td>The target chooses its behavior.</td></tr>
 			</table>
 			<p class="indent">At the end of each of its turns, an affected target repeats the save, ending the spell on itself on a success.</p>
-			<p class="indent"><b><u>Using a Higher-Level Spell Slot.</u></b> The Sphere's radius increases by 5 feet for each spell slot level above 4.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The Sphere's radius increases by 5 feet for each spell slot level above 4.</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>
@@ -1368,7 +1368,7 @@
 			<p>You conjure nature spirits that appear as a Large pack of spectral, intangible animals in an unoccupied space you can see within range. The pack lasts for the duration, and you choose the spirits' animal form, such as wolves, serpents, or birds.</p>
 			<p class="indent">You have Advantage on Strength saving throws while you're within 5 feet of the pack, and when you move on your turn, you can also move the pack up to 30 feet to an unoccupied space you can see.</p>
 			<p class="indent">Whenever the pack moves within 10 feet of a creature you can see and whenever a creature you can see enters a space within 10 feet of the pack or ends its turn there, you can force that creature to make a Dexterity saving throw. On a failed save, the creature takes 3d10 Slashing damage. A creature makes this save only once per turn.</p>
-			<p class="indent"><b><u>Using a Higher-Level Spell Slot.</u></b> The damage increases by 1d10 for each spell slot level above 3.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The damage increases by 1d10 for each spell slot level above 3.</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>
@@ -1388,7 +1388,7 @@
 		<supports>Ranger, Spell Saving Throw</supports>
 		<description>
 			<p>You brandish the weapon used to cast the spell and conjure similar spectral weapons (or ammunition appropriate to the weapon) that launch forward and then disappear. Each creature of your choice that you can see in a 60-foot Cone makes a Dexterity saving throw, taking 5d8 Force damage on a failed save or half as much damage on a successful one.</p>
-			<p class="indent"><b><u>Using a Higher-Level Spell Slot.</u></b> The damage increases by 1d8 for each spell slot level above 3.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The damage increases by 1d8 for each spell slot level above 3.</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>
@@ -1413,7 +1413,7 @@
 			<p><b>Searing Light.</b> The target makes a Dexterity saving throw, taking 6d12 Radiant damage on a failed save or half as much damage on a successful one. </p>
 			<p>Until the spell ends, Bright Light fills the Cylinder, and when you move on your turn, you can also move the Cylinder up to 30 feet.</p>
 			<p class="indent">Whenever the Cylinder moves into the space of a creature you can see and whenever a creature you can see enters the Cylinder or ends its turn there, you can bathe it in one of the lights. A creature can be affected by this spell only once per turn.</p>
-			<p class="indent"><b><u>Using a Higher-Level Spell Slot.</u></b> The healing and damage increase by ldl2 for each spell slot level above 7.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The healing and damage increase by ld12 for each spell slot level above 7.</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>
@@ -1434,7 +1434,7 @@
 		<description>
 			<p>You conjure a Large, intangible spirit from the Elemental Planes that appears in an unoccupied space within range. Choose the spirit's element, which determines its damage type: air (Lightning), earth (Thunder), fire (Fire), or water (Cold). The spirit lasts for the duration.</p>
 			<p class="indent">Whenever a creature you can see enters the spirit's space or starts its turn within 5 feet of the spirit, you can force that creature to make a Dexterity saving throw if the spirit has no creature Restrained. On failed save, the target takes 8d8 damage of the spirit's type, and the target has the Restrained condition until the spell ends. At the start of each of its turns, the Restrained target repeats the save. On a failed save, the target takes 4d8 damage of the spirit's type. On a successful save, the target isn't Restrained by the spirit.</p>
-			<p class="indent"><b><u>Using a Higher-Level Spell Slot.</u></b> The damage increases by 1d8 for each spell slot level above 5.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The damage increases by 1d8 for each spell slot level above 5.</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>
@@ -1455,7 +1455,7 @@
 		<description>
 			<p>You conjure a Medium spirit from the Feywild in an unoccupied space you can see within range. The spirit lasts for the duration, and it looks like a Fey creature of your choice. When the spirit appears, you can make one melee spell attack against a creature within 5 feet of it. On a hit, the target takes Psychic damage equal to 3d12 plus your spellcasting ability modifier, and the target has the Frightened condition until the start of your next turn, with both you and the spirit as the source of the fear.</p>
 			<p class="indent">As a Bonus Action on your later turns, you can teleport the spirit to an unoccupied space you can see within 30 feet of the space it left and make the attack against a creature within 5 feet of it.</p>
-			<p class="indent"><b><u>Using a Higher-Level Spell Slot.</u></b> The damage increases by 1d12 for each spell slot level above 6.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The damage increases by 1d12 for each spell slot level above 6.</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>
@@ -1476,7 +1476,7 @@
 		<description>
 			<p>You conjure spirits from the Elemental Planes that flit around you in a 15-foot Emanation for the duration. Until the spell ends, any attack you make deals an extra 2d8 damage when you hit a creature in the Emanation. This damage is Acid, Cold, Fire, or Lightning (your choice when you make the attack).</p>
 			<p class="indent">In addition, the ground in the Emanation is Difficult Terrain for your enemies.</p>
-			<p class="indent"><b><u>Using a Higher-Level Spell Slot.</u></b> The damage increases by 1d8 for each spell slot level above 4.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The damage increases by 1d8 for each spell slot level above 4.</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>
@@ -1517,7 +1517,7 @@
 		<description>
 			<p>You conjure nature spirits that flit around you in a 10-foot Emanation for the duration. Whenever the Emanation enters the space of a creature you can see and whenever a creature you can see enters the Emanation or ends its turn there, you can force that creature to make a Wisdom saving throw. The creature takes 5d8 Force damage on a failed save or half as much damage on a successful one. A creature makes this save only once per turn.</p>
 			<p class="indent">In addition, you can take the Disengage action as a Bonus Action for the spell's duration.</p>
-			<p class="indent"><b><u>Using a Higher-Level Spell Slot.</u></b> The damage increases by 1d8 for each spell slot level above 4.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The damage increases by 1d8 for each spell slot level above 4.</p>
 		</description>
 		<setters>
 			<set name="keywords">emanation</set>
@@ -1702,7 +1702,7 @@
 		<description>
 			<p>You touch up to four nonmagical Arrows or Bolts and plant them in the ground in your space. Until the spell ends, the ammunition can't be physically uprooted, and whenever a creature other than you enters a space within 30 feet of the ammunition for the first time on a turn or ends its turn there, one piece of ammunition flies up to strike it. The creature must succeed on a Dexterity saving throw or take 2d4 Piercing damage. The piece of ammunition is then destroyed. The spell ends when none of the ammunition remains planted in the ground.</p>
 			<p class="indent">When you cast this spell, you can designate any creatures you choose, and the spell ignores them.</p>
-			<p class="indent"><b><u>Using a Higher-Level Spell Slot.</u></b> The amount of ammunition that can be affected increases by two for each spell slot level above 2.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The amount of ammunition that can be affected increases by two for each spell slot level above 2.</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>
@@ -1763,7 +1763,7 @@
 			<p>You do one of the following:</p>
 			<p><b>Create Water:</b> You create up to 10 gallons of clean water within range in an open container. Alternatively, the water falls as rain in a 30-foot Cube within range, extinguishing exposed flames there.</p>
 			<p><b>Destory Water:</b> You destroy up to 10 gallons of water in an open container within range. Alternatively, you destroy fog in a 30-foot Cube within range.</p>
-			<p class="indent"><b><u>Using a Higher-Level Spell Slot.</u></b> You create or destroy 10 additional gallons of water, or the size of the Cube increases by 5 feet, for each spell slot level above 1.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> You create or destroy 10 additional gallons of water, or the size of the Cube increases by 5 feet, for each spell slot level above 1.</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>
@@ -1786,7 +1786,7 @@
 			<p>You can cast this spell only at night. Choose up to three corpses of Medium or Small Humanoids within range. Each one becomes a Ghoul under your control (see the Monster Manual for its stat block).</p>
 			<p class="indent">As a Bonus Action on each of your turns, you can mentally command any creature you animated with this spell if the creature is within 120 feet of you (if you control multiple creatures, you can command any of them at the same time, issuing the same command to them). You decide what action the creature will take and where it will move on its next turn, or you can issue a general command, such as to guard a particular place. If you issue no commands, the creature takes the Dodge action and moves only to avoid harm. Once given an order, the creature continues to follow the order until its task is complete.</p>
 			<p class="indent">The creature is under your control for 24 hours, after which it stops obeying any command you've given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature before the current 24-hour period ends. This use of the spell reasserts your control over up to three creatures you have animated with this spell rather than animating new ones.</p>
-			<p class="indent"><b><u>Using a Higher-Level Spell Slot.</u></b> If you use a level 7 spell slot, you can animate or reassert control over four Ghouls. If you use a level 8 spell slot, you can animate or reassert control over five Ghouls or two Ghasts or Wights. If you use a level 9 spell slot, you can animate or reassert control over six Ghouls, three Ghasts or Wights, or two Mummies. See the Monster Manual for these stat blocks.</p>
+			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> If you use a level 7 spell slot, you can animate or reassert control over four Ghouls. If you use a level 8 spell slot, you can animate or reassert control over five Ghouls or two Ghasts or Wights. If you use a level 9 spell slot, you can animate or reassert control over six Ghouls, three Ghasts or Wights, or two Mummies. See the Monster Manual for these stat blocks.</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>
@@ -2966,7 +2966,7 @@
 			<p><b><i>One Familiar Only.</i></b> You can't have more than one familiar at a time. If you cast this spell while you have a familiar, you instead cause it to adopt a new eligible form.</p>
 		</description>
 		<rules>
-			<select type="Companion" name="Find Familiar" supports="Familiar, 0" />
+			<!--<select type="Companion" name="Find Familiar" supports="Familiar, 0" />-->
 		</rules>
 		<setters>
 			<set name="keywords">summon</set>

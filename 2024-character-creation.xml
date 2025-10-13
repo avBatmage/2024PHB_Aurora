@@ -8,7 +8,7 @@
 			<file name="2024-character-creation.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-character-creation.xml" />
 		</update>
 	</info>
-
+	<!--Options-->
 	<element name="2024 Character Creation" type="Option" source="2024 Player's Handbook" id="ID_2024PHB_OPTION_2024_CHARACTER_CREATION">
 		<description>
 			<p>Follow the 2024 Character Creation rules.</p>
@@ -24,5 +24,47 @@
 			<!--<select type="Ability Score Improvement" name="Ability Score Improvement Option (Character Creation)" supports="Custom Ability Score Improvement Option" requirements="!ID_2024PHB_BACKGROUND_ACOLYTE||!ID_2024PHB_BACKGROUND_ARTISAN||!ID_2024PHB_BACKGROUND_CHARLATAN||!ID_2024PHB_BACKGROUND_CRIMINAL||!ID_2024PHB_BACKGROUND_ENTERTAINER||!ID_2024PHB_BACKGROUND_FARMER||!ID_2024PHB_BACKGROUND_GUARD||!ID_2024PHB_BACKGROUND_GUIDE||!ID_2024PHB_BACKGROUND_HERMIT||!ID_2024PHB_BACKGROUND_MERCHANT||!ID_2024PHB_BACKGROUND_NOBLE||!ID_2024PHB_BACKGROUND_SAGE||!ID_2024PHB_BACKGROUND_SAILOR||!ID_2024PHB_BACKGROUND_SCRIBE||!ID_2024PHB_BACKGROUND_SOLDIER||!ID_2024PHB_BACKGROUND_WAYFARER" />-->
 			<select type="Feat" name="Origin Feat (Character Creation)" supports="Origin Feat" requirements="!ID_2024PHB_BACKGROUND_ACOLYTE||!ID_2024PHB_BACKGROUND_ARTISAN||!ID_2024PHB_BACKGROUND_CHARLATAN||!ID_2024PHB_BACKGROUND_CRIMINAL||!ID_2024PHB_BACKGROUND_ENTERTAINER||!ID_2024PHB_BACKGROUND_FARMER||!ID_2024PHB_BACKGROUND_GUARD||!ID_2024PHB_BACKGROUND_GUIDE||!ID_2024PHB_BACKGROUND_HERMIT||!ID_2024PHB_BACKGROUND_MERCHANT||!ID_2024PHB_BACKGROUND_NOBLE||!ID_2024PHB_BACKGROUND_SAGE||!ID_2024PHB_BACKGROUND_SAILOR||!ID_2024PHB_BACKGROUND_SCRIBE||!ID_2024PHB_BACKGROUND_SOLDIER||!ID_2024PHB_BACKGROUND_WAYFARER" />
 		</rules>
+	</element>
+	<!--Items-->
+	<element name="Customised Ability Score Increase" type="Item" source="2024 Player's Handbook" id="ID_2024PHB_ITEM_CUSTOM_ASI">
+		<compendium display="false" />
+		<description>
+			<p><i>Pick this if you're using a race that doesn't give an ability score increase and a 2024 background isn't selected.</i></p>
+		</description>
+		<setters>
+			<set name="category">Additional Ability Score Improvement</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<select type="Ability Score Improvement" name="Customised Ability Score Increase" supports="Custom Ability Score Improvement Option" />
+		</rules>
+	</element>
+	<element name="Weapon Mastery" type="Item" source="2024 Player's Handbook" id="ID_2024PHB_ITEM_WEAPON_MASTERY">
+		<description>
+			<p>Your training with weapons allows you to use the mastery properties of two kinds of weapons of your choice with which you have proficiency, such as Longbows and Shortswords.</p>
+			<p>Whenever you finish a Long Rest, you can change the kinds of weapons you chose. For example, you could switch to using the mastery properties of Scimitars and Longswords.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<sheet />
+		<rules>
+			<select type="Class Feature" name="Weapon Mastery" supports="Weapon Mastery" number="2" />
+		</rules>
+	</element>
+	<!--Languages-->
+	<element name="Common Sign Language" type="Language" source="2024 Player's Handbook" id="ID_LANGUAGE_COMMON_SIGN_LANGUAGE">
+		<supports>Standard</supports>
+		<description>
+			<p>Typically spoken by humans.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Humans</set>
+			<set name="script">Common</set>
+		</setters>
 	</element>
 </elements>

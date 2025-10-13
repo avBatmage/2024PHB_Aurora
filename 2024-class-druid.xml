@@ -4,7 +4,7 @@
 		<name>2024 Druid</name>
 		<description>The Druid class from the 2024 Player's Handbook.</description>
 		<author url="https://marketplace.dndbeyond.com/category/3709000?pid=DB3709000">Wizards of the Coast</author>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="2024-class-druid.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-class-druid.xml" />
 		</update>
 	</info>
@@ -83,6 +83,7 @@
 			<div element="ID_2024PHB_CLASS_FEATURE_DRUID_ELEMENTAL_FURY"/>
 			<div element="ID_2024PHB_CLASS_FEATURE_DRUID_IMPROVED_ELEMENTAL_FURY"/>
 			<div element="ID_2024PHB_CLASS_FEATURE_DRUID_BEAST_SPELLS" />  
+			<div element="ID_2024PHB_CLASS_FEATURE_DRUID_EPIC_BOON" />  
 			<div element="ID_2024PHB_CLASS_FEATURE_DRUID_ARCHDRUID" />
 		</description>
 		<sheet display="false">
@@ -111,6 +112,7 @@
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_DRUID_ELEMENTAL_FURY" level="7"/>
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_DRUID_IMPROVED_ELEMENTAL_FURY" level="15"/>
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_DRUID_BEAST_SPELLS" level="18"/>
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_DRUID_EPIC_BOON" level="19"/>
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_DRUID_ARCHDRUID" level="20"/>
 		</rules>
 		<multiclass id="ID_2024PHB_MULTICLASS_DRUID">
@@ -296,7 +298,8 @@
 	<element name="Ability Score Improvement" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_DRUID_ABILITYSCOREIMPROVEMENT_DRUID">
 		<compendium display="false" />
 		<description>
-			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+			<p><em>4th, 8th, 12th, 16th, and 19th-level Druid feature</em></p>
+			<p>You gain the Ability Score Improvement feat or another feat of your choice for which you qualify.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -349,6 +352,14 @@
 		<sheet>
 			<description>While using Wild Shape, you can cast spells in Beast form, except for any spell that has a Material component with a cost specified or that consumes its Material component.</description>
 		</sheet>
+	</element>
+	<element name="Epic Boon" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_DRUID_EPIC_BOON">
+		<compendium display="false" />
+		<description>
+			<p><em>19th-level Druid Feature</em></p>
+			<p>You gain an Epic Boon feat or another feat of your choice for which you qualify.</p>
+		</description>
+		<sheet display="false" />
 	</element>
 	<element name="Archdruid" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_DRUID_ARCHDRUID">
 		<description>
@@ -485,19 +496,145 @@
 			</table>
 		</description>
 		<sheet>
-			<description>You have access to additional spells based on your chosen land type.</description>
+			<description>Whenever you finish a Long Rest, choose one type of land. You have access to additional spells which are prepared for you based on your chosen land type.</description>
 		</sheet>
 		<rules>
-			<select type="Class Feature" name="Land Type" supports="Land Type, Druid" level="3"/>
+			<select type="Archetype Feature" name="Land Type" supports="Circle Spells" level="3"/>
 		</rules>
 	</element>
+	<!-- Circle of Land Types -->
+	<element name="2024 Arid Land" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_LAND_TYPE_ARID">
+		<supports>Circle Spells</supports>
+		<description>
+			<p>Arid Land represents deserts and dry regions. You have the spells listed for your Druid level and lower prepared.</p>
+		    <table>
+		       	<thead>
+			       	<tr><td>Druid Level</td><td>Circle Spells</td></tr>
+		       	</thead>
+		       	<tr><td>3</td><td>Blur, Burning Hands, Fire Bolt</td></tr>
+		       	<tr><td>5</td><td>Fireball</td></tr>
+		       	<tr><td>7</td><td>Blight</td></tr>
+		    	<tr><td>9</td><td>Wall of Stone</td></tr>
+		   	</table>
+			Additionally, you gain resistance to Fire damage at 10th level.
+		</description>
+		<sheet>
+			<description>Fire Bolt, Burning Hands, Blur.</description>
+			<description level="5">Fire Bolt, Burning Hands, Blur, Fireball.</description>
+			<description level="7">Fire Bolt, Burning Hands, Blur, Fireball, Blight.</description>
+			<description level="9">Fire Bolt, Burning Hands, Blur, Fireball, Blight, Wall of Stone.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_FIRE_BOLT" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_BURNING_HANDS" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_BLUR" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_FIREBALL" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_BLIGHT" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_WALL_OF_STONE" level="9" spellcasting="Druid" prepared="true" />
+			<grant type="Resistance" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" level="10" />
+		</rules>
+	</element>
+	<element name="2024 Polar Land" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_LAND_TYPE_POLAR">
+		<supports>Circle Spells</supports>
+		<description>
+			<p>Polar Land represents tundra and icy regions. You have the spells listed for your Druid level and lower prepared.</p>
+			<table>
+		    	<thead>
+			       <tr><td>Druid Level</td><td>Circle Spells</td></tr>
+				</thead>
+			    <tr><td>3</td><td>Fog Cloud, Hold Person, Ray of Frost</td></tr>
+			    <tr><td>5</td><td>Sleet Storm</td></tr>
+			    <tr><td>7</td><td>Ice Storm</td></tr>
+			    <tr><td>9</td><td>Cone of Cold</td></tr>
+		    </table>
+			Additionally, you gain resistance to Cold damage at 10th level.
+		</description>
+		<sheet>
+			<description>Ray of Frost, Fog Cloud, Hold Person.</description>
+			<description level="5">Ray of Frost, Fog Cloud, Hold Person, Sleet Storm.</description>
+			<description level="7">Ray of Frost, Fog Cloud, Hold Person, Sleet Storm, Ice Storm.</description>
+			<description level="9">Ray of Frost, Fog Cloud, Hold Person, Sleet Storm, Ice Storm, Cone of Cold.</description>
+		</sheet>
+		<rules>
+		   <grant type="Spell" id="ID_2024PHB_SPELL_RAY_OF_FROST" level="3" spellcasting="Druid" prepared="true" />
+	       <grant type="Spell" id="ID_2024PHB_SPELL_FOG_CLOUD" level="3" spellcasting="Druid" prepared="true" />
+	       <grant type="Spell" id="ID_2024PHB_SPELL_HOLD_PERSON" level="3" spellcasting="Druid" prepared="true" />
+	       <grant type="Spell" id="ID_2024PHB_SPELL_SLEET_STORM" level="5" spellcasting="Druid" prepared="true" />
+	       <grant type="Spell" id="ID_2024PHB_SPELL_ICE_STORM" level="7" spellcasting="Druid" prepared="true" />
+	       <grant type="Spell" id="ID_2024PHB_SPELL_CONE_OF_COLD" level="9" spellcasting="Druid" prepared="true" />
+			<grant type="Resistance" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" level="10" />
+		</rules>
+	</element>
+	<element name="2024 Temperate Land" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_LAND_TYPE_TEMPERATE">
+		<supports>Circle Spells</supports>
+		<description>
+			<p>Temperate Land represents forests and plains. You have the spells listed for your Druid level and lower prepared.</p>
+			<table>
+				<thead>
+					<tr><td>Druid Level</td><td>Circle Spells</td></tr>
+				</thead>
+				<tr><td>3</td><td>Misty Step, Shocking Grasp, Sleep</td></tr>
+				<tr><td>5</td><td>Lightning Bolt</td></tr>
+				<tr><td>7</td><td>Freedom of Movement</td></tr>
+				<tr><td>9</td><td>Tree Stride</td></tr>
+			</table>
+			Additionally, you gain resistance to Lightning damage at 10th level.
+		</description>
+		<sheet>
+			<description>Shocking Grasp, Sleep, Misty Step.</description>
+			<description level="5">Shocking Grasp, Sleep, Misty Step, Lightning Bolt.</description>
+			<description level="7">Shocking Grasp, Sleep, Misty Step, Lightning Bolt, Freedom of Movement.</description>
+			<description level="9">Shocking Grasp, Sleep, Misty Step, Lightning Bolt, Freedom of Movement, Tree Stride.</description>
+		</sheet>
+	    <rules>
+		    <grant type="Spell" id="ID_2024PHB_SPELL_SHOCKING_GRASP" level="3" spellcasting="Druid" prepared="true" />
+		    <grant type="Spell" id="ID_2024PHB_SPELL_SLEEP" level="3" spellcasting="Druid" prepared="true" />
+		    <grant type="Spell" id="ID_2024PHB_SPELL_MISTY_STEP" level="3" spellcasting="Druid" prepared="true" />
+		    <grant type="Spell" id="ID_2024PHB_SPELL_LIGHTNING_BOLT" level="5" spellcasting="Druid" prepared="true" />
+		    <grant type="Spell" id="ID_2024PHB_SPELL_FREEDOM_OF_MOVEMENT" level="7" spellcasting="Druid" prepared="true" />
+		    <grant type="Spell" id="ID_2024PHB_SPELL_TREE_STRIDE" level="9" spellcasting="Druid" prepared="true" />
+			<grant type="Resistance" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" level="10" />
+	    </rules>
+	</element>
+	<element name="2024 Tropical Land" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_LAND_TYPE_TROPICAL">
+		<supports>Circle Spells</supports>
+		<description>
+			<p>Tropical Land represents jungles and humid regions. You have the spells listed for your Druid level and lower prepared.</p>
+			<table>
+				<thead>
+					<tr><td>Druid Level</td><td>Circle Spells</td></tr>
+				</thead>
+				<tr><td>3</td><td>Acid Splash, Ray of Sickness, Web</td></tr>
+				<tr><td>5</td><td>Stinking Cloud</td></tr>
+				<tr><td>7</td><td>Polymorph</td></tr>
+				<tr><td>9</td><td>Insect Plague</td></tr>
+			</table>
+			Additionally, you gain resistance to Poison damage at 10th level.
+		</description>
+		<sheet>
+			<description>Acid Splash, Ray of Sickness, Web.</description>
+			<description level="5">Acid Splash, Ray of Sickness, Web, Stinking Cloud.</description>
+			<description level="7">Acid Splash, Ray of Sickness, Web, Stinking Cloud, Polymorph.</description>
+			<description level="9">Acid Splash, Ray of Sickness, Web, Stinking Cloud, Polymorph, Insect Plague.</description>
+		</sheet>
+	    <rules>
+		    <grant type="Spell" id="ID_2024PHB_SPELL_ACID_SPLASH" level="3" spellcasting="Druid" prepared="true" />
+		    <grant type="Spell" id="ID_2024PHB_SPELL_RAY_OF_SICKNESS" level="3" spellcasting="Druid" prepared="true" />
+		    <grant type="Spell" id="ID_2024PHB_SPELL_WEB" level="3" spellcasting="Druid" prepared="true" />
+		    <grant type="Spell" id="ID_2024PHB_SPELL_STINKING_CLOUD" level="5" spellcasting="Druid" prepared="true" />
+		    <grant type="Spell" id="ID_2024PHB_SPELL_POLYMORPH" level="7" spellcasting="Druid" prepared="true" />
+		    <grant type="Spell" id="ID_2024PHB_SPELL_INSECT_PLAGUE" level="9" spellcasting="Druid" prepared="true" />
+			<grant type="Resistance" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" level="10" />
+	    </rules>
+	</element>
+	<!-- /Circle of Land Types -->
 	<element name="Land's Aid" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_LAND_LANDS_AID">
 		<description>
 			<p><em>3rd-level Circle of the Land feature</em></p>
 			<p>As a Magic action, you can expend a use of your Wild Shape and choose a point within 60 feet of yourself. Vitality-giving flowers and life-draining thorns appear for a moment in a 10-foot-radius Sphere centered on that point. Each creature of your choice in the Sphere must make a Constitution saving throw against your spell save DC, taking 2d6 Necrotic damage on a failed save or half as much damage on a successful one. One creature of your choice in that area regains 2d6 Hit Points.</p>
 			<p>The damage and healing increase by 1d6 when you reach Druid levels 10 (3d6) and 14 (4d6).</p>
 		</description>
-		<sheet action="Magic Action" usage="1/Wild Shape">
+		<sheet action="Magic Action" usage="Wild Shape">
 			<description>Expend a use of Wild Shape to create a 10-foot-radius sphere within 60 feet. Creatures of your choice take 2d6 Necrotic damage (Constitution save for half) and one creature regains 2d6 Hit Points.</description>
 		</sheet>
 	</element>
@@ -508,7 +645,8 @@
 			<p>In addition, when you finish a Short Rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your Druid level (round up), and none of them can be level 6+. For example, if you're a level 6 Druid, you can recover up to three levels' worth of spell slots. You can recover a level 3 spell slot, a level 2 and a level 1 spell slot, or three level 1 spell slots. Once you recover spell slots with this feature, you can't do so again until you finish a Long Rest.</p>
 		</description>
 		<sheet>
-			<description>You can cast a Circle Spell without expending a spell slot (1/Long Rest). You can also recover spell slots during a Short Rest (1/Long Rest).</description>
+			<description>(1/Long Rest) You can cast a Circle Spell without expending a spell slot.
+			(1/Long Rest) During a short rest, you choose expended spell slots to recover. They can have a combined level of {{level:2024 druid:half:up}}, and none of the slots can be 6th level or higher.(1/Long Rest).</description>
 		</sheet>
 	</element>
 	<element name="Nature's Ward" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_LAND_NATURES_WARD">
@@ -536,7 +674,7 @@
 			<p>As a Magic action, you can expend a use of your Wild Shape and cause spectral trees and vines to appear in a 15-foot Cube on the ground within 120 feet of yourself. They last there for 1 minute or until you have the Incapacitated condition or die. You and your allies have Half Cover while in that area, and your allies gain the current Resistance of your Nature's Ward while there.</p>
 			<p>As a Bonus Action, you can move the Cube up to 60 feet to ground within 120 feet of yourself.</p>
 		</description>
-		<sheet action="Magic Action" usage="1/Wild Shape">
+		<sheet action="Magic Action" usage="Wild Shape">
 			<description>Expend a use of Wild Shape to create a 15-foot cube of spectral trees and vines within 120 feet. You and allies have Half Cover and gain your Nature's Ward resistance while in the area. You can move the cube as a Bonus Action.</description>
 		</sheet>
 	</element>
@@ -575,7 +713,6 @@
 			<description>
 			<p>You can wildshape into a beast with a CR up to {{circle forms:cr}}, your AC equals {{circle forms:ac}} or the Beast's AC (whichever one is higher) and you gain {{circle forms:thp}} Temporary Hit Points.</p>
 			</description>
-
 		</sheet>
 		<rules>
 			<stat name="circle forms:cr" value="1" bonus="base" />
@@ -622,7 +759,6 @@
 			<grant type="Spell" id="ID_2024PHB_SPELL_CONJURE_ANIMALS" level="5" spellcasting="Druid" prepared="true" />
 			<grant type="Spell" id="ID_2024PHB_SPELL_FOUNT_OF_MOONLIGHT" level="7" spellcasting="Druid" prepared="true" />
 			<grant type="Spell" id="ID_2024PHB_SPELL_MASS_CURE_WOUNDS" level="9" spellcasting="Druid" prepared="true" />
-
 		</rules>
 	</element>
 	<element name="Improved Circle Forms" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_IMPROVED_CIRCLE_FORMS">
@@ -651,7 +787,7 @@
 				Whenever your Wild Shape attacks hit you can choose to deal Normal or Radiant damage.
 			</description>
 			<description level="14" >
-				Whenever your Wild Shape attacks hit, you can choose to deal Normal or Radiant damage. Additionally each of your attacks deals an extra 1d10 Radiant damage on a hit. 
+				Whenever your Wild Shape attacks hit, you can choose to deal Normal or Radiant damage. Additionally once per turn, you can deal an extra 2d10 Radiant damage to a target you hit with a Wild Shape form's attack. 
 			</description>
 		</sheet>
 	</element>
@@ -682,17 +818,17 @@
 		<description>
 			<p><em>14th-level Circle of the Moon feature</em></p>
 			<p>The power of the moon suffuses you, granting you the following benefits:</p>
-			<p>Improved Lunar Radiance. Each of your attacks in a Wild Shape form deals an extra 1d10 Radiant damage on a hit.</p>
+			<p>Improved Lunar Radiance. Once per turn, you can deal an extra 2d10 Radiant damage to a target you hit with a Wild Shape form's attack.</p>
 			<p>Shared Moonlight. Whenever you use Moonlight Step, you can also teleport one willing creature. That creature must be within 10 feet of you, and you teleport it to an unoccupied space you can see within 10 feet of your destination space.</p>
 		</description>
 		<sheet display="false" >
 			<description >
-				Each of your attacks in a Wild Shape form deals an extra 1d10 Radiant damage on a hit. Whenever you use Moonlight Step, you can also teleport one willing creature. That creature must be within 10 feet of you, and you teleport it to an unoccupied space you can see within 10 feet of your destination space.
+				Once per turn, you can deal an extra 2d10 Radiant damage to a target you hit with a Wild Shape form's attack. Whenever you use Moonlight Step, you can also teleport one willing creature. That creature must be within 10 feet of you, and you teleport it to an unoccupied space you can see within 10 feet of your destination space.
 			</description>
 		</sheet>
 	</element>
 
-	<element name="2024 Circle of the Sea" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_CIRCLEOFTHE_SEA">
+	<element name="2024 Circle of the Sea" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_CIRCLE_OF_THE_SEA">
 		<supports>Druid Circle</supports>
 		<description>
 			<p>Druids of the Circle of the Sea draw on the tempestuous natural forces of the world's oceans and storms. Some view themselves as embodiments of nature's wrath, seeking vengeance against those who despoil the natural world. Others seek mystical unity with nature by attuning themselves to the ebb and flow of the tides, following the rush of currents and waves, and listening to the inscrutable whispers and roars of the winds.</p>
@@ -728,7 +864,7 @@
 				<tr><td>9</td><td>Conjure Elemental, Hold Monster</td></tr>
 			</table>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description>You have access to additional spells related to water and storms.</description>
 		</sheet>
 		<rules>
@@ -751,7 +887,7 @@
 			<p>As a Bonus Action, you can expend a use of your Wild Shape to manifest an aura that takes the form of ocean spray that surrounds you. The aura lasts for 10 minutes. It ends early if you have the Incapacitated condition, dismiss it (no action required), or manifest the aura again.</p>
 			<p>At the end of each of your turns, you can choose another creature you can see within 10 feet of yourself. The target must succeed on a Constitution saving throw against your Spell Save DC or take Thunder damage and, if the creature is Large or smaller, be pushed up to 15 feet away from you. To determine this damage, roll a number of d6s equal to your Wisdom modifier (minimum of one die).</p>
 		</description>
-		<sheet action="Bonus Action" usage="1/Wild Shape">
+		<sheet action="Bonus Action" usage="Wild Shape">
 			<description>Expend a use of Wild Shape to manifest an ocean spray aura for 10 minutes. At the end of each turn, choose a creature within 10 feet to take Thunder damage and be pushed away (Constitution save negates).</description>
 		</sheet>
 	</element>
@@ -786,4 +922,168 @@
 			<description>You can manifest Wrath of the Sea around an ally within 60 feet instead of yourself, or around both yourself and an ally by expending two uses of Wild Shape.</description>
 		</sheet>
 	</element>
+	
+	<!-- Circle of Stars -->
+	<element name="2024 Circle of the Stars" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_CIRCLE_OF_STARS">
+        <supports>Druid Circle</supports>
+        <description>
+            <p><b>Circle of the Stars</b></p>
+            <p><i>Harness Secrets Hidden in Constellations</i></p>
+            <p>The Circle of the Stars has tracked heavenly patterns since time immemorial, discovering secrets hidden amid the constellations. By understanding these secrets, the Druids of this circle seek to harness the powers of the cosmos.</p>
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_STARS_STAR_MAP" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_STARS_STARRY_FORM" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_STARS_COSMIC_OMEN" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_STARS_TWINKLING_CONSTELLATIONS" />
+			<div element="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_STARS_FULL_OF_STARS" />
+        </description>
+		<sheet display="false">
+			<description>
+				Circle of the Stars: Track heavenly patterns and harness cosmic power. Gain a Star Map as a spellcasting focus, special spell access, and unique Wild Shape transformation (Starry Form). Abilities include:
+				<ul>
+					<li><b>Star Map:</b> Spellcasting focus, Guidance  and Guiding Bolt always prepared, cast Guiding Bolt (no slot) Wisdom modifier times/long rest, replace map with 1-hour ceremony.</li>
+					<li><b>Starry Form:</b> Bonus Action, expend Wild Shape to take on a luminous form for 10 min. Choose Archer (ranged radiant attack), Chalice (healing bonus), or Dragon (improved checks/saves for concentration).</li>
+					<li><b>Cosmic Omen:</b> After long rest, roll die for Weal (add 1d6) or Woe (subtract 1d6) to d20 test as Reaction, Wisdom modifier times/long rest.</li>
+					<li><b>Twinkling Constellations:</b> Archer/Chalice radiant/healing becomes 2d8, Dragon grants Fly speed 20 ft and hover, change constellation each turn.</li>
+					<li><b>Full of Stars:</b> While in Starry Form, gain resistance to Bludgeoning, Piercing, and Slashing damage.</li>
+				</ul>
+			</description>
+		</sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_STARS_STAR_MAP" level="3"/>
+            <grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_STARS_STARRY_FORM" level="3"/>
+            <grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_STARS_COSMIC_OMEN" level="6"/>
+            <grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_STARS_TWINKLING_CONSTELLATIONS" level="10"/>
+            <grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_STARS_FULL_OF_STARS" level="14"/>
+        </rules>
+    </element>
+    <element name="Star Map" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_STARS_STAR_MAP">
+        <description>
+            <p><em>3rd-level Circle of the Stars feature</em></p>
+            <p>You've created a star chart as part of your heavenly studies. It is a Tiny object, and you can use it as a Spellcasting Focus for your Druid spells. You determine its form by rolling on the Star Map table or by choosing one.</p>
+            <p>While holding the map, you have the <i>Guidance</i> and <i>Guiding Bolt</i> spells prepared, and you can cast <i>Guiding Bolt</i> without expending a spell slot. You can cast it in that way a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
+            <p>If you lose the map, you can perform a 1-hour ceremony to magically create a replacement. This ceremony can be performed during a Short or Long Rest, and it destroys the previous map.</p>
+            <table>
+				<thead>
+					<tr><th>d6</th><th>Map Form</th></tr>
+				</thead>
+                <tr><td>1</td><td>A scroll bearing depictions of constellations</td></tr>
+                <tr><td>2</td><td>A stone tablet with fine holes drilled through it</td></tr>
+                <tr><td>3</td><td>An owlbear hide tooled with stellar symbols</td></tr>
+                <tr><td>4</td><td>A collection of maps bound in an ebony cover</td></tr>
+                <tr><td>5</td><td>A crystal engraved with starry patterns</td></tr>
+                <tr><td>6</td><td>A glass disk etched with constellations</td></tr>
+            </table>
+        </description>
+		<sheet>
+			<description>You've created a star chart which is a Tiny object, spellcasting focus. If lost, create a new map with a 1-hour ceremony (destroys old map). Map forms: scroll, tablet, hide, book, crystal, or glass disk.
+			While holding it, You can cast Guiding Bolt without a spell slot {{star map:uses}} times/Long Rest.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_2024PHB_SPELL_GUIDANCE" level="3" spellcasting="Druid" />
+			<grant type="Spell" id="ID_2024PHB_SPELL_GUIDING_BOLT" level="3" spellcasting="Druid" prepared="true" />
+			<stat name="star map:uses" value="1" bonus="base" />
+			<stat name="star map:uses" value="wisdom:modifier" bonus="base" />
+		</rules>
+    </element>
+    <element name="Starry Form" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_STARS_STARRY_FORM">
+        <description>
+            <p><em>3rd-level Circle of the Stars feature</em></p>
+            <p>As a Bonus Action, you can expend a use of your Wild Shape feature to take on a starry form rather than shape-shifting.</p>
+            <p>While in your starry form, you retain your game statistics, but your body becomes luminous, your joints glimmer like stars, and glowing lines connect them as on a star chart. This form sheds Bright Light in a 10-foot radius and Dim Light for an additional 10 feet. The form lasts for 10 minutes. It ends early if you dismiss it (no action required), have the Incapacitated condition, or use this feature again.</p>
+            <p>Whenever you assume your starry form, choose which of the following constellations glimmers on your body; your choice gives you certain benefits while in the form.</p>
+            <ul>
+                <li><b>Archer.</b> A constellation of an archer appears on you. When you activate this form and as a Bonus Action on your subsequent turns while it lasts, you can make a ranged spell attack, hurling a luminous arrow that targets one creature within 60 feet of yourself. On a hit, the attack deals Radiant damage equal to 1d8 plus your Wisdom modifier.</li>
+                <li><b>Chalice.</b> A constellation of a life-giving goblet appears on you. Whenever you cast a spell using a spell slot that restores Hit Points to a creature, you or another creature within 30 feet of you can regain Hit Points equal to 1d8 plus your Wisdom modifier.</li>
+                <li><b>Dragon.</b> A constellation of a wise dragon appears on you. When you make an Intelligence or a Wisdom check or a Constitution saving throw to maintain Concentration, you can treat a roll of 9 or lower on the d20 as a 10.</li>
+            </ul>
+        </description>
+		<!--<sheet action="Bonus Action" usage="Wild Shape">
+			<description>
+				Choose which of the following constellations glimmers on your body; You become luminous for 10 min (bright light 10 ft, dim 10 ft). Form ends early if dismissed, incapacitated, or used again.
+				Archer: Bonus Action, make ranged spell attack (60 ft), radiant damage 1d8+{{wisdom:modifier}}.
+				Chalice: When you heal with a spell slot, you or a creature within 30 ft regains 1d8+{{wisdom:modifier}} HP.
+				Dragon: When making Int/Wis check or Con save for concentration, treat d20 roll of 9 or lower as 10.
+			</description>
+		</sheet>-->
+		<sheet action="Bonus Action" usage="Wild Shape">
+			<description>You can expend a use of your Wild Shape feature to take on a starry form rather than shape-shifting. This form sheds bright light in a 10-foot radius and dim light for an additional 10 feet. The form lasts for 10 minutes. It ends early if you dismiss it (no action required), are incapacitated, die, or use this feature again. You choose which of the following constellations glimmers on your body:</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_OF_STARS_STARRY_FORM_ARCHER" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_OF_STARS_STARRY_FORM_CHALICE" />
+			<grant type="Archetype Feature" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_OF_STARS_STARRY_FORM_DRAGON" />
+		</rules>
+	</element>
+	<element name="Archer" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_OF_STARS_STARRY_FORM_ARCHER">
+		<compendium display="false" />
+		<description>
+			<p>A constellation of an archer appears on you. When you activate this form, and as a bonus action on your subsequent turns while it lasts, you can make a ranged spell attack, hurling a luminous arrow that targets one creature within 60 feet of you. On a hit, the attack deals radiant damage equal to 1d8 + your Wisdom modifier.</p>
+		</description>
+		<sheet usage="Starry Form">
+			<description>When you activate this form and as a Bonus Action on your subsequent turns while it lasts, you can make a ranged spell attack, hurling a luminous arrow that targets one creature within 60 feet of yourself On a hit, the attack deals {{archer constellation:dice:count}}d8 + {{wisdom:modifier}} Radiant damage.</description>
+		</sheet>
+		<rules>
+			<stat name="archer constellation:dice:count" value="1" bonus="base" />
+		</rules>
+	</element>
+	<element name="Chalice" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_OF_STARS_STARRY_FORM_CHALICE">
+		<compendium display="false" />
+		<description>
+			<p>A constellation of a life-giving goblet appears on you. Whenever you cast a spell using a spell slot that restores hit points to a creature, you or another creature within 30 feet of you can regain hit points equal to 1d8 + your Wisdom modifier.</p>
+		</description>
+		<sheet usage="Starry Form">
+			<description>Whenever you cast a spell using a spell slot that restores hp to a creature, you or another creature within 30 feet of you can regain {{chalice constellation:dice:count}}d8 + {{wisdom:modifier}} hp.</description>
+		</sheet>
+		<rules>
+			<stat name="chalice constellation:dice:count" value="1" bonus="base" />
+		</rules>
+	</element>
+	<element name="Dragon" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_OF_STARS_STARRY_FORM_DRAGON">
+		<compendium display="false" />
+		<description>
+			<p>A constellation of a wise dragon appears on you. When you make an Intelligence or a Wisdom check or a Constitution saving throw to maintain Concentration, you can treat a roll of 9 or lower on the d20 as a 10.</p>
+		</description>
+		<sheet usage="Starry Form">
+			<description>When you make an Intelligence or a Wisdom check or a Constitution saving throw to maintain Concentration, you can treat a roll of 9 or lower on the d20 as a 10.</description>
+			<description level="10">When you make an Intelligence or a Wisdom check or a Constitution saving throw to maintain Concentration, you can treat a roll of 9 or lower on the d20 as a 10. Additionally you have a Fly Speed of 20 feet and can hover.</description>
+		</sheet>
+	</element>
+    <element name="Cosmic Omen" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_STARS_COSMIC_OMEN">
+        <description>
+            <p><em>6th-level Circle of the Stars feature</em></p>
+            <p>Whenever you finish a Long Rest, you can consult your Star Map for omens and roll a die. Until you finish your next Long Rest, you gain access to a special Reaction based on whether you rolled an even or an odd number on the die:</p>
+            <ul>
+                <li><b>Weal (Even).</b> Whenever a creature you can see within 30 feet of you is about to make a D20 Test, you can take a Reaction to roll 1d6 and add the number rolled to the total.</li>
+                <li><b>Woe (Odd).</b> Whenever a creature you can see within 30 feet of you is about to make a D20 Test, you can take a Reaction to roll 1d6 and subtract the number rolled from the total.</li>
+            </ul>
+            <p>You can use this Reaction a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
+        </description>
+		<sheet action="Reaction" usage="{{wisdom:modifier}}/Long Rest">
+			<description>After a long rest, roll a die. Until you finish your next long rest, you gain a reaction based on whether you rolled an even (Weal) or an odd (Woe) number on the die:
+			Whenever a creature you can see within 30 feet of you is about to make a D20 Test, you can roll 1d6 and add it (Weal) or subtract it (Woe) from the total.</description>
+		</sheet>
+    </element>
+    <element name="Twinkling Constellations" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_STARS_TWINKLING_CONSTELLATIONS">
+        <description>
+            <p><em>10th-level Circle of the Stars feature</em></p>
+            <p>The constellations of your Starry Form improve. The 1d8 of the Archer and the Chalice becomes 2d8, and while the Dragon is active, you have a Fly Speed of 20 feet and can hover.</p>
+            <p>Moreover, at the start of each of your turns while in your Starry Form, you can change which constellation glimmers on your body.</p>
+        </description>
+		<sheet>
+			<description>At the start of each turn in Starry Form, you can change which constellation is active.</description>
+		</sheet>
+		<rules>
+			<stat name="archer constellation:dice:count" value="2" bonus="base" />
+			<stat name="chalice constellation:dice:count" value="2" bonus="base" />
+		</rules>
+    </element>
+    <element name="Full of Stars" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_CIRCLE_STARS_FULL_OF_STARS">
+        <description>
+            <p><em>14th-level Circle of the Stars feature</em></p>
+            <p>While in your Starry Form, you become partially incorporeal, giving you Resistance to Bludgeoning, Piercing, and Slashing damage.</p>
+        </description>
+        <sheet>
+            <description>While in your Starry Form, you become partially incorporeal, giving you Resistance to Bludgeoning, Piercing, and Slashing damage.</description>
+        </sheet>
+    </element>
 </elements>

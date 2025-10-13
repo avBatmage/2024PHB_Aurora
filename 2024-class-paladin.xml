@@ -4,7 +4,7 @@
 		<name>2024 Paladin</name>
 		<description>The Paladin class from the 2024 Player's Handbook.</description>
 		<author url="https://marketplace.dndbeyond.com/category/3709000?pid=DB3709000">Wizards of the Coast</author>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="2024-class-paladin.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/classes/2024-class-paladin.xml" />
 		</update>
 	</info>
@@ -93,6 +93,8 @@
 			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_AURA_OF_COURAGE" />
 			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_RADIANT_STRIKES" />
 			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_RESTORING_TOUCH" />
+			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_AURA_EXPANSION" />
+			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_EPIC_BOON" />
 		</description>
 		<sheet display="false">
 			<description>A holy warrior bound to a sacred oath.</description>
@@ -126,6 +128,8 @@
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_AURA_OF_COURAGE" level="10" />
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_RADIANT_STRIKES" level="11" />
 			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_RESTORING_TOUCH" level="14" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_AURA_EXPANSION" level="18" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_EPIC_BOON" level="19" />
 		</rules>
 		<multiclass id="ID_2024PHB_MULTICLASS_2024_PALADIN">
 			<prerequisite>Strength 13 and Charisma 13</prerequisite>
@@ -250,7 +254,7 @@
 			<select type="Class Feature" name="Fighting Style" supports="Fighting Style,Paladin" />
 		</rules>
 	</element>
-	<element name="Blessed Warrior" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_FIGHTINGSTYLE_BLESSED_WARRIOR">
+	<element name="2024 Blessed Warrior" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_FIGHTINGSTYLE_BLESSED_WARRIOR">
 		<supports>Fighting Style, Paladin</supports>
 		<description>
 			<p>You learn two Cleric cantrips of your choice. Guidance and Sacred Flame are recommended. The chosen cantrips count as Paladin spells for you, and Charisma is your spellcasting ability for them. Whenever you gain a Paladin level, you can replace one of these cantrips with another Cleric cantrip.</p>
@@ -287,7 +291,7 @@
 			<description>You can channel divine energy to fuel magical effects. You regain one of its expended uses when you finish a Short Rest.</description>
 		</sheet>
 		<rules>
-			<grant Type="Class Feature" ID="ID_2024PHB_CLASS_FEATURE_PALADIN_CHANNEL_DIVINITY_DIVINE_SENSE" />
+			<grant type="Class Feature" id="ID_2024PHB_CLASS_FEATURE_PALADIN_CHANNEL_DIVINITY_DIVINE_SENSE" />
 			<stat name="channel divinity:count" value="2" level="3" />
 			<stat name="channel divinity:count" value="1" level="11" />
 		</rules>
@@ -296,7 +300,7 @@
 		<description>
 			<p>As a Bonus Action, you can open your awareness to detect Celestials, Fiends, and Undead. For the next 10 minutes or until you have the Incapacitated condition, you know the location of any creature of those types within 60 feet of yourself, and you know its creature type. Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the <i>Hallow</i> spell.</p>
 		</description>
-		<sheet usage="Channel Divinity" action="Bonus Action">
+		<sheet action="Bonus Action" usage="Channel Divinity">
 			<description>You can open your awareness to detect Celestials, Fiends, and Undead. For the next 10 minutes or until you have the Incapacitated condition, you know the location of any creature of those types within 60 feet of yourself, and you know its creature type. Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the <i>Hallow</i> spell.</description>
 		</sheet>
 	</element>
@@ -325,7 +329,8 @@
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_ABILITY_SCORE_IMPROVEMENT</requirements>
 		<compendium display="false" />
 		<description>
-			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+			<p><em>4th, 8th, 12th, 16th, and 19th-level Paladin feature</em></p>
+			<p>You gain the Ability Score Improvement feat or another feat of your choice for which you qualify.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -369,14 +374,12 @@
 			<p>You radiate a protective, unseeable aura in a 10-foot Emanation that originates from you. The aura is inactive while you have the Incapacitated condition.</p>
 			<p>You and your allies in the aura gain a bonus to saving throws equal to your Charisma modifier (minimum bonus of +1).</p>
 			<p>If another Paladin is present, a creature can benefit from only one Aura of Protection at a time; the creature chooses which aura while in them.</p>
-			<p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
 		</description>
 		<sheet>
 			<description>Whenever you or a friendly creature within {{aura of protection:range}} feet of you must make a saving throw, the creature gains a +{{aura of protection:save bonus}} bonus to the saving throw. You must be conscious to grant this bonus.</description>
 		</sheet>
 		<rules>
 			<stat name="aura of protection:range" value="10" bonus="base" />
-			<stat name="aura of protection:range" value="30" level="18" bonus="base" />
 			<stat name="aura of protection:save bonus" value="1" bonus="base"/>
 			<stat name="aura of protection:save bonus" value="charisma:modifier" bonus="base"/>
 		</rules>
@@ -397,16 +400,11 @@
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_AURA_OF_COURAGE</requirements>
 		<description>
 			<p><em>10th-level Paladin feature</em></p>
-			<p>You and friendly creatures within 10 feet of you can't be frightened while you are conscious.</p>
-			<p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
+			<p>You and your allies have Immunity to the Frightened condition while in your Aura of Protection. If a Frightened ally enters the aura, that condition has no effect on that ally while there.</p>
 		</description>
 		<sheet>
-			<description>You and friendly creatures within {{aura of courage:range}} feet of you can't be frightened while you are conscious.</description>
+			<description>You and your allies have Immunity to the Frightened condition while in your Aura of Protection. If a Frightened ally enters the aura, that condition has no effect on that ally while there.</description>
 		</sheet>
-		<rules>
-			<stat name="aura of courage:range" value="10" bonus="base" />
-			<stat name="aura of courage:range" value="30" level="18" bonus="base" />
-		</rules>
 	</element>
 	<element name="Radiant Strikes" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_RADIANT_STRIKES">
 		<requirements>!ID_KBP_DMBD_CLASS_FEATURE_ANTIPALADIN_IMPROVED_UNHOLY_SMITE, !ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_IMPROVED_DIVINE_SMITE</requirements>
@@ -427,29 +425,24 @@
 			<description>When you use Lay On Hands on a creature, you can also remove one or more of the following conditions from the creature: Blinded, Charmed, Deafened, Frightened, Paralyzed, or Stunned. You must expend 5 Hit Points from the healing pool of Lay On Hands for each of these conditions you remove; those points don't also restore Hit Points to the creature.</description>
 		</sheet>
 	</element>
-
-	<!--Spells
-	<element name="Divine Smite" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_DIVINE_SMITE">
-		<supports>Paladin</supports>
+	<element name="Aura Expansion" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_AURA_EXPANSION">
 		<description>
-			<p>The target takes an extra 2d8 Radiant damage from the attack. The damage increases by 1d8 if the target is a Fiend or an Undead.</p>
-			<p class="indent"><b><i>At Higher Levels.</i></b> The damage increases by 1d8 for each spell slot level above 1.</p>
+			<p><em>18th-level Paladin feature</em></p>
+			<p>Your Aura of Protection is now a 30-foot Emanation.</p>
 		</description>
-		<setters>
-			<set name="keywords">radiant</set>
-			<set name="level">1</set>
-			<set name="school">Evocation</set>
-			<set name="time">Bonus Action, which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike</set>
-			<set name="duration">Instantaneous</set>
-			<set name="range">Self</set>
-			<set name="hasVerbalComponent">true</set>
-			<set name="hasSomaticComponent">false</set>
-			<set name="hasMaterialComponent">false</set>
-			<set name="materialComponent" />
-			<set name="isConcentration">false</set>
-			<set name="isRitual">false</set>
-		</setters>
-	</element>-->
+		<sheet display="false" />
+		<rules>
+			<stat name="aura of protection:range" value="30" level="18" bonus="base" />
+		</rules>
+	</element>
+	<element name="Epic Boon" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_EPIC_BOON">
+		<compendium display="false" />
+		<description>
+			<p><em>19th-level Paladin Feature</em></p>
+			<p>You gain an Epic Boon feat or another feat of your choice for which you qualify.</p>
+		</description>
+		<sheet display="false" />
+	</element>
 
 
 	<!--Feature Replacement Grants-->
@@ -485,7 +478,7 @@
 			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_SMITE_OF_PROTECTION" />
 			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_HOLY_NIMBUS" />
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description>Paladins devoted to justice and order.</description>
 		</sheet>
 		<rules>
@@ -512,6 +505,7 @@
 				<tr><td>17</td><td><em>Commune, Flame Strike</em></td></tr>
 			</table>
 		</description>
+		<sheet display="false" />
 		<rules>
 			<grant type="Spell" id="ID_2024PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" level="3" spellcasting="Paladin" prepared="true" />
 			<grant type="Spell" id="ID_2024PHB_SPELL_SHIELD_OF_FAITH" level="3" spellcasting="Paladin" prepared="true" />
@@ -533,8 +527,12 @@
 			<p class="indent">You can end this effect early (no action required). This effect also ends if you aren't carrying the weapon.</p>
 		</description>
 		<sheet action="Attack Action" usage="Channel Divinity">
-			<description>Imbue one Melee weapon with positive energy for 10 minutes. Add your Charisma modifier to attack rolls (minimum +1) and deal Radiant damage. Weapon emits Bright Light in 20-foot radius and Dim Light 20 feet beyond.</description>
+			<description>Imbue one Melee weapon with positive energy for 10 minutes. Add +{{sacred weapon:attack bonus}} to attack rolls and deal Radiant damage. Weapon emits Bright Light in 20-foot radius and Dim Light 20 feet beyond.</description>
 		</sheet>
+		<rules>
+			<stat name="sacred weapon:attack bonus" value="1" bonus="base"/>
+			<stat name="sacred weapon:attack bonus" value="charisma:modifier" bonus="base"/>
+		</rules>
 	</element>
 	<element name="Aura of Devotion" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_AURA_OF_DEVOTION">
 		<description>
@@ -563,8 +561,12 @@
 			<p class="indent"><strong>Sunlight.</strong> The aura is filled with Bright Light that is sunlight.</p>
 		</description>
 		<sheet action="Bonus Action" usage="1/Long Rest">
-			<description>Imbue your Aura of Protection with holy power for 10 minutes. Grants Holy Ward, Radiant Damage to enemies, and Sunlight. Can restore use by expending a 5th-level spell slot.</description>
+			<description>Imbue your Aura of Protection with holy power for 10 minutes. It is filled with Bright Light that is sunlight, You have Advantage on any saving throw you are forced to make by a Fiend or an Undead, and Whenever an enemy starts its turn in the aura, that creature takes {{holy nimbus:damage}} Radiant damage. Can restore use by expending a 5th-level spell slot.</description>
 		</sheet>
+		<rules>
+			<stat name="holy nimbus:damage" value="charisma:modifier" />
+			<stat name="holy nimbus:damage" value="proficiency:bonus" />
+		</rules>
 	</element>
 
 	<element name="2024 Oath of Glory" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_PALADIN_OATH_OF_GLORY">
@@ -584,7 +586,7 @@
 			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_GLORIOUS_DEFENSE" />
 			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_LIVING_LEGEND" />
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description>Paladins devoted to achieving glory through heroic deeds.</description>
 		</sheet>
 		<rules>
@@ -612,6 +614,7 @@
 				<tr><td>17</td><td><em>Legend Lore, Yolande's Regal Presence</em></td></tr>
 			</table>
 		</description>
+		<sheet display="false" />
 		<rules>
 			<grant type="Spell" id="ID_2024PHB_SPELL_GUIDING_BOLT" level="3" spellcasting="Paladin" prepared="true" />
 			<grant type="Spell" id="ID_2024PHB_SPELL_HEROISM" level="3" spellcasting="Paladin" prepared="true" />
@@ -631,7 +634,7 @@
 			<p>Immediately after you deal damage to a creature with any of your Paladin's Smite spells, you can expend one use of your Channel Divinity and distribute Temporary Hit Points to creatures of your choice within 30 feet of yourself, which can include you. The total number of Temporary Hit Points equals 2d8 + your Paladin level, divided among the chosen creatures however you like.</p>
 		</description>
 		<sheet usage="Channel Divinity">
-			<description>After dealing damage with a Paladin's Smite spell, distribute 2d8 + Paladin level Temporary Hit Points among creatures within 30 feet.</description>
+			<description>After dealing damage with a Paladin's Smite spell, distribute 2d8+{{level:2024 paladin}} Temporary Hit Points among creatures within 30 feet.</description>
 		</sheet>
 	</element>
 	<element name="Peerless Athlete" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_PEERLESS_ATHLETE">
@@ -659,8 +662,8 @@
 			<p>You can turn defense into a sudden strike. When you or another creature you can see within 10 feet of you is hit by an attack roll, you can use your Reaction to grant a bonus to the target's AC against that attack, potentially causing it to miss. The bonus equals your Charisma modifier (minimum of +1). If the attack misses, you can make one weapon attack against the attacker as part of this Reaction, provided the attacker is within your weapon's range.</p>
 			<p class="indent">You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
 		</description>
-		<sheet action="Reaction" usage="{{charisma:modifier}}/Long Rest">
-			<description>When you or an ally within 10 feet is hit, grant +{{charisma:modifier}} AC bonus. If attack misses, make weapon attack against attacker.</description>
+		<sheet action="Reaction" usage="{{glorious defense:uses}}/Long Rest">
+			<description>When you or an ally within 10 feet is hit, grant +{{glorious defense:uses}} AC bonus. If the attack misses, make a weapon attack against attacker if they are within range.</description>
 		</sheet>
 		<rules>
 			<stat name="glorious defense:uses" value="1" bonus="base" />
@@ -677,7 +680,7 @@
 			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a 5th-level spell slot (no action required).</p>
 		</description>
 		<sheet action="Bonus Action" usage="1/Long Rest">
-			<description>For 1 minute, gain Advantage on Charisma checks, reroll failed saves as Reaction, and turn one missed attack per turn into a hit. Can restore use with 5th-level spell slot.</description>
+			<description>For 1 minute, gain Advantage on Charisma checks, reroll failed saves as a Reaction, and once per turn cause a missed attack to hit. Can restore use with 5th-level spell slot.</description>
 		</sheet>
 	</element>
 
@@ -697,7 +700,7 @@
 			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_UNDYING_SENTINEL" />
 			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_ELDER_CHAMPION" />
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description>Paladins devoted to preserving life and light in the world.</description>
 		</sheet>
 		<rules>
@@ -724,6 +727,7 @@
 				<tr><td>17</td><td><em>Commune with Nature, Tree Stride</em></td></tr>
 			</table>
 		</description>
+		<sheet display="false" />
 		<rules>
 			<grant type="Spell" id="ID_2024PHB_SPELL_ENSNARING_STRIKE" level="3" spellcasting="Paladin" prepared="true" />
 			<grant type="Spell" id="ID_2024PHB_SPELL_SPEAK_WITH_ANIMALS" level="3" spellcasting="Paladin" prepared="true" />
@@ -762,8 +766,13 @@
 			<p class="indent">Additionally, you suffer none of the drawbacks of old age, and you can't be aged magically.</p>
 		</description>
 		<sheet usage="1/Long Rest">
-			<description>When reduced to 0 HP, drop to 1 HP instead and regain 3 × Paladin level HP. Also immune to aging effects.</description>
+			<description>When reduced to 0 HP and not killed outright, you can drop to 1 HP instead, and regain {{undying sentinel:hp}} HP. Also immune to aging effects.</description>
 		</sheet>
+		<rules>
+			<stat name="undying sentinel:hp" value="level:2024 paladin" />
+			<stat name="undying sentinel:hp" value="level:2024 paladin" />
+			<stat name="undying sentinel:hp" value="level:2024 paladin" />
+		</rules>
 	</element>
 	<element name="Elder Champion" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_ELDER_CHAMPION">
 		<description>
@@ -775,7 +784,7 @@
 			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a 5th-level spell slot (no action required).</p>
 		</description>
 		<sheet action="Bonus Action" usage="1/Long Rest">
-			<description>Imbue Aura of Protection with primal power for 1 minute. Enemies have Disadvantage on saves vs your spells/Channel Divinity, you regenerate 10 HP per turn, and can cast 1-action spells as Bonus Actions. Can restore use with 5th-level spell slot.</description>
+			<description>Imbue your Aura of Protection with primal power for 1 minute. Enemies have Disadvantage on saves vs your spells or Channel Divinity options, you regenerate 10 HP at the start of each turn, and can cast 1-action spells as Bonus Actions. Can restore use with 5th-level spell slot.</description>
 		</sheet>
 	</element>
 
@@ -795,7 +804,7 @@
 			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_SOUL_OF_VENGEANCE" />
 			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_AVENGING_ANGEL" />
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description>Paladins devoted to punishing those who have committed grievously evil acts.</description>
 		</sheet>
 		<rules>
@@ -822,6 +831,7 @@
 				<tr><td>17</td><td><em>Hold Monster, Scrying</em></td></tr>
 			</table>
 		</description>
+		<sheet display="false" />
 		<rules>
 			<grant type="Spell" id="ID_2024PHB_SPELL_BANE" level="3" spellcasting="Paladin" prepared="true" />
 			<grant type="Spell" id="ID_2024PHB_SPELL_HUNTERS_MARK" level="3" spellcasting="Paladin" prepared="true" />
@@ -842,7 +852,7 @@
 			<p class="indent">If the creature drops to 0 Hit Points before the vow ends, you can transfer the vow to a different creature within 30 feet of yourself (no action required). You can make this transfer no more than once per turn.</p>
 		</description>
 		<sheet action="Bonus Action" usage="Channel Divinity">
-			<description>Utter a vow of enmity against a creature within 30 feet. Gain Advantage on attack rolls against that creature for 1 minute. If creature drops to 0 HP, can transfer vow to another creature within 30 feet (once per turn).</description>
+			<description>Utter a vow of enmity against a creature within 30 feet. Gain Advantage on attack rolls against that creature for 1 minute. If the creature drops to 0 HP, you can transfer the vow to another creature within 30 feet (once per turn).</description>
 		</sheet>
 	</element>
 	<element name="Relentless Avenger" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_PALADIN_RELENTLESS_AVENGER">
@@ -872,7 +882,7 @@
 			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a 5th-level spell slot (no action required).</p>
 		</description>
 		<sheet action="Bonus Action" usage="1/Long Rest">
-			<description>Imbue Aura of Protection with holy power for 1 hour. Gain Flight (Fly Speed equal to Speed, can Hover) and Frightful Aura (enemies must save or be Frightened). Can restore use with 5th-level spell slot.</description>
+			<description>Imbue Aura of Protection with holy power for 1 hour. Gain a Fly Speed equal to your Speed and can Hover. Whenever an enemy starts its turn in the aura, that creature must succeed on a Wisdom save or have the Frightened condition for 1 minute or until it takes any damage. Attack rolls against the Frightened creature have Advantage. Can restore use with 5th-level spell slot.</description>
 		</sheet>
 	</element>
 </elements>

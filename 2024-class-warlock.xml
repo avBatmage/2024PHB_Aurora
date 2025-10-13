@@ -4,7 +4,7 @@
 		<name>2024 Warlock</name>
 		<description>The Warlock class from the 2024 Player's Handbook.</description>
 		<author url="https://marketplace.dndbeyond.com/category/3709000?pid=DB3709000">Wizards of the Coast</author>
-		<update version="0.4.1">
+		<update version="0.4.2">
 			<file name="2024-class-warlock.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-class-warlock.xml" />
 		</update>
 	</info>
@@ -169,8 +169,8 @@
 			<h5>SPELLCASTING FOCUS</h5>
 			<p>You can use an arcane focus as a spellcasting focus for your warlock spells.</p>
 		</description>
-		<sheet display="false">
-			<description>Your arcane research and the magic bestowed on you by your patron have given you facility with spells. You have {{warlock:spellcasting:slots:count}} slots of level {{warlock:spellcasting:slot}}</description>
+		<sheet>
+			<description>You have {{warlock:spellcasting:slots:count}} spell slots of level {{warlock:spellcasting:slot}} and regain them at the end of a short rest.</description>
 		</sheet>
 		<spellcasting name="Warlock" ability="Charisma" allowReplace="true">
 			<list>Warlock</list>
@@ -240,14 +240,15 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Archetype" name="Warlock Subclass" supports="Warlock Subclass" />
+			<select type="Archetype" name="Warlock Subclass" supports="Otherworldly Patron" />
 		</rules>
 	</element>
 	<element name="Ability Score Improvement" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_ABILITY_SCORE_IMPROVEMENT_WARLOCK">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARLOCK_ABILITY_SCORE_IMPROVEMENT</requirements>
 		<compendium display="false" />
 		<description>
-			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+			<p><em>4th, 8th, 12th, 16th, and 19th-level Warlock feature</em></p>
+			<p>You gain the Ability Score Improvement feat or another feat of your choice for which you qualify.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -349,12 +350,11 @@
 			<p class="indent"><strong>Spellcasting Focus.</strong> You can use the book as a Spellcasting Focus.</p>
 		</description>
 		<sheet>
-			<description>You conjure a Book of Shadows at the end of a rest that grants you cantrips and ritual spells from any class.
-			You can use the book as a Spellcasting Focus.</description>
+			<description>You conjure a Book of Shadows at the end of a rest that grants you cantrips and ritual spells from any class. You can use the book as a Spellcasting Focus.</description>
 		</sheet>
 		<rules>
-			<select type="Spell" name="Cantrip (Pact of the Tome)" supports="0" level="1" number="3" spellcasting="Warlock"/>
-			<select type="Spell" name="Ritual (Pact of the Tome)" supports="1,ritual" level="1" number="2" spellcasting="Warlock"/>
+			<select type="Spell" name="Cantrip (Pact of the Tome)" supports="0" number="3" spellcasting="Warlock"/>
+			<select type="Spell" name="Ritual (Pact of the Tome)" supports="1,ritual" number="2" spellcasting="Warlock"/>
 		</rules>
 	</element>
 	<element name="2024 Pact of the Blade" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_PACT_OF_THE_BLADE">
@@ -404,7 +404,7 @@
 			<p class="indent"><strong>Repeatable.</strong> You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip.</p>
 		</description>
 		<sheet>
-			<description>Choose one of your known Warlock cantrips that deals damage. You can add your Charisma modifier to that spell's damage rolls.</description>
+			<description>Choose one of your known Warlock cantrips that deals damage. You can add +{{charisma:modifier}} to that spell's damage rolls.</description>
 		</sheet>
 	</element>
 
@@ -431,6 +431,9 @@
 		<sheet>
 			<description>You can see normally in Dim Light and Darkness—both magical and nonmagical—within 120 feet of yourself.</description>
 		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_SUPERIORDARKVISION" />
+		</rules>
 	</element>
 
 	<element name="2024 Eldritch Mind" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_ELDRITCH_MIND">
@@ -447,6 +450,36 @@
 		<supports>Eldritch Invocation</supports>
 		<prerequisites>Level 2+ Warlock</prerequisites>
 		<requirements>[level:2]</requirements>
+		<description>
+			<p>You have received knowledge from an elder entity of the multiverse, allowing you to gain one Origin feat of your choice.</p>
+			<p class="indent"><strong>Repeatable.</strong> You can gain this invocation more than once. Each time you do so, choose a different Origin feat.</p>
+		</description>
+		<sheet>
+			<description>You have received knowledge from an elder entity of the multiverse, allowing you to gain one Origin feat of your choice.</description>
+		</sheet>
+		<rules>
+			<select type="Feat" name="Origin Feat (Lessons of the First Ones)" supports="Origin Feat" />
+		</rules>
+	</element>
+	<element name="2024 Lessons of the First Ones" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_LESSONS_OF_THE_FIRST_ONES_2">
+		<supports>Eldritch Invocation</supports>
+		<prerequisites>Level 2+ Warlock</prerequisites>
+		<requirements>[level:2],ID_2024PHB_CLASS_FEATURE_WARLOCK_LESSONS_OF_THE_FIRST_ONES</requirements>
+		<description>
+			<p>You have received knowledge from an elder entity of the multiverse, allowing you to gain one Origin feat of your choice.</p>
+			<p class="indent"><strong>Repeatable.</strong> You can gain this invocation more than once. Each time you do so, choose a different Origin feat.</p>
+		</description>
+		<sheet>
+			<description>You have received knowledge from an elder entity of the multiverse, allowing you to gain one Origin feat of your choice.</description>
+		</sheet>
+		<rules>
+			<select type="Feat" name="Origin Feat (Lessons of the First Ones)" supports="Origin Feat" />
+		</rules>
+	</element>
+	<element name="2024 Lessons of the First Ones" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_LESSONS_OF_THE_FIRST_ONES_3">
+		<supports>Eldritch Invocation</supports>
+		<prerequisites>Level 2+ Warlock</prerequisites>
+		<requirements>[level:2],ID_2024PHB_CLASS_FEATURE_WARLOCK_LESSONS_OF_THE_FIRST_ONES_2</requirements>
 		<description>
 			<p>You have received knowledge from an elder entity of the multiverse, allowing you to gain one Origin feat of your choice.</p>
 			<p class="indent"><strong>Repeatable.</strong> You can gain this invocation more than once. Each time you do so, choose a different Origin feat.</p>
@@ -525,7 +558,63 @@
 			<p class="indent"><strong>Repeatable.</strong> You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip.</p>
 		</description>
 		<sheet>
-			<description>Choose one of your known Warlock cantrips that deals damage and has a range of 10+ feet. When you cast that spell, its range increases by a number of feet equal to 30 times your Warlock level.</description>
+			<description>Choose one of your known Warlock cantrips that deals damage and has a range of 10+ feet. When you cast that spell, its range increases by {{eldritch spear:range}} feet.</description>
+		</sheet>
+		<rules>
+			<stat name="eldritch spear:range" value="level:2024 warlock" />
+			<stat name="eldritch spear:range" value="level:2024 warlock" />
+			<stat name="eldritch spear:range" value="level:2024 warlock" />
+			<stat name="eldritch spear:range" value="level:2024 warlock" />
+			<stat name="eldritch spear:range" value="level:2024 warlock" />
+			<stat name="eldritch spear:range" value="level:2024 warlock" />
+			<stat name="eldritch spear:range" value="level:2024 warlock" />
+			<stat name="eldritch spear:range" value="level:2024 warlock" />
+			<stat name="eldritch spear:range" value="level:2024 warlock" />
+			<stat name="eldritch spear:range" value="level:2024 warlock" />
+			<stat name="eldritch spear:range" value="level:2024 warlock" />
+			<stat name="eldritch spear:range" value="level:2024 warlock" />
+			<stat name="eldritch spear:range" value="level:2024 warlock" />
+			<stat name="eldritch spear:range" value="level:2024 warlock" />
+			<stat name="eldritch spear:range" value="level:2024 warlock" />
+			<stat name="eldritch spear:range" value="level:2024 warlock" />
+			<stat name="eldritch spear:range" value="level:2024 warlock" />
+			<stat name="eldritch spear:range" value="level:2024 warlock" />
+			<stat name="eldritch spear:range" value="level:2024 warlock" />
+			<stat name="eldritch spear:range" value="level:2024 warlock" />
+			<stat name="eldritch spear:range" value="level:2024 warlock" />
+			<stat name="eldritch spear:range" value="level:2024 warlock" />
+			<stat name="eldritch spear:range" value="level:2024 warlock" />
+			<stat name="eldritch spear:range" value="level:2024 warlock" />
+			<stat name="eldritch spear:range" value="level:2024 warlock" />
+			<stat name="eldritch spear:range" value="level:2024 warlock" />
+			<stat name="eldritch spear:range" value="level:2024 warlock" />
+			<stat name="eldritch spear:range" value="level:2024 warlock" />
+			<stat name="eldritch spear:range" value="level:2024 warlock" />
+			<stat name="eldritch spear:range" value="level:2024 warlock" />
+		</rules>
+	</element>
+	<element name="2024 Eldritch Spear" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_ELDRITCH_SPEAR_2">
+		<supports>Eldritch Invocation</supports>
+		<prerequisites>Level 2+ Warlock, a Warlock Cantrip that deals damage</prerequisites>
+		<requirements>[level:2],[type:spell],ID_2024PHB_CLASS_FEATURE_WARLOCK_ELDRITCH_SPEAR</requirements>
+		<description>
+			<p>Choose one of your known Warlock cantrips that deals damage and has a range of 10+ feet. When you cast that spell, its range increases by a number of feet equal to 30 times your Warlock level.</p>
+			<p class="indent"><strong>Repeatable.</strong> You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip.</p>
+		</description>
+		<sheet>
+			<description>Choose one of your known Warlock cantrips that deals damage and has a range of 10+ feet. When you cast that spell, its range increases by {{eldritch spear:range}} feet.</description>
+		</sheet>
+	</element>
+	<element name="2024 Eldritch Spear" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_ELDRITCH_SPEAR_3">
+		<supports>Eldritch Invocation</supports>
+		<prerequisites>Level 2+ Warlock, a Warlock Cantrip that deals damage</prerequisites>
+		<requirements>[level:2],[type:spell],ID_2024PHB_CLASS_FEATURE_WARLOCK_ELDRITCH_SPEAR_2</requirements>
+		<description>
+			<p>Choose one of your known Warlock cantrips that deals damage and has a range of 10+ feet. When you cast that spell, its range increases by a number of feet equal to 30 times your Warlock level.</p>
+			<p class="indent"><strong>Repeatable.</strong> You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip.</p>
+		</description>
+		<sheet>
+			<description>Choose one of your known Warlock cantrips that deals damage and has a range of 10+ feet. When you cast that spell, its range increases by {{eldritch spear:range}} feet.</description>
 		</sheet>
 	</element>
 
@@ -584,8 +673,8 @@
 			<p class="indent">When any creature whose name is on the page is reduced to 0 Hit Points but not killed outright, the creature magically drops to 1 Hit Point instead. Once this magic is triggered, no creature can benefit from it until you finish a Long Rest.</p>
 			<p class="indent">As a Magic action, you can erase a name on the page by touching it.</p>
 		</description>
-		<sheet>
-			<description>A new page appears in your Book of Shadows. Creatures can write their names on it, and when they would be reduced to 0 Hit Points, they drop to 1 Hit Point instead.</description>
+		<sheet usage="1/Long Rest" >
+			<description>A new page appears in your Book of Shadows. With your permission, creatures can write their names on it, and when they would be reduced to 0 Hit Points, they drop to 1 Hit Point instead. Once this magic is triggered, no creature can benefit from it until you finish a Long Rest.</description>
 		</sheet>
 	</element>
 
@@ -602,7 +691,7 @@
 			<p class="indent"><strong>Resistance.</strong> When the familiar takes damage, you can take a Reaction to grant it Resistance against that damage.</p>
 		</description>
 		<sheet>
-			<description>When you cast Find Familiar, you infuse the summoned familiar with eldritch power, granting it enhanced abilities and your spell save DC.</description>
+			<description>When you cast Find Familiar, it gains the following: The familiar gains either a Fly Speed or a Swim Speed (your choice) of 40 feet, As a Bonus Action, you can command the familiar to take the Attack action, Whenever the familiar deals Bludgeoning, Piercing, or Slashing damage, you can make it deal Necrotic or Radiant damage instead, If the familiar forces a creature to make a saving throw, it uses your spell save DC, When the familiar takes damage, you can take a Reaction to grant it Resistance against that damage.</description>
 		</sheet>
 	</element>
 
@@ -748,9 +837,161 @@
 		</sheet>
 	</element>
 
+	<!-- Companions -->
+	<element name="Skeleton" type="Companion" source="2024 Player's Handbook" id="ID_2024PHB_COMPANION_SKELETON">
+		<supports>Familiar, Variant Familiar</supports>
+		<setters>
+			<set name="size">Medium</set>
+			<set name="type">Undead</set>
+			<set name="alignment">Lawful Evil</set>
+			<set name="strength">10</set>
+			<set name="dexterity">16</set>
+			<set name="constitution">15</set>
+			<set name="intelligence">6</set>
+			<set name="wisdom">8</set>
+			<set name="charisma">5</set>
+			<set name="ac">13</set>
+			<set name="hp">13 (2d8+4)</set>
+			<set name="speed">30 ft.</set>
+			<set name="saves"></set>
+			<set name="skills"></set>
+			<set name="vulnerabilities">bludgeoning</set>
+			<set name="immunities">Poison</set>
+			<set name="challenge">1/4 (XP 50; PB +2)</set>
+			<set name="conditionImmunities">Exhaustion, Poisoned</set>			
+			<set name="senses">darkvision 60 ft., passive Perception 9</set>
+			<set name="languages">Understands the languages it knew in life but can't speak</set>
+			<set name="actions">ID_2024PHB_COMPANION_ACTION_SKELETON_SHORTSWORD,ID_2024PHB_COMPANION_ACTION_SKELETON_SHORTBOW</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="13" bonus="base" />
+			<stat name="companion:hp:max" value="13" bonus="base" />
+			<stat name="companion:speed" value="30" bonus="base" />
+		</rules>
+	</element>
+	<element name="Shortsword" type="Companion Action" source="2024 Player's Handbook" id="ID_2024PHB_COMPANION_ACTION_SKELETON_SHORTSWORD">
+		<description>
+			<p>Melee Attack Roll: +5 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 3) piercing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Attack Roll: +5 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 3) piercing damage.</description>
+		</sheet>
+	</element>
+	<element name="Shortbow" type="Companion Action" source="2024 Player's Handbook" id="ID_2024PHB_COMPANION_ACTION_SKELETON_SHORTBOW">
+		<description>
+			<p>Ranged Attack Roll: +5 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 3) piercing damage.</p>
+		</description>
+		<sheet>
+			<description>Ranged Attack Roll: +5 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 3) piercing damage.</description>
+		</sheet>
+	</element>
+	
+	<element name="Slaad Tadpole" type="Companion" source="2024 Player's Handbook" id="ID_2024PHB_COMPANION_SLAAD_TADPOLE">
+		<supports>Familiar, Variant Familiar</supports>
+		<setters>
+			<set name="size">Tiny</set>
+			<set name="type">Abberation</set>
+			<set name="alignment">Chaotic Neutral</set>
+			<set name="strength">7</set>
+			<set name="dexterity">10</set>
+			<set name="constitution">10</set>
+			<set name="intelligence">3</set>
+			<set name="wisdom">5</set>
+			<set name="charisma">3</set>
+			<set name="ac">12</set>
+			<set name="hp">7 (3d4)</set>
+			<set name="speed">30 ft., burrow 10 ft.</set>
+			<set name="skills">Stealth +4</set>
+			<set name="resistances">Acid, Cold, Fire, Lightning, Thunder</set>
+			<set name="senses">darkvision 60 ft., passive Perception 7</set>
+			<set name="languages">Understands Slaad but can't speak</set>
+			<set name="challenge">1/8 (XP 25; PB +2)</set>	
+			<set name="traits">ID_2024PHB_COMPANION_TRAIT_SLAAD_TADPOLE_MAGIC_RESISTANCE</set>
+			<set name="actions">ID_2024PHB_COMPANION_TRAIT_SLAAD_TADPOLE_BITE</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="12" bonus="base" />
+			<stat name="companion:hp:max" value="7" bonus="base" />
+			<stat name="companion:speed" value="30" bonus="base" />
+			<stat name="companion:speed:burrow" value="10" bonus="base" />
+		</rules>
+	</element>
+	<element name="Magic Resistance" type="Companion Trait" source="2024 Player's Handbook" id="ID_2024PHB_COMPANION_TRAIT_SLAAD_TADPOLE_MAGIC_RESISTANCE">
+		<description>
+			<p>The sphinx has Advantage on saving throws against spells and other magical effects.</p>
+		</description>
+		<sheet>
+			<description>The sphinx has Advantage on saving throws against spells and other magical effects.</description>
+		</sheet>
+	</element>
+	<element name="Bite" type="Companion Action" source="2024 Player's Handbook" id="ID_2024PHB_COMPANION_TRAIT_SLAAD_TADPOLE_BITE">
+		<description>
+			<p>Melee Attack Roll: +5, reach 5 ft. Hit: 5 (1d4 + 3) Slashing damage plus 7 (2d6) Radiant damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Attack Roll: +5, reach 5 ft. Hit: 5 (1d4 + 3) Slashing damage plus 7 (2d6) Radiant damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Sphinx of Wonder" type="Companion" source="2024 Player's Handbook" id="ID_2024PHB_COMPANION_SPHINX_OF_WONDER">
+		<supports>Familiar, Variant Familiar</supports>
+		<setters>
+			<set name="size">Tiny</set>
+			<set name="type">Celestial</set>
+			<set name="alignment">Lawful Good</set>
+			<set name="strength">6</set>
+			<set name="dexterity">17</set>
+			<set name="constitution">13</set>
+			<set name="intelligence">15</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">11</set>
+			<set name="ac">13</set>
+			<set name="hp">24 (7d4 + 7)</set>
+			<set name="speed">20 ft., fly 40 ft.</set>
+			<set name="skills"> Arcana +4, Religion +4, Stealth +5</set>
+			<set name="resistances">Necrotic, Psychic, Radiant</set>
+			<set name="senses">Darkvision 60 ft., Passive Perception 11</set>
+			<set name="languages">Celestial, Common</set>
+			<set name="challenge">CR 1 (XP 200; PB +2)</set>	
+			<set name="traits">ID_2024PHB_COMPANION_TRAIT_SPHINX_OF_WONDER_MAGIC_RESISTANCE</set>
+			<set name="actions">ID_2024PHB_COMPANION_TRAIT_SPHINX_OF_WONDER_REND</set>
+			<set name="reactions">ID_2024PHB_COMPANION_TRAIT_SPHINX_OF_WONDER_BURST_OF_INGENUITY</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="13" bonus="base" />
+			<stat name="companion:hp:max" value="24" bonus="base" />
+			<stat name="companion:speed" value="20" bonus="base" />
+			<stat name="companion:speed:fly" value="40" bonus="base" />
+		</rules>
+	</element>
+	<element name="Magic Resistance" type="Companion Trait" source="2024 Player's Handbook" id="ID_2024PHB_COMPANION_TRAIT_SPHINX_OF_WONDER_MAGIC_RESISTANCE">
+		<description>
+			<p>The sphinx has Advantage on saving throws against spells and other magical effects.</p>
+		</description>
+		<sheet>
+			<description>The sphinx has Advantage on saving throws against spells and other magical effects.</description>
+		</sheet>
+	</element>
+	<element name="Rend" type="Companion Action" source="2024 Player's Handbook" id="ID_2024PHB_COMPANION_TRAIT_SPHINX_OF_WONDER_REND">
+		<description>
+			<p>Melee Attack Roll: +5, reach 5 ft. Hit: 5 (1d4 + 3) Slashing damage plus 7 (2d6) Radiant damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Attack Roll: +5, reach 5 ft. Hit: 5 (1d4 + 3) Slashing damage plus 7 (2d6) Radiant damage.</description>
+		</sheet>
+	</element>
+	<element name="Burst of Ingenuity" type="Companion Action" source="2024 Player's Handbook" id="ID_2024PHB_COMPANION_TRAIT_SPHINX_OF_WONDER_BURST_OF_INGENUITY">
+		<description>
+			<p>Trigger: The sphinx or another creature within 30 feet makes an ability check or a saving throw. Response: The sphinx adds 2 to the roll.</p>
+		</description>
+		<sheet usage="2/Day">
+			<description>Trigger: The sphinx or another creature within 30 feet makes an ability check or a saving throw. Response: The sphinx adds 2 to the roll.</description>
+		</sheet>
+	</element>
+
 	<!-- Warlock Subclasses -->
 	<element name="2024 Archfey Patron" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_WARLOCK_ARCHFEY_PATRON">
-		<supports>Warlock Subclass</supports>
+		<supports>Otherworldly Patron</supports>
 		<description>
 			<p>Your pact draws on the power of the Feywild, the mysterious realm of the Fey. When you choose this subclass, you might make a deal with a single mighty archfey, such as the Prince of Frost; the Queen of Air and Darkness, ruler of the Gloaming Court; Titania of the Summer Court; Oberon, the Green Lord; Hyrsam, the Prince of Fools; or an ancient hag. Or you might call on a wide spectrum of Fey, forging a complex web of favors and debts. Your patron's motivations are often inscrutable, and sometimes whimsical, and might involve a striving for greater magical power or the settling of age-old grudges.</p>
 			<div element="ID_2024PHB_CLASS_FEATURE_WARLOCK_ARCHFEY_SPELLS" />
@@ -836,8 +1077,8 @@
 			<p class="indent">In addition, immediately after a creature you can see hits you with an attack roll, you can use your Reaction to reduce the damage you take by half (round down), and you can force the attacker to make a Wisdom saving throw against your spell save DC. On a failed save, the attacker takes Psychic damage equal to the damage you take.</p>
 			<p class="indent">Once you use this Reaction, you can't use it again until you finish a Long Rest unless you expend a Pact magic spell slot when you use it again.</p>
 		</description>
-		<sheet usage="1/Long Rest">
-			<description>Immune to Charmed condition. As a Reaction when hit, reduce damage by half and force attacker to make Wisdom save or take Psychic damage equal to the damage you took. Can expend a pact spell slot to use again. </description>
+		<sheet action="Reaction" usage="1/Long Rest">
+			<description>You are immune to Charmed condition. As a Reaction when hit by an attack roll, reduce the damage by half and force the attacker to make Wisdom save or take Psychic damage equal to the damage you took. Can expend a pact spell slot to use again. </description>
 		</sheet>
 	</element>
 	<element name="Bewitching Magic" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_BEWITCHING_MAGIC">
@@ -846,12 +1087,12 @@
 			<p>Your patron bestows on you the ability to weave your magic with teleportation. Immediately after you cast an Enchantment or Illusion spell using an action and a spell slot, you can cast <em>Misty Step</em> as part of the same action and without expending a spell slot.</p>
 		</description>
 		<sheet>
-			<description>After casting an Enchantment or Illusion spell with an action and spell slot, you can cast Misty Step as part of the same action without expending a spell slot.</description>
+			<description>After casting an Enchantment or Illusion spell using an action and spell slot, you can cast Misty Step as part of the same action without expending a spell slot.</description>
 		</sheet>
 	</element>
 
 	<element name="2024 Celestial Patron" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_WARLOCK_CELESTIAL_PATRON">
-		<supports>Warlock Subclass</supports>
+		<supports>Otherworldly Patron</supports>
 		<description>
 			<p>Your pact draws on the power of the Upper Planes, the realms of everlasting bliss. You might enter an agreement with an empyrean, a couatl, a sphinx, a unicorn, or some similar entity associated with those realms. Or you might call on numerous such beings as you pursue goals aligned with theirs. Your pact allows you to experience the barest touch of the holy light that illuminates the multiverse.</p>
 			<div element="ID_2024PHB_CLASS_FEATURE_WARLOCK_CELESTIAL_SPELLS" />
@@ -952,12 +1193,12 @@
 			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest.</p>
 		</description>
 		<sheet usage="1/Long Rest">
-			<description>When you or an ally within 60 feet is making a death saving throw, you can unleash radiant energy to save the creature. They instead regain half their max HP and stand up. Creatures of your choice within 30 feet take 2d8+{{charisma:modifier}} Radiant damage and are Blinded until end of turn.</description>
+			<description>When you or an ally within 60 feet is making a death saving throw, you can unleash radiant energy to save the creature. They instead regain half their max HP and stand up. Creatures of your choice within 30 feet take 2d8+{{charisma:modifier}} Radiant damage and are Blinded until end of the current turn.</description>
 		</sheet>
 	</element>
 
 	<element name="2024 Fiend Patron" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_WARLOCK_FIEND_PATRON">
-		<supports>Warlock Subclass</supports>
+		<supports>Otherworldly Patron</supports>
 		<description>
 			<p>Your pact draws on the Lower Planes, the realms of perdition. You might forge a bargain with a demon lord such as Demogorgon or Orcus; an archdevil such as Asmodeus; or a pit fiend, balor, yugoloth, or night hag that is especially mighty. That patron's aims are evil—the corruption or destruction of all things, ultimately including you—and your path is defined by the extent to which you strive against those aims.</p>
 			<div element="ID_2024PHB_CLASS_FEATURE_WARLOCK_DARK_ONES_BLESSING" />
@@ -981,12 +1222,13 @@
 			<p>When you reduce an enemy to 0 Hit Points, you gain Temporary Hit Points equal to your Charisma modifier plus your Warlock level (minimum of 1 Temporary Hit Point). You also gain this benefit if someone else reduces an enemy within 10 feet of you to 0 Hit Points.</p>
 		</description>
 		<sheet>
-			<description>When you reduce an enemy to 0 Hit Points, you gain {{dark blessing}} Temporary Hit Points. You also gain this benefit if someone else reduces an enemy within 10 feet of you to 0 Hit Points.</description>
+			<description>When you, or someone else within 10ft, reduce an enemy to 0 Hit Points, you gain {{dark blessing}} Temporary Hit Points.</description>
 		</sheet>
 		<rules>
 			<stat name="dark blessing" value="1" bonus="base" />
-			<stat name="dark blessing" value="charisma:modifier" />
-			<stat name="dark blessing" value="level:2024 Warlock" />
+			<stat name="dark blessing:combined" value="charisma:modifier" />
+			<stat name="dark blessing:combined" value="level:2024 Warlock" />
+			<stat name="dark blessing" value="dark blessing:combined" bonus="base" />
 		</rules>
 	</element>
 	<element name="Fiend Spells" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_FIEND_SPELLS">
@@ -1048,13 +1290,13 @@
 			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest unless you expend a Pact Magic spell slot (no action required) to restore your use of it.</p>
 		</description>
 		<sheet>
-			<description>Once per turn when you hit with an attack, force target to make Charisma save or take 8d10 Psychic damage, temporarily transport it to the Lower Planes and be Incapacitated until end of your next turn. Fiends are unaffected.
+			<description>Once per turn when you hit with an attack, force target to make Charisma save or take 8d10 Psychic damage, get temporarily transported to the Lower Planes and is Incapacitated until end of your next turn. Fiends are unaffected.
 			Cannot us again until Long Rest or if expending a Pact Magic spell slot.</description>
 		</sheet>
 	</element>
 
 	<element name="2024 Great Old One Patron" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_WARLOCK_GREAT_OLD_ONE_PATRON">
-		<supports>Warlock Subclass</supports>
+		<supports>Otherworldly Patron</supports>
 		<description>
 			<p>Your pact is rooted in magic that is utterly foreign to the fabric of reality. When you choose this subclass, you might bind yourself to an ineffable being from the Far Realm or an elder god known only in legend—a being such as Ghaunadar, called That Which Lurks; Tharizdun, the Chained God; Dendar, the Night Serpent; Zargon, the Returner; Great Cthulhu; or some other unfathomable and uncaring being. Or you might rely on eldritch lore invoking the names of several such entities, without yoking yourself to one in particular. The motives of these beings are incomprehensible to mortals, and their knowledge is so immense and ancient that even the greatest libraries pale in comparison to the vast secrets they hold. The Great Old One might be indifferent to your existence, but the secrets you have learned nevertheless allow you to draw your magic from it.</p>
 			<div element="ID_2024PHB_CLASS_FEATURE_WARLOCK_AWAKENED_MIND" />
@@ -1165,7 +1407,7 @@
 			<p class="indent">In addition, the first time each turn the Aberration hits a creature under the effect of your Hex, the Aberration deals extra Psychic damage to the target equal to the bonus damage of that spell.</p>
 		</description>
 		<sheet>
-			<description>Can cast Summon Aberration without Concentration (1 minute duration) with {{create thrall:temp hp}} Temporary Hit Points. Once a turn the Aberration deals extra Psychic damage to Hexed targets equal to the Hex damage.</description>
+			<description>You can cast Summon Aberration without Concentration (1 minute duration) with {{create thrall:temp hp}} Temporary Hit Points. Once a turn the Aberration deals extra Psychic damage to your Hexed targets equal to the Hex damage.</description>
 		</sheet>
 		<rules>
 			<stat name="create thrall:temp hp" value="level:2024 Warlock" />

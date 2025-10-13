@@ -4,7 +4,7 @@
 		<name>2024 Barbarian</name>
 		<description>The Barbarian class from the 2024 Player's Handbook.</description>
 		<author url="https://marketplace.dndbeyond.com/category/3709000?pid=DB3709000">Wizards of the Coast</author>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="2024-class-barbarian.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/refs/heads/main/2024-class-barbarian.xml" />
 		</update>
 	</info>
@@ -417,6 +417,7 @@
 	</element>
 	<element name="Epic Boon" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_BARBARIAN_EPIC_BOON">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_EPIC_BOON</requirements>
+		<compendium display="false" />
 		<description>
 			<p><em>19th-level Barbarian feature</em></p>
 			<p>At 19th level, you gain an Epic Boon of your choice. The Epic Boons are detailed in the Epic Boons section of the Player's Handbook.</p>
@@ -751,7 +752,7 @@
 	<element name="Warrior of the Gods" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_PATH_OF_THE_ZEALOT_WARRIOR_OF_THE_GODS">
 		<description>
 			<p><em>3rd-level Zealot feature</em></p>
-			<p>A divine entity helps ensure you can continue the fight. You have a pool of four dl2s that you can spend to heal yourself. As a Bonus Action, you can expend dice from the pool, roll them, and regain a number of Hit Points equal to the roll's total.</p>
+			<p>A divine entity helps ensure you can continue the fight. You have a pool of four d12s that you can spend to heal yourself. As a Bonus Action, you can expend dice from the pool, roll them, and regain a number of Hit Points equal to the roll's total.</p>
 			<p class="indent">Your pool regains all expended dice when you finish a Long Rest.</p>
 			<p class="indent">The pool's maximum number of dice increases by one when you reach Barbarian levels 6 (5 dice), 12 (6 dice), and 17 (7 dice).</p>
 		</description>
@@ -794,8 +795,7 @@
 			<p class="indent"><strong>Revivification.</strong> When a creature within 30 feet of you would drop to 0 Hit Points, you can take a Reaction to expend a use of your Rage to instead change the target's Hit Points to a number equal to your Barbarian level.</p>
 		</description>
 		<sheet usage="1/Long Rest">
-			<description>
-			When you activate your Rage, you can assume the form of a divine warrior for a minute or until you drop to 0 Hit Points. While in this form, you gain the benefits below.
+			<description>When you activate your Rage, you can assume the form of a divine warrior for a minute or until you drop to 0 Hit Points. While in this form, you gain the benefits below.
 			Flight: You have a Fly Speed equal to your Speed and can hover.
 			Resistance: You have Resistance to Necrotic, Psychic, and Radiant damage.
 			Revivification: When a creature within 30 feet of you would drop to 0 Hit Points, you can take a Reaction to expend a use of your Rage to instead change the target's Hit Points to a number equal to your Barbarian level.
