@@ -227,10 +227,6 @@
 			<description>Take the Disengage action, or spend 1 Focus Point to take both Disengage and Dodge actions.</description>
 			<description level="10">Take the Disengage action, or spend 1 Focus Point to take both Disengage and Dodge actions and gain 2d{{martial arts:dice}} temporary hp.</description>
 		</sheet>
-		<rules>
-			<stat name="deflect attacks:damage" value="dexterity:modifier" />
-			<stat name="deflect attacks:damage" value="level:2024 monk" />
-		</rules>
 	</element>
 	<element name="Step of the Wind" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_MONK_STEP_OF_THE_WIND">
 		<description>

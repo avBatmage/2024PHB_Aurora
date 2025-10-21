@@ -874,8 +874,8 @@
 		<sheet display="false" />
 		<rules>
 			<select type="Ability Score Improvement" name="Ability Score Increase" supports="General Feat" />
-			<select type="Proficiency" name="Skill Proficiency, Skill Expert" supports="Skill" />
-			<select type="Class Feature" name="Expertise, Skill Expert" supports="Expertise, Skill" />
+			<select type="Proficiency" name="Skill Proficiency (Skill Expert)" supports="Skill" />
+			<select type="Class Feature" name="Expertise (Skill Expert)" supports="Expertise, Skill" />
 		</rules>
 	</element>
 	<element name="2024 Skulker" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_SKULKER">

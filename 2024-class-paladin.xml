@@ -466,7 +466,7 @@
 		<description>
 			<p>The Oath of Devotion binds Paladins to the ideals of justice and order. These Paladins meet the archetype of the knight in shining armor. They hold themselves to the highest standards of conduct, and some—for better or worse—hold the rest of the world to the same standards.</p>
 			<p class="indent">Many who swear this oath are devoted to gods of law and good and use their gods' tenets as the measure of personal devotion. Others hold angels as their ideals and incorporate images of angelic wings into their helmets or coats of arms.</p>
-			<p class="indent">These paladins share the following tenets:</p>
+			<h5 class="caption">TENETS OF DEVOTION</h5>
 			<ul>
 				<li>Let your word be your promise.</li>
 				<li>Protect the weak and never fear to act.</li>
@@ -574,10 +574,11 @@
 		<description>
 			<p>Paladins who take the Oath of Glory believe they and their companions are destined to achieve glory through deeds of heroism. They train diligently and encourage their companions so they're all ready when destiny calls.</p>
 			<p class="indent">These paladins share the following tenets:</p>
+			<h5 class="caption">TENETS OF GLORY</h5>
 			<ul>
-				<li>Endeavor to be known by your deeds</li>
+				<li>Endeavor to be known by your deeds.</li>
 				<li>Face hardships with courage.</li>
-				<li>Inspire others to strive for glory</li>
+				<li>Inspire others to strive for glory.</li>
 			</ul>
 			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_OATH_OF_GLORY_SPELLS" />
 			<div element="ID_2024PHB_CLASS_FEATURE_PALADIN_INSPIRING_SMITE" />
@@ -689,6 +690,7 @@
 		<description>
 			<p>The Oath of the Ancients is as old as the first elves and the rituals of Druids. Paladins who swear this oath cherish the light; they love the beautiful and life-giving things of the world more than any principles of honor, courage, and justice. They adorn their armor and clothing with images of growing things—leaves, antlers, or flowers—to reflect their commitment to preserving life and light in the world.</p>
 			<p class="indent">These paladins share the following tenets:</p>
+			<h5 class="caption">TENETS OF THE ANCIENTS</h5>
 			<ul>
 				<li>Kindle the light of hope.</li>
 				<li>Shelter life.</li>
@@ -793,6 +795,7 @@
 		<description>
 			<p>The Oath of Vengeance is a solemn commitment to punish those who have committed grievously evil acts. When evil armies slaughter helpless villagers, when a tyrant defies the will of the gods, when a thieves' guild grows too violent and powerful, when a dragon rampages through the countryside—at times like these, paladins arise and swear an Oath of Vengeance to set right what has gone wrong.</p>
 			<p class="indent">These paladins share the following tenets:</p>
+			<h5 class="caption">TENETS OF VENGEANCE</h5>
 			<ul>
 				<li>Show the wicked no mercy.</li>
 				<li>Fight injustice and its cause.</li>

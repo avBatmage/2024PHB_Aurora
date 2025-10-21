@@ -164,7 +164,7 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
 			<!-- Grant expertise in one skill of choice (in which you lack expertise) -->
-			<select type="Expertise" name="Expertise (Boon of Skill)" supports="ID_INTERNAL_SUPPORT_EXPERTISE" />
+			<select type="Class Feature" name="Expertise (Boon of Skill)" supports="ID_INTERNAL_SUPPORT_EXPERTISE" />
 		</rules>
 	</element>
 	<element name="2024 Boon of Speed" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_BOON_OF_SPEED">
