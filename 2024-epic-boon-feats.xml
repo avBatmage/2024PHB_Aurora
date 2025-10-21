@@ -4,7 +4,7 @@
 		<name>2024 Epic Boon Feats</name>
 		<description>Epic Boon Feats from the 2024 Player's Handbook.</description>
 		<author url="https://marketplace.dndbeyond.com/category/3709000?pid=DB3709000">Wizards of the Coast</author>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="2024-epic-boon-feats.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-epic-boon-feats.xml" />
 		</update>
 	</info>

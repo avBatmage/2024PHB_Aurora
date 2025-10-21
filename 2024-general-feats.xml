@@ -4,32 +4,12 @@
 		<name>2024 General Feats</name>
 		<description>General Feats from the 2024 Player's Handbook.</description>
 		<author url="https://www.dndbeyond.com/">Wizards of the Coast</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="2024-general-feats.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-general-feats.xml" />
 		</update>
 	</info>
 
 	<!-- 43 General Feats -->
-	<!--<element name="2024 Ability Score Improvement" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_ABILITY_SCORE_IMPROVEMENT">
-		<prerequisite>level 4</prerequisite>
-		<requirements>[level:4]</requirements>
-		<description>
-			<ul>
-				<li>Increase one ability score of your choice by 2, or increase two ability scores of your choice by 1.</li>
-				<li>This feat can't increase an ability score above 20.</li>
-				<li><strong>Repeatable</strong>. You can take this feat more than once.</li>
-			</ul>
-		</description>
-		<setters>
-			<set name="allow duplicate">true</set>
-		</setters>
-		<sheet>
-			<description>Increase one ability score of your choice by 2, or increase two ability scores of your choice by 1. This feat can't increase an ability score above 20. Repeatable.</description>
-		</sheet>
-		<rules>
-			<select type="Ability Score Improvement" name="Ability Score Increase" number="2" supports="General Feat" />
-		</rules>
-	</element>-->
 	<element name="2024 Actor" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_ACTOR">
 		<prerequisite>level 4, charisma 13</prerequisite>
 		<requirements>[level:4],[cha:13]</requirements>

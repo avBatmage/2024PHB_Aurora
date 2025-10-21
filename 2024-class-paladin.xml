@@ -4,7 +4,7 @@
 		<name>2024 Paladin</name>
 		<description>The Paladin class from the 2024 Player's Handbook.</description>
 		<author url="https://marketplace.dndbeyond.com/category/3709000?pid=DB3709000">Wizards of the Coast</author>
-		<update version="0.0.6">
+		<update version="0.0.7">
 			<file name="2024-class-paladin.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/classes/2024-class-paladin.xml" />
 		</update>
 	</info>
