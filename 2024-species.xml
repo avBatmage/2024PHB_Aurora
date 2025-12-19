@@ -4,7 +4,7 @@
 		<name>2024 Species</name>
 		<description>Species from the 2024 Player's Handbook.</description>
 		<author url="https://marketplace.dndbeyond.com/category/3709000?pid=DB3709000">Wizards of the Coast</author>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="2024-species.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-species.xml" />
 		</update>
 	</info>
@@ -642,7 +642,7 @@
 		</description>
         <sheet display="false" />
         <rules>
-			<stat name="innate speed" value="30" bonus="base" />
+			<stat name="innate speed" value="35" bonus="base" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 			<grant type="Vision" id="ID_VISION_DARKVISION" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_POWERFULBUILD" />
