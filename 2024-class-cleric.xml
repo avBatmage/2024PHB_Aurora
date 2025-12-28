@@ -4,7 +4,7 @@
 		<name>2024 Cleric</name>
 		<description>The Cleric class from the 2024 Player's Handbook.</description>
 		<author url="https://marketplace.dndbeyond.com/category/3709000?pid=DB3709000">Wizards of the Coast</author>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="2024-class-cleric.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-class-cleric.xml" />
 		</update>
 	</info>
@@ -54,28 +54,28 @@
 			<h5 class="caption">THE CLERIC</h5>
 			<table class="class-features">
 				<thead>
-					<tr><td class="col-5">Level</td><td class="col-10 left">Features</td><td>Cantrips Known</td><td>Prepared Spells</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td><td>6th</td><td>7th</td><td>8th</td><td>9th</td></tr>
+					<tr><td class="col-5">Level</td><td class="col-10 left">Class Features</td><td>Channel Divinity</td><td>Cantrips</td><td>Prepared Spells</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td><td>6th</td><td>7th</td><td>8th</td><td>9th</td></tr>
 				</thead>
-				<tr><td> 1st</td><td class="left">Spellcasting, Divine Order</td><td>3</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 2nd</td><td class="left">Channel Divinity</td><td>3</td><td>5</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 3rd</td><td class="left">Cleric Subclass</td><td>3</td><td>6</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 4th</td><td class="left">Ability Score Improvement</td><td>4</td><td>7</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 5th</td><td class="left">Sear Undead</td><td>4</td><td>9</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 6th</td><td class="left">Subclass Feature</td><td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 7th</td><td class="left">Blessed Strikes</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 8th</td><td class="left">Ability Score Improvement</td><td>4</td><td>12</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 9th</td><td class="left">—</td><td>4</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td>10th</td><td class="left">Divine Intervention</td><td>5</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td>11th</td><td class="left">—</td><td>5</td><td>16</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td>12th</td><td class="left">Ability Score Improvement</td><td>5</td><td>16</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td>13th</td><td class="left">—</td><td>5</td><td>17</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
-				<tr><td>14th</td><td class="left">Improved Blessed Strikes</td><td>5</td><td>17</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
-				<tr><td>15th</td><td class="left">—</td><td>5</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
-				<tr><td>16th</td><td class="left">Ability Score Improvement</td><td>5</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
-				<tr><td>17th</td><td class="left">Subclass Feature</td><td>5</td><td>19</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
-				<tr><td>18th</td><td class="left">—</td><td>5</td><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
-				<tr><td>19th</td><td class="left">Epic Boon</td><td>5</td><td>21</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
-				<tr><td>20th</td><td class="left">Greater Divine Intervention</td><td>5</td><td>22</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
+				<tr><td> 1st</td><td class="left">Spellcasting, Divine Order</td>	<td>-</td><td>3</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 2nd</td><td class="left">Channel Divinity</td>				<td>2</td><td>3</td><td>5</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 3rd</td><td class="left">Cleric Subclass</td>				<td>2</td><td>3</td><td>6</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td class="left">Ability Score Improvement</td>	<td>2</td><td>4</td><td>7</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td class="left">Sear Undead</td>					<td>2</td><td>4</td><td>9</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td class="left">Subclass Feature</td>				<td>3</td><td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td class="left">Blessed Strikes</td>				<td>3</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td class="left">Ability Score Improvement</td>	<td>3</td><td>4</td><td>12</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td class="left">—</td>							<td>3</td><td>4</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td class="left">Divine Intervention</td>			<td>3</td><td>5</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td class="left">—</td>							<td>3</td><td>5</td><td>16</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td class="left">Ability Score Improvement</td>	<td>3</td><td>5</td><td>16</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td class="left">—</td>							<td>3</td><td>5</td><td>17</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+				<tr><td>14th</td><td class="left">Improved Blessed Strikes</td>		<td>3</td><td>5</td><td>17</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+				<tr><td>15th</td><td class="left">—</td>							<td>3</td><td>5</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
+				<tr><td>16th</td><td class="left">Ability Score Improvement</td>	<td>3</td><td>5</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
+				<tr><td>17th</td><td class="left">Subclass Feature</td>				<td>3</td><td>5</td><td>19</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>18th</td><td class="left">—</td>							<td>4</td><td>5</td><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>19th</td><td class="left">Epic Boon</td>					<td>4</td><td>5</td><td>21</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>20th</td><td class="left">Greater Divine Intervention</td>	<td>4</td><td>5</td><td>22</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
 			</table>
 			<div element="ID_2024PHB_CLASS_FEATURE_CLERIC_SPELLCASTING" />
 			<div element="ID_2024PHB_CLASS_FEATURE_CLERIC_DIVINEORDER" />
