@@ -4,7 +4,7 @@
 		<name>2024 Spells</name>
 		<description>The Spells from the 2024 Player's Handbook.</description>
 		<author url="https://marketplace.dndbeyond.com/category/3709000?pid=DB3709000">Wizards of the Coast</author>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="2024-spells.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-spells.xml" />
 		</update>
 	</info>
@@ -474,7 +474,7 @@
 			<set name="school">Abjuration</set>
 			<set name="time">Action</set>
 			<set name="range">Self</set>
-			<set name="duration">duration</set>
+			<set name="duration">1 minute</set>
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">false</set>
 			<set name="hasMaterialComponent">false</set>
@@ -597,9 +597,8 @@
 			<set name="duration">Concentration, up to 1 minute</set>
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">true</set>
-			<set name="hasMaterialComponent">true</set>
-			<set name="materialComponent">component</set>
-			<set name="isConcentration">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">true</set>
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
@@ -891,8 +890,8 @@
 			<set name="keywords"></set>
 			<set name="level">3</set>
 			<set name="school">Conjuration</set>
-			<set name="time">time</set>
-			<set name="range">Action</set>
+			<set name="time">Action</set>
+			<set name="range">120 feet</set>
 			<set name="duration">Concentration, up to 10 minutes</set>
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">true</set>
@@ -1440,8 +1439,8 @@
 			<set name="keywords"></set>
 			<set name="level">5</set>
 			<set name="school">Conjuration</set>
-			<set name="time">time</set>
-			<set name="range">range</set>
+			<set name="time">Action</set>
+			<set name="range">60 feet</set>
 			<set name="duration">Concentration, up to 10 minutes</set>
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">true</set>
@@ -1730,7 +1729,7 @@
 			<set name="school">Abjuration</set>
 			<set name="time">Reaction, which you take when you see a creature within 60 feet of yourself casting a spell with Verbal, Somatic, or Material components</set>
 			<set name="range">60 feet</set>
-			<set name="duration">duration</set>
+			<set name="duration">Instantaneous</set>
 			<set name="hasVerbalComponent">false</set>
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">false</set>

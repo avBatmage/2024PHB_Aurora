@@ -4,7 +4,7 @@
 		<name>2024 Sorcerer</name>
 		<description>The Sorcerer class from the 2024 Player's Handbook.</description>
 		<author url="https://marketplace.dndbeyond.com/category/3709000?pid=DB3709000">Wizards of the Coast</author>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="2024-class-sorcerer.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-class-sorcerer.xml" />
 		</update>
 	</info>
@@ -692,8 +692,9 @@
 		</sheet>
 		<rules>
 			<stat name="hp:bonus" value="level:2024 sorcerer" />
-			<stat name="ac:draconic resilience" value="13" />
+			<stat name="ac:draconic resilience" value="10" />
 			<stat name="ac:draconic resilience" value="dexterity:modifier" />
+			<stat name="ac:draconic resilience" value="charisma:modifier" />
 			<stat name="ac:calculation" value="ac:draconic resilience" bonus="calculation" equipped="[armor:none]" alt="Draconic Resilience (Sorcerer)" />
 		</rules>
 	</element>

@@ -4,7 +4,7 @@
 		<name>2024 Warlock</name>
 		<description>The Warlock class from the 2024 Player's Handbook.</description>
 		<author url="https://marketplace.dndbeyond.com/category/3709000?pid=DB3709000">Wizards of the Coast</author>
-		<update version="0.4.2">
+		<update version="0.0.3">
 			<file name="2024-class-warlock.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-class-warlock.xml" />
 		</update>
 	</info>
@@ -354,7 +354,7 @@
 		</sheet>
 		<rules>
 			<select type="Spell" name="Cantrip (Pact of the Tome)" supports="0" number="3" spellcasting="Warlock"/>
-			<select type="Spell" name="Ritual (Pact of the Tome)" supports="1,ritual" number="2" spellcasting="Warlock"/>
+			<select type="Spell" name="Ritual (Pact of the Tome)" supports="Ritual,1" number="2" spellcasting="Warlock"/>
 		</rules>
 	</element>
 	<element name="2024 Pact of the Blade" type="Class Feature" source="2024 Player's Handbook" id="ID_2024PHB_CLASS_FEATURE_WARLOCK_PACT_OF_THE_BLADE">
