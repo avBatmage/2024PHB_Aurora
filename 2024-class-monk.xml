@@ -4,7 +4,7 @@
 		<name>2024 Monk</name>
 		<description>The Monk class from the 2024 Player's Handbook.</description>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000?pid=DB3709000">Wizards of the Coast</author>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="2024-class-monk.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-class-monk.xml" />
 		</update>
 	</info>
@@ -460,7 +460,7 @@
 		</rules>
 	</element>
 	
-<!-- Subclasses -->
+	<!-- Subclasses -->
 	<element name="2024 Warrior of Mercy" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_MONK_WARRIOR_OF_MERCY">
 		<supports>Monastic Tradition</supports>
 		<description>
@@ -549,7 +549,7 @@
 			<description>You can expend 5 focus points and touch a corpse that died within 24 hours to return it to life with 4d10+{{wisdom:modifier}} Hit Points, removing certain conditions.</description>
 		</sheet>
 	</element>
-	
+
 	<element name="2024 Warrior of Shadow" type="Archetype" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_MONK_WARRIOR_OF_SHADOW">
 		<supports>Monastic Tradition</supports>
 		<description>
@@ -644,7 +644,9 @@
 		</description>
 		<sheet usage="1 Focus">
 			<description>At start of turn, imbue yourself with elemental energy for 10 min. Unarmed reach increases by 10ft, Unarmed strikes can deal Acid, Cold, Fire, Lightning, or Thunder damage rather than its normal damage type and can force a STR save. On a failed save, you can move the target 10ft toward or away from you.
-			At level 11, you also gain a fly and swim speed equal to your speed for 10 minutes.</description>
+			</description>
+			<description level="11">At start of turn, imbue yourself with elemental energy for 10 min. Unarmed reach increases by 10ft, Unarmed strikes can deal Acid, Cold, Fire, Lightning, or Thunder damage rather than its normal damage type and can force a STR save. On a failed save, you can move the target 10ft toward or away from you.
+			You also gain a fly and swim speed equal to your speed for 10 minutes.</description>
 		</sheet>
 	</element>
 	<element name="Manipulate Elements" type="Archetype Feature" source="2024 Player's Handbook" id="ID_2024PHB_ARCHETYPE_FEATURE_MANIPULATE_ELEMENTS">

@@ -4,7 +4,7 @@
 		<name>2024 Character Creation</name>
 		<description>Adding character creation stuff from the 2024 Player's Handbook</description>
 		<author url="https://marketplace.dndbeyond.com/category/3709000?pid=DB3709000">Wizards of the Coast</author>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="2024-character-creation.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-character-creation.xml" />
 		</update>
 	</info>
@@ -24,6 +24,9 @@
 			<select type="Feat" name="Origin Feat (Character Creation)" supports="Origin Feat" requirements="!ID_2024PHB_BACKGROUND_ACOLYTE,!ID_2024PHB_BACKGROUND_ARTISAN,!ID_2024PHB_BACKGROUND_CHARLATAN,!ID_2024PHB_BACKGROUND_CRIMINAL,!ID_2024PHB_BACKGROUND_ENTERTAINER,!ID_2024PHB_BACKGROUND_FARMER,!ID_2024PHB_BACKGROUND_GUARD,!ID_2024PHB_BACKGROUND_GUIDE,!ID_2024PHB_BACKGROUND_HERMIT,!ID_2024PHB_BACKGROUND_MERCHANT,!ID_2024PHB_BACKGROUND_NOBLE,!ID_2024PHB_BACKGROUND_SAGE,!ID_2024PHB_BACKGROUND_SAILOR,!ID_2024PHB_BACKGROUND_SCRIBE,!ID_2024PHB_BACKGROUND_SOLDIER,!ID_2024PHB_BACKGROUND_WAYFARER" />
 		</rules>
 	</element>
+	<!--Class Features-->
+	
+
 	<!--Items-->
 	<element name="Customised Ability Score Increase" type="Item" source="2024 Player's Handbook" id="ID_2024PHB_ITEM_CUSTOM_ASI">
 		<compendium display="false" />
@@ -68,11 +71,26 @@
 			<select type="Class Feature" name="Weapon Mastery" supports="Weapon Mastery" number="2" />
 		</rules>
 	</element>
+	<element name="Warlock Pact Type" type="Item" source="2024 Player's Handbook" id="ID_2024PHB_ITEM_WARLOCK_PACT_TYPE">
+		<compendium display="false" />
+		<description>
+			<p><i>Pick this if you've chosen a 2024 warlock pact and want to see invocations that use the 2014 pacts as a prerequisite.</i></p>
+			<p><i>note this simply grants you the 2014 pact and it will show double.</i></p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<select type="Class Feature" name="Pact Boon" supports="Pact Boon" level="3"/>
+		</rules>
+	</element>
 	<!--Languages-->
 	<element name="Starting Languages" type="Grants" source="2024 Player's Handbook" id="ID_2024PHB_GRANTS_STARTING_LANGUAGES">
 		<compendium display="false" />
 		<rules>
-			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" optional="true" />
 			<select type="Language" name="Language (Character Creation)" number="2" supports="Standard" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" optional="true" />
 			<select type="Language" name="Customized Language" supports="Custom Race Language" number="3" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" optional="true" />
 		</rules>
