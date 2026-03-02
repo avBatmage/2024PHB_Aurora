@@ -4,7 +4,7 @@
 		<name>2024 Origin Feats</name>
 		<description>Origin Feats from the 2024 Player's Handbook.</description>
 		<author url="https://marketplace.dndbeyond.com/category/3709000?pid=DB3709000">Wizards of the Coast</author>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="2024-origin-feats.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-origin-feats.xml" />
 		</update>
 	</info>
@@ -138,7 +138,7 @@
 			<p class="indent">Your spellcasting ability for these spells is wisdom.</p>
 		</description>
 		<sheet alt="Magic Initiate: Cleric">
-			<description>You learn two cantrips Cleric spell list and one 1st-level Cleric spell. You always have that spell prepared and can cast it without a spell slot without a long rest.</description>
+			<description>You learn two Cleric cantrips and one 1st-level Cleric spell. You always have that spell prepared and can cast it without a spell slot once per long rest.</description>
 		</sheet>
 		<rules>
 			<select type="Spell" name="Cantrip (Magic Initiate)" supports="0,Cleric" number="2" />
@@ -154,7 +154,7 @@
 			<p class="indent">Your spellcasting ability for these spells is wisdom.</p>
 		</description>
 		<sheet alt="Magic Initiate: Druid">
-			<description>You learn two cantrips Druid spell list and one 1st-level Druid spell. You always have that spell prepared and can cast it without a spell slot without a long rest.</description>
+			<description>You learn two Cleric cantrips and one 1st-level Cleric spell. You always have that spell prepared and can cast it without a spell slot once per long rest.</description>
 		</sheet>
 		<rules>
 			<select type="Spell" name="Cantrip (Magic Initiate)" supports="0,Druid" number="2" />
@@ -170,7 +170,7 @@
 			<p class="indent">Your spellcasting ability for these spells is intelligence.</p>
 		</description>
 		<sheet alt="Magic Initiate: Wizard">
-			<description>You learn two cantrips Wizard spell list and one 1st-level Wizard spell. You always have that spell prepared and can cast it without a spell slot without a long rest.</description>
+			<description>You learn two Cleric cantrips and one 1st-level Cleric spell. You always have that spell prepared and can cast it without a spell slot once per long rest.</description>
 		</sheet>
 		<rules>
 			<select type="Spell" name="Cantrip (Magic Initiate)" supports="0,Wizard" number="2" />
