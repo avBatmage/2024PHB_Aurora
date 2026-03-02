@@ -4,7 +4,7 @@
 		<name>2024 Species</name>
 		<description>Species from the 2024 Player's Handbook.</description>
 		<author url="https://marketplace.dndbeyond.com/category/3709000?pid=DB3709000">Wizards of the Coast</author>
-		<update version="0.0.6">
+		<update version="0.0.7">
 			<file name="2024-species.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-species.xml" />
 		</update>
 	</info>
@@ -44,7 +44,7 @@
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_AASIMAR_CELESTIAL_REVELATION" level="3" />
         </rules>
     </element>
-	<element name="Celestial Resistance" type="Racial Trait" source="Monsters of the Multiverse" id="ID_RACIAL_TRAIT_2024_AASIMAR_CELESTIAL_RESISTANCE">
+	<element name="Celestial Resistance" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_AASIMAR_CELESTIAL_RESISTANCE">
 		<description>
 			<p>You have resistance to necrotic damage and radiant damage.</p>
 		</description>
@@ -54,7 +54,7 @@
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
 		</rules>
 	</element>
-	<element name="Healing Hands" type="Racial Trait" source="Monsters of the Multiverse" id="ID_RACIAL_TRAIT_2024_AASIMAR_HEALING_HANDS">
+	<element name="Healing Hands" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_AASIMAR_HEALING_HANDS">
 		<description>
 			<p>As a Magic action, you touch a creature and roll a number of d4s equal to your Proficiency Bonus. The creature regains a number of Hit Points equal to the total rolled. Once you use this trait, you can't use it again until you finish a Long Rest.</p>
 		</description>
@@ -62,7 +62,7 @@
 			<description>You can touch a creature and roll {{proficiency}}d4. The creature regains a number of hit points equal to the total rolled.</description>
 		</sheet>
 	</element>
-	<element name="Light Bearer" type="Racial Trait" source="Monsters of the Multiverse" id="ID_RACIAL_TRAIT_2024_AASIMAR_LIGHT_BEARER">
+	<element name="Light Bearer" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_AASIMAR_LIGHT_BEARER">
 		<description>
 			<p>You know the <i>light</i> cantrip. Charisma is your spellcasting ability for it.</p>
 		</description>
@@ -73,22 +73,48 @@
 			<grant type="Spell" id="ID_2024PHB_SPELL_LIGHT" />
 		</rules>
 	</element>
-	<element name="Celestial Revelation" type="Racial Trait" source="Monsters of the Multiverse" id="ID_RACIAL_TRAIT_2024_AASIMAR_CELESTIAL_REVELATION">
+	<element name="Celestial Revelation" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_AASIMAR_CELESTIAL_REVELATION">
 		<description>
 			<p>When you reach 3rd level, When you reach character level 3, you can transform as a Bonus Action using one of the options below (choose the option each time you transform). The transformation lasts for 1 minute or until you end it (no action required). Once you transform, you can't do so again until you finish a Long Rest:</p>
 		</description>
 		<sheet action="Bonus Action" usage="1/Long Rest">
-			<description>You transform for 1 minute or until you end it (no action required), Once per turn when you deal damage with an attack or spell you can deal an extra {{proficiency}} Radiant/Necrotic damage to one target.
-			Heavenly Wings. Two spectral wings sprout from your back temporarily. Until the transformation ends, you have a {{speed}}ft Fly Speed. Until the transformation ends, you have a {{speed}}ft. flying speed. Your extra damage is Radiant.
-			Inner Radiance. Searing light temporarily radiates from your eyes and mouth. For the duration, you shed Bright Light in a 10-foot radius and Dim Light for an additional 10 feet, Your extra damage is Radiant and it is also dealt to each creature within 10ft at the end of each of your turns.
-            Necrotic Shroud. Your eyes briefly become pools of darkness, and flightless wings sprout from your back. Creatures other than your allies within 10 feet of you must succeed on a DC {{aasimar:dc}} Charisma saving throw or have the Frightened condition until the end of your next turn.
-            </description>
+			<description>You transform for 1 minute or until you end it (no action required), Once per turn when you deal damage with an attack or spell you can deal an extra {{proficiency}} Radiant/Necrotic damage to one target.</description>
 		</sheet>
 		<rules>
 			<stat name="aasimar:dc" value="8" />
             <stat name="aasimar:dc" value="proficiency" />
             <stat name="aasimar:dc" value="charisma:modifier" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_AASIMAR_CELESTIAL_REVELATION_HEAVENLY_WINGS" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_AASIMAR_CELESTIAL_REVELATION_INNER_RADIANCE" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_2024_AASIMAR_CELESTIAL_REVELATION_NECROTIC_SHROUD" />
 		</rules>
+	</element>
+	<element name="Heavenly Wings" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_AASIMAR_CELESTIAL_REVELATION_HEAVENLY_WINGS">
+		<description>
+			<p>Heavenly Wings. Two spectral wings sprout from your back temporarily. Until the transformation ends, you have a {{speed}}ft Fly Speed. Until the transformation ends, you have a {{speed}}ft. flying speed. Your extra damage is Radiant.</p>
+		</description>
+		<sheet usage="Celestial Revelation">
+			<description>Heavenly Wings. Two spectral wings sprout from your back temporarily. Until the transformation ends, you have a {{speed}}ft Fly Speed. Until the transformation ends, you have a {{speed}}ft. flying speed. Your extra damage is Radiant.
+            </description>
+		</sheet>
+	</element>
+	<element name="Inner Radiance" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_AASIMAR_CELESTIAL_REVELATION_INNER_RADIANCE">
+		<description>
+			<p>Inner Radiance. Searing light temporarily radiates from your eyes and mouth. For the duration, you shed Bright Light in a 10-foot radius and Dim Light for an additional 10 feet, Your extra damage is Radiant and it is also dealt to each creature within 10ft at the end of each of your turns.</p>
+        </description>
+		<sheet usage="Celestial Revelation">
+			<description>Inner Radiance. Searing light temporarily radiates from your eyes and mouth. For the duration, you shed Bright Light in a 10-foot radius and Dim Light for an additional 10 feet, Your extra damage is Radiant and it is also dealt to each creature within 10ft at the end of each of your turns.
+            </description>
+		</sheet>
+	</element>
+	<element name="Necrotic Shroud" type="Racial Trait" source="2024 Player's Handbook" id="ID_RACIAL_TRAIT_2024_AASIMAR_CELESTIAL_REVELATION_NECROTIC_SHROUD">
+		<description>
+			<p>Necrotic Shroud. Your eyes briefly become pools of darkness, and flightless wings sprout from your back. Creatures other than your allies within 10 feet of you must succeed on a DC {{aasimar:dc}} Charisma saving throw or have the Frightened condition until the end of your next turn.</p>
+		</description>
+		<sheet usage="Celestial Revelation">
+			<description>Necrotic Shroud. Your eyes briefly become pools of darkness, and flightless wings sprout from your back. Creatures other than your allies within 10 feet of you must succeed on a DC {{aasimar:dc}} Charisma saving throw or have the Frightened condition until the end of your next turn.
+            </description>
+		</sheet>
 	</element>
 	<!-- Dragonborn -->
     <element name="2024 Dragonborn" type="Race" source="2024 Player's Handbook" id="ID_2024PHB_RACE_DRAGONBORN">
