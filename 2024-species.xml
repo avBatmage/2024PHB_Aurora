@@ -4,7 +4,7 @@
 		<name>2024 Species</name>
 		<description>Species from the 2024 Player's Handbook.</description>
 		<author url="https://marketplace.dndbeyond.com/category/3709000?pid=DB3709000">Wizards of the Coast</author>
-		<update version="0.0.7">
+		<update version="0.0.8">
 			<file name="2024-species.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-species.xml" />
 		</update>
 	</info>
@@ -94,7 +94,7 @@
 			<p>Heavenly Wings. Two spectral wings sprout from your back temporarily. Until the transformation ends, you have a {{speed}}ft Fly Speed. Until the transformation ends, you have a {{speed}}ft. flying speed. Your extra damage is Radiant.</p>
 		</description>
 		<sheet usage="Celestial Revelation">
-			<description>Heavenly Wings. Two spectral wings sprout from your back temporarily. Until the transformation ends, you have a {{speed}}ft Fly Speed. Until the transformation ends, you have a {{speed}}ft. flying speed. Your extra damage is Radiant.
+			<description>Two spectral wings sprout from your back temporarily. Until the transformation ends, you have a {{speed}}ft Fly Speed. Your extra damage is Radiant.
             </description>
 		</sheet>
 	</element>
@@ -103,7 +103,7 @@
 			<p>Inner Radiance. Searing light temporarily radiates from your eyes and mouth. For the duration, you shed Bright Light in a 10-foot radius and Dim Light for an additional 10 feet, Your extra damage is Radiant and it is also dealt to each creature within 10ft at the end of each of your turns.</p>
         </description>
 		<sheet usage="Celestial Revelation">
-			<description>Inner Radiance. Searing light temporarily radiates from your eyes and mouth. For the duration, you shed Bright Light in a 10-foot radius and Dim Light for an additional 10 feet, Your extra damage is Radiant and it is also dealt to each creature within 10ft at the end of each of your turns.
+			<description>Searing light temporarily radiates from your eyes and mouth. For the duration, you shed Bright Light in a 10-foot radius and Dim Light for an additional 10 feet, Your extra damage is Radiant and it is also dealt to each creature within 10ft at the end of each of your turns.
             </description>
 		</sheet>
 	</element>
@@ -112,7 +112,7 @@
 			<p>Necrotic Shroud. Your eyes briefly become pools of darkness, and flightless wings sprout from your back. Creatures other than your allies within 10 feet of you must succeed on a DC {{aasimar:dc}} Charisma saving throw or have the Frightened condition until the end of your next turn.</p>
 		</description>
 		<sheet usage="Celestial Revelation">
-			<description>Necrotic Shroud. Your eyes briefly become pools of darkness, and flightless wings sprout from your back. Creatures other than your allies within 10 feet of you must succeed on a DC {{aasimar:dc}} Charisma saving throw or have the Frightened condition until the end of your next turn.
+			<description>Your eyes briefly become pools of darkness, and flightless wings sprout from your back. Creatures other than your allies within 10 feet of you must succeed on a DC {{aasimar:dc}} Charisma saving throw or have the Frightened condition until the end of your next turn.
             </description>
 		</sheet>
 	</element>
