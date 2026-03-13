@@ -4,7 +4,7 @@
 		<name>2024 Sorcerer</name>
 		<description>The Sorcerer class from the 2024 Player's Handbook.</description>
 		<author url="https://marketplace.dndbeyond.com/category/3709000?pid=DB3709000">Wizards of the Coast</author>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="2024-class-sorcerer.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-class-sorcerer.xml" />
 		</update>
 	</info>
@@ -93,7 +93,6 @@
 			<set name="hd">d6</set>
 		</setters>
 		<rules>
-			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_2024PHB_MULTICLASS_SORCERER"/>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_2024PHB_MULTICLASS_SORCERER"/>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_2024PHB_MULTICLASS_SORCERER"/>
