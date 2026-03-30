@@ -10,7 +10,7 @@
 	</info>
 
 	<element name="2024 Acid Splash" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_ACID_SPLASH">
-		<supports>Sorcerer, Wizard, Damaging Spell, Spell Saving Throw</supports>
+		<supports>Artificer, Sorcerer, Wizard, Damaging Spell, Spell Saving Throw</supports>
 		<description>
 			<p>You create an acidic bubble at a point within range, where it explodes in a 5-foot-radius Sphere. Each creature in that Sphere must succeed in a Dexterity saving throw or take 1d6 Acid damage.</p>
 			<p class="indent"><b><i>Cantrip Upgrade.</i></b> The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).</p>
@@ -30,7 +30,7 @@
 		</setters>
 	</element>
 	<element name="2024 Aid" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_AID">
-		<supports>Bard, Cleric, Druid, Paladin, Ranger</supports>
+		<supports>Artificer, Bard, Cleric, Druid, Paladin, Ranger</supports>
 		<description>
 			<p>Choose up to three creatures within range. Each target's Hit Point maximum and current Hit Points increases by 5 for the duration.</p>
 			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> Each target's Hit Points increase by 5 for each spell slot level above 2.</p>
@@ -51,7 +51,7 @@
 		</setters>
 	</element>
 	<element name="2024 Alarm" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_ALARM">
-		<supports>Ranger, Wizard</supports>
+		<supports>Artificer, Ranger, Wizard</supports>
 		<description>
 			<p>You set an alarm against intrusion. Choose a door, a window, or an area within range that is no larger than a 20-foot Cube. Until the spell ends, an alarm alerts you whenever a creature touches or enters the warded area. When you cast the spell, you can designate creatures that won't set off the alarm. You also choose whether the alarm is audible or mental:</p>
 			<p class="indent"><b><i>Audible Alarm.</i></b> The alarm produces the sound of a handbell for 10 seconds within 60 feet of the warded area.</p>
@@ -73,7 +73,7 @@
 		</setters>
 	</element>
 	<element name="2024 Alter Self" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_ALTER_SELF">
-		<supports>Sorcerer, Wizard</supports>
+		<supports>Artificer, Sorcerer, Wizard</supports>
 		<description>
 			<p>You alter your physical form. Choose one of the following options. Its effects last for the duration, during which you can take a Magic action to replace the option you chose with a different one.</p>
 			<p class="indent"><b><i>Aquatic Adaptation.</i></b> You sprout gills and grow webs between your fingers. You can breathe underwater and gain a Swim Speed equal to your Speed.</p>
@@ -160,7 +160,7 @@
 		</setters>
 	</element>
 	<element name="2024 Animate Objects" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_ANIMATE_OBJECTS">
-		<supports>Bard, Sorcerer, Wizard</supports>
+		<supports>Artificer, Bard, Sorcerer, Wizard</supports>
 		<description>
 			<p>Objects animate at your command. Choose a number of nonmagical objects within range that aren't being worn or carried, aren't fixed to a surface, and aren't Gargantuan. The maximum number of objects is equal to your spellcasting ability modifier; for this number, a Medium or smaller target counts as one object, a Large target counts as two, and a Huge target counts as three.</p>
 			<p class="indent">Each target animates, sprouts legs, and becomes a Construct that uses the Animated Object stat block; this creature is under your control until the spell ends or until it is reduced to 0 Hit Points. Each creature you make with this spell is an ally to you and your allies. In combat, it shares your Initiative count and takes its turn immediately after yours.</p>
@@ -247,7 +247,7 @@
 		</setters>
 	</element>
 	<element name="2024 Arcane Eye" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_ARCANE_EYE">
-		<supports>Wizard</supports>
+		<supports>Artificer, Wizard</supports>
 		<description>
 			<p>You create an Invisible, invulnerable eye within range that hovers for the duration. You mentally receive visual information from the eye, which can see in every direction. It also has Darkvision with a range of 30 feet.</p>
 			<p class="indent">As a Bonus Action, you can move the eye up to 30 feet in any direction. A solid barrier blocks the eye's movement, but the eye can pass through an opening as small as 1 inch in diameter.</p>
@@ -268,7 +268,7 @@
 		</setters>
 	</element>
 	<element name="2024 Arcane Gate" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_ARCANE_GATE">
-		<supports>Bard, Druid, Wizard</supports>
+		<supports>Sorcerer, Warlock, Wizard</supports>
 		<description>
 			<p>You create linked teleportation portals. Choose two Large, unoccupied spaces on the ground that you can see, one space within range and the other one within 10 feet of you. A circular portal opens in each ofthose spaces and remains for the duration.</p>
 			<p class="indent">The portals are two-dimensional glowing rings filled with mist that blocks sight. They hover inches from the ground and are perpendicular to it.</p>
@@ -289,7 +289,7 @@
 		</setters>
 	</element>
 	<element name="2024 Arcane Lock" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_ARCANE_LOCK">
-		<supports>Wizard</supports>
+		<supports>Artificer, Wizard</supports>
 		<description>
 			<p>You touch a closed door, window, gate, container, or hatch and magically lock it for the duration. This lock can't be unlocked by any nonmagical means. You and any creatures you designate when you cast the spell can open and close the object despite the lock. You can also set a password that, when spoken within 5 feet of the object, unlocks it for 1 minute.</p>
 		</description>
@@ -309,7 +309,7 @@
 		</setters>
 	</element>
 	<element name="2024 Arcane Vigor" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_ARCANE_VIGOR">
-		<supports>Sorcerer, Wizard, Healing Spell</supports>
+		<supports>Artificer, Sorcerer, Wizard, Healing Spell</supports>
 		<description>
 			<p>You tap into your life force to heal yourself. Roll one or two of your unexpended Hit Point Dice, and regain a number of Hit Points equal to the roll's total plus your spellcasting ability modifier. Those dice are then expended.</p>
 			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The number of unexpended Hit Dice you can rcli increases by one for each spell slot level above 2.</p>
@@ -670,7 +670,7 @@
 		</setters>
 	</element>
 	<element name="2024 Bigby's Hand" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_BIGBYS_HAND">
-		<supports>Sorcerer, Wizard, Spell Saving Throw</supports>
+		<supports>Artificer, Sorcerer, Wizard, Spell Saving Throw</supports>
 		<description>
 			<p>You create a Large hand ofshimmering magical energy in an unoccupied space that you can see within range. The hand lasts for the dural ion, and it moves at your command, mimicking th- movements of your own hand.</p>
 			<p class="indent">The hand an object that has AC 20 and Hit Points equal to your Hit Point maximum. If it drops to 0 Hit Points, the spell ends. The hand doesn't occupy its space</p>
@@ -818,7 +818,7 @@
 		</setters>
 	</element>
 	<element name="2024 Blink" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_BLINK">
-		<supports>Sorcerer, Wizard</supports>
+		<supports>Artificer, Sorcerer, Wizard</supports>
 		<description>
 			<p>Roll ld6 at the end of each of your turns for the duration. On a roll of 4-6, you vanish from your current plane of existence and appear in the Ethereal Plane (the spell ends instantly if you are already on that plane). While on the Ethereal Plane, you can perceive the plane you left, which is cast in shades of gray, but you can't see anything there more than 60 feet away. You can affect and be affected only by other creatures on the Ethereal Plane, and creatures on the other plane can't perceive you unless they have a special ability that lets them perceive things on the Ethereal Plane.</p>
 			<p class="indent">You return to the other plane at the start of your next turn and when the spell ends if you are on the Ethereal Plane. You return to an unoccupied space of your choice that you can see within 10 feet of the space you left. If no unoccupied space is available within that range, you appear in the nearest unoccupied space.</p>
@@ -838,7 +838,7 @@
 		</setters>
 	</element>
 	<element name="2024 Blur" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_BLUR">
-		<supports>Sorcerer, Wizard</supports>
+		<supports>Artificer, Sorcerer, Wizard</supports>
 		<description>
 			<p>Your body becomes blurred. For the duration, any creature has Disadvantage on attack rolls against you. An attacker is immune to this effect if it perceives you with Blindsight or Truesight.</p>
 		</description>
@@ -1048,7 +1048,7 @@
 		</setters>
 	</element>
 	<element name="2024 Circle of Power" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_CIRCLE_OF_POWER">
-		<supports>Cleric, Paladin, Wizard, Spell Saving Throw</supports>
+		<supports>Artificer, Cleric, Paladin, Wizard, Spell Saving Throw</supports>
 		<description>
 			<p>An aura radiates from you in a 30-foot Emanation for the duration. While in the aura, you and your allies have Advantage on saving throws against spells and other magical effects. When an affected creature makes a saving throw against a spell or magical effect that allows a save to take only half damage, it takes no damage if it succeeds on the save.</p>
 		</description>
@@ -1596,7 +1596,7 @@
 		</setters>
 	</element>
 	<element name="2024 Continual Flame" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_CONTINUAL_FLAME">
-		<supports>Cleric, Druid, Wizard</supports>
+		<supports>Artificer, Cleric, Druid, Wizard</supports>
 		<description>
 			<p>A flame springs from an object that you touch. The effect casts Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. It looks like a regular flame, but it creates no heat and consumes no fuel. The flame can be covered or hidden but not smothered or quenched.</p>
 		</description>
@@ -1738,7 +1738,7 @@
 		</setters>
 	</element>
 	<element name="2024 Create Food and Water" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_CREATE_FOOD_AND_WATER">
-		<supports>Cleric, Paladin</supports>
+		<supports>Artificer, Cleric, Paladin</supports>
 		<description>
 			<p>You create 45 pounds of food and 30 gallons of fresh water on the ground or in containers within range—both useful in fending off the hazards of malnutrition and dehydration. The food is bland but nourishing and looks like a food of your choice, and the water is clean. The food spoils after 24 hours if uneaten.</p>
 		</description>
@@ -1803,7 +1803,7 @@
 		</setters>
 	</element>
 	<element name="2024 Creation" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_CREATION">
-		<supports>Sorcerer, Wizard</supports>
+		<supports>Artificer, Sorcerer, Wizard</supports>
 		<description>
 			<p>You pull wisps of shadow material from the Shadowfell to create an object within range. It is either an object of vegetable matter (soft goods, rope, wood, and the like) or mineral matter (stone, crystal, metal, and the like). The object must be no larger than a 5-foot Cube, and the object must be of a form and material that you have seen.</p>
 			<p class="indent">The spell's duration depends on the object's material, as shown in the Materials table. If the object is composed of multiple materials, use the shortest duration. Using any object created by this spell as another spell's Material component causes the other spell to fail.</p>
@@ -1877,7 +1877,7 @@
 		</setters>
 	</element>
 	<element name="2024 Cure Wounds" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_CURE_WOUNDS">
-		<supports>Bard, Cleric, Druid, Paladin, Ranger, Artificer, Healing Spell</supports>
+		<supports>Artificer, Bard, Cleric, Druid, Paladin, Ranger, Healing Spell</supports>
 		<description>
 			<p>A creature you touch regains a number of Hit Points equal to 2d8 plus your spellcasting ability modifier.</p>
 			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The healing increases by 2d8 for each spell slot level above 1.</p>
@@ -1898,7 +1898,7 @@
 		</setters>
 	</element>
 	<element name="2024 Dancing Lights" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_DANCING_LIGHTS">
-		<supports>Bard, Sorcerer, Wizard, Artificer</supports>
+		<supports>Artificer, Bard, Sorcerer, Wizard</supports>
 		<description>
 			<p>You create up to four torch-size lights within range, making them appear as torches, lanterns, or glowing orbs that hover for the duration. Alternatively, you combine the four lights into one glowing Medium form that is vaguely humanlike. Whichever form you choose, each light sheds Dim Light in a 10-foot radius.</p>
 			<p class="indent">As a Bonus Action, you can move the lights up to 60 feet to a space within range. A light must be within 20 feet of another light created by this spell, and a light vanishes if it exceeds the spell's range.</p>
@@ -1941,7 +1941,7 @@
 		</setters>
 	</element>
 	<element name="2024 Darkvision" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_DARKVISION">
-		<supports>Druid, Ranger, Sorcerer, Wizard, Artificer</supports>
+		<supports>Artificer, Druid, Ranger, Sorcerer, Wizard</supports>
 		<description>
 			<p>For the duration, a willing creature you touch has Darkvision with a range of 150 feet.</p>
 		</description>
@@ -2091,7 +2091,7 @@
 		</setters>
 	</element>
 	<element name="2024 Detect Magic" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_DETECT_MAGIC">
-		<supports>Bard, Cleric, Druid, Paladin, Ranger, Sorcerer, Warlock, Wizard, Artificer</supports>
+		<supports>Artificer, Bard, Cleric, Druid, Paladin, Ranger, Sorcerer, Warlock, Wizard</supports>
 		<description>
 			<p>For the duration, you sense the presence of magical effects within 30 feet of yourself. If you sense such effects, you can take the Magic action to see a faint aura around any visible creature or object in the area that bears the magic, and if an effect was created by a spell, you learn the spell's school of magic.</p>
 			<p class="indent">The spell is blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of lead.</p>
@@ -2179,7 +2179,7 @@
 		</setters>
 	</element>
 	<element name="2024 Disguise Self" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_DISGUISE_SELF">
-		<supports>Bard, Sorcerer, Wizard, Artificer</supports>
+		<supports>Artificer, Bard, Sorcerer, Wizard</supports>
 		<description>
 			<p>You make yourself—including your clothing, armor, weapons, and other belongings on your person—look different until the spell ends. You can seem 1 foot shorter or taller and can appear heavier or lighter. You must adopt a form that has the same basic arrangement of limbs as you have. Otherwise, the extent of the illusion is up to you.</p>
 			<p class="indent">The changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to add a hat to your outfit, objects pass through the hat, and anyone who touches it would feel nothing.</p>
@@ -2246,7 +2246,7 @@
 		</setters>
 	</element>
 	<element name="2024 Dispel Magic" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_DISPEL_MAGIC">
-		<supports>Bard, Cleric, Druid, Paladin, Ranger, Sorcerer, Warlock, Wizard, Artificer</supports>
+		<supports>Artificer, Bard, Cleric, Druid, Paladin, Ranger, Sorcerer, Warlock, Wizard</supports>
 		<description>
 			<p>Choose one creature, object, or magical effect within range. Any ongoing spell of level 3 or lower on the target ends. For each ongoing spell of level 4 or higher on the target, make an ability check using your spellcasting ability (DC 10 plus that spell's level). On a successful check, the spell ends.</p>
 			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> You automatically end a spell on the target if the spell's level is equal to or less than the level of the spell slot you use.</p>
@@ -2449,7 +2449,7 @@
 		</setters>
 	</element>
 	<element name="2024 Dragon's Breath" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_DRAGONS_BREATH">
-		<supports>Sorcerer, Wizard, Damaging Spell, Spell Saving Throw</supports>
+		<supports>Artificer, Sorcerer, Wizard, Damaging Spell, Spell Saving Throw</supports>
 		<description>
 			<p>You touch one willing creature, and choose Acid, Cold, Fire, Lightning, or Poison. Until the spell ends, the target can take a Magic Action to exhale a 15-foot Cone. Each creature in that area makes a Dexterity saving throw, taking 3d6 damage of the chosen type on a failed save or half as much damage on a successful one.</p>
 			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The damage increases by 1d6 for each spell slot level above 2.</p>
@@ -2585,7 +2585,7 @@
 		</setters>
 	</element>
 	<element name="2024 Elemental Weapon" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_ELEMENTAL_WEAPON">
-		<supports>Druid, Paladin, Ranger, Artificer</supports>
+		<supports>Artificer, Druid, Paladin, Ranger</supports>
 		<description>
 			<p>A nonmagical weapon you touch becomes a magic weapon. Choose one of the following damage types: Acid, Cold, Fire, Lightning, or Thunder. For the duration, the weapon has a +1 bonus to attack rolls and deals an extra 1d4 damage of the chosen type when it hits.</p>
 			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> If you use a level 5-6 spell slot, the bonus to attack rolls increases to +2, and the extra damage increases to 2d4. If you use a level 7+ spell slot, the bonus increases to +3, and the extra damage increases to 3d4.</p>
@@ -2606,7 +2606,7 @@
 		</setters>
 	</element>
 	<element name="2024 Elementalism" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_ELEMENTALISM">
-		<supports>Druid, Sorcerer, Wizard</supports>
+		<supports>Artificer, Druid, Sorcerer, Wizard</supports>
 		<description>
 			<p>You exert control over the elements, creating one of the following effects within range.</p>
 			<p class="indent"><strong><em>Beckon Air.</em></strong> You create a breeze strong enough to ripple cloth, stir dust, rustle leaves, and close open doors and shutters, all in a 5-foot Cube. Doors and shutters being held open by someone or something aren't affected.</p>
@@ -2631,7 +2631,7 @@
 		</setters>
 	</element>
 	<element name="2024 Enhance Ability" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_ENHANCE_ABILITY">
-		<supports>Bard, Cleric, Druid, Ranger, Sorcerer, Wizard, Artificer</supports>
+		<supports>Artificer, Bard, Cleric, Druid, Ranger, Sorcerer, Wizard</supports>
 		<description>
 			<p>You touch a creature and choose Strength, Dexterity, Intelligence, Wisdom, or Charisma. For the duration, the target has Advantage on ability checks using the chosen ability.</p>
 			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> You can target one additional creature for each spell slot level above 2. You can choose a different ability for each target.</p>
@@ -2652,7 +2652,7 @@
 		</setters>
 	</element>
 	<element name="2024 Enlarge/Reduce" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_ENLARGE_REDUCE">
-		<supports>Bard, Druid, Sorcerer, Wizard, Artificer, Spell Saving Throw</supports>
+		<supports>Artificer, Bard, Druid, Sorcerer, Wizard, Spell Saving Throw</supports>
 		<description>
 			<p>For the duration, the spell enlarges or reduces a creature or an object you can see within range (see the chosen effect below). A targeted object must be neither worn nor carried. If the target is an unwilling creature, it can make a Constitution saving throw. On a successful save, the spell has no effect.</p>
 			<p class="indent">Everything that a targeted creature is wearing and carrying changes size with it. Any item it drops returns to normal size at once. A thrown weapon or piece of ammunition returns to normal size immediately after it hits or misses a target.</p>
@@ -2784,7 +2784,7 @@
 		</setters>
 	</element>
 	<element name="2024 Expeditious Retreat" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_EXPEDITIOUS_RETREAT">
-		<supports>Sorcerer, Warlock, Wizard, Artificer</supports>
+		<supports>Artificer, Sorcerer, Warlock, Wizard</supports>
 		<description>
 			<p>You take the Dash action, and until the spell ends, you can take that action again as a Bonus Action.</p>
 		</description>
@@ -2828,7 +2828,7 @@
 		</setters>
 	</element>
 	<element name="2024 Fabricate" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_FABRICATE">
-		<supports>Wizard, Artificer</supports>
+		<supports>Artificer, Wizard</supports>
 		<description>
 			<p>You convert raw materials into products of the same material. For example, you can fabricate a wooden bridge from a clump of trees, a rope from a patch of hemp, or clothes from flax or wool.</p>
 			<p class="indent">Choose raw materials that you can see within range. You can fabricate a Large or smaller object (contained within a 10-foot Cube or eight connected 5-foot Cubes) given a sufficient quantity of material. If you're working with metal, stone, or another mineral substance, however, the fabricated object can be no larger than Medium (contained within a 5-foot Cube). The quality of any fabricated objects is based on the quality of the raw materials.</p>
@@ -2850,7 +2850,7 @@
 		</setters>
 	</element>
 	<element name="2024 Faerie Fire" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_FAERIE_FIRE">
-		<supports>Bard, Druid, Artificer, Spell Saving Throw</supports>
+		<supports>Artificer, Bard, Druid, Spell Saving Throw</supports>
 		<description>
 			<p>Objects in a 20-foot Cube within range are outlined in blue, green, or violet light (your choice). Each creature in the Cube is also outlined if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed Dim Light in a 10-foot radius and can't benefit from the Invisible condition.</p>
 			<p class="indent">Attack rolls against an affected creature or object have Advantage if the attacker can see it.</p>
@@ -2871,7 +2871,7 @@
 		</setters>
 	</element>
 	<element name="2024 False Life" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_FALSE_LIFE">
-		<supports>Sorcerer, Wizard, Artificer</supports>
+		<supports>Artificer, Sorcerer, Wizard</supports>
 		<description>
 			<p>You gain 2d4 + 4 Temporary Hit Points.</p>
 			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> You gain 5 additional Temporary Hit Points for each spell slot level above 1.</p>
@@ -2913,7 +2913,7 @@
 		</setters>
 	</element>
 	<element name="2024 Feather Fall" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_FEATHER_FALL">
-		<supports>Bard, Sorcerer, Wizard, Artificer</supports>
+		<supports>Artificer, Bard, Sorcerer, Wizard</supports>
 		<description>
 			<p>Choose up to five falling creatures within range. A falling creature's rate of descent slows to 60 feet per round until the spell ends. If a creature lands before the spell ends, the creature takes no damage from the fall, and the spell ends for that creature.</p>
 		</description>
@@ -3073,7 +3073,7 @@
 		</setters>
 	</element>
 	<element name="2024 Fire Bolt" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_FIRE_BOLT">
-		<supports>Sorcerer, Wizard, Artificer, Damaging Spell, Ranged, Spell Attack</supports>
+		<supports>Artificer, Sorcerer, Wizard, Damaging Spell, Ranged, Spell Attack</supports>
 		<description>
 			<p>You hurl a mote of fire at a creature or an object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 Fire damage. A flammable object hit by this spell starts burning if it isn't being worn or carried.</p>
 			<p class="indent"><b><i>Cantrip Upgrade.</i></b> The damage increases by 1d10 when you reach levels 5 (2d10), 11 (3d10), and 17 (4d10).</p>
@@ -3248,7 +3248,7 @@
 		</setters>
 	</element>
 	<element name="2024 Fly" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_FLY">
-		<supports>Sorcerer, Warlock, Wizard, Artificer</supports>
+		<supports>Artificer, Sorcerer, Warlock, Wizard</supports>
 		<description>
 			<p>You touch a willing creature. For the duration, the target gains a Fly Speed of 60 feet and can hover. When the spell ends, the target falls if it is still aloft unless it can stop the fall.</p>
 			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> You can target one additional creature for each spell slot level above 3.</p>
@@ -3379,7 +3379,7 @@
 		</setters>
 	</element>
 	<element name="2024 Freedom of Movement" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_FREEDOM_OF_MOVEMENT">
-		<supports>Bard, Cleric, Druid, Ranger, Artificer</supports>
+		<supports>Artificer, Bard, Cleric, Druid, Ranger</supports>
 		<description>
 			<p>You touch a willing creature. For the duration, the target's movement is unaffected by Difficult Terrain, and spells and other magical effects can neither reduce the target's Speed nor cause the target to have the Paralyzed or Restrained conditions. The target also has a Swim Speed equal to its Speed.</p>
 			<p class="indent">In addition, the target can spend 5 feet of movement to automatically escape from nonmagical restraints, such as manacles or a creature imposing the Grappled condition on it.</p>
@@ -3580,7 +3580,7 @@
 		</setters>
 	</element>
 	<element name="2024 Glyph of Warding" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_GLYPH_OF_WARDING">
-		<supports>Bard, Cleric, Wizard, Artificer, Damaging Spell, Spell Saving Throw</supports>
+		<supports>Artificer, Bard, Cleric, Wizard, Damaging Spell, Spell Saving Throw</supports>
 		<description>
 			<p>You inscribe a glyph that later unleashes a magical effect. You inscribe it either on a surface (such as a table or a section of floor) or within an object that can be closed (such as a book or chest) to conceal the glyph. The glyph can cover an area no larger than 10 feet in diameter. If the surface or object is moved more than 10 feet from where you cast this spell, the glyph is broken, and the spell ends without being triggered.</p>
 			<p class="indent">The glyph is nearly imperceptible and requires a successful Wisdom (Perception) check against your spell save DC to notice.</p>
@@ -3652,7 +3652,7 @@
 		</setters>
 	</element>
 	<element name="2024 Grease" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_GREASE">
-		<supports>Sorcerer, Wizard, Artificer, Spell Saving Throw</supports>
+		<supports>Artificer, Sorcerer, Wizard, Spell Saving Throw</supports>
 		<description>
 			<p>Nonflammable grease covers the ground in a 10-foot square centered on a point within range and turns it into Difficult Terrain for the duration.</p>
 			<p class="indent">When the grease appears, each creature standing in its area must succeed on a Dexterity saving throw or have the Prone condition. A creature that enters the area or ends its turn there must also succeed on that save or fall Prone.</p>
@@ -3693,7 +3693,7 @@
 		</setters>
 	</element>
 	<element name="2024 Greater Restoration" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_GREATER_RESTORATION">
-		<supports>Bard, Cleric, Druid, Paladin, Ranger, Artificer</supports>
+		<supports>Artificer, Bard, Cleric, Druid, Paladin, Ranger</supports>
 		<description>
 			<p>You touch a creature and magically remove one of the following effects from it:</p>
 			<ul>
@@ -3774,7 +3774,7 @@
 		</setters>
 	</element>
 	<element name="2024 Guidance" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_GUIDANCE">
-		<supports>Cleric, Druid, Artificer</supports>
+		<supports>Artificer, Cleric, Druid</supports>
 		<description>
 			<p>You touch a willing creature and choose a skill. Until the spell ends, the creature adds 1d4 to any ability check using the chosen skill.</p>
 		</description>
@@ -3932,7 +3932,7 @@
 		</setters>
 	</element>
 	<element name="2024 Haste" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_HASTE">
-		<supports>Sorcerer, Wizard, Artificer</supports>
+		<supports>Artificer, Sorcerer, Wizard</supports>
 		<description>
 			<p>Choose a willing creature that you can see within range. Until the spell ends, the target's Speed is doubled, it gains a +2 bonus to Armor Class, it has Advantage on Dexterity saving throws, and it gains an additional action on each of its turns. That action can be used to take only the Attack (one attack only), Dash, Disengage, Hide, or Utilize action.</p>
 			<p class="indent">When the spell ends, the target is Incapacitated and has a Speed of 0 until the end of its next turn, as a wave of lethargy washes over it.</p>
@@ -3995,7 +3995,7 @@
 		</setters>
 	</element>
 	<element name="2024 Heat Metal" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_HEAT_METAL">
-		<supports>Bard, Druid, Artificer, Damaging Spell, Spell Saving Throw</supports>
+		<supports>Artificer, Bard, Druid, Damaging Spell, Spell Saving Throw</supports>
 		<description>
 			<p>Choose a manufactured metal object, such as a metal weapon or a suit of Heavy or Medium metal armor, that you can see within range. You cause the object to glow red-hot. Any creature in physical contact with the object takes 2d8 Fire damage when you cast the spell. Until the spell ends, you can take a Bonus Action on each of your later turns to deal this damage again if the object is within range.</p>
 			<p class="indent">If a creature is holding or wearing the object and takes the damage from it, the creature must succeed on a Constitution saving throw or drop the object if it can. If it doesn't drop the object, it has Disadvantage on attack rolls and ability checks until the start of your next turn.</p>
@@ -4272,7 +4272,7 @@
 		</setters>
 	</element>
 	<element name="2024 Identify" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_IDENTIFY">
-		<supports>Bard, Wizard, Artificer</supports>
+		<supports>Artificer, Bard, Wizard</supports>
 		<description>
 			<p>You touch an object throughout the spell's casting. If the object is a magic item or some other magical object, you learn its properties and how to use them, whether it requires Attunement, and how many charges it has, if any. You learn whether any ongoing spells are affecting the item and what they are. If the item was created by a spell, you learn that spell's name.</p>
 			<p class="indent">If you instead touch a creature throughout the casting, you learn which ongoing spells, if any, are currently affecting it.</p>
@@ -4408,7 +4408,7 @@
 		</setters>
 	</element>
 	<element name="2024 Invisibility" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_INVISIBILITY">
-		<supports>Bard, Sorcerer, Warlock, Wizard, Artificer</supports>
+		<supports>Artificer, Bard, Sorcerer, Warlock, Wizard</supports>
 		<description>
 			<p>A creature you touch has the Invisible condition until the spell ends. The spell ends early immediately after the target makes an attack roll, deals damage, or casts a spell.</p>
 			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> You can target one additional creature for each spell slot level above 2.</p>
@@ -4451,7 +4451,7 @@
 		</setters>
 	</element>
 	<element name="2024 Jump" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_JUMP">
-		<supports>Druid, Ranger, Sorcerer, Wizard, Artificer</supports>
+		<supports>Artificer, Druid, Ranger, Sorcerer, Wizard</supports>
 		<description>
 			<p>You touch a willing creature. Once on each of its turns until the spell ends, that creature can jump up to 30 feet by spending 10 feet of movement.</p>
 			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> You can target one additional creature for each spell slot level above 1.</p>
@@ -4517,7 +4517,7 @@
 		</setters>
 	</element>
 	<element name="2024 Leomund's Secret Chest" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_LEOMUNDS_SECRET_CHEST">
-		<supports>Wizard, Artificer</supports>
+		<supports>Artificer, Wizard</supports>
 		<description>
 			<p>You hide a chest and all its contents on the Ethereal Plane. You must touch the chest and the miniature replica that serve as Material components for the spell. The chest can contain up to 12 cubic feet of nonliving material (3 feet by 2 feet by 2 feet).</p>
 			<p class="indent">While the chest remains on the Ethereal Plane, you can take a Magic action and touch the replica to recall the chest. It appears in an unoccupied space on the ground within 5 feet of you. You can send the chest back to the Ethereal Plane by taking a Magic action to touch the chest and the replica.</p>
@@ -4562,7 +4562,7 @@
 		</setters>
 	</element>
 	<element name="2024 Lesser Restoration" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_LESSER_RESTORATION">
-		<supports>Bard, Cleric, Druid, Paladin, Ranger, Artificer</supports>
+		<supports>Artificer, Bard, Cleric, Druid, Paladin, Ranger</supports>
 		<description>
 			<p>You touch a creature and end one condition on it: Blinded, Deafened, Paralyzed, or Poisoned.</p>
 		</description>
@@ -4582,7 +4582,7 @@
 		</setters>
 	</element>
 	<element name="2024 Levitate" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_LEVITATE">
-		<supports>Sorcerer, Wizard, Artificer, Spell Saving Throw</supports>
+		<supports>Artificer, Sorcerer, Wizard, Spell Saving Throw</supports>
 		<description>
 			<p>One creature or loose object of your choice that you can see within range rises vertically up to 20 feet and remains suspended there for the duration. The spell can levitate an object that weighs up to 500 pounds. An unwilling creature that succeeds on a Constitution saving throw is unaffected.</p>
 			<p class="indent">The target can move only by pushing or pulling against a fixed object or surface within reach (such as a wall or a ceiling), which allows it to move as if it were climbing. You can change the target's altitude by up to 20 feet in either direction on your turn. If you are the target, you can move up or down as part of your move. Otherwise, you can take a Magic action to move the target, which must remain within the spell's range.</p>
@@ -4604,7 +4604,7 @@
 		</setters>
 	</element>
 	<element name="2024 Light" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_LIGHT">
-		<supports>Bard, Cleric, Sorcerer, Wizard, Artificer, Spell Saving Throw</supports>
+		<supports>Artificer, Bard, Cleric, Sorcerer, Wizard, Spell Saving Throw</supports>
 		<description>
 			<p>You touch one Large or smaller object that isn't being worn or carried by someone else. Until the spell ends, the object sheds Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. The light can be colored as you like.</p>
 			<p class="indent">Covering the object with something opaque blocks the light. The spell ends if you cast it again.</p>
@@ -4732,7 +4732,7 @@
 		</setters>
 	</element>
 	<element name="2024 Longstrider" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_LONGSTRIDER">
-		<supports>Bard, Druid, Ranger, Wizard, Artificer</supports>
+		<supports>Artificer, Bard, Druid, Ranger, Wizard</supports>
 		<description>
 			<p>You touch a creature. The target's Speed increases by 10 feet until the spell ends.</p>
 			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> You can target one additional creature for each spell slot level above 1.</p>
@@ -4773,7 +4773,7 @@
 		</setters>
 	</element>
 	<element name="2024 Mage Hand" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_MAGE_HAND">
-		<supports>Bard, Sorcerer, Warlock, Wizard, Artificer</supports>
+		<supports>Artificer, Bard, Sorcerer, Warlock, Wizard</supports>
 		<description>
 			<p>A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.</p>
 			<p class="indent">When you cast the spell, you can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial.</p>
@@ -4872,7 +4872,7 @@
 		</setters>
 	</element>
 	<element name="2024 Magic Mouth" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_MAGIC_MOUTH">
-		<supports>Bard, Wizard, Artificer</supports>
+		<supports>Artificer, Bard, Wizard</supports>
 		<description>
 			<p>You implant a message within an object in range—a message that is uttered when a trigger condition is met. Choose an object that you can see and that isn't being worn or carried by another creature. Then speak the message, which must be 25 words or fewer, though it can be delivered over as long as 10 minutes. Finally, determine the circumstance that will trigger the spell to deliver your message.</p>
 			<p class="indent">When that trigger occurs, a magical mouth appears on the object and recites the message in your voice and at the same volume you spoke. If the object you chose has a mouth or something that looks like a mouth (for example, the mouth of a statue), the magical mouth appears there, so the words appear to come from the object's mouth. When you cast this spell, you can have the spell end after it delivers its message, or it can remain and repeat its message whenever the trigger occurs.</p>
@@ -4894,7 +4894,7 @@
 		</setters>
 	</element>
 	<element name="2024 Magic Weapon" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_MAGIC_WEAPON">
-		<supports>Paladin, Ranger, Sorcerer, Wizard, Artificer</supports>
+		<supports>Artificer, Paladin, Ranger, Sorcerer, Wizard</supports>
 		<description>
 			<p>You touch a nonmagical weapon. Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls. The spell ends early if you cast it again.</p>
 			<p class="indent"><b><i>Using a Higher-Level Spell Slot.</i></b> The bonus increases to +2 with a level 3-5 spell slot. The bonus increases to +3 with a level 6+ spell slot.</p>
@@ -5087,7 +5087,7 @@
 		</setters>
 	</element>
 	<element name="2024 Mending" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_MENDING">
-		<supports>Bard, Cleric, Druid, Sorcerer, Wizard, Artificer</supports>
+		<supports>Bard, Cleric, Druid, Sorcerer, Wizard</supports>
 		<description>
 			<p>This spell repairs a single break or tear in an object you touch, such as a broken chain link, two halves of a broken key, a torn cloak, or a leaking wineskin. As long as the break or tear is no larger than 1 foot in any dimension, you mend it, leaving no trace of the former damage.</p>
 			<p class="indent">This spell can physically repair a magic item, but it can't restore magic to such an object.</p>
@@ -5108,7 +5108,7 @@
 		</setters>
 	</element>
 	<element name="2024 Message" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_MESSAGE">
-		<supports>Bard, Druid, Sorcerer, Wizard, Artificer</supports>
+		<supports>Artificer, Bard, Druid, Sorcerer, Wizard</supports>
 		<description>
 			<p>You point toward a creature within range and whisper a message. The target (and only the target) hears the message and can reply in a whisper that only you can hear.</p>
 			<p class="indent">You can cast this spell through solid objects if you are familiar with the target and know it is beyond the barrier. Magical silence; 1 foot of stone, metal, or wood; or a thin sheet of lead blocks the spell.</p>
@@ -5369,7 +5369,7 @@
 		</setters>
 	</element>
 	<element name="2024 Mordenkainen's Faithful Hound" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_MORDENKAINENS_FAITHFUL_HOUND">
-		<supports>Wizard, Artificer, Damaging Spell, Spell Saving Throw</supports>
+		<supports>Artificer, Wizard, Damaging Spell, Spell Saving Throw</supports>
 		<description>
 			<p>You conjure a phantom watchdog in an unoccupied space that you can see within range. The hound remains for the duration or until the two of you are more than 300 feet apart from each other.</p>
 			<p class="indent">No one but you can see the hound, and it is intangible and invulnerable. When a Small or larger creature comes within 30 feet of it without first speaking the password that you specify when you cast this spell, the hound starts barking loudly. The hound has Truesight with a range of 30 feet.</p>
@@ -5416,7 +5416,7 @@
 		</setters>
 	</element>
 	<element name="2024 Mordenkainen's Private Sanctum" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_MORDENKAINENS_PRIVATE_SANCTUM">
-		<supports>Wizard, Artificer</supports>
+		<supports>Artificer, Wizard</supports>
 		<description>
 			<p>You make an area within range magically secure. The area is a Cube that can be as small as 5 feet to as large as 100 feet on each side. The spell lasts for the duration.</p>
 			<p class="indent">When you cast the spell, you decide what sort of security the spell provides, choosing any of the following properties:</p>
@@ -5557,7 +5557,7 @@
 		</setters>
 	</element>
 	<element name="2024 Otiluke's Resilient Sphere" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_OTILUKES_RESILIENT_SPHERE">
-		<supports>Wizard, Artificer, Spell Saving Throw</supports>
+		<supports>Artificer, Wizard, Spell Saving Throw</supports>
 		<description>
 			<p>A shimmering sphere encloses a Large or smaller creature or object within range. An unwilling creature must succeed on a Dexterity saving throw or be enclosed for the duration.</p>
 			<p class="indent">Nothing—not physical objects, energy, or other spell effects—can pass through the barrier, in or out, though a creature in the sphere can breathe there. The sphere is immune to all damage, and a creature or object inside can't be damaged by attacks or effects originating from outside, nor can a creature inside the sphere damage anything outside it.</p>
@@ -5797,7 +5797,7 @@
 		</setters>
 	</element>
 	<element name="2024 Poison Spray" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_POISON_SPRAY">
-		<supports>Druid, Sorcerer, Warlock, Wizard, Artificer, Damaging Spell, Ranged, Spell Attack</supports>
+		<supports>Artificer, Druid, Sorcerer, Warlock, Wizard, Damaging Spell, Ranged, Spell Attack</supports>
 		<description>
 			<p>You spray toxic mist at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d12 Poison damage.</p>
 			<p class="indent"><b><i>Cantrip Upgrade</i></b> The damage increases by 1d12 when you reach levels 5 (2d12), 11 (3d12), and 17 (4d12).</p>
@@ -5923,7 +5923,7 @@
 		</setters>
 	</element>
 	<element name="2024 Prestidigitation" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_PRESTIDIGITATION">
-		<supports>Bard, Sorcerer, Warlock, Wizard, Artificer</supports>
+		<supports>Artificer, Bard, Sorcerer, Warlock, Wizard</supports>
 		<description>
 			<p>You create a magical effect within range. Choose the effect from the options below. If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time.</p>
 			<p class="indent"><b><i>Sensory Effect.</i></b> You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.</p>
@@ -6082,7 +6082,7 @@
 		</setters>
 	</element>
 	<element name="2024 Protection from Energy" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_PROTECTION_FROM_ENERGY">
-		<supports>Cleric, Druid, Ranger, Sorcerer, Wizard, Artificer</supports>
+		<supports>Artificer, Cleric, Druid, Ranger, Sorcerer, Wizard</supports>
 		<description>
 			<p>FFor the duration, the willing creature you touch has Resistance to one damage type of your choice: Acid, Cold, Fire, Lightning, or Thunder.</p>
 		</description>
@@ -6122,7 +6122,7 @@
 		</setters>
 	</element>
 	<element name="2024 Protection from Poison" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_PROTECTION_FROM_POISON">
-		<supports>Cleric, Druid, Paladin, Ranger, Artificer</supports>
+		<supports>Artificer, Cleric, Druid, Paladin, Ranger</supports>
 		<description>
 			<p>You touch a creature and end the Poisoned condition on it. For the duration, the target has Advantage on saving throws to avoid or end the Poisoned condition, and it has Resistance to Poison damage.</p>
 		</description>
@@ -6142,7 +6142,7 @@
 		</setters>
 	</element>
 	<element name="2024 Purify Food and Drink" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_PURIFY_FOOD_AND_DRINK">
-		<supports>Cleric, Druid, Paladin, Artificer</supports>
+		<supports>Artificer, Cleric, Druid, Paladin</supports>
 		<description>
 			<p>You remove poison and rot from nonmagical food and drink in a 5-foot-radius Sphere centered on a point within range.</p>
 		</description>
@@ -6227,7 +6227,7 @@
 		</setters>
 	</element>
 	<element name="2024 Ray of Frost" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_RAY_OF_FROST">
-		<supports>Sorcerer, Wizard, Artificer, Damaging Spell, Ranged, Spell Attack</supports>
+		<supports>Artificer, Sorcerer, Wizard, Damaging Spell, Ranged, Spell Attack</supports>
 		<description>
 			<p>A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 Cold damage, and its Speed is reduced by 10 feet until the start of your next turn.</p>
 			<p class="indent"><b><i>Cantrip Upgrade.</i></b> The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).</p>
@@ -6344,7 +6344,7 @@
 		</setters>
 	</element>
 	<element name="2024 Resistance" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_RESISTANCE">
-		<supports>Cleric, Druid, Artificer</supports>
+		<supports>Artificer, Cleric, Druid</supports>
 		<description>
 			<p>You touch a willing creature and choose a damage type: Acid, Bludgeoning, Cold, Fire, Lightning, Necrotic, Piercing, Poison, Radiant, Slashing, or Thunder. When the creature takes damage of the chosen type before the spell ends, the creature reduces the total damage taken by 1d4. A creature can benefit from this spell only once per turn.</p>
 		</description>
@@ -6408,7 +6408,7 @@
 		</setters>
 	</element>
 	<element name="2024 Revivify" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_REVIVIFY">
-		<supports>Cleric, Paladin, Artificer, Healing Spell</supports>
+		<supports>Artificer, Cleric, Druid, Paladin, Ranger, Healing Spell</supports>
 		<description>
 			<p>You touch a creature that has died within the last minute. That creature revives with 1 Hit Point. This spell can't revive a creature that has died of old age, nor does it restore any missing body parts.</p>
 		</description>
@@ -6428,7 +6428,7 @@
 		</setters>
 	</element>
 	<element name="2024 Rope Trick" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_ROPE_TRICK">
-		<supports>Wizard, Artificer</supports>
+		<supports>Artificer, Wizard</supports>
 		<description>
 			<p>You touch a rope. One end of it hovers upward until the rope hangs perpendicular to the ground or the rope reaches a ceiling. At the rope's upper end, an Invisible 3-foot-by-5-foot portal opens to an extradimensional space that lasts until the spell ends. That space can be reached by climbing the rope, which can be pulled into or dropped out of it.</p>
 			<p class="indent">The space can hold up to eight Medium or smaller creatures. Attacks, spells, and other effects can't pass into or out of the space, but creatures inside it can see through the portal. Anything inside the space drops out when the spell ends.</p>
@@ -6470,7 +6470,7 @@
 		</setters>
 	</element>
 	<element name="2024 Sanctuary" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_SANCTUARY">
-		<supports>Cleric, Artificer, Spell Saving Throw</supports>
+		<supports>Artificer, Cleric, Spell Saving Throw</supports>
 		<description>
 			<p>You ward a creature within range. Until the spell ends, any creature who targets the warded creature with an attack roll or a damaging spell must succeed on a Wisdom saving throw or either choose a new target or lose the attack or spell. This spell doesn't protect the warded creature from areas of effect.</p>
 			<p class="indent">The spell ends if the warded creature makes an attack roll, casts a spell, or deals damage.</p>
@@ -6572,7 +6572,7 @@
 		</setters>
 	</element>
 	<element name="2024 See Invisibility" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_SEE_INVISIBILITY">
-		<supports>Bard, Sorcerer, Wizard, Artificer</supports>
+		<supports>Artificer, Bard, Sorcerer, Wizard</supports>
 		<description>
 			<p>For the duration, you see creatures and objects that have the Invisible condition as if they were visible, and you can see into the Ethereal Plane. Creatures and objects there appear ghostly.</p>
 		</description>
@@ -6787,7 +6787,7 @@
 		</setters>
 	</element>
 	<element name="2024 Shocking Grasp" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_SHOCKING_GRASP">
-		<supports>Sorcerer, Wizard, Artificer, Damaging Spell, Melee, Spell Attack</supports>
+		<supports>Artificer, Sorcerer, Wizard, Damaging Spell, Melee, Spell Attack</supports>
 		<description>
 			<p>Lightning springs from you to a creature that you try to touch. Make a melee spell attack against the target. On a hit, the target takes 1d8 Lightning damage, and it can't make Opportunity Attacks until the start of its next turn.</p>
 			<p class="indent"><b><i>Cantrip Upgrade.</i></b> The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).</p>
@@ -6959,7 +6959,7 @@
 		</setters>
 	</element>
 	<element name="2024 Spare the Dying" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_SPARE_THE_DYING">
-		<supports>Cleric, Druid, Artificer</supports>
+		<supports>Artificer, Cleric, Druid</supports>
 		<description>
 			<p>Choose a creature within range that has 0 Hit Points and isn't dead. The creature becomes Stable.</p>
 			<p class="indent"><b><i>Cantrip Upgrade.</i></b> The range doubles when you reach levels 5 (30 feet), 11 (60 feet), and 17 (120 feet).</p>
@@ -7046,7 +7046,7 @@
 		</setters>
 	</element>
 	<element name="2024 Spider Climb" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_SPIDER_CLIMB">
-		<supports>Sorcerer, Warlock, Wizard, Artificer</supports>
+		<supports>Artificer, Sorcerer, Warlock, Wizard</supports>
 		<description>
 			<p>Until the spell ends, one willing creature you touch gains the ability to move up, down, and across vertical surfaces and along ceilings, while leaving its hands free. The target also gains a Climb Speed equal to its Speed.</p>
 		</description>
@@ -7215,7 +7215,7 @@
 		</setters>
 	</element>
 	<element name="2024 Stone Shape" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_STONE_SHAPE">
-		<supports>Cleric, Druid, Wizard, Artificer</supports>
+		<supports>Artificer, Cleric, Druid, Wizard</supports>
 		<description>
 			<p>You touch a stone object of Medium size or smaller or a section of stone no more than 5 feet in any dimension and form it into any shape you like. For example, you could shape a large rock into a weapon, statue, or coffer, or you could make a small passage through a wall that is 5 feet thick. You could also shape a stone door or its frame to seal the door shut. The object you create can have up to two hinges and a latch, but finer mechanical detail isn't possible.</p>
 		</description>
@@ -7235,7 +7235,7 @@
 		</setters>
 	</element>
 	<element name="2024 Stoneskin" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_STONESKIN">
-		<supports>Druid, Ranger, Sorcerer, Wizard, Artificer</supports>
+		<supports>Artificer, Druid, Ranger, Sorcerer, Wizard</supports>
 		<description>
 			<p>Until the spell ends, one willing creature you touch has Resistance to Bludgeoning, Piercing, and Slashing damage.</p>
 		</description>
@@ -7848,7 +7848,7 @@
 		</setters>
 	</element>
 	<element name="2024 Thorn Whip" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_THORN_WHIP">
-		<supports>Druid, Artificer, Melee, Damaging Spell, Spell Attack</supports>
+		<supports>Artificer, Druid, Melee, Damaging Spell, Spell Attack</supports>
 		<description>
 			<p>You create a vine-like whip covered in thorns that lashes out at your command toward a creature in range. Make a melee spell attack against the target. On a hit, the target takes 1d6 Piercing damage, and if it is Large or smaller, you can pull it up to 10 feet closer to you.</p>
 			<p class="indent"><b><i>Cantrip Upgrade.</i></b> The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).</p>
@@ -7869,7 +7869,7 @@
 		</setters>
 	</element>
 	<element name="2024 Thunderclap" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_THUNDERCLAP">
-		<supports>Bard, Druid, Sorcerer, Warlock, Wizard, Artificer, Damaging Spell, Spell Saving Throw</supports>
+		<supports>Artificer, Bard, Druid, Sorcerer, Warlock, Wizard, Damaging Spell, Spell Saving Throw</supports>
 		<description>
 			<p>Each creature in a 5-foot Emanation originating from you must succeed on a Constitution saving throw or take 1d6 Thunder damage. The spell's thunderous sound can be heard up to 100 feet away.</p>
 			<p class="indent"><b><i>Cantrip Upgrade.</i></b> The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).</p>
@@ -8106,7 +8106,7 @@
 		</setters>
 	</element>
 	<element name="2024 True Strike" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_TRUE_STRIKE">
-		<supports>Bard, Sorcerer, Warlock, Wizard, Damaging Spell</supports>
+		<supports>Artificer, Bard, Sorcerer, Warlock, Wizard, Damaging Spell</supports>
 		<description>
 			<p>Guided by a flash of magical insight, you make one attack with the weapon used in the spell's casting. The attack uses your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity. If the attack deals damage, it can be Radiant damage or the weapon's normal damage type (your choice).</p>
 			<p class="indent"><b><i>Cantrip Upgrade.</i></b> Whether you deal Radiant damage or the weapon's normal damage type, the attack deals extra Radiant damage when you reach levels 5 (1d6), 11 (2d6), and 17 (3d6).</p>
@@ -8304,7 +8304,7 @@
 		</setters>
 	</element>
 	<element name="2024 Wall of Stone" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_WALL_OF_STONE">
-		<supports>Druid, Sorcerer, Wizard, Artificer, Spell Saving Throw</supports>
+		<supports>Artificer, Druid, Sorcerer, Wizard, Spell Saving Throw</supports>
 		<description>
 			<p>A nonmagical wall of solid stone springs into existence at a point you choose within range. The wall is 6 inches thick and is composed of ten 10-foot-by-10-foot panels. Each panel must be contiguous with another panel. Alternatively, you can create 10-foot-by-20-foot panels that are only 3 inches thick.</p>
 			<p class="indent">If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (you choose which side). If a creature would be surrounded on all sides by the wall (or the wall and another solid surface), that creature can make a Dexterity saving throw. On a success, it can use its Reaction to move up to its Speed so that it is no longer enclosed by the wall.</p>
@@ -8373,7 +8373,7 @@
 		</setters>
 	</element>
 	<element name="2024 Water Breathing" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_WATER_BREATHING">
-		<supports>Druid, Ranger, Sorcerer, Wizard, Artificer</supports>
+		<supports>Artificer, Druid, Ranger, Sorcerer, Wizard</supports>
 		<description>
 			<p>This spell grants up to ten willing creatures of your choice within range the ability to breathe underwater until the spell ends. Affected creatures also retain their normal mode of respiration.</p>
 		</description>
@@ -8393,7 +8393,7 @@
 		</setters>
 	</element>
 	<element name="2024 Water Walk" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_WATER_WALK">
-		<supports>Cleric, Druid, Ranger, Sorcerer, Artificer</supports>
+		<supports>Artificer, Cleric, Druid, Ranger, Sorcerer</supports>
 		<description>
 			<p>This spell grants the ability to move across any liquid surface—such as water, acid, mud, snow, quicksand, or lava—as if it were harmless solid ground (creatures crossing molten lava can still take damage from the heat). Up to ten willing creatures of your choice within range gain this ability for the duration.</p>
 			<p class="indent">An affected target must take a Bonus Action to pass from the liquid's surface into the liquid itself and vice versa, but if the target falls into the liquid, the target passes through the surface into the liquid below.</p>
@@ -8414,7 +8414,7 @@
 		</setters>
 	</element>
 	<element name="2024 Web" type="Spell" source="2024 Player's Handbook" id="ID_2024PHB_SPELL_WEB">
-		<supports>Sorcerer, Wizard, Artificer, Spell Saving Throw</supports>
+		<supports>Artificer, Sorcerer, Wizard, Spell Saving Throw</supports>
 		<description>
 			<p>You conjure a mass of sticky webbing at a point within range. The webs fill a 20-foot Cube there for the duration. The webs are Difficult Terrain, and the area within them is Lightly Obscured.</p>
 			<p class="indent">If the webs aren't anchored between two solid masses (such as walls or trees) or layered across a floor, wall, or ceiling, the web collapses on itself, and the spell ends at the start of your next turn. Webs layered over a flat surface have a depth of 5 feet.</p>
