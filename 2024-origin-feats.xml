@@ -4,14 +4,14 @@
 		<name>2024 Origin Feats</name>
 		<description>Origin Feats from the 2024 Player's Handbook.</description>
 		<author url="https://marketplace.dndbeyond.com/category/3709000?pid=DB3709000">Wizards of the Coast</author>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="2024-origin-feats.xml" url="https://raw.githubusercontent.com/avBatmage/2024PHB_Aurora/main/2024-origin-feats.xml" />
 		</update>
 	</info>
 
 	<!-- 10 Origin Feats -->
 	<element name="2024 Alert" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_ALERT">
-		<supports>Origin Feat, Feat</supports>
+		<supports>Origin, Feat</supports>
 		<description>
 			<ul>
 				<li><strong>Initiative Proficiency</strong>. When you roll Initiative, you can add your Proficiency Bonus to the roll.</li>
@@ -26,7 +26,7 @@
 		</rules>
 	</element>
 	<element name="2024 Crafter" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_CRAFTER">
-		<supports>Origin Feat, Feat</supports>
+		<supports>Origin, Feat</supports>
 		<description>
 			<ul>
 				<li><strong>Tool Proficiency</strong>. You gain proficiency with three different Artisan's Tools of your choice from the Fast Crafting table.</li>
@@ -57,7 +57,7 @@
 		</rules>
 	</element>
 	<element name="2024 Healer" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_HEALER">
-		<supports>Origin Feat, Feat</supports>
+		<supports>Origin, Feat</supports>
 		<description>
 			<ul>
 				<li><strong>Battle Medic</strong>. If you have a Healer's Kit, you can expend one use of it and tend to a creature within 5 feet of yourself as a Utilize action. That creature can expend one of its Hit Point Dice, and you then roll that die. The creature regains a number of Hit Points equal to the roll plus your Proficiency Bonus.</li>
@@ -70,7 +70,7 @@
 		</sheet>
 	</element>
 	<element name="2024 Lucky" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_LUCKY">
-		<supports>Origin Feat, Feat</supports>
+		<supports>Origin, Feat</supports>
 		<description>
 			<ul>
 				<li><strong>Luck Points</strong>. You have a number of Luck Points equal to your Proficiency Bonus and can spend the points on the benefits below. You regain your expended Luck Points when you finish a Long Rest.</li>
@@ -84,7 +84,7 @@
 	</element>
 	<!-- Magic Initiate -->
 	<element name="2024 Magic Initiate" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MAGICINITIATE" >
-		<supports>Origin Feat, Feat</supports>
+		<supports>Origin, Feat</supports>
 		<description>
 			<ul>
 				<li><strong>Two Cantrips</strong>. You learn two cantrips of your choice from the Cleric, Druid, or Wizard spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat).</li>
@@ -99,7 +99,7 @@
 		</rules>
 	</element>
 	<element name="2024 Magic Initiate" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MAGICINITIATE_2" >
-		<supports>Origin Feat, Feat</supports>
+		<supports>Origin, Feat</supports>
 		<requirements>ID_2024PHB_FEAT_MAGICINITIATE</requirements>
 		<description>
 			<ul>
@@ -115,7 +115,7 @@
 		</rules>
 	</element>
 	<element name="2024 Magic Initiate" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MAGICINITIATE_3" >
-		<supports>Origin Feat, Feat</supports>
+		<supports>Origin, Feat</supports>
 		<requirements>ID_2024PHB_FEAT_MAGICINITIATE_2</requirements>
 		<description>
 			<ul>
@@ -294,7 +294,7 @@
 	</element>
 	<!-- /Magic Initiate -->
 	<element name="2024 Musician" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_MUSICIAN">
-		<supports>Origin Feat, Feat</supports>
+		<supports>Origin, Feat</supports>
 		<description>
 			<ul>
 				<li><strong>Instrument Training</strong>. You gain proficiency with three Musical Instruments of your choice.</li>
@@ -310,7 +310,7 @@
 		</rules>
 	</element>
 	<element name="2024 Savage Attacker" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_SAVAGE_ATTACKER">
-		<supports>Origin Feat, Feat</supports>
+		<supports>Origin, Feat</supports>
 		<description>
 			<ul>
 				<li>You've trained to deal particularly damaging strikes. Once per turn when you hit a target with a weapon, you can roll the weapon's damage dice twice and use either roll against the target.</li>
@@ -321,7 +321,7 @@
 		</sheet>
 	</element>
 	<element name="2024 Skilled" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_SKILLED">
-		<supports>Origin Feat, Feat</supports>
+		<supports>Origin, Feat</supports>
 		<description>
 			<ul>
 				<li>You gain proficiency in any combination of three skills or tools of your choice.</li>
@@ -334,7 +334,7 @@
 		</rules>
 	</element>
 	<element name="2024 Skilled" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_SKILLED_2">
-		<supports>Origin Feat, Feat</supports>
+		<supports>Origin, Feat</supports>
 		<requirements>ID_2024PHB_FEAT_SKILLED</requirements>
 		<description>
 			<ul>
@@ -348,7 +348,7 @@
 		</rules>
 	</element>
 	<element name="2024 Skilled" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_SKILLED_3">
-		<supports>Origin Feat, Feat</supports>
+		<supports>Origin, Feat</supports>
 		<requirements>ID_2024PHB_FEAT_SKILLED_2</requirements>
 		<description>
 			<ul>
@@ -362,7 +362,7 @@
 		</rules>
 	</element>
 	<element name="2024 Skilled" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_SKILLED_4">
-		<supports>Origin Feat, Feat</supports>
+		<supports>Origin, Feat</supports>
 		<requirements>ID_2024PHB_FEAT_SKILLED_3</requirements>
 		<description>
 			<ul>
@@ -376,7 +376,7 @@
 		</rules>
 	</element>
 	<element name="2024 Skilled" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_SKILLED_5">
-		<supports>Origin Feat, Feat</supports>
+		<supports>Origin, Feat</supports>
 		<requirements>ID_2024PHB_FEAT_SKILLED_4</requirements>
 		<description>
 			<ul>
@@ -390,7 +390,7 @@
 		</rules>
 	</element>
 	<element name="2024 Skilled" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_SKILLED_6">
-		<supports>Origin Feat, Feat</supports>
+		<supports>Origin, Feat</supports>
 		<requirements>ID_2024PHB_FEAT_SKILLED_5</requirements>
 		<description>
 			<ul>
@@ -404,7 +404,7 @@
 		</rules>
 	</element>
 	<element name="2024 Skilled" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_SKILLED_7">
-		<supports>Origin Feat, Feat</supports>
+		<supports>Origin, Feat</supports>
 		<requirements>ID_2024PHB_FEAT_SKILLED_6</requirements>
 		<description>
 			<ul>
@@ -418,7 +418,7 @@
 		</rules>
 	</element>
 	<element name="2024 Skilled" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_SKILLED_8">
-		<supports>Origin Feat, Feat</supports>
+		<supports>Origin, Feat</supports>
 		<requirements>ID_2024PHB_FEAT_SKILLED_7</requirements>
 		<description>
 			<ul>
@@ -433,7 +433,7 @@
 	</element>
 	<!--/Skilled-->
 	<element name="2024 Tavern Brawler" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_TAVERN_BRAWLER">
-		<supports>Origin Feat, Feat</supports>
+		<supports>Origin, Feat</supports>
 		<description>
 			<ul>
 				<li><strong>Enhanced Unarmed Strike</strong>. When you hit with your Unarmed Strike and deal damage, you can deal Bludgeoning damage equal to 1d4 plus your Strength modifier instead of the normal damage of an Unarmed Strike.</li>
@@ -448,7 +448,7 @@
 		</sheet>
 	</element>
 	<element name="2024 Tough" type="Feat" source="2024 Player's Handbook" id="ID_2024PHB_FEAT_TOUGH">
-		<supports>Origin Feat, Feat</supports>
+		<supports>Origin, Feat</supports>
 		<description>
 			<ul>
 				<li>Your Hit Point maximum increases by an amount equal to twice your character level when you gain this feat. Whenever you gain a character level thereafter, your Hit Point maximum increases by an additional 2 Hit Points.</li>
